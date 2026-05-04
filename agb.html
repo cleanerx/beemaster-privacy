@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGB | Beemaster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #ffc107;
+            margin-bottom: 2rem;
+        }
+        .bee-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+        .app-name span {
+            color: #ffc107;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+        }
+        .last-updated {
+            color: #999;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        nav a {
+            background: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f57c00;
+            border: 2px solid #ffc107;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: #ffc107;
+            color: #333;
+        }
+        main {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #f57c00;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ffc107;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            color: #f57c00;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #555;
+        }
+        ol {
+            margin: 1rem 0 1rem 2rem;
+            color: #555;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            background: #fff3e0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 1.5rem 0;
+        }
+        .highlight p {
+            margin: 0;
+            color: #e65100;
+        }
+        .success {
+            background: #e8f5e9;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 1rem 0;
+        }
+        .success p {
+            margin: 0;
+            color: #2e7d32;
+        }
+        .warning {
+            background: #ffebee;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f44336;
+            margin: 1rem 0;
+        }
+        .warning p {
+            margin: 0;
+            color: #c62828;
+        }
+        .contact-box {
+            background: #fff3e0;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 {
+            color: #f57c00;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        .contact-box ul {
+            margin-top: 0.5rem;
+        }
+        a {
+            color: #f57c00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            main {
+                padding: 1.5rem;
+            }
+            .app-name {
+                font-size: 2rem;
+            }
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">Die Bienenverwaltungs-App für Imker</p>
+            <p class="last-updated">Allgemeine Geschäftsbedingungen – Stand: Mai 2026</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Datenschutz</a>
+            <a href="agb.html" class="active">AGB</a>
+            <a href="impressum.html">Impressum</a>
+        </nav>
+
+        <main>
+            <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
+
+            <p><strong>Anbieter:</strong> Jens Kübler (nachfolgend "Anbieter")</p>
+
+            <div class="highlight">
+                <p><strong>Kurzfassung:</strong> Die App ist eine reine Hilfestellung für die Bienenhaltung. Nutzung erfolgt auf eigene Gefahr. Keine Haftung für Datenverlust oder Imker-Entscheidungen. Haftungsbeschränkung gilt im Rahmen des gesetzlich Zulässigen.</p>
+            </div>
+
+            <h2>§1 Geltungsbereich</h2>
+            <div class="section">
+                <ol>
+                    <li>Diese AGB gelten für die Nutzung der mobilen Anwendung "Beemaster" (nachfolgend "App"), die über den Google Play Store vertrieben wird.</li>
+                    <li>Mit dem Download und der Nutzung der App erkennt der Nutzer diese AGB an.</li>
+                    <li>Abweichende Bedingungen des Nutzers werden nicht anerkannt, es sei denn, der Anbieter stimmt ihrer Geltung ausdrücklich schriftlich zu.</li>
+                </ol>
+            </div>
+
+            <h2>§2 Vertragsschluss</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Vertrag zwischen Anbieter und Nutzer kommt durch Download der App zustande.</li>
+                    <li>Die App wird kostenlos zur Verfügung gestellt. Für Premium-Funktionen gelten gesonderte Bedingungen (siehe §9).</li>
+                </ol>
+            </div>
+
+            <h2>§3 Nutzungsvoraussetzungen</h2>
+            <div class="section">
+                <ol>
+                    <li>Die Nutzung der App setzt ein kompatibles Android-Gerät (min. Android 8.0) voraus.</li>
+                    <li>Der Nutzer ist verantwortlich für die Bereitstellung der technischen Infrastruktur (Gerät, Internetverbindung, Akkuleistung).</li>
+                    <li>Der Nutzer muss das 18. Lebensjahr vollendet haben oder die Zustimmung eines Erziehungsberechtigten haben.</li>
+                </ol>
+            </div>
+
+            <h2>§4 Einräumung von Nutzungsrechten</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Anbieter gewährt dem Nutzer ein einfaches, nicht übertragbares, räumlich und zeitlich unbeschränktes Recht zur Nutzung der App.</li>
+                    <li>Die App darf ausschließlich für private Zwecke genutzt werden.</li>
+                    <li>Jede kommerzielle Nutzung, Vervielfältigung, Modifikation oder Verbreitung ohne ausdrückliche Genehmigung ist untersagt.</li>
+                </ol>
+            </div>
+
+            <h2>§5 Naturgemäße Beschränkungen der App</h2>
+            <div class="section">
+                <ol>
+                    <li><strong>Die App ist eine reine Hilfestellung</strong> für die Bienenhaltung und ersetzt keine fachliche Beratung, tierärztliche Behandlung oder imkerliche Fachkenntnisse.</li>
+                    <li>Die in der App enthaltenen Empfehlungen, Warnungen und Daten (z.B. Varroa-Behandlung, Fütterungshinweise, Königinnen-Markierungen) basieren auf allgemeinen Standards und können örtlich, saisonal oder individuell abweichen.</li>
+                    <li><strong>Die App erkennt keine Krankheiten oder gesundheitlichen Zustände von Bienen, Königinnen oder Völkern.</strong> Solche Beurteilungen obliegen ausschließlich Fachpersonal.</li>
+                    <li>Die App übernimmt keine Verantwortung für wirtschaftliche Entscheidungen (z.B. Honigernte, Völkerkauf, Beutenanzahl).</li>
+                </ol>
+            </div>
+
+            <h2>§6 Haftungsausschluss</h2>
+            
+            <h3>6.1 Grundsätzlicher Haftungsausschluss</h3>
+            <div class="section">
+                <ol>
+                    <li>Die Nutzung der App erfolgt <strong>auf eigene Gefahr</strong>.</li>
+                    <li>Der Anbieter haftet nicht für Schäden, die durch:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Fehlende oder unvollständige Daten in der App</li>
+                            <li>Unterbrechung der App-Nutzung (Serverausfall, Update, Wartung)</li>
+                            <li>Falsche Eingaben des Nutzers</li>
+                            <li>Dritte (z.B. Hackerangriffe, Malware)</li>
+                            <li>Inkompatibilität mit Geräten oder Betriebssystemen</li>
+                            <li>Verlorene Daten (z.B. bei Gerätedefekt, App-Neuinstallation)</li>
+                        </ul>
+                        entstehen.
+                    </li>
+                </ol>
+            </div>
+
+            <h3>6.2 Haftungsbeschränkung</h3>
+            <div class="section">
+                <ol>
+                    <li>Bei Vorsatz oder grober Fahrlässigkeit haftet der Anbieter nach gesetzlichen Vorschriften.</li>
+                    <li>Bei einfacher Fahrlässigkeit haftet der Anbieter <strong>nur</strong>:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit</li>
+                            <li>Für Schäden aus der Verletzung einer wesentlichen Vertragspflicht (Kardinalpflicht)</li>
+                        </ul>
+                        Die Haftung ist auf den typischerweise vorhersehbaren Schaden begrenzt.
+                    </li>
+                </ol>
+            </div>
+
+            <h3>6.3 Datenverlust</h3>
+            <div class="section">
+                <ol>
+                    <li>Der Anbieter haftet nicht für Datenverlust, insbesondere nicht für:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Verlorene Bienenstock-Daten</li>
+                            <li>Verlorene Inspektionsaufzeichnungen</li>
+                            <li>Verlorene Standort-Informationen</li>
+                        </ul>
+                    </li>
+                    <li>Der Nutzer wird ausdrücklich aufgefordert, regelmäßige Datensicherungen durchzuführen (Export-Funktion).</li>
+                </ol>
+            </div>
+
+            <h3>6.4 Keine Haftung für Imker-Entscheidungen</h3>
+            <div class="warning">
+                <p><strong>Wichtiger Hinweis:</strong> Der Anbieter haftet <strong>ausdrücklich nicht</strong> für:</p>
+                <ul style="margin-top: 0.5rem;">
+                    <li>Verlust von Bienenvölkern</li>
+                    <li>Verlust von Königinnen</li>
+                    <li>Misslungene Varroa-Behandlungen</li>
+                    <li>Wirtschaftliche Verluste (Honigertrag, Völkerzahl)</li>
+                    <li>Fehlentscheidungen basierend auf App-Daten</li>
+                </ul>
+            </div>
+
+            <h3>6.5 Fehlerhafte Daten</h3>
+            <div class="section">
+                <ol>
+                    <li>Die App kann Informationen anzeigen, die nicht korrekt, vollständig oder aktuell sind.</li>
+                    <li>Der Nutzer muss alle kritischen Entscheidungen eigenständig verifizieren.</li>
+                </ol>
+            </div>
+
+            <h2>§7 Pflichten des Nutzers</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Nutzer verpflichtet sich:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Keine schädlichen Daten in die App einzugeben</li>
+                            <li>Die App nicht zu manipulieren oder zu hacken</li>
+                            <li>Keine automatisierten Zugriffe auf die App vorzunehmen</li>
+                            <li>Persönliche Zugangsdaten geheim zu halten (bei Premium-Funktionen)</li>
+                        </ul>
+                    </li>
+                    <li>Verstöße berechtigen den Anbieter zur sofortigen Sperrung.</li>
+                </ol>
+            </div>
+
+            <h2>§8 Datenschutzerklärung</h2>
+            <div class="section">
+                <ol>
+                    <li>Die Datenschutzerklärung ist gesondert verfügbar unter <a href="index.html">Datenschutz</a> bzw. in der App.</li>
+                    <li>Der Nutzer willigt durch Nutzung der App in die Datenverarbeitung ein.</li>
+                </ol>
+            </div>
+
+            <h2>§9 Premium-Funktionen und Bezahlung</h2>
+            <div class="section">
+                <ol>
+                    <li>Premium-Funktionen (z.B. Voice-Agent, erweiterte Statistiken) sind kostenpflichtig.</li>
+                    <li>Preise werden im Google Play Store vor dem Kauf angezeigt.</li>
+                    <li><strong>Keine automatische Verlängerung</strong> – Abos laufen zum Ende der Laufzeit aus.</li>
+                    <li>Erstattungen erfolgen nach den Richtlinien des Google Play Stores.</li>
+                    <li>Zahlungen erfolgen über Google Play – der Anbieter speichert keine Zahlungsdaten.</li>
+                </ol>
+            </div>
+
+            <h2>§10 Verfügbarkeit und Änderungen</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Anbieter behält sich vor:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Die App jederzeit zu ändern oder einzustellen</li>
+                            <li>Premium-Funktionen zu ändern oder zu entfernen</li>
+                            <li>Preise für Premium-Funktionen anzupassen (nur für neue Käufe)</li>
+                        </ul>
+                    </li>
+                    <li>Es besteht kein Anspruch auf fortwährende Verfügbarkeit.</li>
+                </ol>
+            </div>
+
+            <h2>§11 Kündigung</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Nutzer kann die App jederzeit durch Löschen vom Gerät beenden.</li>
+                    <li>Der Anbieter kann den Vertrag mit 14-tägiger Frist kündigen (nur bei Premium-Funktionen mit anteiliger Erstattung).</li>
+                    <li>Nach Kündigung werden alle Nutzerdaten spätestens nach 30 Tagen gelöscht.</li>
+                </ol>
+            </div>
+
+            <h2>§12 Rechtswahl und Gerichtsstand</h2>
+            <div class="section">
+                <ol>
+                    <li>Es gilt das Recht der Bundesrepublik Deutschland.</li>
+                    <li>Gerichtsstand ist der Sitz des Anbieters.</li>
+                    <li>UN-Kaufrecht (CISG) findet keine Anwendung.</li>
+                </ol>
+            </div>
+
+            <h2>§13 Salvatorische Klausel</h2>
+            <div class="success">
+                <ol style="margin: 0;">
+                    <li>Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt.</li>
+                    <li>Die ganz oder teilweise unwirksame Regelung wird durch eine wirksame Regelung ersetzt, die dem wirtschaftlichen Zweck der ursprünglichen Regelung am nächsten kommt.</li>
+                    <li>Das Gleiche gilt, wenn die AGB eine Lücke enthalten.</li>
+                    <li>Mündliche Nebenabreden bestehen nicht. Änderungen bedürfen der Schriftform.</li>
+                </ol>
+            </div>
+
+            <h2>§14 Kontakt</h2>
+            <div class="contact-box">
+                <h3>Anbieter</h3>
+                <ul>
+                    <li><strong>Entwickler:</strong> Jens Kübler</li>
+                    <li><strong>E-Mail:</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Beemaster | <a href="index.html">Datenschutz</a></p>
+            <p>Diese AGB gelten für die Beemaster Android App.</p>
+        </footer>
+    </div>
+</body>
+</html>
