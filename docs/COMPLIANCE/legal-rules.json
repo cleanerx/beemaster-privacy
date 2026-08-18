@@ -1,0 +1,101 @@
+{
+  "version": "2026-08-18",
+  "lastUpdated": "2026-08-18T00:00:00Z",
+  "jurisdictions": {
+    "DE": {
+      "name": "Deutschland",
+      "language": "de",
+      "assetFolder": "de",
+      "laws": ["DSGVO", "BDSG", "DDG", "VSBG", "BGB"],
+      "supervisoryAuthority": {
+        "name": "Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg",
+        "address": "Lautenschlagerstraße 20, 70173 Stuttgart",
+        "email": "poststelle@lfdi.bwl.de"
+      },
+      "mandatoryClauses": {
+        "impressum": ["§5 DDG", "Kontaktangaben", "Haftungsausschluss"],
+        "privacy": ["DSGVO Art. 13", "Betroffenenrechte", "Aufsichtsbehörde DE"],
+        "agb": ["§36 VSBG", "Widerrufsbelehrung", "Gerichtsstand"],
+        "eula": ["Gewährleistung", "Haftung", "Rechtswahl DE"]
+      },
+      "forbiddenClauses": ["AStG", "ABGB", "FAGG", "KSchG (AT)", "DSG (AT)"]
+    },
+    "AT": {
+      "name": "Österreich",
+      "language": "de-at",
+      "assetFolder": "de-at",
+      "laws": ["DSGVO", "DSG", "ECG", "MedienG", "FAGG", "KSchG", "AStG", "ABGB"],
+      "supervisoryAuthority": {
+        "name": "Datenschutzbehörde (DSB)",
+        "address": "Barichgasse 40-42, 1030 Wien",
+        "email": "dsb@dsb.gv.at"
+      },
+      "disputeResolution": [
+        "Internet Ombudsstelle (ÖIAT)",
+        "Schlichtung für Verbrauchergeschäfte"
+      ],
+      "mandatoryClauses": {
+        "impressum": ["§5 ECG", "§24 MedienG", "Medieninhaber", "Bruttopreise"],
+        "privacy": ["DSGVO Art. 13", "DSG §24", "Beschwerderecht DSB"],
+        "agb": ["§1 KSchG", "§11 FAGG", "§19 AStG", "§14 KSchG"],
+        "eula": ["ABGB §932", "KSchG", "Rechtswahl AT"]
+      },
+      "forbiddenClauses": ["VSBG", "BGB", "BDSG", "DDG (DE)"]
+    },
+    "CZ": {
+      "name": "Tschechien",
+      "language": "cs",
+      "assetFolder": "cs",
+      "laws": ["GDPR", "Zákon 110/2019 Sb.", "Zákon 89/2012 Sb.", "Zákon 634/1992 Sb."],
+      "supervisoryAuthority": {
+        "name": "ÚOOÚ",
+        "address": "Pplk. Sochora 27, 170 00 Praha 7",
+        "email": "posta@uoou.gov.cz"
+      },
+      "mandatoryClauses": {
+        "impressum": ["§5 DDG", "Kontaktangaben"],
+        "privacy": ["GDPR Art. 13", "Zákon 110/2019 Sb.", "Beschwerderecht ÚOOÚ"],
+        "agb": ["§14 Zákon 634/1992 Sb.", "Widerrufsbelehrung"],
+        "eula": ["Gewährleistung", "Rechtswahl mit Art. 6 Rom-I"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB", "ABGB"]
+    },
+    "EU": {
+      "name": "Europäische Union",
+      "language": "en",
+      "assetFolder": "en",
+      "laws": ["GDPR", "Consumer Rights Directive 2011/83/EU", "Digital Content Directive 2019/770"],
+      "mandatoryClauses": {
+        "impressum": ["Contact information", "Liability disclaimer"],
+        "privacy": ["GDPR Art. 13", "Data subject rights", "Supervisory authority"],
+        "agb": ["Withdrawal policy", "Dispute resolution info"],
+        "eula": ["Warranty", "Liability", "Governing law"]
+      },
+      "forbiddenClauses": ["EU ODR platform (abolished 2025-07-20)"]
+    }
+  },
+  "validationRules": [
+    {"id": "RULE-001", "appliesTo": ["DE", "AT", "CZ", "EU"], "document": "impressum", "check": "contains", "patterns": ["E-Mail", "Anschrift", "Adresse"], "severity": "ERROR"},
+    {"id": "RULE-002", "appliesTo": ["DE", "AT", "CZ", "EU"], "document": "privacy", "check": "contains", "patterns": ["Art. 13", "Art 13", "Article 13"], "severity": "ERROR"},
+    {"id": "RULE-003", "appliesTo": ["DE", "AT", "CZ", "EU"], "document": "privacy", "check": "contains", "patterns": ["Aufsichtsbehörde", "Supervisory authority", "Datenschutzbehörde"], "severity": "ERROR"},
+    {"id": "RULE-004-DE", "appliesTo": ["DE"], "document": "impressum", "check": "contains", "patterns": ["§ 5 DDG", "§5 DDG", "§ 5 TMG", "§5 TMG", "Digitale-Dienste-Gesetz"], "severity": "ERROR"},
+    {"id": "RULE-005-DE", "appliesTo": ["DE"], "document": "agb", "check": "contains", "patterns": ["§36 VSBG", "VSBG"], "severity": "ERROR"},
+    {"id": "RULE-006-AT", "appliesTo": ["AT"], "document": "impressum", "check": "contains", "patterns": ["§5 ECG", "E-Commerce-Gesetz"], "severity": "ERROR"},
+    {"id": "RULE-007-AT", "appliesTo": ["AT"], "document": "agb", "check": "contains", "patterns": ["§11 FAGG", "Rücktrittsrecht", "Rücktritt"], "severity": "ERROR"},
+    {"id": "RULE-008-AT", "appliesTo": ["AT"], "document": "agb", "check": "contains", "patterns": ["§19 AStG", "AStG", "Schlichtung"], "severity": "ERROR"},
+    {"id": "RULE-009-AT", "appliesTo": ["AT"], "document": "privacy", "check": "contains", "patterns": ["Datenschutzbehörde", "DSB", "Barichgasse"], "severity": "ERROR"},
+    {"id": "RULE-010-AT", "appliesTo": ["AT"], "document": "eula", "check": "contains", "patterns": ["ABGB", "österreichisches Recht"], "severity": "ERROR"},
+    {"id": "RULE-011-CZ", "appliesTo": ["CZ"], "document": "privacy", "check": "contains", "patterns": ["ÚOOÚ", "Úřad pro ochranu osobních údajů"], "severity": "ERROR"},
+    {"id": "RULE-012-CZ", "appliesTo": ["CZ"], "document": "agb", "check": "contains", "patterns": ["Česká obchodní inspekce", "COI", "adr@coi.gov.cz"], "severity": "ERROR"},
+    {"id": "RULE-013", "appliesTo": ["DE", "AT", "CZ", "EU"], "document": "all", "check": "notContains", "patterns": ["ec.europa.eu/odr"], "severity": "WARNING"},
+    {"id": "RULE-014-DE", "appliesTo": ["DE"], "document": "all", "check": "notContains", "patterns": ["AStG"], "severity": "ERROR"},
+    {"id": "RULE-015-DE", "appliesTo": ["DE"], "document": "all", "check": "notContains", "patterns": ["ABGB"], "severity": "ERROR"},
+    {"id": "RULE-016-AT", "appliesTo": ["AT"], "document": "all", "check": "notContains", "patterns": ["VSBG"], "severity": "ERROR"},
+    {"id": "RULE-017-AT", "appliesTo": ["AT"], "document": "all", "check": "notContains", "patterns": ["BGB (Deutschland)", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"}
+  ],
+  "reConsentRules": {
+    "required": ["Neue Datenkategorien", "Neue Verarbeitungszwecke", "Neue Drittanbieter", "Rechtsgrundlage ändert sich", "Neue Aufsichtsbehörde"],
+    "notRequired": ["Redaktionelle Updates", "Klarstellungen", "Kontaktinformationen", "Sprachliche Anpassungen (AT vs DE)"],
+    "versioning": {"format": "YYYY-MM-DD", "separateVersionsPerJurisdiction": true, "globalBumpForAllJurisdictions": true}
+  }
+}

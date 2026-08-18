@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGB | Beemaster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #ffc107;
+            margin-bottom: 2rem;
+        }
+        .bee-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+        .app-name span {
+            color: #ffc107;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+        }
+        .last-updated {
+            color: #999;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        nav a {
+            background: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f57c00;
+            border: 2px solid #ffc107;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: #ffc107;
+            color: #333;
+        }
+        main {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #f57c00;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ffc107;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            color: #f57c00;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #555;
+        }
+        ol {
+            margin: 1rem 0 1rem 2rem;
+            color: #555;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            background: #fff3e0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 1.5rem 0;
+        }
+        .highlight p {
+            margin: 0;
+            color: #e65100;
+        }
+        .success {
+            background: #e8f5e9;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 1rem 0;
+        }
+        .success p {
+            margin: 0;
+            color: #2e7d32;
+        }
+        .warning {
+            background: #ffebee;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f44336;
+            margin: 1rem 0;
+        }
+        .warning p {
+            margin: 0;
+            color: #c62828;
+        }
+        .contact-box {
+            background: #fff3e0;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 {
+            color: #f57c00;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        .contact-box ul {
+            margin-top: 0.5rem;
+        }
+        a {
+            color: #f57c00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            main {
+                padding: 1.5rem;
+            }
+            .app-name {
+                font-size: 2rem;
+            }
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">Die Bienenverwaltungs-App für Imker</p>
+            <p class="last-updated">Allgemeine Geschäftsbedingungen (AGB) – Version 2026-08-18 (Österreich), Stand: 18. August 2026</p>
+        </header>
+
+        <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
+            <a href="agb.html" style="color:#f57c00;text-decoration:none;">🇩🇪 Deutsch (DE)</a> |
+            <a href="agb_at.html" style="color:#f57c00;text-decoration:none;font-weight:bold;text-decoration:underline;">🇦🇹 Deutsch (AT)</a> |
+            <a href="agb_en.html" style="color:#f57c00;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Datenschutz</a>
+            <a href="agb_at.html" class="active">AGB</a>
+            <a href="eula_at.html">EULA</a>
+            <a href="impressum_at.html">Impressum</a>
+        </nav>
+
+        <main>
+            <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
+
+            <p><strong>Vertragspartner:</strong><br>
+                Jens Kübler<br>
+                Max-Beckmann-Straße 39<br>
+                76227 Karlsruhe<br>
+                Deutschland<br>
+                E-Mail: <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a><br>
+                (nachfolgend "Anbieter")
+            </p>
+
+            <div class="highlight">
+                <p><strong>Kurzfassung:</strong> Die App ist eine reine Hilfestellung für die Bienenhaltung. Nutzung erfolgt auf eigene Gefahr. Keine Haftung für Datenverlust oder Imker-Entscheidungen. Haftungsbeschränkung gilt im Rahmen des gesetzlich Zulässigen.</p>
+            </div>
+
+            <h2>§1 Geltungsbereich</h2>
+            <div class="section">
+                <ol>
+                    <li>Diese AGB gelten für die Nutzung der mobilen Anwendung "Beemaster" (nachfolgend "App"), die über den Google Play Store vertrieben wird.</li>
+                    <li>Mit dem Download und der Nutzung der App erkennt der Nutzer diese AGB an.</li>
+                    <li>Abweichende Bedingungen des Nutzers werden nicht anerkannt, es sei denn, der Anbieter stimmt ihrer Geltung ausdrücklich schriftlich zu.</li>
+                    <li>Für Konsumenten mit Wohnsitz in Österreich gelten die zwingenden Bestimmungen des österreichischen Konsumentenschutzes (KSchG, FAGG) zusätzlich zu diesen AGB.</li>
+                </ol>
+            </div>
+
+            <h2>§2 Vertragsschluss</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Vertrag zwischen Anbieter und Nutzer kommt durch Download der App zustande.</li>
+                    <li>Die App wird kostenlos zur Verfügung gestellt. Für Premium-Funktionen gelten gesonderte Bedingungen (siehe §9).</li>
+                </ol>
+            </div>
+
+            <h2>§3 Nutzungsvoraussetzungen</h2>
+            <div class="section">
+                <ol>
+                    <li>Die Nutzung der App setzt ein kompatibles Android-Gerät (min. Android 8.0) voraus.</li>
+                    <li>Der Nutzer ist verantwortlich für die Bereitstellung der technischen Infrastruktur (Gerät, Internetverbindung, Akkuleistung).</li>
+                    <li><strong>Mindestalter:</strong> Die App richtet sich nicht an Kinder. Minderjährige benötigen für kostenpflichtige Funktionen die Zustimmung eines Erziehungsberechtigten.</li>
+                    <li><strong>Einwilligungsfähigkeit im Datenschutz:</strong> Soweit die Verarbeitung auf einer Einwilligung beruht, können diese Einwilligung Personen ab 16 Jahren selbst erteilen. Darunter ist die Zustimmung des Trägers der elterlichen Verantwortung erforderlich (Art. 8 DSGVO).</li>
+                </ol>
+            </div>
+
+            <h2>§4 Einräumung von Nutzungsrechten</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Anbieter gewährt dem Nutzer ein einfaches, nicht übertragbares, räumlich und zeitlich unbeschränktes Recht zur Nutzung der App.</li>
+                    <li>Die App darf sowohl <strong>privat als auch gewerblich</strong> genutzt werden – insbesondere durch Hobby-, Neben- und Berufsimkereien zur Dokumentation des eigenen Imkereibetriebs.</li>
+                    <li>Nicht gestattet sind: Vervielfältigung, Bearbeitung, Dekompilierung, Weiterverbreitung oder Unterlizenzierung der App selbst sowie das Anbieten der App oder ihrer Funktionen als eigene Dienstleistung gegenüber Dritten (z. B. Weiterverkauf, White-Labeling, Betrieb als Serviceportal). Zwingende gesetzliche Befugnisse bleiben unberührt.</li>
+                    <li>Die im Rahmen der Nutzung erfassten eigenen Daten des Nutzers (Beuten-, Kontroll- und Ertragsdaten) darf der Nutzer uneingeschränkt für eigene betriebliche Zwecke verwenden, exportieren und weitergeben.</li>
+                </ol>
+            </div>
+
+            <h2>§5 Naturgemäße Beschränkungen der App</h2>
+            <div class="section">
+                <ol>
+                    <li><strong>Die App ist eine reine Hilfestellung</strong> für die Bienenhaltung und ersetzt keine fachliche Beratung, tierärztliche Behandlung oder imkerliche Fachkenntnisse.</li>
+                    <li>Die in der App enthaltenen Empfehlungen, Warnungen und Daten basieren auf allgemeinen Standards und können örtlich, saisonal oder individuell abweichen.</li>
+                    <li><strong>Die App erkennt keine Krankheiten oder gesundheitlichen Zustände von Bienen, Königinnen oder Völkern.</strong> Solche Beurteilungen obliegen ausschließlich Fachpersonal.</li>
+                    <li>Die App übernimmt keine Verantwortung für wirtschaftliche Entscheidungen (z.B. Honigernte, Völkerkauf, Beutenanzahl).</li>
+                </ol>
+            </div>
+
+            <h2>§6 Haftungsausschluss</h2>
+            
+            <h3>6.1 Grundsätzlicher Haftungsausschluss</h3>
+            <div class="section">
+                <ol>
+                    <li>Die Nutzung der App erfolgt <strong>auf eigene Gefahr</strong>.</li>
+                    <li>Der Anbieter haftet nicht für Schäden, die durch fehlende oder unvollständige Daten, Unterbrechung der App-Nutzung, falsche Eingaben des Nutzers, Dritte, Inkompatibilität mit Geräten oder verlorene Daten entstehen.</li>
+                </ol>
+            </div>
+
+            <h3>6.2 Haftungsbeschränkung</h3>
+            <div class="section">
+                <ol>
+                    <li>Bei Vorsatz oder grober Fahrlässigkeit haftet der Anbieter nach gesetzlichen Vorschriften.</li>
+                    <li>Bei einfacher Fahrlässigkeit haftet der Anbieter <strong>nur</strong> für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für Schäden aus der Verletzung einer wesentlichen Vertragspflicht (Kardinalpflicht). Die Haftung ist auf den typischerweise vorhersehbaren Schaden begrenzt.</li>
+                </ol>
+            </div>
+
+            <h3>6.3 Datenverlust</h3>
+            <div class="section">
+                <ol>
+                    <li>Der Anbieter haftet nicht für Datenverlust, insbesondere nicht für verlorene Bienenstock-Daten, Inspektionsaufzeichnungen oder Standort-Informationen.</li>
+                    <li>Der Nutzer wird ausdrücklich aufgefordert, regelmäßige Datensicherungen durchzuführen (Export-Funktion).</li>
+                </ol>
+            </div>
+
+            <h3>6.4 Keine Haftung für Imker-Entscheidungen</h3>
+            <div class="warning">
+                <p><strong>Wichtiger Hinweis:</strong> Der Anbieter haftet <strong>ausdrücklich nicht</strong> für Verlust von Bienenvölkern, Verlust von Königinnen, misslungene Varroa-Behandlungen, wirtschaftliche Verluste (Honigertrag, Völkerzahl) oder Fehlentscheidungen basierend auf App-Daten.</p>
+            </div>
+
+            <h3>6.5 Veterinäramt-Integration (Premium-Feature)</h3>
+            <div class="section">
+                <ol>
+                    <li>Die App bietet als Premium-Feature Verlinkungen zu Veterinäramt-Websites, offiziellen Bienen-Meldeformularen und Listen von Bienensachverständigen.</li>
+                    <li>Die Daten stammen aus öffentlich zugänglichen Quellen. Wir übernehmen keine Gewähr für die Aktualität oder Richtigkeit.</li>
+                    <li>Die Verlinkungen sind eine <strong>Informationshilfe</strong> und ersetzen nicht die eigene Prüfung der behördlichen Anforderungen.</li>
+                </ol>
+            </div>
+
+            <h3>6.6 Fehlerhafte Daten</h3>
+            <div class="section">
+                <ol>
+                    <li>Die App kann Informationen anzeigen, die nicht korrekt, vollständig oder aktuell sind.</li>
+                    <li>Der Nutzer muss alle kritischen Entscheidungen eigenständig verifizieren.</li>
+                </ol>
+            </div>
+
+            <h2>§7 Pflichten des Nutzers</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Nutzer verpflichtet sich, keine schädlichen Daten in die App einzugeben, die App nicht zu manipulieren oder zu hacken, keine automatisierten Zugriffe vorzunehmen und persönliche Zugangsdaten geheim zu halten.</li>
+                    <li>Verstöße berechtigen den Anbieter zur sofortigen Sperrung.</li>
+                </ol>
+            </div>
+
+            <h2>§8 Datenschutzerklärung</h2>
+            <div class="section">
+                <ol>
+                    <li>Die Datenschutzerklärung ist gesondert verfügbar unter <a href="datenschutz.html">Datenschutz</a> bzw. in der App.</li>
+                    <li>Die Verarbeitung personenbezogener Daten erfolgt auf den in der Datenschutzerklärung genannten Rechtsgrundlagen (Art. 6 Abs. 1 DSGVO). Eine Einwilligung wird nur dort eingeholt, wo sie erforderlich ist.</li>
+                </ol>
+            </div>
+
+            <h2>§9 Premium-Funktionen, Vertragspartner und Bezahlung</h2>
+            <div class="warning">
+                <p><strong>Wer ist Ihr Vertragspartner beim Kauf?</strong></p>
+                <p>Premium-Funktionen und Abonnements erwerben Sie <strong>nicht vom Anbieter</strong>, sondern über den Google Play Store. Verkäufer und Vertragspartner des Kaufvertrages ist <strong>Google Commerce Limited</strong>, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+                <p>Für Bestellvorgang, Zahlungsabwicklung, Rechnungsstellung, Erstattungen und das gesetzliche Rücktrittsrecht gelten daher die <strong>Google Play Nutzungsbedingungen</strong> und die Erstattungsrichtlinien von Google. Der Anbieter kann Zahlungen weder entgegennehmen noch selbst erstatten.</p>
+            </div>
+            <div class="section">
+                <ol>
+                    <li>Premium-Funktionen (z.B. erweiterte Beutenkontingente, Veterinäramt-Integration) sind kostenpflichtig. Der Anbieter stellt die Funktionen technisch bereit; der Kaufvertrag kommt mit Google Commerce Limited zustande.</li>
+                    <li>Preise werden im Google Play Store vor dem Kauf angezeigt, inklusive der jeweils geltenden Umsatzsteuer.</li>
+                    <li><strong>Abonnements verlängern sich automatisch</strong> um die jeweils gewählte Laufzeit, sofern sie nicht vor Ablauf der laufenden Periode gekündigt werden. Die Kündigung erfolgt in der Abo-Verwaltung des Google Play Stores. Google informiert Sie vor jeder Verlängerung gemäß seinen Bedingungen.</li>
+                    <li><strong>Einmalkäufe</strong> (als solche im Play Store gekennzeichnet) verlängern sich nicht und laufen nicht ab.</li>
+                    <li>Erstattungen richten sich ausschließlich nach den Richtlinien des Google Play Stores. Anträge stellen Sie über Ihr Google-Konto.</li>
+                    <li>Zahlungen erfolgen über Google Play. Der Anbieter erhält und speichert <strong>keine Zahlungsdaten</strong>.</li>
+                </ol>
+            </div>
+
+            <h2>§10 Verfügbarkeit und Änderungen</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Anbieter behält sich vor, die App jederzeit zu ändern oder einzustellen, Premium-Funktionen zu ändern oder zu entfernen und Preise für Premium-Funktionen anzupassen (nur für neue Käufe).</li>
+                    <li>Es besteht kein Anspruch auf fortwährende Verfügbarkeit.</li>
+                </ol>
+            </div>
+
+            <h2>§11 Kündigung</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Nutzer kann die App jederzeit durch Löschen vom Gerät beenden.</li>
+                    <li>Der Anbieter kann den Vertrag mit 14-tägiger Frist kündigen (nur bei Premium-Funktionen mit anteiliger Erstattung).</li>
+                    <li>Nach Kündigung werden alle Nutzerdaten spätestens nach 30 Tagen gelöscht.</li>
+                </ol>
+            </div>
+
+            <h2>§12 Rechtswahl und Gerichtsstand</h2>
+            <div class="section">
+                <ol>
+                    <li>Es gilt österreichisches Recht unter Ausschluss des UN-Kaufrechts (CISG). Für Verträge mit Verbrauchern gilt das Allgemeine Bürgerliche Gesetzbuch (ABGB) ergänzend.</li>
+                    <li>Bei Verbrauchern, die ihren gewöhnlichen Aufenthalt in einem anderen EU-Mitgliedsstaat haben, bleiben zwingende Verbraucherschutzvorschriften des Aufenthaltsstaates unberührt (Art. 6 Rom-I-VO).</li>
+                    <li>Für die Zuständigkeit gegenüber Verbrauchern gelten die gesetzlichen Vorschriften (insb. § 14 KSchG, § 19a JN; Art. 17 ff. Brüssel-Ia-VO).</li>
+                    <li>Ist der Nutzer Unternehmer, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist ausschließlicher Gerichtsstand Karlsruhe.</li>
+                </ol>
+            </div>
+
+            <h2>§13 Rücktrittsrecht für Konsumenten</h2>
+            <div class="warning">
+                <p><strong>Das Rücktrittsrecht besteht gegenüber Google, nicht gegenüber dem Anbieter.</strong></p>
+                <p>Da der Kaufvertrag über Premium-Funktionen mit <strong>Google Commerce Limited</strong> zustande kommt, richtet sich ein Rücktritt ausschließlich gegen Google. Der Anbieter ist insoweit nicht Ihr Vertragspartner und kann einen Rücktritt weder entgegennehmen noch eine Erstattung veranlassen.</p>
+            </div>
+            <div class="section">
+                <h3>Muster-Rücktrittsbelehrung</h3>
+                <div style="background: #fff3e0; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p><strong>Rücktrittsrecht</strong></p>
+                    <p>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.</p>
+                    <p>Um Ihr Rücktrittsrecht auszuüben, müssen Sie uns nicht kontaktieren, sondern richten Sie Ihren Rücktritt direkt an Google über Ihr Google-Konto (Google Play → Konto → Bestellverlauf → Problem melden).</p>
+                    <p><strong>Folgen des Rücktritts:</strong> Wenn Sie von Ihrem Rücktrittsrecht Gebrauch machen, werden Ihnen alle Zahlungen von Google zurückerstattet.</p>
+                    <p><strong>Digitale Inhalte und Dienstleistungen:</strong> Bei sofort freigeschalteten digitalen Inhalten oder Dienstleistungen kann das Rücktrittsrecht vorzeitig erlöschen, wenn Sie der sofortigen Ausführung ausdrücklich zugestimmt und Ihre Kenntnis vom Verlust des Rücktrittsrechts bestätigt haben. Ob und wie diese Zustimmung eingeholt wird, bestimmt der Kaufprozess von Google Play.</p>
+                </div>
+
+                <h3>Muster-Rücktrittsformular</h3>
+                <div style="background: #fff3e0; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                    <p>(Wenn Sie den Vertrag rückgängig machen wollen, dann füllen Sie dieses Formular aus und senden Sie es über Google Play an Google Commerce Limited.)</p>
+                    <p>– An Google Commerce Limited, Gordon House, Barrow Street, Dublin 4, Irland<br>
+                    – Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über den Kauf von Premium-Funktionen.<br>
+                    – Name des/der Konsumenten<br>
+                    – Anschrift des/der Konsumenten<br>
+                    – Nummer der Bestellung / des Abonnements<br>
+                    – Datum der Bestellung<br>
+                    – Unterschrift des/der Konsumenten (bei elektronischer Übermittlung in Textform ausreichend)<br>
+                    – Datum</p>
+                </div>
+
+                <h3>§13a Rücktrittsfunktion (Widerrufsbutton)</h3>
+                <p>Für Käufe über den Google Play Store stellt Google Commerce Limited als Plattformbetreiber die Rücktrittsfunktion gemäß § 13a FAGG zentral bereit. Informationen zur Rücktrittsfunktion und deren Platzierung finden Sie in Ihrem Google Play Konto unter „Bestellverlauf" → „Problem melden". Für den in Zukunft geplanten WooCommerce-Shop (externe Weiterleitung für Waren wie Honig) wird die Rücktrittsfunktion auf der externen WooCommerce-Webseite bereitgestellt.</p>
+            </div>
+
+            <h2>§14 Verbraucherschlichtung und Streitbeilegung</h2>
+            <div class="section">
+                <ol>
+                    <li>Der Anbieter ist <strong>nicht bereit und nicht verpflichtet</strong>, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle gemäß § 19 AStG (Alternativ-Streitbeilegung-Gesetz) teilzunehmen.</li>
+                    <li><strong>Hinweis für Konsumenten mit Wohnsitz in Österreich:</strong> Als in Deutschland niedergelassener Anbieter unterliegen wir nicht der Verpflichtung zur Teilnahme an österreichischen Schlichtungsverfahren nach dem AStG. Verbraucher können sich jedoch an die folgende Stelle wenden:</li>
+                </ol>
+                <div style="margin: 1rem 0; padding: 1rem; background: #fff3e0; border-left: 4px solid #ffc107;">
+                    <strong>Internet Ombudsstelle (ÖIAT)</strong><br>
+                    Mariahilfer Straße 103/1/18, 1060 Wien, Österreich<br>
+                    E-Mail: <a href="mailto:office@ombudsstelle.at">office@ombudsstelle.at</a><br>
+                    Web: <a href="https://www.ombudsstelle.at" target="_blank" rel="noopener">ombudsstelle.at</a>
+                </div>
+                <ol start="3">
+                    <li><strong>Schlichtung für Verbrauchergeschäfte</strong><br>
+                    Außergerichtliche Streitbeilegung gemäß § 19 AStG:<br>
+                    Schlichtung für Verbrauchergeschäfte<br>
+                    Mariahilfer Straße 103/1/18, 1060 Wien, Österreich<br>
+                    E-Mail: <a href="mailto:office@schlichtung.at">office@schlichtung.at</a><br>
+                    Web: <a href="https://www.schlichtung.at" target="_blank" rel="noopener">schlichtung.at</a></li>
+                    <li>Verbraucher in anderen EU-Mitgliedstaaten finden die zuständige Stelle über die Liste der Europäischen Kommission: <a href="https://consumer-redress.ec.europa.eu/dispute-resolution-bodies" target="_blank" rel="noopener">consumer-redress.ec.europa.eu/dispute-resolution-bodies</a>.</li>
+                    <li>Betrifft die Streitigkeit den Kaufvertrag (Zahlung, Erstattung), ist Google Commerce Limited der richtige Ansprechpartner; siehe §9 und §13.</li>
+                </ol>
+                <p style="font-size:0.9em;opacity:0.85;">Hinweis: Die frühere EU-Plattform zur Online-Streitbeilegung (OS-Plattform) wurde durch die Verordnung (EU) 2024/3228 aufgehoben und ist seit dem 20. Juli 2025 nicht mehr erreichbar.</p>
+            </div>
+
+            <h2>§15 Salvatorische Klausel</h2>
+            <div class="success">
+                <ol style="margin: 0;">
+                    <li>Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt.</li>
+                    <li>Die ganz oder teilweise unwirksame Regelung wird durch eine wirksame Regelung ersetzt, die dem wirtschaftlichen Zweck der ursprünglichen Regelung am nächsten kommt.</li>
+                    <li>Das Gleiche gilt, wenn die AGB eine Lücke enthalten.</li>
+                    <li>Mündliche Nebenabreden bestehen nicht. Änderungen bedürfen der Schriftform.</li>
+                </ol>
+            </div>
+
+            <h2>§16 Sprache</h2>
+            <div class="section">
+                <p>Diese AGB wurden in deutscher Sprache (Österreich) verfasst. Andere Sprachfassungen sind unverbindliche Übersetzungen. <strong>Bei Abweichungen ist ausschließlich die deutsche Fassung (AT) verbindlich.</strong></p>
+            </div>
+
+            <h2>§17 Kontakt</h2>
+            <div class="contact-box">
+                <h3>Anbieter</h3>
+                <ul>
+                    <li><strong>Entwickler:</strong> Jens Kübler</li>
+                    <li><strong>Anschrift:</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Deutschland</li>
+                    <li><strong>E-Mail:</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                </ul>
+            </div>
+
+            <div class="highlight" style="margin-top: 2rem;">
+                <p><strong>Hinweis:</strong> Diese AGB wurden nach bestem Wissen unter Berücksichtigung der zum Zeitpunkt der Erstellung geltenden Rechtslage formuliert. Eine rechtliche Prüfung durch einen Fachanwalt für IT-Recht vor produktivem Einsatz wird empfohlen.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Beemaster | <a href="index.html">Datenschutz</a> | <a href="eula_at.html">EULA</a> | <a href="impressum_at.html">Impressum</a></p>
+            <p>Diese AGB gelten für die Beemaster Android App. Version 2026-08-18 (Österreich). <a href="agb.html">Deutsch (DE)</a> | <a href="agb_en.html">English</a></p>
+        </footer>
+    </div>
+</body>
+</html>
