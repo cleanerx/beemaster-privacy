@@ -120,7 +120,8 @@
     <div class="container">
         <div class="lang-switch">
             <a href="index.html">🇩🇪 Deutsch</a> |
-            <a href="privacy_en.html" class="active">🇬🇧 English</a>
+            <a href="privacy_en.html" class="active">🇬🇧 English</a> |
+            <a href="privacy_cs.html">🇨🇿 Čeština</a>
         </div>
         <header>
             <div class="bee-icon">🐝</div>
@@ -345,10 +346,103 @@
                 <li>✅ Regular security updates</li>
             </ul>
 
-            <h2>10. Changes</h2>
+            <h2>10. Google OAuth Authentication</h2>
+            <p>This App uses Google OAuth 2.0 for user authentication. When signing in with Google, the following data is processed:</p>
+
+            <table class="data-table">
+                <tr>
+                    <th>Data Type</th>
+                    <th>Purpose</th>
+                    <th>Legal Basis</th>
+                </tr>
+                <tr>
+                    <td>Google Account Email</td>
+                    <td>Account creation and authentication</td>
+                    <td>Art. 6 (1) lit. a GDPR (Consent)</td>
+                </tr>
+                <tr>
+                    <td>Google Profile Name</td>
+                    <td>User display in the App</td>
+                    <td>Art. 6 (1) lit. a GDPR (Consent)</td>
+                </tr>
+                <tr>
+                    <td>Google Profile Picture (optional)</td>
+                    <td>User display in the App</td>
+                    <td>Art. 6 (1) lit. a GDPR (Consent)</td>
+                </tr>
+                <tr>
+                    <td>Google User ID</td>
+                    <td>Unique user identification</td>
+                    <td>Art. 6 (1) lit. a GDPR (Consent)</td>
+                </tr>
+            </table>
+
+            <h3>📊 Google OAuth Scopes Requested</h3>
+            <p>The App requests the following permissions from Google:</p>
+            <ul>
+                <li><code>https://www.googleapis.com/auth/userinfo.email</code> – Access to your Google Account email address</li>
+                <li><code>https://www.googleapis.com/auth/userinfo.profile</code> – Access to your Google Profile (name, picture)</li>
+                <li><code>openid</code> – OpenID Connect for secure authentication</li>
+            </ul>
+
+            <div class="success">
+                <p><strong>✓ Minimal Permissions:</strong> We request only the absolutely necessary Google permissions. No read access to Gmail, Google Drive, or other Google services.</p>
+            </div>
+
+            <h3>🔄 Data Transfer to Supabase</h3>
+            <p>For storing authentication data, Supabase (Supabase Inc., 548 Market St, San Francisco, CA 94104, USA) is used as a data processor:</p>
+            <ul>
+                <li><strong>Purpose:</strong> JWT token management and user authentication</li>
+                <li><strong>Legal Basis:</strong> Art. 6 (1) lit. b GDPR (Contract performance)</li>
+                <li><strong>Safeguards:</strong> EU Standard Contractual Clauses (Art. 46 GDPR)</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+            </ul>
+
+            <h3>💾 Storage and Deletion</h3>
+            <ul>
+                <li><strong>Storage Period:</strong> Until account deletion or App uninstallation</li>
+                <li><strong>Deletion:</strong> Automatically upon logout or manual account deletion in the App</li>
+                <li><strong>Withdrawal:</strong> You can withdraw consent at any time by:
+                    <ul>
+                        <li>Logging out in the App (Settings → Account → Logout)</li>
+                        <li>Revoking Google permission at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>🇺🇸 Third Country Transfer</h3>
+            <p>Google is a US company. Data transfer to the US is based on an adequacy decision by the EU Commission (EU-US Data Privacy Framework, July 2023).</p>
+            <ul>
+                <li><strong>Google Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+                <li><strong>Google Terms:</strong> <a href="https://policies.google.com/terms" target="_blank" rel="noopener">policies.google.com/terms</a></li>
+            </ul>
+
+            <h2>11. Changes</h2>
             <p>This Privacy Policy may be updated. You will be notified of material changes within the App.</p>
 
-            <h2>11. Language</h2>
+            <h2>12. Changelog</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Version</th>
+                    <th>Date</th>
+                    <th>Change</th>
+                    <th>Re-Consent Required?</th>
+                </tr>
+                <tr>
+                    <td>2.0</td>
+                    <td>2026-08-18</td>
+                    <td>Added Google OAuth Authentication, added OAuth-specific data processing</td>
+                    <td>✅ Yes (new data processing)</td>
+                </tr>
+                <tr>
+                    <td>1.0</td>
+                    <td>2026-05-05</td>
+                    <td>Initial version</td>
+                    <td>-</td>
+                </tr>
+            </table>
+
+            <h2>13. Language</h2>
             <p>This Privacy Policy was drafted in German. The English version is a courtesy translation. <strong>In the event of any discrepancy between the German and English versions, the German version shall prevail.</strong></p>
 
             <div class="contact-box">
@@ -364,7 +458,7 @@
         <footer>
             <p>🐝 Beemaster – professional beekeeping</p>
             <p>© 2026 Jens Kübler | <a href="agb_en.html">Terms</a> | <a href="eula_en.html">EULA</a> | <a href="impressum_en.html">Legal Notice</a></p>
-            <p>Privacy Policy Version 2026-05-05. <a href="index.html">Deutsche Version</a></p>
+            <p>Privacy Policy Version 2.0 (2026-08-18). <a href="index.html">Deutsche Version</a></p>
         </footer>
     </div>
 </body>

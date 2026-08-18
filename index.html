@@ -177,7 +177,8 @@
 
         <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
             <a href="index.html" style="color:#8b4513;text-decoration:none;font-weight:bold;text-decoration:underline;">🇩🇪 Deutsch</a> |
-            <a href="privacy_en.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a>
+            <a href="privacy_en.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a> |
+            <a href="privacy_cs.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇨🇿 Čeština</a>
         </div>
 
         <nav style="display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
@@ -392,10 +393,103 @@
                 <li>✅ Regelmäßige Sicherheits-Updates</li>
             </ul>
 
-            <h2>10. Änderungen</h2>
+            <h2>10. Google OAuth Authentication</h2>
+            <p>Diese App verwendet Google OAuth 2.0 für die Benutzerauthentifizierung. Bei der Anmeldung mit Google werden folgende Daten verarbeitet:</p>
+
+            <table class="data-table">
+                <tr>
+                    <th>Datentyp</th>
+                    <th>Zweck</th>
+                    <th>Rechtsgrundlage</th>
+                </tr>
+                <tr>
+                    <td>Google Account E-Mail</td>
+                    <td>Account-Erstellung und Authentifizierung</td>
+                    <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</td>
+                </tr>
+                <tr>
+                    <td>Google Profilname</td>
+                    <td>Benutzerdarstellung in der App</td>
+                    <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</td>
+                </tr>
+                <tr>
+                    <td>Google Profilbild (optional)</td>
+                    <td>Benutzerdarstellung in der App</td>
+                    <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</td>
+                </tr>
+                <tr>
+                    <td>Google User ID</td>
+                    <td>Eindeutige Benutzeridentifikation</td>
+                    <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</td>
+                </tr>
+            </table>
+
+            <h3>📊 Verarbeitete Google OAuth Scopes</h3>
+            <p>Die App fordert folgende Berechtigungen von Google an:</p>
+            <ul>
+                <li><code>https://www.googleapis.com/auth/userinfo.email</code> – Zugriff auf deine Google Account E-Mail-Adresse</li>
+                <li><code>https://www.googleapis.com/auth/userinfo.profile</code> – Zugriff auf dein Google Profil (Name, Bild)</li>
+                <li><code>openid</code> – OpenID Connect für sichere Authentifizierung</li>
+            </ul>
+
+            <div class="success">
+                <p><strong>✓ Minimale Berechtigungen:</strong> Wir fordern nur die absolut notwendigen Google-Berechtigungen an. Keine Lesezugriffe auf Gmail, Google Drive oder andere Google-Dienste.</p>
+            </div>
+
+            <h3>🔄 Datenweitergabe an Supabase</h3>
+            <p>Zur Speicherung der Authentifizierungsdaten wird Supabase (Supabase Inc., 548 Market St, San Francisco, CA 94104, USA) als Auftragsverarbeiter eingesetzt:</p>
+            <ul>
+                <li><strong>Zweck:</strong> JWT-Token-Verwaltung und Benutzerauthentifizierung</li>
+                <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</li>
+                <li><strong>Garantien:</strong> EU-Standardvertragsklauseln (Art. 46 DSGVO)</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+            </ul>
+
+            <h3>💾 Speicherung und Löschung</h3>
+            <ul>
+                <li><strong>Speicherdauer:</strong> Bis zur Account-Löschung oder App-Deinstallation</li>
+                <li><strong>Löschung:</strong> Automatisch bei Abmeldung oder manueller Account-Löschung in der App</li>
+                <li><strong>Widerruf:</strong> Du kannst die Einwilligung jederzeit widerrufen durch:
+                    <ul>
+                        <li>Abmeldung in der App (Einstellungen → Account → Abmelden)</li>
+                        <li>Widerruf der Google-Berechtigung unter <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>🇺🇸 Drittlandübermittlung</h3>
+            <p>Google ist ein US-Unternehmen. Die Datenübermittlung in die USA erfolgt auf Grundlage eines Angemessenheitsbeschlusses der EU-Kommission (EU-US Data Privacy Framework, Juli 2023).</p>
+            <ul>
+                <li><strong>Google Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+                <li><strong>Google Terms:</strong> <a href="https://policies.google.com/terms" target="_blank" rel="noopener">policies.google.com/terms</a></li>
+            </ul>
+
+            <h2>11. Änderungen</h2>
             <p>Diese Datenschutzerklärung kann aktualisiert werden. Bei wesentlichen Änderungen wirst du in der App informiert.</p>
 
-            <h2>11. Sprache</h2>
+            <h2>12. Changelog</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Version</th>
+                    <th>Datum</th>
+                    <th>Änderung</th>
+                    <th>Re-Consent erforderlich?</th>
+                </tr>
+                <tr>
+                    <td>2.0</td>
+                    <td>2026-08-18</td>
+                    <td>Google OAuth Authentication hinzugefügt, OAuth-spezifische Datenverarbeitung ergänzt</td>
+                    <td>✅ Ja (neue Datenverarbeitung)</td>
+                </tr>
+                <tr>
+                    <td>1.0</td>
+                    <td>2026-05-05</td>
+                    <td>Initiale Version</td>
+                    <td>-</td>
+                </tr>
+            </table>
+
+            <h2>13. Sprache</h2>
             <p>Diese Datenschutzerklärung wurde in deutscher Sprache verfasst. Die englische Fassung (<a href="privacy_en.html">English version</a>) ist eine unverbindliche Übersetzung. <strong>Bei Abweichungen zwischen der deutschen und der englischen Fassung ist ausschließlich die deutsche Fassung verbindlich.</strong></p>
 
             <div class="contact-box">
@@ -411,7 +505,7 @@
         <footer>
             <p>🐝 Beemaster - professionelle Bienenverwaltung</p>
             <p>© 2026 Jens Kübler | <a href="agb.html">AGB</a> | <a href="eula.html">EULA</a> | <a href="impressum.html">Impressum</a></p>
-            <p>Datenschutzerklärung Version 2026-05-05. <a href="privacy_en.html">English version</a></p>
+            <p>Datenschutzerklärung Version 2.0 (2026-08-18). <a href="privacy_en.html">English version</a></p>
         </footer>
     </div>
 </body>

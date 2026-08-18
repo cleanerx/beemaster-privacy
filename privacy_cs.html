@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zásady ochrany osobních údajů | Beemaster</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #d4a574;
+            margin-bottom: 2rem;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .lang-switch a {
+            color: #8b4513;
+            text-decoration: none;
+            margin-left: 0.5rem;
+        }
+        .lang-switch a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .app-name { font-size: 2.5rem; font-weight: 700; color: #8b4513; margin-bottom: 0.5rem; }
+        .app-name span { color: #f5a623; }
+        .subtitle { color: #666; font-size: 1.1rem; }
+        .bee-icon { font-size: 3rem; margin-bottom: 1rem; }
+        main {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #8b4513;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f5a623;
+        }
+        h2 { color: #333; font-size: 1.4rem; margin: 2rem 0 1rem; }
+        h3 { color: #555; font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
+        p { margin-bottom: 1rem; color: #444; }
+        ul { margin: 1rem 0 1rem 2rem; color: #444; }
+        li { margin-bottom: 0.5rem; }
+        .highlight {
+            background: #fff8e7;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f5a623;
+            margin: 1.5rem 0;
+        }
+        .warning {
+            background: #fff3f3;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+            margin: 1.5rem 0;
+        }
+        .success {
+            background: #f0fff0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            margin: 1.5rem 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .data-table th, .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th { background: #f5a623; color: white; }
+        .data-table tr:nth-child(even) { background: #fafafa; }
+        .contact-box {
+            background: linear-gradient(135deg, #8b4513, #a0522d);
+            color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 { color: #f5a623; margin-top: 0; }
+        .contact-box a { color: #f5a623; }
+        a { color: #8b4513; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .last-updated { color: #888; font-size: 0.9rem; margin-top: 1rem; }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            main { padding: 1.5rem; }
+            .app-name { font-size: 2rem; }
+            .data-table { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="index.html">🇩🇪 Deutsch</a> |
+            <a href="privacy_en.html">🇬🇧 English</a> |
+            <a href="privacy_cs.html" class="active">🇨🇿 Čeština</a>
+        </div>
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">Aplikace pro včelaře</p>
+            <p class="last-updated">Verze 2.0 (2026-08-18) – Poslední aktualizace: 18. srpna 2026</p>
+        </header>
+
+        <nav style="display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
+            <a href="index.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Datenschutz</a>
+            <a href="privacy_en.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Privacy</a>
+            <a href="privacy_cs.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;font-weight:bold;">Soukromí</a>
+            <a href="agb.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">AGB</a>
+            <a href="eula.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">EULA</a>
+            <a href="impressum.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Impressum</a>
+        </nav>
+
+        <main>
+            <h1>Zásady ochrany osobních údajů</h1>
+
+            <div class="highlight">
+                <p><strong>Důležité upozornění ohledně jazyka:</strong> Tyto zásady ochrany osobních údajů byly původně vypracovány v němčině. Níže uvedená anglická a česká verze jsou nezávazné překlady. <strong>V případě jakýchkoli rozporů mezi německou, anglickou a českou verzí rozhoduje německá verze.</strong> Původní německá verze je k dispozici na <a href="index.html">index.html</a>.</p>
+            </div>
+
+            <div class="highlight">
+                <p><strong>Shrnutí:</strong> Beemaster ukládá všechna data lokálně na vašem zařízení. Osobní údaje jsou šifrovány. Nejsou shromažďovány žádné reklamní ani marketingové údaje. Údaje o vašich úlech zůstávají u vás.</p>
+            </div>
+
+            <h2>1. Správce (čl. 4 odst. 7 GDPR)</h2>
+            <p>Správcem odpovědným za zpracování údajů ve smyslu GDPR je:</p>
+            <ul>
+                <li><strong>Jméno:</strong> Jens Kübler</li>
+                <li><strong>Adresa:</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Německo</li>
+                <li><strong>Email:</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+            </ul>
+            <p>Nebyl jmenován žádný pověřenec pro ochranu osobních údajů (není ze zákona vyžadován).</p>
+
+            <h2>1a. Právní základy pro zpracování</h2>
+            <p>Pokud zpracováváme osobní údaje, zpracování je založeno na následujících právních základech:</p>
+            <ul>
+                <li><strong>Čl. 6 odst. 1 písm. a GDPR</strong> – souhlas (např. volitelný profil včelaře, přístup k poloze, hlasové poznámky, Firebase Analytics)</li>
+                <li><strong>Čl. 6 odst. 1 písm. b GDPR</strong> – plnění smlouvy (poskytování funkcí aplikace, nákupy premium)</li>
+                <li><strong>Čl. 6 odst. 1 písm. c GDPR</strong> – právní povinnost (např. povinnosti uchovávání podle obchodního/daňového práva)</li>
+                <li><strong>Čl. 6 odst. 1 písm. f GDPR</strong> – oprávněný zájem (např. stabilita, bezpečnost, Crashlytics pro opravu chyb)</li>
+            </ul>
+
+            <h2>2. Jaké údaje jsou shromažďovány?</h2>
+
+            <h3>📱 Požadovaná data aplikace</h3>
+            <p>Údaje potřebné pro základní funkce aplikace:</p>
+            <table class="data-table">
+                <tr>
+                    <th>Typ údaje</th>
+                    <th>Účel</th>
+                    <th>Uložení</th>
+                </tr>
+                <tr>
+                    <td>Údaje o úlech</td>
+                    <td>Správa vaší včelárny</td>
+                    <td>Lokálně na zařízení</td>
+                </tr>
+                <tr>
+                    <td>Poznámky z prohlídek</td>
+                    <td>Dokumentace</td>
+                    <td>Lokálně na zařízení</td>
+                </tr>
+                <tr>
+                    <td>GPS polohy</td>
+                    <td>Zobrazení úlů na mapě</td>
+                    <td>Lokálně na zařízení</td>
+                </tr>
+                <tr>
+                    <td>Připomínky</td>
+                    <td>Oznámení</td>
+                    <td>Lokálně na zařízení</td>
+                </tr>
+            </table>
+
+            <h3>👤 Volitelné osobní údaje</h3>
+            <p>Pro svůj profil včelaře můžete volitelně poskytnout:</p>
+            <ul>
+                <li>Jméno / název včelárny</li>
+                <li>Emailová adresa</li>
+                <li>Telefonní číslo</li>
+                <li>Adresa / poloha</li>
+            </ul>
+            <div class="success">
+                <p><strong>✓ Šifrování:</strong> Osobní údaje jsou uloženy šifrovaně pomocí Android Keystore.</p>
+            </div>
+
+            <h3>📸 Média</h3>
+            <ul>
+                <li><strong>Fotografie:</strong> Obrázky úlů (volitelné, uloženo lokálně)</li>
+                <li><strong>Hlasové poznámky:</strong> Audio nahrávky (volitelné, uloženo lokálně)</li>
+            </ul>
+
+            <h3>📊 Automaticky shromažďovaná data</h3>
+            <table class="data-table">
+                <tr>
+                    <th>Typ údaje</th>
+                    <th>Účel</th>
+                    <th>Sdíleno s třetími stranami?</th>
+                </tr>
+                <tr>
+                    <td>Protokoly selhání</td>
+                    <td>Zlepšení stability aplikace</td>
+                    <td>Firebase Crashlytics</td>
+                </tr>
+                <tr>
+                    <td>Statistiky používání</td>
+                    <td>Zlepšení aplikace</td>
+                    <td>Firebase Analytics</td>
+                </tr>
+                <tr>
+                    <td>ID zařízení</td>
+                    <td>Diagnostika chyb</td>
+                    <td>Firebase</td>
+                </tr>
+            </table>
+
+            <div class="warning">
+                <p><strong>⚠️ Ochrana údajů Firebase:</strong> Protokoly selhání a anonymní statistiky používání jsou přenášeny do Google Firebase. Více informací: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
+            </div>
+
+            <h2>3. Údaje, které NEJSOU shromažďovány</h2>
+            <div class="success">
+                <p>Beemaster <strong>ne</strong>shromažďuje:</p>
+                <ul>
+                    <li>❌ Žádné reklamní ID</li>
+                    <li>❌ Žádná marketingová data</li>
+                    <li>❌ Žádné kontakty bez souhlasu</li>
+                    <li>❌ Žádné SMS ani hovory</li>
+                    <li>❌ Žádnou historii prohlížení</li>
+                    <li>❌ Žádná zdravotní data</li>
+                    <li>❌ Žádná finanční data</li>
+                    <li>❌ Žádné profily sociálních médií</li>
+                </ul>
+            </div>
+
+            <h2>4. Oprávnění</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Oprávnění</th>
+                    <th>Použití</th>
+                </tr>
+                <tr>
+                    <td>Poloha (GPS)</td>
+                    <td>Zobrazení úlů na mapě</td>
+                </tr>
+                <tr>
+                    <td>Fotoaparát</td>
+                    <td>Fotografie úlů</td>
+                </tr>
+                <tr>
+                    <td>Mikrofon</td>
+                    <td>Hlasové poznámky</td>
+                </tr>
+                <tr>
+                    <td>Oznámení</td>
+                    <td>Připomínky pro včelařské úkoly</td>
+                </tr>
+                <tr>
+                    <td>Úložiště</td>
+                    <td>Data mapy (OSMDroid)</td>
+                </tr>
+            </table>
+
+            <h2>5. Ukládání údajů</h2>
+            <h3>Lokálně na vašem zařízení</h3>
+            <ul>
+                <li><strong>Room databáze:</strong> Všechna data o úlech</li>
+                <li><strong>DataStore:</strong> Nastavení aplikace</li>
+                <li><strong>Android Keystore:</strong> Šifrovaná citlivá data</li>
+            </ul>
+
+            <h3>Žádný cloud (základní verze)</h3>
+            <div class="success">
+                <p><strong>✓ Vaše data zůstávají u vás:</strong> V bezplatné verzi nejsou žádná data uložena na serverech. Všechna data zůstávají lokálně na vašem zařízení.</p>
+            </div>
+
+            <h2>6. Poskytovatelé třetích stran</h2>
+            <h3>Firebase (Google)</h3>
+            <ul>
+                <li><strong>Crashlytics:</strong> Automatické hlášení chyb</li>
+                <li><strong>Analytics:</strong> Anonymní statistiky používání</li>
+                <li><strong>Ochrana osobních údajů:</strong> <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h3>OpenAI API (volitelné)</h3>
+            <ul>
+                <li><strong>Účel:</strong> AI-based včelařská asistence (premium)</li>
+                <li><strong>Aktivní:</strong> Pouze při explicitním použití</li>
+                <li><strong>Ochrana osobních údajů:</strong> <a href="https://openai.com/privacy">openai.com/privacy</a></li>
+            </ul>
+
+            <h2>7. Vaše práva (GDPR)</h2>
+            <p>Máte právo na:</p>
+            <ul>
+                <li><strong>Přístup (čl. 15 GDPR):</strong> Jaké údaje jsou o vás uloženy</li>
+                <li><strong>Opravu (čl. 16 GDPR):</strong> Oprava nesprávných údajů</li>
+                <li><strong>Výmaz (čl. 17 GDPR):</strong> Úplné vymazání všech údajů</li>
+                <li><strong>Omezení zpracování (čl. 18 GDPR)</strong></li>
+                <li><strong>Přenositelnost údajů (čl. 20 GDPR):</strong> Export ve strukturovaném, strojově čitelném formátu</li>
+                <li><strong>Námitku (čl. 21 GDPR):</strong> Proti zpracování založenému na oprávněných zájmech</li>
+                <li><strong>Odvolání souhlasu (čl. 7 odst. 3 GDPR):</strong> S účinkem do budoucna</li>
+            </ul>
+
+            <h3>Právo podat stížnost u dozorového úřadu (čl. 77 GDPR)</h3>
+            <p>Aniž jsou dotčeny jiné správní nebo soudní opravné prostředky, máte právo podat stížnost u dozorového úřadu, zejména v členském státě svého obvyklého pobytu. Dozorovým úřadem příslušným pro správce je:</p>
+            <p><strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg</strong> (Zemský komisař pro ochranu údajů a svobodu informací Bádenska-Württemberska)<br>
+                Lautenschlagerstraße 20, 70173 Stuttgart, Německo<br>
+                Email: poststelle@lfdi.bwl.de<br>
+                Web: <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener">www.baden-wuerttemberg.datenschutz.de</a>
+            </p>
+
+            <h2>8. Ochrana dětí a nezletilých</h2>
+            <p>Tato aplikace není určena pro děti mladší 13 let. Od dětí nejsou shromažďovány žádné cílené údaje.</p>
+
+            <h2>9. Bezpečnost údajů</h2>
+            <ul>
+                <li>✅ Šifrovaný přenos dat (HTTPS/TLS)</li>
+                <li>✅ Šifrované uložení (Android Keystore)</li>
+                <li>✅ Žádné cloudové úložiště (lokální data)</li>
+                <li>✅ Pravidelné aktualizace zabezpečení</li>
+            </ul>
+
+            <h2>10. Autentifikace Google OAuth</h2>
+            <p>Tato aplikace používá Google OAuth 2.0 pro autentifikaci uživatelů. Při přihlášení pomocí Google jsou zpracovávány následující údaje:</p>
+
+            <table class="data-table">
+                <tr>
+                    <th>Typ údaje</th>
+                    <th>Účel</th>
+                    <th>Právní základ</th>
+                </tr>
+                <tr>
+                    <td>Email účtu Google</td>
+                    <td>Vytvoření účtu a autentifikace</td>
+                    <td>Čl. 6 odst. 1 písm. a GDPR (souhlas)</td>
+                </tr>
+                <tr>
+                    <td>Jméno profilu Google</td>
+                    <td>Zobrazení uživatele v aplikaci</td>
+                    <td>Čl. 6 odst. 1 písm. a GDPR (souhlas)</td>
+                </tr>
+                <tr>
+                    <td>Obrázek profilu Google (volitelné)</td>
+                    <td>Zobrazení uživatele v aplikaci</td>
+                    <td>Čl. 6 odst. 1 písm. a GDPR (souhlas)</td>
+                </tr>
+                <tr>
+                    <td>ID uživatele Google</td>
+                    <td>Jednoznačná identifikace uživatele</td>
+                    <td>Čl. 6 odst. 1 písm. a GDPR (souhlas)</td>
+                </tr>
+            </table>
+
+            <h3>📊 Požadované rozsahy Google OAuth</h3>
+            <p>Aplikace požaduje následující oprávnění od Google:</p>
+            <ul>
+                <li><code>https://www.googleapis.com/auth/userinfo.email</code> – Přístup k emailové adrese vašeho účtu Google</li>
+                <li><code>https://www.googleapis.com/auth/userinfo.profile</code> – Přístup k vašemu profilu Google (jméno, obrázek)</li>
+                <li><code>openid</code> – OpenID Connect pro bezpečnou autentifikaci</li>
+            </ul>
+
+            <div class="success">
+                <p><strong>✓ Minimální oprávnění:</strong> Požadujeme pouze absolutně nezbytná oprávnění Google. Žádný přístup pro čtení do Gmailu, Google Drive nebo jiných služeb Google.</p>
+            </div>
+
+            <h3>🔄 Předávání údajů do Supabase</h3>
+            <p>Pro ukládání autentizačních údajů je používán Supabase (Supabase Inc., 548 Market St, San Francisco, CA 94104, USA) jako zpracovatel údajů:</p>
+            <ul>
+                <li><strong>Účel:</strong> Správa JWT tokenů a autentifikace uživatelů</li>
+                <li><strong>Právní základ:</strong> Čl. 6 odst. 1 písm. b GDPR (plnění smlouvy)</li>
+                <li><strong>Záruky:</strong> EU standardní smluvní doložky (čl. 46 GDPR)</li>
+                <li><strong>Zásady ochrany osobních údajů:</strong> <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+            </ul>
+
+            <h3>💾 Uložení a výmaz</h3>
+            <ul>
+                <li><strong>Doba uložení:</strong> Dokud není účet smazán nebo aplikace odinstalována</li>
+                <li><strong>Výmaz:</strong> Automaticky při odhlášení nebo ručním smazání účtu v aplikaci</li>
+                <li><strong>Odvolání:</strong> Souhlas můžete kdykoli odvolat prostřednictvím:
+                    <ul>
+                        <li>Odhlášení v aplikaci (Nastavení → Účet → Odhlásit)</li>
+                        <li>Zrušení oprávnění Google na <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>🇺🇸 Přes třetí země</h3>
+            <p>Google je americká společnost. Předávání údajů do USA probíhá na základě rozhodnutí Komise o přiměřenosti (EU-US Data Privacy Framework, červenec 2023).</p>
+            <ul>
+                <li><strong>Zásady ochrany osobních údajů Google:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+                <li><strong>Podmínky Google:</strong> <a href="https://policies.google.com/terms" target="_blank" rel="noopener">policies.google.com/terms</a></li>
+            </ul>
+
+            <h2>11. Změny</h2>
+            <p>Tyto zásady ochrany osobních údajů mohou být aktualizovány. O podstatných změnách budete informováni v aplikaci.</p>
+
+            <h2>12. Changelog</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Verze</th>
+                    <th>Datum</th>
+                    <th>Změna</th>
+                    <th>Je vyžadován nový souhlas?</th>
+                </tr>
+                <tr>
+                    <td>2.0</td>
+                    <td>2026-08-18</td>
+                    <td>Přidána autentifikace Google OAuth, doplněno zpracování údajů specifické pro OAuth</td>
+                    <td>✅ Ano (nové zpracování údajů)</td>
+                </tr>
+                <tr>
+                    <td>1.0</td>
+                    <td>2026-05-05</td>
+                    <td>Prvotní verze</td>
+                    <td>-</td>
+                </tr>
+            </table>
+
+            <h2>13. Jazyk</h2>
+            <p>Tyto zásady ochrany osobních údajů byly vypracovány v německém jazyce. Anglická a česká verze jsou nezávazné překlady. <strong>V případě jakýchkoli rozporů mezi německou, anglickou a českou verzí rozhoduje německá verze.</strong></p>
+
+            <div class="contact-box">
+                <h3>Kontakt pro dotazy</h3>
+                <p>Pro dotazy týkající se ochrany údajů nebo uplatnění vašich práv:</p>
+                <ul>
+                    <li>📧 Email: <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                    <li>📮 Adresa: Jens Kübler, Max-Beckmann-Straße 39, 76227 Karlsruhe, Německo</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>🐝 Beemaster – profesionální včelaření</p>
+            <p>© 2026 Jens Kübler | <a href="agb.html">AGB</a> | <a href="eula.html">EULA</a> | <a href="impressum.html">Impressum</a></p>
+            <p>Zásady ochrany osobních údajů Verze 2.0 (2026-08-18). <a href="index.html">Deutsche Version</a></p>
+        </footer>
+    </div>
+</body>
+</html>
