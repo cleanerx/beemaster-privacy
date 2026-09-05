@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.beemaster.app",
       "sha256_cert_fingerprints": [
-        "D0:8B:D4:A1:97:D4:6A:64:83:6A:18:AA:24:78:44:91:B9:9E:CA:5F:72:5C:1F:0C:92:04:4E:B5:3E:E8:95:AA"
+        "D0:8B:D4:A1:97:D4:6A:64:83:6A:18:AA:24:78:44:91:B9:9E:CA:5F:72:5C:1F:0C:92:04:4E:B5:3E:E8:95:AA",
+        "48:82:9F:AE:75:68:59:04:A4:93:01:B6:59:21:9F:29:19:A5:3D:C1:53:2F:E2:E6:46:FC:69:7D:6E:06:78:58"
       ]
     }
   }
