@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité | Beemaster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #d4a574;
+            margin-bottom: 2rem;
+        }
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8b4513;
+            margin-bottom: 0.5rem;
+        }
+        .app-name span {
+            color: #f5a623;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .bee-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        main {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #8b4513;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f5a623;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            color: #555;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #444;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            background: #fff8e7;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f5a623;
+            margin: 1.5rem 0;
+        }
+        .warning {
+            background: #fff3f3;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+            margin: 1.5rem 0;
+        }
+        .success {
+            background: #f0fff0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            margin: 1.5rem 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .data-table th, .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th {
+            background: #f5a623;
+            color: white;
+        }
+        .data-table tr:nth-child(even) {
+            background: #fafafa;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #8b4513, #a0522d);
+            color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 {
+            color: #f5a623;
+            margin-top: 0;
+        }
+        .contact-box a {
+            color: #f5a623;
+        }
+        a {
+            color: #8b4513;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .last-updated {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            main {
+                padding: 1.5rem;
+            }
+            .app-name {
+                font-size: 2rem;
+            }
+            .data-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">L'application de gestion de ruches pour les apiculteurs</p>
+            <p class="last-updated">Version 3.2 (2026-09-05) – Dernière mise à jour : 5 septembre 2026</p>
+        </header>
+
+        <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
+            <a href="index.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇩🇪 Deutsch</a> |
+            <a href="privacy_at.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇦🇹 Deutsch (AT)</a> |
+            <a href="privacy_en.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a> |
+            <a href="privacy_cs.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇨🇿 Čeština</a> |
+            <a href="privacy_bg.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇧🇬 Български</a> |
+            <a href="privacy_lu.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇱🇺 Français (LU)</a> |
+            <a href="privacy_fr.html" style="color:#8b4513;text-decoration:none;font-weight:bold;text-decoration:underline;margin-left:0.5rem;">🇫🇷 Français (FR)</a>
+        </div>
+
+        <nav style="display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
+            <a href="privacy_fr.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;font-weight:bold;">Protection des données</a>
+            <a href="agb_fr.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">CGV</a>
+            <a href="eula_fr.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">EULA</a>
+            <a href="impressum_fr.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Mentions légales</a>
+        </nav>
+
+        <main>
+            <h1>Politique de confidentialité</h1>
+
+            <div class="highlight">
+                <p><strong>Remarque importante sur la langue :</strong> Cette politique de confidentialité est la
+                version applicable et contraignante pour la France. Elle a été rédigée en langue française. Les
+                autres versions linguistiques sont des traductions non contraignantes. <strong>En cas de divergence,
+                seule la version française fait foi.</strong></p>
+            </div>
+
+            <div class="highlight">
+                <p><strong>Résumé :</strong> Beemaster stocke toutes les données localement sur votre appareil. Les
+                données personnelles sont chiffrées. Aucune donnée publicitaire ou marketing n'est collectée. Vos
+                données de ruches restent chez vous.</p>
+            </div>
+
+            <h2>1. Responsable du traitement (art. 4, pt 7, RGPD)</h2>
+            <p>Le responsable du traitement au sens du RGPD est :</p>
+            <ul>
+                <li><strong>Nom :</strong> Jens Kübler</li>
+                <li><strong>Adresse :</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Allemagne</li>
+                <li><strong>E-mail :</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+            </ul>
+            <p>Un délégué à la protection des données n'a pas été désigné (non requis par la loi).</p>
+
+            <h2>1a. Bases juridiques du traitement</h2>
+            <p>Lorsque nous traitons des données personnelles, le traitement repose sur les bases juridiques suivantes :</p>
+            <ul>
+                <li><strong>Art. 6, par. 1, lit. a, RGPD</strong> &ndash; consentement. Cela s'applique exclusivement aux :
+                    statistiques d'erreurs et d'utilisation (section 6.1) et à l'envoi de commentaires (section 6.5).
+                    Les deux sont désactivés par défaut ou purement facultatifs et peuvent être retirés à tout moment.</li>
+                <li><strong>Art. 6, par. 1, lit. b, RGPD</strong> &ndash; exécution d'un contrat : fourniture des
+                    fonctionnalités de l'application, affichage de la carte, récupération des données météo, déblocage
+                    des fonctionnalités achetées.</li>
+                <li><strong>Art. 6, par. 1, lit. c, RGPD</strong> &ndash; obligation légale (p. ex. obligations de
+                    conservation en droit commercial/fiscal).</li>
+                <li><strong>Art. 6, par. 1, lit. f, RGPD</strong> &ndash; intérêt légitime : prévention des abus et
+                    garantie du fonctionnement technique.</li>
+            </ul>
+            <div class="success">
+                <p><strong>Aucune violation de l'interdiction du couplage :</strong> L'acceptation de l'EULA, des CGV et
+                de la présente politique de confidentialité lors du premier lancement constitue un <em>acquiescement aux
+                conditions contractuelles</em> et n'est <strong>pas</strong> un consentement au sens de la protection des
+                données. Le traitement nécessitant un consentement est demandé séparément, volontairement et de manière
+                révocable (art. 7, par. 4, RGPD).</p>
+            </div>
+            <p style="font-size:0.9em;opacity:0.85;">Sources juridiques : Le règlement général sur la protection des
+            données est disponible sur
+            <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a>
+            (règlement (UE) 2016/679). La loi n° 78-17 du 6 janvier 1978 modifiée relative à l'informatique, aux
+            fichiers et aux libertés (Loi Informatique et Libertés) est disponible sur
+            <a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006068624" target="_blank" rel="noopener">Loi n° 78-17 du 6 janvier 1978 – Légifrance</a>.</p>
+
+            <h2>2. Quelles données sont collectées ?</h2>
+
+            <h3>📱 Données d'application requises</h3>
+            <p>Données nécessaires aux fonctions de base de l'application :</p>
+            <table class="data-table">
+                <tr>
+                    <th>Type de données</th>
+                    <th>Finalité</th>
+                    <th>Stockage</th>
+                </tr>
+                <tr>
+                    <td>Données de ruches</td>
+                    <td>Gestion de votre rucher</td>
+                    <td>Localement sur l'appareil</td>
+                </tr>
+                <tr>
+                    <td>Notes d'inspection</td>
+                    <td>Documentation</td>
+                    <td>Localement sur l'appareil</td>
+                </tr>
+                <tr>
+                    <td>Positions GPS</td>
+                    <td>Affichage cartographique des ruches</td>
+                    <td>Localement sur l'appareil</td>
+                </tr>
+                <tr>
+                    <td>Rappels</td>
+                    <td>Notifications</td>
+                    <td>Localement sur l'appareil</td>
+                </tr>
+            </table>
+
+            <h3>👤 Données personnelles facultatives</h3>
+            <p>Vous pouvez éventuellement fournir les données suivantes pour votre profil d'apiculteur :</p>
+            <ul>
+                <li>Nom / nom du rucher</li>
+                <li>Adresse e-mail</li>
+                <li>Numéro de téléphone</li>
+                <li>Adresse / lieu</li>
+            </ul>
+            <div class="success">
+                <p><strong>✓ Chiffrement :</strong> Les données personnelles sont stockées chiffrées à l'aide de l'Android Keystore.</p>
+            </div>
+
+            <h3>🔐 Données de compte (fonctionnalités premium)</h3>
+            <p>Pour utiliser les fonctionnalités premium (assistant IA, sauvegarde cloud, signalement des incidents RGPD), vous pouvez créer un compte :</p>
+            <table class="data-table">
+                <tr>
+                    <th>Type de données</th>
+                    <th>Finalité</th>
+                    <th>Stockage</th>
+                </tr>
+                <tr>
+                    <td>Adresse e-mail</td>
+                    <td>Création de compte, connexion</td>
+                    <td>Chiffrée chez Supabase (UE)</td>
+                </tr>
+                <tr>
+                    <td>Empreinte du mot de passe</td>
+                    <td>Authentification</td>
+                    <td>Chiffrée chez Supabase (UE)</td>
+                </tr>
+                <tr>
+                    <td>Statut du compte</td>
+                    <td>Déblocage premium</td>
+                    <td>Chiffrée chez Supabase (UE)</td>
+                </tr>
+                <tr>
+                    <td>10 crédits gratuits</td>
+                    <td>Utilisation d'essai gratuite</td>
+                    <td>Chiffrée chez Supabase (UE)</td>
+                </tr>
+            </table>
+            <div class="success">
+                <p><strong>✓ Conformité RGPD :</strong> Les données de compte sont stockées chiffrées dans un centre de données de l'UE (Irlande).</p>
+            </div>
+            <p><strong>Facultatif :</strong> La création d'un compte est facultative. Les fonctionnalités de base de l'application sont disponibles sans compte.</p>
+
+            <h3>📝 Système de commentaires (facultatif)</h3>
+            <p>Pour améliorer l'application, vous pouvez fournir des commentaires :</p>
+            <ul>
+                <li><strong>Données :</strong> texte du commentaire, catégorie (Bogue, Fonctionnalité, UI/UX, Performance, Autre), note (1-5 étoiles)</li>
+                <li><strong>Stockage :</strong> Local + chiffré vers le serveur</li>
+                <li><strong>Facultatif :</strong> Vous décidez si vous souhaitez envoyer un commentaire</li>
+                <li><strong>Anonyme :</strong> Aucun lien avec votre personne sauf si vous fournissez votre e-mail</li>
+            </ul>
+
+            <h3>📸 Médias</h3>
+            <ul>
+                <li><strong>Photos :</strong> Images de ruches (facultatif, stockées localement)</li>
+                <li><strong>Notes vocales :</strong> Enregistrements audio (facultatif, stockés localement)</li>
+            </ul>
+
+            <h3>📊 Statistiques d'erreurs et d'utilisation (uniquement avec consentement)</h3>
+            <div class="success">
+                <p><strong>Désactivé par défaut.</strong> Sans votre consentement exprès, <strong>aucun</strong>
+                rapport d'erreur et <strong>aucune</strong> statistique d'utilisation n'est collectée ou transmise. Vous
+                pouvez les activer &ndash; si vous le souhaitez &ndash; dans les réglages de l'application sous
+                « Statistiques d'erreurs et d'utilisation » et les désactiver à nouveau à tout moment.</p>
+            </div>
+            <p>Si le consentement a été donné, les données suivantes sont traitées :</p>
+            <table class="data-table">
+                <tr>
+                    <th>Type de données</th>
+                    <th>Finalité</th>
+                    <th>Destinataire</th>
+                </tr>
+                <tr>
+                    <td>Rapports d'erreur (trace de pile, version de l'app/OS, modèle d'appareil)</td>
+                    <td>Identification et correction des erreurs</td>
+                    <td>Firebase Crashlytics</td>
+                </tr>
+                <tr>
+                    <td>Événements d'utilisation agrégés (p. ex. écrans ouverts)</td>
+                    <td>Amélioration de l'application</td>
+                    <td>Firebase Analytics</td>
+                </tr>
+                <tr>
+                    <td>Identifiant d'installation généré de manière aléatoire</td>
+                    <td>Corrélation de plusieurs rapports du même appareil</td>
+                    <td>Firebase</td>
+                </tr>
+            </table>
+            <p><strong>Base juridique :</strong> Art. 6, par. 1, lit. a, RGPD (consentement). Le retrait est possible à tout
+            moment pour l'avenir et prend effet immédiatement. L'application peut être utilisée sans restriction sans ce
+            consentement &ndash; il n'y a <strong>pas de couplage</strong> avec l'acceptation des documents juridiques.</p>
+
+            <h3>🗄️ Supabase (infrastructure backend)</h3>
+            <ul>
+                <li><strong>Finalité :</strong> base de données, authentification, fonctions cloud pour le compte et les fonctionnalités premium</li>
+                <li><strong>Société :</strong> Supabase Inc., États-Unis</li>
+                <li><strong>Protection des données :</strong>
+                    <a href="https://supabase.com/legal/dpa" target="_blank" rel="noopener">supabase.com/legal/dpa</a>
+                </li>
+                <li><strong>Lieu de stockage :</strong> centre de données de l'UE (Irlande) – sélectionnable</li>
+                <li><strong>Base juridique :</strong> art. 6, par. 1, lit. b, RGPD (exécution du contrat)</li>
+                <li><strong>Contrat de traitement :</strong> Un contrat de traitement (DPA/AVV) existe avec Supabase conformément à l'art. 28 RGPD.
+                    Supabase s'engage à respecter le RGPD, les mesures de sécurité techniques (TLS, AES-256) et à
+                    signaler les violations de données dans un délai de 72 heures.
+                </li>
+            </ul>
+            <div class="success">
+                <p><strong>✓ Protection des données de l'UE :</strong> Vos données sont stockées dans le centre de données de l'UE (Irlande).
+                Supabase a signé les clauses contractuelles types (CCT) de l'UE pour tout transfert de données vers les États-Unis.</p>
+            </div>
+
+            <h2>3. Données NON collectées</h2>
+            <div class="success">
+                <p>Beemaster ne collecte <strong>pas</strong> :</p>
+                <ul>
+                    <li>❌ Aucun identifiant publicitaire</li>
+                    <li>❌ Aucune donnée marketing</li>
+                    <li>❌ Aucun contact sans consentement</li>
+                    <li>❌ Aucun SMS ni appel</li>
+                    <li>❌ Aucun historique de navigation</li>
+                    <li>❌ Aucune donnée de santé</li>
+                    <li>❌ Aucune donnée financière</li>
+                    <li>❌ Aucun profil de réseaux sociaux</li>
+                </ul>
+            </div>
+
+            <h2>4. Autorisations</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Autorisation</th>
+                    <th>Utilisation</th>
+                </tr>
+                <tr>
+                    <td>Localisation (GPS)</td>
+                    <td>Afficher les ruches sur la carte</td>
+                </tr>
+                <tr>
+                    <td>Caméra</td>
+                    <td>Photos des ruches</td>
+                </tr>
+                <tr>
+                    <td>Microphone</td>
+                    <td>Notes vocales</td>
+                </tr>
+                <tr>
+                    <td>Notifications</td>
+                    <td>Rappels pour les tâches apicoles</td>
+                </tr>
+                <tr>
+                    <td>Stockage</td>
+                    <td>Cache des tuiles de carte (MapLibre) et fichiers d'export/import</td>
+                </tr>
+            </table>
+
+            <h2>5. Stockage des données</h2>
+            <h3>Localement sur votre appareil</h3>
+            <ul>
+                <li><strong>Base de données Room :</strong> toutes les données de ruches</li>
+                <li><strong>DataStore :</strong> réglages de l'application</li>
+                <li><strong>Android Keystore :</strong> données sensibles chiffrées</li>
+            </ul>
+
+            <h3>Pas de cloud (version de base)</h3>
+            <div class="success">
+                <p><strong>✓ Vos données restent chez vous :</strong> Dans la version gratuite, aucune donnée n'est stockée sur des serveurs. Toutes les données restent localement sur votre appareil.</p>
+            </div>
+
+            <h2>6. Destinataires et fournisseurs tiers</h2>
+            <p>Ce qui suit répertorie chaque partie à laquelle des données personnelles peuvent être transmises lors de
+            l'utilisation de l'application. Un transfert n'a lieu que dans le cas décrit respectivement.</p>
+
+            <h3>6.1 Firebase Crashlytics et Firebase Analytics (Google Ireland Limited)</h3>
+            <ul>
+                <li><strong>Finalité :</strong> rapports d'erreur et statistiques d'utilisation agrégées pour la correction des bogues et l'amélioration de l'application.</li>
+                <li><strong>Données :</strong> modèle d'appareil, version de l'OS, version de l'application, trace de pile, identifiant d'installation généré de manière aléatoire, horodatage, région approximative.</li>
+                <li><strong>Base juridique :</strong> <strong>consentement</strong>, art. 6, par. 1, lit. a, RGPD.</li>
+                <li><strong>Désactivé par défaut.</strong> La collecte ne commence qu'une fois que vous l'activez dans les réglages de l'application sous « Statistiques d'erreurs et d'utilisation ». Vous pouvez la désactiver à nouveau à tout moment ; la collecte s'arrête alors immédiatement. L'application peut être utilisée pleinement sans ce consentement.</li>
+                <li><strong>Informations de confidentialité :</strong>
+                    <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h3>6.2 Google Play Billing et Google Play Core (Google Commerce Limited / Google Ireland Limited)</h3>
+            <ul>
+                <li><strong>Finalité :</strong> traitement des achats et abonnements, vérification du statut d'achat et livraison des mises à jour de l'application.</li>
+                <li><strong>Données :</strong> identifiant de compte Google, jeton d'achat, identifiant de produit, détails de l'application et de l'appareil. Le prestataire ne reçoit <strong>aucune</strong> donnée de paiement.</li>
+                <li><strong>Base juridique :</strong> art. 6, par. 1, lit. b, RGPD (exécution d'un contrat / fourniture de fonctionnalités achetées).</li>
+                <li><strong>Remarque :</strong> Le vendeur des fonctionnalités premium est Google Commerce Limited, et non le prestataire. Voir <a href="agb_fr.html">CGV §9</a>.</li>
+            </ul>
+
+            <h3>6.3 Affichage de la carte : MapLibre et fonds de carte CARTO</h3>
+            <ul>
+                <li><strong>Finalité :</strong> affichage des emplacements de vos ruches sur une carte.</li>
+                <li><strong>Données :</strong> lors du chargement des tuiles de carte, votre <strong>adresse IP</strong> est transmise au service cartographique <em>CARTO</em> (basemaps.cartocdn.com), ainsi que la section de carte demandée. Les données cartographiques proviennent des contributeurs d'OpenStreetMap.</li>
+                <li><strong>Base juridique :</strong> art. 6, par. 1, lit. b, RGPD (fourniture de la fonctionnalité carte).</li>
+                <li><strong>Évitabilité :</strong> le transfert n'a lieu que lorsque vous ouvrez une vue carte. La bibliothèque MapLibre Native elle-même ne transmet aucune donnée d'utilisation ou de télémétrie.</li>
+            </ul>
+
+            <h3>6.4 Données météo</h3>
+            <p>Pour l'affichage des données météo et la dérivation de recommandations de traitement (p. ex. adéquation du traitement varroa), les prestataires suivants sont utilisés selon la localisation :</p>
+            <ul>
+                <li><strong>Bright Sky (service météorologique allemand)</strong> pour l'Allemagne et la Bulgarie (CC BY 4.0). À cette fin, les <strong>coordonnées géographiques</strong> de la localisation demandée et l'adresse IP sont transmises à <em>api.brightsky.dev</em>. Aucune donnée de compte ni identifiant n'est envoyé.</li>
+                <li><strong>Services météorologiques nationaux</strong> pour la République tchèque (CHMI/ČHMÚ), la Hongrie (HungaroMet), la Pologne (IMGW-PIB) et la Slovaquie (SHMÚ) (respectivement CC BY 4.0 / CC BY-SA). Ces derniers accèdent à des <strong>données de stations publiques</strong> ; à cette fin, <strong>aucune coordonnée de localisation de l'utilisateur</strong> n'est transmise aux services. Seule l'adresse IP de l'appareil est transmise techniquement.</li>
+            </ul>
+            <p><strong>Base juridique :</strong> art. 6, par. 1, lit. b) du RGPD.</p>
+            <p><strong>Remarque :</strong> Avec Bright Sky, les coordonnées peuvent permettre de tirer des conclusions sur l'emplacement de vos ruchers. La requête n'est effectuée que si des coordonnées sont stockées pour une localisation.</p>
+
+            <h3>6.5 Fonction de commentaires (Supabase, région UE Irlande)</h3>
+            <ul>
+                <li><strong>Finalité :</strong> transmission de commentaires facultatifs des utilisateurs.</li>
+                <li><strong>Données :</strong> catégorie, note, commentaire en texte libre, version de l'application et un <strong>identifiant d'appareil pseudonyme</strong>. Ce dernier est formé comme un hachage SHA-256 de l'identifiant de l'appareil Android et sert uniquement à limiter les envois à un par appareil et par période. Il ne permet pas au prestataire de vous identifier.</li>
+                <li><strong>Base juridique :</strong> art. 6, par. 1, lit. a, RGPD (transmission volontaire en soumettant activement le formulaire).</li>
+                <li><strong>Traitement pour notre compte :</strong> Supabase Inc., hébergement dans l'UE (Irlande), accord conformément à l'art. 28 RGPD, clauses contractuelles types.</li>
+            </ul>
+
+            <h3>6.6 Fonctionnalités disponibles uniquement dans les versions de test</h3>
+            <div class="warning">
+                <p>L'application contient du code de programme pour un <strong>système de compte
+                avec crédits</strong> et une <strong>fonction de compte cloud</strong> facultative.
+                Ces fonctionnalités sont <strong>désactivées et inaccessibles</strong> dans la
+                version publiée publiquement. Aucun traitement de données n'a lieu à cet égard. Si
+                ces fonctionnalités devaient être activées à l'avenir, cette politique de
+                confidentialité sera mise à jour au préalable et un consentement sera à nouveau
+                demandé.</p>
+            </div>
+
+            <h3>6.7 Services du système d'exploitation côté appareil</h3>
+            <ul>
+                <li><strong>Reconnaissance / synthèse vocale :</strong> si vous utilisez la dictée ou la lecture à voix haute, le service configuré sur votre appareil (selon le fabricant, p. ex. Google ou Samsung) traite la saisie vocale. Ce service est soumis à la politique de confidentialité du fournisseur respectif ; le prestataire de cette application ne reçoit pas les données audio.</li>
+                <li><strong>Services de localisation :</strong> la localisation est déterminée via les services de votre appareil et uniquement après que vous avez expressément accordé l'autorisation.</li>
+            </ul>
+
+            <h3>6.8 Registres de consentement (art. 7, par. 1, RGPD)</h3>
+            <p>Pour prouver les consentements donnés (obligation de preuve du responsable du traitement au titre
+            de l'art. 7, par. 1, RGPD), une preuve de consentement est enregistrée lors de l'acceptation de l'EULA,
+            des CGV et de la présente politique de confidentialité. Cela se produit dès qu'un <strong>compte</strong>
+            est créé ou utilisé (le système de compte n'est actuellement disponible que dans les versions de test).
+            La preuve est stockée chiffrée chez Supabase (UE, Irlande) et contient :</p>
+            <ul>
+                <li>Identifiant d'utilisateur (identifiant utilisateur Supabase) et adresse e-mail</li>
+                <li>Version de la politique acceptée ainsi que le moment de l'accord</li>
+                <li>Somme de contrôle SHA-256 (hachage) du texte de la politique en vigueur au moment de l'accord</li>
+                <li>User-Agent (version de l'application/appareil) et adresse IP – déterminée par le serveur</li>
+                <li>Type de consentement (p. ex. PRIVACY, EULA, TERMS) et zone juridique</li>
+            </ul>
+            <p><strong>Conservation :</strong> Sans achat premium, la preuve est supprimée lors de la suppression
+            du compte. En cas d'achats premium, s'applique l'obligation légale de conservation en matière fiscale
+            (10 ans) ; en cas de litiges, la suppression est reportée jusqu'à la fin de la procédure plus 3 ans
+            (legal hold).</p>
+            <p><strong>Base juridique :</strong> art. 6, par. 1, lit. f, RGPD (intérêt légitime à établir la preuve
+            ou à satisfaire aux obligations légales de conservation).</p>
+
+            <h3>6.9 Mollie (Facturation alternative)</h3>
+            <p>Pour la « Facturation alternative » (Google User Choice Billing), le prestataire met à disposition un
+            traitement des paiements via un prestataire de services de paiement :</p>
+            <ul>
+                <li><strong>Finalité :</strong> traitement des paiements alternatifs intégrés à l'application (p. ex. crédits IA, paliers premium) en dehors de la facturation Google Play.</li>
+                <li><strong>Société :</strong> Mollie B.V. (prestataire de services de paiement).</li>
+                <li><strong>Données :</strong> données de commande/paiement (montant, devise, description, méthode de paiement) ainsi qu'une référence d'affectation. Le prestataire ne reçoit aucune donnée de paiement.</li>
+                <li><strong>Traitement :</strong> l'accès à l'API Mollie se fait <strong>côté serveur</strong> (fonction Edge Supabase, UE) ; la clé API n'est pas stockée dans l'application. L'application ouvre uniquement la page de paiement fournie par Mollie.</li>
+                <li><strong>Base juridique :</strong> art. 6, par. 1, lit. b, RGPD (exécution du contrat).</li>
+                <li><strong>Remarque :</strong> ce mode de facturation n'est actuellement disponible que dans les versions de test ; il n'est activé qu'après l'autorisation de Google Play.</li>
+            </ul>
+
+            <h3>6.10 Assistant vocal IA – Microsoft Azure AI Speech</h3>
+            <p>Pour l'assistant vocal IA facultatif (fonctionnalité premium), la saisie vocale
+            (reconnaissance vocale, STT) et la sortie vocale (text-to-speech, TTS) sont traitées
+            via le service <strong>Azure AI Speech</strong> de Microsoft. À cet égard :</p>
+            <ul>
+                <li><strong>Finalité :</strong> conversion de votre saisie vocale en texte (STT)
+                    pour interagir avec l'assistant vocal et sortie de la réponse sous forme
+                    vocale (TTS).</li>
+                <li><strong>Société :</strong> Microsoft Corporation (Microsoft Ireland
+                    Operations Ltd. en tant que fournisseur pour l'UE).</li>
+                <li><strong>Données :</strong> données audio (enregistrement vocal) ainsi que les
+                    données techniques nécessaires au traitement. La transmission est
+                    <strong>chiffrée</strong> (TLS). La clé d'abonnement Azure n'est stockée que
+                    côté serveur ; l'application n'envoie qu'un jeton d'accès à courte durée de
+                    vie, protégé par JWT.</li>
+                <li><strong>Lieu de stockage :</strong> centre de données de l'UE (région
+                    Allemagne Centre-Ouest, <em>germanywestcentral</em>). Azure AI Speech ne
+                    traite les données que dans la région de l'emplacement de la ressource.</li>
+                <li><strong>Base juridique :</strong> art. 6, par. 1, lit. b, RGPD (exécution du
+                    contrat, fourniture de la fonctionnalité premium achetée) ou consentement,
+                    dans la mesure où la reconnaissance vocale sur l'appareil n'est pas
+                    suffisante.</li>
+                <li><strong>Traitement pour notre compte :</strong> un contrat de traitement
+                    (DPA) existe avec Microsoft conformément à l'art. 28 RGPD dans le cadre des
+                    Microsoft Online Services Terms et du Microsoft Data Protection Addendum.
+                    Microsoft n'utilise pas les données pour améliorer ses propres modèles
+                    d'IA.</li>
+                <li><strong>Informations de confidentialité :</strong>
+                    <a href="https://www.microsoft.com/privacy" target="_blank" rel="noopener">microsoft.com/privacy</a>
+                    et
+                    <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank" rel="noopener">Data Protection Addendum</a>.</li>
+            </ul>
+
+            <h3>6.11 Brevo (envoi d'e-mails pour les fonctionnalités de compte)</h3>
+            <p>Pour l'envoi d'e-mails dans le cadre des fonctionnalités de compte (p. ex.
+            confirmation de l'adresse e-mail, réinitialisation du mot de passe), le prestataire
+            utilise le fournisseur de services d'e-mail <strong>Brevo</strong> :</p>
+            <ul>
+                <li><strong>Finalité :</strong> envoi d'e-mails transactionnels liés au compte.</li>
+                <li><strong>Société :</strong> Brevo (anciennement Sendinblue), Paris, France
+                    (UE).</li>
+                <li><strong>Données :</strong> l'adresse e-mail du destinataire ainsi que le
+                    contenu requis pour le type d'e-mail concerné. Aucun suivi à des fins
+                    publicitaires n'a lieu.</li>
+                <li><strong>Lieu de stockage :</strong> centres de données de l'UE (France).</li>
+                <li><strong>Base juridique :</strong> art. 6, par. 1, lit. b, RGPD (exécution du
+                    contrat, fourniture de la fonctionnalité de compte).</li>
+                <li><strong>Traitement pour notre compte :</strong> un contrat de traitement
+                    (DPA) existe avec Brevo conformément à l'art. 28 RGPD ; Brevo traite les
+                    données uniquement sur instructions documentées.</li>
+                <li><strong>Informations de confidentialité :</strong>
+                    <a href="https://www.brevo.com/legal/termsofuse" target="_blank" rel="noopener">brevo.com/legal/termsofuse</a>
+                    (voir la section « Data Processing Agreement »).</li>
+            </ul>
+
+            <h2>7. Vos droits (RGPD)</h2>
+            <p>La présente politique de confidentialité satisfait également aux obligations d'information prévues à l'<strong>article 13 RGPD</strong> (informations à fournir lorsque des données personnelles sont collectées).</p>
+            <p>Vous avez le droit :</p>
+            <ul>
+                <li><strong>Accès (art. 15 RGPD) :</strong> quelles données sont stockées à votre sujet</li>
+                <li><strong>Rectification (art. 16 RGPD) :</strong> correction des données inexactes</li>
+                <li><strong>Effacement (art. 17 RGPD) :</strong> suppression complète de toutes les données</li>
+                <li><strong>Limitation du traitement (art. 18 RGPD)</strong></li>
+                <li><strong>Portabilité des données (art. 20 RGPD) :</strong> export dans un format structuré, lisible par machine</li>
+                <li><strong>Opposition (art. 21 RGPD) :</strong> contre un traitement fondé sur des intérêts légitimes</li>
+                <li><strong>Retrait du consentement (art. 7, par. 3, RGPD) :</strong> pour l'avenir</li>
+            </ul>
+
+            <h3>Droit de déposer plainte auprès d'une autorité de contrôle (art. 77 RGPD)</h3>
+            <p>Sans préjudice de tout autre recours, vous avez le droit de déposer une plainte auprès d'une autorité de contrôle de la protection des données, en particulier celle de votre lieu de résidence habituel. Pour la France, l'autorité de contrôle compétente est :</p>
+            <p><strong>Commission nationale de l'informatique et des libertés (CNIL)</strong><br>
+                3 Place de Fontenoy, TSA 80715<br>
+                75334 Paris Cedex 07, France<br>
+                Web : <a href="https://www.cnil.fr/" target="_blank" rel="noopener">www.cnil.fr</a>
+            </p>
+            <p>En tant que responsable du traitement établi en Allemagne, vous pouvez également déposer plainte auprès de l'autorité de contrôle du Bade-Wurtemberg :</p>
+            <p><strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg</strong> (Commissaire d'État à la protection des données et à la liberté de l'information du Bade-Wurtemberg)<br>
+                Lautenschlagerstraße 20, 70173 Stuttgart, Allemagne<br>
+                E-mail : poststelle@lfdi.bwl.de<br>
+                Web : <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener">www.baden-wuerttemberg.datenschutz.de</a>
+            </p>
+
+            <h2>8. Protection des enfants et des mineurs</h2>
+            <p>Cette application s'adresse aux apiculteurs et n'est pas destinée aux enfants. Aucune donnée n'est délibérément collectée auprès des enfants et aucun contenu destiné aux enfants n'est proposé.</p>
+            <p>Lorsque le traitement repose sur le consentement (voir sections 6.1 et 6.5), le seuil d'âge pour la capacité
+            indépendante à consentir au titre de l'art. 8 RGPD est déterminé par l'État membre respectif &ndash; <strong>15 ans
+            en France</strong> (loi n° 78-17 du 6 janvier 1978 modifiée, art. 45). En dessous de cet âge, le consentement du
+            titulaire de la responsabilité parentale est requis.</p>
+
+            <h2>9. Sécurité des données</h2>
+            <ul>
+                <li>✅ Transmission de données chiffrée (HTTPS/TLS)</li>
+                <li>✅ Stockage chiffré (Android Keystore)</li>
+                <li>✅ Pas de stockage cloud (données locales)</li>
+                <li>✅ Mises à jour de sécurité régulières</li>
+            </ul>
+
+            <h2>10. Authentification Google OAuth</h2>
+            <p>Cette application utilise Google OAuth 2.0 pour l'authentification des utilisateurs. Lors de la connexion avec Google, les données suivantes sont traitées :</p>
+
+            <table class="data-table">
+                <tr>
+                    <th>Type de données</th>
+                    <th>Finalité</th>
+                    <th>Base juridique</th>
+                </tr>
+                <tr>
+                    <td>Adresse e-mail du compte Google</td>
+                    <td>Création de compte et authentification</td>
+                    <td>Art. 6, par. 1, lit. a, RGPD (consentement)</td>
+                </tr>
+                <tr>
+                    <td>Nom du profil Google</td>
+                    <td>Affichage de l'utilisateur dans l'application</td>
+                    <td>Art. 6, par. 1, lit. a, RGPD (consentement)</td>
+                </tr>
+                <tr>
+                    <td>Photo du profil Google (facultative)</td>
+                    <td>Affichage de l'utilisateur dans l'application</td>
+                    <td>Art. 6, par. 1, lit. a, RGPD (consentement)</td>
+                </tr>
+                <tr>
+                    <td>Identifiant utilisateur Google</td>
+                    <td>Identification unique de l'utilisateur</td>
+                    <td>Art. 6, par. 1, lit. a, RGPD (consentement)</td>
+                </tr>
+            </table>
+
+            <h3>📊 Portées Google OAuth demandées</h3>
+            <p>L'application demande les autorisations suivantes à Google :</p>
+            <ul>
+                <li><code>https://www.googleapis.com/auth/userinfo.email</code> – accès à l'adresse e-mail de votre compte Google</li>
+                <li><code>https://www.googleapis.com/auth/userinfo.profile</code> – accès à votre profil Google (nom, photo)</li>
+                <li><code>openid</code> – OpenID Connect pour une authentification sécurisée</li>
+            </ul>
+
+            <div class="success">
+                <p><strong>✓ Autorisations minimales :</strong> Nous demandons uniquement les autorisations Google strictement nécessaires. Aucun accès en lecture à Gmail, Google Drive ou d'autres services Google.</p>
+            </div>
+
+            <h3>🔄 Transfert de données vers Supabase</h3>
+            <p>Pour le stockage des données d'authentification, Supabase (Supabase Inc., 548 Market St, San Francisco, CA 94104, États-Unis) est utilisé comme sous-traitant :</p>
+            <ul>
+                <li><strong>Finalité :</strong> gestion des jetons JWT et authentification des utilisateurs</li>
+                <li><strong>Base juridique :</strong> art. 6, par. 1, lit. b, RGPD (exécution du contrat)</li>
+                <li><strong>Garanties :</strong> clauses contractuelles types de l'UE (art. 46 RGPD)</li>
+                <li><strong>Politique de confidentialité :</strong> <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+            </ul>
+
+            <h3>💾 Stockage et suppression</h3>
+            <ul>
+                <li><strong>Durée de conservation :</strong> jusqu'à la suppression du compte ou la désinstallation de l'application</li>
+                <li><strong>Suppression :</strong> automatiquement lors de la déconnexion ou de la suppression manuelle du compte dans l'application</li>
+                <li><strong>Retrait :</strong> Vous pouvez retirer votre consentement à tout moment :
+                    <ul>
+                        <li>en vous déconnectant dans l'application (Réglages → Compte → Déconnexion)</li>
+                        <li>en révoquant l'autorisation Google sur <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>🇺🇸 Transfert vers un pays tiers</h3>
+            <p>Google est une entreprise américaine. Le transfert de données vers les États-Unis repose sur une décision d'adéquation de la Commission européenne (EU-US Data Privacy Framework, juillet 2023).</p>
+            <ul>
+                <li><strong>Politique de confidentialité de Google :</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+                <li><strong>Conditions d'utilisation de Google :</strong> <a href="https://policies.google.com/terms" target="_blank" rel="noopener">policies.google.com/terms</a></li>
+            </ul>
+
+            <h2>11. Modifications</h2>
+            <p>La présente politique de confidentialité peut être mise à jour. Vous serez informé des modifications substantielles au sein de l'application.</p>
+
+            <h2>12. Journal des modifications</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Version</th>
+                    <th>Date</th>
+                    <th>Modification</th>
+                    <th>Nouveau consentement requis ?</th>
+                </tr>
+                <tr>
+                    <td>3.2</td>
+                    <td>2026-09-05</td>
+                    <td>Microsoft Azure AI Speech (assistant vocal IA, STT/TTS) et Brevo (e-mails de compte) ajoutés en tant que sous-traitants</td>
+                    <td>✅ Oui (nouveaux prestataires tiers)</td>
+                </tr>
+                <tr>
+                    <td>3.1</td>
+                    <td>2026-08-24</td>
+                    <td>Registres de consentement (art. 7, par. 1, RGPD) et Mollie (facturation alternative) divulgués</td>
+                    <td>✅ Oui (nouveaux prestataires tiers)</td>
+                </tr>
+                <tr>
+                    <td>3.0</td>
+                    <td>2026-08-18</td>
+                    <td>Version juridique autrichienne (privacy_at.html) + versionnage global</td>
+                    <td>✅ Oui</td>
+                </tr>
+                <tr>
+                    <td>2.0</td>
+                    <td>2026-08-18</td>
+                    <td>Ajout de l'authentification Google OAuth, ajout du traitement des données spécifique à OAuth</td>
+                    <td>✅ Oui (nouveau traitement de données)</td>
+                </tr>
+                <tr>
+                    <td>1.0</td>
+                    <td>2026-05-05</td>
+                    <td>Version initiale</td>
+                    <td>-</td>
+                </tr>
+            </table>
+
+            <h2>13. Langue</h2>
+            <p>La présente politique de confidentialité a été rédigée en langue française. Les autres versions linguistiques sont des traductions non contraignantes. <strong>En cas de divergence, seule la version française fait foi.</strong></p>
+
+            <div class="contact-box">
+                <h3>Contact pour toute question</h3>
+                <p>Pour toute question relative à la protection des données ou pour exercer vos droits :</p>
+                <ul>
+                    <li>📧 E-mail : <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                    <li>📮 Adresse : Jens Kübler, Max-Beckmann-Straße 39, 76227 Karlsruhe, Allemagne</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>🐝 Beemaster – apiculture professionnelle</p>
+            <p>© 2026 Jens Kübler | <a href="agb_fr.html">CGV</a> | <a href="eula_fr.html">EULA</a> | <a href="impressum_fr.html">Mentions légales</a></p>
+            <p>Politique de confidentialité Version 3.2 (2026-09-05). <a href="privacy_en.html">English version</a></p>
+        </footer>
+    </div>
+</body>
+</html>

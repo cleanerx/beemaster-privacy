@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Általános Szerződési Feltételek (ÁSZF) | Beemaster</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #ffc107;
+            margin-bottom: 2rem;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .lang-switch a {
+            color: #f57c00;
+            text-decoration: none;
+            margin-left: 0.5rem;
+        }
+        .lang-switch a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .bee-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+        .app-name { font-size: 2.5rem; font-weight: 700; color: #333; margin-bottom: 0.25rem; }
+        .app-name span { color: #ffc107; }
+        .subtitle { color: #666; font-size: 1.2rem; }
+        .last-updated { color: #999; font-size: 0.9rem; margin-top: 0.5rem; }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            background: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f57c00;
+            border: 2px solid #ffc107;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active { background: #ffc107; color: #333; }
+        main {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #f57c00;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ffc107;
+        }
+        h2 { color: #333; font-size: 1.4rem; margin: 2rem 0 1rem; }
+        h3 { color: #f57c00; font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
+        p { margin-bottom: 1rem; color: #555; }
+        ul, ol { margin: 1rem 0 1rem 2rem; color: #555; }
+        li { margin-bottom: 0.5rem; }
+        .highlight {
+            background: #fff3e0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 1.5rem 0;
+        }
+        .highlight p { margin: 0; color: #e65100; }
+        .success {
+            background: #e8f5e9;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 1rem 0;
+        }
+        .success p { margin: 0; color: #2e7d32; }
+        .warning {
+            background: #ffebee;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f44336;
+            margin: 1rem 0;
+        }
+        .warning p { margin: 0; color: #c62828; }
+        .contact-box {
+            background: #fff3e0;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 { color: #f57c00; margin-top: 0; margin-bottom: 0.5rem; }
+        a { color: #f57c00; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .section { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            main { padding: 1.5rem; }
+            .app-name { font-size: 2rem; }
+            nav { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="agb.html">🇩🇪 Deutsch</a> |
+            <a href="agb_at.html">🇦🇹 Deutsch (AT)</a> |
+            <a href="agb_en.html">🇬🇧 English</a> |
+            <a href="agb_hu.html" class="active">🇭🇺 Magyar</a> |
+            <a href="agb_pl.html">🇵🇱 Polski</a> |
+            <a href="agb_sk.html">🇸🇰 Slovenčina</a>
+        </div>
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">Méhészet-kezelő alkalmazás méhészeknek</p>
+            <p class="last-updated">Általános Szerződési Feltételek – Version 2026-09-05, állapot: 2026. augusztus 18.</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Adatvédelem</a>
+            <a href="agb_hu.html" class="active">ÁSZF</a>
+            <a href="eula_hu.html">EULA</a>
+            <a href="impressum_hu.html">Impresszum</a>
+        </nav>
+
+        <main>
+            <h1>Általános Szerződési Feltételek (ÁSZF)</h1>
+
+            <p><strong>Szolgáltató:</strong><br>
+                Jens Kübler<br>
+                Max-Beckmann-Straße 39<br>
+                76227 Karlsruhe<br>
+                Németország<br>
+                E-mail: <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a><br>
+                (a továbbiakban: „Szolgáltató")
+            </p>
+
+            <div class="highlight">
+                <p><strong>Rövid összefoglaló:</strong> Az alkalmazás tisztán segédeszköz a méhészetben. A használat
+                saját felelősségre történik. Nem vállalunk felelősséget adatvesztésért vagy méhészeti döntésekért. A
+                felelősségkorlátozás a jogszabály által megengedett keretek között érvényes.</p>
+            </div>
+
+            <h2>1. § Hatály</h2>
+            <div class="section">
+                <ol>
+                    <li>Ezen ÁSZF a Google Play Áruházban forgalmazott „Beemaster" mobilalkalmazás (a továbbiakban:
+                        „Alkalmazás") használatára vonatkozik.</li>
+                    <li>Az alkalmazás letöltésével és használatával a felhasználó elfogadja ezen ÁSZF-et.</li>
+                    <li>Az eltérő felhasználói feltételek nem ismertek el, kivéve, ha a Szolgáltató azok
+                        alkalmazásához kifejezetten írásban hozzájárul.</li>
+                    <li>A szerződéses viszonyokra a Polgári Törvénykönyvről szóló 2013. évi V. törvény (Ptk.) az
+                        irányadó. Fogyasztó felhasználó esetén kiegészítőleg a fogyasztóvédelemről szóló 1997. évi
+                        CLV. törvény (Fgytv.) rendelkezései irányadók. Jogforrások:
+                        <a href="https://njt.jog.gov.hu/jogszabaly/2013-5-00-00" target="_blank" rel="noopener">2013. évi V. törvény (Ptk.) – Nemzeti Jogszabálytár</a>
+                        és
+                        <a href="https://njt.jog.gov.hu/jogszabaly/1997-155-00-00" target="_blank" rel="noopener">1997. évi CLV. törvény (Fgytv.) – Nemzeti Jogszabálytár</a>,
+                        továbbá a <a href="https://eur-lex.europa.eu/eli/dir/2011/83/oj" target="_blank" rel="noopener">2011/83/EU fogyasztói jogokról szóló irányelv (EUR-Lex)</a>.</li>
+                </ol>
+            </div>
+
+            <h2>2. § Szerződés létrejötte</h2>
+            <div class="section">
+                <ol>
+                    <li>A Szolgáltató és a felhasználó közötti szerződés az alkalmazás letöltésével jön létre.</li>
+                    <li>Az alkalmazás ingyenesen áll rendelkezésre. A prémium funkciókra külön feltételek
+                        vonatkoznak (lásd 9. §).</li>
+                </ol>
+            </div>
+
+            <h2>3. § Használati előfeltételek</h2>
+            <div class="section">
+                <ol>
+                    <li>Az alkalmazás használata kompatibilis Android-eszközt (legalább Android 8.0) feltételez.</li>
+                    <li>A felhasználó felelős a technikai infrastruktúra (eszköz, internetkapcsolat,
+                        akkumulátor) biztosításáért.</li>
+                    <li><strong>Korhatár:</strong> Az alkalmazás nem gyermekeknek készült. Kiskorúak a fizetős
+                        funkciókhoz törvényes képviselőjük hozzájárulását igénylik (Magyarországon a Ptk. 2:12. §).</li>
+                    <li><strong>Hozzájárulási képesség az adatvédelemben:</strong> Amennyiben az adatkezelés
+                        hozzájáruláson alapul, ezt a hozzájárulást Magyarországon 16 éves kortól lehet önállóan
+                        megadni (a GDPR 8. cikke). E kor alatt a szülői felügyelet gyakorlójának hozzájárulása
+                        szükséges.</li>
+                </ol>
+            </div>
+
+            <h2>4. § Használati jogok átadása</h2>
+            <div class="section">
+                <ol>
+                    <li>A Szolgáltató egyszerű, nem átruházható, térbelileg és időben korlátlan jogot ad az
+                        alkalmazás használatára.</li>
+                    <li>Az alkalmazás <strong>magán- és üzleti célra is</strong> használható – különösen hobbiméhészek
+                        és hivatásos méhészek által, a saját méhészeti üzemük dokumentálásához.</li>
+                    <li>Tilos az alkalmazás sokszorosítása, átdolgozása, visszafejtése, terjesztése vagy
+                        alhasznosítása, valamint az alkalmazás vagy funkciói harmadik személynek saját
+                        szolgáltatásként való kínálása (pl. viszonteladás, white-labeling, szolgáltatói portál
+                        üzemeltetése). A törvényi jogosultságok (különösen a szerzői jogi törvény 33. §-a) sértetlenek
+                        maradnak.</li>
+                </ol>
+            </div>
+
+            <h2>5. § Az alkalmazás természetéből eredő korlátok</h2>
+            <div class="section">
+                <ol>
+                    <li><strong>Az alkalmazás tisztán segédeszköz</strong> a méhészetben, és nem helyettesíti a
+                        szakmai tanácsadást, állatorvosi kezelést vagy méhészeti szakértelmet.</li>
+                    <li>Az alkalmazásban található javaslatok, figyelmeztetések és adatok (pl. varroa-kezelés,
+                        takarmányozási javaslatok, anyajelölés) általános szabványokon alapulnak, és helyileg,
+                        szezonálisan vagy egyedileg eltérhetnek.</li>
+                    <li><strong>Az alkalmazás nem ismer fel betegségeket vagy egészségügyi állapotokat</strong> a
+                        méheknél, anyák vagy családok esetében. Az ilyen megítélés kizárólag szakember feladata.</li>
+                    <li>Az alkalmazás nem vállal felelősséget gazdasági döntésekért (pl. méztermés, családvásárlás,
+                        kaptárak száma).</li>
+                </ol>
+            </div>
+
+            <h2>6. § Felelősség kizárása</h2>
+
+            <h3>6.1 Általános felelősségkizárás</h3>
+            <div class="section">
+                <ol>
+                    <li>Az alkalmazás használata <strong>saját felelősségre</strong> történik.</li>
+                    <li>A Szolgáltató nem felel az olyan károkért, amelyeket:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>hiányzó vagy hiányos alkalmazásadatok</li>
+                            <li>az alkalmazás használatának megszakítása (szerverhiba, frissítés, karbantartás)</li>
+                            <li>a felhasználó téves adatbevitele</li>
+                            <li>harmadik felek (pl. hacker-támadás, kártevő szoftver)</li>
+                            <li>eszközökkel vagy operációs rendszerekkel való inkompatibilitás</li>
+                            <li>elveszett adatok (pl. eszközhiba, újratelepítés)</li>
+                        </ul>
+                        okoznak.
+                    </li>
+                </ol>
+            </div>
+
+            <h3>6.2 Felelősségkorlátozás</h3>
+            <div class="section">
+                <ol>
+                    <li>Szándékos vagy súlyosan gondatlan károkozás esetén a Szolgáltató a jogszabályok szerint felel.</li>
+                    <li>Egyszerű gondatlanság esetén a Szolgáltató <strong>csak</strong> felel:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>az élet, test vagy egészség sérelméből eredő károkért</li>
+                            <li>a lényeges szerződéses kötelezettség (kardinális kötelezettség) megsértéséből
+                                eredő károkért</li>
+                        </ul>
+                        A felelősség a tipikusan előrelátható kárra korlátozódik.
+                    </li>
+                </ol>
+            </div>
+
+            <h3>6.3 Adatvesztés</h3>
+            <div class="section">
+                <ol>
+                    <li>A Szolgáltató nem felel az adatvesztésért, különösen:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>elveszett méhészeti adatokért</li>
+                            <li>elveszett ellenőrzési feljegyzésekért</li>
+                            <li>elveszett helyinformációkért</li>
+                        </ul>
+                    </li>
+                    <li>A felhasználót kifejezetten felkérjük rendszeres adatmentésre (export funkció).</li>
+                </ol>
+            </div>
+
+            <h3>6.4 Nem vállalt felelősség méhészeti döntésekért</h3>
+            <div class="warning">
+                <p><strong>Fontos megjegyzés:</strong> A Szolgáltató kifejezetten <strong>nem</strong> felel:</p>
+                <ul style="margin-top: 0.5rem;">
+                    <li>méhcsaládok elvesztéséért</li>
+                    <li>anyák elvesztéséért</li>
+                    <li>sikertelen varroa-kezelésekért</li>
+                    <li>gazdasági veszteségekért (méztermés, családszám)</li>
+                    <li>az alkalmazás adatain alapuló rossz döntésekért</li>
+                </ul>
+            </div>
+
+            <h2>7. § A felhasználó kötelezettségei</h2>
+            <div class="section">
+                <ol>
+                    <li>A felhasználó köteles:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>nem bevinni káros adatot az alkalmazásba</li>
+                            <li>nem manipulálni vagy feltörni az alkalmazást</li>
+                            <li>nem végezni automatizált hozzáférést az alkalmazáshoz</li>
+                            <li>személyes hozzáférési adatait titokban tartani (prémium funkcióknál)</li>
+                        </ul>
+                    </li>
+                    <li>A jogsértés azonnali letiltásra jogosítja fel a Szolgáltatót.</li>
+                </ol>
+            </div>
+
+            <h2>8. § Adatvédelmi tájékoztató</h2>
+            <div class="section">
+                <ol>
+                    <li>Az adatvédelmi tájékoztató külön elérhető az <a href="index.html">Adatvédelem</a> alatt,
+                        illetve az alkalmazásban.</li>
+                    <li>A személyes adatok feldolgozása az adatvédelmi tájékoztatóban megnevezett jogalapokon
+                        történik (a GDPR 6. cikk (1) bekezdése). <strong>Hozzájárulást csak ott kérünk, ahol az
+                        szükséges</strong> – különösen az opcionális hiba- és használati statisztikákhoz. Ez a
+                        hozzájárulás önkéntes, külön kérjük az alkalmazás beállításaiban, és ott bármikor, a jövőre
+                        nézve visszavonható. Az alkalmazás e hozzájárulás nélkül is korlátozás nélkül használható.</li>
+                </ol>
+            </div>
+
+            <h2>9. § Prémium funkciók, szerződő partner és fizetés</h2>
+            <div class="warning">
+                <p><strong>Ki a szerződő partnered vásárláskor?</strong></p>
+                <p>A prémium funkciókat és előfizetéseket <strong>nem a Szolgáltatótól</strong> vásárolod, hanem a
+                Google Play Áruházon keresztül. Az adásvételi szerződés eladója és szerződő partnere a
+                <strong>Google Commerce Limited</strong>, Gordon House, Barrow Street, Dublin 4, Írország.</p>
+                <p>A rendelés, fizetés, számlázás, visszatérítés és a törvényes elállási jog tekintetében ezért a
+                <strong>Google Play felhasználási feltételei</strong> és a Google visszatérítési irányelvei
+                irányadók. A Szolgáltató sem fizetést nem fogad el, sem saját maga nem térít vissza.</p>
+            </div>
+            <div class="section">
+                <ol>
+                    <li>A prémium funkciók (pl. bővített kaptárkvóták) fizetősek. A Szolgáltató biztosítja a
+                        funkciókat technikailag; az adásvételi szerződés a Google Commerce Limiteddel jön létre
+                        (lásd a fenti keretet).</li>
+                    <li>Az árakat a Google Play Áruházban a vásárlás előtt jelenítjük meg, az érvényes áfával
+                        együtt.</li>
+                    <li><strong>Az előfizetések automatikusan megújulnak</strong> a választott futamidővel, kivéve,
+                        ha az aktuális időszak lejárta előtt lemondod. A lemondás a Google Play Áruház
+                        előfizetés-kezelésében történik. A Google minden megújítás előtt tájékoztat a feltételei
+                        szerint. A lemondás a már kifizetett futamidő végén hatályos; az aktuális időszakra
+                        kifizetett díjak arányosan nem kerülnek visszatérítésre.</li>
+                    <li><strong>Egyszeri vásárlások</strong> (a Play Áruházban így jelölve) nem újíthatók meg és nem
+                        járnak le.</li>
+                    <li>A visszatérítések kizárólag a Google Play Áruház irányelvei szerint történnek. A kérelem a
+                        Google-fiókodon keresztül intézhető.</li>
+                    <li>A fizetés a Google Playen keresztül történik. A Szolgáltató <strong>nem</strong> kap és nem
+                        tárol fizetési adatokat (sem kártya-, sem számla-, sem bankszámlaszám-adatot).</li>
+                </ol>
+            </div>
+
+            <h2>10. § Elérhetőség és változások</h2>
+            <div class="section">
+                <ol>
+                    <li>A Szolgáltató fenntartja a jogot:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>az alkalmazás bármikori módosítására vagy megszüntetésére</li>
+                            <li>a prémium funkciók módosítására vagy eltávolítására</li>
+                            <li>a prémium funkciók árának módosítására (csak új vásárlásoknál)</li>
+                        </ul>
+                    </li>
+                    <li>Nincs jog a folyamatos elérhetőségre.</li>
+                </ol>
+            </div>
+
+            <h2>11. § Felmondás</h2>
+            <div class="section">
+                <ol>
+                    <li>A felhasználó az alkalmazást bármikor az eszközről való törléssel megszüntetheti.</li>
+                    <li>A Szolgáltató 14 napos határidővel felmondhatja a szerződést (csak prémium funkcióknál,
+                        arányos visszatérítéssel).</li>
+                    <li>Felmondás után minden felhasználói adat legkésőbb 30 napon belül törlődik.</li>
+                </ol>
+            </div>
+
+            <h2>12. § Jogválasztás és illetékesség</h2>
+            <div class="section">
+                <ol>
+                    <li>A szerződésre magyar jog irányadó az ENSZ árukra vonatkozó nemzetközi adásvételi szerződésekről
+                        szóló egyezményének (Bécsi Vételi Egyezmény, CISG) kizárásával. Fogyasztó felhasználó esetén
+                        kiegészítőleg a Ptk. és az Fgytv. kógens rendelkezései irányadók.</li>
+                    <li>Fogyasztó felhasználóknál, akiknek szokásos tartózkodási helye más EU-tagállamban van,
+                        sértetlenek maradnak a tartózkodási hely szerinti fogyasztóvédelmi előírások
+                        (a Róma I. rendelet 6. cikke).</li>
+                    <li>Fogyasztó felhasználókra vonatkozóan a jogszabályi előírások irányadók.</li>
+                </ol>
+            </div>
+
+            <h2>13. § Fogyasztó elállási joga (prémium vásárlások)</h2>
+            <div class="warning">
+                <p><strong>Az elállási jog a Google-lal, nem a Szolgáltatóval szemben áll fenn.</strong></p>
+                <p>Mivel a prémium funkciók adásvételi szerződése a <strong>Google Commerce Limiteddel</strong> jön
+                létre (lásd 9. §), az elállás kizárólag a Google-lal szemben érvényesíthető. A Szolgáltató ilyen
+                esetben nem szerződő partner, és elállást nem fogadhat el, visszatérítést sem kezdeményezhet.</p>
+            </div>
+            <div class="section">
+                <ol>
+                    <li>A fogyasztó jogai a Google Play felhasználási feltételeiből, valamint a tartózkodási hely
+                        szerinti állam kógens jogszabályaiból erednek.</li>
+                    <li>Elállási vagy visszatérítési kérelmet a Google-fiókodon keresztül nyújts be a Google felé
+                        (Google Play → Fiók → Rendelések → Probléma bejelentése).</li>
+                    <li><strong>Digitális tartalom:</strong> Azonnal aktivált digitális tartalom esetén az elállási
+                        jog előzetesen megszűnhet, ha kifejezetten hozzájárultál az azonnali teljesítéshez és
+                        tudomásul vetted az elállási jog elvesztését. Hogy ezt a hozzájárulást miként kéri a Google
+                        Play vásárlási folyamata, azt az határozza meg.</li>
+                    <li>Ettől függetlenül a Szolgáltató fizetési kötelezettség nélkül biztosítja az alkalmazás
+                        ingyenes alapverzióját; erre nem keletkezik elállási eset.</li>
+                </ol>
+            </div>
+
+            <h2>14. § Fogyasztói jogvita rendezése (Békéltető testület)</h2>
+            <div class="section">
+                <ol>
+                    <li>A Szolgáltató nem köteles és nem hajlandó a fogyasztóvédelmi hatóság mellett működő
+                        Békéltető testület előtt lefolytatott eljárásban részt venni.</li>
+                    <li><strong>Magyarországon lakóhellyel rendelkező fogyasztók:</strong> A fogyasztói szerződésekkel
+                        kapcsolatos viták békés rendezésére az illetékes a <strong>Békéltető testület</strong>
+                        (az Fgytv. 18. §-a alapján). Az eljárás megindításához kérjük, fordulj a lakóhelyed szerinti
+                        megyei kereskedelmi és iparkamara mellett működő békéltető testülethez. A testületek listája
+                        megtalálható a fogyasztóvédelmi hatóság hivatalos oldalán.</li>
+                    <li>A többi EU-tagállamban lakó fogyasztók az illetékes szervet az Európai Bizottság listáján
+                        találják:
+                        <a href="https://consumer-redress.ec.europa.eu/dispute-resolution-bodies" target="_blank" rel="noopener">consumer-redress.ec.europa.eu/dispute-resolution-bodies</a>.</li>
+                    <li>Ha a vita az adásvételi szerződést (fizetés, visszatérítés) érinti, a megfelelő partner a
+                        Google Commerce Limited; lásd 9. § és 13. §.</li>
+                </ol>
+                <p style="font-size:0.9em;opacity:0.85;">Megjegyzés: A korábbi, online vitarendezésre szolgáló
+                EU-platformot (OS-platform) a 2024/3228. (EU) rendelet hatályon kívül helyezte, és 2025. július
+                20. óta nem érhető el.</p>
+            </div>
+
+            <h2>15. § Elválaszthatósági záradék</h2>
+            <div class="success">
+                <ol style="margin: 0;">
+                    <li>Ha ezen ÁSZF egyes rendelkezései egészben vagy részben érvénytelenek vagy érvénytelenné
+                        válnak, az a többi rendelkezés érvényességét nem érinti.</li>
+                    <li>A teljesen vagy részben érvénytelen rendelkezés helyébe olyan érvényes rendelkezés lép,
+                        amely a legközelebb áll az eredeti rendelkezés gazdasági céljához.</li>
+                    <li>Ugyanez érvényes, ha az ÁSZF hiányt tartalmaz.</li>
+                    <li>Szóbeli mellékegyezség nem áll fenn. A módosítások írásbeli formát igényelnek.</li>
+                </ol>
+            </div>
+
+            <h2>16. § Nyelv</h2>
+            <div class="section">
+                <p>Ezt az ÁSZF-et magyar nyelven készítettük. Az angol változat
+                (<a href="agb_en.html">English version</a>) nem kötelező erejű fordítás.
+                <strong>Eltérés esetén kizárólag a magyar változat az irányadó.</strong></p>
+            </div>
+
+            <h2>17. § Kapcsolat</h2>
+            <div class="contact-box">
+                <h3>Szolgáltató</h3>
+                <ul>
+                    <li><strong>Fejlesztő:</strong> Jens Kübler</li>
+                    <li><strong>Cím:</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Németország</li>
+                    <li><strong>E-mail:</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                </ul>
+            </div>
+
+            <div class="highlight" style="margin-top: 2rem;">
+                <p><strong>Megjegyzés:</strong> Ezt az ÁSZF-et legjobb tudásunk szerint, a készítés időpontjában
+                hatályos jogszabályok figyelembevételével fogalmaztuk meg.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Beemaster | <a href="index.html">Adatvédelem</a> | <a href="eula_hu.html">EULA</a> | <a href="impressum_hu.html">Impresszum</a></p>
+            <p>Ezen ÁSZF a Beemaster Android alkalmazásra vonatkozik. Version 2026-09-05. <a href="agb_en.html">English version</a></p>
+        </footer>
+    </div>
+</body>
+</html>

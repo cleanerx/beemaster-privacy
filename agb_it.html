@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condizioni di vendita e di utilizzo | Beemaster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #ffc107;
+            margin-bottom: 2rem;
+        }
+        .bee-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+        .app-name span {
+            color: #ffc107;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+        }
+        .last-updated {
+            color: #999;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        nav a {
+            background: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f57c00;
+            border: 2px solid #ffc107;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: #ffc107;
+            color: #333;
+        }
+        main {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #f57c00;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ffc107;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            color: #f57c00;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #555;
+        }
+        ol {
+            margin: 1rem 0 1rem 2rem;
+            color: #555;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            background: #fff3e0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 1.5rem 0;
+        }
+        .highlight p {
+            margin: 0;
+            color: #e65100;
+        }
+        .success {
+            background: #e8f5e9;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 1rem 0;
+        }
+        .success p {
+            margin: 0;
+            color: #2e7d32;
+        }
+        .warning {
+            background: #ffebee;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f44336;
+            margin: 1rem 0;
+        }
+        .warning p {
+            margin: 0;
+            color: #c62828;
+        }
+        .contact-box {
+            background: #fff3e0;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 {
+            color: #f57c00;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        .contact-box ul {
+            margin-top: 0.5rem;
+        }
+        a {
+            color: #f57c00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            main {
+                padding: 1.5rem;
+            }
+            .app-name {
+                font-size: 2rem;
+            }
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">L'app per gli apicoltori</p>
+            <p class="last-updated">Condizioni di vendita e di utilizzo – Version 2026-09-05, del 18 agosto 2026</p>
+        </header>
+
+        <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
+            <a href="agb.html" style="color:#f57c00;text-decoration:none;">🇩🇪 Deutsch (DE)</a> |
+            <a href="agb_at.html" style="color:#f57c00;text-decoration:none;margin-left:0.5rem;">🇦🇹 Deutsch (AT)</a> |
+            <a href="agb_en.html" style="color:#f57c00;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a> |
+            <a href="agb_da.html" style="color:#f57c00;text-decoration:none;margin-left:0.5rem;">🇩🇰 Dansk</a> |
+            <a href="agb_it.html" style="color:#f57c00;text-decoration:none;font-weight:bold;text-decoration:underline;margin-left:0.5rem;">🇮🇹 Italiano</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Informativa privacy</a>
+            <a href="agb_it.html" class="active">Condizioni di vendita e di utilizzo</a>
+            <a href="eula_it.html">EULA</a>
+            <a href="impressum_it.html">Impressum</a>
+        </nav>
+
+        <main>
+            <h1>Condizioni di vendita e di utilizzo (AGB)</h1>
+
+            <p>Le seguenti condizioni si applicano all'utilizzo di Beemaster e all'acquisto di funzioni
+            premium. I rapporti contrattuali sono disciplinati dal diritto italiano (Codice civile, Codice
+            del consumo). Il Decreto Legislativo 6 settembre 2005, n. 206 (Codice del consumo) recepisce
+            la direttiva 2011/83/UE sui diritti dei consumatori.</p>
+            <p style="font-size:0.9em;opacity:0.85;">Riferimento normativo :
+            <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-06;206" target="_blank" rel="noopener">D.Lgs. 206/2005 (Codice del consumo) – Normattiva</a> |
+            <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" target="_blank" rel="noopener">Codice Civile – Normattiva</a> |
+            <a href="https://eur-lex.europa.eu/eli/dir/2011/83/oj" target="_blank" rel="noopener">Direttiva 2011/83/UE – EUR-Lex</a>.</p>
+
+            <h2>§1. Fornitore e venditore</h2>
+            <div class="contact-box">
+                <h3>Responsabile</h3>
+                <ul>
+                    <li><strong>Nome :</strong> Jens Kübler</li>
+                    <li><strong>Indirizzo :</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Germania</li>
+                    <li><strong>E-mail :</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                </ul>
+            </div>
+            <p>L'acquisto di funzioni premium avviene tramite <strong>Google Play</strong>. Nell'acquisto,
+            <strong>Google Commerce Limited</strong>, Dublino, Irlanda, agisce come venditore. Per l'acquisto si
+            applicano inoltre i termini e le condizioni di rimborso di Google Play per i contenuti
+            digitali.</p>
+
+            <h2>§2. Abbonamenti e rinnovo automatico</h2>
+            <p>Le funzioni premium possono essere offerte in abbonamento. <strong>Gli abbonamenti si rinnovano
+            automaticamente</strong> ("rinnovano automaticamente") alla scadenza del rispettivo periodo, a meno
+            che tu non li disattivi entro 24 ore prima della scadenza nelle impostazioni di Google Play. Il
+            pagamento viene addebitato tramite il metodo di pagamento associato al tuo account Google Play.</p>
+
+            <h2>§3. Diritto di recesso</h2>
+            <p>Per i contratti a distanza e fuori dei locali commerciali, i consumatori hanno un diritto di
+            recesso legale di <strong>14 giorni</strong> ai sensi del Codice del consumo (artt. 52 ss.). Per i
+            contenuti digitali la cui fornitura è iniziata prima della scadenza del termine di recesso con il
+            tuo espresso consenso, il diritto di recesso può decadere ai sensi dell'art. 59, comma 1, lett.
+            a) del Codice del consumo. Può essere richiesto il pagamento per il servizio già erogato.</p>
+
+            <h2>§4. Erogazione del servizio</h2>
+            <p>Beemaster è un'app. La maggior parte delle funzioni funziona <strong>offline</strong>. Per alcune
+            funzioni (ad es. meteo, mappe, account facoltativo) è necessaria una connessione a Internet.
+            Ci impegniamo a garantire un'elevata disponibilità, ma non possiamo garantirla.</p>
+
+            <h2>§5. Limitazione di responsabilità</h2>
+            <p>Siamo responsabili per dolo e colpa grave nonché per danni a vita, incolumità fisica o salute
+            secondo le disposizioni di legge. Le norme sulla garanzia per vizi della vendita restano
+            invariate. Per violazioni lievemente colpose di obblighi contrattuali essenziali rispondiamo
+            limitatamente al danno prevedibile, esclusi i danni consequenziali. La responsabilità per le
+            raccomandazioni degli esperti di apicoltura è esclusa, salvo dolo o colpa grave.</p>
+
+            <h2>§6. Risoluzione alternativa delle controversie</h2>
+            <p>I consumatori italiani possono sottoporre le controversie a una procedura di
+            <strong>mediazione</strong> (D.Lgs. 28/2010) o a organismi di composizione delle controversie, nonché,
+            per le controversie transfrontaliere, al <strong>Centro europeo dei consumatori</strong>. Non siamo
+            obbligati né disposti a partecipare a procedure di risoluzione alternativa delle controversie
+            dinanzi a un organismo di composizione, oltre alla mediazione sopra indicata.</p>
+            <p style="font-size:0.9em;opacity:0.85;">Nota : la precedente piattaforma europea per la
+            risoluzione online delle controversie (ODR) è stata abrogata dal regolamento (UE) 2024/3228 e
+            non è più disponibile dal 20 luglio 2025. Per le controversie transfrontaliere, i consumatori
+            dell'UE possono utilizzare la piattaforma europea per i reclami dei consumatori.</p>
+
+            <h2>§7. Legge applicabile e foro competente</h2>
+            <p>Per i contratti con i consumatori si applicano le disposizioni inderogabili del Paese in cui il
+            consumatore ha la residenza abituale, indipendentemente dalla clausola sulla legge applicabile.
+            Se sei un consumatore, si applicano inoltre le disposizioni a tutela del consumatore del tuo
+            Paese. In caso contrario si applica il diritto italiano.</p>
+
+            <h2>§8. Modifiche e clausola di salvaguardia</h2>
+            <p>Ci riserviamo il diritto di modificare le presenti condizioni con un congruo preavviso. Qualora
+            una clausola sia nulla, le restanti clausole restano in vigore (clausola di salvaguardia).</p>
+
+            <div class="highlight">
+                <p><strong>Nota :</strong> gli acquisti tramite Google Play supportano i rimborsi secondo le
+                regole di Google. Per domande su abbonamenti o rimborsi, si prega di rivolgersi a Google Play.</p>
+            </div>
+
+            <h2>9. Lingua</h2>
+            <p>Le presenti condizioni sono redatte in italiano. Le altre versioni linguistiche sono
+            traduzioni non vincolanti. <strong>In caso di divergenza fa fede esclusivamente la versione
+            italiana.</strong></p>
+        </main>
+
+        <footer>
+            <p>🐝 Beemaster – apicoltura professionale</p>
+            <p>© 2026 Jens Kübler | <a href="index.html">Informativa privacy</a> | <a href="eula_it.html">EULA</a> | <a href="impressum_it.html">Impressum</a></p>
+            <p>Le presenti condizioni si applicano all'app Beemaster per Android. Version 2026-09-05. <a href="agb.html">Deutsch</a> | <a href="agb_at.html">Deutsch (AT)</a> | <a href="agb_en.html">English</a> | <a href="agb_da.html">Dansk</a></p>
+        </footer>
+    </div>
+</body>
+</html>

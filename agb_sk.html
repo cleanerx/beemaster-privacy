@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Všeobecné obchodné podmienky (VOP) | Beemaster</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #ffc107;
+            margin-bottom: 2rem;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .lang-switch a {
+            color: #f57c00;
+            text-decoration: none;
+            margin-left: 0.5rem;
+        }
+        .lang-switch a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .bee-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+        .app-name { font-size: 2.5rem; font-weight: 700; color: #333; margin-bottom: 0.25rem; }
+        .app-name span { color: #ffc107; }
+        .subtitle { color: #666; font-size: 1.2rem; }
+        .last-updated { color: #999; font-size: 0.9rem; margin-top: 0.5rem; }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            background: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f57c00;
+            border: 2px solid #ffc107;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active { background: #ffc107; color: #333; }
+        main {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #f57c00;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ffc107;
+        }
+        h2 { color: #333; font-size: 1.4rem; margin: 2rem 0 1rem; }
+        h3 { color: #f57c00; font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
+        p { margin-bottom: 1rem; color: #555; }
+        ul, ol { margin: 1rem 0 1rem 2rem; color: #555; }
+        li { margin-bottom: 0.5rem; }
+        .highlight {
+            background: #fff3e0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 1.5rem 0;
+        }
+        .highlight p { margin: 0; color: #e65100; }
+        .success {
+            background: #e8f5e9;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 1rem 0;
+        }
+        .success p { margin: 0; color: #2e7d32; }
+        .warning {
+            background: #ffebee;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f44336;
+            margin: 1rem 0;
+        }
+        .warning p { margin: 0; color: #c62828; }
+        .contact-box {
+            background: #fff3e0;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 { color: #f57c00; margin-top: 0; margin-bottom: 0.5rem; }
+        a { color: #f57c00; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .section { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            main { padding: 1.5rem; }
+            .app-name { font-size: 2rem; }
+            nav { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="agb.html">🇩🇪 Deutsch</a> |
+            <a href="agb_at.html">🇦🇹 Deutsch (AT)</a> |
+            <a href="agb_en.html">🇬🇧 English</a> |
+            <a href="agb_hu.html">🇭🇺 Magyar</a> |
+            <a href="agb_pl.html">🇵🇱 Polski</a> |
+            <a href="agb_sk.html" class="active">🇸🇰 Slovenčina</a>
+        </div>
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">Aplikácia na správu včelstiev pre včelárov</p>
+            <p class="last-updated">Všeobecné obchodné podmienky – Version 2026-09-05, stav k: 18. augusta 2026</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Ochrana údajov</a>
+            <a href="agb_sk.html" class="active">VOP</a>
+            <a href="eula_sk.html">EULA</a>
+            <a href="impressum_sk.html">Imprint</a>
+        </nav>
+
+        <main>
+            <h1>Všeobecné obchodné podmienky (VOP)</h1>
+
+            <p><strong>Poskytovateľ:</strong><br>
+                Jens Kübler<br>
+                Max-Beckmann-Straße 39<br>
+                76227 Karlsruhe<br>
+                Nemecko<br>
+                E-mail: <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a><br>
+                (ďalej len „Poskytovateľ")
+            </p>
+
+            <div class="highlight">
+                <p><strong>Krátke zhrnutie:</strong> Aplikácia je čisto pomocný nástroj vo včelárstve. Používanie sa
+                uskutočňuje na vlastnú zodpovednosť. Neručíme za stratu údajov ani za včelárske rozhodnutia. Obmedzenie
+                zodpovednosti platí v rozsahu povolenom zákonom.</p>
+            </div>
+
+            <h2>1. § Rozsah platnosti</h2>
+            <div class="section">
+                <ol>
+                    <li>VOP sa vzťahujú na používanie mobilnej aplikácie „Beemaster“ (ďalej len „Aplikácia“)
+                        distribuovanej v obchode Google Play.</li>
+                    <li>Stiahnutím a používaním Aplikácie používateľ akceptuje tieto VOP.</li>
+                    <li>Odchylné podmienky používateľa sa neuznávajú, pokiaľ Poskytovateľ ich použitiu výslovne
+                        písomne nesúhlasí.</li>
+                    <li>Na zmluvné vzťahy sa vzťahuje Občiansky zákonník (zákon č. 40/1964 Zb. v znení neskorších
+                        predpisov). V prípade spotrebiteľa sa doplnkovo uplatňujú ustanovenia zákona č. 250/2007
+                        Z. z. o ochrane spotrebiteľa a zákona č. 102/2014 Z. z. o ochrane spotrebiteľa pri predaji
+                        tovaru na diaľku. Právne zdroje:
+                        <a href="https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1964/40" target="_blank" rel="noopener">Občiansky zákonník (40/1964 Zb.) – Slov-Lex</a>,
+                        <a href="https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2007/250" target="_blank" rel="noopener">zákon o ochrane spotrebiteľa (250/2007 Z. z.) – Slov-Lex</a>
+                        a
+                        <a href="https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2014/102" target="_blank" rel="noopener">zákon o ochrane spotrebiteľa pri predaji tovaru na diaľku (102/2014 Z. z.) – Slov-Lex</a>,
+                        ako aj smernica
+                        <a href="https://eur-lex.europa.eu/eli/dir/2011/83/oj" target="_blank" rel="noopener">2011/83/EÚ o právach spotrebiteľov (EUR-Lex)</a>.</li>
+                </ol>
+            </div>
+
+            <h2>2. § Vznik zmluvy</h2>
+            <div class="section">
+                <ol>
+                    <li>Zmluva medzi Poskytovateľom a používateľom vzniká stiahnutím Aplikácie.</li>
+                    <li>Aplikácia je k dispozícii bezplatne. Pre prémiové funkcie platia osobitné podmienky
+                        (pozri bod 9 §).</li>
+                </ol>
+            </div>
+
+            <h2>3. § Predpoklady používania</h2>
+            <div class="section">
+                <ol>
+                    <li>Používanie Aplikácie predpokladá kompatibilné zariadenie so systémom Android
+                        (najmenej Android 8.0).</li>
+                    <li>Používateľ zodpovedá za zabezpečenie technickej infraštruktúry (zariadenie, internetové
+                        pripojenie, batéria).</li>
+                    <li><strong>Veková hranica:</strong> Aplikácia nie je určená pre deti. Maloletí potrebujú na
+                        platené funkcie súhlas svojho zákonného zástupcu (v Slovenskej republike Občiansky zákonník
+                        § 9).</li>
+                    <li><strong>Spôsobilosť súhlasiť pri ochrane údajov:</strong> Ak spracúvanie spočíva na súhlase,
+                        možno tento súhlas na Slovensku dať samostatne od 16 rokov (čl. 8 GDPR). Pod týmto vekom je
+                        potrebný súhlas osoby, ktorá vykonáva rodičovské práva a povinnosti.</li>
+                </ol>
+            </div>
+
+            <h2>4. § Poskytnutie práv na používanie</h2>
+            <div class="section">
+                <ol>
+                    <li>Poskytovateľ udeľuje jednoduché, neprenosné, miestne a časovo neobmedzené právo na používanie
+                        Aplikácie.</li>
+                    <li>Aplikáciu možno používať <strong>na súkromné aj podnikateľské účely</strong> – najmä
+                        hobby včelármi a profesionálnymi včelármi na dokumentáciu vlastného včelárskeho prevádzky.</li>
+                    <li>Zakazuje sa rozmnožovanie, prepracovanie, spätná analýza, šírenie alebo podlicencovanie
+                        Aplikácie, ako aj ponúkanie Aplikácie alebo jej funkcií tretej osobe ako vlastnej služby
+                        (napr. predaj, white-labeling, prevádzkovanie servisného portálu). Zákonné oprávnenia
+                        (najmä § 30 a nasl. zákona č. 185/2015 Z. z. Autorský zákon) zostávajú nedotknuté.</li>
+                </ol>
+            </div>
+
+            <h2>5. § Obmedzenia vyplývajúce z povahy Aplikácie</h2>
+            <div class="section">
+                <ol>
+                    <li><strong>Aplikácia je čisto pomocný nástroj</strong> vo včelárstve a nenahrádza odborné
+                        poradenstvo, veterinárne ošetrenie ani včelársku odbornosť.</li>
+                    <li>Odporúčania, upozornenia a údaje v Aplikácii (napr. liečba varroázy, odporúčania pre kŕmenie,
+                        označovanie matiek) vychádzajú zo všeobecných noriem a môžu sa miestne, sezónne alebo
+                        individuálne líšiť.</li>
+                    <li><strong>Aplikácia nerozpoznáva choroby ani zdravotné stavy</strong> včiel, matiek alebo
+                        včelstiev. Takéto posúdenie je výlučne úlohou odborníka.</li>
+                    <li>Aplikácia nezodpovedá za hospodárske rozhodnutia (napr. medový výnos, nákup včelstiev,
+                        počet úľov).</li>
+                </ol>
+            </div>
+
+            <h2>6. § Vylúčenie zodpovednosti</h2>
+
+            <h3>6.1 Všeobecné vylúčenie zodpovednosti</h3>
+            <div class="section">
+                <ol>
+                    <li>Používanie Aplikácie sa uskutočňuje <strong>na vlastnú zodpovednosť</strong>.</li>
+                    <li>Poskytovateľ nezodpovedá za škody, ktoré vzniknú v dôsledku:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>chýbajúcich alebo neúplných údajov Aplikácie</li>
+                            <li>prerušenia používania Aplikácie (výpadok servera, aktualizácia, údržba)</li>
+                            <li>nesprávneho zadania údajov používateľom</li>
+                            <li>tretích strán (napr. hackerský útok, škodlivý softvér)</li>
+                            <li>nekompatibility so zariadeniami alebo operačnými systémami</li>
+                            <li>straty údajov (napr. porucha zariadenia, preinštalovanie)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <h3>6.2 Obmedzenie zodpovednosti</h3>
+            <div class="section">
+                <ol>
+                    <li>V prípade úmyselného alebo hrubo nedbanlivého spôsobenia škody zodpovedá Poskytovateľ podľa
+                        zákona.</li>
+                    <li>V prípade ľahkej nedbanlivosti zodpovedá Poskytovateľ <strong>len</strong>:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>za škody z porušenia života, tela alebo zdravia</li>
+                            <li>za škody z porušenia podstatnej zmluvnej povinnosti (kardinálnej povinnosti)</li>
+                        </ul>
+                        Zodpovednosť sa obmedzuje na typicky predvídateľnú škodu.
+                    </li>
+                </ol>
+            </div>
+
+            <h3>6.3 Strata údajov</h3>
+            <div class="section">
+                <ol>
+                    <li>Poskytovateľ nezodpovedá za stratu údajov, najmä:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>za stratené včelárske údaje</li>
+                            <li>za stratené poznámky z prehliadok</li>
+                            <li>za stratené informácie o polohe</li>
+                        </ul>
+                    </li>
+                    <li>Používateľa výslovne vyzývame na pravidelné zálohovanie údajov (funkcia exportu).</li>
+                </ol>
+            </div>
+
+            <h3>6.4 Žiadna zodpovednosť za včelárske rozhodnutia</h3>
+            <div class="warning">
+                <p><strong>Dôležité upozornenie:</strong> Poskytovateľ výslovne <strong>nezodpovedá</strong>:</p>
+                <ul style="margin-top: 0.5rem;">
+                    <li>za stratu včelstiev</li>
+                    <li>za stratu matiek</li>
+                    <li>za neúspešné liečby varroázy</li>
+                    <li>za hospodárske straty (medový výnos, počet včelstiev)</li>
+                    <li>za nesprávne rozhodnutia založené na údajoch Aplikácie</li>
+                </ul>
+            </div>
+
+            <h2>7. § Povinnosti používateľa</h2>
+            <div class="section">
+                <ol>
+                    <li>Používateľ je povinný:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>nezadávať do Aplikácie škodlivé údaje</li>
+                            <li>nemanipulovať s Aplikáciou a nelámať ju</li>
+                            <li>nevykonávať automatizovaný prístup k Aplikácii</li>
+                            <li>utajiť svoje osobné prístupové údaje (pri prémiových funkciách)</li>
+                        </ul>
+                    </li>
+                    <li>Porušenie oprávňuje Poskytovateľa na okamžité zablokovanie.</li>
+                </ol>
+            </div>
+
+            <h2>8. § Vyhlásenie o ochrane údajov</h2>
+            <div class="section">
+                <ol>
+                    <li>Vyhlásenie o ochrane údajov je osobitne dostupné v časti <a href="index.html">Ochrana
+                        údajov</a>, ako aj v Aplikácii.</li>
+                    <li>Spracúvanie osobných údajov sa uskutočňuje na právnych základoch uvedených vo vyhlásení o ochrane
+                        údajov (čl. 6 ods. 1 GDPR). <strong>Súhlas si vyžadujeme len tam, kde je to potrebné</strong> –
+                        najmä pre voliteľné štatistiky chýb a používania. Tento súhlas je dobrovoľný, osobitne si ho
+                        vyžadujeme v nastaveniach Aplikácie a možno ho tam kedykoľvek do budúcnosti odvolať. Aplikáciu
+                        možno používať aj bez tohto súhlasu neobmedzene.</li>
+                </ol>
+            </div>
+
+            <h2>9. § Prémiové funkcie, zmluvný partner a platba</h2>
+            <div class="warning">
+                <p><strong>Kto je vaším zmluvným partnerom pri nákupe?</strong></p>
+                <p>Prémiové funkcie a predplatné <strong>nekupujete od Poskytovateľa</strong>, ale prostredníctvom
+                obchodu Google Play. Predávajúcim a zmluvným partnerom kúpnej zmluvy je
+                <strong>Google Commerce Limited</strong>, Gordon House, Barrow Street, Dublin 4, Írsko.</p>
+                <p>Pokiaľ ide o objednávku, platbu, fakturáciu, vrátenie platby a zákonné právo na odstúpenie od zmluvy,
+                platia <strong>podmienky používania obchodu Google Play</strong> a pravidlá spoločnosti Google pre
+                vrátenie platieb. Poskytovateľ neprijíma platby ani sám nevracia platby.</p>
+            </div>
+            <div class="section">
+                <ol>
+                    <li>Prémiové funkcie (napr. rozšírené kvóty úľov) sú spoplatnené. Poskytovateľ funkcie technicky
+                        zabezpečuje; kúpna zmluva sa uzatvára so spoločnosťou Google Commerce Limited
+                        (pozri rámček vyššie).</li>
+                    <li>Ceny sa pred nákupom zobrazia v obchode Google Play vrátane platnej DPH.</li>
+                    <li><strong>Predplatné sa automaticky predlžujú</strong> na zvolené obdobie, pokiaľ ich
+                        neodvoláte pred skončením aktuálneho obdobia. Zrušenie sa uskutočňuje v správe predplatného
+                        v obchode Google Play. Google informuje o každom predĺžení podľa svojich podmienok. Zrušenie
+                        nadobúda účinnosť na konci už zaplateného obdobia; zaplatené poplatky za aktuálne obdobie sa
+                        nepomerne nevracajú.</li>
+                    <li><strong>Jednorazové nákupy</strong> (v obchode takto označené) sa nepredlžujú a neuplynutia.</li>
+                    <li>Vrátenie platieb sa uskutočňuje výlučne podľa pravidiel obchodu Google Play. Žiadosť možno
+                        podať cez váš účet Google.</li>
+                    <li>Platba sa uskutočňuje cez Google Play. Poskytovateľ <strong>nedostáva a neuchováva</strong>
+                        platobné údaje (ani údaje o karte, účte alebo čísle bankového účtu).</li>
+                </ol>
+            </div>
+
+            <h2>10. § Dostupnosť a zmeny</h2>
+            <div class="section">
+                <ol>
+                    <li>Poskytovateľ si vyhradzuje právo:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Aplikáciu kedykoľvek zmeniť alebo ukončiť</li>
+                            <li>prémiové funkcie zmeniť alebo odstrániť</li>
+                            <li>zmeniť ceny prémiových funkcií (len pri nových nákupoch)</li>
+                        </ul>
+                    </li>
+                    <li>Neexistuje nárok na nepretržitú dostupnosť.</li>
+                </ol>
+            </div>
+
+            <h2>11. § Výpoveď</h2>
+            <div class="section">
+                <ol>
+                    <li>Používateľ môže Aplikáciu kedykoľvek ukončiť vymazaním zo zariadenia.</li>
+                    <li>Poskytovateľ môže zmluvu vypovedať s 14-dňovou výpovednou lehotou (len pri prémiových
+                        funkciách, s pomerným vrátením platby).</li>
+                    <li>Po výpovedi sa všetky údaje používateľa vymažú najneskôr do 30 dní.</li>
+                </ol>
+            </div>
+
+            <h2>12. § Voľba práva a právomoc</h2>
+            <div class="section">
+                <ol>
+                    <li>Na zmluvu sa vzťahuje <strong>slovenské právo</strong> s vylúčením Dohovoru OSN o zmluvách
+                        o medzinárodnej kúpe tovaru (CISG, Viedenský dohovor). V prípade spotrebiteľa sa doplnkovo
+                        uplatňujú kogentné ustanovenia Občianskeho zákonníka a zákonov o ochrane spotrebiteľa.</li>
+                    <li>V prípade spotrebiteľov s obvyklým pobytom v inom členskom štáte EÚ zostávajú nedotknuté
+                        ochranné predpisy miesta pobytu spotrebiteľa (čl. 6 nariadenia Rím I).</li>
+                    <li>Pre spotrebiteľov platia zákonné ustanovenia.</li>
+                </ol>
+            </div>
+
+            <h2>13. § Právo spotrebiteľa na odstúpenie od zmluvy (prémiové nákupy)</h2>
+            <div class="warning">
+                <p><strong>Právo na odstúpenie od zmluvy je voči spoločnosti Google, nie voči Poskytovateľovi.</strong></p>
+                <p>Keďže kúpna zmluva na prémiové funkcie sa uzatvára so <strong>spoločnosťou Google Commerce
+                Limited</strong> (pozri bod 9 §), odstúpenie od zmluvy možno uplatniť výlučne voči spoločnosti Google.
+                Poskytovateľ v takom prípade nie je zmluvným partnerom a nemôže odstúpenie prijať ani iniciovať
+                vrátenie platby.</p>
+            </div>
+            <div class="section">
+                <ol>
+                    <li>Práva spotrebiteľa vyplývajú z podmienok používania obchodu Google Play a z kogentných
+                        ustanovení práva štátu pobytu.</li>
+                    <li>Žiadosť o odstúpenie od zmluvy alebo vrátenie platby podajte spoločnosti Google cez svoj účet
+                        Google (Google Play → Účet → Objednávky → Nahlásenie problému).</li>
+                    <li><strong>Digitálny obsah:</strong> V prípade okamžite aktivovaného digitálneho obsahu môže
+                        právo na odstúpenie od zmluvy zaniknúť vopred, ak ste výslovne súhlasili s okamžitým plnením
+                        a boli ste oboznámení so stratou práva na odstúpenie. Ako tento súhlas vyžaduje proces nákupu
+                        v Google Play, určuje práve ten.</li>
+                    <li>Bez ohľadu na to Poskytovateľ poskytuje bezplatnú základnú verziu Aplikácie bez platobnej
+                        povinnosti; na túto nevzniká prípad odstúpenia od zmluvy.</li>
+                </ol>
+            </div>
+
+            <h2>14. § Riešenie spotrebiteľských sporov (mimosúdne riešenie)</h2>
+            <div class="section">
+                <ol>
+                    <li>Poskytovateľ nie je povinný a ani ochotný zúčastniť sa na postupe mimosúdneho riešenia sporov
+                        pred subjektom na alternatívne riešenie spotrebiteľských sporov.</li>
+                    <li><strong>Spotrebitelia s pobytom v Slovenskej republike:</strong> Na mierové riešenie sporov zo
+                        spotrebiteľských zmlúv je príslušným subjektom inšpekcia obchodu v rámci Slovenskej obchodnej
+                        inšpekcie (SOI) podľa zákona č. 391/2015 Z. z. o alternatívnom riešení spotrebiteľských sporov.
+                        Kontakty na príslušné inšpektoráty nájdete na oficiálnej stránke
+                        <a href="https://www.soi.sk" target="_blank" rel="noopener">www.soi.sk</a>.</li>
+                    <li>Spotrebitelia s pobytom v iných členských štátoch EÚ nájdu príslušný subjekt na zozname
+                        Európskej komisie:
+                        <a href="https://consumer-redress.ec.europa.eu/dispute-resolution-bodies" target="_blank" rel="noopener">consumer-redress.ec.europa.eu/dispute-resolution-bodies</a>.</li>
+                    <li>Ak sa spor týka kúpnej zmluvy (platba, vrátenie platby), príslušným partnerom je Google
+                        Commerce Limited; pozri bod 9 § a 13 §.</li>
+                </ol>
+                <p style="font-size:0.9em;opacity:0.85;">Poznámka k ODR: Bývalá platforma EÚ na online riešenie sporov
+                (ODR) bola zrušená nariadením (EÚ) 2024/3228 a od 20. júla 2025 nie je dostupná.</p>
+            </div>
+
+            <h2>15. § Salvátorská klauzula</h2>
+            <div class="success">
+                <ol style="margin: 0;">
+                    <li>Ak sú jednotlivé ustanovenia týchto VOP úplne alebo čiastočne neplatné alebo sa stanú neplatnými,
+                        neovplyvní to platnosť ostatných ustanovení.</li>
+                    <li>Namiesto úplne alebo čiastočne neplatného ustanovenia nastupuje platné ustanovenie, ktoré sa
+                        svojim hospodárskym cieľom najviac približuje pôvodnému ustanoveniu.</li>
+                    <li>To isté platí, ak VOP obsahujú medzeru.</li>
+                    <li>Neexistujú žiadne ústne vedľajšie dohody. Zmeny vyžadujú písomnú formu.</li>
+                </ol>
+            </div>
+
+            <h2>16. § Jazyk</h2>
+            <div class="section">
+                <p>VOP sú vyhotovené v slovenskom jazyku. Anglická verzia
+                (<a href="agb_en.html">English version</a>) je nezáväzným prekladom.
+                <strong>V prípade rozdielov je rozhodujúca výlučne slovenská verzia.</strong></p>
+            </div>
+
+            <h2>17. § Kontakt</h2>
+            <div class="contact-box">
+                <h3>Poskytovateľ</h3>
+                <ul>
+                    <li><strong>Vývojár:</strong> Jens Kübler</li>
+                    <li><strong>Adresa:</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Nemecko</li>
+                    <li><strong>E-mail:</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                </ul>
+            </div>
+
+            <div class="highlight" style="margin-top: 2rem;">
+                <p><strong>Poznámka:</strong> VOP boli formulované podľa najlepšieho vedomia, s prihliadnutím na
+                právne predpisy účinné v čase ich vyhotovenia.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Beemaster | <a href="index.html">Ochrana údajov</a> | <a href="eula_sk.html">EULA</a> | <a href="impressum_sk.html">Imprint</a></p>
+            <p>Tieto VOP sa vzťahujú na aplikáciu Beemaster pre Android. Version 2026-09-05. <a href="agb_en.html">English version</a></p>
+        </footer>
+    </div>
+</body>
+</html>

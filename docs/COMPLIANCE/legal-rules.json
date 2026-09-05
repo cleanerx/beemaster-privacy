@@ -1,6 +1,6 @@
 {
-  "version": "2026-08-18",
-  "lastUpdated": "2026-08-18T00:00:00Z",
+  "version": "2026-09-05",
+  "lastUpdated": "2026-09-05T00:00:00Z",
   "jurisdictions": {
     "DE": {
       "name": "Deutschland",
@@ -72,12 +72,199 @@
         "eula": ["Warranty", "Liability", "Governing law"]
       },
       "forbiddenClauses": ["EU ODR platform (abolished 2025-07-20)"]
+    },
+    "HU": {
+      "name": "Ungarn",
+      "language": "hu",
+      "assetFolder": "hu",
+      "laws": ["GDPR", "Információs önrendelkezési törvény (Infotv.)", "Ptk."],
+      "supervisoryAuthority": {
+        "name": "Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)",
+        "email": "ugyfelszolgalat@naih.hu"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Kapcsolat", "Felelősség kizárása"],
+        "privacy": ["GDPR 13. cikk", "NAIH", "Panaszjog"],
+        "agb": ["Elállási jog", "Elfogadó nyilatkozat"],
+        "eula": ["Szavatosság", "Felelősség", "Jogválasztás"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
+    },
+    "PL": {
+      "name": "Polen",
+      "language": "pl",
+      "assetFolder": "pl",
+      "laws": ["RODO", "Ustawa o świadczeniu usług drogą elektroniczną", "KC"],
+      "supervisoryAuthority": {
+        "name": "Urząd Ochrony Danych Osobowych (UODO)",
+        "email": "kontakt@uodo.gov.pl"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Kontakt", "Ograniczenie odpowiedzialności"],
+        "privacy": ["RODO art. 13", "UODO", "Prawo do skargi"],
+        "agb": ["Prawo odstąpienia", "Rozstrzyganie sporów"],
+        "eula": ["Gwarancja", "Odpowiedzialność", "Prawo właściwe"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
+    },
+    "SK": {
+      "name": "Slowakei",
+      "language": "sk",
+      "assetFolder": "sk",
+      "laws": ["GDPR", "Zákon č. 18/2018 Z. z."],
+      "supervisoryAuthority": {
+        "name": "Úrad na ochranu osobných údajov Slovenskej republiky (ÚOOÚ SR)",
+        "email": "statny.dozor@pdp.gov.sk"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Kontakt", "Zodpovednosť"],
+        "privacy": ["čl. 13 GDPR", "ÚOOÚ SR", "Právo podať sťažnosť"],
+        "agb": ["Odstúpenie od zmluvy", "Riešenie sporov"],
+        "eula": ["Záruka", "Zodpovednosť", "Právna voľba"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
+    },
+    "BG": {
+      "name": "Bulgarien",
+      "language": "bg",
+      "assetFolder": "bg",
+      "laws": ["GDPR", "Закон за защита на личните данни (ЗЗЛД)", "ЗЗП"],
+      "supervisoryAuthority": {
+        "name": "Комисия за защита на личните данни (КЗЛД)",
+        "email": "kzld@cpdp.bg"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Контакт", "Отговорност"],
+        "privacy": ["чл. 13 GDPR", "КЗЛД", "Право на жалба"],
+        "agb": ["Право на отказ", "Разрешаване на спорове"],
+        "eula": ["Гаранция", "Отговорност", "Приложимо право"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
+    },
+    "LU": {
+      "name": "Luxemburg",
+      "language": "lu",
+      "assetFolder": "lu",
+      "laws": ["GDPR", "Code de la consommation", "Loi du 1er août 2018"],
+      "supervisoryAuthority": {
+        "name": "Commission nationale pour la protection des données (CNPD)",
+        "email": "info@cnpd.lu"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Contact", "Responsabilité"],
+        "privacy": ["Art. 13 RGPD", "CNPD", "Droit de réclamation"],
+        "agb": ["Droit de rétractation", "Résolution des litiges"],
+        "eula": ["Garantie", "Responsabilité", "Droit applicable"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
+    },
+    "FR": {
+      "name": "Frankreich",
+      "language": "fr",
+      "assetFolder": "fr",
+      "laws": ["RGPD", "Code de la consommation", "Loi Informatique et Libertés"],
+      "supervisoryAuthority": {
+        "name": "Commission nationale de l'informatique et des libertés (CNIL)",
+        "email": "cnil@cnil.fr"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Contact", "Responsabilité"],
+        "privacy": ["Art. 13 RGPD", "CNIL", "Droit de réclamation"],
+        "agb": ["Droit de rétractation", "Résolution des litiges"],
+        "eula": ["Garantie", "Responsabilité", "Droit applicable"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
+    },
+    "BE": {
+      "name": "Belgien",
+      "language": "be",
+      "assetFolder": "be",
+      "laws": ["RGPD", "Code de droit économique", "Loi du 30 juillet 2018"],
+      "supervisoryAuthority": {
+        "name": "Autorité de protection des données (APD) / Gegevensbeschermingsautoriteit (GBA)",
+        "email": "contact@apd-gba.be"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Contact", "Responsabilité"],
+        "privacy": ["Art. 13 RGPD", "APD", "GBA", "Droit de réclamation"],
+        "agb": ["Droit de rétractation", "Résolution des litiges"],
+        "eula": ["Garantie", "Responsabilité", "Droit applicable"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
+    },
+    "BE-NL": {
+      "name": "Belgien (niederländisch)",
+      "language": "be-nl",
+      "assetFolder": "be-nl",
+      "laws": ["AVG", "Wetboek van economisch recht", "Wet van 30 juli 2018"],
+      "supervisoryAuthority": {
+        "name": "Gegevensbeschermingsautoriteit (GBA)",
+        "email": "contact@apd-gba.be"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Contact", "Aansprakelijkheid"],
+        "privacy": ["Art. 13 AVG", "GBA", "Recht om een klacht in te dienen"],
+        "agb": ["Herroepingsrecht", "Geschillenbeslechting"],
+        "eula": ["Garantie", "Aansprakelijkheid", "Toepasselijk recht"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
+    },
+    "NL": {
+      "name": "Niederlande",
+      "language": "nl",
+      "assetFolder": "nl",
+      "laws": ["AVG", "Burgerlijk Wetboek", "Telecommunicatiewet"],
+      "supervisoryAuthority": {
+        "name": "Autoriteit Persoonsgegevens (AP)",
+        "email": "info@autoriteitpersoonsgegevens.nl"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Contact", "Aansprakelijkheid"],
+        "privacy": ["Art. 13 AVG", "Autoriteit Persoonsgegevens", "Recht om een klacht in te dienen"],
+        "agb": ["Herroepingsrecht", "Geschillenbeslechting"],
+        "eula": ["Garantie", "Aansprakelijkheid", "Toepasselijk recht"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
+    },
+    "DA": {
+      "name": "Dänemark",
+      "language": "da",
+      "assetFolder": "da",
+      "laws": ["GDPR", "Databeskyttelsesloven", "Købeloven"],
+      "supervisoryAuthority": {
+        "name": "Datatilsynet",
+        "email": "dt@datatilsynet.dk"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Kontakt", "Ansvarsbegrænsning"],
+        "privacy": ["GDPR art. 13", "Datatilsynet", "Klageret"],
+        "agb": ["Fortrydelsesret", "Tvistbilæggelse"],
+        "eula": ["Garanti", "Ansvarsbegrænsning", "Lovvalg"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
+    },
+    "IT": {
+      "name": "Italien",
+      "language": "it",
+      "assetFolder": "it",
+      "laws": ["GDPR", "Codice in materia di protezione dei dati personali (D.Lgs. 196/2003)", "Codice del consumo"],
+      "supervisoryAuthority": {
+        "name": "Garante per la protezione dei dati personali",
+        "email": "garante@gpdp.it"
+      },
+      "mandatoryClauses": {
+        "impressum": ["Contatto", "Limitazione di responsabilità"],
+        "privacy": ["Art. 13 GDPR", "Garante per la protezione dei dati personali", "Diritto di reclamo"],
+        "agb": ["Diritto di recesso", "Risoluzione delle controversie"],
+        "eula": ["Garanzia", "Limitazione di responsabilità", "Legge applicabile"]
+      },
+      "forbiddenClauses": ["VSBG", "AStG", "BGB (Deutschland)"]
     }
   },
   "validationRules": [
-    {"id": "RULE-001", "appliesTo": ["DE", "AT", "CZ", "EU"], "document": "impressum", "check": "contains", "patterns": ["E-Mail", "Anschrift", "Adresse"], "severity": "ERROR"},
-    {"id": "RULE-002", "appliesTo": ["DE", "AT", "CZ", "EU"], "document": "privacy", "check": "contains", "patterns": ["Art. 13", "Art 13", "Article 13"], "severity": "ERROR"},
-    {"id": "RULE-003", "appliesTo": ["DE", "AT", "CZ", "EU"], "document": "privacy", "check": "contains", "patterns": ["Aufsichtsbehörde", "Supervisory authority", "Datenschutzbehörde"], "severity": "ERROR"},
+    {"id": "RULE-001", "appliesTo": ["DE", "AT", "CZ", "EU", "HU", "PL", "SK", "BG", "LU", "FR", "BE", "BE-NL", "NL", "DA", "IT"], "document": "impressum", "check": "contains", "patterns": ["E-Mail", "Anschrift", "Adresse", "Email", "Address", "E-mail", "Имейл", "Адрес", "E-mailadres", "adresse e-mail", "e-mailadres"], "severity": "ERROR"},
+    {"id": "RULE-002", "appliesTo": ["DE", "AT", "CZ", "EU", "HU", "PL", "SK", "BG", "LU", "FR", "BE", "BE-NL", "NL", "DA", "IT"], "document": "privacy", "check": "contains", "patterns": ["Art. 13", "Art 13", "Article 13", "Artikel 13", "art. 13", "čl. 13", "чл. 13", "13. cikk", "13. článek", "13. artikel", "artikel 13"], "severity": "ERROR"},
+    {"id": "RULE-003", "appliesTo": ["DE", "AT", "CZ", "EU", "HU", "PL", "SK", "BG", "LU", "FR", "BE", "BE-NL", "NL", "DA", "IT"], "document": "privacy", "check": "contains", "patterns": ["Aufsichtsbehörde", "Supervisory authority", "Datenschutzbehörde", "hatóság", "urząd", "dozorný", "орган за надзор", "autorité de contrôle", "toezichthoudende autoriteit", "tilsynsmyndighed", "autorità di controllo", "Garant", "UODO", "NAIH", "Datatilsynet", "CNIL", "CNPD", "APD", "GBA"], "severity": "ERROR"},
     {"id": "RULE-004-DE", "appliesTo": ["DE"], "document": "impressum", "check": "contains", "patterns": ["§ 5 DDG", "§5 DDG", "§ 5 TMG", "§5 TMG", "Digitale-Dienste-Gesetz"], "severity": "ERROR"},
     {"id": "RULE-005-DE", "appliesTo": ["DE"], "document": "agb", "check": "contains", "patterns": ["§36 VSBG", "VSBG"], "severity": "ERROR"},
     {"id": "RULE-006-AT", "appliesTo": ["AT"], "document": "impressum", "check": "contains", "patterns": ["§5 ECG", "E-Commerce-Gesetz"], "severity": "ERROR"},
@@ -87,11 +274,33 @@
     {"id": "RULE-010-AT", "appliesTo": ["AT"], "document": "eula", "check": "contains", "patterns": ["ABGB", "österreichisches Recht"], "severity": "ERROR"},
     {"id": "RULE-011-CZ", "appliesTo": ["CZ"], "document": "privacy", "check": "contains", "patterns": ["ÚOOÚ", "Úřad pro ochranu osobních údajů"], "severity": "ERROR"},
     {"id": "RULE-012-CZ", "appliesTo": ["CZ"], "document": "agb", "check": "contains", "patterns": ["Česká obchodní inspekce", "COI", "adr@coi.gov.cz"], "severity": "ERROR"},
-    {"id": "RULE-013", "appliesTo": ["DE", "AT", "CZ", "EU"], "document": "all", "check": "notContains", "patterns": ["ec.europa.eu/odr"], "severity": "WARNING"},
+    {"id": "RULE-013", "appliesTo": ["DE", "AT", "CZ", "EU", "HU", "PL", "SK", "BG", "LU", "FR", "BE", "BE-NL", "NL", "DA", "IT"], "document": "all", "check": "notContains", "patterns": ["ec.europa.eu/odr"], "severity": "WARNING"},
     {"id": "RULE-014-DE", "appliesTo": ["DE"], "document": "all", "check": "notContains", "patterns": ["AStG"], "severity": "ERROR"},
     {"id": "RULE-015-DE", "appliesTo": ["DE"], "document": "all", "check": "notContains", "patterns": ["ABGB"], "severity": "ERROR"},
     {"id": "RULE-016-AT", "appliesTo": ["AT"], "document": "all", "check": "notContains", "patterns": ["VSBG"], "severity": "ERROR"},
-    {"id": "RULE-017-AT", "appliesTo": ["AT"], "document": "all", "check": "notContains", "patterns": ["BGB (Deutschland)", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"}
+    {"id": "RULE-017-AT", "appliesTo": ["AT"], "document": "all", "check": "notContains", "patterns": ["BGB (Deutschland)", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"},
+    {"id": "RULE-018-HU", "appliesTo": ["HU"], "document": "privacy", "check": "contains", "patterns": ["NAIH", "Nemzeti Adatvédelmi"], "severity": "ERROR"},
+    {"id": "RULE-019-HU", "appliesTo": ["HU"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"},
+    {"id": "RULE-020-PL", "appliesTo": ["PL"], "document": "privacy", "check": "contains", "patterns": ["UODO", "Urząd Ochrony Danych"], "severity": "ERROR"},
+    {"id": "RULE-021-PL", "appliesTo": ["PL"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"},
+    {"id": "RULE-022-SK", "appliesTo": ["SK"], "document": "privacy", "check": "contains", "patterns": ["ÚOOÚ", "Úrad na ochranu osobných údajov"], "severity": "ERROR"},
+    {"id": "RULE-023-SK", "appliesTo": ["SK"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"},
+    {"id": "RULE-024-BG", "appliesTo": ["BG"], "document": "privacy", "check": "contains", "patterns": ["КЗЛД", "CPDP", "Комиссия за защита на личните данни"], "severity": "ERROR"},
+    {"id": "RULE-025-BG", "appliesTo": ["BG"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"},
+    {"id": "RULE-026-LU", "appliesTo": ["LU"], "document": "privacy", "check": "contains", "patterns": ["CNPD", "Commission nationale pour la protection des données"], "severity": "ERROR"},
+    {"id": "RULE-027-LU", "appliesTo": ["LU"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"},
+    {"id": "RULE-028-FR", "appliesTo": ["FR"], "document": "privacy", "check": "contains", "patterns": ["CNIL", "Commission nationale de l'informatique"], "severity": "ERROR"},
+    {"id": "RULE-029-FR", "appliesTo": ["FR"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"},
+    {"id": "RULE-030-BE", "appliesTo": ["BE"], "document": "privacy", "check": "contains", "patterns": ["APD", "GBA", "Autorité de protection des données", "Gegevensbeschermingsautoriteit"], "severity": "ERROR"},
+    {"id": "RULE-031-BE", "appliesTo": ["BE"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"},
+    {"id": "RULE-032-BE-NL", "appliesTo": ["BE-NL"], "document": "privacy", "check": "contains", "patterns": ["GBA", "Gegevensbeschermingsautoriteit"], "severity": "ERROR"},
+    {"id": "RULE-033-BE-NL", "appliesTo": ["BE-NL"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG (AT)", "§19 AStG", "Bürgerliches Gesetzbuch (Deutschland)", "österreichisches Recht"], "severity": "ERROR"},
+    {"id": "RULE-034-NL", "appliesTo": ["NL"], "document": "privacy", "check": "contains", "patterns": ["Autoriteit Persoonsgegevens", "AP"], "severity": "ERROR"},
+    {"id": "RULE-035-NL", "appliesTo": ["NL"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG (AT)", "§19 AStG", "Bürgerliches Gesetzbuch (Deutschland)", "österreichisches Recht"], "severity": "ERROR"},
+    {"id": "RULE-036-DA", "appliesTo": ["DA"], "document": "privacy", "check": "contains", "patterns": ["Datatilsynet"], "severity": "ERROR"},
+    {"id": "RULE-037-DA", "appliesTo": ["DA"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"},
+    {"id": "RULE-038-IT", "appliesTo": ["IT"], "document": "privacy", "check": "contains", "patterns": ["Garante per la protezione dei dati personali", "Garante"], "severity": "ERROR"},
+    {"id": "RULE-039-IT", "appliesTo": ["IT"], "document": "all", "check": "notContains", "patterns": ["VSBG", "AStG", "Bürgerliches Gesetzbuch (Deutschland)"], "severity": "ERROR"}
   ],
   "reConsentRules": {
     "required": ["Neue Datenkategorien", "Neue Verarbeitungszwecke", "Neue Drittanbieter", "Rechtsgrundlage ändert sich", "Neue Aufsichtsbehörde"],

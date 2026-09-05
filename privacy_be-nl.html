@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacybeleid | Beemaster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #d4a574;
+            margin-bottom: 2rem;
+        }
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8b4513;
+            margin-bottom: 0.5rem;
+        }
+        .app-name span {
+            color: #f5a623;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .bee-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        main {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #8b4513;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f5a623;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            color: #555;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #444;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            background: #fff8e7;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f5a623;
+            margin: 1.5rem 0;
+        }
+        .warning {
+            background: #fff3f3;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+            margin: 1.5rem 0;
+        }
+        .success {
+            background: #f0fff0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            margin: 1.5rem 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .data-table th, .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th {
+            background: #f5a623;
+            color: white;
+        }
+        .data-table tr:nth-child(even) {
+            background: #fafafa;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #8b4513, #a0522d);
+            color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 {
+            color: #f5a623;
+            margin-top: 0;
+        }
+        .contact-box a {
+            color: #f5a623;
+        }
+        a {
+            color: #8b4513;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .last-updated {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            main {
+                padding: 1.5rem;
+            }
+            .app-name {
+                font-size: 2rem;
+            }
+            .data-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">De bijenkorfbeheer-app voor imkers</p>
+            <p class="last-updated">Versie 3.2 (2026-09-05) – Laatst bijgewerkt: 5 september 2026</p>
+        </header>
+
+        <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
+            <a href="index.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇩🇪 Deutsch</a> |
+            <a href="privacy_at.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇦🇹 Deutsch (AT)</a> |
+            <a href="privacy_en.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a> |
+            <a href="privacy_cs.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇨🇿 Čeština</a> |
+            <a href="privacy_be.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇧🇪 Français (BE)</a> |
+            <a href="privacy_be-nl.html" style="color:#8b4513;text-decoration:none;font-weight:bold;text-decoration:underline;margin-left:0.5rem;">🇧🇪 Nederlands (BE)</a> |
+            <a href="privacy_nl.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇳🇱 Nederlands</a>
+        </div>
+
+        <nav style="display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
+            <a href="privacy_be-nl.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;font-weight:bold;">Privacybeleid</a>
+            <a href="agb_be-nl.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Algemene voorwaarden</a>
+            <a href="eula_be-nl.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">EULA</a>
+            <a href="impressum_be-nl.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Colofon</a>
+        </nav>
+
+        <main>
+            <h1>Privacybeleid</h1>
+
+            <div class="highlight">
+                <p><strong>Belangrijke taalopmerking :</strong> Dit privacybeleid is de geldende en bindende versie
+                voor België. Het is opgesteld in de Nederlandse taal. De andere taalversies zijn niet-bindende
+                vertalingen. <strong>Bij afwijking is enkel de Nederlandse versie bindend.</strong></p>
+            </div>
+
+            <div class="highlight">
+                <p><strong>Samenvatting :</strong> Beemaster slaat alle gegevens lokaal op uw toestel op. De
+                persoonlijke gegevens worden versleuteld. Er worden geen reclame- of marketinggegevens verzameld.
+                Uw bijenkorfgegevens blijven bij u.</p>
+            </div>
+
+            <h2>1. Verwerkingsverantwoordelijke (art. 4, punt 7, AVG)</h2>
+            <p>De verwerkingsverantwoordelijke in de zin van de AVG is :</p>
+            <ul>
+                <li><strong>Naam :</strong> Jens Kübler</li>
+                <li><strong>Adres :</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Duitsland</li>
+                <li><strong>E-mail :</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+            </ul>
+            <p>Er is geen functionaris voor gegevensbescherming aangesteld (wettelijk niet vereist).</p>
+
+            <h2>1a. Rechtsgronden voor de verwerking</h2>
+            <p>Wanneer wij persoonsgegevens verwerken, berust de verwerking op de volgende rechtsgronden :</p>
+            <ul>
+                <li><strong>Art. 6, lid 1, onder a), AVG</strong> &ndash; toestemming. Dit geldt uitsluitend voor de :
+                    fout- en gebruikstatistieken (rubriek 6.1) en het verzenden van feedback (rubriek 6.5).
+                    Beide zijn standaard uitgeschakeld of louter vrijwillig en kunnen op elk moment worden
+                    ingetrokken.</li>
+                <li><strong>Art. 6, lid 1, onder b), AVG</strong> &ndash; uitvoering van een overeenkomst: het
+                    leveren van de app-functies, de kaartweergave, het ophalen van weergegevens, het ontgrendelen
+                    van aangekochte functies.</li>
+                <li><strong>Art. 6, lid 1, onder c), AVG</strong> &ndash; wettelijke verplichting (bv.
+                    bewaarverplichtingen in het handels- en belastingrecht).</li>
+                <li><strong>Art. 6, lid 1, onder f), AVG</strong> &ndash; gerechtvaardigd belang: preventie van
+                    misbruik en waarborging van de technische werking.</li>
+            </ul>
+            <div class="success">
+                <p><strong>Geen koppelingsverbod overtreden :</strong> Het aanvaarden van de EULA, de Algemene
+                voorwaarden en dit privacybeleid bij de eerste start is een <em>instemming met de
+                contractvoorwaarden</em> en is <strong>geen</strong> toestemming in de zin van de
+                gegevensbescherming. De verwerking die toestemming vereist, wordt afzonderlijk, vrijwillig en
+                herroepbaar gevraagd (art. 7, lid 4, AVG).</p>
+            </div>
+            <p style="font-size:0.9em;opacity:0.85;">Rechtsbronnen : De algemene verordening gegevensbescherming
+            is beschikbaar op
+            <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a>
+            (verordening (EU) 2016/679). De Wet van 30 juli 2018 betreffende de bescherming van natuurlijke
+            personen met betrekking tot de verwerking van persoonsgegevens (Belgische AVG-uitvoeringswet) is
+            beschikbaar op
+            <a href="https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel" target="_blank" rel="noopener">Wet van 30 juli 2018 – eJustice</a>.</p>
+
+            <h2>2. Welke gegevens worden verzameld ?</h2>
+
+            <h3>📱 Vereiste app-gegevens</h3>
+            <p>Gegevens die nodig zijn voor de basisfuncties van de app :</p>
+            <table class="data-table">
+                <tr>
+                    <th>Soort gegevens</th>
+                    <th>Doel</th>
+                    <th>Opslag</th>
+                </tr>
+                <tr>
+                    <td>Bijenkorfgegevens</td>
+                    <td>Beheer van uw bijenstand</td>
+                    <td>Lokaal op het toestel</td>
+                </tr>
+                <tr>
+                    <td>Inspectienotities</td>
+                    <td>Documentatie</td>
+                    <td>Lokaal op het toestel</td>
+                </tr>
+                <tr>
+                    <td>GPS-posities</td>
+                    <td>Kaartweergave van de bijenkasten</td>
+                    <td>Lokaal op het toestel</td>
+                </tr>
+                <tr>
+                    <td>Herinneringen</td>
+                    <td>Meldingen</td>
+                    <td>Lokaal op het toestel</td>
+                </tr>
+            </table>
+
+            <h3>👤 Optionele persoonlijke gegevens</h3>
+            <p>U kunt voor uw imkerprofiel eventueel de volgende gegevens verstrekken :</p>
+            <ul>
+                <li>Naam / naam van de bijenstand</li>
+                <li>E-mailadres</li>
+                <li>Telefoonnummer</li>
+                <li>Adres / woonplaats</li>
+            </ul>
+            <div class="success">
+                <p><strong>✓ Versleuteling :</strong> De persoonlijke gegevens worden versleuteld opgeslagen met behulp van de Android Keystore.</p>
+            </div>
+
+            <h3>🔐 Accountgegevens (premium-functies)</h3>
+            <p>Voor het gebruik van de premium-functies (AI-assistent, cloud-back-up, GDPR-incidentmelding) kunt u een account aanmaken :</p>
+            <table class="data-table">
+                <tr>
+                    <th>Soort gegevens</th>
+                    <th>Doel</th>
+                    <th>Opslag</th>
+                </tr>
+                <tr>
+                    <td>E-mailadres</td>
+                    <td>Accountaanmaak, aanmelding</td>
+                    <td>Versleuteld bij Supabase (EU)</td>
+                </tr>
+                <tr>
+                    <td>Wachtwoordafdruk (hash)</td>
+                    <td>Authenticatie</td>
+                    <td>Versleuteld bij Supabase (EU)</td>
+                </tr>
+                <tr>
+                    <td>Accountstatus</td>
+                    <td>Premium ontgrendeling</td>
+                    <td>Versleuteld bij Supabase (EU)</td>
+                </tr>
+                <tr>
+                    <td>10 gratis credits</td>
+                    <td>Gratis proefgebruik</td>
+                    <td>Versleuteld bij Supabase (EU)</td>
+                </tr>
+            </table>
+            <div class="success">
+                <p><strong>✓ AVG-conformiteit :</strong> De accountgegevens worden versleuteld opgeslagen in een EU-datacenter (Ierland).</p>
+            </div>
+            <p><strong>Optioneel :</strong> Het aanmaken van een account is vrijwillig. De basisfuncties van de app zijn beschikbaar zonder account.</p>
+
+            <h3>📝 Feedback-systeem (optioneel)</h3>
+            <p>Om de app te verbeteren, kunt u feedback verstrekken :</p>
+            <ul>
+                <li><strong>Gegevens :</strong> feedbacktekst, categorie (Bug, Feature, UI/UX, Prestaties, Overig), beoordeling (1-5 sterren)</li>
+                <li><strong>Opslag :</strong> Lokaal + versleuteld naar de server</li>
+                <li><strong>Optioneel :</strong> U beslist zelf of u feedback wilt verzenden</li>
+                <li><strong>Anoniem :</strong> Geen verband met uw persoon, tenzij u uw e-mailadres verstrekt</li>
+            </ul>
+
+            <h3>📸 Media</h3>
+            <ul>
+                <li><strong>Foto's :</strong> Afbeeldingen van bijenkasten (optioneel, lokaal opgeslagen)</li>
+                <li><strong>Spraaknotities :</strong> Audio-opnamen (optioneel, lokaal opgeslagen)</li>
+            </ul>
+
+            <h3>📊 Fout- en gebruikstatistieken (alleen met toestemming)</h3>
+            <div class="success">
+                <p><strong>Standaard uitgeschakeld.</strong> Zonder uw uitdrukkelijke toestemming worden <strong>geen</strong>
+                foutrapporten en <strong>geen</strong> gebruikstatistieken verzameld of verzonden. U kunt ze – indien gewenst –
+                in de app-instellingen onder « Fout- en gebruikstatistieken » inschakelen en op elk moment opnieuw uitschakelen.</p>
+            </div>
+            <p>Indien toestemming is gegeven, worden de volgende gegevens verwerkt :</p>
+            <table class="data-table">
+                <tr>
+                    <th>Soort gegevens</th>
+                    <th>Doel</th>
+                    <th>Ontvanger</th>
+                </tr>
+                <tr>
+                    <td>Foutrapporten (stacktrace, app-/OS-versie, toestelmodel)</td>
+                    <td>Opsporen en verhelpen van fouten</td>
+                    <td>Firebase Crashlytics</td>
+                </tr>
+                <tr>
+                    <td>Geaggregeerde gebruikgebeurtenissen (bv. geopende schermen)</td>
+                    <td>Verbetering van de app</td>
+                    <td>Firebase Analytics</td>
+                </tr>
+                <tr>
+                    <td>Willekeurig gegenereerde installatie-identificator</td>
+                    <td>Correlatie van meerdere rapporten van hetzelfde toestel</td>
+                    <td>Firebase</td>
+                </tr>
+            </table>
+            <p><strong>Rechtsgrond :</strong> Art. 6, lid 1, onder a), AVG (toestemming). De intrekking is op elk
+            moment voor de toekomst mogelijk en heeft onmiddellijke werking. De app kan zonder deze toestemming
+            onbeperkt worden gebruikt – er is <strong>geen koppeling</strong> met de aanvaarding van de juridische
+            documenten.</p>
+
+            <h3>🗄️ Supabase (backend-infrastructuur)</h3>
+            <ul>
+                <li><strong>Doel :</strong> database, authenticatie, cloud-functies voor account en premium-functies</li>
+                <li><strong>Bedrijf :</strong> Supabase Inc., Verenigde Staten</li>
+                <li><strong>Gegevensbescherming :</strong>
+                    <a href="https://supabase.com/legal/dpa" target="_blank" rel="noopener">supabase.com/legal/dpa</a>
+                </li>
+                <li><strong>Opslagplaats :</strong> EU-datacenter (Ierland) – selecteerbaar</li>
+                <li><strong>Rechtsgrond :</strong> art. 6, lid 1, onder b), AVG (uitvoering van de overeenkomst)</li>
+                <li><strong>Verwerkersovereenkomst :</strong> Er bestaat een verwerkersovereenkomst (DPA) met Supabase overeenkomstig art. 28 AVG.
+                    Supabase verbindt zich tot naleving van de AVG, technische beveiligingsmaatregelen (TLS, AES-256) en
+                    tot melding van gegevenslekken binnen 72 uur.
+                </li>
+            </ul>
+            <div class="success">
+                <p><strong>✓ EU-gegevensbescherming :</strong> Uw gegevens worden opgeslagen in het EU-datacenter (Ierland).
+                Supabase heeft voor elke gegevensoverdracht naar de VS de EU-standaardcontractbepalingen (SCC) ondertekend.</p>
+            </div>
+
+            <h2>3. Gegevens die NIET worden verzameld</h2>
+            <div class="success">
+                <p>Beemaster verzamelt <strong>niet</strong> :</p>
+                <ul>
+                    <li>❌ Geen advertentie-identificator</li>
+                    <li>❌ Geen marketinggegevens</li>
+                    <li>❌ Geen contacten zonder toestemming</li>
+                    <li>❌ Geen sms-berichten of oproepen</li>
+                    <li>❌ Geen browsegeschiedenis</li>
+                    <li>❌ Geen gezondheidsgegevens</li>
+                    <li>❌ Geen financiële gegevens</li>
+                    <li>❌ Geen sociale-mediaprofielen</li>
+                </ul>
+            </div>
+
+            <h2>4. Toestemmingen</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Toestemming</th>
+                    <th>Gebruik</th>
+                </tr>
+                <tr>
+                    <td>Locatie (GPS)</td>
+                    <td>Bijenkasten op de kaart weergeven</td>
+                </tr>
+                <tr>
+                    <td>Camera</td>
+                    <td>Foto's van bijenkasten</td>
+                </tr>
+                <tr>
+                    <td>Microfoon</td>
+                    <td>Spraaknotities</td>
+                </tr>
+                <tr>
+                    <td>Meldingen</td>
+                    <td>Herinneringen voor imkertaken</td>
+                </tr>
+                <tr>
+                    <td>Opslag</td>
+                    <td>Cache van kaarttegels (MapLibre) en export-/importbestanden</td>
+                </tr>
+            </table>
+
+            <h2>5. Opslag van gegevens</h2>
+            <h3>Lokaal op uw toestel</h3>
+            <ul>
+                <li><strong>Room-database :</strong> alle bijenkorfgegevens</li>
+                <li><strong>DataStore :</strong> app-instellingen</li>
+                <li><strong>Android Keystore :</strong> versleutelde gevoelige gegevens</li>
+            </ul>
+
+            <h3>Geen cloud (basisversie)</h3>
+            <div class="success">
+                <p><strong>✓ Uw gegevens blijven bij u :</strong> In de gratis versie worden geen gegevens op servers opgeslagen. Alle gegevens blijven lokaal op uw toestel.</p>
+            </div>
+
+            <h2>6. Ontvangers en dienstverleners van derden</h2>
+            <p>Hieronder worden alle partijen opgesomd waaraan persoonsgegevens kunnen worden doorgegeven bij het
+            gebruik van de app. Een doorgifte gebeurt enkel in het respectieve beschreven geval.</p>
+
+            <h3>6.1 Firebase Crashlytics en Firebase Analytics (Google Ireland Limited)</h3>
+            <ul>
+                <li><strong>Doel :</strong> foutrapporten en geaggregeerde gebruikstatistieken voor bugfixes en app-verbetering.</li>
+                <li><strong>Gegevens :</strong> toestelmodel, OS-versie, app-versie, stacktrace, willekeurig gegenereerde installatie-identificator, tijdstempel, globale regio.</li>
+                <li><strong>Rechtsgrond :</strong> <strong>toestemming</strong>, art. 6, lid 1, onder a), AVG.</li>
+                <li><strong>Standaard uitgeschakeld.</strong> De verzameling begint pas nadat u deze in de app-instellingen onder « Fout- en gebruikstatistieken » inschakelt. U kunt ze op elk moment opnieuw uitschakelen ; de verzameling stopt dan onmiddellijk. De app kan zonder deze toestemming volledig worden gebruikt.</li>
+                <li><strong>Privacy-informatie :</strong>
+                    <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h3>6.2 Google Play Billing en Google Play Core (Google Commerce Limited / Google Ireland Limited)</h3>
+            <ul>
+                <li><strong>Doel :</strong> afhandeling van aankopen en abonnementen, verificatie van de aankoopstatus en levering van app-updates.</li>
+                <li><strong>Gegevens :</strong> Google-account-ID, aankoop-token, product-ID, app- en toesteldetails. De dienstverlener ontvangt <strong>geen</strong> betalingsgegevens.</li>
+                <li><strong>Rechtsgrond :</strong> art. 6, lid 1, onder b), AVG (uitvoering van een overeenkomst / levering van aangekochte functies).</li>
+                <li><strong>Opmerking :</strong> De verkoper van de premium-functies is Google Commerce Limited, en niet de dienstverlener. Zie <a href="agb_be-nl.html">Algemene voorwaarden §9</a>.</li>
+            </ul>
+
+            <h3>6.3 Kaartweergave : MapLibre en CARTO-achtergrondkaarten</h3>
+            <ul>
+                <li><strong>Doel :</strong> weergave van de locaties van uw bijenkasten op een kaart.</li>
+                <li><strong>Gegevens :</strong> bij het laden van de kaarttegels wordt uw <strong>IP-adres</strong> doorgegeven aan de kaartdienst <em>CARTO</em> (basemaps.cartocdn.com), alsook het opgevraagde kaartfragment. De kaartgegevens zijn afkomstig van de bijdragers van OpenStreetMap.</li>
+                <li><strong>Rechtsgrond :</strong> art. 6, lid 1, onder b), AVG (levering van de kaartfunctie).</li>
+                <li><strong>Vermijdbaarheid :</strong> de doorgifte gebeurt enkel wanneer u een kaartweergave opent. De MapLibre Native-bibliotheek zelf zendt geen gebruik- of telemetriegegevens door.</li>
+            </ul>
+
+            <h3>6.4 Weergegevens</h3>
+            <p>Voor de weergave van weergegevens en de afleiding van behandelingsaanbevelingen (bv. geschiktheid van varroabehandeling) worden naargelang de locatie de volgende aanbieders gebruikt:</p>
+            <ul>
+                <li><strong>Bright Sky (Duitse weerdienst)</strong> voor Duitsland en Bulgarije (CC BY 4.0). Daarbij worden de <strong>geografische coördinaten</strong> van de opgevraagde locatie en het IP-adres doorgegeven aan <em>api.brightsky.dev</em>. Er worden geen accountgegevens of identificators meegestuurd.</li>
+                <li><strong>Nationale weerdiensten</strong> voor Tsjechië (CHMI/ČHMÚ), Hongarije (HungaroMet), Polen (IMGW-PIB) en Slowakije (SHMÚ) (respectievelijk CC BY 4.0 / CC BY-SA). Deze krijgen toegang tot <strong>openbare stationsgegevens</strong>; daarbij worden <strong>geen locatiecoördinaten van de gebruiker</strong> aan de diensten doorgegeven. Enkel het IP-adres van het toestel wordt technisch meegestuurd.</li>
+            </ul>
+            <p><strong>Rechtsgrond :</strong> art. 6, lid 1, onder b) AVG.</p>
+            <p><strong>Opmerking :</strong> Bij Bright Sky kunnen de coördinaten conclusies mogelijk maken over de locatie van uw bijenstanden. De aanvraag gebeurt enkel indien voor een locatie coördinaten zijn opgeslagen.</p>
+
+            <h3>6.5 Feedback-functie (Supabase, EU-regio Ierland)</h3>
+            <ul>
+                <li><strong>Doel :</strong> doorzending van optionele gebruikersfeedback.</li>
+                <li><strong>Gegevens :</strong> categorie, beoordeling, vrije-tekstfeedback, app-versie en een <strong>pseudonieme toestel-identificator</strong>. Deze wordt gevormd als SHA-256-hash van de Android-toestelidentificator en dient uitsluitend om het aantal verzendingen te beperken tot één per toestel per periode. Hij maakt het voor de dienstverlener niet mogelijk u te identificeren.</li>
+                <li><strong>Rechtsgrond :</strong> art. 6, lid 1, onder a), AVG (vrijwillige doorgifte door actief te verzenden van het formulier).</li>
+                <li><strong>Verwerking voor onze rekening :</strong> Supabase Inc., hosting in de EU (Ierland), overeenkomst overeenkomstig art. 28 AVG, standaardcontractbepalingen.</li>
+            </ul>
+
+            <h3>6.6 Functies die alleen beschikbaar zijn in testversies</h3>
+            <div class="warning">
+                <p>De app bevat programmacode voor een <strong>accountsysteem met credits</strong> en een optionele
+                <strong>cloudaccountfunctie</strong>. Deze functies zijn in de publiekelijk uitgebrachte versie
+                <strong>uitgeschakeld en niet toegankelijk</strong>. Er vindt in dit verband geen gegevensverwerking
+                plaats. Indien deze functies in de toekomst zouden worden geactiveerd, zal dit privacybeleid vooraf
+                worden bijgewerkt en zal opnieuw toestemming worden gevraagd.</p>
+            </div>
+
+            <h3>6.7 Toestelgerelateerde systeemdiensten</h3>
+            <ul>
+                <li><strong>Spraakherkenning / -synthese :</strong> als u dictaat of voorlezen gebruikt, verwerkt de op uw toestel geconfigureerde dienst (naargelang de fabrikant, bv. Google of Samsung) de spraakinvoer. Deze dienst valt onder het privacybeleid van de respectieve aanbieder ; de dienstverlener van deze app ontvangt de audio-gegevens niet.</li>
+                <li><strong>Locatiediensten :</strong> de locatie wordt bepaald via de diensten van uw toestel en enkel nadat u de toestemming uitdrukkelijk hebt verleend.</li>
+            </ul>
+
+            <h3>6.8 Toestemmingsregisters (art. 7, lid 1, AVG)</h3>
+            <p>Om verleende toestemmingen aan te tonen (bewijslast van de verwerkingsverantwoordelijke overeenkomstig
+            art. 7, lid 1, AVG) wordt bij het aanvaarden van de EULA, de Algemene voorwaarden en dit privacybeleid een
+            toestemmingsbewijs opgeslagen. Dit gebeurt zodra een <strong>account</strong> wordt aangemaakt of gebruikt
+            (het accountsysteem is momenteel alleen in testversies beschikbaar). Het bewijs wordt versleuteld bij
+            Supabase (EU, Ierland) opgeslagen en bevat :</p>
+            <ul>
+                <li>Gebruikersidentificator (Supabase-gebruikers-ID) en e-mailadres</li>
+                <li>Versie van het aanvaarde beleid en het tijdstip van de instemming</li>
+                <li>SHA-256-controlesom (hash) van de beleidstekst die van kracht was op het moment van instemming</li>
+                <li>User-Agent (app-versie/toestel) en – door de server vastgesteld – IP-adres</li>
+                <li>Soort toestemming (bv. PRIVACY, EULA, TERMS) en rechtsgebied</li>
+            </ul>
+            <p><strong>Bewaring :</strong> Zonder premium-aankopen wordt het bewijs verwijderd bij de verwijdering van
+            het account. Bij premium-aankopen geldt de wettelijke bewaarplicht op fiscaal vlak (10 jaar) ; bij juridische
+            geschillen wordt de verwijdering uitgesteld tot het einde van de procedure plus 3 jaar (legal hold).</p>
+            <p><strong>Rechtsgrond :</strong> art. 6, lid 1, onder f), AVG (gerechtvaardigd belang bij het leveren van
+            bewijs of bij de naleving van wettelijke bewaarplichten).</p>
+
+            <h3>6.9 Mollie (Alternatieve facturatie)</h3>
+            <p>Voor de « Alternatieve facturatie » (Google User Choice Billing) stelt de dienstverlener een
+            betalingsverwerking via een betaaldienstverlener ter beschikking :</p>
+            <ul>
+                <li><strong>Doel :</strong> afhandeling van alternatieve betalingen in de app (bv. AI-credits, premium-tiers) buiten de Google Play-facturatie.</li>
+                <li><strong>Bedrijf :</strong> Mollie B.V. (betaaldienstverlener).</li>
+                <li><strong>Gegevens :</strong> bestel-/betalingsgegevens (bedrag, valuta, beschrijving, betaalmethode) en een referentie voor de toewijzing. De dienstverlener ontvangt geen betalingsgegevens.</li>
+                <li><strong>Verwerking :</strong> de toegang tot de Mollie-API gebeurt <strong>serverzijdig</strong> (Supabase Edge Function, EU) ; de API-sleutel wordt niet in de app opgeslagen. De app opent enkel de door Mollie ter beschikking gestelde betaalpagina.</li>
+                <li><strong>Rechtsgrond :</strong> art. 6, lid 1, onder b), AVG (uitvoering van de overeenkomst).</li>
+                <li><strong>Opmerking :</strong> deze facturatiemethode is momenteel alleen in testversies beschikbaar ; ze wordt pas geactiveerd na de vrijgave door Google Play.</li>
+            </ul>
+
+            <h3>6.10 AI-spraakassistent &ndash; Microsoft Azure AI Speech</h3>
+            <p>Voor de optionele AI-spraakassistent (premium-functie) worden de spraakinvoer (spraakherkenning,
+            STT) en de spraakuitvoer (text-to-speech, TTS) verwerkt via de dienst <strong>Azure AI Speech</strong>
+            van Microsoft. Het volgende is van toepassing :</p>
+            <ul>
+                <li><strong>Doel :</strong> omzetting van uw spraakinvoer in tekst (STT) voor de interactie met de
+                    spraakassistent, en weergave van het antwoord als spraak (TTS).</li>
+                <li><strong>Bedrijf :</strong> Microsoft Corporation (Microsoft Ireland Operations Ltd. als
+                    EU-aanbieder).</li>
+                <li><strong>Gegevens :</strong> audiogegevens (spraakopname) alsook de technische gegevens die voor de
+                    verwerking nodig zijn. De overdracht is <strong>versleuteld</strong> (TLS). De Azure-abonnementssleutel
+                    bevindt zich uitsluitend serverzijdig ; de app verstuurt enkel een kortlevend, JWT-beveiligd
+                    toegangstoken.</li>
+                <li><strong>Opslagplaats :</strong> EU-datacenter (regio Duitsland West-Midden, <em>germanywestcentral</em>).
+                    Azure AI Speech verwerkt gegevens alleen in de regio van de resource-locatie.</li>
+                <li><strong>Rechtsgrond :</strong> art. 6, lid 1, onder b), AVG (uitvoering van een overeenkomst, levering
+                    van de aangekochte premium-functie) of toestemming, voor zover de spraakherkenning op het toestel niet
+                    volstaat.</li>
+                <li><strong>Verwerkersovereenkomst :</strong> Er bestaat een verwerkersovereenkomst (DPA) met Microsoft
+                    overeenkomstig art. 28 AVG in het kader van de Microsoft Online Services Terms en het Microsoft Data
+                    Protection Addendum. Microsoft gebruikt de gegevens niet om de eigen AI-modellen te verbeteren.</li>
+                <li><strong>Privacy-informatie :</strong>
+                    <a href="https://www.microsoft.com/privacy" target="_blank" rel="noopener">microsoft.com/privacy</a>
+                    en
+                    <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank" rel="noopener">Data Protection Addendum</a>.</li>
+            </ul>
+
+            <h3>6.11 Brevo (e-mailverzending voor accountfuncties)</h3>
+            <p>Voor het verzenden van e-mails in het kader van de accountfuncties (bv. bevestiging van het
+            e-mailadres, wachtwoordherstel) maakt de dienstverlener gebruik van de e-maildienst
+            <strong>Brevo</strong> :</p>
+            <ul>
+                <li><strong>Doel :</strong> verzending van transactionele account-e-mails.</li>
+                <li><strong>Bedrijf :</strong> Brevo (voorheen Sendinblue), Parijs, Frankrijk (EU).</li>
+                <li><strong>Gegevens :</strong> het e-mailadres van de ontvanger alsook de inhoud die voor het respectieve
+                    e-mailtype vereist is. Er vindt geen tracking voor reclamedoeleinden plaats.</li>
+                <li><strong>Opslagplaats :</strong> EU-datacenters (Frankrijk).</li>
+                <li><strong>Rechtsgrond :</strong> art. 6, lid 1, onder b), AVG (uitvoering van een overeenkomst, levering
+                    van de accountfunctie).</li>
+                <li><strong>Verwerkersovereenkomst :</strong> Er bestaat een verwerkersovereenkomst (DPA) met Brevo
+                    overeenkomstig art. 28 AVG ; Brevo verwerkt de gegevens uitsluitend op instructie.</li>
+                <li><strong>Privacy-informatie :</strong>
+                    <a href="https://www.brevo.com/legal/termsofuse" target="_blank" rel="noopener">brevo.com/legal/termsofuse</a>
+                    (zie daar de sectie « Data Processing Agreement »).</li>
+            </ul>
+
+            <h2>7. Uw rechten (AVG)</h2>
+            <p>Dit privacybeleid voldoet tevens aan de informatieplicht van <strong>artikel 13 AVG</strong> (informatie bij het verzamelen van persoonsgegevens).</p>
+            <p>U heeft het recht op :</p>
+            <ul>
+                <li><strong>Inzage (art. 15 AVG) :</strong> welke gegevens over u worden opgeslagen</li>
+                <li><strong>Rectificatie (art. 16 AVG) :</strong> correctie van onjuiste gegevens</li>
+                <li><strong>Verwijdering (art. 17 AVG) :</strong> volledige verwijdering van alle gegevens</li>
+                <li><strong>Beperking van de verwerking (art. 18 AVG)</strong></li>
+                <li><strong>Gegevensoverdraagbaarheid (art. 20 AVG) :</strong> export in een gestructureerde, machineleesbare vorm</li>
+                <li><strong>Bezwaar (art. 21 AVG) :</strong> tegen verwerking op basis van gerechtvaardigde belangen</li>
+                <li><strong>Intrekking van toestemming (art. 7, lid 3, AVG) :</strong> voor de toekomst</li>
+            </ul>
+
+            <h3>Recht om een klacht in te dienen bij een toezichthoudende autoriteit (art. 77 AVG)</h3>
+            <p>Onverminderd andere beroepsrechten heeft u het recht een klacht in te dienen bij een
+            toezichthoudende autoriteit voor gegevensbescherming, in het bijzonder die van uw gewone verblijfplaats.
+            Voor België is de bevoegde toezichthoudende autoriteit :</p>
+            <p><strong>Gegevensbeschermingsautoriteit (GBA)</strong><br>
+                Drukpersstraat 35<br>
+                1000 Brussel, België<br>
+                Web : <a href="https://www.gegevensbeschermingsautoriteit.be/" target="_blank" rel="noopener">www.gegevensbeschermingsautoriteit.be</a>
+            </p>
+            <p>Als verwerkingsverantwoordelijke gevestigd in Duitsland kunt u ook een klacht indienen bij de
+            toezichthoudende autoriteit van Baden-Württemberg :</p>
+            <p><strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg</strong> (Staatscommissaris voor gegevensbescherming en informatievrijheid van Baden-Württemberg)<br>
+                Lautenschlagerstraße 20, 70173 Stuttgart, Duitsland<br>
+                E-mail : poststelle@lfdi.bwl.de<br>
+                Web : <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener">www.baden-wuerttemberg.datenschutz.de</a>
+            </p>
+
+            <h2>8. Bescherming van kinderen en minderjarigen</h2>
+            <p>Deze app richt zich tot imkers en is niet bedoeld voor kinderen. Er worden geen gegevens opzettelijk
+            van kinderen verzameld en er wordt geen op kinderen gerichte inhoud aangeboden.</p>
+            <p>Wanneer de verwerking berust op toestemming (zie rubrieken 6.1 en 6.5), wordt de leeftijdsgrens voor
+            zelfstandige toestemmingsbevoegdheid overeenkomstig art. 8 AVG bepaald door de respectieve lidstaat –
+            <strong>13 jaar in België</strong>. Beneden deze leeftijd is de toestemming van de
+            houder van het ouderlijk gezag vereist.</p>
+
+            <h2>9. Beveiliging van gegevens</h2>
+            <ul>
+                <li>✅ Versleutelde gegevensoverdracht (HTTPS/TLS)</li>
+                <li>✅ Versleutelde opslag (Android Keystore)</li>
+                <li>✅ Geen cloudopslag (lokale gegevens)</li>
+                <li>✅ Regelmatige beveiligingsupdates</li>
+            </ul>
+
+            <h2>10. Google OAuth-authenticatie</h2>
+            <p>Deze app gebruikt Google OAuth 2.0 voor de authenticatie van gebruikers. Bij de aanmelding met Google worden de volgende gegevens verwerkt :</p>
+
+            <table class="data-table">
+                <tr>
+                    <th>Soort gegevens</th>
+                    <th>Doel</th>
+                    <th>Rechtsgrond</th>
+                </tr>
+                <tr>
+                    <td>E-mailadres van het Google-account</td>
+                    <td>Accountaanmaak en authenticatie</td>
+                    <td>Art. 6, lid 1, onder a), AVG (toestemming)</td>
+                </tr>
+                <tr>
+                    <td>Naam van het Google-profiel</td>
+                    <td>Weergave van de gebruiker in de app</td>
+                    <td>Art. 6, lid 1, onder a), AVG (toestemming)</td>
+                </tr>
+                <tr>
+                    <td>Google-profielfoto (optioneel)</td>
+                    <td>Weergave van de gebruiker in de app</td>
+                    <td>Art. 6, lid 1, onder a), AVG (toestemming)</td>
+                </tr>
+                <tr>
+                    <td>Google-gebruikers-ID</td>
+                    <td>Unieke gebruikersidentificatie</td>
+                    <td>Art. 6, lid 1, onder a), AVG (toestemming)</td>
+                </tr>
+            </table>
+
+            <h3>📊 Aangevraagde Google OAuth-scopes</h3>
+            <p>De app vraagt de volgende toestemmingen aan Google :</p>
+            <ul>
+                <li><code>https://www.googleapis.com/auth/userinfo.email</code> – toegang tot het e-mailadres van uw Google-account</li>
+                <li><code>https://www.googleapis.com/auth/userinfo.profile</code> – toegang tot uw Google-profiel (naam, foto)</li>
+                <li><code>openid</code> – OpenID Connect voor een beveiligde authenticatie</li>
+            </ul>
+
+            <div class="success">
+                <p><strong>✓ Minimale toestemmingen :</strong> Wij vragen uitsluitend de absoluut noodzakelijke Google-toestemmingen. Geen leestoegang tot Gmail, Google Drive of andere Google-diensten.</p>
+            </div>
+
+            <h3>🔄 Doorgifte van gegevens aan Supabase</h3>
+            <p>Voor de opslag van de authenticatiegegevens wordt Supabase (Supabase Inc., 548 Market St, San Francisco, CA 94104, VS) als verwerker ingezet :</p>
+            <ul>
+                <li><strong>Doel :</strong> JWT-tokenbeheer en gebruikersauthenticatie</li>
+                <li><strong>Rechtsgrond :</strong> art. 6, lid 1, onder b), AVG (uitvoering van de overeenkomst)</li>
+                <li><strong>Garanties :</strong> EU-standaardcontractbepalingen (art. 46 AVG)</li>
+                <li><strong>Privacybeleid :</strong> <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+            </ul>
+
+            <h3>💾 Opslag en verwijdering</h3>
+            <ul>
+                <li><strong>Bewaartermijn :</strong> tot de verwijdering van het account of de de-installatie van de app</li>
+                <li><strong>Verwijdering :</strong> automatisch bij afmelding of handmatige accountverwijdering in de app</li>
+                <li><strong>Intrekking :</strong> U kunt uw toestemming op elk moment intrekken door :
+                    <ul>
+                        <li>Afmelding in de app (Instellingen → Account → Afmelden)</li>
+                        <li>Intrekking van de Google-toestemming op <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>🇺🇸 Doorgifte naar derde landen</h3>
+            <p>Google is een Amerikaans bedrijf. De doorgifte van gegevens naar de VS vindt plaats op basis van een
+            adequaatheidsbesluit van de Europese Commissie (EU-US Data Privacy Framework, juli 2023).</p>
+            <ul>
+                <li><strong>Privacybeleid van Google :</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+                <li><strong>Voorwaarden van Google :</strong> <a href="https://policies.google.com/terms" target="_blank" rel="noopener">policies.google.com/terms</a></li>
+            </ul>
+
+            <h2>11. Wijzigingen</h2>
+            <p>Dit privacybeleid kan worden bijgewerkt. U wordt binnen de app op de hoogte gesteld van
+            wezenlijke wijzigingen.</p>
+
+            <h2>12. Changelog</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Versie</th>
+                    <th>Datum</th>
+                    <th>Wijziging</th>
+                    <th>Opnieuw toestemming vereist?</th>
+                </tr>
+                <tr>
+                    <td>3.2</td>
+                    <td>2026-09-05</td>
+                    <td>Microsoft Azure AI Speech (AI-spraakassistent, STT/TTS) en Brevo (account-e-mails) toegevoegd als verwerkers</td>
+                    <td>✅ Ja (nieuwe dienstverleners van derden)</td>
+                </tr>
+                <tr>
+                    <td>3.1</td>
+                    <td>2026-08-24</td>
+                    <td>Toestemmingsregisters (art. 7, lid 1, AVG) en Mollie (alternatieve facturatie) openbaar gemaakt</td>
+                    <td>✅ Ja (nieuwe dienstverleners van derden)</td>
+                </tr>
+                <tr>
+                    <td>3.0</td>
+                    <td>2026-08-18</td>
+                    <td>Oostenrijkse rechtsversie (privacy_at.html) + globale versie</td>
+                    <td>✅ Ja</td>
+                </tr>
+                <tr>
+                    <td>2.0</td>
+                    <td>2026-08-18</td>
+                    <td>Google OAuth-authenticatie toegevoegd, OAuth-specifieke gegevensverwerking toegevoegd</td>
+                    <td>✅ Ja (nieuwe gegevensverwerking)</td>
+                </tr>
+                <tr>
+                    <td>1.0</td>
+                    <td>2026-05-05</td>
+                    <td>Eerste versie</td>
+                    <td>-</td>
+                </tr>
+            </table>
+
+            <h2>13. Taal</h2>
+            <p>Dit privacybeleid is opgesteld in de Nederlandse taal. De andere taalversies zijn niet-bindende
+            vertalingen. <strong>Bij afwijking is enkel de Nederlandse versie bindend.</strong></p>
+
+            <div class="contact-box">
+                <h3>Contact bij vragen</h3>
+                <p>Voor vragen over gegevensbescherming of om uw rechten uit te oefenen :</p>
+                <ul>
+                    <li>📧 E-mail : <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                    <li>📮 Adres : Jens Kübler, Max-Beckmann-Straße 39, 76227 Karlsruhe, Duitsland</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>🐝 Beemaster – professioneel bijenbeheer</p>
+            <p>© 2026 Jens Kübler | <a href="agb_be-nl.html">Algemene voorwaarden</a> | <a href="eula_be-nl.html">EULA</a> | <a href="impressum_be-nl.html">Colofon</a></p>
+            <p>Privacybeleid Versie 3.2 (2026-09-05). <a href="index.html">Deutsche Version</a></p>
+        </footer>
+    </div>
+</body>
+</html>

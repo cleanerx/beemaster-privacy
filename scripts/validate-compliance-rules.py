@@ -32,21 +32,43 @@ def load_rules() -> dict[str, Any]:
 
 def get_document_content(jurisdiction: str, document: str) -> str:
     """Liest den Inhalt eines Legal-Dokuments (privacy repo flat structure)."""
-    # Privacy repo uses flat structure: agb_at.html, privacy_at.html, etc.
+# Privacy repo uses flat structure: agb_at.html, privacy_at.html, etc.
     suffix_map = {
         "DE": "",
         "AT": "_at",
         "CZ": "_cs",
-        "EU": "_en"
+        "EU": "_en",
+        "HU": "_hu",
+        "PL": "_pl",
+        "SK": "_sk",
+        "BG": "_bg",
+        "LU": "_lu",
+        "FR": "_fr",
+        "BE": "_be",
+        "BE-NL": "_be-nl",
+        "NL": "_nl",
+        "DA": "_da",
+        "IT": "_it"
     }
     suffix = suffix_map.get(jurisdiction, "")
-    
+
     # Privacy repo uses index.html for DE privacy, privacy_at.html for AT, etc.
     doc_file_map = {
         "DE": {"agb": "agb.html", "eula": "eula.html", "privacy": "index.html", "impressum": "impressum.html"},
         "AT": {"agb": "agb_at.html", "eula": "eula_at.html", "privacy": "privacy_at.html", "impressum": "impressum_at.html"},
         "CZ": {"agb": "agb.html", "eula": "eula.html", "privacy": "privacy_cs.html", "impressum": "impressum.html"},
-        "EU": {"agb": "agb_en.html", "eula": "eula_en.html", "privacy": "privacy_en.html", "impressum": "impressum_en.html"}
+        "EU": {"agb": "agb_en.html", "eula": "eula_en.html", "privacy": "privacy_en.html", "impressum": "impressum_en.html"},
+        "HU": {"agb": "agb_hu.html", "eula": "eula_hu.html", "privacy": "privacy_hu.html", "impressum": "impressum_hu.html"},
+        "PL": {"agb": "agb_pl.html", "eula": "eula_pl.html", "privacy": "privacy_pl.html", "impressum": "impressum_pl.html"},
+        "SK": {"agb": "agb_sk.html", "eula": "eula_sk.html", "privacy": "privacy_sk.html", "impressum": "impressum_sk.html"},
+        "BG": {"agb": "agb_bg.html", "eula": "eula_bg.html", "privacy": "privacy_bg.html", "impressum": "impressum_bg.html"},
+        "LU": {"agb": "agb_lu.html", "eula": "eula_lu.html", "privacy": "privacy_lu.html", "impressum": "impressum_lu.html"},
+        "FR": {"agb": "agb_fr.html", "eula": "eula_fr.html", "privacy": "privacy_fr.html", "impressum": "impressum_fr.html"},
+        "BE": {"agb": "agb_be.html", "eula": "eula_be.html", "privacy": "privacy_be.html", "impressum": "impressum_be.html"},
+        "BE-NL": {"agb": "agb_be-nl.html", "eula": "eula_be-nl.html", "privacy": "privacy_be-nl.html", "impressum": "impressum_be-nl.html"},
+        "NL": {"agb": "agb_nl.html", "eula": "eula_nl.html", "privacy": "privacy_nl.html", "impressum": "impressum_nl.html"},
+        "DA": {"agb": "agb_da.html", "eula": "eula_da.html", "privacy": "privacy_da.html", "impressum": "impressum_da.html"},
+        "IT": {"agb": "agb_it.html", "eula": "eula_it.html", "privacy": "privacy_it.html", "impressum": "impressum_it.html"}
     }
     
     doc_file = doc_file_map.get(jurisdiction, {}).get(document, f"{document}{suffix}.html")
@@ -159,7 +181,7 @@ def validate_rules_structure(rules_data: dict) -> list[str]:
 
 def main():
     parser = argparse.ArgumentParser(description="Validiert Legal-Dokumente gegen Compliance-Regeln")
-    parser.add_argument("--jurisdiction", choices=["DE", "AT", "CZ", "EU", "ALL"], default="ALL",
+    parser.add_argument("--jurisdiction", choices=["DE", "AT", "CZ", "EU", "HU", "PL", "SK", "BG", "LU", "FR", "BE", "BE-NL", "NL", "DA", "IT", "ALL"], default="ALL",
                         help="Zu prüfende Jurisdiktion (Default: ALL)")
     parser.add_argument("--document", choices=["agb", "eula", "privacy", "impressum"],
                         help="Zu prüfendes Dokument (nur mit --jurisdiction)")
@@ -186,7 +208,7 @@ def main():
         if not struct_errors:
             print("✓ Regeln-Struktur ist gültig")
     
-    jurisdictions = ["DE", "AT", "CZ", "EU"] if args.jurisdiction == "ALL" else [args.jurisdiction]
+    jurisdictions = list(rules_data.get("jurisdictions", {}).keys()) if args.jurisdiction == "ALL" else [args.jurisdiction]
     
     for jur in jurisdictions:
         if args.document:

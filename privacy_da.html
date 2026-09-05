@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privatlivspolitik | Beemaster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #d4a574;
+            margin-bottom: 2rem;
+        }
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8b4513;
+            margin-bottom: 0.5rem;
+        }
+        .app-name span {
+            color: #f5a623;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .bee-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        main {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #8b4513;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f5a623;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            color: #555;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #444;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            background: #fff8e7;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f5a623;
+            margin: 1.5rem 0;
+        }
+        .warning {
+            background: #fff3f3;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+            margin: 1.5rem 0;
+        }
+        .success {
+            background: #f0fff0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            margin: 1.5rem 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .data-table th, .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th {
+            background: #f5a623;
+            color: white;
+        }
+        .data-table tr:nth-child(even) {
+            background: #fafafa;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #8b4513, #a0522d);
+            color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 {
+            color: #f5a623;
+            margin-top: 0;
+        }
+        .contact-box a {
+            color: #f5a623;
+        }
+        a {
+            color: #8b4513;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .last-updated {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            main { padding: 1.5rem; }
+            .app-name { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">Privatlivspolitik for Danmark</p>
+            <p class="last-updated">Version 2026-09-05, pr. 5. september 2026</p>
+        </header>
+
+        <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
+            <a href="index.html" style="color:#8b4513;text-decoration:none;">🇩🇪 Deutsch</a> |
+            <a href="privacy_at.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇦🇹 Deutsch (AT)</a> |
+            <a href="privacy_en.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a> |
+            <a href="privacy_cs.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇨🇿 Čeština</a> |
+            <a href="privacy_da.html" style="color:#8b4513;text-decoration:none;font-weight:bold;text-decoration:underline;margin-left:0.5rem;">🇩🇰 Dansk</a> |
+            <a href="privacy_it.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇮🇹 Italiano</a>
+        </div>
+
+        <nav style="display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
+            <a href="privacy_da.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;font-weight:bold;">Privatlivspolitik</a>
+            <a href="agb_da.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Salgs- og anvendelsesbetingelser</a>
+            <a href="eula_da.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">EULA</a>
+            <a href="impressum_da.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Kolofon</a>
+        </nav>
+
+        <main>
+            <h1>Privatlivspolitik</h1>
+
+            <p>Denne privatlivspolitik beskriver, hvordan Beemaster behandler personoplysninger. Vi behandler
+            oplysninger i overensstemmelse med Europa-Parlamentets og Rådets forordning (EU) 2016/679
+            (databeskyttelsesforordningen) og de danske supplerende regler i databeskyttelsesloven
+            (Lov nr. 502 af 23. maj 2018).</p>
+            <p style="font-size:0.9em;opacity:0.85;">Retsgrundlag :
+            <a href="https://www.retsinformation.dk/eli/lta/2018/502" target="_blank" rel="noopener">Databeskyttelsesloven – retsinformation.dk</a> |
+            <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">Forordning (EU) 2016/679 – EUR-Lex</a>.</p>
+
+            <h2>1. Dataansvarlig</h2>
+            <div class="contact-box">
+                <h3>Dataansvarlig</h3>
+                <ul>
+                    <li><strong>Navn :</strong> Jens Kübler</li>
+                    <li><strong>Adresse :</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Tyskland</li>
+                    <li><strong>E-mail :</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                </ul>
+            </div>
+
+            <h2>2. Information i henhold til artikel 13 i databeskyttelsesforordningen</h2>
+            <p>Vi informerer dig hermed om behandlingen af dine personoplysninger i overensstemmelse med
+            <strong>databeskyttelsesforordningens artikel 13</strong>.</p>
+
+            <h3>a) Lokal lagring</h3>
+            <p>Hovedparten af dine data (hives, biavlere, observationer og meget mere) gemmes
+            <strong>udelukkende lokalt</strong> på din enhed. Disse data forlader ikke din enhed og behandles ikke
+            af os, medmindre du selv eksporterer eller deler dem.</p>
+
+            <h3>b) Frivillig konto via Supabase</h3>
+            <p>Hvis du opretter en valgfri konto, bruges <strong>Supabase</strong> (EU, Irland) som backend.
+            I dette tilfælde behandles de data, der er nødvendige for kontoen (f.eks. e-mailadresse og
+            loginoplysninger), på servere i EU. Du kan slette din konto når som helst.</p>
+
+            <h3>c) Firebase Crashlytics / Analytics (opt-in)</h3>
+            <p>Kun hvis du aktivt har givet dit samtykke (opt-in), bruges <strong>Firebase Crashlytics</strong> og
+            <strong>Firebase Analytics</strong> (Google LLC) til at analysere fejl og forbedre appen. Denne
+            funktionalitet er <strong>standardmæssigt deaktiveret</strong> og aktiveres først efter din udtrykkelige
+            tilladelse. Du kan trække dit samtykke tilbage når som helst i indstillingerne.</p>
+
+            <h3>d) MapLibre + CARTO-kort</h3>
+            <p>Til kortvisningen anvendes <strong>MapLibre</strong> og kortdata fra <strong>CARTO</strong>
+            (basemaps.cartocdn.com). Ved indlæsning af kort kan din IP-adresse overføres til denne
+            tjeneste.</p>
+
+            <h3>e) Vejrdata</h3>
+            <p>Til visning af vejrdata og udledning af behandlingsanbefalinger (f.eks. egnethed til
+            varroabehandling) anvendes afhængigt af lokaliteten følgende udbydere:</p>
+            <ul>
+                <li><strong>Bright Sky (den tyske vejrtjeneste)</strong> for Tyskland og Bulgarien (CC BY 4.0).
+                    I den forbindelse overføres de <strong>geografiske koordinater</strong> for den forespurgte
+                    lokalitet samt IP-adressen til <em>api.brightsky.dev</em>. Der sendes ingen kontodata eller
+                    identifikatorer med.</li>
+                <li><strong>Nationale vejrtjenester</strong> for Tjekkiet (CHMI/ČHMÚ), Ungarn (HungaroMet), Polen
+                    (IMGW-PIB) og Slovakiet (SHMÚ) (henholdsvis CC BY 4.0 / CC BY-SA). Disse får adgang til
+                    <strong>offentlige stationsdata</strong>; i den forbindelse overføres der <strong>ingen
+                    brugerlokationskoordinater</strong> til tjenesterne. Der sendes udelukkende teknisk
+                    IP-adressen for enheden med.</li>
+            </ul>
+            <p><strong>Retsgrundlag:</strong> art. 6, stk. 1, litra b) i GDPR.</p>
+            <p><strong>Bemærkning:</strong> Med Bright Sky kan koordinaterne give mulighed for at drage
+            konklusioner om placeringen af dine bistader. Forespørgslen sker kun, hvis der er gemt koordinater for
+            en lokalitet.</p>
+
+            <h3>f) Feedback</h3>
+            <p>Hvis du sender feedback, behandles de data, du angiver, via <strong>Supabase</strong> (EU,
+            Irland).</p>
+
+            <h3>g) Funktioner, der kun er tilgængelige i test-builds</h3>
+            <p>Appen indeholder programkode til et <strong>kontosystem med kreditter</strong> samt en valgfri
+            <strong>cloud-kontofunktion</strong>. Disse funktioner er i den offentligt udgivne version
+            <strong>deaktiveret og ikke tilgængelige</strong>. Der sker i den forbindelse ingen databehandling.
+            Hvis disse funktioner skulle blive aktiveret i fremtiden, vil denne privatlivspolitik blive opdateret
+            forinden, og der vil blive indhentet samtykke igen.</p>
+
+            <h3>h) Samtykkeregistre (art. 7, stk. 1, GDPR)</h3>
+            <p>Til at dokumentere givne samtykker (bevisbyrden påhviler den dataansvarlige i henhold til
+            art. 7, stk. 1, GDPR) gemmes et samtykkebevis, når EULA, salgs- og anvendelsesbetingelserne
+            samt denne privatlivspolitik accepteres. Dette sker, så snart en <strong>konto</strong> oprettes
+            eller anvendes (kontosystemet er i øjeblikket kun tilgængeligt i test-builds). Beviset gemmes
+            krypteret hos Supabase (EU, Irland) og indeholder:</p>
+            <ul>
+                <li>Bruger-id (Supabase-bruger-id) og e-mailadresse</li>
+                <li>Version af den accepterede politik samt tidspunktet for samtykket</li>
+                <li>SHA-256-kontrolsum (hash) for den politiktekst, der var gældende på tidspunktet for samtykket</li>
+                <li>User-agent (app-version/enhed) og IP-adresse &ndash; fastslået af serveren</li>
+                <li>Type af samtykke (f.eks. PRIVACY, EULA, TERMS) og retsområde</li>
+            </ul>
+            <p><strong>Opbevaring :</strong> Uden premium-køb slettes beviset ved kontosletning. Ved
+            premium-køb gælder den lovpligtige skatteretlige opbevaringspligt (10 år, art. 5, stk. 1,
+            litra e) i GDPR); ved retstvister udskydes sletningen til sagens afslutning plus 3 år
+            (legal hold).</p>
+            <p><strong>Retsgrundlag :</strong> art. 6, stk. 1, litra f) i GDPR (berettiget interesse i
+            dokumentationen henholdsvis opfyldelsen af lovpligtige opbevaringspligter).</p>
+
+            <h3>i) Mollie (alternativ fakturering)</h3>
+            <p>Til "alternativ fakturering" (Google User Choice Billing) stiller udbyderen en
+            betalingsafvikling via en betalingsudbyder til rådighed:</p>
+            <ul>
+                <li><strong>Formål :</strong> afvikling af alternative in-app-betalinger (f.eks. AI-kreditter, premium-niveauer) uden for Google Play-faktureringen.</li>
+                <li><strong>Virksomhed :</strong> Mollie B.V. (betalingsudbyder).</li>
+                <li><strong>Data :</strong> ordre-/betalingsdata (beløb, valuta, beskrivelse, betalingsmetode) samt en reference til knytning. Udbyderen modtager ingen betalingsdata.</li>
+                <li><strong>Behandling :</strong> adgang til Mollie-API'et sker <strong>serverside</strong> (Supabase Edge Function, EU); API-nøglen gemmes ikke i appen. Appen åbner kun den kasseside, Mollie stiller til rådighed.</li>
+                <li><strong>Retsgrundlag :</strong> art. 6, stk. 1, litra b) i GDPR (opfyldelse af kontrakt).</li>
+                <li><strong>Bemærkning :</strong> denne faktureringsform er i øjeblikket kun tilgængelig i test-builds; den aktiveres først, når Google Play har godkendt den.</li>
+            </ul>
+
+            <h3>j) AI-spraakassistent &ndash; Microsoft Azure AI Speech</h3>
+            <p>Til den valgfrie AI-spraakassistent (premium-funktion) behandles spraakinput (talegenkendelse,
+            STT) og spraakoutput (text-to-speech, TTS) via tjenesten <strong>Azure AI Speech</strong> fra
+            Microsoft. Følgende gælder:</p>
+            <ul>
+                <li><strong>Formål :</strong> omdannelse af din spraakinput til tekst (STT) til interaktion med
+                    spraakassistenten samt afspilning af svaret som tale (TTS).</li>
+                <li><strong>Virksomhed :</strong> Microsoft Corporation (Microsoft Ireland Operations Ltd. som
+                    EU-udbyder).</li>
+                <li><strong>Data :</strong> lyddata (spraakoptagelse) samt de tekniske data, der er nødvendige for
+                    behandlingen. Overførslen er <strong>krypteret</strong> (TLS). Azure-abonnementsnøglen ligger
+                    udelukkende serverside; appen sender kun et kortlivet, JWT-beskyttet adgangstoken.</li>
+                <li><strong>Opbevaringssted :</strong> EU-datacenter (region Tyskland Vest-Midt, <em>germanywestcentral</em>).
+                    Azure AI Speech behandler data kun i den region, hvor ressourcen er placeret.</li>
+                <li><strong>Retsgrundlag :</strong> art. 6, stk. 1, litra b) i GDPR (opfyldelse af kontrakt, levering af
+                    den købte premium-funktion) eller samtykke, for så vidt talegenkendelsen på enheden ikke er
+                    tilstrækkelig.</li>
+                <li><strong>Databehandleraftale :</strong> Der foreligger en databehandleraftale (DPA) med Microsoft i
+                    henhold til art. 28 i GDPR inden for rammerne af Microsoft Online Services Terms og Microsoft Data
+                    Protection Addendum. Microsoft anvender ikke dataene til at forbedre egne AI-modeller.</li>
+                <li><strong>Privatlivsoplysninger :</strong>
+                    <a href="https://www.microsoft.com/privacy" target="_blank" rel="noopener">microsoft.com/privacy</a>
+                    og
+                    <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank" rel="noopener">Data Protection Addendum</a>.</li>
+            </ul>
+
+            <h3>k) Brevo (e-mailafsendelse til kontofunktioner)</h3>
+            <p>Til afsendelse af e-mails i forbindelse med kontofunktionerne (f.eks. bekræftelse af e-mailadressen,
+            nulstilling af adgangskode) anvender udbyderen e-mailudbyderen <strong>Brevo</strong>:</p>
+            <ul>
+                <li><strong>Formål :</strong> afsendelse af transaktionsmæssige konto-e-mails.</li>
+                <li><strong>Virksomhed :</strong> Brevo (tidligere Sendinblue), Paris, Frankrig (EU).</li>
+                <li><strong>Data :</strong> modtagerens e-mailadresse samt det indhold, der kræves for den pågældende
+                    e-mailtype. Der finder ingen sporing til reklameformål sted.</li>
+                <li><strong>Opbevaringssted :</strong> EU-datacentre (Frankrig).</li>
+                <li><strong>Retsgrundlag :</strong> art. 6, stk. 1, litra b) i GDPR (opfyldelse af kontrakt, levering af
+                    kontofunktionen).</li>
+                <li><strong>Databehandleraftale :</strong> Der foreligger en databehandleraftale (DPA) med Brevo i
+                    henhold til art. 28 i GDPR; Brevo behandler dataene udelukkende efter instruks.</li>
+                <li><strong>Privatlivsoplysninger :</strong>
+                    <a href="https://www.brevo.com/legal/termsofuse" target="_blank" rel="noopener">brevo.com/legal/termsofuse</a>
+                    (se der i afsnittet "Data Processing Agreement").</li>
+            </ul>
+
+            <div class="warning">
+                <p><strong>Bemærkning :</strong> Vores app bruger ingen cookies til analyse, ingen
+                reklamenetværk og ingen sporing. Der findes ingen profilering i henhold til
+                databeskyttelsesforordningens artikel 22.</p>
+            </div>
+
+            <h2>3. Børn og unge</h2>
+            <p>I Danmark er den alder, hvortil et barn kan give sit eget samtykke til tjenester i
+            informationssamfundet, fastsat til <strong>13 år</strong> i overensstemmelse med
+            databeskyttelsesforordningens artikel 8. For børn under 13 år er samtykke fra den, der har
+            forældremyndigheden, påkrævet.</p>
+
+            <h2>4. Dine rettigheder</h2>
+            <p>I henhold til databeskyttelsesforordningen har du følgende rettigheder :
+                <ul>
+                    <li>Ret til indsigt (art. 15)</li>
+                    <li>Ret til berigtigelse (art. 16)</li>
+                    <li>Ret til sletning (art. 17)</li>
+                    <li>Ret til begrænsning af behandling (art. 18)</li>
+                    <li>Ret til dataportabilitet (art. 20)</li>
+                    <li>Ret til indsigelse (art. 21)</li>
+                </ul>
+            </p>
+            <p>Du kan gøre brug af dine rettigheder ved at kontakte os via e-mailadressen ovenfor.</p>
+
+            <h2>5. Tilsynsmyndighed</h2>
+            <div class="contact-box">
+                <h3>Datatilsynet</h3>
+                <ul>
+                    <li><strong>Adresse :</strong> Carl Jacobsens Vej 35, 2500 Valby, Danmark</li>
+                    <li><strong>Web :</strong> <a href="https://www.datatilsynet.dk/" target="_blank" rel="noopener">www.datatilsynet.dk</a></li>
+                </ul>
+            </div>
+            <p>I henhold til databeskyttelsesforordningens artikel 77 har du ret til at indgive klage til en
+            tilsynsmyndighed. For brugere i Danmark er dette <strong>Datatilsynet</strong>.</p>
+
+            <div class="highlight">
+                <p><strong>Bemærkning :</strong> Da hovedparten af dataene gemmes lokalt, behandler vi kun
+                personoplysninger i meget begrænset omfang. Du kan bruge appen fuldt ud offline.</p>
+            </div>
+
+            <h2>6. Sprog</h2>
+            <p>Denne privatlivspolitik er udarbejdet på dansk. De øvrige sprogversioner er ikke-bindende
+            oversættelser. <strong>Ved afvigelse er udelukkende den danske version bindende.</strong></p>
+        </main>
+
+        <footer>
+            <p>🐝 Beemaster – professionel biavl</p>
+            <p>© 2026 Jens Kübler | <a href="agb_da.html">Salgs- og anvendelsesbetingelser</a> | <a href="eula_da.html">EULA</a> | <a href="impressum_da.html">Kolofon</a></p>
+            <p>Privatlivspolitik Version 2026-09-05, pr. 5. september 2026. <a href="index.html">Deutsch</a> | <a href="privacy_en.html">English</a> | <a href="privacy_cs.html">Čeština</a> | <a href="privacy_it.html">Italiano</a></p>
+        </footer>
+    </div>
+</body>
+</html>

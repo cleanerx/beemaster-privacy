@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulamin | Beemaster</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #ffc107;
+            margin-bottom: 2rem;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .lang-switch a {
+            color: #f57c00;
+            text-decoration: none;
+            margin-left: 0.5rem;
+        }
+        .lang-switch a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .bee-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+        .app-name { font-size: 2.5rem; font-weight: 700; color: #333; margin-bottom: 0.25rem; }
+        .app-name span { color: #ffc107; }
+        .subtitle { color: #666; font-size: 1.2rem; }
+        .last-updated { color: #999; font-size: 0.9rem; margin-top: 0.5rem; }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            background: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f57c00;
+            border: 2px solid #ffc107;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active { background: #ffc107; color: #333; }
+        main {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #f57c00;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ffc107;
+        }
+        h2 { color: #333; font-size: 1.4rem; margin: 2rem 0 1rem; }
+        h3 { color: #f57c00; font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
+        p { margin-bottom: 1rem; color: #555; }
+        ul, ol { margin: 1rem 0 1rem 2rem; color: #555; }
+        li { margin-bottom: 0.5rem; }
+        .highlight {
+            background: #fff3e0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 1.5rem 0;
+        }
+        .highlight p { margin: 0; color: #e65100; }
+        .success {
+            background: #e8f5e9;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 1rem 0;
+        }
+        .success p { margin: 0; color: #2e7d32; }
+        .warning {
+            background: #ffebee;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f44336;
+            margin: 1rem 0;
+        }
+        .warning p { margin: 0; color: #c62828; }
+        .contact-box {
+            background: #fff3e0;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 { color: #f57c00; margin-top: 0; margin-bottom: 0.5rem; }
+        a { color: #f57c00; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .section { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            main { padding: 1.5rem; }
+            .app-name { font-size: 2rem; }
+            nav { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="agb.html">🇩🇪 Deutsch</a> |
+            <a href="agb_at.html">🇦🇹 Deutsch (AT)</a> |
+            <a href="agb_en.html">🇬🇧 English</a> |
+            <a href="agb_hu.html">🇭🇺 Magyar</a> |
+            <a href="agb_pl.html" class="active">🇵🇱 Polski</a> |
+            <a href="agb_sk.html">🇸🇰 Slovenčina</a>
+        </div>
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">Aplikacja do zarządzania pasieką dla pszczelarzy</p>
+            <p class="last-updated">Regulamin – Version 2026-09-05, stan na: 18 sierpnia 2026</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Ochrona danych</a>
+            <a href="agb_pl.html" class="active">Regulamin</a>
+            <a href="eula_pl.html">EULA</a>
+            <a href="impressum_pl.html">Impressum</a>
+        </nav>
+
+        <main>
+            <h1>Regulamin</h1>
+
+            <p><strong>Usługodawca:</strong><br>
+                Jens Kübler<br>
+                Max-Beckmann-Straße 39<br>
+                76227 Karlsruhe<br>
+                Niemcy<br>
+                E-mail: <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a><br>
+                (zwany dalej: „Usługodawca")
+            </p>
+
+            <div class="highlight">
+                <p><strong>Krótko:</strong> Aplikacja jest wyłącznie pomocą w pszczelarstwie. Korzystanie odbywa
+                się na własną odpowiedzialność. Nie ponosimy odpowiedzialności za utratę danych ani decyzje
+                pszczelarskie. Ograniczenie odpowiedzialności obowiązuje w granicach dopuszczonych prawem.</p>
+            </div>
+
+            <h2>§1 Zakres</h2>
+            <div class="section">
+                <ol>
+                    <li>Niniejszy regulamin dotyczy korzystania z aplikacji mobilnej „Beemaster" (dalej:
+                        „Aplikacja"), dystrybuowanej za pośrednictwem Sklepu Google Play.</li>
+                    <li>Pobranie i korzystanie z aplikacji oznacza akceptację niniejszego regulaminu.</li>
+                    <li>Odmienne warunki użytkownika nie są uznawane, chyba że Usługodawca wyraźnie wyrazi na nie
+                        pisemną zgodę.</li>
+                    <li>Stosunki umowne podlegają Kodeksowi cywilnemu (ustawa z dnia 23 kwietnia 1964 r., Dz.U.
+                        1964 nr 16 poz. 93). W przypadku konsumentów zastosowanie mają dodatkowo przepisy ustawy
+                        z dnia 30 maja 2014 r. o prawach konsumenta (Dz.U. 2014 poz. 827) oraz ustawy z dnia
+                        23 września 2016 r. o pozasądowym rozwiązywaniu sporów konsumenckich (Dz.U. 2016 poz.
+                        1823). Źródła prawa:
+                        <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19640160093" target="_blank" rel="noopener">Kodeks cywilny – ISAP</a>,
+                        <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20140000827" target="_blank" rel="noopener">ustawa o prawach konsumenta – ISAP</a>,
+                        <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20160001823" target="_blank" rel="noopener">ustawa o pozasądowym rozwiązywaniu sporów konsumenckich – ISAP</a>,
+                        oraz <a href="https://eur-lex.europa.eu/eli/dir/2011/83/oj" target="_blank" rel="noopener">dyrektywa 2011/83/UE o prawach konsumentów (EUR-Lex)</a>.</li>
+                </ol>
+            </div>
+
+            <h2>§2 Zawarcie umowy</h2>
+            <div class="section">
+                <ol>
+                    <li>Umowa między Usługodawcą a użytkownikiem powstaje w drodze pobrania aplikacji.</li>
+                    <li>Aplikacja jest udostępniana bezpłatnie. W przypadku funkcji premium obowiązują odrębne
+                        warunki (zob. §9).</li>
+                </ol>
+            </div>
+
+            <h2>§3 Warunki korzystania</h2>
+            <div class="section">
+                <ol>
+                    <li>Korzystanie z aplikacji wymaga kompatybilnego urządzenia z systemem Android (min. Android
+                        8.0).</li>
+                    <li>Użytkownik odpowiada za zapewnienie infrastruktury technicznej (urządzenie, połączenie
+                        internetowe, bateria).</li>
+                    <li><strong>Wiek:</strong> Aplikacja nie jest skierowana do dzieci. Osoby małoletnie wymagają
+                        zgody przedstawiciela ustawowego w przypadku funkcji płatnych.</li>
+                    <li><strong>Zdolność do wyrażenia zgody na przetwarzanie danych:</strong> Jeżeli przetwarzanie
+                        opiera się na zgodzie, w Polsce zgodę może samodzielnie wyrazić osoba, która ukończyła 16
+                        lat (art. 8 RODO). Poniżej tego wieku wymagana jest zgoda osoby sprawującej władzę
+                        rodzicielską.</li>
+                </ol>
+            </div>
+
+            <h2>§4 Udzielenie praw do korzystania</h2>
+            <div class="section">
+                <ol>
+                    <li>Usługodawca udziela użytkownikowi prostej, nieprzenoszalnej, nieograniczonej czasowo i
+                        terytorialnie licencji na korzystanie z aplikacji.</li>
+                    <li>Aplikacja może być używana <strong>zarówno prywatnie, jak i komercyjnie</strong> – w
+                        szczególności przez pszczelarzy hobbystów, dodatkowych i zawodowych do dokumentowania
+                        własnej działalności pszczelarskiej.</li>
+                    <li>Zabronione jest zwielokrotnianie, opracowywanie, dekompilacja, rozpowszechnianie lub
+                        sublicencjonowanie aplikacji oraz oferowanie aplikacji lub jej funkcji jako własnej usługi
+                        wobec osób trzecich (np. odsprzedaż, white-labeling, prowadzenie portalu usługowego).
+                        Ustawowe uprawnienia (w szczególności art. 75 ustawy o prawie autorskim) pozostają
+                        nienaruszone.</li>
+                </ol>
+            </div>
+
+            <h2>§5 Ograniczenia wynikające z natury aplikacji</h2>
+            <div class="section">
+                <ol>
+                    <li><strong>Aplikacja jest wyłącznie pomocą</strong> w pszczelarstwie i nie zastępuje porady
+                        fachowej, leczenia weterynaryjnego ani wiedzy pszczelarskiej.</li>
+                    <li>Zalecenia, ostrzeżenia i dane zawarte w aplikacji (np. leczenie warrozy, zalecenia
+                        dotyczące dokarmiania, znakowanie matek) opierają się na ogólnych standardach i mogą
+                        różnić się lokalnie, sezonowo lub indywidualnie.</li>
+                    <li><strong>Aplikacja nie rozpoznaje chorób ani stanów zdrowotnych</strong> pszczół, matek ani
+                        rodzin. Takie oceny należą wyłącznie do personelu fachowego.</li>
+                    <li>Aplikacja nie ponosi odpowiedzialności za decyzje gospodarcze (np. zbiór miodu, zakup
+                        rodzin, liczba uli).</li>
+                </ol>
+            </div>
+
+            <h2>§6 Wyłączenie odpowiedzialności</h2>
+
+            <h3>6.1 Zasada ogólna</h3>
+            <div class="section">
+                <ol>
+                    <li>Korzystanie z aplikacji odbywa się <strong>na własną odpowiedzialność</strong>.</li>
+                    <li>Usługodawca nie ponosi odpowiedzialności za szkody spowodowane:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>brakiem lub niekompletnymi danymi w aplikacji</li>
+                            <li>przerwami w korzystaniu z aplikacji (awaria serwera, aktualizacja, konserwacja)</li>
+                            <li>błędnymi danymi wprowadzonymi przez użytkownika</li>
+                            <li>osobami trzecimi (np. ataki hakerskie, złośliwe oprogramowanie)</li>
+                            <li>niekompatybilnością z urządzeniami lub systemami operacyjnymi</li>
+                            <li>utraconymi danymi (np. przy uszkodzeniu urządzenia, ponownej instalacji)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <h3>6.2 Ograniczenie odpowiedzialności</h3>
+            <div class="section">
+                <ol>
+                    <li>W przypadku działania umyślnego lub rażącego niedbalstwa Usługodawca odpowiada zgodnie z
+                        przepisami prawa.</li>
+                    <li>W przypadku zwykłego niedbalstwa Usługodawca odpowiada <strong>wyłącznie</strong>:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>za szkody na życiu, ciele lub zdrowiu</li>
+                            <li>za szkody wynikające z naruszenia istotnego obowiązku umownego (obowiązek kardynalny)</li>
+                        </ul>
+                        Odpowiedzialność jest ograniczona do szkody typowo przewidywalnej.
+                    </li>
+                </ol>
+            </div>
+
+            <h3>6.3 Utrata danych</h3>
+            <div class="section">
+                <ol>
+                    <li>Usługodawca nie ponosi odpowiedzialności za utratę danych, w szczególności za:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>utracone dane pszczelarskie</li>
+                            <li>utracone zapisy przeglądów</li>
+                            <li>utracone informacje o lokalizacji</li>
+                        </ul>
+                    </li>
+                    <li>Użytkownik jest wyraźnie proszony o regularne wykonywanie kopii zapasowych (funkcja
+                        eksportu).</li>
+                </ol>
+            </div>
+
+            <h3>6.4 Brak odpowiedzialności za decyzje pszczelarskie</h3>
+            <div class="warning">
+                <p><strong>Ważne:</strong> Usługodawca wyraźnie <strong>nie</strong> ponosi odpowiedzialności za:</p>
+                <ul style="margin-top: 0.5rem;">
+                    <li>utratę rodzin pszczelich</li>
+                    <li>utratę matek</li>
+                    <li>nieudane leczenie warrozy</li>
+                    <li>straty gospodarcze (zbiór miodu, liczba rodzin)</li>
+                    <li>błędne decyzje oparte na danych z aplikacji</li>
+                </ul>
+            </div>
+
+            <h2>§7 Obowiązki użytkownika</h2>
+            <div class="section">
+                <ol>
+                    <li>Użytkownik zobowiązuje się:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>nie wprowadzać do aplikacji szkodliwych danych</li>
+                            <li>nie manipulować aplikacją ani jej nie hakować</li>
+                            <li>nie dokonywać zautomatyzowanego dostępu do aplikacji</li>
+                            <li>utrzymywać w tajemnicy osobiste dane dostępowe (w przypadku funkcji premium)</li>
+                        </ul>
+                    </li>
+                    <li>Naruszenia uprawniają Usługodawcę do natychmiastowego zablokowania.</li>
+                </ol>
+            </div>
+
+            <h2>§8 Polityka prywatności</h2>
+            <div class="section">
+                <ol>
+                    <li>Polityka prywatności jest dostępna osobno pod <a href="index.html">Ochrona danych</a>
+                        oraz w aplikacji.</li>
+                    <li>Przetwarzanie danych osobowych odbywa się na podstawach prawnych wskazanych w polityce
+                        prywatności (art. 6 ust. 1 RODO). <strong>Zgoda jest wymagana tylko tam, gdzie jest
+                        konieczna</strong> – w szczególności dla opcjonalnych statystyk błędów i użytkowania. Zgoda
+                        ta jest dobrowolna, jest odrębnie pytana w ustawieniach aplikacji i może być tam w każdej
+                        chwili cofnięta z mocą na przyszłość. Korzystanie z aplikacji bez tej zgody jest w pełni
+                        możliwe.</li>
+                </ol>
+            </div>
+
+            <h2>§9 Funkcje premium, strona umowy i płatność</h2>
+            <div class="warning">
+                <p><strong>Kto jest Twoją stroną umowy przy zakupie?</strong></p>
+                <p>Funkcje premium i subskrypcje kupujesz <strong>nie od Usługodawcy</strong>, lecz przez Sklep
+                Google Play. Sprzedawcą i stroną umowy sprzedaży jest <strong>Google Commerce Limited</strong>,
+                Gordon House, Barrow Street, Dublin 4, Irlandia.</p>
+                <p>W zakresie składania zamówień, płatności, fakturowania, zwrotów i ustawowego prawa odstąpienia
+                od umowy obowiązują <strong>warunki korzystania ze Sklepu Google Play</strong> oraz zasady zwrotów
+                Google. Usługodawca nie może przyjmować płatności ani samodzielnie dokonywać zwrotów.</p>
+            </div>
+            <div class="section">
+                <ol>
+                    <li>Funkcje premium (np. rozszerzone limity uli) są płatne. Usługodawca udostępnia funkcje
+                        technicznie; umowa sprzedaży zawierana jest z Google Commerce Limited (zob. ramka powyżej).</li>
+                    <li>Ceny są wyświetlane w Sklepie Google Play przed zakupem, łącznie z obowiązującym
+                        podatkiem VAT.</li>
+                    <li><strong>Subskrypcje automatycznie odnawiają się</strong> o wybrany okres, chyba że zostaną
+                        anulowane przed upływem bieżącego okresu. Anulowanie następuje w zarządzaniu subskrypcjami
+                        w Sklepie Google Play. Google informuje przed każdym odnowieniem zgodnie ze swoimi
+                        warunkami. Anulowanie jest skuteczne na koniec już opłaconego okresu; opłacone opłaty za
+                        bieżący okres nie są zwracane proporcjonalnie.</li>
+                    <li><strong>Zakupy jednorazowe</strong> (oznaczone tak w Sklepie Play) nie odnawiają się i nie
+                        wygasają.</li>
+                    <li>Zwroty odbywają się wyłącznie zgodnie z zasadami Sklepu Google Play. Wnioski składasz przez
+                        swoje konto Google.</li>
+                    <li>Płatności odbywają się przez Google Play. Usługodawca <strong>nie</strong> otrzymuje ani
+                        nie przechowuje danych płatniczych (brak danych karty, konta lub rachunku).</li>
+                </ol>
+            </div>
+
+            <h2>§10 Dostępność i zmiany</h2>
+            <div class="section">
+                <ol>
+                    <li>Usługodawca zastrzega sobie prawo do:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>zmiany lub zaprzestania działania aplikacji w dowolnym momencie</li>
+                            <li>zmiany lub usunięcia funkcji premium</li>
+                            <li>dostosowania cen funkcji premium (tylko dla nowych zakupów)</li>
+                        </ul>
+                    </li>
+                    <li>Nie istnieje roszczenie o ciągłą dostępność.</li>
+                </ol>
+            </div>
+
+            <h2>§11 Wypowiedzenie</h2>
+            <div class="section">
+                <ol>
+                    <li>Użytkownik może zakończyć korzystanie z aplikacji w dowolnym momencie, usuwając ją z
+                        urządzenia.</li>
+                    <li>Usługodawca może wypowiedzieć umowę z 14-dniowym terminem (tylko w przypadku funkcji
+                        premium, z proporcjonalnym zwrotem).</li>
+                    <li>Po wypowiedzeniu wszystkie dane użytkownika są usuwane najpóźniej w ciągu 30 dni.</li>
+                </ol>
+            </div>
+
+            <h2>§12 Wybór prawa i właściwość sądu</h2>
+            <div class="section">
+                <ol>
+                    <li>Do umowy stosuje się prawo polskie z wyłączeniem konwencji wiedeńskiej (CISG). W przypadku
+                        konsumentów zastosowanie mają dodatkowo przepisy bezwzględnie wiążące Kodeksu cywilnego i
+                        ustawy o prawach konsumenta.</li>
+                    <li>W przypadku konsumentów, których miejsce zwykłego pobytu znajduje się w innym państwie UE,
+                        pozostają nienaruszone bezwzględnie wiążące przepisy ochrony konsumentów państwa miejsca
+                        zamieszkania (art. 6 rozporządzenia Rzym I).</li>
+                    <li>W przypadku konsumentów zastosowanie mają przepisy ustawowe.</li>
+                </ol>
+            </div>
+
+            <h2>§13 Prawo odstąpienia od umowy konsumenta (zakupy premium)</h2>
+            <div class="warning">
+                <p><strong>Prawo odstąpienia przysługuje wobec Google, nie wobec Usługodawcy.</strong></p>
+                <p>Ponieważ umowa sprzedaży funkcji premium zawierana jest z <strong>Google Commerce
+                Limited</strong> (zob. §9), odstąpienie od umowy jest skuteczne wyłącznie wobec Google. Usługodawca
+                nie jest w takim przypadku stroną umowy i nie może przyjąć odstąpienia ani dokonać zwrotu.</p>
+            </div>
+            <div class="section">
+                <ol>
+                    <li>Prawa konsumenta wynikają z warunków korzystania ze Sklepu Google Play oraz bezwzględnie
+                        wiążących przepisów państwa miejsca zamieszkania.</li>
+                    <li>Wniosek o odstąpienie lub zwrot składasz wobec Google przez swoje konto Google (Sklep
+                        Google Play → Konto → Historia zamówień → Zgłoś problem).</li>
+                    <li><strong>Treści cyfrowe:</strong> W przypadku natychmiast udostępnionych treści cyfrowych
+                        prawo odstąpienia może wygasnąć przedterminowo, jeżeli wyraźnie zgodziłeś się na
+                        natychmiastowe wykonanie i potwierdziłeś utratę prawa odstąpienia. O tym, czy i jak ta
+                        zgoda jest uzyskiwana, decyduje proces zakupu Sklepu Google Play.</li>
+                    <li>Niezależnie od powyższego Usługodawca udostępnia bezpłatną wersję podstawową aplikacji bez
+                        obowiązku płatności; w tym zakresie nie powstaje przypadek odstąpienia.</li>
+                </ol>
+            </div>
+
+            <h2>§14 Pozasądowe rozwiązywanie sporów konsumenckich</h2>
+            <div class="section">
+                <ol>
+                    <li>Usługodawca nie jest zobowiązany ani chętny do udziału w postępowaniu w sprawie
+                        pozasądowego rozwiązywania sporów konsumenckich przed podmiotem uprawnionym.</li>
+                    <li>Zgodnie z ustawą z dnia 23 września 2016 r. o pozasądowym rozwiązywaniu sporów
+                        konsumenckich konsument ma prawo skorzystać z pozasądowego rozwiązywania sporów. Wykaz
+                        podmiotów uprawnionych w Polsce prowadzi Prezes Urzędu Ochrony Konkurencji i Konsumentów
+                        (UOKiK).</li>
+                    <li>Konsumenci w innych państwach UE znajdą właściwy podmiot na liście Komisji Europejskiej:
+                        <a href="https://consumer-redress.ec.europa.eu/dispute-resolution-bodies" target="_blank" rel="noopener">consumer-redress.ec.europa.eu/dispute-resolution-bodies</a>.</li>
+                    <li>Jeżeli spór dotyczy umowy sprzedaży (płatność, zwrot), właściwym partnerem jest Google
+                        Commerce Limited; zob. §9 i §13.</li>
+                </ol>
+                <p style="font-size:0.9em;opacity:0.85;">Uwaga: Dawna platforma internetowa do rozstrzygania sporów
+                (OS) została uchylona rozporządzeniem (UE) 2024/3228 i od 20 lipca 2025 r. jest niedostępna.</p>
+            </div>
+
+            <h2>§15 Klauzula salwatoryjna</h2>
+            <div class="success">
+                <ol style="margin: 0;">
+                    <li>Jeżeli poszczególne postanowienia niniejszego regulaminu są w całości lub w części
+                        nieważne lub staną się nieważne, nie wpływa to na ważność pozostałych postanowień.</li>
+                    <li>Postanowienie w całości lub w części nieważne zastępuje się postanowieniem ważnym, które
+                        najbliżej odpowiada gospodarczemu celowi pierwotnego postanowienia.</li>
+                    <li>To samo dotyczy luk w regulaminie.</li>
+                    <li>Ustne uzgodnienia dodatkowe nie istnieją. Zmiany wymagają formy pisemnej.</li>
+                </ol>
+            </div>
+
+            <h2>§16 Język</h2>
+            <div class="section">
+                <p>Niniejszy regulamin został sporządzony w języku polskim. Wersja angielska
+                (<a href="agb_en.html">English version</a>) jest tłumaczeniem niewiążącym.
+                <strong>W przypadku rozbieżności wiążąca jest wyłącznie wersja polska.</strong></p>
+            </div>
+
+            <h2>§17 Kontakt</h2>
+            <div class="contact-box">
+                <h3>Usługodawca</h3>
+                <ul>
+                    <li><strong>Deweloper:</strong> Jens Kübler</li>
+                    <li><strong>Adres:</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Niemcy</li>
+                    <li><strong>E-mail:</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                </ul>
+            </div>
+
+            <div class="highlight" style="margin-top: 2rem;">
+                <p><strong>Uwaga:</strong> Niniejszy regulamin został sporządzony według najlepszej wiedzy,
+                z uwzględnieniem stanu prawnego obowiązującego w dniu sporządzenia.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Beemaster | <a href="index.html">Ochrona danych</a> | <a href="eula_pl.html">EULA</a> | <a href="impressum_pl.html">Impressum</a></p>
+            <p>Niniejszy regulamin dotyczy aplikacji Beemaster na Androida. Version 2026-09-05. <a href="agb_en.html">English version</a></p>
+        </footer>
+    </div>
+</body>
+</html>

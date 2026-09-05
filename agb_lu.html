@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions générales de vente et d'utilisation | Beemaster</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #ffc107;
+            margin-bottom: 2rem;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .lang-switch a {
+            color: #f57c00;
+            text-decoration: none;
+            margin-left: 0.5rem;
+        }
+        .lang-switch a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .bee-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+        .app-name { font-size: 2.5rem; font-weight: 700; color: #333; margin-bottom: 0.25rem; }
+        .app-name span { color: #ffc107; }
+        .subtitle { color: #666; font-size: 1.2rem; }
+        .last-updated { color: #999; font-size: 0.9rem; margin-top: 0.5rem; }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            background: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f57c00;
+            border: 2px solid #ffc107;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active { background: #ffc107; color: #333; }
+        main {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #f57c00;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ffc107;
+        }
+        h2 { color: #333; font-size: 1.4rem; margin: 2rem 0 1rem; }
+        h3 { color: #f57c00; font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
+        p { margin-bottom: 1rem; color: #555; }
+        ul, ol { margin: 1rem 0 1rem 2rem; color: #555; }
+        li { margin-bottom: 0.5rem; }
+        .highlight {
+            background: #fff3e0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 1.5rem 0;
+        }
+        .highlight p { margin: 0; color: #e65100; }
+        .success {
+            background: #e8f5e9;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 1rem 0;
+        }
+        .success p { margin: 0; color: #2e7d32; }
+        .warning {
+            background: #ffebee;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f44336;
+            margin: 1rem 0;
+        }
+        .warning p { margin: 0; color: #c62828; }
+        .contact-box {
+            background: #fff3e0;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 { color: #f57c00; margin-top: 0; margin-bottom: 0.5rem; }
+        a { color: #f57c00; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .section { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            main { padding: 1.5rem; }
+            .app-name { font-size: 2rem; }
+            nav { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="agb.html">🇩🇪 Deutsch</a> |
+            <a href="agb_at.html">🇦🇹 Deutsch (AT)</a> |
+            <a href="agb_en.html">🇬🇧 English</a> |
+            <a href="agb_bg.html">🇧🇬 Български</a> |
+            <a href="agb_lu.html" class="active">🇱🇺 Français (LU)</a> |
+            <a href="agb_fr.html">🇫🇷 Français (FR)</a>
+        </div>
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">L'application de gestion de ruches pour les apiculteurs</p>
+            <p class="last-updated">Conditions générales – Version 2026-09-05, dernière mise à jour : 18 août 2026</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Protection des données</a>
+            <a href="agb_lu.html" class="active">CGV</a>
+            <a href="eula_lu.html">EULA</a>
+            <a href="impressum_lu.html">Mentions légales</a>
+        </nav>
+
+        <main>
+            <h1>Conditions générales de vente et d'utilisation (CGV)</h1>
+
+            <div class="highlight">
+                <p><strong>Remarque importante sur la langue :</strong> Les présentes conditions générales sont la version applicable et contraignante pour le Luxembourg. Elles ont été rédigées en langue française. Les autres versions linguistiques sont des traductions non contraignantes. <strong>En cas de divergence, seule la version française fait foi.</strong></p>
+            </div>
+
+            <p><strong>Prestataire :</strong><br>
+                Jens Kübler<br>
+                Max-Beckmann-Straße 39<br>
+                76227 Karlsruhe<br>
+                Allemagne<br>
+                E-mail : <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a><br>
+                (ci-après le « Prestataire »)
+            </p>
+
+            <div class="highlight">
+                <p><strong>Résumé :</strong> L'application est purement une aide à l'apiculture. L'utilisation se fait à vos propres risques. Aucune responsabilité pour la perte de données ou les décisions apicoles. Une limitation de responsabilité s'applique dans la mesure permise par la loi.</p>
+            </div>
+
+            <h2>§1 Champ d'application</h2>
+            <div class="section">
+                <ol>
+                    <li>Les présentes conditions générales s'appliquent à l'utilisation de l'application mobile « Beemaster » (ci-après « l'application ») distribuée via le Google Play Store.</li>
+                    <li>En téléchargeant et en utilisant l'application, l'utilisateur accepte les présentes conditions générales.</li>
+                    <li>Des conditions divergentes de l'utilisateur ne sont pas reconnues, sauf si le Prestataire consent expressément par écrit à leur applicabilité.</li>
+                </ol>
+            </div>
+
+            <h2>§2 Conclusion du contrat</h2>
+            <div class="section">
+                <ol>
+                    <li>Le contrat entre le Prestataire et l'utilisateur est conclu lors du téléchargement de l'application.</li>
+                    <li>L'application est fournie gratuitement. Des conditions distinctes s'appliquent aux fonctionnalités premium (voir §9).</li>
+                </ol>
+            </div>
+
+            <h2>§3 Conditions d'utilisation</h2>
+            <div class="section">
+                <ol>
+                    <li>L'utilisation de l'application nécessite un appareil Android compatible (Android 8.0 ou supérieur).</li>
+                    <li>L'utilisateur est responsable de la fourniture de l'infrastructure technique nécessaire (appareil, connexion internet, batterie).</li>
+                    <li><strong>Âge minimum :</strong> L'application ne s'adresse pas aux enfants. Les mineurs
+                        nécessitent le consentement d'un représentant légal pour les fonctionnalités payantes.</li>
+                    <li><strong>Capacité de consentir en matière de protection des données :</strong> Lorsque le
+                        traitement repose sur le consentement, ce consentement peut être donné de manière indépendante
+                        dès l'âge de 16 ans au Luxembourg (art. 8 RGPD). En dessous de cet âge, le consentement du
+                        titulaire de la responsabilité parentale est requis.</li>
+                </ol>
+            </div>
+
+            <h2>§4 Octroi des droits d'utilisation</h2>
+            <div class="section">
+                <ol>
+                    <li>Le Prestataire octroie à l'utilisateur un droit d'utilisation simple, non transférable, illimité dans le temps et dans l'espace.</li>
+                    <li>L'application peut être utilisée <strong>aussi bien à titre privé que commercial</strong> &ndash;
+                        en particulier par des exploitations apicoles amateurs, à temps partiel et professionnelles
+                        pour documenter leur propre rucher.</li>
+                    <li>Ne sont pas autorisés : la duplication, la modification, la décompilation, la redistribution ou
+                        la sous-licence de l'application elle-même, ainsi que l'offre de l'application ou de ses
+                        fonctionnalités en tant que propre service à des tiers (p. ex. revente, white-labelling,
+                        exploitation en tant que portail de services). Les droits légaux obligatoires, en particulier
+                        les §§ 69d et 69e de la loi allemande sur le droit d'auteur (UrhG), restent sans effet.</li>
+                    <li>Les propres données de l'utilisateur enregistrées lors de l'utilisation (données de ruches,
+                        d'inspections et de rendements) peuvent être utilisées, exportées et partagées sans restriction
+                        par l'utilisateur à ses propres fins opérationnelles.</li>
+                </ol>
+            </div>
+
+            <h2>§5 Limitations inhérentes à l'application</h2>
+            <div class="section">
+                <ol>
+                    <li><strong>L'application est purement une aide</strong> à l'apiculture et ne remplace pas les conseils d'un expert, le traitement vétérinaire ou l'expertise apicole.</li>
+                    <li>Les recommandations, avertissements et données contenus dans l'application (p. ex. traitement varroa, instructions d'alimentation, marquage des reines) reposent sur des normes générales et peuvent varier localement, saisonnièrement ou individuellement.</li>
+                    <li><strong>L'application ne détecte aucune maladie ou état de santé des abeilles, des reines ou des colonies.</strong> Ces évaluations sont réservées exclusivement aux professionnels qualifiés.</li>
+                    <li>L'application n'assume aucune responsabilité pour les décisions économiques (p. ex. récolte de miel, achat de colonies, nombre de ruches).</li>
+                </ol>
+            </div>
+
+            <h2>§6 Exclusion et limitation de responsabilité</h2>
+
+            <h3>6.1 Exclusion générale</h3>
+            <div class="section">
+                <ol>
+                    <li>L'utilisation de l'application se fait <strong>à vos propres risques</strong>.</li>
+                    <li>Le Prestataire n'est pas responsable des dommages causés par :
+                        <ul style="margin-top: 0.5rem;">
+                            <li>des données manquantes ou incomplètes dans l'application,</li>
+                            <li>l'interruption de l'utilisation de l'application (panne du serveur, mise à jour, maintenance),</li>
+                            <li>une saisie incorrecte de l'utilisateur,</li>
+                            <li>des tiers (p. ex. attaques de pirates, logiciels malveillants),</li>
+                            <li>une incompatibilité avec les appareils ou les systèmes d'exploitation,</li>
+                            <li>des données perdues (p. ex. en raison de défauts de l'appareil ou d'une réinstallation de l'application).</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <h3>6.2 Limitation de responsabilité</h3>
+            <div class="section">
+                <ol>
+                    <li>En cas d'intention ou de négligence grave, le Prestataire est responsable conformément aux dispositions légales.</li>
+                    <li>En cas de négligence légère, le Prestataire n'est responsable <strong>que</strong> :
+                        <ul style="margin-top: 0.5rem;">
+                            <li>des dommages résultant d'une atteinte à la vie, au corps ou à la santé,</li>
+                            <li>de la violation d'une obligation contractuelle essentielle (dite obligation cardinale).</li>
+                        </ul>
+                        La responsabilité est limitée en montant au dommage prévisible et typique pour le contrat.
+                    </li>
+                </ol>
+            </div>
+
+            <h3>6.3 Perte de données</h3>
+            <div class="section">
+                <ol>
+                    <li>Le Prestataire n'est pas responsable de la perte de données, en particulier de :
+                        <ul style="margin-top: 0.5rem;">
+                            <li>données de ruches perdues,</li>
+                            <li>protocoles d'inspection perdus,</li>
+                            <li>informations de localisation perdues.</li>
+                        </ul>
+                    </li>
+                    <li>Il est expressément demandé à l'utilisateur d'effectuer régulièrement des sauvegardes de données (fonction d'export).</li>
+                </ol>
+            </div>
+
+            <h3>6.4 Aucune responsabilité pour les décisions apicoles</h3>
+            <div class="warning">
+                <p><strong>Remarque importante :</strong> Le Prestataire n'est <strong>expressément pas responsable</strong> de :</p>
+                <ul style="margin-top: 0.5rem;">
+                    <li>la perte de colonies d'abeilles,</li>
+                    <li>la perte de reines,</li>
+                    <li>des traitements varroa infructueux,</li>
+                    <li>des pertes économiques (rendement de miel, nombre de colonies),</li>
+                    <li>des décisions incorrectes fondées sur les données de l'application.</li>
+                </ul>
+            </div>
+
+            <h3>6.5 Données inexactes</h3>
+            <div class="section">
+                <ol>
+                    <li>L'application peut afficher des informations inexactes, incomplètes ou obsolètes.</li>
+                    <li>L'utilisateur doit vérifier indépendamment toutes les décisions critiques.</li>
+                </ol>
+            </div>
+
+            <h2>§7 Obligations de l'utilisateur</h2>
+            <div class="section">
+                <ol>
+                    <li>L'utilisateur s'engage :
+                        <ul style="margin-top: 0.5rem;">
+                            <li>à ne pas saisir de données nuisibles dans l'application,</li>
+                            <li>à ne pas manipuler ni pirater l'application,</li>
+                            <li>à ne pas effectuer d'accès automatisé à l'application,</li>
+                            <li>à garder secrètes ses données d'accès personnelles (en cas de fonctionnalités premium).</li>
+                        </ul>
+                    </li>
+                    <li>Les violations autorisent le Prestataire à suspendre immédiatement l'accès.</li>
+                </ol>
+            </div>
+
+            <h2>§8 Politique de confidentialité</h2>
+            <div class="section">
+                <ol>
+                    <li>La politique de confidentialité est fournie séparément à la page <a href="index.html">Protection des données</a> et au sein de l'application.</li>
+                    <li>Les données personnelles sont traitées sur les bases juridiques exposées dans la politique de
+                        confidentialité (art. 6, par. 1, RGPD). <strong>Un consentement n'est demandé que lorsque cela
+                        est requis</strong> &ndash; en particulier pour les statistiques facultatives d'erreurs et
+                        d'utilisation. Ce consentement est volontaire, est demandé séparément dans les réglages de
+                        l'application et peut y être retiré à tout moment pour l'avenir. L'application peut être utilisée
+                        sans restriction sans ce consentement.</li>
+                </ol>
+            </div>
+
+            <h2>§9 Fonctionnalités premium, partie contractante et paiement</h2>
+            <div class="warning">
+                <p><strong>Qui est votre partie contractante pour les achats ?</strong></p>
+                <p>Les fonctionnalités premium et les abonnements <strong>ne sont pas achetés auprès du Prestataire</strong>
+                mais via le Google Play Store. Le vendeur et la partie contractante de l'accord d'achat est
+                <strong>Google Commerce Limited</strong>, Gordon House, Barrow Street, Dublin 4, Irlande.</p>
+                <p>En conséquence, le processus de commande, le traitement des paiements, la facturation, les
+                remboursements et le droit de rétractation légal sont régis par les <strong>conditions d'utilisation de
+                Google Play</strong> et la politique de remboursement de Google. Le Prestataire ne peut ni accepter les
+                paiements ni accorder de remboursements.</p>
+            </div>
+            <div class="section">
+                <ol>
+                    <li>Les fonctionnalités premium (p. ex. limites de ruches étendues) sont payantes. Le Prestataire
+                        fournit techniquement les fonctionnalités ; l'accord d'achat est conclu avec Google Commerce
+                        Limited (voir l'encadré ci-dessus).</li>
+                    <li>Les prix sont affichés dans le Google Play Store avant l'achat, y compris la TVA applicable.</li>
+                    <li><strong>Les abonnements se renouvellent automatiquement</strong> pour la durée choisie, sauf
+                        annulation avant la fin de la période en cours. L'annulation s'effectue dans la section de
+                        gestion des abonnements du Google Play Store. Google vous informe avant chaque renouvellement
+                        conformément à ses conditions. L'annulation prend effet à la fin de la période déjà payée ; les
+                        frais déjà payés pour la période en cours ne sont pas remboursés au prorata.</li>
+                    <li><strong>Les achats uniques</strong> (identifiés comme tels dans le Play Store) ne se
+                        renouvellent pas et n'expirent pas.</li>
+                    <li>Les remboursements sont régis exclusivement par les politiques du Google Play Store. Les
+                        demandes sont soumises via votre compte Google.</li>
+                    <li>Les paiements sont traités via Google Play. Le Prestataire ne reçoit ni ne stocke
+                        <strong>aucune donnée de paiement</strong> (ni carte, ni compte bancaire, ni coordonnées de
+                        facturation).</li>
+                </ol>
+            </div>
+
+            <h2>§10 Disponibilité et modifications</h2>
+            <div class="section">
+                <ol>
+                    <li>Le Prestataire se réserve le droit de :
+                        <ul style="margin-top: 0.5rem;">
+                            <li>modifier ou interrompre l'application à tout moment,</li>
+                            <li>modifier ou supprimer des fonctionnalités premium,</li>
+                            <li>ajuster les prix des fonctionnalités premium (uniquement pour les nouveaux achats).</li>
+                        </ul>
+                    </li>
+                    <li>Il n'existe aucun droit à une disponibilité continue.</li>
+                </ol>
+            </div>
+
+            <h2>§11 Résiliation</h2>
+            <div class="section">
+                <ol>
+                    <li>L'utilisateur peut résilier l'utilisation de l'application à tout moment en la supprimant de l'appareil.</li>
+                    <li>Le Prestataire peut résilier le contrat moyennant un préavis de 14 jours (uniquement pour les fonctionnalités premium, avec remboursement au prorata).</li>
+                    <li>Après résiliation, toutes les données de l'utilisateur seront supprimées au plus tard dans les 30 jours.</li>
+                </ol>
+            </div>
+
+            <h2>§12 Droit applicable et juridiction</h2>
+            <div class="section">
+                <ol>
+                    <li>Le présent contrat est régi par le <strong>droit luxembourgeois</strong>, à l'exclusion de la
+                        Convention des Nations Unies sur les contrats de vente internationale de marchandises (CVIM).
+                        Le Code civil luxembourgeois
+                        (<a href="https://legilux.public.lu/eli/etat/leg/code/civil/" target="_blank" rel="noopener">Legilux</a>)
+                        et le Code de la consommation luxembourgeois
+                        (<a href="https://legilux.public.lu/eli/etat/leg/code/consommation/" target="_blank" rel="noopener">Legilux</a>)
+                        s'appliquent, en conformité avec la directive 2011/83/UE
+                        (<a href="https://eur-lex.europa.eu/eli/dir/2011/83/oj" target="_blank" rel="noopener">EUR-Lex</a>).</li>
+                    <li>Pour les consommateurs résidant habituellement dans un autre État membre de l'UE, les
+                        dispositions impératives de protection des consommateurs de cet État membre restent applicables
+                        (art. 6 du règlement Rome I).</li>
+                    <li>La juridiction applicable aux consommateurs est régie par les dispositions légales.</li>
+                    <li>Si l'utilisateur est une entreprise, une personne morale de droit public ou un fonds spécial de
+                        droit public, le for exclusif est Karlsruhe, Allemagne.</li>
+                </ol>
+            </div>
+
+            <h2>§13 Droit de rétractation des consommateurs (achats premium)</h2>
+            <div class="warning">
+                <p><strong>Le droit de rétractation s'exerce auprès de Google, et non auprès du Prestataire.</strong></p>
+                <p>Étant donné que l'accord d'achat des fonctionnalités premium est conclu avec
+                <strong>Google Commerce Limited</strong> (voir §9), toute rétractation est adressée exclusivement à
+                Google. Le Prestataire n'est pas votre partie contractante à cet égard et ne peut ni accepter une
+                rétractation ni initier un remboursement.</p>
+            </div>
+            <div class="section">
+                <ol>
+                    <li>Vos droits en tant que consommateur découlent des conditions d'utilisation de Google Play et des
+                        dispositions légales impératives de votre pays de résidence.</li>
+                    <li>Les demandes de rétractation ou de remboursement sont soumises à Google via votre compte Google
+                        (Google Play &rarr; Compte &rarr; Historique des commandes &rarr; Signaler un problème).</li>
+                    <li><strong>Contenu numérique :</strong> Pour le contenu numérique débloqué immédiatement, le droit
+                        de rétractation peut s'éteindre prématurément si vous avez expressément consenti à l'exécution
+                        immédiate et confirmé avoir pris connaissance de la perte du droit de rétractation. La manière
+                        dont ce consentement est obtenu est déterminée par le processus d'achat de Google Play.</li>
+                    <li>Indépendamment de ce qui précède, le Prestataire fournit la version de base gratuite de
+                        l'application sans aucune obligation de paiement ; aucun cas de rétractation ne s'y applique.</li>
+                </ol>
+                <p>Pour les litiges concernant les services fournis par le Prestataire lui-même (utilisation de
+                l'application, support), le §14 s'applique.</p>
+            </div>
+
+            <h2>§14 Règlement des litiges de consommation</h2>
+            <div class="section">
+                <ol>
+                    <li>Le Prestataire <strong>n'est ni disposé ni tenu</strong> de participer à des procédures de
+                        règlement des litiges devant un organisme de conciliation des consommateurs.</li>
+                    <li>Les consommateurs des autres États membres de l'UE peuvent trouver l'organisme compétent sur la
+                        liste de la Commission européenne :
+                        <a href="https://consumer-redress.ec.europa.eu/dispute-resolution-bodies" target="_blank" rel="noopener">consumer-redress.ec.europa.eu/dispute-resolution-bodies</a>.</li>
+                    <li>Lorsque le litige concerne l'accord d'achat (paiement, remboursement), Google Commerce Limited
+                        est l'interlocuteur compétent ; voir §9 et §13.</li>
+                </ol>
+                <p style="font-size:0.9em;opacity:0.85;">Remarque : L'ancienne plateforme européenne de règlement en
+                ligne des litiges (OS) a été supprimée par le règlement (UE) 2024/3228 et n'est plus disponible depuis
+                le 20 juillet 2025.</p>
+            </div>
+
+            <h2>§15 Clause de divisibilité (salvatorische Klausel)</h2>
+            <div class="success">
+                <ol style="margin: 0;">
+                    <li>Si certaines dispositions des présentes conditions générales sont ou deviennent invalides en tout ou en partie, la validité des dispositions restantes n'en est pas affectée.</li>
+                    <li>La disposition invalide est remplacée par une disposition effective qui se rapproche le plus de l'objectif économique de la disposition d'origine.</li>
+                    <li>Il en va de même en cas de lacune dans les présentes conditions.</li>
+                    <li>Il n'existe aucun accord verbal accessoire. Toute modification doit être effectuée par écrit.</li>
+                </ol>
+            </div>
+
+            <h2>§16 Langue</h2>
+            <div class="section">
+                <p>Les présentes conditions générales ont été rédigées en langue française. Les autres versions linguistiques sont des traductions non contraignantes. <strong>En cas de divergence, seule la version française fait foi.</strong></p>
+            </div>
+
+            <h2>§17 Contact</h2>
+            <div class="contact-box">
+                <h3>Prestataire</h3>
+                <ul>
+                    <li><strong>Développeur :</strong> Jens Kübler</li>
+                    <li><strong>Adresse :</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Allemagne</li>
+                    <li><strong>E-mail :</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                </ul>
+            </div>
+
+            <div class="highlight" style="margin-top: 2rem;">
+                <p><strong>Exclusion de responsabilité :</strong> Les présentes conditions ont été établies au mieux de
+                nos connaissances conformément au droit en vigueur à la date de leur rédaction.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Beemaster | <a href="index.html">Protection des données</a> | <a href="eula_lu.html">EULA</a> | <a href="impressum_lu.html">Mentions légales</a></p>
+            <p>Les présentes conditions s'appliquent à l'application Android Beemaster. Version 2026-09-05. <a href="agb.html">Deutsche Version</a></p>
+        </footer>
+    </div>
+</body>
+</html>

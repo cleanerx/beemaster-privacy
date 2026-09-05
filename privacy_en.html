@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Beemaster</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.7;
@@ -13,31 +17,34 @@
             background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
             min-height: 100vh;
         }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
         header {
             text-align: center;
             padding: 3rem 0;
             border-bottom: 2px solid #d4a574;
             margin-bottom: 2rem;
         }
-        .lang-switch {
-            text-align: right;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
-        .lang-switch a {
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
             color: #8b4513;
-            text-decoration: none;
-            margin-left: 0.5rem;
+            margin-bottom: 0.5rem;
         }
-        .lang-switch a.active {
-            font-weight: bold;
-            text-decoration: underline;
+        .app-name span {
+            color: #f5a623;
         }
-        .app-name { font-size: 2.5rem; font-weight: 700; color: #8b4513; margin-bottom: 0.5rem; }
-        .app-name span { color: #f5a623; }
-        .subtitle { color: #666; font-size: 1.1rem; }
-        .bee-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .bee-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
         main {
             background: white;
             border-radius: 16px;
@@ -51,11 +58,27 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #f5a623;
         }
-        h2 { color: #333; font-size: 1.4rem; margin: 2rem 0 1rem; }
-        h3 { color: #555; font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
-        p { margin-bottom: 1rem; color: #444; }
-        ul { margin: 1rem 0 1rem 2rem; color: #444; }
-        li { margin-bottom: 0.5rem; }
+        h2 {
+            color: #333;
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            color: #555;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #444;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
         .highlight {
             background: #fff8e7;
             padding: 1rem 1.5rem;
@@ -87,8 +110,13 @@
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
-        .data-table th { background: #f5a623; color: white; }
-        .data-table tr:nth-child(even) { background: #fafafa; }
+        .data-table th {
+            background: #f5a623;
+            color: white;
+        }
+        .data-table tr:nth-child(even) {
+            background: #fafafa;
+        }
         .contact-box {
             background: linear-gradient(135deg, #8b4513, #a0522d);
             color: white;
@@ -96,10 +124,20 @@
             padding: 1.5rem;
             margin-top: 2rem;
         }
-        .contact-box h3 { color: #f5a623; margin-top: 0; }
-        .contact-box a { color: #f5a623; }
-        a { color: #8b4513; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        .contact-box h3 {
+            color: #f5a623;
+            margin-top: 0;
+        }
+        .contact-box a {
+            color: #f5a623;
+        }
+        a {
+            color: #8b4513;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         footer {
             text-align: center;
             padding: 2rem;
@@ -107,42 +145,52 @@
             font-size: 0.9rem;
             margin-top: 2rem;
         }
-        .last-updated { color: #888; font-size: 0.9rem; margin-top: 1rem; }
+        .last-updated {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
         @media (max-width: 600px) {
-            .container { padding: 1rem; }
-            main { padding: 1.5rem; }
-            .app-name { font-size: 2rem; }
-            .data-table { font-size: 0.9rem; }
+            .container {
+                padding: 1rem;
+            }
+            main {
+                padding: 1.5rem;
+            }
+            .app-name {
+                font-size: 2rem;
+            }
+            .data-table {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="lang-switch">
-            <a href="index.html">🇩🇪 Deutsch</a> |
-            <a href="privacy_en.html" class="active">🇬🇧 English</a> |
-            <a href="privacy_cs.html">🇨🇿 Čeština</a>
-        </div>
         <header>
             <div class="bee-icon">🐝</div>
             <h1 class="app-name">Bee<span>master</span></h1>
             <p class="subtitle">The beekeeping app for beekeepers</p>
-            <p class="last-updated">Version 2026-05-05 – Last updated: 5 May 2026</p>
+            <p class="last-updated">Version 3.2 (2026-09-05) – Last updated: 5 September 2026</p>
         </header>
 
+        <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
+            <a href="index.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇩🇪 Deutsch</a> |
+            <a href="privacy_at.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇦🇹 Deutsch (AT)</a> |
+            <a href="privacy_en.html" style="color:#8b4513;text-decoration:none;font-weight:bold;text-decoration:underline;margin-left:0.5rem;">🇬🇧 English</a> |
+            <a href="privacy_cs.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇨🇿 Čeština</a>
+        </div>
+
         <nav style="display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
-            <a href="privacy_en.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;font-weight:bold;">Privacy</a>
-            <a href="agb_en.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Terms</a>
-            <a href="eula_en.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">EULA</a>
-            <a href="impressum_en.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Legal Notice</a>
+            <a href="privacy_en.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Privacy</a>
+            <a href="agb.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Terms</a>
+            <a href="eula.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">EULA</a>
+            <a href="impressum.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Legal Notice</a>
         </nav>
 
         <main>
             <h1>Privacy Policy</h1>
-
-            <div class="highlight">
-                <p><strong>Important notice on language:</strong> This Privacy Policy was originally drafted in German. The English version below is a courtesy translation. <strong>In the event of any discrepancy between the German and English versions, the German version shall prevail.</strong> The original German version is available at <a href="index.html">index.html</a>.</p>
-            </div>
 
             <div class="highlight">
                 <p><strong>Summary:</strong> Beemaster stores all data locally on your device. Personal data is encrypted. No advertising or marketing data is collected. Your beehive data stays with you.</p>
@@ -160,11 +208,26 @@
             <h2>1a. Legal Bases for Processing</h2>
             <p>Where we process personal data, processing is based on the following legal bases:</p>
             <ul>
-                <li><strong>Art. 6 (1) lit. a GDPR</strong> – consent (e.g. optional beekeeper profile, location access, voice notes, Firebase Analytics)</li>
-                <li><strong>Art. 6 (1) lit. b GDPR</strong> – performance of a contract (provision of App functions, premium purchases)</li>
-                <li><strong>Art. 6 (1) lit. c GDPR</strong> – legal obligation (e.g. retention duties under commercial / tax law)</li>
-                <li><strong>Art. 6 (1) lit. f GDPR</strong> – legitimate interest (e.g. stability, security, Crashlytics for bug fixing)</li>
+                <li><strong>Art. 6 (1) lit. a GDPR</strong> – consent. This applies exclusively to:
+                    error and usage statistics (section 6.1) and the submission of feedback (section 6.5).
+                    Both are disabled by default or purely voluntary and can be withdrawn at any time.</li>
+                <li><strong>Art. 6 (1) lit. b GDPR</strong> – performance of a contract: provision of
+                    App functions, map display, weather retrieval, unlocking of purchased features.</li>
+                <li><strong>Art. 6 (1) lit. c GDPR</strong> – legal obligation (e.g. retention duties
+                    under commercial / tax law).</li>
+                <li><strong>Art. 6 (1) lit. f GDPR</strong> – legitimate interest: prevention of abuse
+                    and ensuring technical operation.</li>
             </ul>
+            <div class="success">
+                <p><strong>No breach of the prohibition of bundling:</strong> Accepting the EULA, Terms and
+                this Privacy Policy on first launch constitutes <em>acknowledgement of the contractual
+                terms</em> and is <strong>not</strong> a data protection consent. Processing that requires
+                consent is requested separately, voluntarily and revocably (Art. 7 (4) GDPR).</p>
+            </div>
+            <p style="font-size:0.9em;opacity:0.85;">Legal source: The General Data Protection Regulation is
+            available at
+            <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a>
+            (Regulation (EU) 2016/679).</p>
 
             <h2>2. What Data Is Collected?</h2>
 
@@ -210,38 +273,109 @@
                 <p><strong>✓ Encryption:</strong> Personal data is stored encrypted using the Android Keystore.</p>
             </div>
 
+            <h3>🔐 Account data (Premium features)</h3>
+            <p>To use premium features (AI assistant, cloud backup, GDPR incident reporting), you can create an account:</p>
+            <table class="data-table">
+                <tr>
+                    <th>Data type</th>
+                    <th>Purpose</th>
+                    <th>Storage</th>
+                </tr>
+                <tr>
+                    <td>Email address</td>
+                    <td>Account creation, login</td>
+                    <td>Encrypted at Supabase (EU)</td>
+                </tr>
+                <tr>
+                    <td>Password hash</td>
+                    <td>Authentication</td>
+                    <td>Encrypted at Supabase (EU)</td>
+                </tr>
+                <tr>
+                    <td>Account status</td>
+                    <td>Premium unlock</td>
+                    <td>Encrypted at Supabase (EU)</td>
+                </tr>
+                <tr>
+                    <td>10 Free Credits</td>
+                    <td>Free trial usage</td>
+                    <td>Encrypted at Supabase (EU)</td>
+                </tr>
+            </table>
+            <div class="success">
+                <p><strong>✓ GDPR compliant:</strong> Account data is stored encrypted in the EU data center (Ireland).</p>
+            </div>
+            <p><strong>Voluntary:</strong> Account creation is optional. Basic app features are available without an account.</p>
+
+            <h3>📝 Feedback system (optional)</h3>
+            <p>To improve the app, you can provide feedback:</p>
+            <ul>
+                <li><strong>Data:</strong> Feedback text, category (Bug, Feature, UI/UX, Performance, Other), rating (1-5 stars)</li>
+                <li><strong>Storage:</strong> Local + encrypted to server</li>
+                <li><strong>Voluntary:</strong> You decide whether to give feedback</li>
+                <li><strong>Anonymous:</strong> No link to your person unless you provide email</li>
+            </ul>
+
             <h3>📸 Media</h3>
             <ul>
                 <li><strong>Photos:</strong> Beehive images (optional, stored locally)</li>
                 <li><strong>Voice notes:</strong> Audio recordings (optional, stored locally)</li>
             </ul>
 
-            <h3>📊 Automatically collected data</h3>
+            <h3>📊 Error and usage statistics (only with consent)</h3>
+            <div class="success">
+                <p><strong>Disabled by default.</strong> Without your express consent, <strong>no</strong>
+                crash reports and <strong>no</strong> usage statistics are collected or transmitted. You
+                enable them – if you wish – in the app settings under “Error and usage
+                statistics” and can switch them off again there at any time.</p>
+            </div>
+            <p>If consent has been given, the following data is processed:</p>
             <table class="data-table">
                 <tr>
                     <th>Type of data</th>
                     <th>Purpose</th>
-                    <th>Shared with third parties?</th>
+                    <th>Recipient</th>
                 </tr>
                 <tr>
-                    <td>Crash logs</td>
-                    <td>Improve App stability</td>
+                    <td>Crash reports (stack trace, app/OS version, device model)</td>
+                    <td>Finding and fixing errors</td>
                     <td>Firebase Crashlytics</td>
                 </tr>
                 <tr>
-                    <td>Usage statistics</td>
-                    <td>App improvement</td>
+                    <td>Aggregated usage events (e.g. screens opened)</td>
+                    <td>Improving the App</td>
                     <td>Firebase Analytics</td>
                 </tr>
                 <tr>
-                    <td>Device ID</td>
-                    <td>Error diagnosis</td>
+                    <td>Randomly generated installation ID</td>
+                    <td>Correlating multiple reports from the same device</td>
                     <td>Firebase</td>
                 </tr>
             </table>
+            <p><strong>Legal basis:</strong> Art. 6 (1) lit. a GDPR (consent). Withdrawal is possible at any
+            time with effect for the future and takes effect immediately. The App can be used without
+            restriction without this consent – there is <strong>no bundling</strong> with acceptance of
+            the legal documents.</p>
 
-            <div class="warning">
-                <p><strong>⚠️ Firebase data protection:</strong> Crash logs and anonymous usage data are transmitted to Google Firebase. More information: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
+            <h3>🗄️ Supabase (Backend infrastructure)</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Database, authentication, cloud functions for account and premium features</li>
+                <li><strong>Company:</strong> Supabase Inc., USA</li>
+                <li><strong>Data protection:</strong> 
+                    <a href="https://supabase.com/legal/dpa" target="_blank" rel="noopener">
+                        supabase.com/legal/dpa
+                    </a>
+                </li>
+                <li><strong>Storage location:</strong> EU data center (Ireland) – selectable</li>
+                <li><strong>Legal basis:</strong> Art. 6 (1) lit. b GDPR (performance of a contract)</li>
+                <li><strong>Data processing agreement:</strong> A data processing agreement (DPA/AVV) exists with Supabase in accordance with Art. 28 GDPR.
+                    Supabase commits to GDPR compliance, technical security measures (TLS, AES-256), 
+                    and reporting data breaches within 72 hours.
+                </li>
+            </ul>
+            <div class="success">
+                <p><strong>✓ EU data protection:</strong> Your data is stored in the EU data center (Ireland). 
+                Supabase signed the EU Standard Contractual Clauses (SCC) for any data transfers to the USA.</p>
             </div>
 
             <h2>3. Data NOT Collected</h2>
@@ -283,7 +417,7 @@
                 </tr>
                 <tr>
                     <td>Storage</td>
-                    <td>Map data (OSMDroid)</td>
+                    <td>Caching of map tiles (MapLibre) and export/import files</td>
                 </tr>
             </table>
 
@@ -300,22 +434,184 @@
                 <p><strong>✓ Your data stays with you:</strong> In the free version, no data is stored on servers. All data remains locally on your device.</p>
             </div>
 
-            <h2>6. Third-Party Providers</h2>
-            <h3>Firebase (Google)</h3>
+            <h2>6. Recipients and Third-Party Providers</h2>
+            <p>The following lists every party to which personal data may be transmitted while using the
+            App. A transfer only takes place in the case described in each instance.</p>
+
+            <h3>6.1 Firebase Crashlytics and Firebase Analytics (Google Ireland Limited)</h3>
             <ul>
-                <li><strong>Crashlytics:</strong> Automatic error reports</li>
-                <li><strong>Analytics:</strong> Anonymous usage statistics</li>
-                <li><strong>Privacy:</strong> <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+                <li><strong>Purpose:</strong> Crash reports and aggregated usage statistics for bug fixing
+                    and improving the App.</li>
+                <li><strong>Data:</strong> Device model, OS version, app version, crash stack trace,
+                    randomly generated installation ID, timestamp, coarse region.</li>
+                <li><strong>Legal basis:</strong> <strong>Consent</strong>, Art. 6 (1) lit. a GDPR.</li>
+                <li><strong>Disabled by default.</strong> Collection only begins once you enable it in the
+                    app settings under “Error and usage statistics”. You may switch it off again at
+                    any time; collection then stops immediately. The App can be used in full without this
+                    consent.</li>
+                <li><strong>Privacy information:</strong>
+                    <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
             </ul>
 
-            <h3>OpenAI API (optional)</h3>
+            <h3>6.2 Google Play Billing and Google Play Core (Google Commerce Limited / Google Ireland Limited)</h3>
             <ul>
-                <li><strong>Purpose:</strong> AI-based beekeeping assistance (premium)</li>
-                <li><strong>Active:</strong> Only on explicit use</li>
-                <li><strong>Privacy:</strong> <a href="https://openai.com/privacy">openai.com/privacy</a></li>
+                <li><strong>Purpose:</strong> Processing of purchases and subscriptions, verification of
+                    purchase status, and delivery of app updates.</li>
+                <li><strong>Data:</strong> Google account identifier, purchase token, product ID, app and
+                    device details. The Provider receives <strong>no</strong> payment data.</li>
+                <li><strong>Legal basis:</strong> Art. 6 (1) lit. b GDPR (performance of a contract /
+                    provision of purchased features).</li>
+                <li><strong>Note:</strong> The seller of the premium features is Google Commerce Limited,
+                    not the Provider. See <a href="agb.html">Terms §9</a>.</li>
+            </ul>
+
+            <h3>6.3 Map display: MapLibre and CARTO Basemaps</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Displaying the locations of your hives on a map.</li>
+                <li><strong>Data:</strong> When map tiles are loaded, your <strong>IP address</strong> is
+                    transmitted to the map service <em>CARTO</em> (basemaps.cartocdn.com), together with the
+                    requested map section. Map data originates from OpenStreetMap contributors.</li>
+                <li><strong>Legal basis:</strong> Art. 6 (1) lit. b GDPR (provision of the map feature).</li>
+                <li><strong>Avoidability:</strong> The transfer only occurs when you open a map view.
+                    The MapLibre Native library itself does not transmit any usage or telemetry data.</li>
+            </ul>
+
+            <h3>6.4 Weather data</h3>
+            <p>Depending on the location, the following providers are used to display weather data and
+            derive treatment recommendations (e.g. suitability for varroa treatment):</p>
+            <ul>
+                <li><strong>Bright Sky (German Weather Service)</strong> for Germany and Bulgaria
+                    (CC BY 4.0). The <strong>geographic coordinates</strong> of the queried location
+                    and the IP address are transmitted to <em>api.brightsky.dev</em>. No account data or
+                    identifiers are sent.</li>
+                <li><strong>National weather services</strong> for the Czech Republic (CHMI/ČHMÚ), Hungary
+                    (HungaroMet), Poland (IMGW-PIB) and Slovakia (SHMÚ) (respectively CC BY 4.0 / CC BY-SA).
+                    These access <strong>public station data</strong>; <strong>no user location
+                    coordinates</strong> are transmitted to the services. Only the device’s IP address
+                    is technically transmitted.</li>
+            </ul>
+            <p><strong>Legal basis:</strong> Art. 6 (1) lit. b GDPR.</p>
+            <p><strong>Note:</strong> With Bright Sky, the coordinates may allow conclusions to be drawn
+            about the location of your apiaries. The query is only performed if coordinates are stored
+            for a location.</p>
+
+            <h3>6.5 Feedback function (Supabase, EU region Ireland)</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Transmission of voluntary user feedback.</li>
+                <li><strong>Data:</strong> Category, rating, free-text comment, app version and a
+                    <strong>pseudonymous device identifier</strong>. The latter is formed as a SHA-256 hash
+                    of the Android device ID and serves solely to limit submissions to one per device and
+                    period. It does not allow the Provider to identify you.</li>
+                <li><strong>Legal basis:</strong> Art. 6 (1) lit. a GDPR (voluntary transmission by actively
+                    submitting the form).</li>
+                <li><strong>Processing on our behalf:</strong> Supabase Inc., hosting in the EU (Ireland),
+                    agreement pursuant to Art. 28 GDPR, standard contractual clauses.</li>
+            </ul>
+
+            <h3>6.6 Features only available in test builds</h3>
+            <div class="warning">
+                <p>The App contains program code for an <strong>account system with credits</strong> and an
+                optional <strong>cloud account feature</strong>. These features are <strong>disabled and not
+                accessible</strong> in the publicly released version. No data processing takes place in this
+                respect. Should these features be enabled in the future, this Privacy Policy will be updated
+                beforehand and consent will be obtained again.</p>
+            </div>
+
+            <h3>6.7 Device-side operating system services</h3>
+            <ul>
+                <li><strong>Speech recognition / speech output:</strong> If you use dictation or read-aloud
+                    features, the service configured on your device (depending on the manufacturer, e.g.
+                    Google or Samsung) processes the voice input. That service is subject to the privacy
+                    policy of the respective provider; the Provider of this App does not receive the audio
+                    data.</li>
+                <li><strong>Location services:</strong> Location is determined via your device's services
+                    and only after you have expressly granted permission.</li>
+            </ul>
+
+            <h3>6.8 Consent records (Art. 7 (1) GDPR)</h3>
+            <p>For the purpose of proving that consent has been given (the controller's burden of proof
+            under Art. 7 (1) GDPR), a record of consent is stored when you accept the EULA, the Terms
+            and this Privacy Policy. This occurs as soon as an <strong>account</strong> is created or
+            used (the account system is currently only available in test builds). The record is stored
+            encrypted at Supabase (EU, Ireland) and contains:</p>
+            <ul>
+                <li>User identifier (Supabase user ID) and email address</li>
+                <li>Version of the accepted policy and the time of consent</li>
+                <li>SHA-256 checksum (hash) of the policy text in force at the time of consent</li>
+                <li>User agent (app version/device) and the IP address detected by the server</li>
+                <li>Type of consent (e.g. PRIVACY, EULA, TERMS) and legal jurisdiction</li>
+            </ul>
+            <p><strong>Retention:</strong> Without premium purchases, the record is deleted when the
+            account is deleted. With premium purchases, the statutory tax retention duty applies
+            (10 years, Art. 5 (1) lit. e GDPR in conjunction with § 147 AO); in the event of legal
+            disputes, deletion is deferred until the end of the proceedings plus 3 years (legal hold).</p>
+            <p><strong>Legal basis:</strong> Art. 6 (1) lit. f GDPR (legitimate interest in
+            evidencing consent or fulfilling statutory retention obligations).</p>
+
+            <h3>6.9 Mollie (Alternative billing)</h3>
+            <p>For “Alternative billing” (Google User Choice Billing), the Provider offers
+            payment processing through a payment service provider:</p>
+            <ul>
+                <li><strong>Purpose:</strong> Processing of alternative in-app payments (e.g. AI credits, premium tiers) outside Google Play Billing.</li>
+                <li><strong>Company:</strong> Mollie B.V. (payment service provider).</li>
+                <li><strong>Data:</strong> Order/payment data (amount, currency, description, payment method) and a reference for assignment. The Provider does not receive any payment data.</li>
+                <li><strong>Processing:</strong> Access to the Mollie API is performed <strong>server-side</strong> (Supabase Edge Function, EU); the API key is not stored in the App. The App merely opens the checkout page provided by Mollie.</li>
+                <li><strong>Legal basis:</strong> Art. 6 (1) lit. b GDPR (performance of a contract).</li>
+                <li><strong>Note:</strong> This billing method is currently only available in test builds; it will be activated only after approval by Google Play.</li>
+            </ul>
+
+            <h3>6.10 AI voice assistant – Microsoft Azure AI Speech</h3>
+            <p>For the optional AI voice assistant (premium feature), voice input (speech
+            recognition, STT) and voice output (text-to-speech, TTS) are processed via the
+            <strong>Azure AI Speech</strong> service from Microsoft. The following applies:</p>
+            <ul>
+                <li><strong>Purpose:</strong> Converting your voice input into text (STT) for interacting
+                    with the voice assistant, and outputting the answer as speech (TTS).</li>
+                <li><strong>Company:</strong> Microsoft Corporation (Microsoft Ireland Operations Ltd.
+                    as EU provider).</li>
+                <li><strong>Data:</strong> Audio data (voice recording) and the technical data required for
+                    processing. Transmission is <strong>encrypted</strong> (TLS). The Azure subscription key
+                    is stored solely server-side; the App only sends a short-lived, JWT-protected access
+                    token.</li>
+                <li><strong>Storage location:</strong> EU data centre (region Germany West Central,
+                    <em>germanywestcentral</em>). Azure AI Speech processes data only in the region of the
+                    resource location.</li>
+                <li><strong>Legal basis:</strong> Art. 6 (1) lit. b GDPR (performance of a contract,
+                    provision of the purchased premium feature) or consent, insofar as on-device speech
+                    recognition is not sufficient.</li>
+                <li><strong>Processing on our behalf:</strong> There is a data processing agreement (DPA)
+                    with Microsoft pursuant to Art. 28 GDPR within the framework of the Microsoft Online
+                    Services Terms and the Microsoft Data Protection Addendum. Microsoft does not use the
+                    data to improve its own AI models.</li>
+                <li><strong>Privacy notices:</strong>
+                    <a href="https://www.microsoft.com/privacy" target="_blank" rel="noopener">microsoft.com/privacy</a>
+                    and
+                    <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank" rel="noopener">Data Protection Addendum</a>.</li>
+            </ul>
+
+            <h3>6.11 Brevo (Email dispatch for account features)</h3>
+            <p>For sending emails in connection with account features (e.g. email address
+            verification, password reset), the Provider uses the email service provider
+            <strong>Brevo</strong>:</p>
+            <ul>
+                <li><strong>Purpose:</strong> Sending transactional account emails.</li>
+                <li><strong>Company:</strong> Brevo (formerly Sendinblue), Paris, France (EU).</li>
+                <li><strong>Data:</strong> The recipient's email address and the content required for the
+                    respective email type. No tracking for advertising purposes takes place.</li>
+                <li><strong>Storage location:</strong> EU data centres (France).</li>
+                <li><strong>Legal basis:</strong> Art. 6 (1) lit. b GDPR (performance of a contract,
+                    provision of the account feature).</li>
+                <li><strong>Processing on our behalf:</strong> There is a data processing agreement (DPA)
+                    with Brevo pursuant to Art. 28 GDPR; Brevo processes the data solely on documented
+                    instructions.</li>
+                <li><strong>Privacy notices:</strong>
+                    <a href="https://www.brevo.com/legal/termsofuse" target="_blank" rel="noopener">brevo.com/legal/termsofuse</a>
+                    (see the “Data Processing Agreement” section therein).</li>
             </ul>
 
             <h2>7. Your Rights (GDPR)</h2>
+            <p>This Privacy Policy also satisfies the information obligations under
+            <strong>Article 13 GDPR</strong> (information to be provided where personal data are collected).</p>
             <p>You have the right to:</p>
             <ul>
                 <li><strong>Access (Art. 15 GDPR):</strong> What data is stored about you</li>
@@ -334,9 +630,22 @@
                 Email: poststelle@lfdi.bwl.de<br>
                 Web: <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener">www.baden-wuerttemberg.datenschutz.de</a>
             </p>
+            <p>You may also contact the supervisory authority of your country of residence. In the
+            <strong>Czech Republic</strong> this is:</p>
+            <p><strong>Úřad pro ochranu osobních údajů (ÚOOÚ)</strong><br>
+                Pplk. Sochora 27, 170 00 Praha 7, Czech Republic<br>
+                Email: posta@uoou.gov.cz<br>
+                Web: <a href="https://uoou.gov.cz" target="_blank" rel="noopener">uoou.gov.cz</a>
+            </p>
 
             <h2>8. Protection of Children and Minors</h2>
-            <p>This App is not intended for children under 13 years of age. No targeted data is collected from children.</p>
+            <p>This App is aimed at beekeepers and is not intended for children. No data is deliberately
+            collected from children and no child-directed content is offered.</p>
+            <p>Where processing is based on consent (see sections 6.1 and 6.5), the age threshold for
+            independent capacity to consent under Art. 8 GDPR is determined by the respective Member State
+            – <strong>16 years in Germany</strong>, <strong>15 years in the Czech Republic</strong>
+            (Section 7 of Act No. 110/2019 Coll.). Below that age, the consent of the holder of parental
+            responsibility is required.</p>
 
             <h2>9. Data Security</h2>
             <ul>
@@ -393,7 +702,7 @@
             <p>For storing authentication data, Supabase (Supabase Inc., 548 Market St, San Francisco, CA 94104, USA) is used as a data processor:</p>
             <ul>
                 <li><strong>Purpose:</strong> JWT token management and user authentication</li>
-                <li><strong>Legal Basis:</strong> Art. 6 (1) lit. b GDPR (Contract performance)</li>
+                <li><strong>Legal Basis:</strong> Art. 6 (1) lit. b GDPR (performance of a contract)</li>
                 <li><strong>Safeguards:</strong> EU Standard Contractual Clauses (Art. 46 GDPR)</li>
                 <li><strong>Privacy Policy:</strong> <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
             </ul>
@@ -429,6 +738,24 @@
                     <th>Re-Consent Required?</th>
                 </tr>
                 <tr>
+                    <td>3.2</td>
+                    <td>2026-09-05</td>
+                    <td>Microsoft Azure AI Speech (AI voice assistant, STT/TTS) and Brevo (account emails) added as data processors</td>
+                    <td>✅ Yes (new third-party providers)</td>
+                </tr>
+                <tr>
+                    <td>3.1</td>
+                    <td>2026-08-24</td>
+                    <td>Consent records (Art. 7 (1) GDPR) and Mollie (alternative billing) disclosed</td>
+                    <td>✅ Yes (new third-party providers)</td>
+                </tr>
+                <tr>
+                    <td>3.0</td>
+                    <td>2026-08-18</td>
+                    <td>Austrian legal version (privacy_at.html) + global versioning</td>
+                    <td>✅ Yes</td>
+                </tr>
+                <tr>
                     <td>2.0</td>
                     <td>2026-08-18</td>
                     <td>Added Google OAuth Authentication, added OAuth-specific data processing</td>
@@ -443,7 +770,7 @@
             </table>
 
             <h2>13. Language</h2>
-            <p>This Privacy Policy was drafted in German. The English version is a courtesy translation. <strong>In the event of any discrepancy between the German and English versions, the German version shall prevail.</strong></p>
+            <p>This Privacy Policy was drafted in German. The English version (<a href="privacy_en.html">English version</a>) is a non-binding translation. <strong>In the event of any discrepancy between the German and the English version, only the German version shall be binding.</strong></p>
 
             <div class="contact-box">
                 <h3>Contact for questions</h3>
@@ -457,8 +784,8 @@
 
         <footer>
             <p>🐝 Beemaster – professional beekeeping</p>
-            <p>© 2026 Jens Kübler | <a href="agb_en.html">Terms</a> | <a href="eula_en.html">EULA</a> | <a href="impressum_en.html">Legal Notice</a></p>
-            <p>Privacy Policy Version 2.0 (2026-08-18). <a href="index.html">Deutsche Version</a></p>
+            <p>© 2026 Jens Kübler | <a href="agb.html">Terms</a> | <a href="eula.html">EULA</a> | <a href="impressum.html">Legal Notice</a></p>
+            <p>Privacy Policy Version 3.2 (2026-09-05). <a href="privacy_en.html">English version</a></p>
         </footer>
     </div>
 </body>

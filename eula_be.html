@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrat de licence utilisateur final (EULA) | Beemaster</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #ffc107;
+            margin-bottom: 2rem;
+        }
+        .bee-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+        .app-name span { color: #ffc107; }
+        .subtitle { color: #666; font-size: 1.2rem; }
+        .last-updated { color: #999; font-size: 0.9rem; margin-top: 0.5rem; }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            background: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #f57c00;
+            border: 2px solid #ffc107;
+            transition: all 0.2s;
+        }
+        nav a:hover, nav a.active { background: #ffc107; color: #333; }
+        main {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            color: #f57c00;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ffc107;
+        }
+        h2 { color: #333; font-size: 1.4rem; margin: 2rem 0 1rem; }
+        h3 { color: #f57c00; font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
+        p { margin-bottom: 1rem; color: #555; }
+        ul, ol { margin: 1rem 0 1rem 2rem; color: #555; }
+        li { margin-bottom: 0.5rem; }
+        .highlight {
+            background: #fff3e0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 1.5rem 0;
+        }
+        .highlight p { margin: 0; color: #e65100; }
+        .contact-box {
+            background: #fff3e0;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        .contact-box h3 { color: #f57c00; margin-top: 0; margin-bottom: 0.5rem; }
+        a { color: #f57c00; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .section { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            main { padding: 1.5rem; }
+            .app-name { font-size: 2rem; }
+            nav { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">L'application de gestion de ruches pour les apiculteurs</p>
+            <p class="last-updated">Contrat de licence utilisateur final – Version 2026-09-05, état au : 18 août 2026</p>
+        </header>
+
+        <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
+            <a href="eula.html" style="color:#f57c00;text-decoration:none;margin-left:0.5rem;">🇩🇪 Deutsch</a> |
+            <a href="eula_at.html" style="color:#f57c00;text-decoration:none;margin-left:0.5rem;">🇦🇹 Deutsch (AT)</a> |
+            <a href="eula_en.html" style="color:#f57c00;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a> |
+            <a href="eula_be.html" style="color:#f57c00;text-decoration:none;font-weight:bold;text-decoration:underline;margin-left:0.5rem;">🇧🇪 Français (BE)</a> |
+            <a href="eula_be-nl.html" style="color:#f57c00;text-decoration:none;margin-left:0.5rem;">🇧🇪 Nederlands (BE)</a> |
+            <a href="eula_nl.html" style="color:#f57c00;text-decoration:none;margin-left:0.5rem;">🇳🇱 Nederlands</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Protection des données</a>
+            <a href="agb_be.html">CGV</a>
+            <a href="eula_be.html" class="active">EULA</a>
+            <a href="impressum_be.html">Mentions légales</a>
+        </nav>
+
+        <main>
+<h1>Contrat de licence utilisateur final (EULA) pour l'application Beemaster</h1>
+
+            <div class="highlight">
+                <p><strong>Remarque importante sur la langue :</strong> Le présent contrat a été rédigé en langue française et constitue la version contraignante pour la Belgique. Les autres versions linguistiques sont des traductions non contraignantes. <strong>En cas de divergence, seule la version française fait foi.</strong></p>
+            </div>
+
+            <h2>1. § Parties et objet du contrat</h2>
+            <div class="section">
+                <ol>
+                    <li>Le présent contrat de licence utilisateur final (EULA) est un contrat entre le Prestataire
+                        (Jens Kübler, Max-Beckmann-Straße 39, 76227 Karlsruhe, Allemagne) et l'utilisateur concernant
+                        l'utilisation de l'application mobile « Beemaster » (ci-après « l'application »).</li>
+                    <li>Les relations contractuelles sont régies par le Code civil belge. Source juridique :
+                        <a href="https://www.ejustice.just.fgov.be/eli/loi/1804/03/21/1804032100/justel" target="_blank" rel="noopener">Code civil – eJustice (ejustice.just.fgov.be)</a>.</li>
+                </ol>
+            </div>
+
+            <h2>2. § Octroi de la licence</h2>
+            <div class="section">
+                <ol>
+                    <li>Le Prestataire octroie un droit d'utilisation simple, non transférable, valable jusqu'à
+                        révocation, de l'application.</li>
+                    <li>La licence sert exclusivement à une utilisation personnelle, non commerciale, ou à la
+                        documentation de la propre exploitation apicole. Sont interdites la reproduction, la
+                        transformation, la rétro-ingénierie ou la diffusion de l'application.</li>
+                    <li>Les données enregistrées par l'utilisateur (données de ruches, d'inspections et de rendements)
+                        appartiennent à l'utilisateur ; l'utilisateur peut librement les utiliser, les exporter et les
+                        transmettre.</li>
+                </ol>
+            </div>
+
+            <h2>3. § Protection des données</h2>
+            <div class="section">
+                <p>Le traitement des données personnelles est régi par la
+                <a href="index.html">politique de confidentialité du Prestataire</a>. Elle est également
+                disponible dans l'application sous « Réglages &rarr; Droit &rarr; Politique de confidentialité ». La
+                politique de confidentialité ne fait pas partie du présent EULA, mais constitue une information
+                distincte conformément à l'art. 13 RGPD. L'autorité de contrôle compétente en Belgique est l'Autorité
+                de protection des données (APD).</p>
+            </div>
+
+            <h2>4. § Garantie et responsabilité</h2>
+            <div class="section">
+                <h3>4.1 Garantie (réclamation)</h3>
+                <p>Pour les éléments payants de l'application, l'utilisateur bénéficie des droits de garantie légaux
+                prévus par le Code civil belge et le Livre VI du Code de droit économique ; le présent EULA
+                ne les limite pas. Pour le consommateur, s'appliquent en outre les dispositions de la directive
+                2011/83/UE relatives aux contrats de vente de contenu numérique. Pour les éléments gratuits, les
+                dispositions légales s'appliquent.</p>
+                <h3>4.2 Responsabilité</h3>
+                <p>La responsabilité du Prestataire pour les dommages à la vie, au corps ou à la santé, pour les
+                dommages causés intentionnellement ou par faute lourde (dol), ainsi que pour la violation d'obligations
+                contractuelles essentielles, est illimitée. Dans les autres cas, la responsabilité du Prestataire est
+                limitée au dommage typiquement prévisible. Les droits impératifs du consommateur prévus par le Livre VI
+                du Code de droit économique restent sans effet.</p>
+            </div>
+
+            <h2>5. § Support</h2>
+            <div class="section">
+                <p>Le Prestataire fournit un support pour l'utilisation de l'application à l'adresse e-mail
+                <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a>.</p>
+                <p>En cas d'incident de sécurité ou d'obligation légale (p. ex. obligation de notification au titre de
+                l'art. 33 RGPD), le Prestataire agit sans délai dans les délais légaux.</p>
+            </div>
+
+            <h2>6. § Droits d'auteur et propriété intellectuelle</h2>
+            <div class="section">
+                <p>Tous les droits relatifs à l'application appartiennent au Prestataire. L'utilisateur n'acquiert
+                aucun droit sur les marques, logos ou le code source de l'application. Les droits légaux (en particulier
+                la loi belge relative au droit d'auteur) restent sans effet.</p>
+            </div>
+
+            <h2>7. § Extinction de la licence</h2>
+            <div class="section">
+                <p>L'utilisateur peut mettre fin à la licence à tout moment en supprimant l'application et en retirant
+                les consentements accordés. Le Prestataire peut résilier le contrat en cas de violation grave du
+                contrat par l'utilisateur.</p>
+            </div>
+
+            <h2>8. § Droit applicable et juridiction</h2>
+            <div class="section">
+                <ol>
+                    <li>Le contrat est régi par le <strong>droit belge</strong>, à l'exclusion de la CVIM. Pour
+                        le consommateur, les dispositions impératives du Code civil belge et du Livre VI du Code de
+                        droit économique s'appliquent.</li>
+                    <li>Pour les consommateurs résidant habituellement dans un autre État membre de l'UE, les
+                        dispositions protectrices du lieu de résidence du consommateur restent applicables (art. 6 du
+                        règlement Rome I).</li>
+                </ol>
+            </div>
+
+            <h2>9. § Autres dispositions</h2>
+            <div class="section">
+                <ol>
+                    <li>Si des dispositions individuelles du présent contrat sont ou deviennent invalides, cela
+                        n'affecte pas la validité des autres dispositions (clause de divisibilité).</li>
+                    <li>Les conditions générales (CGV) s'appliquent également à l'utilisation de l'application.</li>
+                    <li>Il n'existe aucun accord verbal accessoire.</li>
+                </ol>
+            </div>
+
+            <h2>10. § Contact</h2>
+            <div class="contact-box">
+                <h3>Prestataire</h3>
+                <ul>
+                    <li><strong>Développeur :</strong> Jens Kübler</li>
+                    <li><strong>Adresse :</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Allemagne</li>
+                    <li><strong>E-mail :</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Beemaster | <a href="index.html">Protection des données</a> | <a href="agb_be.html">CGV</a> | <a href="impressum_be.html">Mentions légales</a></p>
+            <p>Contrat de licence utilisateur final Version 2026-09-05 pour l'application Android Beemaster. <a href="eula.html">Deutsche Version</a></p>
+        </footer>
+    </div>
+</body>
+</html>

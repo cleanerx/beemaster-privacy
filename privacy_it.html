@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informativa privacy | Beemaster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #d4a574;
+            margin-bottom: 2rem;
+        }
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8b4513;
+            margin-bottom: 0.5rem;
+        }
+        .app-name span {
+            color: #f5a623;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .bee-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        main {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #8b4513;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f5a623;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            color: #555;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #444;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            background: #fff8e7;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f5a623;
+            margin: 1.5rem 0;
+        }
+        .warning {
+            background: #fff3f3;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+            margin: 1.5rem 0;
+        }
+        .success {
+            background: #f0fff0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            margin: 1.5rem 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .data-table th, .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th {
+            background: #f5a623;
+            color: white;
+        }
+        .data-table tr:nth-child(even) {
+            background: #fafafa;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #8b4513, #a0522d);
+            color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 {
+            color: #f5a623;
+            margin-top: 0;
+        }
+        .contact-box a {
+            color: #f5a623;
+        }
+        a {
+            color: #8b4513;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .last-updated {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            main { padding: 1.5rem; }
+            .app-name { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">Informativa privacy per l'Italia</p>
+            <p class="last-updated">Version 2026-09-05, del 5 settembre 2026</p>
+        </header>
+
+        <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
+            <a href="index.html" style="color:#8b4513;text-decoration:none;">🇩🇪 Deutsch</a> |
+            <a href="privacy_at.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇦🇹 Deutsch (AT)</a> |
+            <a href="privacy_en.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a> |
+            <a href="privacy_cs.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇨🇿 Čeština</a> |
+            <a href="privacy_da.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇩🇰 Dansk</a> |
+            <a href="privacy_it.html" style="color:#8b4513;text-decoration:none;font-weight:bold;text-decoration:underline;margin-left:0.5rem;">🇮🇹 Italiano</a>
+        </div>
+
+        <nav style="display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
+            <a href="privacy_it.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;font-weight:bold;">Informativa privacy</a>
+            <a href="agb_it.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Condizioni di vendita e di utilizzo</a>
+            <a href="eula_it.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">EULA</a>
+            <a href="impressum_it.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Impressum</a>
+        </nav>
+
+        <main>
+            <h1>Informativa privacy</h1>
+
+            <p>La presente informativa descrive il trattamento dei dati personali da parte di Beemaster.
+            Trattiamo i dati in conformità al Regolamento (UE) 2016/679 (GDPR) e alle disposizioni
+            nazionali italiane, in particolare il Decreto Legislativo 30 giugno 2003, n. 196 (Codice in
+            materia di protezione dei dati personali), come adeguato al GDPR dal Decreto Legislativo 10
+            agosto 2018, n. 101.</p>
+            <p style="font-size:0.9em;opacity:0.85;">Riferimento normativo :
+            <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196" target="_blank" rel="noopener">D.Lgs. 196/2003 (Codice Privacy) – Normattiva</a> |
+            <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">Regolamento (UE) 2016/679 – EUR-Lex</a>.</p>
+
+            <h2>1. Titolare del trattamento</h2>
+            <div class="contact-box">
+                <h3>Titolare del trattamento</h3>
+                <ul>
+                    <li><strong>Nome :</strong> Jens Kübler</li>
+                    <li><strong>Indirizzo :</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Germania</li>
+                    <li><strong>E-mail :</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                </ul>
+            </div>
+
+            <h2>2. Informazioni ai sensi dell'art. 13 del GDPR</h2>
+            <p>Con la presente informativa ti comunichiamo il trattamento dei tuoi dati personali ai sensi
+            dell'<strong>art. 13 del GDPR</strong>.</p>
+
+            <h3>a) Archiviazione locale</h3>
+            <p>La maggior parte dei tuoi dati (arnie, apicoltori, osservazioni e altro) viene archiviata
+            <strong>esclusivamente in locale</strong> sul tuo dispositivo. Questi dati non lasciano il tuo
+            dispositivo e non vengono trattati da noi, a meno che tu non li esporti o li condivida
+            autonomamente.</p>
+
+            <h3>b) Account facoltativo tramite Supabase</h3>
+            <p>Se crei un account facoltativo, viene utilizzato <strong>Supabase</strong> (UE, Irlanda) come
+            backend. In questo caso i dati necessari all'account (ad es. indirizzo e-mail e dati di
+            accesso) vengono trattati su server nell'UE. Puoi eliminare il tuo account in qualsiasi
+            momento.</p>
+
+            <h3>c) Firebase Crashlytics / Analytics (opt-in)</h3>
+            <p>Solo se hai fornito attivamente il tuo consenso (opt-in) vengono utilizzati
+            <strong>Firebase Crashlytics</strong> e <strong>Firebase Analytics</strong> (Google LLC) per analizzare gli
+            errori e migliorare l'app. Questa funzionalità è <strong>disattivata per impostazione
+            predefinita</strong> e viene attivata solo dopo il tuo esplicito consenso. Puoi revocare il tuo
+            consenso in qualsiasi momento nelle impostazioni.</p>
+
+            <h3>d) Mappe MapLibre + CARTO</h3>
+            <p>Per la visualizzazione delle mappe vengono utilizzati <strong>MapLibre</strong> e i dati cartografici
+            di <strong>CARTO</strong> (basemaps.cartocdn.com). Al caricamento delle mappe, il tuo indirizzo IP
+            può essere trasmesso a questo servizio.</p>
+
+            <h3>e) Dati meteo</h3>
+            <p>Per la visualizzazione dei dati meteo e la derivazione di raccomandazioni per il trattamento (ad es.
+            idoneità per il trattamento della varroa), a seconda della località vengono utilizzati i seguenti
+            fornitori:</p>
+            <ul>
+                <li><strong>Bright Sky (Servizio meteorologico tedesco)</strong> per la Germania e la Bulgaria
+                    (CC BY 4.0). A tal fine, le <strong>coordinate geografiche</strong> della località richiesta e
+                    l'indirizzo IP vengono trasmessi a <em>api.brightsky.dev</em>. Non vengono inviati dati di
+                    account o identificatori.</li>
+                <li><strong>Servizi meteorologici nazionali</strong> per la Repubblica Ceca (CHMI/ČHMÚ), l'Ungheria
+                    (HungaroMet), la Polonia (IMGW-PIB) e la Slovacchia (SHMÚ) (rispettivamente CC BY 4.0 / CC BY-SA).
+                    Questi accedono a <strong>dati pubblici delle stazioni</strong>; a tal fine <strong>non vengono
+                    trasmesse le coordinate della posizione dell'utente</strong> ai servizi. Viene trasmesso
+                    tecnicamente solo l'indirizzo IP del dispositivo.</li>
+            </ul>
+            <p><strong>Base giuridica:</strong> art. 6, par. 1, lett. b) GDPR.</p>
+            <p><strong>Nota:</strong> Con Bright Sky, le coordinate possono permettere di risalire alla posizione
+            dei tuoi apiari. La richiesta avviene solo se per una località sono memorizzate coordinate.</p>
+
+            <h3>f) Feedback</h3>
+            <p>Se invii feedback, i dati da te indicati vengono trattati tramite <strong>Supabase</strong> (UE,
+            Irlanda).</p>
+
+            <h3>g) Funzioni disponibili solo nelle versioni di test</h3>
+            <p>L'app contiene codice per una <strong>gestione dell'account con credito</strong> e
+            un'opzionale <strong>funzione di account cloud</strong>. Queste funzioni nella versione
+            pubblicamente rilasciata sono <strong>disattivate e non richiamabili</strong>. In tal ambito
+            <strong>non avviene alcun trattamento di dati</strong>. Qualora in futuro queste funzioni
+            venissero attivate, la presente informativa verrà preventivamente adeguata e verrà nuovamente
+            richiesto il consenso.</p>
+
+            <h3>h) Registri del consenso (documentazione del consenso)</h3>
+            <p>Per documentare i consensi prestati (onere della prova a carico del titolare ai sensi
+            dell'<strong>art. 7, par. 1 del GDPR</strong>), al momento dell'accettazione di EULA,
+            condizioni e della presente informativa viene archiviata una documentazione del consenso.
+            Ciò avviene quando viene creato o utilizzato un <strong>account</strong> (il sistema
+            account è attualmente disponibile solo nelle versioni di test). La documentazione viene
+            archiviata in forma cifrata presso Supabase (UE, Irlanda) e contiene:</p>
+            <ul>
+                <li>Identificativo utente (Supabase user ID) e indirizzo e-mail</li>
+                <li>Versione della politica accettata e momento del consenso</li>
+                <li>SHA-256 (hash) del testo della politica in vigore al momento del consenso</li>
+                <li>User-Agent (versione app/dispositivo) e indirizzo IP rilevato dal server</li>
+                <li>Tipo di consenso (es. PRIVACY, EULA, TERMS) e ordinamento giuridico applicabile</li>
+            </ul>
+            <p><strong>Conservazione:</strong> senza acquisti premium la documentazione viene
+            cancellata alla cancellazione dell'account. In caso di acquisti premium si applica
+            l'obbligo legale di conservazione fiscale (10 anni); in caso di controversie la
+            cancellazione è differita fino alla conclusione del procedimento più 3 anni (legal
+            hold).</p>
+            <p><strong>Base giuridica:</strong> art. 6, par. 1, lett. f) GDPR (legittimo interesse
+            alla documentazione, rispettivamente all'adempimento degli obblighi legali di
+            conservazione).</p>
+
+            <h3>i) Mollie (fatturazione alternativa)</h3>
+            <p>Per la "fatturazione alternativa" (Google User Choice Billing) il titolare fornisce
+            un'elaborazione dei pagamenti tramite un fornitore di servizi di pagamento:</p>
+            <ul>
+                <li><strong>Finalità:</strong> elaborazione di pagamenti in-app alternativi (es. crediti AI, livelli premium) al di fuori di Google Play Billing.</li>
+                <li><strong>Società:</strong> Mollie B.V. (fornitore di servizi di pagamento).</li>
+                <li><strong>Dati:</strong> dati di ordine/pagamento (importo, valuta, descrizione, metodo di pagamento) e un riferimento per l'associazione. Il titolare non riceve dati di pagamento.</li>
+                <li><strong>Trattamento:</strong> l'accesso all'API Mollie avviene <strong>lato server</strong> (Supabase Edge Function, UE); la chiave API non è memorizzata nell'app. L'app apre soltanto la pagina di checkout fornita da Mollie.</li>
+                <li><strong>Base giuridica:</strong> art. 6, par. 1, lett. b) GDPR (esecuzione del contratto).</li>
+                <li><strong>Nota:</strong> questa modalità di fatturazione è attualmente disponibile solo nelle versioni di test; verrà attivata solo dopo l'abilitazione da parte di Google Play.</li>
+            </ul>
+
+            <h3>j) Assistente vocale AI – Microsoft Azure AI Speech</h3>
+            <p>Per l'assistente vocale AI opzionale (funzione premium), l'input vocale (riconoscimento
+            vocale, STT) e l'output vocale (text-to-speech, TTS) vengono elaborati tramite il servizio
+            <strong>Azure AI Speech</strong> di Microsoft. Vale quanto segue:</p>
+            <ul>
+                <li><strong>Finalità:</strong> conversione del tuo input vocale in testo (STT) per
+                    l'interazione con l'assistente vocale e output della risposta come voce (TTS).</li>
+                <li><strong>Società:</strong> Microsoft Corporation (Microsoft Ireland Operations Ltd.
+                    come fornitore UE).</li>
+                <li><strong>Dati:</strong> dati audio (registrazione vocale) e i dati tecnici necessari
+                    per l'elaborazione. La trasmissione avviene <strong>cifrata</strong> (TLS). La chiave
+                    di sottoscrizione Azure risiede esclusivamente lato server; l'app invia solo un token
+                    di accesso a breve scadenza, protetto da JWT.</li>
+                <li><strong>Luogo di conservazione:</strong> data center UE (regione Germania
+                    Centro-Ovest, <em>germanywestcentral</em>). Azure AI Speech elabora i dati solo nella
+                    regione della posizione della risorsa.</li>
+                <li><strong>Base giuridica:</strong> art. 6, par. 1, lett. b) GDPR (esecuzione del
+                    contratto, fornitura della funzione premium acquistata) ovvero consenso, qualora il
+                    riconoscimento vocale sul dispositivo non sia sufficiente.</li>
+                <li><strong>Trattamento dei dati:</strong> con Microsoft sussiste un contratto di
+                    trattamento dei dati (DPA) ai sensi dell'art. 28 GDPR nell'ambito dei Microsoft Online
+                    Services Terms e del Microsoft Data Protection Addendum. Microsoft non utilizza i dati
+                    per migliorare i propri modelli di IA.</li>
+                <li><strong>Note sulla privacy:</strong>
+                    <a href="https://www.microsoft.com/privacy" target="_blank" rel="noopener">microsoft.com/privacy</a>
+                    e
+                    <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank" rel="noopener">Data Protection Addendum</a>.</li>
+            </ul>
+
+            <h3>k) Brevo (invio di e-mail per le funzioni dell'account)</h3>
+            <p>Per l'invio di e-mail nell'ambito delle funzioni dell'account (ad es. conferma
+            dell'indirizzo e-mail, reimpostazione della password) il titolare utilizza il fornitore di
+            servizi e-mail <strong>Brevo</strong>:</p>
+            <ul>
+                <li><strong>Finalità:</strong> invio di e-mail transazionali per l'account.</li>
+                <li><strong>Società:</strong> Brevo (già Sendinblue), Parigi, Francia (UE).</li>
+                <li><strong>Dati:</strong> indirizzo e-mail del destinatario e i contenuti necessari per
+                    il rispettivo tipo di e-mail. Non viene effettuato alcun tracciamento a fini
+                    pubblicitari.</li>
+                <li><strong>Luogo di conservazione:</strong> data center UE (Francia).</li>
+                <li><strong>Base giuridica:</strong> art. 6, par. 1, lett. b) GDPR (esecuzione del
+                    contratto, fornitura della funzione dell'account).</li>
+                <li><strong>Trattamento dei dati:</strong> con Brevo sussiste un contratto di trattamento
+                    dei dati (DPA) ai sensi dell'art. 28 GDPR; Brevo tratta i dati esclusivamente su
+                    istruzione.</li>
+                <li><strong>Note sulla privacy:</strong>
+                    <a href="https://www.brevo.com/legal/termsofuse" target="_blank" rel="noopener">brevo.com/legal/termsofuse</a>
+                    (nella sezione „Data Processing Agreement“).</li>
+            </ul>
+
+            <div class="warning">
+                <p><strong>Nota :</strong> la nostra app non utilizza cookie per l'analisi, nessuna rete
+                pubblicitaria e nessun tracciamento. Non è prevista alcuna profilazione ai sensi
+                dell'art. 22 del GDPR.</p>
+            </div>
+
+            <h2>3. Minori</h2>
+            <p>In Italia l'età al di sotto della quale il consenso per i servizi della società
+            dell'informazione deve essere prestato o autorizzato dai genitori è fissata a
+            <strong>14 anni</strong> ai sensi dell'art. 8 del GDPR e del D.Lgs. 101/2018. Per i minori di 14 anni
+            è richiesto il consenso dei genitori.</p>
+
+            <h2>4. I tuoi diritti</h2>
+            <p>Ai sensi del GDPR hai i seguenti diritti :
+                <ul>
+                    <li>Diritto di accesso (art. 15)</li>
+                    <li>Diritto di rettifica (art. 16)</li>
+                    <li>Diritto alla cancellazione (art. 17)</li>
+                    <li>Diritto alla limitazione del trattamento (art. 18)</li>
+                    <li>Diritto alla portabilità dei dati (art. 20)</li>
+                    <li>Diritto di opposizione (art. 21)</li>
+                </ul>
+            </p>
+            <p>Puoi esercitare i tuoi diritti contattandoci tramite l'indirizzo e-mail sopra indicato.</p>
+
+            <h2>5. Autorità di controllo</h2>
+            <div class="contact-box">
+                <h3>Garante per la protezione dei dati personali</h3>
+                <ul>
+                    <li><strong>Indirizzo :</strong> Piazza Venezia 11, 00187 Roma, Italia</li>
+                    <li><strong>Sito web :</strong> <a href="https://www.garanteprivacy.it/" target="_blank" rel="noopener">www.garanteprivacy.it</a></li>
+                </ul>
+            </div>
+            <p>Ai sensi dell'art. 77 del GDPR hai il diritto di proporre reclamo a un'autorità di controllo.
+            Per gli utenti in Italia si tratta del <strong>Garante per la protezione dei dati personali</strong>.</p>
+
+            <div class="highlight">
+                <p><strong>Nota :</strong> poiché la maggior parte dei dati viene archiviata in locale,
+                trattiamo i dati personali solo in misura molto limitata. Puoi utilizzare l'app
+                completamente offline.</p>
+            </div>
+
+            <h2>6. Lingua</h2>
+            <p>La presente informativa è redatta in italiano. Le altre versioni linguistiche sono
+            traduzioni non vincolanti. <strong>In caso di divergenza fa fede esclusivamente la versione
+            italiana.</strong></p>
+        </main>
+
+        <footer>
+            <p>🐝 Beemaster – apicoltura professionale</p>
+            <p>© 2026 Jens Kübler | <a href="agb_it.html">Condizioni di vendita e di utilizzo</a> | <a href="eula_it.html">EULA</a> | <a href="impressum_it.html">Impressum</a></p>
+            <p>Informativa privacy Version 2026-09-05, del 5 settembre 2026. <a href="index.html">Deutsch</a> | <a href="privacy_en.html">English</a> | <a href="privacy_cs.html">Čeština</a> | <a href="privacy_da.html">Dansk</a></p>
+        </footer>
+    </div>
+</body>
+</html>

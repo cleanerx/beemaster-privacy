@@ -163,7 +163,7 @@
             <div class="bee-icon">🐝</div>
             <h1 class="app-name">Bee<span>master</span></h1>
             <p class="subtitle">Datenschutzerklärung für Österreich</p>
-            <p class="last-updated">Stand: 18. August 2026 | Version 2026-08-18 (Österreich)</p>
+            <p class="last-updated">Stand: 5. September 2026 | Version 2026-09-05 (Österreich)</p>
         </header>
 
         <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
@@ -182,6 +182,10 @@
 
             <h2>1. Verantwortlicher und Datenschutzbeauftragter</h2>
             <p>Verantwortlicher im Sinne der DSGVO und des DSG (Datenschutzgesetz 2000, BGBl. I Nr. 165/1999 in der geltenden Fassung) ist:</p>
+            <p style="font-size:0.9em;opacity:0.85;">Rechtsquellen:
+            <a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&amp;Gesetzesnummer=10001222" target="_blank" rel="noopener">DSG (ris.bka.gv.at)</a>
+            und
+            <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">DSGVO (EUR-Lex)</a>.</p>
             <div class="contact-box">
                 <h3>Kontakt</h3>
                 <ul>
@@ -204,14 +208,13 @@
             <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) – die lokale Speicherung ist notwendig, um die App-Funktionalität bereitzustellen.</p>
 
             <h3>3.2 Gerätedaten und technische Informationen</h3>
-            <p>Beim ersten Start werden folgende technische Daten lokal gespeichert:</p>
-            <ul>
-                <li>Gerätemodell und Hersteller</li>
-                <li>Android-Version</li>
-                <li>App-Version</li>
-                <li>Spracheinstellung</li>
-            </ul>
-            <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</p>
+            <p>Die App speichert beim ersten Start keine personenbezogenen Gerätedaten auf deinem Gerät.
+            Technische Informationen (Gerätemodell und Hersteller, Android-Version, App-Version) werden
+            <strong>nur</strong> dann erhoben und übermittelt, wenn du der Nutzungsstatistik ausdrücklich
+            zustimmst (siehe Abschnitt 3.3 und 4.4).</p>
+            <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) für die
+            Bereitstellung der App; die Übermittlung von Gerätedaten erfolgt nur auf Grundlage einer
+            Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
 
             <h3>3.3 optionale Nutzungsstatistik (mit Einwilligung)</h3>
             <div class="highlight">
@@ -222,6 +225,9 @@
                     <li>App-Abstürze (Fehlerberichte)</li>
                 </ul>
                 <p><strong>Keine</strong> Bienenstockdaten, <strong>keine</strong> Standortdaten, <strong>keine</strong> Fotos.</p>
+                <p>Empfänger der Daten ist <strong>Firebase Crashlytics und Firebase Analytics (Google Ireland Limited)</strong>
+                (siehe Abschnitt 4.4). Es wird eine zufällig erzeugte Installations-ID übermittelt; die IP-Adresse wird
+                von Google bei der Übertragung technisch verarbeitet.</p>
             </div>
             <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Die Einwilligung ist freiwillig und kann jederzeit in den Einstellungen widerrufen werden.</p>
 
@@ -242,16 +248,131 @@
             <p><strong>Ausnahmen:</strong></p>
             <ul>
                 <li><strong>Google Play Services:</strong> Für die App-Verteilung und ggf. Backups (Google Drive)</li>
-                <li><strong>Hosting-Provider:</strong> Für die Wetter-API (open-meteo.com, keine personenbezogenen Daten)</li>
+                <li><strong>Firebase (Google Ireland Limited):</strong> Nur nach Einwilligung für Fehlerberichte (Crashlytics) und Nutzungsstatistik (Analytics) – siehe Abschnitt 4.4</li>
+                <li><strong>Hosting-Provider (Wetterdaten):</strong> Für die Wetter-API (Bright Sky / Deutscher Wetterdienst, CC BY 4.0) – siehe Abschnitt 4.3</li>
                 <li><strong>Rechtliche Verpflichtung:</strong> Bei gesetzlicher Verpflichtung (z.B. Strafverfolgung)</li>
             </ul>
             <p><strong>Keine</strong> Weitergabe zu Werbezwecken, <strong>kein</strong> Verkauf von Daten.</p>
+
+            <h3>4.1 Einwilligungsnachweise (Art. 7 Abs. 1 DSGVO)</h3>
+            <p>Zum Nachweis erteilter Einwilligungen (Beweispflicht des Verantwortlichen
+            nach Art. 7 Abs. 1 DSGVO) wird beim Akzeptieren von EULA, AGB und dieser
+            Datenschutzerklärung ein Einwilligungs-Nachweis gespeichert. Dies erfolgt,
+            sobald ein <strong>Konto</strong> erstellt bzw. genutzt wird (das Kontosystem
+            ist derzeit nur in Test-Builds verfügbar). Der Nachweis wird verschlüsselt bei
+            Supabase (EU, Irland) gespeichert und enthält:</p>
+            <ul>
+                <li>Benutzerkennung (Supabase-User-ID) und E-Mail-Adresse</li>
+                <li>Version der akzeptierten Richtlinie sowie den Zeitpunkt der Zustimmung</li>
+                <li>SHA-256-Prüfsumme (Hash) des zum Zustimmungszeitpunkt gültigen Richtlinientexts</li>
+                <li>User-Agent (App-Version/Gerät) und – vom Server festgestellte – IP-Adresse</li>
+                <li>Art der Einwilligung (z. B. PRIVACY, EULA, TERMS) und Rechtsgebiet</li>
+            </ul>
+            <p><strong>Aufbewahrung:</strong> Ohne Premium-Käufe wird der Nachweis bei
+            Kontolöschung gelöscht. Bei Premium-Käufen gilt die gesetzliche steuerrechtliche
+            Aufbewahrungspflicht (7 Jahre, Art. 5 Abs. 1 lit. e DSGVO i. V. m. § 132 BAO); bei Rechtsstreitigkeiten
+            wird die Löschung bis zum Verfahrensende zzgl. 3 Jahren aufgeschoben (Legal Hold).</p>
+            <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+            Interesse an der Nachweisführung bzw. der Erfüllung gesetzlicher Aufbewahrungspflichten).</p>
+
+            <h3>4.2 Mollie (Alternative Abrechnung)</h3>
+            <p>Für die „Alternative Abrechnung" (Google User Choice Billing) stellt der
+            Anbieter eine Zahlungsabwicklung über einen Zahlungsdienstleister bereit:</p>
+            <ul>
+                <li><strong>Zweck:</strong> Abwicklung alternativer In-App-Zahlungen (z. B. KI-Credits, Premium-Tiers) außerhalb des Google Play-Billings.</li>
+                <li><strong>Unternehmen:</strong> Mollie B.V. (Zahlungsdienstleister).</li>
+                <li><strong>Daten:</strong> Bestell-/Zahlungsdaten (Betrag, Währung, Beschreibung, Zahlungsmethode) sowie eine Referenz zur Zuordnung. Der Anbieter erhält keine Zahlungsdaten.</li>
+                <li><strong>Verarbeitung:</strong> Der Mollie-API-Zugriff erfolgt <strong>serverseitig</strong> (Supabase Edge Function, EU); der API-Key wird nicht in der App gespeichert. Die App öffnet lediglich die von Mollie bereitgestellte Checkout-Seite.</li>
+                <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</li>
+                <li><strong>Hinweis:</strong> Diese Abrechnungsart ist derzeit nur in Test-Builds verfügbar; sie wird erst nach erfolgter Freischaltung durch Google Play aktiviert.</li>
+            </ul>
+
+            <h3>4.3 Wetterdaten</h3>
+            <p>Zur Anzeige von Wetterdaten und Ableitung von Behandlungsempfehlungen (z. B. Eignung für
+            die Varroa-Behandlung) werden je nach Standort folgende Anbieter genutzt:</p>
+            <ul>
+                <li><strong>Bright Sky (Deutscher Wetterdienst)</strong> für Deutschland und Bulgarien
+                    (CC BY 4.0). Dabei werden <strong>geografische Koordinaten</strong> des abgefragten
+                    Standorts und die IP-Adresse an <em>api.brightsky.dev</em> übermittelt. Es werden keine
+                    Kontodaten oder Kennungen mitgesendet.</li>
+                <li><strong>Nationale Wetterdienste</strong> für Tschechien (CHMI/ČHMÚ), Ungarn (HungaroMet),
+                    Polen (IMGW-PIB) und die Slowakei (SHMÚ) (jeweils CC BY 4.0 / CC BY-SA). Diese werden auf
+                    <strong>öffentliche Stationsdaten</strong> zugegriffen; dabei werden <strong>keine
+                    Nutzer-Standortkoordinaten</strong> an die Dienste übermittelt. Es wird lediglich die
+                    IP-Adresse des Geräts technisch mitgesendet.</li>
+            </ul>
+            <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
+            <p><strong>Hinweis:</strong> Bei Bright Sky können die Koordinaten Rückschlüsse auf den Standort
+            deiner Bienenstände zulassen. Die Abfrage erfolgt nur, wenn für einen Standort Koordinaten
+            hinterlegt sind.</p>
+
+            <h3>4.4 Firebase Crashlytics und Firebase Analytics (Google Ireland Limited)</h3>
+            <p>Sofern du der Übermittlung von Nutzungsstatistiken in den App-Einstellungen zugestimmt hast
+            (Abschnitt 3.3), werden folgende Daten an Google Ireland Limited übermittelt:</p>
+            <ul>
+                <li><strong>Zweck:</strong> Absturzberichte und aggregierte Nutzungsstatistiken zur Fehlerbehebung und Verbesserung der App.</li>
+                <li><strong>Daten:</strong> Gerätemodell, Betriebssystemversion, App-Version, Absturz-Stacktrace, zufällig erzeugte Installations-ID, Zeitstempel, grobe Region.</li>
+                <li><strong>Rechtsgrundlage:</strong> Einwilligung, Art. 6 Abs. 1 lit. a DSGVO.</li>
+                <li><strong>Standardmäßig deaktiviert.</strong> Die Erhebung findet erst statt, wenn du sie in den App-Einstellungen aktivierst. Du kannst den Schalter jederzeit wieder ausschalten; die Erhebung endet dann sofort. Die Nutzung der App ist ohne diese Einwilligung vollständig möglich.</li>
+                <li><strong>Datenschutzhinweise:</strong>
+                    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h3>4.5 KI-Sprachassistent – Microsoft Azure AI Speech</h3>
+            <p>Für den optionalen KI-Sprachassistenten (Premium-Funktion) werden Spracheingabe
+            (Spracherkennung, STT) und Sprachausgabe (Text-to-Speech, TTS) über den Dienst
+            <strong>Azure AI Speech</strong> von Microsoft verarbeitet. Dabei gilt:</p>
+            <ul>
+                <li><strong>Zweck:</strong> Umwandlung deiner Spracheingabe in Text (STT) für die
+                    Interaktion mit dem Sprachassistenten sowie die Ausgabe der Antwort als Sprache (TTS).</li>
+                <li><strong>Unternehmen:</strong> Microsoft Corporation (Microsoft Ireland Operations Ltd.
+                    als EU-Anbieter).</li>
+                <li><strong>Daten:</strong> Audiodaten (Sprachaufnahme) sowie die für die Verarbeitung
+                    erforderlichen technischen Daten. Die Übertragung erfolgt <strong>verschlüsselt</strong>
+                    (TLS). Der Azure-Subscription-Key liegt ausschließlich serverseitig; die App sendet nur
+                    ein kurzlebiges, JWT-gesichertes Zugriffstoken.</li>
+                <li><strong>Speicherort:</strong> EU-Rechenzentrum (Region Deutschland West-Mitte,
+                    <em>germanywestcentral</em>). Azure AI Speech verarbeitet Daten nur in der Region des
+                    Ressourcen-Standorts.</li>
+                <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung,
+                    Bereitstellung der erworbenen Premium-Funktion) bzw. Einwilligung, soweit die
+                    Spracherkennung auf dem Gerät nicht ausreicht.</li>
+                <li><strong>Auftragsverarbeitung:</strong> Mit Microsoft besteht ein
+                    Auftragsverarbeitungsvertrag (AVV/DPA) gemäß Art. 28 DSGVO im Rahmen der
+                    Microsoft Online Services Terms und des Microsoft Data Protection Addendum.
+                    Microsoft verarbeitet Daten nicht zur Verbesserung eigener KI-Modelle.</li>
+                <li><strong>Datenschutzhinweise:</strong>
+                    <a href="https://www.microsoft.com/privacy" target="_blank" rel="noopener">microsoft.com/privacy</a>
+                    und
+                    <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank" rel="noopener">Data Protection Addendum</a>.</li>
+            </ul>
+
+            <h3>4.6 Brevo (E-Mail-Versand für Konto-Funktionen)</h3>
+            <p>Für den Versand von E-Mails im Rahmen der Konto-Funktionen (z. B. Bestätigung der
+            E-Mail-Adresse, Passwort-Zurücksetzung) setzt der Anbieter den E-Mail-Dienstleister
+            <strong>Brevo</strong> ein:</p>
+            <ul>
+                <li><strong>Zweck:</strong> Versand transaktionaler Konto-E-Mails.</li>
+                <li><strong>Unternehmen:</strong> Brevo (ehemals Sendinblue), Paris, Frankreich (EU).</li>
+                <li><strong>Daten:</strong> E-Mail-Adresse des Empfängers sowie die für den jeweiligen
+                    E-Mail-Typ erforderlichen Inhalte. Es findet kein Tracking zu Werbezwecken statt.</li>
+                <li><strong>Speicherort:</strong> EU-Rechenzentren (Frankreich).</li>
+                <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung,
+                    Bereitstellung der Konto-Funktion).</li>
+                <li><strong>Auftragsverarbeitung:</strong> Mit Brevo besteht ein
+                    Auftragsverarbeitungsvertrag (AVV/DPA) gemäß Art. 28 DSGVO; Brevo verarbeitet die
+                    Daten ausschließlich weisungsgebunden.</li>
+                <li><strong>Datenschutzhinweise:</strong>
+                    <a href="https://www.brevo.com/legal/termsofuse" target="_blank" rel="noopener">brevo.com/legal/termsofuse</a>
+                    (dort im Abschnitt „Data Processing Agreement“).</li>
+            </ul>
 
             <h2>5. Speicherung und Löschung</h2>
             <ul>
                 <li><strong>Bienenstockdaten:</strong> Bis zur Löschung durch den Nutzer oder Deinstallation der App</li>
                 <li><strong>Nutzungsstatistik:</strong> 90 Tage, dann automatisierte Löschung</li>
-                <li><strong>Kommunikationsdaten:</strong> 3 Jahre nach letztem Kontakt (gesetzliche Aufbewahrungspflicht)</li>
+                <li><strong>Kommunikationsdaten:</strong> Maximal 3 Jahre nach letztem Kontakt zur Abwehr von Ansprüchen
+                (berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO; Verjährungsfrist nach § 1479 ABGB).</li>
             </ul>
 
             <h2>6. Deine Rechte als betroffene Person</h2>
@@ -282,7 +403,7 @@
 
             <h2>7. Kinder- und Jugendschutz</h2>
             <p>Diese App richtet sich an Imkerinnen und Imker und ist nicht für Kinder bestimmt. Es werden keine Daten gezielt bei Kindern erhoben und keine auf Kinder ausgerichteten Inhalte angeboten.</p>
-            <p>Soweit eine Verarbeitung auf einer Einwilligung beruht, gilt für die eigenständige Einwilligungsfähigkeit gemäß Art. 8 DSGVO die Altersgrenze des jeweiligen Mitgliedstaats – in <strong>Österreich 14 Jahre</strong> (§ 4 Abs. 2 DSG). Unterhalb dieser Grenze ist die Zustimmung des Trägers der elterlichen Verantwortung erforderlich.</p>
+            <p>Soweit eine Verarbeitung auf einer Einwilligung beruht, gilt für die eigenständige Einwilligungsfähigkeit gemäß Art. 8 DSGVO die Altersgrenze des jeweiligen Mitgliedstaats – in <strong>Österreich 14 Jahre</strong> (§ 4 Abs. 4 DSG). Unterhalb dieser Grenze ist die Zustimmung des Trägers der elterlichen Verantwortung erforderlich.</p>
 
             <h2>8. Datensicherheit</h2>
             <ul>
@@ -311,7 +432,7 @@
         <footer>
             <p>🐝 Beemaster - professionelle Bienenverwaltung</p>
             <p>© 2026 Jens Kübler | <a href="agb_at.html">AGB</a> | <a href="eula_at.html">EULA</a> | <a href="impressum_at.html">Impressum</a></p>
-            <p>Datenschutzerklärung Version 2026-08-18 (Österreich). <a href="index.html">Deutsch (DE)</a> | <a href="privacy_en.html">English</a> | <a href="privacy_cs.html">Čeština</a></p>
+            <p>Datenschutzerklärung Version 2026-09-05 (Österreich). <a href="index.html">Deutsch (DE)</a> | <a href="privacy_en.html">English</a> | <a href="privacy_cs.html">Čeština</a></p>
         </footer>
     </div>
 </body>

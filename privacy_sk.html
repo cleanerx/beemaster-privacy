@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ochrana údajov | Beemaster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #d4a574;
+            margin-bottom: 2rem;
+        }
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8b4513;
+            margin-bottom: 0.5rem;
+        }
+        .app-name span {
+            color: #f5a623;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .bee-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        main {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #8b4513;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f5a623;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            color: #555;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            color: #444;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            background: #fff8e7;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #f5a623;
+            margin: 1.5rem 0;
+        }
+        .warning {
+            background: #fff3f3;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+            margin: 1.5rem 0;
+        }
+        .success {
+            background: #f0fff0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            margin: 1.5rem 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .data-table th, .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th {
+            background: #f5a623;
+            color: white;
+        }
+        .data-table tr:nth-child(even) {
+            background: #fafafa;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #8b4513, #a0522d);
+            color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-box h3 {
+            color: #f5a623;
+            margin-top: 0;
+        }
+        .contact-box a {
+            color: #f5a623;
+        }
+        a {
+            color: #8b4513;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        .last-updated {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            main {
+                padding: 1.5rem;
+            }
+            .app-name {
+                font-size: 2rem;
+            }
+            .data-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bee-icon">🐝</div>
+            <h1 class="app-name">Bee<span>master</span></h1>
+            <p class="subtitle">Aplikácia na správu včelstiev pre včelárov</p>
+            <p class="last-updated">Verzia 3.2 (2026-09-05) – Posledná aktualizácia: 5. septembra 2026</p>
+        </header>
+
+        <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
+            <a href="index.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇩🇪 Deutsch</a> |
+            <a href="privacy_at.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇦🇹 Deutsch (AT)</a> |
+            <a href="privacy_en.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a> |
+            <a href="privacy_cs.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇨🇿 Čeština</a> |
+            <a href="privacy_hu.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇭🇺 Magyar</a> |
+            <a href="privacy_pl.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇵🇱 Polski</a> |
+            <a href="privacy_sk.html" style="color:#8b4513;text-decoration:none;font-weight:bold;text-decoration:underline;margin-left:0.5rem;">🇸🇰 Slovenčina</a>
+        </div>
+
+        <nav style="display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
+            <a href="privacy_sk.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Ochrana údajov</a>
+            <a href="agb_sk.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">VOP</a>
+            <a href="eula_sk.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">EULA</a>
+            <a href="impressum_sk.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Imprint</a>
+        </nav>
+
+        <main>
+            <h1>Ochrana osobných údajov</h1>
+
+            <div class="highlight">
+                <p><strong>Krátke zhrnutie:</strong> Beemaster uchováva všetky údaje lokálne vo vašom zariadení.
+                Osobné údaje sú šifrované. Nezbierame žiadne reklamné ani marketingové údaje. Vaše včelárske údaje
+                zostávajú u vás.</p>
+            </div>
+
+            <h2>1. Prevádzkovateľ (čl. 4 ods. 7 GDPR)</h2>
+            <p>Prevádzkovateľom podľa nariadenia (EÚ) 2016/679 (Všeobecné nariadenie o ochrane údajov, „GDPR") a
+            zákona č. 18/2018 Z. z. o ochrane osobných údajov je:</p>
+            <p style="font-size:0.9em;opacity:0.85;">Právne zdroje:
+            <a href="https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2018/18" target="_blank" rel="noopener">zákon č. 18/2018 Z. z. – Slov-Lex</a>
+            a
+            <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">GDPR (EUR-Lex)</a>.</p>
+            <ul>
+                <li><strong>Meno:</strong> Jens Kübler</li>
+                <li><strong>Adresa:</strong> Max-Beckmann-Straße 39, 76227 Karlsruhe, Nemecko</li>
+                <li><strong>E-mail:</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+            </ul>
+            <p>Zodpovedná osoba nie je na základe zákonnej povinnosti vymenovaná.</p>
+
+            <h2>1a. Právne základy spracúvania</h2>
+            <p>Ak spracúvame osobné údaje, spracúvanie sa opiera o tieto právne základy:</p>
+            <ul>
+                <li><strong>čl. 6 ods. 1 písm. a) GDPR</strong> – súhlas. Výlučne pre: štatistiky chýb a používania
+                    (bod 6.1) a zasielanie spätnej väzby (bod 6.5). Oboje je predvolene vypnuté, resp. úplne
+                    dobrovoľné a kedykoľvek odvolateľné.</li>
+                <li><strong>čl. 6 ods. 1 písm. b) GDPR</strong> – plnenie zmluvy: poskytovanie funkcií aplikácie,
+                    zobrazenie mapy, načítanie počasia, aktivácia zakúpených funkcií.</li>
+                <li><strong>čl. 6 ods. 1 písm. c) GDPR</strong> – zákonná povinnosť (napr. obchodné/daňové
+                    uchovávanie).</li>
+                <li><strong>čl. 6 ods. 1 písm. f) GDPR</strong> – oprávnený záujem: prevencia zneužitia a zabezpečenie
+                    technickej prevádzky.</li>
+            </ul>
+            <div class="success">
+                <p><strong>Žiadne porušenie zásady viazanosti na účel:</strong> Prijatie EULA, VOP a tohto
+                vyhlásenia pri prvom spustení je <em>oboznámenie sa</em> so zmluvnými podmienkami a
+                <strong>nie</strong> súhlasom s ochranou údajov. Spracúvanie vyžadujúce súhlas si vyžadujeme
+                osobitne, dobrovoľne a odvolateľne (čl. 7 ods. 4 GDPR).</p>
+            </div>
+
+            <h2>2. Aké údaje zbierame?</h2>
+
+            <h3>📱 Nevyhnutné údaje aplikácie</h3>
+            <p>Údaje potrebné pre základné funkcie aplikácie:</p>
+            <table class="data-table">
+                <tr><th>Typ údaja</th><th>Účel</th><th>Uloženie</th></tr>
+                <tr><td>Včelárske údaje</td><td>Riadenie vašich včelstiev</td><td>Lokálne v zariadení</td></tr>
+                <tr><td>Poznámky z prehliadok</td><td>Dokumentácia</td><td>Lokálne v zariadení</td></tr>
+                <tr><td>Polohy GPS</td><td>Zobrazenie úľov na mape</td><td>Lokálne v zariadení</td></tr>
+                <tr><td>Pripomienky</td><td>Upozornenia</td><td>Lokálne v zariadení</td></tr>
+            </table>
+
+            <h3>👤 Voliteľné osobné údaje</h3>
+            <p>V profile včelára môžete voliteľne uviesť:</p>
+            <ul>
+                <li>Meno / názov včelárstva</li>
+                <li>E-mailovú adresu</li>
+                <li>Telefónne číslo</li>
+                <li>Adresu / miesto</li>
+            </ul>
+            <div class="success">
+                <p><strong>✓ Šifrovanie:</strong> Osobné údaje uchovávame šifrované pomocou Android Keystore.</p>
+            </div>
+
+            <h3>🔐 Údaje účtu (prémiové funkcie)</h3>
+            <p>Na používanie prémiových funkcií (AI-asistent, záloha do cloudu, hlásenie incidentov podľa GDPR) si
+            môžete vytvoriť účet:</p>
+            <table class="data-table">
+                <tr><th>Typ údaja</th><th>Účel</th><th>Uloženie</th></tr>
+                <tr><td>E-mailová adresa</td><td>Vytvorenie účtu, prihlásenie</td><td>Šifrovane v Supabase (EÚ)</td></tr>
+                <tr><td>Hash hesla</td><td>Autentifikácia</td><td>Šifrovane v Supabase (EÚ)</td></tr>
+                <tr><td>Stav účtu</td><td>Aktivácia prémií</td><td>Šifrovane v Supabase (EÚ)</td></tr>
+                <tr><td>10 bezplatných kreditov</td><td>Bezplatný test</td><td>Šifrovane v Supabase (EÚ)</td></tr>
+            </table>
+            <div class="success">
+                <p><strong>✓ Súlad s GDPR:</strong> Údaje účtu uchovávame šifrovane v dátovom centre EÚ (Írsko).</p>
+            </div>
+            <p><strong>Dobrovoľné:</strong> Vytvorenie účtu nie je povinné. Základné funkcie aplikácie sú použiteľné aj
+            bez účtu.</p>
+
+            <h3>📝 Systém spätnej väzby (voliteľný)</h3>
+            <ul>
+                <li><strong>Údaje:</strong> Text spätnej väzby, kategória (chyba, funkcia, UI/UX, výkon, iné),
+                    hodnotenie (1–5 hviezdičiek)</li>
+                <li><strong>Uloženie:</strong> Lokálne + šifrovane na serveri</li>
+                <li><strong>Dobrovoľné:</strong> Vy rozhodujete, či spätnú väzbu pošlete</li>
+                <li><strong>Anonymné:</strong> Žiadne prepojenie na vašu osobu, pokiaľ neuviednete e-mail</li>
+            </ul>
+
+            <h3>📸 Médiá</h3>
+            <ul>
+                <li><strong>Fotografie:</strong> Fotografie úľov (voliteľné, uložené lokálne)</li>
+                <li><strong>Zvukové poznámky:</strong> Zvukové nahrávky (voliteľné, uložené lokálne)</li>
+            </ul>
+
+            <h3>📊 Štatistiky chýb a používania (len po súhlase)</h3>
+            <div class="success">
+                <p><strong>Predvolene vypnuté.</strong> Bez vášho výslovného súhlasu <strong>nezbierame ani
+                neodosielame žiadne</strong> hlásenia o pádoch a <strong>žiadne</strong> štatistiky používania.
+                Aktivovať môžete v nastaveniach aplikácie v položke „Štatistiky chýb a používania“, kde ich môžete
+                kedykoľvek vypnúť.</p>
+            </div>
+            <p>V prípade súhlasu sa spracúvajú tieto údaje:</p>
+            <table class="data-table">
+                <tr><th>Typ údaja</th><th>Účel</th><th>Príjemca</th></tr>
+                <tr><td>Hlásenia o pádoch (stacktrace, verzia aplikácie/OS, typ zariadenia)</td><td>Vyhľadávanie a oprava chýb</td><td>Firebase Crashlytics</td></tr>
+                <tr><td>Agregované udalosti používania (napr. otvorené obrazovky)</td><td>Ďalší vývoj aplikácie</td><td>Firebase Analytics</td></tr>
+                <tr><td>Náhodný identifikátor inštalácie</td><td>Priradenie hlásení k rovnakému zariadeniu</td><td>Firebase</td></tr>
+            </table>
+            <p><strong>Právny základ:</strong> čl. 6 ods. 1 písm. a) GDPR (súhlas). Odvolanie je kedykoľvek možné
+            do budúcnosti a nadobúda účinnosť okamžite. Používanie aplikácie je aj bez tohto súhlasu neobmedzene
+            možné – <strong>bez prepojenia</strong> na prijatie právnych textov.</p>
+
+            <h3>🗄️ Supabase (back-end infraštruktúra)</h3>
+            <ul>
+                <li><strong>Účel:</strong> Databáza, autentifikácia, cloudové funkcie pre účet a prémiové funkcie</li>
+                <li><strong>Spoločnosť:</strong> Supabase Inc., USA</li>
+                <li><strong>Ochrana údajov:</strong>
+                    <a href="https://supabase.com/legal/dpa" target="_blank" rel="noopener">supabase.com/legal/dpa</a>
+                </li>
+                <li><strong>Umiestnenie:</strong> Dátové centrum EÚ (Írsko) – voliteľné</li>
+                <li><strong>Právny základ:</strong> čl. 6 ods. 1 písm. b) GDPR (plnenie zmluvy)</li>
+                <li><strong>Spracúvanie údajov:</strong> So spoločnosťou Supabase je uzatvorená zmluva o spracúvaní
+                    údajov (DPA) podľa čl. 28 GDPR. Supabase sa zaväzuje dodržiavať GDPR, technické bezpečnostné
+                    opatrenia (TLS, AES-256) a hlásenie incidentov do 72 hodín.</li>
+            </ul>
+
+            <h2>3. Údaje, ktoré nezbierame</h2>
+            <div class="success">
+                <p>Beemaster <strong>nezbiera</strong>:</p>
+                <ul>
+                    <li>❌ Identifikátory reklám</li>
+                    <li>❌ Marketingové údaje</li>
+                    <li>❌ Kontakty bez súhlasu</li>
+                    <li>❌ SMS alebo hovory</li>
+                    <li>❌ História prehliadania</li>
+                    <li>❌ Zdravotné údaje</li>
+                    <li>❌ Finančné údaje</li>
+                    <li>❌ Profily zo sociálnych sietí</li>
+                </ul>
+            </div>
+
+            <h2>4. Povolenia</h2>
+            <table class="data-table">
+                <tr><th>Povolenie</th><th>Použitie</th></tr>
+                <tr><td>Poloha (GPS)</td><td>Zobrazenie úľov na mape</td></tr>
+                <tr><td>Fotoaparát</td><td>Fotografie úľov</td></tr>
+                <tr><td>Mikrofón</td><td>Zvukové poznámky</td></tr>
+                <tr><td>Upozornenia</td><td>Pripomienky včelárskych úloh</td></tr>
+                <tr><td>Ukladací priestor</td><td>Vyrovnávacia pamäť mapových dlaždíc (MapLibre) a súbory exportu/importu</td></tr>
+            </table>
+
+            <h2>5. Uloženie údajov</h2>
+            <h3>Lokálne vo vašom zariadení</h3>
+            <ul>
+                <li><strong>Room databáza:</strong> Všetky včelárske údaje</li>
+                <li><strong>DataStore:</strong> Nastavenia aplikácie</li>
+                <li><strong>Android Keystore:</strong> Šifrované citlivé údaje</li>
+            </ul>
+
+            <h2>6. Príjemcovia a tretie strany</h2>
+
+            <h3>6.1 Firebase Crashlytics a Firebase Analytics (Google Ireland Limited)</h3>
+            <ul>
+                <li><strong>Účel:</strong> Hlásenia o pádoch a agregované štatistiky používania pre ladičstvo a
+                    ďalší vývoj aplikácie.</li>
+                <li><strong>Údaje:</strong> Typ zariadenia, verzia operačného systému, verzia aplikácie, stacktrace
+                    pádu, náhodný identifikátor inštalácie, časová pečiatka, približný región.</li>
+                <li><strong>Právny základ:</strong> <strong>Súhlas</strong> podľa čl. 6 ods. 1 písm. a) GDPR.</li>
+                <li><strong>Predvolene vypnuté.</strong> Zbieranie sa spustí len vtedy, ak ho zapnete v nastaveniach
+                    aplikácie pod položkou „Štatistiky chýb a používania“. Prepínač môžete kedykoľvek vypnúť; zbieranie
+                    sa okamžite ukončí.</li>
+                <li><strong>Vyhlásenie o ochrane údajov:</strong>
+                    <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+            </ul>
+
+            <h3>6.2 Google Play Billing a Google Play Core (Google Commerce Limited / Google Ireland Limited)</h3>
+            <ul>
+                <li><strong>Účel:</strong> Uskutočnenie nákupov a predplatných, kontrola stavu nákupu, poskytovanie
+                    aktualizácií aplikácie.</li>
+                <li><strong>Údaje:</strong> Identifikátor účtu Google, token nákupu, identifikátor produktu, údaje
+                    o aplikácii a zariadení. Poskytovateľ <strong>nedostáva</strong> platobné údaje.</li>
+                <li><strong>Právny základ:</strong> čl. 6 ods. 1 písm. b) GDPR (plnenie zmluvy).</li>
+                <li><strong>Poznámka:</strong> Predajcom prémiových funkcií je Google Commerce Limited, nie
+                    poskytovateľ. Pozri <a href="agb_sk.html">bod 9 VOP</a>.</li>
+            </ul>
+
+            <h3>6.3 Mapy: MapLibre a základné dlaždice CARTO</h3>
+            <ul>
+                <li><strong>Účel:</strong> Mapové zobrazenie polohy úľov.</li>
+                <li><strong>Údaje:</strong> Pri načítaní mapových dlaždíc sa vaša <strong>IP adresa</strong> spolu
+                    s požadovaným mapovým výrezom prenáša k mapovej službe <em>CARTO</em>
+                    (basemaps.cartocdn.com). Mapové údaje pochádzajú od prispievateľov OpenStreetMap.</li>
+                <li><strong>Právny základ:</strong> čl. 6 ods. 1 písm. b) GDPR (poskytnutie mapovej funkcie).</li>
+                <li><strong>Vyhnutie sa:</strong> Prenos nastáva len pri otvorení mapového zobrazenia. Použitá knižnica
+                    MapLibre Native sama neodosiela údaje o používaní ani telemetrické údaje.</li>
+            </ul>
+
+            <h3>6.4 Údaje o počasí</h3>
+            <p>Na zobrazenie údajov o počasí a odvodenie odporúčaní pre ošetrenie (napr. vhodnosť pre liečbu
+            varroázy) sa podľa polohy používajú títo poskytovatelia:</p>
+            <ul>
+                <li><strong>Bright Sky (Nemecká meteorologická služba)</strong> pre Nemecko a Bulharsko
+                    (CC BY 4.0). Pri tom sa na <em>api.brightsky.dev</em> prenášajú <strong>geografické
+                    súradnice</strong> požadovaného miesta a IP adresa. Neprenášajú sa žiadne údaje účtu ani
+                    identifikátory.</li>
+                <li><strong>Národné meteorologické služby</strong> pre Česko (CHMI/ČHMÚ), Maďarsko (HungaroMet),
+                    Poľsko (IMGW-PIB) a Slovensko (SHMÚ) (v každom prípade CC BY 4.0 / CC BY-SA). Tieto služby
+                    pristupujú k <strong>verejným údajom zo staníc</strong>; <strong>žiadne súradnice polohy
+                    používateľa</strong> sa službám neprenášajú. Technicky sa prenáša iba IP adresa zariadenia.</li>
+            </ul>
+            <p><strong>Právny základ:</strong> čl. 6 ods. 1 písm. b) GDPR.</p>
+            <p><strong>Poznámka:</strong> Pri Bright Sky môžu súradnice umožniť vyvodenie polohy vašich včelstiev.
+            Dopyt sa vykonáva len vtedy, ak sú k miestu zadané súradnice.</p>
+
+            <h3>6.5 Funkcia spätnej väzby (Supabase, región EÚ, Írsko)</h3>
+            <ul>
+                <li><strong>Účel:</strong> Odoslanie dobrovoľnej spätnej väzby používateľa.</li>
+                <li><strong>Údaje:</strong> Kategória, hodnotenie, voľný textový komentár, verzia aplikácie a
+                    <strong>pseudonymný identifikátor zariadenia</strong>. Vzniká hashovaním identifikátora zariadenia
+                    SHA-256 a slúži výlučne na obmedzenie spätnej väzby na jedno zariadenie a obdobie.</li>
+                <li><strong>Právny základ:</strong> čl. 6 ods. 1 písm. a) GDPR (dobrovoľné zaslanie).</li>
+                <li><strong>Spracúvanie údajov:</strong> Supabase Inc., hosting v EÚ (Írsko), zmluva podľa čl. 28 GDPR,
+                    štandardné zmluvné doložky.</li>
+            </ul>
+
+            <h3>6.6 Funkcie dostupné iba v testovacích zostaveniach</h3>
+            <div class="warning">
+                <p>Aplikácia obsahuje kód pre <strong>účet na spravovanie kreditu</strong> a voliteľnú
+                <strong>cloudovú funkciu účtu</strong>. Tieto funkcie sú vo verejne vydanej verzii
+                <strong>vypnuté a nie sú vyvolateľné</strong>. Preto <strong>nedochádza k žiadnemu
+                spracúvaniu údajov</strong>.</p>
+                <p>Ak tieto funkcie v budúcnosti aktivujeme, toto vyhlásenie o ochrane údajov predtým
+                upravíme a opäť si vyžiadame súhlas.</p>
+            </div>
+
+            <h3>6.7 Záznamy o súhlase (čl. 7 ods. 1 GDPR)</h3>
+            <p>Na preukázanie udelených súhlasov (dôkazné bremeno prevádzkovateľa
+            podľa čl. 7 ods. 1 GDPR) sa pri prijatí EULA, VOP a tohto vyhlásenia
+            o ochrane údajov ukladá záznam o súhlase. Dochádza k tomu v okamihu
+            vytvorenia či používania <strong>účtu</strong> (systém účtov je
+            v súčasnosti k dispozícii iba v testovacích zostaveniach). Záznam sa
+            ukladá šifrovane u služby Supabase (EÚ, Írsko) a obsahuje:</p>
+            <ul>
+                <li>identifikátor používateľa (Supabase-User-ID) a e-mailovú adresu</li>
+                <li>verziu prijatých pravidiel a okamih súhlasu</li>
+                <li>kontrolný súčet SHA-256 (hash) textu pravidiel platného v okamihu súhlasu</li>
+                <li>User-Agent (verzia aplikácie/zariadenia) a IP adresu zistenú serverom</li>
+                <li>druh súhlasu (napr. PRIVACY, EULA, TERMS) a právnu oblasť</li>
+            </ul>
+            <p><strong>Uchovávanie:</strong> Bez prémiových nákupov sa záznam pri
+            zrušení účtu vymaže. Pri prémiových nákupoch sa uplatní zákonná daňová
+            povinnosť uchovávania (10 rokov); v prípade súdnych sporov sa výmaz odloží
+            do konca konania a ešte o 3 roky (legal hold).</p>
+            <p><strong>Právny základ:</strong> čl. 6 ods. 1 písm. f) GDPR (oprávnený
+            záujem na preukazovaní súhlasu resp. plnení zákonných povinností uchovávania).</p>
+
+            <h3>6.8 Mollie (alternatívna fakturácia)</h3>
+            <p>Pre „alternatívnu fakturáciu" (Google User Choice Billing) poskytuje
+            prevádzkovateľ spracovanie platieb prostredníctvom platobnej inštitúcie:</p>
+            <ul>
+                <li><strong>Účel:</strong> spracovanie alternatívnych platieb v aplikácii (napr. AI kredity, prémiové úrovne) mimo Google Play Billing.</li>
+                <li><strong>Spoločnosť:</strong> Mollie B.V. (platobná inštitúcia).</li>
+                <li><strong>Údaje:</strong> údaje o objednávke/platbe (suma, mena, popis, platobná metóda) a referencia na priradenie. Prevádzkovateľ nezískava platobné údaje.</li>
+                <li><strong>Spracovanie:</strong> prístup k Mollie API prebieha <strong>serverovo</strong> (Supabase Edge Function, EÚ); API kľúč nie je uložený v aplikácii. Aplikácia len otvára checkout stránku poskytnutú spoločnosťou Mollie.</li>
+                <li><strong>Právny základ:</strong> čl. 6 ods. 1 písm. b) GDPR (plnenie zmluvy).</li>
+                <li><strong>Poznámka:</strong> tento spôsob fakturácie je v súčasnosti k dispozícii iba v testovacích zostaveniach; bude aktivovaný až po schválení službou Google Play.</li>
+            </ul>
+
+            <h3>6.9 AI hlasový asistent – Microsoft Azure AI Speech</h3>
+            <p>Pre voliteľného AI hlasového asistenta (prémiová funkcia) sa hlasový vstup (rozpoznávanie
+            reči, STT) a hlasový výstup (text-to-speech, TTS) spracúvajú prostredníctvom služby
+            <strong>Azure AI Speech</strong> od spoločnosti Microsoft. Platí:</p>
+            <ul>
+                <li><strong>Účel:</strong> prevod vášho hlasového vstupu na text (STT) na interakciu
+                    s hlasovým asistentom a výstup odpovede ako reči (TTS).</li>
+                <li><strong>Spoločnosť:</strong> Microsoft Corporation (Microsoft Ireland Operations Ltd.
+                    ako poskytovateľ EÚ).</li>
+                <li><strong>Údaje:</strong> zvukové údaje (hlasová nahrávka) a technické údaje potrebné
+                    na spracúvanie. Prenos prebieha <strong>šifrovane</strong> (TLS). Kľúč predplatného
+                    Azure je umiestnený výlučne na strane servera; aplikácia odosiela len krátkodobý,
+                    JWT-om chránený prístupový token.</li>
+                <li><strong>Umiestnenie:</strong> dátové centrum EÚ (región Nemecko Západ-Stred,
+                    <em>germanywestcentral</em>). Azure AI Speech spracúva údaje len v regióne umiestnenia
+                    prostriedku.</li>
+                <li><strong>Právny základ:</strong> čl. 6 ods. 1 písm. b) GDPR (plnenie zmluvy,
+                    poskytnutie zakúpenej prémitovej funkcie) resp. súhlas, pokiaľ rozpoznávanie reči na
+                    zariadení nie je dostatočné.</li>
+                <li><strong>Spracúvanie údajov:</strong> So spoločnosťou Microsoft je uzatvorená zmluva
+                    o spracúvaní údajov (DPA) podľa čl. 28 GDPR v rámci Microsoft Online Services Terms
+                    a Microsoft Data Protection Addendum. Microsoft nevyužíva údaje na zlepšenie vlastných
+                    modelov AI.</li>
+                <li><strong>Vyhlásenia o ochrane údajov:</strong>
+                    <a href="https://www.microsoft.com/privacy" target="_blank" rel="noopener">microsoft.com/privacy</a>
+                    a
+                    <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank" rel="noopener">Data Protection Addendum</a>.</li>
+            </ul>
+
+            <h3>6.10 Brevo (odosielanie e-mailov pre funkcie účtu)</h3>
+            <p>Na odosielanie e-mailov v rámci funkcií účtu (napr. potvrdenie e-mailovej adresy, obnovenie
+            hesla) poskytovateľ využíva e-mailovú službu <strong>Brevo</strong>:</p>
+            <ul>
+                <li><strong>Účel:</strong> odosielanie transakčných e-mailov účtu.</li>
+                <li><strong>Spoločnosť:</strong> Brevo (predtým Sendinblue), Paríž, Francúzsko (EÚ).</li>
+                <li><strong>Údaje:</strong> e-mailová adresa príjemcu a obsah potrebný pre daný typ
+                    e-mailu. Neprebieha žiadne sledovanie na reklamné účely.</li>
+                <li><strong>Umiestnenie:</strong> dátové centrá EÚ (Francúzsko).</li>
+                <li><strong>Právny základ:</strong> čl. 6 ods. 1 písm. b) GDPR (plnenie zmluvy, poskytnutie
+                    funkcie účtu).</li>
+                <li><strong>Spracúvanie údajov:</strong> So spoločnosťou Brevo je uzatvorená zmluva
+                    o spracúvaní údajov (DPA) podľa čl. 28 GDPR; Brevo spracúva údaje výlučne podľa
+                    pokynov.</li>
+                <li><strong>Vyhlásenia o ochrane údajov:</strong>
+                    <a href="https://www.brevo.com/legal/termsofuse" target="_blank" rel="noopener">brevo.com/legal/termsofuse</a>
+                    (v časti „Data Processing Agreement“).</li>
+            </ul>
+
+            <h2>7. Vaše práva (GDPR)</h2>
+            <p>Toto vyhlásenie o ochrane údajov zároveň plní informačnú povinnosť podľa <strong>čl. 13 GDPR</strong>
+            (informácie poskytované pri zhromažďovaní osobných údajov).</p>
+            <p>Máte právo:</p>
+            <ul>
+                <li><strong>Prístup (čl. 15 GDPR):</strong> Vedieť, aké údaje o vás uchovávame</li>
+                <li><strong>Oprava (čl. 16 GDPR):</strong> Oprava nesprávnych údajov</li>
+                <li><strong>Vymazanie (čl. 17 GDPR):</strong> Úplné vymazanie všetkých údajov</li>
+                <li><strong>Obmedzenie spracúvania (čl. 18 GDPR)</strong></li>
+                <li><strong>Prenosnosť údajov (čl. 20 GDPR):</strong> Export v štruktúrovanom, strojovo čitateľnom
+                    formáte</li>
+                <li><strong>Námietka (čl. 21 GDPR):</strong> Proti spracúvaniu založenému na oprávnenom záujme</li>
+                <li><strong>Odvolanie udelených súhlasov (čl. 7 ods. 3 GDPR):</strong> Do budúcnosti</li>
+            </ul>
+
+            <h3>Právo podať sťažnosť dozornému orgánu (čl. 77 GDPR)</h3>
+            <p>Bez toho, aby boli dotknuté iné právne prostriedky, máte právo podať sťažnosť dozornému orgánu pre
+            ochranu údajov, najmä v mieste vášho bydliska. Príslušným dozorným orgánom pre prevádzkovateľa je:</p>
+            <p><strong>Úrad na ochranu osobných údajov Slovenskej republiky (ÚOOÚ SR)</strong><br>
+                Hraničná 12, 820 07 Bratislava, Slovenská republika<br>
+                E-mail: <a href="mailto:statny.dozor@pdp.gov.sk">statny.dozor@pdp.gov.sk</a><br>
+                Web: <a href="https://dataprotection.gov.sk/" target="_blank" rel="noopener">dataprotection.gov.sk</a>
+            </p>
+
+            <h2>8. Ochrana detí a mladistvých</h2>
+            <p>Táto aplikácia je určená pre včelárov a nie je zameraná na deti. Cielené údaje od detí nezbierame a
+            neponúkame obsah určený deťom.</p>
+            <p>Ak spracúvanie spočíva na súhlase (pozri body 6.1 a 6.5), na samostatnú spôsobilosť dať súhlas sa podľa
+            čl. 8 GDPR uplatňuje veková hranica stanovená členským štátom – <strong>na Slovensku 16 rokov</strong>.
+            Pod týmto vekom je potrebný súhlas osoby, ktorá vykonáva rodičovské práva a povinnosti.</p>
+
+            <h2>9. Bezpečnosť údajov</h2>
+            <ul>
+                <li>✅ Šifrovaný prenos údajov (HTTPS/TLS)</li>
+                <li>✅ Šifrované ukladanie (Android Keystore)</li>
+                <li>✅ Žiadne cloudové ukladanie (lokálne údaje)</li>
+                <li>✅ Pravidelné bezpečnostné aktualizácie</li>
+            </ul>
+
+            <h2>10. Autentifikácia Google OAuth</h2>
+            <p>Táto aplikácia používa Google OAuth 2.0 na autentifikáciu používateľov. Pri prihlásení cez Google sa spracúvajú tieto údaje:</p>
+
+            <table class="data-table">
+                <tr>
+                    <th>Typ údaja</th>
+                    <th>Účel</th>
+                    <th>Právny základ</th>
+                </tr>
+                <tr>
+                    <td>E-mail účtu Google</td>
+                    <td>Vytvorenie účtu a autentifikácia</td>
+                    <td>čl. 6 ods. 1 písm. a) GDPR (súhlas)</td>
+                </tr>
+                <tr>
+                    <td>Názov profilu Google</td>
+                    <td>Zobrazenie používateľa v aplikácii</td>
+                    <td>čl. 6 ods. 1 písm. a) GDPR (súhlas)</td>
+                </tr>
+                <tr>
+                    <td>Fotografia profilu Google (voliteľné)</td>
+                    <td>Zobrazenie používateľa v aplikácii</td>
+                    <td>čl. 6 ods. 1 písm. a) GDPR (súhlas)</td>
+                </tr>
+                <tr>
+                    <td>ID používateľa Google</td>
+                    <td>Jednoznačná identifikácia používateľa</td>
+                    <td>čl. 6 ods. 1 písm. a) GDPR (súhlas)</td>
+                </tr>
+            </table>
+
+            <h3>📊 Požadované rozsahy Google OAuth</h3>
+            <p>Aplikácia vyžaduje od Google nasledovné povolenia:</p>
+            <ul>
+                <li><code>https://www.googleapis.com/auth/userinfo.email</code> – prístup k e-mailovej adrese vášho účtu Google</li>
+                <li><code>https://www.googleapis.com/auth/userinfo.profile</code> – prístup k vášmu profilu Google (názov, fotografia)</li>
+                <li><code>openid</code> – OpenID Connect na bezpečnú autentifikáciu</li>
+            </ul>
+
+            <div class="success">
+                <p><strong>✓ Minimálne povolenia:</strong> Vyžadujeme len absolútne nevyhnutné povolenia Google. Žiadny prístup do Gmailu, Disku Google ani iných služieb Google.</p>
+            </div>
+
+            <h3>🔄 Prenos údajov do Supabase</h3>
+            <p>Na uchovávanie autentifikačných údajov sa ako sprostredkovateľ používa Supabase (Supabase Inc., 548 Market St, San Francisco, CA 94104, USA):</p>
+            <ul>
+                <li><strong>Účel:</strong> správa tokenov JWT a autentifikácia používateľov</li>
+                <li><strong>Právny základ:</strong> čl. 6 ods. 1 písm. b) GDPR (plnenie zmluvy)</li>
+                <li><strong>Záruky:</strong> štandardné zmluvné doložky EÚ (čl. 46 GDPR)</li>
+                <li><strong>Vyhlásenie o ochrane údajov:</strong> <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+            </ul>
+
+            <h3>💾 Uchovávanie a výmaz</h3>
+            <ul>
+                <li><strong>Doba uchovávania:</strong> do odstránenia účtu alebo odinštalovania aplikácie</li>
+                <li><strong>Výmaz:</strong> automaticky pri odhlásení alebo ručnom odstránení účtu v aplikácii</li>
+                <li><strong>Odvolanie:</strong> Súhlas môžete kedykoľvek odvolať:
+                    <ul>
+                        <li>Odhlásenie v aplikácii (Nastavenia → Účet → Odhlásiť sa)</li>
+                        <li>Zrušenie povolenia Google na stránke <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>🇺🇸 Prenos do tretej krajiny</h3>
+            <p>Google je americká spoločnosť. Prenos údajov do USA sa uskutočňuje na základe rozhodnutia Európskej
+            komisie o primeranosti (rámec ochrany údajov EÚ–USA, júl 2023).</p>
+            <ul>
+                <li><strong>Vyhlásenie o ochrane údajov spoločnosti Google:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+                <li><strong>Podmienky spoločnosti Google:</strong> <a href="https://policies.google.com/terms" target="_blank" rel="noopener">policies.google.com/terms</a></li>
+            </ul>
+
+            <h2>11. Zmeny</h2>
+            <p>Toto vyhlásenie o ochrane údajov sa môže aktualizovať. O podstatných zmenách vás informujeme
+            v aplikácii.</p>
+
+            <h2>12. Changelog</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Verzia</th>
+                    <th>Dátum</th>
+                    <th>Zmena</th>
+                    <th>Je potrebný nový súhlas?</th>
+                </tr>
+                <tr>
+                    <td>3.2</td>
+                    <td>2026-09-05</td>
+                    <td>Doplnení sprostredkovatelia Microsoft Azure AI Speech (AI hlasový asistent, STT/TTS) a Brevo (e-maily účtu)</td>
+                    <td>✅ Áno (noví poskytovatelia tretích strán)</td>
+                </tr>
+                <tr>
+                    <td>3.1</td>
+                    <td>2026-08-24</td>
+                    <td>Zverejnené záznamy o súhlase (čl. 7 ods. 1 GDPR) a Mollie (alternatívna fakturácia)</td>
+                    <td>✅ Áno (noví poskytovatelia tretích strán)</td>
+                </tr>
+                <tr>
+                    <td>3.0</td>
+                    <td>2026-08-18</td>
+                    <td>Rakúske právne znenie (privacy_at.html) + globálna verzia</td>
+                    <td>✅ Áno</td>
+                </tr>
+                <tr>
+                    <td>2.0</td>
+                    <td>2026-08-18</td>
+                    <td>Pridaná autentifikácia Google OAuth, doplnené spracúvanie údajov špecifické pre OAuth</td>
+                    <td>✅ Áno (nové spracúvanie údajov)</td>
+                </tr>
+                <tr>
+                    <td>1.0</td>
+                    <td>2026-05-05</td>
+                    <td>Prvá verzia</td>
+                    <td>-</td>
+                </tr>
+            </table>
+
+            <h2>13. Jazyk</h2>
+            <p>Toto vyhlásenie o ochrane údajov je vyhotovené v slovenskom jazyku. Anglická verzia
+            (<a href="privacy_en.html">English version</a>) je nezáväzným prekladom.
+            <strong>V prípade rozdielov je rozhodujúca výlučne slovenská verzia.</strong></p>
+
+            <div class="contact-box">
+                <h3>Kontakt v prípade otázok</h3>
+                <p>Otázky týkajúce sa ochrany údajov alebo výkonu vašich práv:</p>
+                <ul>
+                    <li>📧 E-mail: <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
+                    <li>📮 Adresa: Jens Kübler, Max-Beckmann-Straße 39, 76227 Karlsruhe, Nemecko</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>🐝 Beemaster – profesionálna správa včelstiev</p>
+            <p>© 2026 Jens Kübler | <a href="agb_sk.html">VOP</a> | <a href="eula_sk.html">EULA</a> | <a href="impressum_sk.html">Imprint</a></p>
+            <p>Ochrana údajov Verzia 3.2 (2026-09-05). <a href="privacy_en.html">English version</a></p>
+        </footer>
+    </div>
+</body>
+</html>
