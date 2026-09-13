@@ -85,7 +85,7 @@
         <div class="app-name">Bee<span>master</span></div>
     </header>
     <div class="container">
-        <div class="card" id="authCard">
+        <div class="card" id="openCard">
             <h1 id="title">Fast geschafft</h1>
             <p id="message">Öffne die Beemaster-App, um deinen Vorgang abzuschließen.</p>
             <p>
@@ -103,10 +103,18 @@
         (function () {
             var path = window.location.pathname;
             var isAuthPath = path === '/auth/callback' || path === '/payment-return';
+            var hiveMatch = /^\/hives\/\d+$/.test(path);
 
-            if (!isAuthPath) {
-                document.getElementById('authCard').style.display = 'none';
-                document.getElementById('notFoundCard').style.display = 'block';
+            var openCard = document.getElementById('openCard');
+            var notFoundCard = document.getElementById('notFoundCard');
+
+            if (isAuthPath) {
+                setupOpenApp('Fast geschafft', 'Öffne die Beemaster-App, um deinen Vorgang abzuschließen.');
+            } else if (hiveMatch) {
+                setupOpenApp('Beute öffnen', 'Öffne die Beemaster-App, um diese Beute anzuzeigen.');
+            } else {
+                openCard.style.display = 'none';
+                notFoundCard.style.display = 'block';
                 return;
             }
 
@@ -117,13 +125,18 @@
             if (window.sessionStorage.getItem('beemaster_app_link_attempted')) {
                 openApp.style.display = 'none';
                 document.getElementById('hint').textContent =
-                    'Die App hat nicht geöffnet. Bitte installiere die Beemaster-App aus dem Google Play Store und tippe den Link in der E-Mail erneut an.';
+                    'Die App hat nicht geöffnet. Bitte installiere die Beemaster-App aus dem Google Play Store und tippe den Link erneut an.';
                 var play = document.createElement('a');
                 play.className = 'btn';
                 play.href = 'https://play.google.com/store/apps/details?id=com.beemaster';
                 play.textContent = 'Im Google Play Store anzeigen';
                 openApp.parentNode.insertBefore(play, openApp.nextSibling);
                 return;
+            }
+
+            function setupOpenApp(title, message) {
+                document.getElementById('title').textContent = title;
+                document.getElementById('message').textContent = message;
             }
 
             openApp.addEventListener('click', function () {
