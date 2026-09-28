@@ -19,6 +19,14 @@ Dieser Skill bietet:
 - Referenzen auf Gesetzestexte und Behörden
 - Automatisierte Prüfung vor jedem Release
 
+> **Kanonischer Requirement-Katalog & Nachweise:** `~/dev/git/beemaster-compliance`
+> — Master-Skill **`compliance-agent`** (CRA/DSGVO/NIST-Requirements,
+> `evidence[]` mit CycloneDX-Ankern, Coupling, Dokumentbindung, Evidence-Drift +
+> bidirektionale Traceability, LLM-Verifikation). Dieses Repo (`beemaster-privacy`)
+> **publiziert** die gerenderten Rechtstexte aus `beemaster-android`
+> (`app/src/main/assets/legal/**`); die app-lokalen Dokumentregeln (`RULE-xxx`) und
+> die Render-Pipeline stehen im Android-Skill `legal-compliance-agent`.
+
 ---
 
 ## 🏛️ Maschinenlesbare Compliance-Regeln (JSON)
@@ -660,6 +668,6 @@ python3 scripts/validate-compliance-rules.py --validate-rules
 
 ---
 
-**Stand:** 2026-08-18  
-**Version:** 1.0  
+**Stand:** 2026-09-28  
+**Version:** 1.1 — Verweis auf kanonischen Katalog/`compliance-agent`  
 **Nächste Prüfung:** Bei Rechtsänderungen oder neuen Dokumenten
