@@ -1,0 +1,31 @@
+# Beemaster
+
+> Beemaster ist die Bienenverwaltung für Hobby- und Berufsimker.
+
+Völker, Inspektionen, Kalender, Finanzen und Standbuch-Export – alles in einer App. Offline-first, die Kerndaten bleiben auf dem Gerät.
+
+## Key facts
+
+- Product: Beemaster – beekeeping management app (Android).
+- Platform: Android (com.beemaster)
+- Install: https://play.google.com/store/apps/details?id=com.beemaster
+- Data model: offline-first; core data stays on device.
+- Languages: German, English, Czech, Slovak, Hungarian, French, Polish, Bulgarian, Turkish.
+
+## Website
+
+- Home: https://beemaster-app.de/de/index.html
+- Features: https://beemaster-app.de/de/index.html#features
+- Screenshots: https://beemaster-app.de/de/index.html#screenshots
+- FAQ: https://beemaster-app.de/de/index.html#faq
+
+## Legal
+
+- Imprint: https://beemaster-app.de/impressum.html
+- Privacy: https://beemaster-app.de/privacy.html
+- Terms: https://beemaster-app.de/agb.html
+- EULA: https://beemaster-app.de/eula.html
+
+## Optional
+
+- Sitemap: https://beemaster-app.de/sitemap.xml
