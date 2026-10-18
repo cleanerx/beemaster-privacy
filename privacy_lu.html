@@ -230,7 +230,7 @@
 <p><strong>Aucune violation de l'interdiction du couplage :</strong> L'acceptation de l'EULA, des CGV et de la présente politique de confidentialité lors du premier lancement constitue un <em>acquiescement aux conditions contractuelles</em> et n'est <strong>pas</strong> un consentement au sens de la protection des données. Le traitement nécessitant un consentement est demandé séparément, volontairement et de manière révocable (art. 7, par. 4, RGPD).</p>
 </div>
 
-<p class="legal-small">Source juridique : Le règlement général sur la protection des données est disponible sur <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a> (règlement (UE) 2016/679). La loi du 1er août 2018 portant organisation de la Commission nationale pour la protection des données et mise en œuvre du RGPD est disponible sur <a href="https://legilux.public.lu/eli/etat/leg/loi/2018/08/01/a686/jo" target="_blank" rel="noopener">Legilux</a>.</p>
+<p>Source juridique : Le règlement général sur la protection des données est disponible sur <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a> (règlement (UE) 2016/679). La loi du 1er août 2018 portant organisation de la Commission nationale pour la protection des données et mise en œuvre du RGPD est disponible sur <a href="https://legilux.public.lu/eli/etat/leg/loi/2018/08/01/a686/jo" target="_blank" rel="noopener">Legilux</a>.</p>
 
 <h2>2. Quelles données sont collectées ?</h2>
 
@@ -307,7 +307,7 @@
 <td>Chiffrée chez Supabase (UE)</td>
 </tr>
 <tr>
-<td>10 crédits gratuits</td>
+<td>40 crédits gratuits</td>
 <td>Utilisation d'essai gratuite</td>
 <td>Chiffrée chez Supabase (UE)</td>
 </tr>
@@ -508,6 +508,7 @@
 <ul>
 <li><strong>Données du compte :</strong> adresse e-mail et hachage du mot de passe pour la connexion ainsi que l'identifiant utilisateur Supabase. Le traitement est effectué via Supabase Inc. (UE, Irlande), base juridique art. 6, par. 1, lit. b, RGPD (exécution du contrat).</li>
 <li><strong>Solde et consommation de crédits :</strong> le solde de crédits actuel ainsi que la consommation par requête IA sont enregistrés côté serveur (preuve de la fourniture du service, art. 6, par. 1, lit. b, RGPD).</li>
+<li><strong>Statistiques d'utilisation agrégées :</strong> pour garantir le fonctionnement et pour la planification des capacités, des indicateurs agrégés non rattachables à des personnes (p. ex. nombre d'interactions IA et longueur moyenne des conversations) sont collectés sur la base de notre intérêt légitime (art. 6, par. 1, lit. f, RGPD).</li>
 <li><strong>Justificatifs de consentement :</strong> les consentements donnés lors de l'utilisation du compte sont enregistrés conformément au § 6.8.</li>
 </ul>
 
@@ -591,6 +592,22 @@
 <li><strong>Révocation :</strong> vous pouvez révoquer à tout moment l'accès de votre compte Google à l'application dans votre compte Google, sous « accès des tiers ».</li>
 </ul>
 
+<h3>6.13 Sauvegarde cloud (fonction premium facultative, Scaleway Object Storage)</h3>
+
+<p>Pour les utilisateurs Premium, il existe la possibilité facultative de créer une <strong>sauvegarde cloud chiffrée</strong> de vos données de ruche (sauvegarde en cas de perte ou de changement d'appareil). Les règles suivantes s'appliquent :</p>
+
+<ul>
+<li><strong>Finalité :</strong> sauvegarde chiffrée de vos données de ruche locales (ruches, colonies, inspections, photos, finances) dans le cloud afin que vous puissiez les restaurer après une perte ou un changement d'appareil.</li>
+<li><strong>Chiffrement (E2E) :</strong> la sauvegarde est chiffrée <strong>côté client</strong> avec une phrase de passe de votre choix (PBKDF2 → AES-256-GCM) <strong>avant</strong> d'être téléchargée. Les prestataires ne peuvent pas lire le contenu. La phrase de passe n'est pas stockée sur des serveurs ; <strong>si vous la perdez, une restauration est impossible</strong> (aucun moyen de récupération).</li>
+<li><strong>Société (stockage) :</strong> Scaleway S.A.S. (France) – Scaleway Object Storage (compatible S3), centres de données de l'UE. Les conteneurs chiffrés y sont stockés.</li>
+<li><strong>Contrôle (Supabase) :</strong> la gestion (quel appareil est autorisé à télécharger, métadonnées des sauvegardes) est effectuée via Supabase Inc. (UE, Irlande) en tant que sous-traitant. Supabase ne reçoit que des métadonnées (horodatage, taille, somme de contrôle) – <strong>pas</strong> le contenu.</li>
+<li><strong>Modèle d'appareil maître :</strong> un seul appareil (« Master ») peut télécharger des sauvegardes ; les autres appareils ne peuvent que les restaurer. Vous pouvez changer d'appareil maître à tout moment.</li>
+<li><strong>Sauvegardes automatiques :</strong> après activation, l'application crée automatiquement une sauvegarde environ toutes les deux semaines (uniquement avec une connexion réseau), pour autant que la phrase de passe soit enregistrée sur l'appareil.</li>
+<li><strong>Conservation :</strong> les sauvegardes sont conservées <strong>au maximum 9 mois</strong>, puis supprimées automatiquement.</li>
+<li><strong>Consentement :</strong> le stockage n'a lieu qu'après votre consentement exprès (art. 6, par. 1, lit. a, RGPD). Vous pouvez retirer le consentement à tout moment – toutes les sauvegardes cloud sont alors supprimées (art. 17 RGPD).</li>
+<li><strong>Suppression du compte :</strong> lors de la suppression de votre compte, toutes les sauvegardes cloud sont également supprimées.</li>
+</ul>
+
 <h2>7. Vos droits (RGPD)</h2>
 
 <p>La présente politique de confidentialité satisfait également aux obligations d'information prévues à l'<strong>article 13 RGPD</strong> (informations à fournir lorsque des données personnelles sont collectées).</p>
@@ -652,6 +669,7 @@
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.5</td><td>2026-10-10</td><td>Textes juridiques hongrois : références aux sources officielles ajoutées (Szjt., Sztv., Eht., Grt.)</td><td>✅ Oui (modification matérielle)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>Numéro de TVA DE463991390 dans les mentions légales, atténuation des exclusions de responsabilité dans les CGV, réduction de la conservation du consentement à 3 ans</td><td>✅ Oui (modification matérielle)</td></tr>
 <tr><td>3.3</td><td>2026-09-06</td><td>Clause des CGV sur la prévision de miellée (estimation statistique, sans garantie)</td><td>✅ Oui (modification matérielle)</td></tr>
 <tr><td>3.2</td><td>2026-09-05</td><td>Ajout de Microsoft Azure AI Speech (assistant vocal IA, STT/TTS) et de Brevo (e-mails de compte) comme sous-traitants</td><td>✅ Oui (modification matérielle)</td></tr>

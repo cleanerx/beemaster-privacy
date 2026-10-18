@@ -227,7 +227,7 @@
 <p><strong>No breach of the prohibition of bundling:</strong> Accepting the EULA, Terms and this Privacy Policy on first launch constitutes <em>acknowledgement of the contractual terms</em> and is <strong>not</strong> a data protection consent. Processing that requires consent is requested separately, voluntarily and revocably (Art. 7 (4) GDPR).</p>
 </div>
 
-<p class="legal-small">Legal source: The General Data Protection Regulation is available at <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a> (Regulation (EU) 2016/679).</p>
+<p>Legal source: The General Data Protection Regulation is available at <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a> (Regulation (EU) 2016/679).</p>
 
 <h2>2. What Data Is Collected?</h2>
 
@@ -505,6 +505,7 @@
 <ul>
 <li><strong>Account data:</strong> Email address and password hash for login as well as the Supabase user ID. Processing is performed via Supabase Inc. (EU, Ireland), legal basis Art. 6 (1) lit. b GDPR (performance of a contract).</li>
 <li><strong>Credit balance and usage:</strong> The current credit balance and the usage per AI request are stored server-side (evidence of service provision, Art. 6 (1) lit. b GDPR).</li>
+<li><strong>Aggregated usage statistics:</strong> To ensure operation and for capacity planning, aggregated metrics that cannot be related to individuals (e.g. number of AI interactions and average conversation length) are collected on the basis of our legitimate interest (Art. 6 (1) lit. f GDPR).</li>
 <li><strong>Consent records:</strong> The consents granted when using the account are stored pursuant to section 6.8.</li>
 </ul>
 
@@ -588,6 +589,22 @@
 <li><strong>Revocation:</strong> You can revoke your Google account's access to the app at any time in your Google account under "third-party access".</li>
 </ul>
 
+<h3>6.13 Cloud backup (optional premium feature, Scaleway Object Storage)</h3>
+
+<p>For premium users there is the optional possibility to create an <strong>encrypted cloud backup</strong> of your hive data (backup in the event of device loss or device change). The following applies:</p>
+
+<ul>
+<li><strong>Purpose:</strong> Encrypted backup of your local hive data (hives, colonies, inspections, photos, finances) in the cloud so that you can restore it after a device loss or device change.</li>
+<li><strong>Encryption (E2E):</strong> The backup is encrypted <strong>client-side</strong> with a passphrase of your choice (PBKDF2 → AES-256-GCM) <strong>before</strong> it is uploaded. The providers cannot read the contents. The passphrase is not stored on servers; <strong>if you lose it, restoration is not possible</strong> (no recovery path).</li>
+<li><strong>Company (storage):</strong> Scaleway S.A.S. (France) – Scaleway Object Storage (S3-compatible), EU data centres. The encrypted containers are stored there.</li>
+<li><strong>Control (Supabase):</strong> The management (which device is allowed to upload, backup metadata) is handled via Supabase Inc. (EU, Ireland) as data processor. Supabase receives only metadata (timestamp, size, checksum) – <strong>not</strong> the contents.</li>
+<li><strong>Master device model:</strong> Exactly one device ("Master") may upload backups; other devices can only restore backups. You can change the master device at any time.</li>
+<li><strong>Automatic backups:</strong> After activation, the app automatically creates a backup about every two weeks (only with a network connection), provided the passphrase is stored on the device.</li>
+<li><strong>Retention:</strong> Backups are retained for a <strong>maximum of 9 months</strong> and then automatically deleted.</li>
+<li><strong>Consent:</strong> Storage takes place only after your express consent (Art. 6 (1) lit. a GDPR). You can withdraw the consent at any time – all cloud backups will then be deleted (Art. 17 GDPR).</li>
+<li><strong>Account deletion:</strong> When you delete your account, all cloud backups are also deleted.</li>
+</ul>
+
 <h2>7. Your Rights (GDPR)</h2>
 
 <p>This Privacy Policy also satisfies the information obligations under <strong>Article 13 GDPR</strong> (information to be provided where personal data are collected).</p>
@@ -649,6 +666,7 @@
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.5</td><td>2026-10-10</td><td>Hungarian legal texts: official source references added (Szjt., Sztv., Eht., Grt.)</td><td>✅ Yes (material change)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>VAT ID DE463991390 in the legal notice, liability exclusions in the Terms relativised, consent retention reduced to 3 years</td><td>✅ Yes (material change)</td></tr>
 <tr><td>3.3</td><td>2026-09-06</td><td>Terms clause on nectar flow forecast (statistical estimate, no guarantee)</td><td>✅ Yes (material change)</td></tr>
 <tr><td>3.2</td><td>2026-09-05</td><td>Microsoft Azure AI Speech (AI voice assistant, STT/TTS) and Brevo (account emails) added as data processors</td><td>✅ Yes (material change)</td></tr>

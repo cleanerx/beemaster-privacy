@@ -203,7 +203,7 @@
 
 <p>Prevádzkovateľom podľa nariadenia (EÚ) 2016/679 (Všeobecné nariadenie o ochrane údajov, „GDPR“) a zákona č. 18/2018 Z. z. o ochrane osobných údajov je:</p>
 
-<p class="legal-small">Právne zdroje: <a href="https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2018/18" target="_blank" rel="noopener">zákon č. 18/2018 Z. z. – Slov-Lex</a> a <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">GDPR (EUR-Lex)</a>.</p>
+<p>Právne zdroje: <a href="https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2018/18" target="_blank" rel="noopener">zákon č. 18/2018 Z. z. – Slov-Lex</a> a <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">GDPR (EUR-Lex)</a>.</p>
 
 <ul>
 <li><strong>Meno:</strong> Jens Kübler</li>
@@ -303,7 +303,7 @@
 <td>Šifrovane v Supabase (EÚ)</td>
 </tr>
 <tr>
-<td>10 bezplatných kreditov</td>
+<td>40 bezplatných kreditov</td>
 <td>Bezplatný test</td>
 <td>Šifrovane v Supabase (EÚ)</td>
 </tr>
@@ -490,6 +490,7 @@
 <ul>
 <li><strong>Údaje o účte:</strong> e-mailová adresa a hash hesla na prihlásenie a Supabase-User-ID. Spracúvanie sa uskutočňuje prostredníctvom Supabase Inc. (EÚ, Írsko), právny základ čl. 6 ods. 1 písm. b) GDPR (plnenie zmluvy).</li>
 <li><strong>Kredit a čerpanie:</strong> aktuálny stav kreditu a čerpanie pri každom požiadavku AI sa ukladajú na strane servera (doklad o poskytnutí plnenia, čl. 6 ods. 1 písm. b) GDPR).</li>
+<li><strong>Agregované štatistiky používania:</strong> Na zabezpečenie prevádzky a plánovanie kapacity sa na základe nášho oprávneného záujmu (čl. 6 ods. 1 písm. f) GDPR) zhromažďujú agregované ukazovatele, ktoré nemožno priradiť k jednotlivým osobám (napr. počet interakcií s AI a priemerná dĺžka konverzácie).</li>
 <li><strong>Záznamy o súhlase:</strong> Súhlasy udelené pri používaní účtu sa ukladajú podľa časti 6.7.</li>
 </ul>
 
@@ -566,6 +567,22 @@
 <li><strong>Odvolanie:</strong> Prístup svojho účtu Google k aplikácii môžete kedykoľvek odvolať vo svojom účte Google v časti „prístup tretích strán“.</li>
 </ul>
 
+<h3>6.13 Cloudová záloha (voliteľná prémiová funkcia, Scaleway Object Storage)</h3>
+
+<p>Pre prémiových používateľov existuje voliteľná možnosť vytvoriť <strong>šifrovanú cloudovú zálohu</strong> vašich úľových údajov (záloha pri strate alebo výmene zariadenia). Pritom platí:</p>
+
+<ul>
+<li><strong>Účel:</strong> šifrovaná záloha vašich lokálnych úľových údajov (úle, včelstvá, kontroly, fotky, financie) v cloude, aby ste ich mohli po strate alebo výmene zariadenia obnoviť.</li>
+<li><strong>Šifrovanie (E2E):</strong> záloha sa <strong>klientsky</strong> šifruje vami zvolenou passphrase (PBKDF2 → AES-256-GCM) <strong>pred</strong> nahratím. Poskytovatelia nemôžu obsah prečítať. Passphrase sa neukladá na serveroch; <strong>ak ju stratíte, obnovenie nie je možné</strong> (žiadna cesta obnovy).</li>
+<li><strong>Spoločnosť (ukladanie):</strong> Scaleway S.A.S. (Francúzsko) – Scaleway Object Storage (kompatibilný so S3), dátové centrá EÚ. Šifrované kontajnery sa tam ukladajú.</li>
+<li><strong>Správa (Supabase):</strong> správa (ktoré zariadenie smie nahrávať, metadáta záloh) sa uskutočňuje prostredníctvom spoločnosti Supabase Inc. (EÚ, Írsko) ako spracovateľa. Supabase dostáva iba metadáta (čas, veľkosť, kontrolný súčet) – <strong>nie</strong> obsah.</li>
+<li><strong>Model hlavného zariadenia (master):</strong> presne jedno zariadenie („Master“) smie nahrávať zálohy; iné zariadenia môžu zálohy iba obnovovať. Hlavné zariadenie môžete kedykoľvek zmeniť.</li>
+<li><strong>Automatické zálohy:</strong> po aktivácii aplikácia automaticky vytvorí zálohu približne každé dva týždne (len s pripojením k sieti), pokiaľ je passphrase uložená v zariadení.</li>
+<li><strong>Uloženie:</strong> zálohy sa uchovávajú <strong>maximálne 9 mesiacov</strong> a potom sa automaticky vymažú.</li>
+<li><strong>Súhlas:</strong> ukladanie sa uskutočňuje len po vašom výslovnom súhlase (čl. 6 ods. 1 písm. a) GDPR). Súhlas môžete kedykoľvek odvolať – všetky cloudové zálohy sa potom vymažú (čl. 17 GDPR).</li>
+<li><strong>Zrušenie účtu:</strong> pri zrušení vášho účtu sa vymažú aj všetky cloudové zálohy.</li>
+</ul>
+
 <h2>7. Vaše práva (GDPR)</h2>
 
 <p>Toto vyhlásenie o ochrane údajov zároveň plní informačnú povinnosť podľa <strong>čl. 13 GDPR</strong> (informácie poskytované pri zhromažďovaní osobných údajov).</p>
@@ -623,6 +640,7 @@
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.5</td><td>2026-10-10</td><td>Maďarské právne texty: doplnené odkazy na oficiálne zdroje (Szjt., Sztv., Eht., Grt.)</td><td>✅ Áno (podstatná zmena)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>IČ DPH DE463991390 v imprintu, zmiernenie vylúčenia zodpovednosti v obchodných podmienkach, skrátenie uchovávania súhlasu na 3 roky</td><td>✅ Áno (podstatná zmena)</td></tr>
 <tr><td>3.3</td><td>2026-09-06</td><td>Klauzula obchodných podmienok o predpovedi znášky (štatistický odhad, bez záruky)</td><td>✅ Áno (podstatná zmena)</td></tr>
 <tr><td>3.2</td><td>2026-09-05</td><td>Doplnení sprostredkovatelia Microsoft Azure AI Speech (AI hlasový asistent, STT/TTS) a Brevo (e-maily účtu)</td><td>✅ Áno (podstatná zmena)</td></tr>

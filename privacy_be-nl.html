@@ -230,7 +230,7 @@
 <p><strong>Geen koppelingsverbod overtreden :</strong> Het aanvaarden van de EULA, de Algemene voorwaarden en dit privacybeleid bij de eerste start is een <em>instemming met de contractvoorwaarden</em> en is <strong>geen</strong> toestemming in de zin van de gegevensbescherming. De verwerking die toestemming vereist, wordt afzonderlijk, vrijwillig en herroepbaar gevraagd (art. 7, lid 4, AVG).</p>
 </div>
 
-<p class="legal-small">Rechtsbronnen : De algemene verordening gegevensbescherming is beschikbaar op <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a> (verordening (EU) 2016/679). De Wet van 30 juli 2018 betreffende de bescherming van natuurlijke personen met betrekking tot de verwerking van persoonsgegevens (Belgische AVG-uitvoeringswet) is beschikbaar op <a href="https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel" target="_blank" rel="noopener">Wet van 30 juli 2018 – eJustice</a>.</p>
+<p>Rechtsbronnen : De algemene verordening gegevensbescherming is beschikbaar op <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a> (verordening (EU) 2016/679). De Wet van 30 juli 2018 betreffende de bescherming van natuurlijke personen met betrekking tot de verwerking van persoonsgegevens (Belgische AVG-uitvoeringswet) is beschikbaar op <a href="https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel" target="_blank" rel="noopener">Wet van 30 juli 2018 – eJustice</a>.</p>
 
 <h2>2. Welke gegevens worden verzameld ?</h2>
 
@@ -307,7 +307,7 @@
 <td>Versleuteld bij Supabase (EU)</td>
 </tr>
 <tr>
-<td>10 gratis credits</td>
+<td>40 gratis credits</td>
 <td>Gratis proefgebruik</td>
 <td>Versleuteld bij Supabase (EU)</td>
 </tr>
@@ -508,6 +508,7 @@
 <ul>
 <li><strong>Accountgegevens :</strong> e-mailadres en wachtwoord-hash voor de aanmelding alsook de Supabase-gebruikers-ID. De verwerking gebeurt via Supabase Inc. (EU, Ierland), rechtsgrond art. 6, lid 1, onder b), AVG (uitvoering van de overeenkomst).</li>
 <li><strong>Credit-saldo en -verbruik :</strong> het actuele credit-saldo alsook het verbruik per AI-aanvraag worden serverzijdig opgeslagen (bewijs van de dienstverlening, art. 6, lid 1, onder b), AVG).</li>
+<li><strong>Geaggregeerde gebruiksstatistieken :</strong> ter waarborging van de werking en voor capaciteitsplanning worden geaggregeerde, niet tot personen herleidbare cijfers (bv. aantal AI-interacties en gemiddelde gesprekslengte) verzameld op basis van ons gerechtvaardigd belang (art. 6, lid 1, onder f), AVG).</li>
 <li><strong>Toestemmingsregisters :</strong> de bij het gebruik van het account verleende toestemmingen worden overeenkomstig § 6.8 opgeslagen.</li>
 </ul>
 
@@ -591,6 +592,22 @@
 <li><strong>Intrekking :</strong> u kunt de toegang van uw Google-account tot de app te allen tijde intrekken in uw Google-account, onder « toegang van derden ».</li>
 </ul>
 
+<h3>6.13 Cloudback-up (optionele premium-functie, Scaleway Object Storage)</h3>
+
+<p>Voor premiumgebruikers bestaat de optionele mogelijkheid om een <strong>versleutelde cloudback-up</strong> van uw bijenkastgegevens te maken (back-up bij verlies of wissel van toestel). Hierbij geldt het volgende:</p>
+
+<ul>
+<li><strong>Doel :</strong> versleutelde back-up van uw lokale bijenkastgegevens (kasten, volken, controles, foto's, financiën) in de cloud, zodat u deze na verlies of wissel van een toestel kunt herstellen.</li>
+<li><strong>Versleuteling (E2E) :</strong> de back-up wordt <strong>client-side</strong> versleuteld met een door u gekozen passphrase (PBKDF2 → AES-256-GCM) <strong>voordat</strong> deze wordt geüpload. De aanbieders kunnen de inhoud niet lezen. De passphrase wordt niet op servers opgeslagen ; <strong>verliest u deze, dan is herstel niet mogelijk</strong> (geen herstelmogelijkheid).</li>
+<li><strong>Bedrijf (opslag) :</strong> Scaleway S.A.S. (Frankrijk) – Scaleway Object Storage (S3-compatibel), EU-datacenters. De versleutelde containers worden daar opgeslagen.</li>
+<li><strong>Beheer (Supabase) :</strong> het beheer (welk toestel mag uploaden, metadata van de back-ups) verloopt via Supabase Inc. (EU, Ierland) als verwerker. Supabase ontvangt uitsluitend metadata (tijdstip, grootte, controlesom) – <strong>niet</strong> de inhoud.</li>
+<li><strong>Mastertoestel-model :</strong> precies één toestel („Master“) mag back-ups uploaden ; andere toestellen kunnen back-ups alleen herstellen. U kunt het mastertoestel op elk moment wisselen.</li>
+<li><strong>Automatische back-ups :</strong> na activering maakt de app ongeveer elke twee weken automatisch een back-up (alleen met netwerkverbinding), voor zover de passphrase op het toestel is opgeslagen.</li>
+<li><strong>Bewaring :</strong> back-ups worden <strong>maximaal 9 maanden</strong> bewaard en daarna automatisch verwijderd.</li>
+<li><strong>Toestemming :</strong> de opslag vindt uitsluitend plaats na uw uitdrukkelijke toestemming (art. 6, lid 1, onder a), AVG). U kunt de toestemming op elk moment intrekken – alle cloudback-ups worden dan verwijderd (art. 17 AVG).</li>
+<li><strong>Accountverwijdering :</strong> bij verwijdering van uw account worden ook alle cloudback-ups verwijderd.</li>
+</ul>
+
 <h2>7. Uw rechten (AVG)</h2>
 
 <p>Dit privacybeleid voldoet tevens aan de informatieplicht van <strong>artikel 13 AVG</strong> (informatie bij het verzamelen van persoonsgegevens).</p>
@@ -652,6 +669,7 @@
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.5</td><td>2026-10-10</td><td>Hongaarse juridische teksten: verwijzingen naar officiële bronnen toegevoegd (Szjt., Sztv., Eht., Grt.)</td><td>✅ Ja (materiële wijziging)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>Btw-nummer DE463991390 in het colofon, verzwakking van aansprakelijkheidsuitsluitingen in de algemene voorwaarden, verkorting van de bewaartermijn van toestemming tot 3 jaar</td><td>✅ Ja (materiële wijziging)</td></tr>
 <tr><td>3.3</td><td>2026-09-06</td><td>Clausule in de algemene voorwaarden over drachtvoorspelling (statistische schatting, zonder garantie)</td><td>✅ Ja (materiële wijziging)</td></tr>
 <tr><td>3.2</td><td>2026-09-05</td><td>Microsoft Azure AI Speech (AI-spraakassistent, STT/TTS) en Brevo (account-e-mails) toegevoegd als verwerkers</td><td>✅ Ja (materiële wijziging)</td></tr>

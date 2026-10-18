@@ -217,7 +217,7 @@
 <p><strong>Žádné vázání souhlasu:</strong> Odsouhlasení EULA, VOP a těchto zásad při prvním spuštění je <em>seznámení se smluvními podmínkami</em>, nikoli souhlas se zpracováním osobních údajů. Zpracování vyžadující souhlas se vyžaduje odděleně, dobrovolně a odvolatelně (čl. 7 odst. 4 GDPR).</p>
 </div>
 
-<p class="legal-small">Právní zdroje: <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">GDPR (EUR-Lex)</a> a <a href="https://www.e-sbirka.cz/sb/2019/110" target="_blank" rel="noopener">zákon č. 110/2019 Sb. (e-Sbírka)</a>.</p>
+<p>Právní zdroje: <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">GDPR (EUR-Lex)</a> a <a href="https://www.e-sbirka.cz/sb/2019/110" target="_blank" rel="noopener">zákon č. 110/2019 Sb. (e-Sbírka)</a>.</p>
 
 <h2>3. Jaké údaje se zpracovávají</h2>
 
@@ -355,6 +355,7 @@
 <ul>
 <li><strong>Údaje o účtu:</strong> e-mailová adresa a hash hesla pro přihlášení a Supabase-User-ID. Zpracování probíhá prostřednictvím Supabase Inc. (EU, Irsko), právní základ čl. 6 odst. 1 písm. b) GDPR (plnění smlouvy).</li>
 <li><strong>Kredit a čerpání:</strong> aktuální stav kreditu a čerpání u každého požadavku KI se ukládají na straně serveru (doklad o poskytnutí plnění, čl. 6 odst. 1 písm. b) GDPR).</li>
+<li><strong>Agregované statistiky používání:</strong> Pro zajištění provozu a plánování kapacity se na základě našeho oprávněného zájmu (čl. 6 odst. 1 písm. f) GDPR) shromažďují agregované ukazatele, které nelze přiřadit k jednotlivým osobám (např. počet interakcí s AI a průměrná délka konverzace).</li>
 <li><strong>Záznamy o souhlasu:</strong> Souhlasy udělené při používání účtu se ukládají podle části 6.8.</li>
 </ul>
 
@@ -438,6 +439,22 @@
 <li><strong>Odvolání:</strong> Přístup svého účtu Google k aplikaci můžete kdykoli odvolat ve svém účtu Google v části „přístup třetích stran“.</li>
 </ul>
 
+<h3>6.13 Cloudová záloha (volitelná prémiová funkce, Scaleway Object Storage)</h3>
+
+<p>Pro prémiové uživatele existuje volitelná možnost vytvořit <strong>šifrovanou cloudovou zálohu</strong> vašich dat o úlech (záloha při ztrátě nebo výměně zařízení). Platí přitom:</p>
+
+<ul>
+<li><strong>Účel:</strong> šifrovaná záloha vašich místních dat o úlech (úly, včelstva, kontroly, fotky, finance) v cloudu, abyste je mohli po ztrátě nebo výměně zařízení obnovit.</li>
+<li><strong>Šifrování (E2E):</strong> záloha je <strong>klientsky</strong> zašifrována vámi zvolenou passphrase (PBKDF2 → AES-256-GCM) <strong>před</strong> nahráním. Poskytovatelé nemohou obsah přečíst. Passphrase není ukládána na serverech; <strong>pokud ji ztratíte, obnovení není možné</strong> (žádná cesta obnovení).</li>
+<li><strong>Společnost (ukládání):</strong> Scaleway S.A.S. (Francie) – Scaleway Object Storage (kompatibilní se S3), datová centra v EU. Šifrované kontejnery se ukládají tam.</li>
+<li><strong>Správa (Supabase):</strong> správa (které zařízení smí nahrávat, metadata záloh) probíhá prostřednictvím společnosti Supabase Inc. (EU, Irsko) jako zpracovatele. Supabase získává pouze metadata (čas, velikost, kontrolní součet) – <strong>ne</strong> obsah.</li>
+<li><strong>Model hlavního zařízení (master):</strong> přesně jedno zařízení („Master“) smí nahrávat zálohy; jiná zařízení mohou zálohy pouze obnovovat. Hlavní zařízení můžete kdykoli změnit.</li>
+<li><strong>Automatické zálohy:</strong> po aktivaci aplikace automaticky vytvoří zálohu přibližně každé dva týdny (pouze s připojením k síti), pokud je passphrase uložena v zařízení.</li>
+<li><strong>Uložení:</strong> zálohy se uchovávají <strong>maximálně 9 měsíců</strong> a poté se automaticky smažou.</li>
+<li><strong>Souhlas:</strong> ukládání probíhá pouze po vašem výslovném souhlasu (čl. 6 odst. 1 písm. a) GDPR). Souhlas můžete kdykoli odvolat – všechny cloudové zálohy se pak smažou (čl. 17 GDPR).</li>
+<li><strong>Zrušení účtu:</strong> při zrušení vašeho účtu se smažou také všechny cloudové zálohy.</li>
+</ul>
+
 <h2>7. Doba uložení</h2>
 
 <ul>
@@ -495,6 +512,7 @@
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.5</td><td>2026-10-10</td><td>Maďarské právní texty: doplněny odkazy na oficiální zdroje (Szjt., Sztv., Eht., Grt.)</td><td>✅ Ano (podstatná změna)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>DIČ DE463991390 v informacích o poskytovateli, zmírnění vyloučení odpovědnosti v obchodních podmínkách, zkrácení uchovávání souhlasu na 3 roky</td><td>✅ Ano (podstatná změna)</td></tr>
 <tr><td>3.3</td><td>2026-09-06</td><td>Klauzule obchodních podmínek o předpovědi znášky (statistický odhad, bez záruky)</td><td>✅ Ano (podstatná změna)</td></tr>
 <tr><td>3.2</td><td>2026-09-05</td><td>Doplněni zpracovatelé Microsoft Azure AI Speech (hlasový asistent s umělou inteligencí, STT/TTS) a Brevo (e-maily účtu)</td><td>✅ Ano (podstatná změna)</td></tr>

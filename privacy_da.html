@@ -187,7 +187,7 @@
 
 <p>Denne privatlivspolitik beskriver, hvordan Beemaster behandler personoplysninger. Vi behandler oplysninger i overensstemmelse med Europa-Parlamentets og Rådets forordning (EU) 2016/679 (databeskyttelsesforordningen) og de danske supplerende regler i databeskyttelsesloven (Lov nr. 502 af 23. maj 2018).</p>
 
-<p class="legal-small">Retsgrundlag : <a href="https://www.retsinformation.dk/eli/lta/2018/502" target="_blank" rel="noopener">Databeskyttelsesloven – retsinformation.dk</a> | <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">Forordning (EU) 2016/679 – EUR-Lex</a>.</p>
+<p>Retsgrundlag : <a href="https://www.retsinformation.dk/eli/lta/2018/502" target="_blank" rel="noopener">Databeskyttelsesloven – retsinformation.dk</a> | <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">Forordning (EU) 2016/679 – EUR-Lex</a>.</p>
 
 <h2>1. Dataansvarlig</h2>
 
@@ -243,6 +243,7 @@
 <ul>
 <li><strong>Kontodata:</strong> e-mailadresse og adgangskode-hash til login samt Supabase-bruger-ID'et. Behandlingen sker via Supabase Inc. (EU, Irland), retsgrundlag art. 6, stk. 1, litra b) i GDPR (opfyldelse af kontrakt).</li>
 <li><strong>Credit-saldo og -forbrug:</strong> Den aktuelle credit-saldo samt forbruget pr. KI-anmodning gemmes serverside (dokumentation af ydelsesleveringen, art. 6, stk. 1, litra b) i GDPR).</li>
+<li><strong>Aggregerede brugsstatistikker:</strong> For at sikre driften og til kapacitetsplanlægning indsamles aggregerede, ikke personhenførbare nøgletal (f.eks. antal AI-interaktioner og gennemsnitlig samtalelængde) på grundlag af vores legitime interesse (art. 6, stk. 1, litra f) i GDPR).</li>
 <li><strong>Samtykkedokumentation:</strong> De samtykker, der gives i forbindelse med kontobrugen, gemmes i henhold til afsnit h).</li>
 </ul>
 
@@ -319,6 +320,22 @@
 <li><strong>Tilbagekaldelse :</strong> Du kan til enhver tid tilbagekalde din Google-kontos adgang til appen i din Google-konto under "tredjepartsadgang".</li>
 </ul>
 
+<h3>m) Cloud-backup (valgfri premiumfunktion, Scaleway Object Storage)</h3>
+
+<p>For premiumbrugere er der den valgfri mulighed for at oprette en <strong>krypteret cloud-backup</strong> af dine statedata (sikkerhedskopi i tilfælde af tab eller skift af enhed). Der gælder følgende:</p>
+
+<ul>
+<li><strong>Formål :</strong> krypteret sikkerhedskopi af dine lokale statedata (stader, folk, kontroller, fotos, finanser) i skyen, så du kan gendanne dem efter tab eller skift af enhed.</li>
+<li><strong>Kryptering (E2E) :</strong> backup'en krypteres <strong>på klientsiden</strong> med en af dig valgt passphrase (PBKDF2 → AES-256-GCM) <strong>før</strong> den uploades. Udbydere kan ikke læse indholdet. Passphrase'en gemmes ikke på servere; <strong>mister du den, er en gendannelse ikke mulig</strong> (ingen gendannelsesvej).</li>
+<li><strong>Virksomhed (opbevaring) :</strong> Scaleway S.A.S. (Frankrig) – Scaleway Object Storage (S3-kompatibel), EU-datacentre. De krypterede containere gemmes der.</li>
+<li><strong>Styring (Supabase) :</strong> administrationen (hvilken enhed må uploade, metadata for backup'er) sker via Supabase Inc. (EU, Irland) som databehandler. Supabase modtager kun metadata (tidspunkt, størrelse, kontrolsum) – <strong>ikke</strong> indholdet.</li>
+<li><strong>Master-enhed-model :</strong> præcis én enhed ("Master") må uploade backup'er; andre enheder kan kun gendanne backup'er. Du kan til enhver tid skifte master-enheden.</li>
+<li><strong>Automatiske backup'er :</strong> efter aktivering opretter appen automatisk en backup cirka hver anden uge (kun med netværksforbindelse), forudsat at passphrase'en er gemt på enheden.</li>
+<li><strong>Opbevaring :</strong> backup'er opbevares i <strong>maksimalt 9 måneder</strong> og slettes derefter automatisk.</li>
+<li><strong>Samtykke :</strong> opbevaringen sker kun efter dit udtrykkelige samtykke (art. 6, stk. 1, litra a) i GDPR). Du kan til enhver tid trække samtykket tilbage – alle cloud-backup'er slettes derefter (art. 17 i GDPR).</li>
+<li><strong>Kontosletning :</strong> ved sletning af din konto slettes også alle cloud-backup'er.</li>
+</ul>
+
 <div class="warning">
 <p><strong>Bemærkning :</strong> Vores app bruger ingen cookies til analyse, ingen reklamenetværk og ingen sporing. Der findes ingen profilering i henhold til databeskyttelsesforordningens artikel 22.</p>
 </div>
@@ -355,6 +372,7 @@
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.5</td><td>2026-10-10</td><td>Ungarische Rechtstexte: offizielle Quellenverweise ergänzt (Szjt., Sztv., Eht., Grt.)</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>USt-IdNr. DE463991390 im Impressum, AGB-Haftungsausschlüsse relativiert, Consent-Aufbewahrung auf 3 Jahre reduziert</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.3</td><td>2026-09-06</td><td>AGB-Klausel zur Trachtvorhersage (statistische Schätzung, keine Garantie)</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.2</td><td>2026-09-05</td><td>Microsoft Azure AI Speech (KI-Sprachassistent, STT/TTS) und Brevo (Konto-E-Mails) als Auftragsverarbeiter ergänzt</td><td>✅ Ja (inhaltliche Änderung)</td></tr>

@@ -187,7 +187,7 @@
 
 <p>La presente informativa descrive il trattamento dei dati personali da parte di Beemaster. Trattiamo i dati in conformità al Regolamento (UE) 2016/679 (GDPR) e alle disposizioni nazionali italiane, in particolare il Decreto Legislativo 30 giugno 2003, n. 196 (Codice in materia di protezione dei dati personali), come adeguato al GDPR dal Decreto Legislativo 10 agosto 2018, n. 101.</p>
 
-<p class="legal-small">Riferimento normativo : <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196" target="_blank" rel="noopener">D.Lgs. 196/2003 (Codice Privacy) – Normattiva</a> | <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">Regolamento (UE) 2016/679 – EUR-Lex</a>.</p>
+<p>Riferimento normativo : <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196" target="_blank" rel="noopener">D.Lgs. 196/2003 (Codice Privacy) – Normattiva</a> | <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">Regolamento (UE) 2016/679 – EUR-Lex</a>.</p>
 
 <h2>1. Titolare del trattamento</h2>
 
@@ -243,6 +243,7 @@
 <ul>
 <li><strong>Dati dell'account:</strong> indirizzo e-mail e hash della password per l'accesso, nonché l'ID utente Supabase. Il trattamento avviene tramite Supabase Inc. (UE, Irlanda), base giuridica art. 6, par. 1, lett. b) GDPR (esecuzione del contratto).</li>
 <li><strong>Saldo e consumo dei crediti:</strong> Il saldo corrente dei crediti e il consumo per ogni richiesta AI vengono salvati lato server (prova dell'erogazione del servizio, art. 6, par. 1, lett. b) GDPR).</li>
+<li><strong>Statistiche d'uso aggregate:</strong> per garantire il funzionamento e per la pianificazione della capacità vengono raccolti indicatori aggregati non riconducibili a singole persone (es. numero di interazioni AI e lunghezza media delle conversazioni) sulla base del nostro interesse legittimo (art. 6, par. 1, lett. f) GDPR).</li>
 <li><strong>Documentazione del consenso:</strong> I consensi prestati nell'ambito dell'utilizzo dell'account vengono registrati ai sensi della sezione h).</li>
 </ul>
 
@@ -319,6 +320,22 @@
 <li><strong>Revoca:</strong> puoi revocare in qualsiasi momento l'accesso del tuo account Google all'app nel tuo account Google, alla voce „accesso di terze parti“.</li>
 </ul>
 
+<h3>m) Backup cloud (funzione premium opzionale, Scaleway Object Storage)</h3>
+
+<p>Per gli utenti Premium esiste la possibilità opzionale di creare un <strong>backup cloud cifrato</strong> dei tuoi dati delle arnie (salvataggio in caso di perdita o cambio del dispositivo). Vale quanto segue:</p>
+
+<ul>
+<li><strong>Finalità:</strong> backup cifrato dei tuoi dati locali delle arnie (arnie, famiglie, ispezioni, foto, finanze) nel cloud, così da poterli ripristinare dopo una perdita o un cambio del dispositivo.</li>
+<li><strong>Cifratura (E2E):</strong> il backup viene cifrato <strong>lato client</strong> con una passphrase da te scelta (PBKDF2 → AES-256-GCM) <strong>prima</strong> di essere caricato. I fornitori non possono leggere i contenuti. La passphrase non viene salvata sui server; <strong>se la perdi, un ripristino non è possibile</strong> (nessuna via di recupero).</li>
+<li><strong>Società (conservazione):</strong> Scaleway S.A.S. (Francia) – Scaleway Object Storage (compatibile con S3), data center UE. I contenitori cifrati vengono conservati lì.</li>
+<li><strong>Gestione (Supabase):</strong> la gestione (quale dispositivo può caricare, metadati dei backup) avviene tramite Supabase Inc. (UE, Irlanda) come responsabile del trattamento. Supabase riceve solo metadati (data e ora, dimensione, somma di controllo) – <strong>non</strong> i contenuti.</li>
+<li><strong>Modello dispositivo master:</strong> esattamente un dispositivo („Master“) può caricare backup; gli altri dispositivi possono solo ripristinare backup. Puoi cambiare il dispositivo master in qualsiasi momento.</li>
+<li><strong>Backup automatici:</strong> dopo l'attivazione, l'app crea automaticamente un backup circa ogni due settimane (solo con connessione di rete), purché la passphrase sia memorizzata sul dispositivo.</li>
+<li><strong>Conservazione:</strong> i backup vengono conservati per <strong>massimo 9 mesi</strong> e poi eliminati automaticamente.</li>
+<li><strong>Consenso:</strong> la conservazione avviene solo dopo il tuo esplicito consenso (art. 6, par. 1, lett. a) GDPR). Puoi revocare il consenso in qualsiasi momento – tutti i backup cloud verranno quindi eliminati (art. 17 GDPR).</li>
+<li><strong>Eliminazione dell'account:</strong> all'eliminazione del tuo account vengono eliminati anche tutti i backup cloud.</li>
+</ul>
+
 <div class="warning">
 <p><strong>Nota :</strong> la nostra app non utilizza cookie per l'analisi, nessuna rete pubblicitaria e nessun tracciamento. Non è prevista alcuna profilazione ai sensi dell'art. 22 del GDPR.</p>
 </div>
@@ -355,6 +372,7 @@
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.5</td><td>2026-10-10</td><td>Ungarische Rechtstexte: offizielle Quellenverweise ergänzt (Szjt., Sztv., Eht., Grt.)</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>USt-IdNr. DE463991390 im Impressum, AGB-Haftungsausschlüsse relativiert, Consent-Aufbewahrung auf 3 Jahre reduziert</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.3</td><td>2026-09-06</td><td>AGB-Klausel zur Trachtvorhersage (statistische Schätzung, keine Garantie)</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.2</td><td>2026-09-05</td><td>Microsoft Azure AI Speech (KI-Sprachassistent, STT/TTS) und Brevo (Konto-E-Mails) als Auftragsverarbeiter ergänzt</td><td>✅ Ja (inhaltliche Änderung)</td></tr>

@@ -223,7 +223,7 @@
 <p><strong>Kein Kopplungsverbot-Verstoß:</strong> Die Zustimmung zu EULA, AGB und dieser Datenschutzerklärung beim ersten Start ist eine <em>Kenntnisnahme der Vertragsbedingungen</em> und <strong>keine</strong> datenschutzrechtliche Einwilligung. Einwilligungspflichtige Verarbeitungen werden getrennt, freiwillig und widerruflich abgefragt (Art. 7 Abs. 4 DSGVO).</p>
 </div>
 
-<p class="legal-small">Rechtsquelle: Die Datenschutz-Grundverordnung ist amtlich verfügbar unter <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a> (Verordnung (EU) 2016/679).</p>
+<p>Rechtsquelle: Die Datenschutz-Grundverordnung ist amtlich verfügbar unter <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">eur-lex.europa.eu/eli/reg/2016/679/oj</a> (Verordnung (EU) 2016/679).</p>
 
 <h2>2. Welche Daten werden erhoben?</h2>
 
@@ -328,6 +328,7 @@
 <ul>
 <li><strong>Fotos:</strong> Bienenstock-Bilder (optional, lokal gespeichert)</li>
 <li><strong>Sprachnotizen:</strong> Audio-Aufnahmen (optional, lokal gespeichert)</li>
+<li><strong>Kamera über den Sprachassistenten:</strong> Eine per Sprachbefehl ausgelöste Fotoaufnahme wird für umstehende Personen erkennbar ausgelöst – es läuft ein <strong>sichtbarer Countdown</strong> (Standard 3 Sekunden) mit <strong>hörbarer Sprachansage</strong> (Text-to-Speech „3, 2, 1"). Das Foto bleibt <strong>lokal</strong> auf deinem Gerät (kein automatischer Upload). Bitte fotografiere keine Personen ohne deren Einwilligung (§ 22 KUG – Recht am eigenen Bild).</li>
 </ul>
 
 <h3>📊 Fehler- und Nutzungsstatistiken (nur nach Einwilligung)</h3>
@@ -372,6 +373,7 @@
 <li><strong>Speicherort:</strong> EU-Rechenzentrum (Irland) – wählbar</li>
 <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</li>
 <li><strong>Auftragsverarbeitung:</strong> Mit Supabase besteht ein Auftragsverarbeitungsvertrag (AVV/DPA) gemäß Art. 28 DSGVO. Supabase verpflichtet sich zur Einhaltung der DSGVO, technischer Sicherheitsmaßnahmen (TLS, AES-256) und zur Meldung von Datenpannen innerhalb von 72 Stunden.</li>
+<li><strong>Eigene Meldepflicht des Verantwortlichen:</strong> Unabhängig von der Auftragsverarbeitung melden wir als Verantwortlicher Verletzungen des Schutzes personenbezogener Daten unverzüglich und möglichst binnen <strong>72 Stunden</strong> der zuständigen Aufsichtsbehörde (Art. 33 DSGVO). Die Frist wird intern überwacht. Bei hohem Risiko für deine Rechte und Freiheiten benachrichtigen wir dich unverzüglich per E-Mail in der Sprache deiner Einwilligungs-Jurisdiktion; jeder Zustellversuch wird nachweisbar protokolliert (Art. 34 DSGVO).</li>
 </ul>
 
 <div class="success">
@@ -393,6 +395,8 @@
 <li>❌ Keine Finanzdaten</li>
 <li>❌ Keine Social-Media-Profile</li>
 </ul>
+
+<p><strong>Keine Cookies oder Tracking-Technologien:</strong> Die App verwendet keine Cookies, keine Werbe-IDs<br>und keine vergleichbaren Tracking-Technologien zu Werbe- oder Analysezwecken.</p>
 </div>
 
 <h2>4. Berechtigungen</h2>
@@ -439,6 +443,20 @@
 <div class="success">
 <p><strong>✓ Deine Daten bleiben bei dir:</strong> In der kostenlosen Version werden keine Daten auf Server gespeichert. Alle Daten bleiben lokal auf deinem Gerät.</p>
 </div>
+
+<h3>Speicherdauer auf Servern</h3>
+
+<p>Soweit im Rahmen von Premium-/Konto-Funktionen serverseitig Daten verarbeitet werden, gelten feste Löschfristen (automatisierte Löschung durch einen täglichen Cleanup-Job):</p>
+
+<ul>
+<li><strong>Kontolöschungs-Audit-Log:</strong> 3 Jahre nach der Kontolöschung, danach automatische Löschung.</li>
+<li><strong>Steuerrelevante Buchungsbelege</strong> (Zahlungen und Premium-Abos): Aufbewahrung für die gesetzliche steuerrechtliche Frist von <strong>8 Jahren</strong> ab Schluss des jeweiligen Kalenderjahres; die Belege überleben eine Kontolöschung (die Verknüpfung zum Konto wird entfernt/anonymisiert) und werden anschließend automatisch gelöscht.</li>
+<li><strong>Handelsbücher/Jahresabschlüsse:</strong> soweit geführt, <strong>10 Jahre</strong>.</li>
+<li><strong>Einwilligungs-Nachweise:</strong> für die Dauer der gesetzlichen Aufbewahrungsfrist (<strong>8 Jahre</strong>).</li>
+<li><strong>Verbrauchsprotokolle der KI-Credits:</strong> 24 Monate.</li>
+<li><strong>Gesprächs-Feedback (optional):</strong> 180 Tage.</li>
+<li><strong>Cloud-Backups (optional):</strong> maximal 9 Monate.</li>
+</ul>
 
 <h2>6. Empfänger und Drittanbieter</h2>
 
@@ -501,6 +519,7 @@
 <ul>
 <li><strong>Kontodaten:</strong> E-Mail-Adresse und Passwort-Hash zur Anmeldung sowie die Supabase-User-ID. Die Verarbeitung erfolgt über Supabase Inc. (EU, Irland), Rechtsgrundlage Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</li>
 <li><strong>Credit-Guthaben und -Verbrauch:</strong> Der aktuelle Credit-Stand sowie der Verbrauch je KI-Anfrage werden serverseitig gespeichert (Nachweis der Leistungserbringung, Art. 6 Abs. 1 lit. b DSGVO).</li>
+<li><strong>Aggregierte Nutzungsstatistiken:</strong> Zur Sicherstellung des Betriebs und zur Kapazitätsplanung werden aggregierte, nicht auf einzelne Personen beziehbare Kennzahlen (z. B. Anzahl der KI-Interaktionen und durchschnittliche Gesprächslänge) auf Grundlage unseres berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO) erhoben.</li>
 <li><strong>Einwilligungs-Nachweise:</strong> Die bei der Kontonutzung erteilten Einwilligungen werden gemäß § 6.8 gespeichert.</li>
 </ul>
 
@@ -548,6 +567,7 @@
 
 <ul>
 <li><strong>Zweck:</strong> Umwandlung deiner Spracheingabe in Text (STT) für die Interaktion mit dem Sprachassistenten sowie die Ausgabe der Antwort als Sprache (TTS).</li>
+<li><strong>KI-Transparenz (EU-KI-Verordnung, Art. 50):</strong> Bevor du den Sprachassistenten erstmals nutzt, weist die App dich klar, sichtbar und barrierefrei darauf hin, dass du mit einem KI-System interagierst (Hinweis „Du interagierst mit einem KI-Assistenten.“). Der Hinweis erscheint zu Beginn jeder Interaktion in der von dir gewählten Sprache und wird für Screenreader zugänglich ausgegeben.</li>
 <li><strong>Unternehmen:</strong> Microsoft Corporation (Microsoft Ireland Operations Ltd. als EU-Anbieter).</li>
 <li><strong>Daten:</strong> Audiodaten (Sprachaufnahme) sowie die für die Verarbeitung erforderlichen technischen Daten. Die Übertragung erfolgt <strong>verschlüsselt</strong> (TLS). Der Azure-Subscription-Key liegt ausschließlich serverseitig; die App sendet nur ein kurzlebiges, JWT-gesichertes Zugriffstoken.</li>
 <li><strong>Speicherort:</strong> EU-Rechenzentrum (Region Deutschland West-Mitte, <em>germanywestcentral</em>). Azure AI Speech verarbeitet Daten nur in der Region des Ressourcen-Standorts.</li>
@@ -567,6 +587,7 @@
 <li><strong>Speicherort:</strong> EU-Rechenzentren (Frankreich).</li>
 <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung, Bereitstellung der Konto-Funktion).</li>
 <li><strong>Auftragsverarbeitung:</strong> Mit Brevo besteht ein Auftragsverarbeitungsvertrag (AVV/DPA) gemäß Art. 28 DSGVO; Brevo verarbeitet die Daten ausschließlich weisungsgebunden.</li>
+<li><strong>Technische Absicherung:</strong> Der Versand erfolgt ausschließlich TLS-verschlüsselt (Ports 587/465); die Absender-Domain ist über SPF, DKIM und DMARC authentifiziert. Die SMTP-Zugangsdaten liegen ausschließlich serverseitig und sind nicht im App-Code enthalten.</li>
 <li><strong>Datenschutzhinweise:</strong> <a href="https://www.brevo.com/legal/termsofuse" target="_blank" rel="noopener">brevo.com/legal/termsofuse</a> (dort im Abschnitt „Data Processing Agreement“).</li>
 </ul>
 
@@ -584,6 +605,22 @@
 <li><strong>Entzug:</strong> Du kannst den Zugriff deines Google-Kontos auf die App jederzeit in deinem Google-Konto unter „Drittanbieter-Zugriff“ widerrufen.</li>
 </ul>
 
+<h3>6.13 Cloud-Backup (optionale Premium-Funktion, Scaleway Object Storage)</h3>
+
+<p>Für Premium-Nutzer besteht die optionale Möglichkeit, ein <strong>verschlüsseltes Cloud-Backup</strong> deiner Beutendaten zu erstellen (Sicherung bei Geräteverlust oder Gerätewechsel). Dabei gilt:</p>
+
+<ul>
+<li><strong>Zweck:</strong> Verschlüsselte Sicherung deiner lokalen Beutendaten (Beuten, Völker, Kontrollen, Fotos, Finanzen) in der Cloud, damit du sie nach einem Geräteverlust oder -wechsel wiederherstellen kannst.</li>
+<li><strong>Verschlüsselung (E2E):</strong> Das Backup wird <strong>client-seitig</strong> mit einer von dir gewählten Passphrase verschlüsselt (PBKDF2 → AES-256-GCM), <strong>bevor</strong> es hochgeladen wird. Die Anbieter können die Inhalte nicht lesen. Die Passphrase wird nicht auf Servern gespeichert; <strong>verlierst du sie, ist eine Wiederherstellung nicht möglich</strong> (kein Wiederherstellungsweg).</li>
+<li><strong>Unternehmen (Speicherung):</strong> Scaleway S.A.S. (Frankreich) – Scaleway Object Storage (S3-kompatibel), EU-Rechenzentren. Die verschlüsselten Container werden dort gespeichert.</li>
+<li><strong>Steuerung (Supabase):</strong> Die Verwaltung (welches Gerät darf hochladen, Metadaten der Backups) erfolgt über Supabase Inc. (EU, Irland) als Auftragsverarbeiter. Supabase erhält nur Metadaten (Zeitpunkt, Größe, Prüfsumme) – <strong>nicht</strong> die Inhalte.</li>
+<li><strong>Master-Gerät-Modell:</strong> Genau ein Gerät („Master“) darf Backups hochladen; andere Geräte können Backups nur wiederherstellen. Du kannst das Master-Gerät jederzeit wechseln.</li>
+<li><strong>Automatische Backups:</strong> Nach Aktivierung erstellt die App etwa alle zwei Wochen automatisch ein Backup (nur mit Netzwerkverbindung), sofern die Passphrase auf dem Gerät hinterlegt ist.</li>
+<li><strong>Aufbewahrung:</strong> Backups werden <strong>maximal 9 Monate</strong> aufbewahrt und danach automatisch gelöscht.</li>
+<li><strong>Einwilligung:</strong> Die Speicherung erfolgt nur nach deiner ausdrücklichen Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Du kannst die Einwilligung jederzeit widerrufen – alle Cloud-Backups werden dann gelöscht (Art. 17 DSGVO).</li>
+<li><strong>Kontolöschung:</strong> Bei Löschung deines Kontos werden auch alle Cloud-Backups gelöscht.</li>
+</ul>
+
 <h2>7. Deine Rechte (DSGVO)</h2>
 
 <p>Diese Datenschutzerklärung erfüllt zugleich die Informationspflichten nach <strong>Art. 13 DSGVO</strong> (Informationen bei Erhebung personenbezogener Daten).</p>
@@ -598,7 +635,11 @@
 <li><strong>Datenübertragbarkeit (Art. 20 DSGVO):</strong> Export in strukturiertem, maschinenlesbarem Format</li>
 <li><strong>Widerspruch (Art. 21 DSGVO):</strong> Gegen Verarbeitungen auf Basis berechtigter Interessen</li>
 <li><strong>Widerruf erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO):</strong> Mit Wirkung für die Zukunft</li>
+<li><strong>Mitteilungspflicht (Art. 19 DSGVO):</strong> Wir teilen Berichtigungen, Löschungen oder Einschränkungen der Verarbeitung allen Empfängern mit, denen deine personenbezogenen Daten offengelegt wurden</li>
+<li><strong>Keine automatisierten Entscheidungen (Art. 22 DSGVO):</strong> Eine automatische Entscheidungsfindung einschließlich Profiling, die dir gegenüber rechtliche Wirkung entfaltet oder dich in ähnlicher Weise erheblich beeinträchtigt, findet nicht statt</li>
 </ul>
+
+<p><strong>Privacy by Design und Datensparsamkeit (Art. 25 DSGVO):</strong> Die App ist nach dem Prinzip der Datensparsamkeit gestaltet: Es werden nur die für die jeweilige Funktion erforderlichen personenbezogenen Daten verarbeitet, und die Voreinstellungen sind datenschutzfreundlich (z. B. keine Statistik-Erhebung ohne Einwilligung).</p>
 
 <h3>Beschwerderecht bei der Aufsichtsbehörde (Art. 77 DSGVO)</h3>
 
@@ -645,6 +686,7 @@
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.5</td><td>2026-10-10</td><td>Ungarische Rechtstexte: offizielle Quellenverweise ergänzt (Szjt., Sztv., Eht., Grt.)</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>USt-IdNr. DE463991390 im Impressum, AGB-Haftungsausschlüsse relativiert, Consent-Aufbewahrung auf 3 Jahre reduziert</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.3</td><td>2026-09-06</td><td>AGB-Klausel zur Trachtvorhersage (statistische Schätzung, keine Garantie)</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.2</td><td>2026-09-05</td><td>Microsoft Azure AI Speech (KI-Sprachassistent, STT/TTS) und Brevo (Konto-E-Mails) als Auftragsverarbeiter ergänzt</td><td>✅ Ja (inhaltliche Änderung)</td></tr>

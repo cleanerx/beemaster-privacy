@@ -203,7 +203,7 @@
 
 <p>Administratorem danych w rozumieniu RODO oraz polskiej ustawy z dnia 10 maja 2018 r. o ochronie danych osobowych (Dz.U. 2018 poz. 1000) jest:</p>
 
-<p class="legal-small">Źródła prawa: <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180001000" target="_blank" rel="noopener">ustawa o ochronie danych osobowych – ISAP</a> oraz <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">RODO (EUR-Lex)</a>.</p>
+<p>Źródła prawa: <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180001000" target="_blank" rel="noopener">ustawa o ochronie danych osobowych – ISAP</a> oraz <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">RODO (EUR-Lex)</a>.</p>
 
 <ul>
 <li><strong>Nazwa:</strong> Jens Kübler</li>
@@ -303,7 +303,7 @@
 <td>Szyfrowane u Supabase (UE)</td>
 </tr>
 <tr>
-<td>10 darmowych kredytów</td>
+<td>40 darmowych kredytów</td>
 <td>Darmowy test</td>
 <td>Szyfrowane u Supabase (UE)</td>
 </tr>
@@ -490,6 +490,7 @@
 <ul>
 <li><strong>Dane konta:</strong> adres e-mail i hash hasła do logowania oraz Supabase-User-ID. Przetwarzanie odbywa się przez Supabase Inc. (UE, Irlandia), podstawa prawna art. 6 ust. 1 lit. b RODO (wykonanie umowy).</li>
 <li><strong>Saldo kredytów i zużycie:</strong> aktualny stan kredytów oraz zużycie przy każdym zapytaniu AI są przechowywane po stronie serwera (dowód świadczenia usługi, art. 6 ust. 1 lit. b RODO).</li>
+<li><strong>Zagregowane statystyki użycia:</strong> W celu zapewnienia działania i planowania wydajności gromadzone są – na podstawie naszego prawnie uzasadnionego interesu (art. 6 ust. 1 lit. f RODO) – zagregowane wskaźniki, których nie można przypisać do poszczególnych osób (np. liczba interakcji z AI i średnia długość rozmowy).</li>
 <li><strong>Rejestry zgód:</strong> zgody wyrażone przy korzystaniu z konta są przechowywane zgodnie z sekcją 6.7.</li>
 </ul>
 
@@ -566,6 +567,22 @@
 <li><strong>Wycofanie:</strong> Dostęp Twojego konta Google do aplikacji możesz w każdej chwili wycofać w swoim koncie Google w sekcji „dostęp podmiotów trzecich”.</li>
 </ul>
 
+<h3>6.13 Kopia zapasowa w chmurze (opcjonalna funkcja premium, Scaleway Object Storage)</h3>
+
+<p>Dla użytkowników premium istnieje opcjonalna możliwość utworzenia <strong>zaszyfrowanej kopii zapasowej w chmurze</strong> danych Twoich uli (kopia zapasowa na wypadek utraty lub zmiany urządzenia). Obowiązuje przy tym:</p>
+
+<ul>
+<li><strong>Cel:</strong> zaszyfrowana kopia zapasowa Twoich lokalnych danych uli (ule, rodziny, przeglądy, zdjęcia, finanse) w chmurze, abyś mógł je przywrócić po utracie lub zmianie urządzenia.</li>
+<li><strong>Szyfrowanie (E2E):</strong> kopia zapasowa jest szyfrowana <strong>po stronie klienta</strong> wybranym przez Ciebie hasłem (passphrase) (PBKDF2 → AES-256-GCM) <strong>przed</strong> przesłaniem. Dostawcy nie mogą odczytać zawartości. Hasło nie jest przechowywane na serwerach; <strong>jeśli je zgubisz, przywrócenie nie jest możliwe</strong> (brak możliwości odzyskania).</li>
+<li><strong>Firma (przechowywanie):</strong> Scaleway S.A.S. (Francja) – Scaleway Object Storage (zgodny z S3), centra danych UE. Zaszyfrowane kontenery są tam przechowywane.</li>
+<li><strong>Zarządzanie (Supabase):</strong> zarządzanie (które urządzenie może przesyłać, metadane kopii zapasowych) odbywa się za pośrednictwem Supabase Inc. (UE, Irlandia) jako podmiotu przetwarzającego. Supabase otrzymuje wyłącznie metadane (czas, rozmiar, suma kontrolna) – <strong>nie</strong> treść.</li>
+<li><strong>Model urządzenia nadrzędnego (master):</strong> dokładnie jedno urządzenie („Master”) może przesyłać kopie zapasowe; inne urządzenia mogą jedynie przywracać kopie zapasowe. Urządzenie nadrzędne możesz zmienić w każdej chwili.</li>
+<li><strong>Automatyczne kopie zapasowe:</strong> po aktywacji aplikacja tworzy automatycznie kopię zapasową mniej więcej co dwa tygodnie (tylko przy połączeniu z siecią), o ile hasło jest zapisane na urządzeniu.</li>
+<li><strong>Przechowywanie:</strong> kopie zapasowe są przechowywane <strong>maksymalnie 9 miesięcy</strong>, a następnie automatycznie usuwane.</li>
+<li><strong>Zgoda:</strong> przechowywanie odbywa się wyłącznie po wyrażeniu przez Ciebie wyraźnej zgody (art. 6 ust. 1 lit. a RODO). Zgodę możesz wycofać w każdej chwili – wszystkie kopie zapasowe w chmurze zostaną wtedy usunięte (art. 17 RODO).</li>
+<li><strong>Usunięcie konta:</strong> przy usunięciu konta usuwane są również wszystkie kopie zapasowe w chmurze.</li>
+</ul>
+
 <h2>7. Twoje prawa (RODO)</h2>
 
 <p>Niniejsza polityka prywatności spełnia jednocześnie obowiązek informacyjny wynikający z <strong>art. 13 RODO</strong> (informacje przekazywane przy zbieraniu danych osobowych).</p>
@@ -623,6 +640,7 @@
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.5</td><td>2026-10-10</td><td>Węgierskie teksty prawne: dodano odniesienia do oficjalnych źródeł (Szjt., Sztv., Eht., Grt.)</td><td>✅ Tak (istotna zmiana)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>NIP DE463991390 w impressum, złagodzenie wyłączeń odpowiedzialności w regulaminie, skrócenie przechowywania zgód do 3 lat</td><td>✅ Tak (istotna zmiana)</td></tr>
 <tr><td>3.3</td><td>2026-09-06</td><td>Klauzula regulaminu dotycząca prognozy pożytków (szacunek statystyczny, bez gwarancji)</td><td>✅ Tak (istotna zmiana)</td></tr>
 <tr><td>3.2</td><td>2026-09-05</td><td>Dodano podmioty przetwarzające Microsoft Azure AI Speech (asystent głosowy AI, STT/TTS) i Brevo (e-maile konta)</td><td>✅ Tak (istotna zmiana)</td></tr>
