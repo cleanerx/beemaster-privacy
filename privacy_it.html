@@ -243,6 +243,7 @@
 <ul>
 <li><strong>Dati dell'account:</strong> indirizzo e-mail e hash della password per l'accesso, nonché l'ID utente Supabase. Il trattamento avviene tramite Supabase Inc. (UE, Irlanda), base giuridica art. 6, par. 1, lett. b) GDPR (esecuzione del contratto).</li>
 <li><strong>Saldo e consumo dei crediti:</strong> Il saldo corrente dei crediti e il consumo per ogni richiesta AI vengono salvati lato server (prova dell'erogazione del servizio, art. 6, par. 1, lett. b) GDPR).</li>
+<li><strong>Hash pseudonimo (prevenzione degli abusi):</strong> Memorizziamo un hash pseudonimo del tuo indirizzo e-mail (HMAC-SHA256 con un segreto esclusivamente lato server), affinché i crediti gratuiti una tantum non possano essere ottenuti di nuovo cancellando e ricreando un account. Non contiene testo in chiaro, viene usato solo per questa finalità e viene cancellato automaticamente 24 mesi dopo l’ultima assegnazione (art. 6, par. 1, lett. f, GDPR).</li>
 <li><strong>Statistiche d'uso aggregate:</strong> per garantire il funzionamento e per la pianificazione della capacità vengono raccolti indicatori aggregati non riconducibili a singole persone (es. numero di interazioni AI e lunghezza media delle conversazioni) sulla base del nostro interesse legittimo (art. 6, par. 1, lett. f) GDPR).</li>
 <li><strong>Documentazione del consenso:</strong> I consensi prestati nell'ambito dell'utilizzo dell'account vengono registrati ai sensi della sezione h).</li>
 </ul>

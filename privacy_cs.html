@@ -355,6 +355,7 @@
 <ul>
 <li><strong>Údaje o účtu:</strong> e-mailová adresa a hash hesla pro přihlášení a Supabase-User-ID. Zpracování probíhá prostřednictvím Supabase Inc. (EU, Irsko), právní základ čl. 6 odst. 1 písm. b) GDPR (plnění smlouvy).</li>
 <li><strong>Kredit a čerpání:</strong> aktuální stav kreditu a čerpání u každého požadavku KI se ukládají na straně serveru (doklad o poskytnutí plnění, čl. 6 odst. 1 písm. b) GDPR).</li>
+<li><strong>Pseudonymní hash (prevence zneužití):</strong> Ukládáme pseudonymní hash e-mailové adresy (HMAC-SHA256 s tajemstvím výhradně na straně serveru), aby jednorázové bezplatné kredity nešly získat opakovaně smazáním a novým vytvořením účtu. Neobsahuje čitelný text, slouží pouze tomuto účelu a maže se automaticky 24 měsíců po posledním přiznání (čl. 6 odst. 1 písm. f) GDPR).</li>
 <li><strong>Agregované statistiky používání:</strong> Pro zajištění provozu a plánování kapacity se na základě našeho oprávněného zájmu (čl. 6 odst. 1 písm. f) GDPR) shromažďují agregované ukazatele, které nelze přiřadit k jednotlivým osobám (např. počet interakcí s AI a průměrná délka konverzace).</li>
 <li><strong>Záznamy o souhlasu:</strong> Souhlasy udělené při používání účtu se ukládají podle části 6.8.</li>
 </ul>

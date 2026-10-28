@@ -243,6 +243,7 @@
 <ul>
 <li><strong>Kontodata:</strong> e-mailadresse og adgangskode-hash til login samt Supabase-bruger-ID'et. Behandlingen sker via Supabase Inc. (EU, Irland), retsgrundlag art. 6, stk. 1, litra b) i GDPR (opfyldelse af kontrakt).</li>
 <li><strong>Credit-saldo og -forbrug:</strong> Den aktuelle credit-saldo samt forbruget pr. KI-anmodning gemmes serverside (dokumentation af ydelsesleveringen, art. 6, stk. 1, litra b) i GDPR).</li>
+<li><strong>Pseudonym hash (misbrugsforebyggelse):</strong> Vi gemmer en pseudonym hash af din e-mailadresse (HMAC-SHA256 med en hemmelighed, der kun findes på serveren), så de engangsfrie kreditter ikke kan opnås igen ved at slette og genskabe en konto. Den indeholder ingen læsbar tekst, bruges kun til dette formål og slettes automatisk 24 måneder efter den seneste tildeling (art. 6, stk. 1, litra f, i GDPR).</li>
 <li><strong>Aggregerede brugsstatistikker:</strong> For at sikre driften og til kapacitetsplanlægning indsamles aggregerede, ikke personhenførbare nøgletal (f.eks. antal AI-interaktioner og gennemsnitlig samtalelængde) på grundlag af vores legitime interesse (art. 6, stk. 1, litra f) i GDPR).</li>
 <li><strong>Samtykkedokumentation:</strong> De samtykker, der gives i forbindelse med kontobrugen, gemmes i henhold til afsnit h).</li>
 </ul>
