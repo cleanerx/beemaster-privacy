@@ -5,141 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Všeobecné obchodné podmienky (VOP) | Beemaster</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.7;
-            color: #333;
-            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
-            min-height: 100vh;
-        }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 2px solid #ffc107;
-            margin-bottom: 2rem;
-        }
-        .lang-switch {
-            text-align: right;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
-        .lang-switch a {
-            color: #f57c00;
-            text-decoration: none;
-            margin-left: 0.5rem;
-        }
-        .lang-switch a.active {
-            font-weight: bold;
-            text-decoration: underline;
-        }
-        .bee-icon { font-size: 3rem; margin-bottom: 0.5rem; }
-        .app-name { font-size: 2.5rem; font-weight: 700; color: #333; margin-bottom: 0.25rem; }
-        .app-name span { color: #ffc107; }
-        .subtitle { color: #666; font-size: 1.2rem; }
-        .last-updated { color: #999; font-size: 0.9rem; margin-top: 0.5rem; }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-        nav a {
-            background: #fff;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            color: #f57c00;
-            border: 2px solid #ffc107;
-            transition: all 0.2s;
-        }
-        nav a:hover, nav a.active { background: #ffc107; color: #333; }
-        main {
-            background: #fff;
-            border-radius: 16px;
-            padding: 2.5rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
-        h1 {
-            color: #f57c00;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #ffc107;
-        }
-        h2 { color: #333; font-size: 1.4rem; margin: 2rem 0 1rem; }
-        h3 { color: #f57c00; font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
-        p { margin-bottom: 1rem; color: #555; }
-        ul, ol { margin: 1rem 0 1rem 2rem; color: #555; }
-        li { margin-bottom: 0.5rem; }
-        .highlight {
-            background: #fff3e0;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #ffc107;
-            margin: 1.5rem 0;
-        }
-        .highlight p { margin: 0; color: #e65100; }
-        .success {
-            background: #e8f5e9;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #4caf50;
-            margin: 1rem 0;
-        }
-        .success p { margin: 0; color: #2e7d32; }
-        .warning {
-            background: #ffebee;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #f44336;
-            margin: 1rem 0;
-        }
-        .warning p { margin: 0; color: #c62828; }
-        .contact-box {
-            background: #fff3e0;
-            border: 2px solid #ffc107;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-        .contact-box h3 { color: #f57c00; margin-top: 0; margin-bottom: 0.5rem; }
-        a { color: #f57c00; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 2rem;
-        }
-        .section { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
-        @media (max-width: 600px) {
-            .container { padding: 1rem; }
-            main { padding: 1.5rem; }
-            .app-name { font-size: 2rem; }
-            nav { flex-direction: column; }
-        }
-    </style>
+:root {
+  --honey-gold: #E9CF00;
+  --honey-accent: #FFB300;
+  --honey-cream: #FFF8E1;
+  --honey-light: #FFEBB4;
+  --honey-brown: #4D3B13;
+  --honey-brown-very-light: #F5F0E6;
+  --hive-brown: #8D6E63;
+  --status-active: #4CAF50;
+  --status-critical: #FF5722;
+  --surface: #FFFFFF;
+  --line: #E8E0D2;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--honey-brown);
+  background-color: var(--honey-cream);
+  background-image: radial-gradient(circle at 50% 0, #FFFDF5 0%, var(--honey-cream) 55%);
+  min-height: 100vh;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 1.5rem 1.25rem 0; }
+header {
+  background: var(--honey-gold);
+  color: var(--honey-brown);
+  border-radius: var(--radius-lg);
+  border-bottom: 4px solid var(--honey-accent);
+  box-shadow: 0 4px 16px rgba(77, 59, 19, .16);
+  padding: 2rem 1.5rem 1.75rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+.brand-mark { width: 72px; height: 72px; margin: 0 auto .9rem; }
+.brand-mark svg { display: block; width: 100%; height: 100%; border-radius: 18px; box-shadow: 0 2px 8px rgba(77, 59, 19, .28); }
+.app-name { margin: 0 0 .35rem; font-size: 2.1rem; font-weight: 800; letter-spacing: -.02em; color: var(--honey-brown); }
+.app-name span { color: var(--honey-brown); }
+.subtitle { margin: 0; font-size: 1.05rem; font-weight: 500; color: var(--honey-brown); }
+.last-updated { margin: .6rem 0 0; font-size: .9rem; font-weight: 500; color: var(--honey-brown); }
+.bee-icon { font-size: 3rem; margin-bottom: 1rem; }
+.lang-switch { margin: 0 0 1rem; text-align: right; font-size: .9rem; color: var(--honey-brown); }
+.lang-switch a { color: var(--honey-brown); font-weight: 600; text-decoration: underline; text-decoration-color: var(--honey-accent); text-underline-offset: 2px; }
+.lang-switch a.active { background: var(--honey-light); border-radius: var(--radius-pill); padding: .05rem .55rem; }
+nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin: 0 0 1.75rem; }
+nav a { display: inline-block; padding: .6rem 1.15rem; border-radius: var(--radius-pill); border: 2px solid var(--honey-gold); background: var(--surface); color: var(--honey-brown); font-weight: 600; text-decoration: none; }
+nav a:hover { background: var(--honey-light); }
+nav a.active { background: var(--honey-gold); border-color: var(--honey-gold); }
+main { background: var(--surface); border: 1px solid var(--honey-brown-very-light); border-radius: var(--radius-lg); box-shadow: 0 6px 24px rgba(77, 59, 19, .10); padding: 2.25rem; overflow-wrap: anywhere; }
+main > :first-child { margin-top: 0; }
+h1 { margin: 0 0 1.25rem; padding-bottom: .6rem; border-bottom: 3px solid var(--honey-gold); color: var(--honey-brown); font-size: 1.75rem; line-height: 1.3; }
+h2 { margin: 2rem 0 .75rem; color: var(--honey-brown); font-size: 1.3rem; line-height: 1.35; }
+h3 { margin: 1.5rem 0 .5rem; padding-left: .6rem; border-left: 4px solid var(--honey-accent); color: var(--honey-brown); font-size: 1.08rem; }
+p { margin: 0 0 .9rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.5rem; }
+li { margin-bottom: .4rem; }
+a { color: var(--honey-brown); text-decoration: underline; text-decoration-color: var(--honey-accent); text-underline-offset: 2px; }
+a:hover { background: var(--honey-light); }
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--honey-accent); outline-offset: 2px; }
+code { background: var(--honey-brown-very-light); border-radius: 6px; padding: .1em .35em; font-size: .92em; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.75rem 0; }
+.highlight, .warning, .success { margin: 1.25rem 0; padding: 1rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--honey-gold); background: var(--honey-cream); }
+.highlight { background: #FFFBEB; }
+.warning { border-left-color: var(--status-critical); background: #FFF4F1; }
+.success { border-left-color: var(--status-active); background: #F3F9F0; }
+.highlight > :last-child, .warning > :last-child, .success > :last-child { margin-bottom: 0; }
+.data-table { width: 100%; margin: 1.25rem 0; border-collapse: collapse; font-size: .95rem; }
+.data-table th, .data-table td { padding: .7rem .8rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.data-table th { background: var(--honey-gold); color: var(--honey-brown); font-weight: 700; }
+.data-table tr:nth-child(even) td { background: #FDFBF4; }
+.contact-box { margin-top: 2rem; padding: 1.5rem; border-radius: var(--radius-md); background: var(--honey-brown); color: var(--honey-cream); }
+.contact-box h2, .contact-box h3 { margin-top: 0; padding-left: 0; border-left: 0; color: var(--honey-gold); }
+.contact-box a { color: var(--honey-cream); text-decoration-color: var(--honey-gold); }
+.contact-box a:hover { background: rgba(233, 207, 0, .18); }
+.section { margin-bottom: 2rem; }
+.card { margin: 1.25rem 0; padding: 1.25rem; border-radius: var(--radius-md); background: var(--honey-brown-very-light); }
+.btn { display: inline-block; padding: .6rem 1.2rem; border-radius: var(--radius-pill); background: var(--honey-gold); color: var(--honey-brown); font-weight: 700; text-decoration: none; }
+.muted, .secondary { color: var(--hive-brown); }
+.legal-small { font-size: .9em; opacity: .85; }
+footer { padding: 2rem 1rem 2.5rem; text-align: center; color: var(--honey-brown); font-size: .85rem; opacity: .8; }
+footer p { margin: .25rem 0; }
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .container { padding: 1rem .85rem 0; }
+  header { padding: 1.6rem 1rem 1.4rem; }
+  .brand-mark { width: 60px; height: 60px; }
+  .app-name { font-size: 1.75rem; }
+  main { padding: 1.35rem 1.1rem; border-radius: var(--radius-md); }
+  h1 { font-size: 1.45rem; }
+  .data-table { font-size: .85rem; }
+  .data-table th, .data-table td { padding: .5rem .45rem; }
+  nav a { padding: .5rem .9rem; font-size: .95rem; }
+}
+/* Bewusst KEIN Dark-Theme-Block: Die App ist light-only
+   (BeemasterTheme(darkTheme = false)), der WebView wuerde aber dem System-Darkmode
+   folgen. Ohne Block bleibt das Dokument im Beemaster-Hell-Schema. */
+</style>
+    <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
     <div class="container">
-        <div class="lang-switch">
-            <a href="agb.html">🇩🇪 Deutsch</a> |
-            <a href="agb_at.html">🇦🇹 Deutsch (AT)</a> |
-            <a href="agb_en.html">🇬🇧 English</a> |
-            <a href="agb_hu.html">🇭🇺 Magyar</a> |
-            <a href="agb_pl.html">🇵🇱 Polski</a> |
-            <a href="agb_sk.html" class="active">🇸🇰 Slovenčina</a>
-        </div>
         <header>
-            <div class="bee-icon">🐝</div>
+            <div class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><g transform="translate(0,-28.362183)"><rect style="opacity:1;fill:#ffebb4;fill-opacity:1;stroke:#eed089;stroke-width:1.1200;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" width="1027.7296" height="1025.6576" x="-2.0720356" y="0.41440767" transform="translate(0,28.362183)" /><path style="fill:none;stroke:#4d3b13;stroke-width:103.0734;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 279.67949,144.96004 461.96951,0 230.02567,398.43271 -230.21659,398.72895 -460.35409,0 L 50.847968,543.32695 z" /><path transform="matrix(0,45.525231,-45.525231,0,1207.3846,88.81291)" style="fill:#e9cf00;fill-opacity:1;fill-rule:evenodd;stroke:#4d3b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 15.15259,15.246049 a 4.2801147,2.115459 0 1 1 -8.560229,0 4.2801147,2.115459 0 1 1 8.560229,0 z" /><path style="fill:#4d3b13;fill-opacity:1;fill-rule:evenodd;stroke:#4d3b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 6.6907539,15.39364 a 1.0331311,0.88554096 0 1 1 -2.0662622,0 1.0331311,0.88554096 0 1 1 2.0662622,0 z" transform="matrix(0,45.525231,-45.525231,0,1215.2236,85.453375)" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 442.17407,670.32348 c 0,0 -75.06701,-13.55586 -82.34308,99.26431 -7.27612,112.82017 -7.27612,112.82017 -7.27612,112.82017" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 586.27854,670.32348 c 0,0 75.06701,-13.55586 82.34308,99.26431 7.27611,112.82017 7.27611,112.82017 7.27611,112.82017" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 588.24764,546.39215 c 0,0 72.63555,-23.30004 94.66999,87.58645 22.03444,110.88649 22.03444,110.88649 22.03444,110.88649" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 440.63495,546.39215 c 0,0 -72.63551,-23.30004 -94.66999,87.58645 -22.03444,110.88649 -22.03444,110.88649 -22.03444,110.88649" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 591.57372,501.70609 c 0,0 72.63555,23.30008 94.66999,-87.58645 22.03444,-110.88649 22.03444,-110.88649 22.03444,-110.88649" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7630;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 437.27542,501.70609 c 0,0 -72.6356,23.30008 -94.67004,-87.58645 C 320.57094,303.23315 320.57094,303.23315 320.57094,303.23315" /><path style="fill:none;stroke:#4d3b13;stroke-width:45.5252;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 602.89243,588.26426 c 0,0 -85.12053,-26.10212 -182.53492,0" /><path style="fill:#4d3b13;fill-opacity:1;fill-rule:evenodd;stroke:#4d3b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 6.6907539,15.39364 a 1.0331311,0.88554096 0 1 1 -2.0662622,0 1.0331311,0.88554096 0 1 1 2.0662622,0 z" transform="matrix(0,45.525231,-45.525231,0,1223.0625,177.28077)" /><path style="fill:none;stroke:#4d3b13;stroke-width:45.5252;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 602.33247,472.7189 c 0,0 -85.12053,26.10212 -182.53492,0" /><path style="fill:none;stroke:#4d3b13;stroke-width:45.5252;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 603.45234,674.69363 c 0,0 -85.12053,-26.10212 -182.53491,0" /><path style="fill:none;stroke:#4d3b13;stroke-width:9.1050;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 546.63084,295.97493 c 0,0 -24.29044,-37.33921 0.81354,-72.35485 18.59815,-25.94132 28.26211,-14.86294 28.26211,-14.86294" /><path style="fill:none;stroke:#4d3b13;stroke-width:9.1050;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 488.96786,295.97493 c 0,0 24.29044,-37.33921 -0.81354,-72.35485 -18.59815,-25.94132 -28.26211,-14.86294 -28.26211,-14.86294" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.5300;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 459.4229,499.89963 c 5.52253,-177.88816 -37.63614,-39.9807 -184.68831,102.6488 -51.7562,42.1308 -54.56323,53.5187 -43.93758,91.2697 16.96589,45.1676 70.62016,-0.2341 125.99856,-19.5984 34.904,-12.2049 100.22838,-88.6947 102.62733,-174.3201 z" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.5300;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 568.043,499.89963 c -5.52253,-177.88816 37.63614,-39.9807 184.68831,102.6488 51.7562,42.1308 54.56323,53.5187 43.93758,91.2697 -16.96589,45.1676 -70.62016,-0.2341 -125.99856,-19.5984 -34.904,-12.2049 -100.22838,-88.6947 -102.62733,-174.3201 z" /></g></svg></div>
             <h1 class="app-name">Bee<span>master</span></h1>
             <p class="subtitle">Aplikácia na správu včelstiev pre včelárov</p>
             <p class="last-updated">Všeobecné obchodné podmienky – Version 2026-09-17, stav k: 18. augusta 2026</p>
         </header>
+
+        <div class="lang-switch">
+            <a href="agb.html">🇩🇪 Deutsch</a> |
+            <a href="agb_at.html">🇦🇹 Deutsch (AT)</a> |
+            <a href="agb_hu.html">🇭🇺 Magyar</a>
+        </div>
 
         <nav>
             <a href="index.html">Ochrana údajov</a>
@@ -322,10 +305,11 @@
 <li>Prémiové funkcie (napr. rozšírené kvóty úľov) sú spoplatnené. Poskytovateľ funkcie technicky zabezpečuje; kúpna zmluva sa uzatvára so spoločnosťou Google Commerce Limited (pozri rámček vyššie).</li>
 <li>Ceny sa pred nákupom zobrazia v obchode Google Play vrátane platnej DPH.</li>
 <li><strong>Predplatné sa automaticky predlžujú</strong> na zvolené obdobie, pokiaľ ich neodvoláte pred skončením aktuálneho obdobia. Zrušenie sa uskutočňuje v správe predplatného v obchode Google Play. Google informuje o každom predĺžení podľa svojich podmienok. Zrušenie nadobúda účinnosť na konci už zaplateného obdobia; zaplatené poplatky za aktuálne obdobie sa nepomerne nevracajú.</li>
+<li><strong>Základné kredity:</strong> Predplatné zahŕňa základný kreditný rozpočet na každé zúčtovacie obdobie (HOBBY 400, STANDARD 1 200, PREMIUM 4 000 základných kreditov mesačne; bezplatná základná verzia bez mesačného rozpočtu dostane jednorazovo 40 uvítacích kreditov). Nevyčerpané základné kredity zostávajú ako zostatok.</li>
 <li><strong>Jednorazové nákupy</strong> (v obchode takto označené) sa nepredlžujú a neuplynutia.</li>
 <li>Vrátenie platieb sa uskutočňuje výlučne podľa pravidiel obchodu Google Play. Žiadosť možno podať cez váš účet Google.</li>
 <li>Platba sa uskutočňuje cez Google Play. Poskytovateľ <strong>nedostáva a neuchováva</strong> platobné údaje (ani údaje o karte, účte alebo čísle bankového účtu).</li>
-<li><strong>Kredity (AI kredit):</strong> Pre AI funkcie (najmä hlasového asistenta) si používateľ môže zakúpiť balíky kreditov prostredníctvom obchodu Google Play. Jeden kredit zodpovedá hodnote až 1.000 spracovaných tokenov (orientačná cena približne 5 centov). Ceny balíkov sa pred nákupom zobrazujú v obchode Google Play.</li>
+<li><strong>Kredity (AI kredit):</strong> Pre AI funkcie (najmä hlasového asistenta) si používateľ môže zakúpiť balíky kreditov prostredníctvom obchodu Google Play. Jeden kredit zodpovedá hodnote až 1.000 spracovaných tokenov (orientačná cena približne 5 centov). Ceny balíkov sa pred nákupom zobrazujú v obchode Google Play. Cloudová hlasová funkcia sa účtuje 24 kreditmi za začatú minútu.</li>
 <li><strong>Žiadne prepadnutie:</strong> Zakúpené kredity neprepadajú, a to ani po dlhšej nečinnosti.</li>
 <li><strong>Čerpanie:</strong> Čerpanie prebieha presne na tokeny pri každom požiadavku AI a je zaznamenávané na strane servera. Nevyčerpané kredity zostávajú ako kredit.</li>
 <li><strong>Vrátenie pri zrušení účtu:</strong> Pri zrušení účtu Poskytovateľ na žiadosť používateľa vráti zostávajúci zostatok (kontakt: pozri časť „Kontakt" v týchto VOP). Na obstaranie kreditov sa inak vzťahuje zákonné právo na odstúpenie od zmluvy (pozri časť o práve na odstúpenie od zmluvy).</li>
@@ -388,7 +372,8 @@
 </ol>
 
 <p class="legal-small">Poznámka k ODR: Bývalá platforma EÚ na online riešenie sporov
- (ODR) bola zrušená nariadením (EÚ) 2024/3228 a od 20. júla 2025 nie je dostupná.</p>
+ (ODR) bola zrušená nariadením (EÚ) 2024/3228 a od 20. júla 2025 nie je dostupná.
+</p>
 
 <h2>15. § Salvátorská klauzula</h2>
 
@@ -415,7 +400,11 @@
 <li><strong>E-mail:</strong> <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a></li>
 </ul>
 
-<p><strong>Bezpečnostné aktualizácie a doba podpory (Cyber Resilience Act):</strong> Poskytovateľ poskytuje bezpečnostné aktualizácie aplikácie na odstránenie bezpečnostných zraniteľností a plní požiadavky nariadenia (EÚ) 2024/2847 (Cyber Resilience Act, <a href="https://eur-lex.europa.eu/eli/reg/2024/2847/oj" target="_blank" rel="noopener">EUR-Lex</a>). Doba podpory je najmenej päť rokov od uvedenia príslušnej verzie na trh; zverejnené bezpečnostné aktualizácie zostávajú dostupné najmenej desať rokov alebo do konca doby podpory. Bezpečnostné aktualizácie sa poskytujú bezplatne. Používatelia budú informovaní o konci doby podpory; predpokladaný dátum ukončenia (najmenej mesiac a rok) bude uvedený pri kúpe. Zraniteľnosti je možné nahlásiť na <a href="mailto:security@dolphincrusher.com">security@dolphincrusher.com</a>. V prípade ukončenia činnosti budú používatelia a príslušné orgány dohľadu nad trhom informovaní v predstihu. Podrobné bezpečnostné informácie (koordinované zverejňovanie zraniteľností, pokyny na bezpečné používanie, vyhlásenie o zhode EÚ) sú k dispozícii v aplikácii v časti „Zabezpečenie“ a na webovej stránke uvedenej v právnych informáciách.<br>::: highlight<br><strong>Poznámka:</strong> VOP boli formulované podľa najlepšieho vedomia, s prihliadnutím na<br>právne predpisy účinné v čase ich vyhotovenia.<br>:::</p>
+<p><strong>Bezpečnostné aktualizácie a doba podpory (Cyber Resilience Act):</strong> Poskytovateľ poskytuje bezpečnostné aktualizácie aplikácie na odstránenie bezpečnostných zraniteľností a plní požiadavky nariadenia (EÚ) 2024/2847 (Cyber Resilience Act, <a href="https://eur-lex.europa.eu/eli/reg/2024/2847/oj" target="_blank" rel="noopener">EUR-Lex</a>). Doba podpory je najmenej päť rokov od uvedenia príslušnej verzie na trh; zverejnené bezpečnostné aktualizácie zostávajú dostupné najmenej desať rokov alebo do konca doby podpory. Bezpečnostné aktualizácie sa poskytujú bezplatne. Používatelia budú informovaní o konci doby podpory; predpokladaný dátum ukončenia (najmenej mesiac a rok) bude uvedený pri kúpe. Zraniteľnosti je možné nahlásiť na <a href="mailto:support@dolphincrusher.com">support@dolphincrusher.com</a>. V prípade ukončenia činnosti budú používatelia a príslušné orgány dohľadu nad trhom informovaní v predstihu. Podrobné bezpečnostné informácie (koordinované zverejňovanie zraniteľností, pokyny na bezpečné používanie, vyhlásenie o zhode EÚ) sú k dispozícii v aplikácii v časti „Zabezpečenie“ a na webovej stránke uvedenej v právnych informáciách.</p>
+
+<div class="highlight">
+<p><strong>Poznámka:</strong> VOP boli formulované podľa najlepšieho vedomia, s prihliadnutím na<br>právne predpisy účinné v čase ich vyhotovenia.</p>
+</div>
 </main>
 
         <footer>

@@ -5,191 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacybeleid | Beemaster</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.7;
-            color: #333;
-            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 2px solid #d4a574;
-            margin-bottom: 2rem;
-        }
-        .app-name {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #8b4513;
-            margin-bottom: 0.5rem;
-        }
-        .app-name span {
-            color: #f5a623;
-        }
-        .subtitle {
-            color: #666;
-            font-size: 1.1rem;
-        }
-        .bee-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        main {
-            background: white;
-            border-radius: 16px;
-            padding: 2.5rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #8b4513;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #f5a623;
-        }
-        h2 {
-            color: #333;
-            font-size: 1.4rem;
-            margin: 2rem 0 1rem;
-        }
-        h3 {
-            color: #555;
-            font-size: 1.1rem;
-            margin: 1.5rem 0 0.75rem;
-        }
-        p {
-            margin-bottom: 1rem;
-            color: #444;
-        }
-        ul {
-            margin: 1rem 0 1rem 2rem;
-            color: #444;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        .highlight {
-            background: #fff8e7;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #f5a623;
-            margin: 1.5rem 0;
-        }
-        .warning {
-            background: #fff3f3;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #e74c3c;
-            margin: 1.5rem 0;
-        }
-        .success {
-            background: #f0fff0;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #27ae60;
-            margin: 1.5rem 0;
-        }
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-        }
-        .data-table th, .data-table td {
-            padding: 0.75rem;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        .data-table th {
-            background: #f5a623;
-            color: white;
-        }
-        .data-table tr:nth-child(even) {
-            background: #fafafa;
-        }
-        .contact-box {
-            background: linear-gradient(135deg, #8b4513, #a0522d);
-            color: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-        .contact-box h3 {
-            color: #f5a623;
-            margin-top: 0;
-        }
-        .contact-box a {
-            color: #f5a623;
-        }
-        a {
-            color: #8b4513;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 2rem;
-        }
-        .last-updated {
-            color: #888;
-            font-size: 0.9rem;
-            margin-top: 1rem;
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 1rem;
-            }
-            main {
-                padding: 1.5rem;
-            }
-            .app-name {
-                font-size: 2rem;
-            }
-            .data-table {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+:root {
+  --honey-gold: #E9CF00;
+  --honey-accent: #FFB300;
+  --honey-cream: #FFF8E1;
+  --honey-light: #FFEBB4;
+  --honey-brown: #4D3B13;
+  --honey-brown-very-light: #F5F0E6;
+  --hive-brown: #8D6E63;
+  --status-active: #4CAF50;
+  --status-critical: #FF5722;
+  --surface: #FFFFFF;
+  --line: #E8E0D2;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--honey-brown);
+  background-color: var(--honey-cream);
+  background-image: radial-gradient(circle at 50% 0, #FFFDF5 0%, var(--honey-cream) 55%);
+  min-height: 100vh;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 1.5rem 1.25rem 0; }
+header {
+  background: var(--honey-gold);
+  color: var(--honey-brown);
+  border-radius: var(--radius-lg);
+  border-bottom: 4px solid var(--honey-accent);
+  box-shadow: 0 4px 16px rgba(77, 59, 19, .16);
+  padding: 2rem 1.5rem 1.75rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+.brand-mark { width: 72px; height: 72px; margin: 0 auto .9rem; }
+.brand-mark svg { display: block; width: 100%; height: 100%; border-radius: 18px; box-shadow: 0 2px 8px rgba(77, 59, 19, .28); }
+.app-name { margin: 0 0 .35rem; font-size: 2.1rem; font-weight: 800; letter-spacing: -.02em; color: var(--honey-brown); }
+.app-name span { color: var(--honey-brown); }
+.subtitle { margin: 0; font-size: 1.05rem; font-weight: 500; color: var(--honey-brown); }
+.last-updated { margin: .6rem 0 0; font-size: .9rem; font-weight: 500; color: var(--honey-brown); }
+.bee-icon { font-size: 3rem; margin-bottom: 1rem; }
+.lang-switch { margin: 0 0 1rem; text-align: right; font-size: .9rem; color: var(--honey-brown); }
+.lang-switch a { color: var(--honey-brown); font-weight: 600; text-decoration: underline; text-decoration-color: var(--honey-accent); text-underline-offset: 2px; }
+.lang-switch a.active { background: var(--honey-light); border-radius: var(--radius-pill); padding: .05rem .55rem; }
+nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin: 0 0 1.75rem; }
+nav a { display: inline-block; padding: .6rem 1.15rem; border-radius: var(--radius-pill); border: 2px solid var(--honey-gold); background: var(--surface); color: var(--honey-brown); font-weight: 600; text-decoration: none; }
+nav a:hover { background: var(--honey-light); }
+nav a.active { background: var(--honey-gold); border-color: var(--honey-gold); }
+main { background: var(--surface); border: 1px solid var(--honey-brown-very-light); border-radius: var(--radius-lg); box-shadow: 0 6px 24px rgba(77, 59, 19, .10); padding: 2.25rem; overflow-wrap: anywhere; }
+main > :first-child { margin-top: 0; }
+h1 { margin: 0 0 1.25rem; padding-bottom: .6rem; border-bottom: 3px solid var(--honey-gold); color: var(--honey-brown); font-size: 1.75rem; line-height: 1.3; }
+h2 { margin: 2rem 0 .75rem; color: var(--honey-brown); font-size: 1.3rem; line-height: 1.35; }
+h3 { margin: 1.5rem 0 .5rem; padding-left: .6rem; border-left: 4px solid var(--honey-accent); color: var(--honey-brown); font-size: 1.08rem; }
+p { margin: 0 0 .9rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.5rem; }
+li { margin-bottom: .4rem; }
+a { color: var(--honey-brown); text-decoration: underline; text-decoration-color: var(--honey-accent); text-underline-offset: 2px; }
+a:hover { background: var(--honey-light); }
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--honey-accent); outline-offset: 2px; }
+code { background: var(--honey-brown-very-light); border-radius: 6px; padding: .1em .35em; font-size: .92em; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.75rem 0; }
+.highlight, .warning, .success { margin: 1.25rem 0; padding: 1rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--honey-gold); background: var(--honey-cream); }
+.highlight { background: #FFFBEB; }
+.warning { border-left-color: var(--status-critical); background: #FFF4F1; }
+.success { border-left-color: var(--status-active); background: #F3F9F0; }
+.highlight > :last-child, .warning > :last-child, .success > :last-child { margin-bottom: 0; }
+.data-table { width: 100%; margin: 1.25rem 0; border-collapse: collapse; font-size: .95rem; }
+.data-table th, .data-table td { padding: .7rem .8rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.data-table th { background: var(--honey-gold); color: var(--honey-brown); font-weight: 700; }
+.data-table tr:nth-child(even) td { background: #FDFBF4; }
+.contact-box { margin-top: 2rem; padding: 1.5rem; border-radius: var(--radius-md); background: var(--honey-brown); color: var(--honey-cream); }
+.contact-box h2, .contact-box h3 { margin-top: 0; padding-left: 0; border-left: 0; color: var(--honey-gold); }
+.contact-box a { color: var(--honey-cream); text-decoration-color: var(--honey-gold); }
+.contact-box a:hover { background: rgba(233, 207, 0, .18); }
+.section { margin-bottom: 2rem; }
+.card { margin: 1.25rem 0; padding: 1.25rem; border-radius: var(--radius-md); background: var(--honey-brown-very-light); }
+.btn { display: inline-block; padding: .6rem 1.2rem; border-radius: var(--radius-pill); background: var(--honey-gold); color: var(--honey-brown); font-weight: 700; text-decoration: none; }
+.muted, .secondary { color: var(--hive-brown); }
+.legal-small { font-size: .9em; opacity: .85; }
+footer { padding: 2rem 1rem 2.5rem; text-align: center; color: var(--honey-brown); font-size: .85rem; opacity: .8; }
+footer p { margin: .25rem 0; }
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .container { padding: 1rem .85rem 0; }
+  header { padding: 1.6rem 1rem 1.4rem; }
+  .brand-mark { width: 60px; height: 60px; }
+  .app-name { font-size: 1.75rem; }
+  main { padding: 1.35rem 1.1rem; border-radius: var(--radius-md); }
+  h1 { font-size: 1.45rem; }
+  .data-table { font-size: .85rem; }
+  .data-table th, .data-table td { padding: .5rem .45rem; }
+  nav a { padding: .5rem .9rem; font-size: .95rem; }
+}
+/* Bewusst KEIN Dark-Theme-Block: Die App ist light-only
+   (BeemasterTheme(darkTheme = false)), der WebView wuerde aber dem System-Darkmode
+   folgen. Ohne Block bleibt das Dokument im Beemaster-Hell-Schema. */
+</style>
+    <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="bee-icon">🐝</div>
+            <div class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><g transform="translate(0,-28.362183)"><rect style="opacity:1;fill:#ffebb4;fill-opacity:1;stroke:#eed089;stroke-width:1.1200;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" width="1027.7296" height="1025.6576" x="-2.0720356" y="0.41440767" transform="translate(0,28.362183)" /><path style="fill:none;stroke:#4d3b13;stroke-width:103.0734;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 279.67949,144.96004 461.96951,0 230.02567,398.43271 -230.21659,398.72895 -460.35409,0 L 50.847968,543.32695 z" /><path transform="matrix(0,45.525231,-45.525231,0,1207.3846,88.81291)" style="fill:#e9cf00;fill-opacity:1;fill-rule:evenodd;stroke:#4d3b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 15.15259,15.246049 a 4.2801147,2.115459 0 1 1 -8.560229,0 4.2801147,2.115459 0 1 1 8.560229,0 z" /><path style="fill:#4d3b13;fill-opacity:1;fill-rule:evenodd;stroke:#4d3b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 6.6907539,15.39364 a 1.0331311,0.88554096 0 1 1 -2.0662622,0 1.0331311,0.88554096 0 1 1 2.0662622,0 z" transform="matrix(0,45.525231,-45.525231,0,1215.2236,85.453375)" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 442.17407,670.32348 c 0,0 -75.06701,-13.55586 -82.34308,99.26431 -7.27612,112.82017 -7.27612,112.82017 -7.27612,112.82017" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 586.27854,670.32348 c 0,0 75.06701,-13.55586 82.34308,99.26431 7.27611,112.82017 7.27611,112.82017 7.27611,112.82017" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 588.24764,546.39215 c 0,0 72.63555,-23.30004 94.66999,87.58645 22.03444,110.88649 22.03444,110.88649 22.03444,110.88649" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 440.63495,546.39215 c 0,0 -72.63551,-23.30004 -94.66999,87.58645 -22.03444,110.88649 -22.03444,110.88649 -22.03444,110.88649" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 591.57372,501.70609 c 0,0 72.63555,23.30008 94.66999,-87.58645 22.03444,-110.88649 22.03444,-110.88649 22.03444,-110.88649" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.7630;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 437.27542,501.70609 c 0,0 -72.6356,23.30008 -94.67004,-87.58645 C 320.57094,303.23315 320.57094,303.23315 320.57094,303.23315" /><path style="fill:none;stroke:#4d3b13;stroke-width:45.5252;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 602.89243,588.26426 c 0,0 -85.12053,-26.10212 -182.53492,0" /><path style="fill:#4d3b13;fill-opacity:1;fill-rule:evenodd;stroke:#4d3b13;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 6.6907539,15.39364 a 1.0331311,0.88554096 0 1 1 -2.0662622,0 1.0331311,0.88554096 0 1 1 2.0662622,0 z" transform="matrix(0,45.525231,-45.525231,0,1223.0625,177.28077)" /><path style="fill:none;stroke:#4d3b13;stroke-width:45.5252;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 602.33247,472.7189 c 0,0 -85.12053,26.10212 -182.53492,0" /><path style="fill:none;stroke:#4d3b13;stroke-width:45.5252;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 603.45234,674.69363 c 0,0 -85.12053,-26.10212 -182.53491,0" /><path style="fill:none;stroke:#4d3b13;stroke-width:9.1050;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 546.63084,295.97493 c 0,0 -24.29044,-37.33921 0.81354,-72.35485 18.59815,-25.94132 28.26211,-14.86294 28.26211,-14.86294" /><path style="fill:none;stroke:#4d3b13;stroke-width:9.1050;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 488.96786,295.97493 c 0,0 24.29044,-37.33921 -0.81354,-72.35485 -18.59815,-25.94132 -28.26211,-14.86294 -28.26211,-14.86294" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.5300;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 459.4229,499.89963 c 5.52253,-177.88816 -37.63614,-39.9807 -184.68831,102.6488 -51.7562,42.1308 -54.56323,53.5187 -43.93758,91.2697 16.96589,45.1676 70.62016,-0.2341 125.99856,-19.5984 34.904,-12.2049 100.22838,-88.6947 102.62733,-174.3201 z" /><path style="fill:none;stroke:#4d3b13;stroke-width:22.5300;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="m 568.043,499.89963 c -5.52253,-177.88816 37.63614,-39.9807 184.68831,102.6488 51.7562,42.1308 54.56323,53.5187 43.93758,91.2697 -16.96589,45.1676 -70.62016,-0.2341 -125.99856,-19.5984 -34.904,-12.2049 -100.22838,-88.6947 -102.62733,-174.3201 z" /></g></svg></div>
             <h1 class="app-name">Bee<span>master</span></h1>
             <p class="subtitle">De bijenkorfbeheer-app voor imkers</p>
             <p class="last-updated">Versie 3.4 (2026-09-17) – Laatst bijgewerkt: 5 september 2026</p>
         </header>
 
-        <div class="lang-switch" style="text-align:right;margin:-1rem 0 1rem;font-size:0.9rem;">
-            <a href="index.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇩🇪 Deutsch</a> |
-            <a href="privacy_at.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇦🇹 Deutsch (AT)</a> |
-            <a href="privacy_en.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇬🇧 English</a> |
-            <a href="privacy_cs.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇨🇿 Čeština</a> |
-            <a href="privacy_be.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇧🇪 Français (BE)</a> |
-            <a href="privacy_be-nl.html" style="color:#8b4513;text-decoration:none;font-weight:bold;text-decoration:underline;margin-left:0.5rem;">🇧🇪 Nederlands (BE)</a> |
-            <a href="privacy_nl.html" style="color:#8b4513;text-decoration:none;margin-left:0.5rem;">🇳🇱 Nederlands</a>
+        <div class="lang-switch">
+            <a href="index.html">🇩🇪 Deutsch</a> |
+            <a href="privacy_at.html">🇦🇹 Deutsch (AT)</a> |
+            <a href="privacy_hu.html">🇭🇺 Magyar</a>
         </div>
 
-        <nav style="display:flex;justify-content:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;">
-            <a href="privacy_be-nl.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;font-weight:bold;">Privacybeleid</a>
-            <a href="agb_be-nl.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Algemene voorwaarden</a>
-            <a href="eula_be-nl.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">EULA</a>
-            <a href="impressum_be-nl.html" style="background:#fff;padding:0.75rem 1.5rem;border-radius:8px;border:2px solid #f5a623;color:#8b4513;">Colofon</a>
+        <nav>
+            <a href="privacy_be-nl.html">Privacybeleid</a>
+            <a href="agb_be-nl.html">Algemene voorwaarden</a>
+            <a href="eula_be-nl.html">EULA</a>
+            <a href="impressum_be-nl.html">Colofon</a>
         </nav>
 
         <main>
@@ -486,7 +425,7 @@
 <p>Voor de weergave van weergegevens en de afleiding van behandelingsaanbevelingen (bv. geschiktheid van varroabehandeling) worden naargelang de locatie de volgende aanbieders gebruikt:</p>
 
 <ul>
-<li><strong>Bright Sky (Duitse weerdienst)</strong> voor Duitsland en Bulgarije (CC BY 4.0). Daarbij worden de <strong>geografische coördinaten</strong> van de opgevraagde locatie en het IP-adres doorgegeven aan <em>api.brightsky.dev</em>. Er worden geen accountgegevens of identificators meegestuurd.</li>
+<li><strong>Bright Sky (particulier open-sourceproject; databron: Duitse weerdienst)</strong> voor Duitsland en Bulgarije (CC BY 4.0). Daarbij worden de <strong>geografische coördinaten</strong> van de opgevraagde locatie en het IP-adres doorgegeven aan <em>api.brightsky.dev</em>. Er worden geen accountgegevens of identificators meegestuurd.</li>
 <li><strong>Nationale weerdiensten</strong> voor Tsjechië (CHMI/ČHMÚ), Hongarije (HungaroMet), Polen (IMGW-PIB) en Slowakije (SHMÚ) (respectievelijk CC BY 4.0 / CC BY-SA). Deze krijgen toegang tot <strong>openbare stationsgegevens</strong>; daarbij worden <strong>geen locatiecoördinaten van de gebruiker</strong> aan de diensten doorgegeven. Enkel het IP-adres van het toestel wordt technisch meegestuurd.</li>
 </ul>
 
@@ -610,6 +549,33 @@
 <li><strong>Accountverwijdering :</strong> bij verwijdering van uw account worden ook alle cloudback-ups verwijderd.</li>
 </ul>
 
+<h3>6.14 Mistral AI (AI-taalmoedel, OCR en spraakverwerking)</h3>
+
+<p>Voor AI-functies gebruikt de Dienstverlener diensten van <strong>Mistral AI SAS</strong>, 15 rue des Halles, 75001 Paris, Frankrijk (EU):</p>
+
+<ul>
+<li><strong>Doel:</strong> antwoorden van de AI-assistent, kenniszoekopdrachten (embeddings), tekstherkenning van gescande bonnen (OCR), spraakherkenning (STT) en spraakuitvoer (TTS).</li>
+<li><strong>Gegevens:</strong> tekstinhoud en prompts, spraakopnamen en transcripties, technische metadata. De overdracht is versleuteld (TLS); de API-sleutel wordt uitsluitend server-side bewaard.</li>
+<li><strong>Geen training:</strong> het gebruik van API-aanroepen om de Mistral-modellen te trainen is uitgeschakeld. De App biedt geen feedbackfunctie (duim omhoog/omlaag).</li>
+<li><strong>Bewaring:</strong> invoer en uitvoer worden bewaard voor de duur van de verwerking en tot 30 dagen voor misbruikcontrole (zero data retention is niet overeengekomen).</li>
+<li><strong>Locatie en verwerking:</strong> EU (Frankrijk); verwerkersovereenkomst (DPA) volgens art. 28 AVG; subverwerkers: <a href="https://trust.mistral.ai/subprocessors" target="_blank" rel="noopener">trust.mistral.ai/subprocessors</a>.</li>
+<li><strong>Rechtsgrondslag:</strong> art. 6 lid 1 sub b AVG (uitvoering van de gekochte premiumfunctie) of toestemming.</li>
+<li><strong>Privacyverklaring:</strong> <a href="https://legal.mistral.ai/terms/privacy-policy" target="_blank" rel="noopener">legal.mistral.ai/terms/privacy-policy</a>.</li>
+</ul>
+
+<h3>6.15 Cloudflare Turnstile (CAPTCHA bij aanmelden)</h3>
+
+<p>Ter bescherming tegen geautomatiseerde aanmeldingen kan bij het aanmelden <strong>Cloudflare Turnstile</strong> worden gebruikt:</p>
+
+<ul>
+<li><strong>Doel:</strong> onderscheid maken tussen menselijke en geautomatiseerde toegang (CAPTCHA) bij aanmelden en registreren.</li>
+<li><strong>Gegevens:</strong> IP-adres, browser- en apparaatinformatie en interactiegegevens; de widget wordt geladen van <em>challenges.cloudflare.com</em> in een WebView. Volgens de aanbieder plaatst Turnstile geen advertentiecookies.</li>
+<li><strong>Bedrijf:</strong> Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, VS (Cloudflare Germany GmbH als EU-vertegenwoordiger).</li>
+<li><strong>Verwerking:</strong> verwerkersovereenkomst (DPA) volgens art. 28 AVG; doorgifte naar de VS op basis van de EU-standaardcontractbepalingen (art. 46 AVG).</li>
+<li><strong>Rechtsgrondslag:</strong> art. 6 lid 1 sub f AVG (beveiliging van de aanmelding, misbruikpreventie) of sub b voor zover nodig voor de aanmelding.</li>
+<li><strong>Privacyverklaring:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a>.</li>
+</ul>
+
 <h2>7. Uw rechten (AVG)</h2>
 
 <p>Dit privacybeleid voldoet tevens aan de informatieplicht van <strong>artikel 13 AVG</strong> (informatie bij het verzamelen van persoonsgegevens).</p>
@@ -683,7 +649,7 @@
 </main>
 
         <footer>
-            <p>🐝 Beemaster – bijenbeheer</p>
+            <p>Beemaster – bijenbeheer</p>
             <p>© 2026 Jens Kübler | <a href="agb_be-nl.html">Algemene voorwaarden</a> | <a href="eula_be-nl.html">EULA</a> | <a href="impressum_be-nl.html">Colofon</a></p>
             <p>Privacybeleid Versie 3.4 (2026-09-17). <a href="index.html">Deutsche Version</a></p>
         </footer>

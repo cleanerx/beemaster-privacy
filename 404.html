@@ -5,80 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weiterleitung | Beemaster</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.7;
-            color: #333;
-            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-            text-align: center;
-        }
-        header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 2px solid #d4a574;
-            margin-bottom: 2rem;
-        }
-        .app-name {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #8b4513;
-            margin-bottom: 0.5rem;
-        }
-        .app-name span {
-            color: #f5a623;
-        }
-        .card {
-            background: #fff;
-            border: 1px solid #d4a574;
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin: 2rem auto;
-            max-width: 560px;
-            box-shadow: 0 4px 12px rgba(139, 69, 19, 0.1);
-        }
-        .card h1 {
-            color: #8b4513;
-            font-size: 1.6rem;
-            margin-bottom: 0.75rem;
-        }
-        .card p {
-            margin-bottom: 1.25rem;
-        }
-        .btn {
-            display: inline-block;
-            background: #f5a623;
-            color: #5b2f0e;
-            font-weight: 700;
-            text-decoration: none;
-            padding: 0.8rem 1.8rem;
-            border-radius: 8px;
-            margin: 0.5rem 0.25rem;
-            border: 1px solid #d4941f;
-        }
-        .btn.secondary {
-            background: #fff;
-            color: #8b4513;
-            border: 1px solid #d4a574;
-        }
-        .btn:active {
-            transform: translateY(1px);
-        }
-        .muted {
-            color: #777;
-            font-size: 0.9rem;
-        }
-    </style>
+:root {
+  --honey-gold: #E9CF00;
+  --honey-accent: #FFB300;
+  --honey-cream: #FFF8E1;
+  --honey-light: #FFEBB4;
+  --honey-brown: #4D3B13;
+  --honey-brown-very-light: #F5F0E6;
+  --hive-brown: #8D6E63;
+  --status-active: #4CAF50;
+  --status-critical: #FF5722;
+  --surface: #FFFFFF;
+  --line: #E8E0D2;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--honey-brown);
+  background-color: var(--honey-cream);
+  background-image: radial-gradient(circle at 50% 0, #FFFDF5 0%, var(--honey-cream) 55%);
+  min-height: 100vh;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 1.5rem 1.25rem 0; }
+header {
+  background: var(--honey-gold);
+  color: var(--honey-brown);
+  border-radius: var(--radius-lg);
+  border-bottom: 4px solid var(--honey-accent);
+  box-shadow: 0 4px 16px rgba(77, 59, 19, .16);
+  padding: 2rem 1.5rem 1.75rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+.brand-mark { width: 72px; height: 72px; margin: 0 auto .9rem; }
+.brand-mark svg { display: block; width: 100%; height: 100%; border-radius: 18px; box-shadow: 0 2px 8px rgba(77, 59, 19, .28); }
+.app-name { margin: 0 0 .35rem; font-size: 2.1rem; font-weight: 800; letter-spacing: -.02em; color: var(--honey-brown); }
+.app-name span { color: var(--honey-brown); }
+.subtitle { margin: 0; font-size: 1.05rem; font-weight: 500; color: var(--honey-brown); }
+.last-updated { margin: .6rem 0 0; font-size: .9rem; font-weight: 500; color: var(--honey-brown); }
+.bee-icon { font-size: 3rem; margin-bottom: 1rem; }
+.lang-switch { margin: 0 0 1rem; text-align: right; font-size: .9rem; color: var(--honey-brown); }
+.lang-switch a { color: var(--honey-brown); font-weight: 600; text-decoration: underline; text-decoration-color: var(--honey-accent); text-underline-offset: 2px; }
+.lang-switch a.active { background: var(--honey-light); border-radius: var(--radius-pill); padding: .05rem .55rem; }
+nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin: 0 0 1.75rem; }
+nav a { display: inline-block; padding: .6rem 1.15rem; border-radius: var(--radius-pill); border: 2px solid var(--honey-gold); background: var(--surface); color: var(--honey-brown); font-weight: 600; text-decoration: none; }
+nav a:hover { background: var(--honey-light); }
+nav a.active { background: var(--honey-gold); border-color: var(--honey-gold); }
+main { background: var(--surface); border: 1px solid var(--honey-brown-very-light); border-radius: var(--radius-lg); box-shadow: 0 6px 24px rgba(77, 59, 19, .10); padding: 2.25rem; overflow-wrap: anywhere; }
+main > :first-child { margin-top: 0; }
+h1 { margin: 0 0 1.25rem; padding-bottom: .6rem; border-bottom: 3px solid var(--honey-gold); color: var(--honey-brown); font-size: 1.75rem; line-height: 1.3; }
+h2 { margin: 2rem 0 .75rem; color: var(--honey-brown); font-size: 1.3rem; line-height: 1.35; }
+h3 { margin: 1.5rem 0 .5rem; padding-left: .6rem; border-left: 4px solid var(--honey-accent); color: var(--honey-brown); font-size: 1.08rem; }
+p { margin: 0 0 .9rem; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.5rem; }
+li { margin-bottom: .4rem; }
+a { color: var(--honey-brown); text-decoration: underline; text-decoration-color: var(--honey-accent); text-underline-offset: 2px; }
+a:hover { background: var(--honey-light); }
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--honey-accent); outline-offset: 2px; }
+code { background: var(--honey-brown-very-light); border-radius: 6px; padding: .1em .35em; font-size: .92em; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.75rem 0; }
+.highlight, .warning, .success { margin: 1.25rem 0; padding: 1rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--honey-gold); background: var(--honey-cream); }
+.highlight { background: #FFFBEB; }
+.warning { border-left-color: var(--status-critical); background: #FFF4F1; }
+.success { border-left-color: var(--status-active); background: #F3F9F0; }
+.highlight > :last-child, .warning > :last-child, .success > :last-child { margin-bottom: 0; }
+.data-table { width: 100%; margin: 1.25rem 0; border-collapse: collapse; font-size: .95rem; }
+.data-table th, .data-table td { padding: .7rem .8rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.data-table th { background: var(--honey-gold); color: var(--honey-brown); font-weight: 700; }
+.data-table tr:nth-child(even) td { background: #FDFBF4; }
+.contact-box { margin-top: 2rem; padding: 1.5rem; border-radius: var(--radius-md); background: var(--honey-brown); color: var(--honey-cream); }
+.contact-box h2, .contact-box h3 { margin-top: 0; padding-left: 0; border-left: 0; color: var(--honey-gold); }
+.contact-box a { color: var(--honey-cream); text-decoration-color: var(--honey-gold); }
+.contact-box a:hover { background: rgba(233, 207, 0, .18); }
+.section { margin-bottom: 2rem; }
+.card { margin: 1.25rem 0; padding: 1.25rem; border-radius: var(--radius-md); background: var(--honey-brown-very-light); }
+.btn { display: inline-block; padding: .6rem 1.2rem; border-radius: var(--radius-pill); background: var(--honey-gold); color: var(--honey-brown); font-weight: 700; text-decoration: none; }
+.muted, .secondary { color: var(--hive-brown); }
+.legal-small { font-size: .9em; opacity: .85; }
+footer { padding: 2rem 1rem 2.5rem; text-align: center; color: var(--honey-brown); font-size: .85rem; opacity: .8; }
+footer p { margin: .25rem 0; }
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .container { padding: 1rem .85rem 0; }
+  header { padding: 1.6rem 1rem 1.4rem; }
+  .brand-mark { width: 60px; height: 60px; }
+  .app-name { font-size: 1.75rem; }
+  main { padding: 1.35rem 1.1rem; border-radius: var(--radius-md); }
+  h1 { font-size: 1.45rem; }
+  .data-table { font-size: .85rem; }
+  .data-table th, .data-table td { padding: .5rem .45rem; }
+  nav a { padding: .5rem .9rem; font-size: .95rem; }
+}
+/* Bewusst KEIN Dark-Theme-Block: Die App ist light-only
+   (BeemasterTheme(darkTheme = false)), der WebView wuerde aber dem System-Darkmode
+   folgen. Ohne Block bleibt das Dokument im Beemaster-Hell-Schema. */
+</style>
 </head>
 <body>
     <header>
