@@ -135,11 +135,84 @@ footer p { margin: .25rem 0; }
 
             var openCard = document.getElementById('openCard');
             var notFoundCard = document.getElementById('notFoundCard');
+            var titleEl = document.getElementById('title');
+            var messageEl = document.getElementById('message');
+            var hintEl = document.getElementById('hint');
+            var openApp = document.getElementById('openApp');
+
+            function parseParams(segment) {
+                var out = {};
+                if (!segment) return out;
+                segment.split('&').forEach(function (pair) {
+                    var idx = pair.indexOf('=');
+                    var k = idx >= 0 ? pair.slice(0, idx) : pair;
+                    var v = idx >= 0 ? pair.slice(idx + 1) : '';
+                    try {
+                        k = decodeURIComponent(k.replace(/\+/g, ' '));
+                        v = decodeURIComponent(v.replace(/\+/g, ' '));
+                    } catch (e) { /* ungueltige Kodierung ignorieren */ }
+                    if (k) out[k] = v;
+                });
+                return out;
+            }
+
+            // Supabase/GoTrue liefert Fehler-Callbacks im Query ODER Fragment.
+            // Der Fehler-Redirect ohne gueltigen Flow-State landet auf der
+            // Site-URL (Wurzel); mit gueltigem State auf /auth/callback.
+            var query = parseParams(window.location.search.replace(/^\?/, ''));
+            var hash = parseParams(window.location.hash.replace(/^#/, ''));
+            var errCode = query.error_code || hash.error_code || query.error || hash.error || '';
+            var errDesc = query.error_description || hash.error_description || '';
+
+            function addPlayStore() {
+                if (document.getElementById('playStore')) return;
+                var play = document.createElement('a');
+                play.className = 'btn secondary';
+                play.id = 'playStore';
+                play.href = 'https://play.google.com/store/apps/details?id=com.beemaster';
+                play.textContent = 'Im Google Play Store anzeigen';
+                openApp.parentNode.appendChild(play);
+            }
+
+            if (errCode) {
+                // Login-Callback mit Fehler: klar benennen, was zu tun ist.
+                // Die 5-Minuten-Grenze ist der GoTrue-Flow-State (nicht
+                // konfigurierbar); danach ist der Login abgelaufen.
+                var title = 'Anmeldung nicht abgeschlossen';
+                var msg;
+                if (errCode === 'bad_oauth_state' || errCode === 'flow_state_expired' ||
+                    errCode === 'flow_state_not_found') {
+                    title = 'Anmeldung abgelaufen';
+                    msg = 'Die Anmeldung muss innerhalb von 5 Minuten abgeschlossen werden. ' +
+                          'Bitte öffne die Beemaster-App und starte die Anmeldung erneut.';
+                } else if (errCode === 'otp_expired') {
+                    title = 'Link abgelaufen';
+                    msg = 'Dieser Bestätigungslink ist abgelaufen oder wurde bereits verwendet. ' +
+                          'Bitte fordere in der Beemaster-App einen neuen Link an.';
+                } else if (errCode === 'access_denied') {
+                    title = 'Anmeldung abgebrochen';
+                    msg = 'Die Anmeldung wurde abgebrochen. Du kannst sie in der Beemaster-App erneut starten.';
+                } else {
+                    msg = 'Die Anmeldung konnte nicht abgeschlossen werden. ' +
+                          'Bitte öffne die Beemaster-App und versuche es erneut.';
+                }
+                titleEl.textContent = title;
+                messageEl.textContent = msg;
+                hintEl.textContent = errDesc ? ('Technischer Hinweis: ' + errDesc) : '';
+                // Ohne Code startet der App-Link keinen Login, oeffnet aber die
+                // App, in der der User die Anmeldung erneut starten kann.
+                openApp.href = 'https://beemaster-app.de/auth/callback';
+                openApp.textContent = 'Beemaster-App öffnen';
+                addPlayStore();
+                return;
+            }
 
             if (isAuthPath) {
-                setupOpenApp('Fast geschafft', 'Öffne die Beemaster-App, um deinen Vorgang abzuschließen.');
+                titleEl.textContent = 'Fast geschafft';
+                messageEl.textContent = 'Öffne die Beemaster-App, um deinen Vorgang abzuschließen.';
             } else if (hiveMatch) {
-                setupOpenApp('Beute öffnen', 'Öffne die Beemaster-App, um diese Beute anzuzeigen.');
+                titleEl.textContent = 'Beute öffnen';
+                messageEl.textContent = 'Öffne die Beemaster-App, um diese Beute anzuzeigen.';
             } else {
                 openCard.style.display = 'none';
                 notFoundCard.style.display = 'block';
@@ -147,28 +220,14 @@ footer p { margin: .25rem 0; }
             }
 
             var target = path + window.location.search + window.location.hash;
-            var openApp = document.getElementById('openApp');
             openApp.href = 'https://beemaster-app.de' + target;
-
-            if (window.sessionStorage.getItem('beemaster_app_link_attempted')) {
-                openApp.style.display = 'none';
-                document.getElementById('hint').textContent =
-                    'Die App hat nicht geöffnet. Bitte installiere die Beemaster-App aus dem Google Play Store und tippe den Link erneut an.';
-                var play = document.createElement('a');
-                play.className = 'btn';
-                play.href = 'https://play.google.com/store/apps/details?id=com.beemaster';
-                play.textContent = 'Im Google Play Store anzeigen';
-                openApp.parentNode.insertBefore(play, openApp.nextSibling);
-                return;
-            }
-
-            function setupOpenApp(title, message) {
-                document.getElementById('title').textContent = title;
-                document.getElementById('message').textContent = message;
-            }
 
             openApp.addEventListener('click', function () {
                 window.sessionStorage.setItem('beemaster_app_link_attempted', '1');
+                hintEl.textContent =
+                    'Falls die App nicht automatisch startet: Beemaster-App aus dem Google Play Store ' +
+                    'installieren/aktualisieren und den Link erneut antippen.';
+                addPlayStore();
             });
         })();
     </script>
