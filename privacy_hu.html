@@ -386,7 +386,7 @@ footer p { margin: .25rem 0; }
 <li><strong>Hozzájárulási igazolások:</strong> a törvényes megőrzési időtartamig (<strong>8 év</strong>).</li>
 <li><strong>AI-kreditek fogyasztási naplói:</strong> 24 hónap.</li>
 <li><strong>Beszélgetés-visszajelzés (opcionális):</strong> 180 nap.</li>
-<li><strong>Felhőmentések (opcionális):</strong> legfeljebb 9 hónap.</li>
+<li><strong>Felhőmentések (opcionális):</strong> legfeljebb 9 hónap; az előfizetés megszűnése után legkésőbb 30 nap.</li>
 </ul>
 
 <h2>6. Címzettek és harmadik felek</h2>
@@ -538,7 +538,7 @@ footer p { margin: .25rem 0; }
 <li><strong>Kezelés (Supabase):</strong> Az adminisztrációt (melyik eszköz tölthet fel, a biztonsági mentések metaadatai) a Supabase Inc. (EU, Írország) adatfeldolgozóként végzi. A Supabase csak metaadatokat kap (időpont, méret, ellenőrző összeg) – <strong>nem</strong> a tartalmat.</li>
 <li><strong>Master eszköz modell:</strong> Pontosan egy eszköz („Master”) tölthet fel biztonsági mentéseket; más eszközök csak vissza tudják állítani a biztonsági mentéseket. A master eszközt bármikor cserélheted.</li>
 <li><strong>Automatikus biztonsági mentések:</strong> Aktiválás után az alkalmazás körülbelül kéthetente automatikusan biztonsági mentést készít (csak internetkapcsolattal), amennyiben a passphrase el van mentve az eszközön.</li>
-<li><strong>Megőrzés:</strong> A biztonsági mentéseket <strong>legfeljebb 9 hónapig</strong> őrizzük meg, ezután automatikusan törlésre kerülnek.</li>
+<li><strong>Megőrzés:</strong> A biztonsági mentéseket <strong>legfeljebb 9 hónapig</strong> őrizzük meg. Az előfizetés megszűnése után <strong>legkésőbb 30 napon belül</strong> töröljük őket; ezen időszak alatt exportálásra és visszaállításra elérhetők maradnak.</li>
 <li><strong>Hozzájárulás:</strong> A tárolás csak kifejezett hozzájárulásod alapján történik (a GDPR 6. cikk (1) bekezdés a) pontja). A hozzájárulást bármikor visszavonhatod – ekkor minden felhőalapú biztonsági mentés törlésre kerül (a GDPR 17. cikke).</li>
 <li><strong>Fiók törlése:</strong> A fiókod törlésekor az összes felhőalapú biztonsági mentés is törlésre kerül.</li>
 </ul>
@@ -631,6 +631,7 @@ footer p { margin: .25rem 0; }
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.7</td><td>2026-11-09</td><td>ÁSZF 9. § 12. pont és 13. §: a KI-kreditek szolgáltatásnak minősülnek; csak a ténylegesen megvásárolt, még vissza nem térített add-on kreditek téríthetők vissza; elállás a BGB 356. § (5)/357a. § (2) szerint (DE), digitális tartalom a BGB 356. § (6)/357a. § (3) szerint; A2 határozott idejű licenc: fizetős funkciók csak az előfizetés futamideje alatt, visszatérés a Free verzióra, helyi adatok megmaradnak, felhőadatok 30 nap; 18 nyelvi változat.</td><td>✅ Igen (érdemi változás)</td></tr>
 <tr><td>3.6</td><td>2026-11-04</td><td>ASZF §9.9: a kredithasznalat aranyainak pontosítasa (1 kredit = legfeljebb 1 000 token, felhos beszed 24 kredit/perc, bizonylatszkennelesi aranyok)</td><td>-</td></tr>
 <tr><td>3.5</td><td>2026-10-10</td><td>Magyar jogi szövegek: hivatalos jogforrás-hivatkozások hozzáadva (Szjt., Sztv., Eht., Grt.)</td><td>✅ Igen (érdemi változás)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>Adószám DE463991390 az impresszumban, a felelősségkizárások enyhítése az ÁSZF-ben, a hozzájárulás megőrzésének csökkentése 3 évre</td><td>✅ Igen (érdemi változás)</td></tr>

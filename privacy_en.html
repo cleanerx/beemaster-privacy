@@ -544,7 +544,7 @@ footer p { margin: .25rem 0; }
 <li><strong>Control (Supabase):</strong> The management (which device is allowed to upload, backup metadata) is handled via Supabase Inc. (EU, Ireland) as data processor. Supabase receives only metadata (timestamp, size, checksum) – <strong>not</strong> the contents.</li>
 <li><strong>Master device model:</strong> Exactly one device ("Master") may upload backups; other devices can only restore backups. You can change the master device at any time.</li>
 <li><strong>Automatic backups:</strong> After activation, the app automatically creates a backup about every two weeks (only with a network connection), provided the passphrase is stored on the device.</li>
-<li><strong>Retention:</strong> Backups are retained for a <strong>maximum of 9 months</strong> and then automatically deleted.</li>
+<li><strong>Retention:</strong> Backups are retained for a <strong>maximum of 9 months</strong>. After the subscription ends, they are deleted <strong>no later than 30 days</strong> thereafter; during this period they remain available for export and restoration.</li>
 <li><strong>Consent:</strong> Storage takes place only after your express consent (Art. 6 (1) lit. a GDPR). You can withdraw the consent at any time – all cloud backups will then be deleted (Art. 17 GDPR).</li>
 <li><strong>Account deletion:</strong> When you delete your account, all cloud backups are also deleted.</li>
 </ul>
@@ -637,6 +637,7 @@ footer p { margin: .25rem 0; }
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.7</td><td>2026-11-09</td><td>Terms §9 No. 12 and §13: AI credits as a service; only actually purchased add-on credits not already refunded are refundable; withdrawal under Section 356(5)/357a(2) BGB (DE), digital content Section 356(6)/357a(3) BGB; A2 term licence: paid functions only for the subscription term, fallback to Free, local data remains, cloud data 30 days; 18 language versions.</td><td>✅ Yes (material change)</td></tr>
 <tr><td>3.6</td><td>2026-11-04</td><td>Terms §9.9: credit consumption rates clarified (1 credit = up to 1,000 tokens, cloud speech 24 credits/minute, receipt-scan rates)</td><td>-</td></tr>
 <tr><td>3.5</td><td>2026-10-10</td><td>Hungarian legal texts: official source references added (Szjt., Sztv., Eht., Grt.)</td><td>✅ Yes (material change)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>VAT ID DE463991390 in the legal notice, liability exclusions in the Terms relativised, consent retention reduced to 3 years</td><td>✅ Yes (material change)</td></tr>

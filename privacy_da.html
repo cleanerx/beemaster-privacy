@@ -281,7 +281,7 @@ footer p { margin: .25rem 0; }
 <li><strong>Styring (Supabase) :</strong> administrationen (hvilken enhed må uploade, metadata for backup'er) sker via Supabase Inc. (EU, Irland) som databehandler. Supabase modtager kun metadata (tidspunkt, størrelse, kontrolsum) – <strong>ikke</strong> indholdet.</li>
 <li><strong>Master-enhed-model :</strong> præcis én enhed ("Master") må uploade backup'er; andre enheder kan kun gendanne backup'er. Du kan til enhver tid skifte master-enheden.</li>
 <li><strong>Automatiske backup'er :</strong> efter aktivering opretter appen automatisk en backup cirka hver anden uge (kun med netværksforbindelse), forudsat at passphrase'en er gemt på enheden.</li>
-<li><strong>Opbevaring :</strong> backup'er opbevares i <strong>maksimalt 9 måneder</strong> og slettes derefter automatisk.</li>
+<li><strong>Opbevaring :</strong> backup'er opbevares i <strong>maksimalt 9 måneder</strong>. Efter abonnementets udløb slettes de <strong>senest 30 dage</strong> derefter; i denne periode forbliver de tilgængelige til eksport og gendannelse.</li>
 <li><strong>Samtykke :</strong> opbevaringen sker kun efter dit udtrykkelige samtykke (art. 6, stk. 1, litra a) i GDPR). Du kan til enhver tid trække samtykket tilbage – alle cloud-backup'er slettes derefter (art. 17 i GDPR).</li>
 <li><strong>Kontosletning :</strong> ved sletning af din konto slettes også alle cloud-backup'er.</li>
 </ul>
@@ -349,6 +349,7 @@ footer p { margin: .25rem 0; }
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.7</td><td>2026-11-09</td><td>AGB §9 Nr. 12 und §13: KI-Credits als Dienstleistung; erstattet werden nur tatsächlich gekaufte, nicht bereits erstattete Add-on-Credits; Widerruf nach § 356 Abs. 5/§ 357a Abs. 2 BGB (DE), digitale Inhalte § 356 Abs. 6/§ 357a Abs. 3 BGB; A2-Term-Lizenz: bezahlte Funktionen nur für die Abo-Laufzeit, Rückfall auf Free, lokale Daten bleiben, Cloud-Daten 30 Tage; 18 Sprachfassungen.</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.6</td><td>2026-11-04</td><td>AGB §9.9: Credit-Verbrauchssaetze praezisiert (1 Credit = bis zu 1.000 Tokens, Cloud-Sprache 24 Credits/Minute, Beleg-Scan-Saetze)</td><td>-</td></tr>
 <tr><td>3.5</td><td>2026-10-10</td><td>Ungarische Rechtstexte: offizielle Quellenverweise ergänzt (Szjt., Sztv., Eht., Grt.)</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>USt-IdNr. DE463991390 im Impressum, AGB-Haftungsausschlüsse relativiert, Consent-Aufbewahrung auf 3 Jahre reduziert</td><td>✅ Ja (inhaltliche Änderung)</td></tr>

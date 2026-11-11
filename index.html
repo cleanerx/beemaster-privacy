@@ -398,7 +398,7 @@ footer p { margin: .25rem 0; }
 <li><strong>Einwilligungs-Nachweise:</strong> für die Dauer der gesetzlichen Aufbewahrungsfrist (<strong>8 Jahre</strong>).</li>
 <li><strong>Verbrauchsprotokolle der KI-Credits:</strong> 24 Monate.</li>
 <li><strong>Gesprächs-Feedback (optional):</strong> 180 Tage.</li>
-<li><strong>Cloud-Backups (optional):</strong> maximal 9 Monate.</li>
+<li><strong>Cloud-Backups (optional):</strong> maximal 9 Monate; nach Ende des Abonnements spätestens 30 Tage.</li>
 </ul>
 
 <h2>6. Empfänger und Drittanbieter</h2>
@@ -559,7 +559,7 @@ footer p { margin: .25rem 0; }
 <li><strong>Steuerung (Supabase):</strong> Die Verwaltung (welches Gerät darf hochladen, Metadaten der Backups) erfolgt über Supabase Inc. (EU, Irland) als Auftragsverarbeiter. Supabase erhält nur Metadaten (Zeitpunkt, Größe, Prüfsumme) – <strong>nicht</strong> die Inhalte.</li>
 <li><strong>Master-Gerät-Modell:</strong> Genau ein Gerät („Master“) darf Backups hochladen; andere Geräte können Backups nur wiederherstellen. Du kannst das Master-Gerät jederzeit wechseln.</li>
 <li><strong>Automatische Backups:</strong> Nach Aktivierung erstellt die App etwa alle zwei Wochen automatisch ein Backup (nur mit Netzwerkverbindung), sofern die Passphrase auf dem Gerät hinterlegt ist.</li>
-<li><strong>Aufbewahrung:</strong> Backups werden <strong>maximal 9 Monate</strong> aufbewahrt und danach automatisch gelöscht.</li>
+<li><strong>Aufbewahrung:</strong> Backups werden <strong>maximal 9 Monate</strong> aufbewahrt. Nach Ende des Abonnements werden sie <strong>spätestens nach 30 Tagen</strong> gelöscht; innerhalb dieser Frist bleiben sie für Export und Wiederherstellung verfügbar.</li>
 <li><strong>Einwilligung:</strong> Die Speicherung erfolgt nur nach deiner ausdrücklichen Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Du kannst die Einwilligung jederzeit widerrufen – alle Cloud-Backups werden dann gelöscht (Art. 17 DSGVO).</li>
 <li><strong>Kontolöschung:</strong> Bei Löschung deines Kontos werden auch alle Cloud-Backups gelöscht.</li>
 </ul>
@@ -656,6 +656,7 @@ footer p { margin: .25rem 0; }
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.7</td><td>2026-11-09</td><td>AGB §9 Nr. 12 und §13: KI-Credits als Dienstleistung; erstattet werden nur tatsächlich gekaufte, nicht bereits erstattete Add-on-Credits; Widerruf nach § 356 Abs. 5/§ 357a Abs. 2 BGB (DE), digitale Inhalte § 356 Abs. 6/§ 357a Abs. 3 BGB; A2-Term-Lizenz: bezahlte Funktionen nur für die Abo-Laufzeit, Rückfall auf Free, lokale Daten bleiben, Cloud-Daten 30 Tage; 18 Sprachfassungen.</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.6</td><td>2026-11-04</td><td>AGB §9.9: Credit-Verbrauchssaetze praezisiert (1 Credit = bis zu 1.000 Tokens, Cloud-Sprache 24 Credits/Minute, Beleg-Scan-Saetze)</td><td>-</td></tr>
 <tr><td>3.5</td><td>2026-10-10</td><td>Ungarische Rechtstexte: offizielle Quellenverweise ergänzt (Szjt., Sztv., Eht., Grt.)</td><td>✅ Ja (inhaltliche Änderung)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>USt-IdNr. DE463991390 im Impressum, AGB-Haftungsausschlüsse relativiert, Consent-Aufbewahrung auf 3 Jahre reduziert</td><td>✅ Ja (inhaltliche Änderung)</td></tr>

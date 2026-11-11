@@ -1,0 +1,75 @@
+{
+  "version": "1",
+  "repo": "beemaster-privacy",
+  "catalog": "beemaster-compliance/rules/legal-rules.json",
+  "catalogVersion": "2026-10-09",
+  "note": "Rechtstext-Veröffentlichung (AGB/EULA/Privacy/Impressum) und Render-Pipeline.",
+  "requirements": [
+    {
+      "id": "DSGVO-ART13-PRIVACY-INFO",
+      "title": "Datenschutzinformation",
+      "kind": "legal",
+      "status": "implemented",
+      "docs": [
+        "privacy_en.html"
+      ],
+      "checks": [
+        "privacy-legal-render",
+        "privacy-legal-review-hints"
+      ],
+      "owner": "legal"
+    },
+    {
+      "id": "DSGVO-ART13-PRIVACY-WEB",
+      "title": "Datenschutzinformation im Web",
+      "kind": "legal",
+      "status": "implemented",
+      "docs": [
+        "privacy_en.html"
+      ],
+      "checks": [
+        "privacy-legal-render"
+      ],
+      "owner": "legal"
+    },
+    {
+      "id": "EU-CRD-ART9-WITHDRAWAL",
+      "title": "Widerrufsrecht im Rechtstext",
+      "kind": "legal",
+      "status": "implemented",
+      "docs": [
+        "agb.html"
+      ],
+      "checks": [
+        "privacy-legal-render"
+      ],
+      "owner": "legal"
+    },
+    {
+      "id": "BILL-MOR-PLAY-MIRROR",
+      "title": "Google Play als Merchant of Record im Rechtstext",
+      "kind": "legal",
+      "status": "implemented",
+      "docs": [
+        "agb.html"
+      ],
+      "checks": [
+        "privacy-legal-render"
+      ],
+      "owner": "legal"
+    },
+    {
+      "id": "DE-DDG-5-IMPRINT-WEB",
+      "title": "Impressum im Web",
+      "kind": "legal",
+      "status": "implemented",
+      "docs": [
+        "impressum.html"
+      ],
+      "checks": [
+        "privacy-legal-render"
+      ],
+      "owner": "legal"
+    }
+  ]
+}

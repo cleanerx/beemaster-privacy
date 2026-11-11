@@ -543,7 +543,7 @@ footer p { margin: .25rem 0; }
 <li><strong>Contrôle (Supabase) :</strong> la gestion (quel appareil est autorisé à télécharger, métadonnées des sauvegardes) est effectuée via Supabase Inc. (UE, Irlande) en tant que sous-traitant. Supabase ne reçoit que des métadonnées (horodatage, taille, somme de contrôle) – <strong>pas</strong> le contenu.</li>
 <li><strong>Modèle d'appareil maître :</strong> un seul appareil (« Master ») peut télécharger des sauvegardes ; les autres appareils ne peuvent que les restaurer. Vous pouvez changer d'appareil maître à tout moment.</li>
 <li><strong>Sauvegardes automatiques :</strong> après activation, l'application crée automatiquement une sauvegarde environ toutes les deux semaines (uniquement avec une connexion réseau), pour autant que la phrase de passe soit enregistrée sur l'appareil.</li>
-<li><strong>Conservation :</strong> les sauvegardes sont conservées <strong>au maximum 9 mois</strong>, puis supprimées automatiquement.</li>
+<li><strong>Conservation :</strong> les sauvegardes sont conservées <strong>au maximum 9 mois</strong>. À la fin de l'abonnement, elles sont supprimées <strong>au plus tard 30 jours</strong> après ; pendant ce délai, elles restent disponibles pour l'exportation et la restauration.</li>
 <li><strong>Consentement :</strong> le stockage n'a lieu qu'après votre consentement exprès (art. 6, par. 1, lit. a, RGPD). Vous pouvez retirer le consentement à tout moment – toutes les sauvegardes cloud sont alors supprimées (art. 17 RGPD).</li>
 <li><strong>Suppression du compte :</strong> lors de la suppression de votre compte, toutes les sauvegardes cloud sont également supprimées.</li>
 </ul>
@@ -636,6 +636,7 @@ footer p { margin: .25rem 0; }
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.7</td><td>2026-11-09</td><td>CGV §9 n° 12 et §13 : crédits IA en tant que service ; seuls les crédits additionnels réellement achetés et non déjà remboursés sont remboursables ; rétractation selon art. 356 al. 5/357a al. 2 BGB (DE), contenus numériques art. 356 al. 6/357a al. 3 BGB ; licence à durée A2 : fonctions payantes pendant la durée de l'abonnement, retour à Free, données locales conservées, données cloud 30 jours ; 18 versions linguistiques.</td><td>✅ Oui (modification matérielle)</td></tr>
 <tr><td>3.6</td><td>2026-11-04</td><td>CGV §9.9 : taux de consommation des credits precises (1 credit = jusqu'a 1 000 jetons, voix cloud 24 credits/minute, taux de scan de recus)</td><td>-</td></tr>
 <tr><td>3.5</td><td>2026-10-10</td><td>Textes juridiques hongrois : références aux sources officielles ajoutées (Szjt., Sztv., Eht., Grt.)</td><td>✅ Oui (modification matérielle)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>Numéro de TVA DE463991390 dans les mentions légales, atténuation des exclusions de responsabilité dans les CGV, réduction de la conservation du consentement à 3 ans</td><td>✅ Oui (modification matérielle)</td></tr>

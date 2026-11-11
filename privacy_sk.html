@@ -519,7 +519,7 @@ footer p { margin: .25rem 0; }
 <li><strong>Správa (Supabase):</strong> správa (ktoré zariadenie smie nahrávať, metadáta záloh) sa uskutočňuje prostredníctvom spoločnosti Supabase Inc. (EÚ, Írsko) ako spracovateľa. Supabase dostáva iba metadáta (čas, veľkosť, kontrolný súčet) – <strong>nie</strong> obsah.</li>
 <li><strong>Model hlavného zariadenia (master):</strong> presne jedno zariadenie („Master“) smie nahrávať zálohy; iné zariadenia môžu zálohy iba obnovovať. Hlavné zariadenie môžete kedykoľvek zmeniť.</li>
 <li><strong>Automatické zálohy:</strong> po aktivácii aplikácia automaticky vytvorí zálohu približne každé dva týždne (len s pripojením k sieti), pokiaľ je passphrase uložená v zariadení.</li>
-<li><strong>Uloženie:</strong> zálohy sa uchovávajú <strong>maximálne 9 mesiacov</strong> a potom sa automaticky vymažú.</li>
+<li><strong>Uloženie:</strong> zálohy sa uchovávajú <strong>maximálne 9 mesiacov</strong>. Po skončení predplatného sa vymažú <strong>najneskôr do 30 dní</strong>; počas tohto obdobia zostávajú dostupné na export a obnovenie.</li>
 <li><strong>Súhlas:</strong> ukladanie sa uskutočňuje len po vašom výslovnom súhlase (čl. 6 ods. 1 písm. a) GDPR). Súhlas môžete kedykoľvek odvolať – všetky cloudové zálohy sa potom vymažú (čl. 17 GDPR).</li>
 <li><strong>Zrušenie účtu:</strong> pri zrušení vášho účtu sa vymažú aj všetky cloudové zálohy.</li>
 </ul>
@@ -608,6 +608,7 @@ footer p { margin: .25rem 0; }
 <h2>Changelog</h2>
 <table class="data-table">
 <tr><th>Version</th><th>Datum</th><th>Änderung</th><th>Re-Consent erforderlich?</th></tr>
+<tr><td>3.7</td><td>2026-11-09</td><td>VOP §9 bod 12 a §13: AI kredity ako služba; vracajú sa iba skutočne zakúpené doplnkové kredity, ktoré ešte neboli vrátené; odstúpenie podľa § 356 ods. 5/§ 357a ods. 2 BGB (DE), digitálny obsah § 356 ods. 6/§ 357a ods. 3 BGB; A2 termínovaná licencia: platené funkcie len počas predplatného, návrat k Free, lokálne údaje zostávajú, cloudové údaje 30 dní; 18 jazykových verzií.</td><td>✅ Áno (podstatná zmena)</td></tr>
 <tr><td>3.6</td><td>2026-11-04</td><td>Podmienky §9.9: spresnene sadzby spotreby kreditov (1 kredit = az 1 000 tokenov, cloudove hlasove sluzby 24 kreditov/minuta, sadzby skenovania blockov)</td><td>-</td></tr>
 <tr><td>3.5</td><td>2026-10-10</td><td>Maďarské právne texty: doplnené odkazy na oficiálne zdroje (Szjt., Sztv., Eht., Grt.)</td><td>✅ Áno (podstatná zmena)</td></tr>
 <tr><td>3.4</td><td>2026-09-11</td><td>IČ DPH DE463991390 v imprintu, zmiernenie vylúčenia zodpovednosti v obchodných podmienkach, skrátenie uchovávania súhlasu na 3 roky</td><td>✅ Áno (podstatná zmena)</td></tr>
