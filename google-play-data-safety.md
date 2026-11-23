@@ -62,13 +62,18 @@
 
 ### Firebase (Google)
 - **Crashlytics:** Crash-Reporting
-- **Analytics:** Anonyme Nutzungsstatistiken
+- **Analytics:** Anonyme Nutzungsstatistiken (ohne Advertising ID)
 - **Datenschutz:** https://firebase.google.com/support/privacy
 
-### OpenAI API (optional)
-- **Zweck:** KI-basierte Imker-Assistenz
-- **Nur bei aktiver Nutzung:** Sprach-KI-Features
-- **Datenschutz:** https://openai.com/privacy
+### Google Play services (Standort)
+- **Zweck:** Standortermittlung für Kartenansicht und Wetter
+- **Anbieter:** Google Ireland Limited
+- **Datenschutz:** https://policies.google.com/privacy
+
+### Netcup (Hosting)
+- **Zweck:** Hosting von LiteLLM, Speech-Relay und Status-Spiegel
+- **Anbieter:** Netcup GmbH, Karlsruhe
+- **Datenschutz:** https://www.netcup.com/de/datenschutz
 
 ---
 
