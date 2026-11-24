@@ -31,7 +31,7 @@ RELEASED_SUFFIXES = {"", "_at", "_hu"}  # docs/legal/source/web_locales.json
 # locale → (suffix, content-language, label)
 LOCALES = [
     ("de", "", "de", "🇩🇪 Deutsch"),
-    ("de-at", "_at", "de", "🇩🇪 Deutsch (AT)"),
+    ("de-at", "_at", "de", "🇦🇹 Deutsch (AT)"),
     ("en", "_en", "en", "🇬🇧 English"),
     ("cs", "_cs", "cs", "🇨🇿 Čeština"),
     ("fr", "_fr", "fr", "🇫🇷 Français"),
