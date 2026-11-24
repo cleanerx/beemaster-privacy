@@ -1,188 +1,88 @@
-# Google Play Data Safety - Beemaster
+# Google Play Data Safety — Beemaster (v2, Stand 2026-11-23)
 
-## App-Informationen
-- **App-Name:** Beemaster - Bienenverwaltung
-- **Paketname:** com.beemaster
-- **Kategorie:** Produktivität/Landwirtschaft
-- **Entwickler:** Mike Miller
+**Gültige Quelle:** Datenschutzerklärung **3.8 (2026-11-13)** in der App und auf
+`https://beemaster-app.de/` (dieselben Texte, Render-Gate geprüft).
+**Entwickler/Kontakt:** Jens Kübler · support@dolphincrusher.com (nicht „Mike Miller" — der alte
+Bogen war veraltet).
 
----
+Diese Datei ist der **Ausfüll-Leitfaden** für das Play-Console-Formular
+„Datenicherheit". Regel: Die Angaben müssen zur Datenschutzerklärung passen
+(Disclosure-Gate prüft Code ↔ DSE; dieses Blatt prüft DSE ↔ Play-Formular).
 
-## Datenerhebung
-
-### ✅ Vom Nutzer erhobene Daten
-
-| Datentyp | Erforderlich? | Zweck | Weitergabe |
-|----------|---------------|-------|------------|
-| **Standort (GPS)** | Optional | Standorte der Bienenstöcke auf Karte anzeigen | Keine |
-| **Name** | Optional | Imker-Profil personalisieren | Keine |
-| **E-Mail** | Optional | Kontakt, Premium-Features | Keine |
-| **Telefonnummer** | Optional | Imker-Profil | Keine |
-| **Adresse** | Optional | Imker-Standort | Keine |
-| **Fotos** | Optional | Bienenstock-Fotos | Keine |
-| **Sprachaufnahmen** | Optional | Notizen per Spracheingabe | Keine |
-
-### 🔒 Automatisch erhobene Daten
-
-| Datentyp | Zweck | Weitergabe |
-|----------|-------|------------|
-| **Crash-Logs** | App-Stabilität verbessern | Firebase Crashlytics (Google) |
-| **Nutzungsstatistiken** | App-Verbesserung | Firebase Analytics (Google) |
-| **Geräte-ID** | Fehlerdiagnose | Firebase Crashlytics |
-
-### ❌ NICHT erhobene Daten
-
-- Keine Werbe-ID
-- Keine Kontaktdaten ohne Einwilligung
-- Keine SMS/Nachrichten
-- Keine Kalenderdaten
-- Keine Browser-Verlauf
-- Keine Anrufe
-- Keine Gesundheitdaten
-- Keine Finanzdaten
+Play-Definitionen: **„Erhoben"** = Daten verlassen das Gerät (an uns oder Auftragsverarbeiter).
+**„Weitergegeben"** = Übergabe an **unabhängige Verantwortliche** (Auftragsverarbeiter zählen
+**nicht** als Weitergabe). **Temporär** = nur flüchtig im Speicher/Prozess, nicht persistiert.
 
 ---
 
-## Datenspeicherung
+## 1. Übersicht: Was wird erhoben?
 
-### Lokal auf dem Gerät
-- **Datenbank:** Room Database (lokal, verschlüsselt)
-- **Einstellungen:** DataStore Preferences (lokal)
-- **Fotos:** Interner App-Speicher
-- **Verschlüsselung:** Android Keystore für sensible Daten
+| Play-Kategorie | Erhoben? | Weitergegeben? | Dauer | Zweck(e) |
+|---|---|---|---|---|
+| Persönliche Daten → **E-Mail** | Ja (optional, Konto) | Nein | gespeichert (bis Löschung) | App-Funktionalität, Kontoverwaltung |
+| Persönliche Daten → **Name/Anzeigename** | Ja (optional, nur Google-Sign-in) | Nein | gespeichert | App-Funktionalität |
+| App-Aktivitäten → **App-Interaktionen** | Ja (opt-in) | Nein | gespeichert (Retention 3 J) | Analyse (Fehlerbehebung) |
+| App-Aktivitäten → **App-Fehler und Diagnose** | Ja (opt-in) | Nein | gemäß Firebase-Retention | Analyse, App-Funktionalität |
+| Geräte-/sonstige **IDs** | Ja (pseudonym) | Nein | gespeichert | App-Funktionalität, Analyse, Betrugsprävention |
+| **Audio** | Ja (optional, Funktion) | Nein | **temporär** (STT/TTS-Verarbeitung) | App-Funktionalität |
+| **Fotos** | Ja (optional) | Nein | gespeichert (lokales + verschlüsseltes Cloud-Backup) | App-Funktionalität |
+| **Standort (genau/ungefähr)** | Ja (optional) | **Ja** | gespeichert (Standorte) / temporär (Wetter) | App-Funktionalität |
+| **Finanzdaten → Kaufhistorie** | Ja | **Ja (Google)** | gespeichert | App-Funktionalität, Betrugsprävention, Recht |
+| Nutzerinhalte → **Andere Inhalte** (Notizen, Beute-/Schwarmdaten, KI-Chat) | Ja (optional, Sync/Chat) | Nein | gespeichert | App-Funktionalität |
+| **Nicht erhoben:** Werbe-ID (AD_ID/SSAID **deaktiviert**), Telefonnummer, Adresse, Gesundheitsdaten, Browser-Verlauf, Kontakte, Werbung | — | — | — | — |
 
-### Cloud/Server
-- **Keine Cloud-Speicherung** in der Basis-Version
-- **Keine Server-Verbindung** für Nutzerdaten
-- **Premium-Features:** Optionaler Sync (separate Vereinbarung)
+## 2. Weitergabe an unabhängige Verantwortliche (das Feld „Weitergegeben: Ja")
 
----
+| Empfänger | Daten | Warum unabhängiger Verantwortlicher |
+|---|---|---|
+| **Google (Play Billing / Google Commerce Ltd.)** | Kauf-Token, Produkt-ID, App-/Geräteangaben | Merchant of Record; Abrechnung läuft über Google |
+| **Google (OAuth, nur bei Google-Sign-in)** | Google-Konto-Kennung (Anmeldung) | Google als Identitäts-Provider |
+| **CARTO** (Kartenkacheln) | IP-Adresse + angeforderte Kacheln (implizit Koordinaten) | Eigener Dienst, empfängt Anfragen direkt |
+| **Nationale Wetterdienste** (DWD/CHMI/HungaroMet/IMGW/SHMÚ/MeteoSwiss) | Standortangabe (Ort/Koordinaten der Abfrage), IP | Eigene APIs, empfangen Abfragen direkt |
 
-## Drittanbieter
+Auftragsverarbeiter (zählen **nicht** als „Weitergegeben"): Supabase (Hosting/Auth/DB,
+EU/Irland), Microsoft **Azure AI Speech** (STT/TTS, EU/Schweden), **Mistral AI** (LLM, EU/Frankreich,
+kein Training), **Brevo** (transaktionale Konto-Mails, EU/Frankreich), **Scaleway** (verschlüsselte
+Cloud-Backups, EU/Frankreich), **Netcup** (Hosting, DE).
 
-### Firebase (Google)
-- **Crashlytics:** Crash-Reporting
-- **Analytics:** Anonyme Nutzungsstatistiken (ohne Advertising ID)
-- **Datenschutz:** https://firebase.google.com/support/privacy
+## 3. Datenschutzpraktiken (Formular-Abschnitt „Praktiken")
 
-### Google Play services (Standort)
-- **Zweck:** Standortermittlung für Kartenansicht und Wetter
-- **Anbieter:** Google Ireland Limited
-- **Datenschutz:** https://policies.google.com/privacy
+- **Verschlüsselung während der Übertragung:** Ja (alles TLS; Sync/Backups zusätzlich AES-256-GCM).
+- **Mechanismus für Löschanforderungen:** Ja (Kontolöschung in-App, Art. 17; Datenexport vorab möglich).
+- **Zielgruppe Kinder:** Nein — App richtet sich nicht an Kinder; Zielgruppe 13+.
+- **Unabhängiger Datenschutz-Dienstleister für Werbezwecke:** Nein (keine Werbung, keine Ad-ID).
 
-### Netcup (Hosting)
-- **Zweck:** Hosting von LiteLLM, Speech-Relay und Status-Spiegel
-- **Anbieter:** Netcup GmbH, Karlsruhe
-- **Datenschutz:** https://www.netcup.com/de/datenschutz
+## 4. Formular-Führung (Play Console)
 
----
+Pfad (neue Console): **„Mit Google Play geschützt" / App-Inhalt → Datenicherheit → Verwalten**.
 
-## Berechtigungen
+1. **Datenschutzrichtlinie-URL:** `https://beemaster-app.de/` (aktuelle Fassung 3.8).
+2. **Sammeln/Weitergeben:** „Ja, es werden Nutzerdaten erhoben und weitergegeben."
+3. **Kategorien** gemäß Tabelle oben; pro Kategorie: Typ ankreuzen, optional/erforderlich,
+   temporär (nur Audio-Verarbeitung), Zweck-Tags:
+   - E-Mail/Name/Konto → **App-Funktionalität**, **Kontoverwaltung**; Weitergabe nein.
+   - App-Interaktionen/App-Fehler/IDs → **Analyse**, **App-Funktionalität**, **Betrugsprävention**;
+     opt-in (standardmäßig deaktiviert), Weitergabe nein (Firebase = Auftragsverarbeiter).
+   - Audio → **App-Funktionalität**, temporär, Weitergabe nein (Azure/Mistral = AVV).
+   - Standort → **App-Funktionalität**; Weitergabe **ja** (CARTO, Wetterdienste).
+   - Kaufhistorie → **App-Funktionalität**, **Betrugsprävention**; Weitergabe **ja** (Google = MoR).
+   - Fotos/Andere Inhalte → **App-Funktionalität**; Weitergabe nein.
+4. **Praktiken** wie Abschnitt 3.
+5. **Speichern + Formular einreichen** (gilt app-weit; neue Versionen müssen kompatibel bleiben).
 
-| Berechtigung | Zweck |
-|--------------|-------|
-| `INTERNET` | fakultative Cloud-Sync |
-| `ACCESS_FINE_LOCATION` | GPS-Standorte für Bienenstöcke |
-| `ACCESS_COARSE_LOCATION` | Grobe Ortung für Karten |
-| `CAMERA` | Fotos von Bienenstöcken |
-| `RECORD_AUDIO` | Sprachnotizen |
-| `POST_NOTIFICATIONS` | Reminder-Benachrichtigungen |
-| `SCHEDULE_EXACT_ALARM` | Reminder-Timer |
-| `RECEIVE_BOOT_COMPLETED` | Reminder nach Neustart wiederherstellen |
-| `READ_EXTERNAL_STORAGE` |OSMDroid-Kartencache |
-| `READ_MEDIA_IMAGES` | Profilbilder |
+## 5. Wichtige Abgrenzungen (bewusst NICHT deklariert)
 
----
+- **Mollie** (alternative Zahlung): nur in Test-Builds aktiv, im Production-Build inaktiv
+  (Aktivierung erst nach Google-Freischaltung) → im Formular **nicht** deklarieren;
+  bei Aktivierung nachtragen.
+- **Werbe-ID:** AD_ID- und AdServices-Berechtigungen sind via `tools:node="remove"` entfernt;
+  Firebase-Flags (`google_analytics_adid_collection_enabled=false`,
+  `google_analytics_ssaid_collection_enabled=false`) → keine Deklaration „Werbung/IDs zu Marketing".
+- **Firebase:** standardmäßig deaktiviert, Erhebung nur nach opt-in-Einwilligung (DSE 6.1).
+- **ML-Kit Belegerkennung:** vollständig on-device, keine Übermittlung → keine Deklaration.
 
-## Kinder- und Jugendschutz
+## 6. Nachweis
 
-- **App nicht für Kinder unter 13 geeignet**
-- **Keine gezielte Datenerhebung bei Kindern**
-- **Keine Werbung**
-- **Keine In-App-Käufe ohne Altersverifikation**
-
----
-
-## DSGVO-Konformität (EU)
-
-### Rechtsgrundlage
-- **Art. 6 Abs. 1 lit. b DSGVO:** Vertragserfüllung
-- **Art. 6 Abs. 1 lit. f DSGVO:** Berechtigtes Interesse (App-Stabilität)
-- **Art. 6 Abs. 1 lit. a DSGVO:** Einwilligung (optionale Daten)
-
-### Nutzerrechte
-- Auskunft über gespeicherte Daten
-- Berichtigung falscher Daten
-- Löschung aller Daten
-- Datenexport
-- Widerruf der Einwilligung
-
-### Kontakt für Datenschutz
-- **E-Mail:** privacy@beemaster.app
-- **Telegram:** @mightmikemiller
-
----
-
-## Änderungen
-
-Diese Datenschutzerklärung kann aktualisiert werden. Nutzer werden über wesentliche Änderungen in der App informiert.
-
-**Letzte Aktualisierung:** März 2025
-
----
-
-## Compiled Answers for Google Play Console
-
-### Werden Nutzerdaten erhoben oder geteilt?
-**JA**
-
-### Erforderliche Datentypen:
-
-#### Standort
-- **Typ:** Genauer Standort (GPS)folgt:** App-Funktionalität (Bienenstock-Karte)
-- **Verschlüsselt:** Ja (in Transit)
-- **Kann gelöscht werden:** Ja
-- **Geteilt mit:** Keine Dritten
-
-#### Persönliche Informationen
-- **Typ:** Name, E-Mail, Telefon (optional)
-- **Erforderlich:** Nein (optional)
-- **Zweck:** Profil-Personalisierung
-- **Verschlüsselt:** Ja (Android Keystore)
-- **Kann gelöscht werden:** Ja
-
-#### Fotos und Videos
-- **Typ:** Kamera-Aufnahmen
-- **Erforderlich:** Nein (optional)
-- **Zweck:** Bienenstock-Dokumentation
-- **Verschlüsselt:** Ja
-- **Kann gelöscht werden:** Ja
-
-#### Audio
-- **Typ:** Sprachaufnahmen
-- **Erforderlich:** Nein (optional)
-- **Zweck:** Notizen per Spracheingabe
-- **Kann gelöscht werden:** Ja
-
-#### App-Aktivität
-- **Typ:** App-Interaktionen, Crash-Logs
-- **Erforderlich:** Nein
-- **Zweck:** App-Verbesserung
-- **Geteilt mit:** Firebase (Google)
-
-#### Geräte-ID
-- **Typ:** Geräteidentifikation
-- **Erforderlich:** Ja (für Crash-Reporting)
-- **Zweck:** Fehlerdiagnose
-- **Geteilt mit:** Firebase Crashlytics
-
-### Daten sicherheitspraktiken:
-- ✅ Daten werden verschlüsselt (in Transit)
-- ✅ Daten werden verschlüsselt (in Ruhe, Android Keystore)
-- ✅ Nutzer können Daten löschen
-- ✅ Nutzer können Daten exportieren
-
-### Dritte SDKs:
-- **Firebase Crashlytics:** Crash-Reporting
-- **Firebase Analytics:** Nutzungsstatistikan (anonym)
-- **Google Play Services:** Standortdienste
+- Datenschutzerklärung 3.8 (18 Sprachen): App-Assets + `https://beemaster-app.de/` (Render-Gate).
+- Disclosure-Gate: `beemaster-process/scripts/check-processor-disclosure.py` (Code ↔ DSE).
+- Consent-Nachweis: EULA/AGB/DSE-Akzeptanz mit Versions-Hash (Art. 7 Abs. 1).
