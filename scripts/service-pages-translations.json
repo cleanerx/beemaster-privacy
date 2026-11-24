@@ -54,8 +54,7 @@
         "s4_h": "4. Datenexport vor der Löschung",
         "s4_li": [
           "Du kannst vor der Löschung <strong>beide Exporte</strong> erstellen: Kontodaten über Einstellungen → <strong>Konto</strong> → <strong>Daten exportieren</strong> (JSON-Bundle vom Server) und lokale Daten über Einstellungen → <strong>Daten exportieren</strong>. Danach ist kein Zugriff mehr möglich."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Daten anfordern",
@@ -108,8 +107,7 @@
             "Konto-Export in der App (sofort)",
             "Absturz-/Nutzungsstatistiken, soweit gespeichert"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Datenschutzerklärung",
@@ -173,8 +171,7 @@
         "s4_h": "4. Data export before deletion",
         "s4_li": [
           "Before deleting, you can create <strong>both exports</strong>: account data via Settings → <strong>Account</strong> → <strong>Export data</strong> (JSON bundle from the server) and local data via Settings → <strong>Export data</strong>. Afterwards access is no longer possible."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Request your data",
@@ -227,8 +224,7 @@
             "Account export in the app (immediate)",
             "Crash/usage statistics, as far as stored"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Privacy policy",
@@ -292,8 +288,7 @@
         "s4_h": "4. Export des données avant la suppression",
         "s4_li": [
           "Avant la suppression, vous pouvez créer <strong>les deux exports</strong> : données de compte via Paramètres → <strong>Compte</strong> → <strong>Exporter les données</strong> (bundle JSON du serveur) et données locales via Paramètres → <strong>Exporter les données</strong>. Ensuite, l'accès n'est plus possible."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Demander vos données",
@@ -346,8 +341,7 @@
             "Export du compte dans l'application (immédiat)",
             "Statistiques de plantage/d'utilisation, si conservées"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Politique de confidentialité",
@@ -411,8 +405,7 @@
         "s4_h": "4. Gegevensexport vóór verwijdering",
         "s4_li": [
           "Voor het verwijderen kun je <strong>beide exports</strong> maken: accountgegevens via Instellingen → <strong>Account</strong> → <strong>Gegevens exporteren</strong> (JSON-bundel van de server) en lokale gegevens via Instellingen → <strong>Gegevens exporteren</strong>. Daarna is toegang niet meer mogelijk."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Uw gegevens opvragen",
@@ -465,8 +458,7 @@
             "Accountexport in de app (direct)",
             "Crash-/gebruiksstatistieken, voor zover opgeslagen"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Privacybeleid",
@@ -530,8 +522,7 @@
         "s4_h": "4. Експорт на данни преди изтриването",
         "s4_li": [
           "Преди изтриването можете да създадете <strong>и двата експорта</strong>: данни на профила чрез Настройки → <strong>Профил</strong> → <strong>Експорт на данни</strong> (JSON пакет от сървъра) и локални данни чрез Настройки → <strong>Експорт на данни</strong>. След това достъпът е невъзможен."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Заявяване на данните ви",
@@ -584,8 +575,7 @@
             "Експорт на профила в приложението (незабавно)",
             "Статистика за сриви/използване, доколкото е съхранена"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Политика за поверителност",
@@ -649,8 +639,7 @@
         "s4_h": "4. Export dat před smazáním",
         "s4_li": [
           "Před smazáním můžete vytvořit <strong>oba exporty</strong>: údaje účtu přes Nastavení → <strong>Účet</strong> → <strong>Exportovat data</strong> (JSON balíček ze serveru) a lokální data přes Nastavení → <strong>Exportovat data</strong>. Poté už přístup není možný."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Vyžádání dat",
@@ -703,8 +692,7 @@
             "Export účtu v aplikaci (okamžitě)",
             "Statistiky pádu/využití, pokud uloženy"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Zásady ochrany osobních údajů",
@@ -768,8 +756,7 @@
         "s4_h": "4. Dataeksport før sletning",
         "s4_li": [
           "Før sletningen kan du oprette <strong>begge eksporter</strong>: kontodata via Indstillinger → <strong>Konto</strong> → <strong>Eksporter data</strong> (JSON-pakke fra serveren) og lokale data via Indstillinger → <strong>Eksporter data</strong>. Derefter er adgang ikke længere mulig."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Anmodning om dine data",
@@ -822,8 +809,7 @@
             "Kontoeksport i appen (straks)",
             "Crash-/brugsstatistik, i det omfang gemt"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Privatlivspolitik",
@@ -887,8 +873,7 @@
         "s4_h": "4. Adatexport a törlés előtt",
         "s4_li": [
           "Törlés előtt <strong>mindkét exportot</strong> elkészítheti: fiókadatok a Beállítások → <strong>Fiók</strong> → <strong>Adatok exportálása</strong> menüben (JSON-csomag a szerverről), helyi adatok a Beállítások → <strong>Adatok exportálása</strong> menüben. Utána a hozzáférés már nem lehetséges."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Adatok igénylése",
@@ -941,8 +926,7 @@
             "Fiókexport az alkalmazásban (azonnal)",
             "Összeomlási/használati statisztikák, amennyiben tárolva"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Adatvédelmi tájékoztató",
@@ -1006,8 +990,7 @@
         "s4_h": "4. Esportazione dei dati prima dell'eliminazione",
         "s4_li": [
           "Prima della cancellazione puoi creare <strong>entrambe le esportazioni</strong>: dati dell'account tramite Impostazioni → <strong>Account</strong> → <strong>Esporta dati</strong> (bundle JSON dal server) e dati locali tramite Impostazioni → <strong>Esporta dati</strong>. Successivamente l'accesso non è più possibile."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Richiesta dei dati",
@@ -1060,8 +1043,7 @@
             "Esportazione dell'account nell'app (immediata)",
             "Statistiche su arresti/utilizzo, se conservate"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Informativa privacy",
@@ -1125,8 +1107,7 @@
         "s4_h": "4. Eksport danych przed usunięciem",
         "s4_li": [
           "Przed usunięciem możesz utworzyć <strong>oba eksporty</strong>: dane konta przez Ustawienia → <strong>Konto</strong> → <strong>Eksportuj dane</strong> (pakiet JSON z serwera) oraz dane lokalne przez Ustawienia → <strong>Eksportuj dane</strong>. Potem dostęp nie jest już możliwy."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Wniosek o dane",
@@ -1179,8 +1160,7 @@
             "Eksport konta w aplikacji (natychmiast)",
             "Statystyki awarii/użycia, o ile przechowywane"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Polityka prywatności",
@@ -1244,8 +1224,7 @@
         "s4_h": "4. Export údajov pred zmazaním",
         "s4_li": [
           "Pred zmazaním môžete vytvoriť <strong>oba exporty</strong>: údaje účtu cez Nastavenia → <strong>Účet</strong> → <strong>Exportovať údaje</strong> (JSON balík zo servera) a lokálne údaje cez Nastavenia → <strong>Exportovať údaje</strong>. Potom už prístup nie je možný."
-        ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
+        ]
       },
       "req": {
         "title": "Žiadosť o údaje",
@@ -1298,8 +1277,7 @@
             "Export účtu v aplikácii (okamžite)",
             "Štatistiky pádov/využitia, pokiaľ uložené"
           ]
-        ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
+        ]
       },
       "labels": {
         "privacy": "Ochrana osobných údajov",

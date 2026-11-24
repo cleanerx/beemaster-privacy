@@ -120,8 +120,6 @@ def build_main(t: dict, lang: str, page: str, suffix: str) -> str:
     if "s4_h" in p:
         out.append(f"<h2>{p['s4_h']}</h2>")
         out.append("<ul>\n" + "\n".join(f"<li>{li}</li>" for li in p["s4_li"]) + "\n</ul>")
-    if "ensummary" in p and lang != "en":
-        out.append(p["ensummary"])
 
     # Cross-Links (sibling service page + Rechtsdokumente der Locale)
     labels = t["labels"]
