@@ -21,52 +21,105 @@
           "Zur Verifizierung können wir Rückfragen zur Kontoinhaberschaft stellen."
         ],
         "s3_h": "3. Was wird gelöscht — und was nicht?",
-        "s3_head": ["Bereich", "Behandlung bei Kontolöschung"],
+        "s3_head": [
+          "Bereich",
+          "Behandlung bei Kontolöschung"
+        ],
         "s3_rows": [
-          ["Profil, Beuten-/Schwarmdaten, Notizen", "gelöscht"],
-          ["KI-Guthaben (Credits)", "gelöscht; Restguthaben auf Wunsch erstattet"],
-          ["Consent-Nachweise (EULA/AGB/Datenschutz)", "gelöscht"],
-          ["Cloud-Backups (optional)", "gelöscht"],
-          ["Kontolöschungs-Audit-Log", "3 Jahre (Nachweis der Ausführung, ohne Profilbezug)"],
-          ["Steuerrelevante Buchungsbelege", "gesetzliche Aufbewahrung (8 Jahre); Verknüpfung zum Konto entfernt/anonymisiert"]
+          [
+            "Profil, Beuten-/Schwarmdaten, Notizen",
+            "gelöscht"
+          ],
+          [
+            "KI-Guthaben (Credits)",
+            "gelöscht; Restguthaben auf Wunsch erstattet"
+          ],
+          [
+            "Consent-Nachweise (EULA/AGB/Datenschutz)",
+            "gelöscht"
+          ],
+          [
+            "Cloud-Backups (optional)",
+            "gelöscht"
+          ],
+          [
+            "Kontolöschungs-Audit-Log",
+            "3 Jahre (Nachweis der Ausführung, ohne Profilbezug)"
+          ],
+          [
+            "Steuerrelevante Buchungsbelege",
+            "gesetzliche Aufbewahrung (8 Jahre); Verknüpfung zum Konto entfernt/anonymisiert"
+          ]
         ],
         "s4_h": "4. Datenexport vor der Löschung",
         "s4_li": [
-          "Du kannst vor der Löschung einen <strong>Datenexport</strong> erstellen (Einstellungen → Daten exportieren). Danach ist kein Zugriff mehr möglich."
+          "Du kannst vor der Löschung <strong>beide Exporte</strong> erstellen: Kontodaten über Einstellungen → <strong>Konto</strong> → <strong>Daten exportieren</strong> (JSON-Bundle vom Server) und lokale Daten über Einstellungen → <strong>Daten exportieren</strong>. Danach ist kein Zugriff mehr möglich."
         ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Daten anfordern",
         "updated": "Stand: 24. November 2026",
-        "intro": "<strong>Kurzfassung:</strong> Du hast jederzeit das Recht auf Auskunft und Datenübertragbarkeit. Lokale Daten kannst du dir <strong>direkt in der App</strong> als Datei exportieren; alle anderen Daten erhältst du auf <strong>Anfrage per E-Mail</strong>. Die Antwort erfolgt in der Regel <strong>innerhalb eines Monats</strong>.",
-        "s1_h": "1. In-App-Datenexport (sofort)",
+        "intro": "<strong>Kurzfassung:</strong> Du hast jederzeit das Recht auf Auskunft und Datenübertragbarkeit. In der App kannst du <strong>alle deine Daten</strong> selbst exportieren: die Konto- und Cloud-Daten als JSON-Bundle direkt vom Server und die lokalen Daten als Datei. Eine Anfrage per E-Mail ist nur der Fallback.",
+        "s1_h": "1. Export in der App (sofort)",
         "s1_li": [
-          "App öffnen → <strong>Einstellungen</strong> → <strong>Daten exportieren</strong>.",
-          "Du erhältst eine <strong>JSON-Datei</strong> mit deinem lokalen Datenbestand: Profil und Einstellungen, Standorte (GPS-Koordinaten), Beuten, Völker-Events (Kontrollen, Behandlungen), Varroa-Behandlungen und Erinnerungen.",
-          "Die Datei wird lokal auf deinem Gerät erzeugt — sie verlässt die App nicht.",
-          "Der Import auf einem anderen Gerät ist über <strong>Daten importieren</strong> möglich (mit Import-Vorschau und Konfliktstrategie)."
+          "Konto- und Cloud-Daten: App öffnen → <strong>Einstellungen</strong> → <strong>Konto</strong> → <strong>Daten exportieren</strong>. Du erhältst ein <strong>JSON-Bundle</strong> (Art. 15/20 DSGVO) mit Konto- und Consent-Daten, KI-Guthaben und Verbrauch, Zahlungen und Erstattungen, Premium-Ansprüchen, Metadaten der Cloud-Backups, Feedback, Incidents und Push-Geräten.",
+          "Lokale Daten: <strong>Einstellungen</strong> → <strong>Daten exportieren</strong>. Du erhältst eine <strong>JSON-Datei</strong> mit Profil und Einstellungen, Standorten (GPS-Koordinaten), Beuten, Völker-Events (Kontrollen, Behandlungen), Varroa-Behandlungen, Erinnerungen, Finanzen, Fotos und Verkaufsangeboten.",
+          "Beide Exporte entstehen auf deinem Gerät; über den Teilen-Dialog entscheidest du, wohin sie gehen (Dateien, E-Mail, Cloud).",
+          "Fehlt eine Angabe, kannst du sie formlos per E-Mail nachfordern (Abschnitt 2)."
         ],
-        "s2_h": "2. Anfrage per E-Mail (Cloud- und Kontodaten)",
-        "s2_p": "E-Mail an <a href='mailto:support@dolphincrusher.com?subject=Datenauskunft'>support@dolphincrusher.com</a> mit dem Betreff <strong>„Datenauskunft“</strong> und deiner Konto-E-Mail-Adresse:",
+        "s2_h": "2. Anfrage per E-Mail (Fallback)",
+        "s2_p": "Wenn du keinen Zugriff mehr auf die App oder dein Konto hast: E-Mail an <a href='mailto:support@dolphincrusher.com?subject=Datenauskunft'>support@dolphincrusher.com</a> mit dem Betreff <strong>„Datenauskunft“</strong> und deiner Konto-E-Mail-Adresse:",
         "s2_li": [
-          "Erhältst du: Kontodaten (E-Mail, Account-Status, KI-Guthaben und Verbrauchsprotokolle), Cloud-Sync- und Backup-Metadaten, Consent-Nachweise (EULA/AGB/Datenschutz), Feedback-Einträge (soweit vorhanden).",
+          "Wir stellen dir die Daten zusammen, die nicht im App-Export enthalten sind oder die du nicht selbst abrufen kannst (z. B. weil du dein Konto nicht mehr öffnen kannst).",
           "<strong>Frist:</strong> Antwort innerhalb eines Monats (Art. 12 Abs. 3 DSGVO); bei komplexen Anfragen verlängert sich die Frist um bis zu zwei Monate — wir informieren dich dann mit Begründung.",
           "Zur Verifizierung können wir Rückfragen zur Kontoinhaberschaft stellen.",
           "Ein Auskunftsersuchen kostet dich nichts."
         ],
         "s3_h": "3. Was ist enthalten?",
-        "s3_head": ["Datenbereich", "Weg", "Inhalt"],
-        "s3_rows": [
-          ["Lokale Verwaltungsdaten", "In-App-Export (sofort)", "Profil, Standorte, Beuten, Events, Behandlungen, Erinnerungen, Einstellungen"],
-          ["Konto &amp; Cloud", "E-Mail-Anfrage", "Kontostatus, KI-Guthaben, Verbrauchsprotokolle, Sync-/Backup-Metadaten"],
-          ["Consent-Nachweise", "E-Mail-Anfrage", "Zeitpunkt, Versions-Hashes der akzeptierten Rechtstexte"],
-          ["Feedback (optional)", "E-Mail-Anfrage", "Kategorie, Bewertung, Kommentar, App-Version"],
-          ["Telemetrie (opt-in)", "E-Mail-Anfrage", "Absturz-/Nutzungsstatistiken, soweit gespeichert"]
+        "s3_head": [
+          "Datenbereich",
+          "Weg",
+          "Inhalt"
         ],
-        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15). Export your local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+        "s3_rows": [
+          [
+            "Lokale Verwaltungsdaten",
+            "In-App-Export (sofort)",
+            "Profil, Standorte, Beuten, Events, Behandlungen, Erinnerungen, Einstellungen"
+          ],
+          [
+            "Konto &amp; Cloud",
+            "Konto-Export in der App (sofort)",
+            "Kontostatus, KI-Guthaben, Verbrauchsprotokolle, Sync-/Backup-Metadaten"
+          ],
+          [
+            "Consent-Nachweise",
+            "Konto-Export in der App (sofort)",
+            "Zeitpunkt, Versions-Hashes der akzeptierten Rechtstexte"
+          ],
+          [
+            "Feedback (optional)",
+            "Konto-Export in der App (sofort)",
+            "Kategorie, Bewertung, Kommentar, App-Version"
+          ],
+          [
+            "Telemetrie (opt-in)",
+            "Konto-Export in der App (sofort)",
+            "Absturz-/Nutzungsstatistiken, soweit gespeichert"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Datenschutzerklärung", "agb": "AGB", "eula": "EULA", "imprint": "Impressum", "del": "Konto löschen", "req": "Daten anfordern" }
+      "labels": {
+        "privacy": "Datenschutzerklärung",
+        "agb": "AGB",
+        "eula": "EULA",
+        "imprint": "Impressum",
+        "del": "Konto löschen",
+        "req": "Daten anfordern"
+      },
+      "provider": "Anbieter: <strong>Dolphincrusher Software</strong> (Inhaber: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     },
     "en": {
       "del": {
@@ -87,50 +140,105 @@
           "We may ask follow-up questions to verify account ownership."
         ],
         "s3_h": "3. What is deleted — and what is not?",
-        "s3_head": ["Area", "Treatment on account deletion"],
+        "s3_head": [
+          "Area",
+          "Treatment on account deletion"
+        ],
         "s3_rows": [
-          ["Profile, apiary/colony data, notes", "deleted"],
-          ["AI credits", "deleted; remaining credit refunded on request"],
-          ["Consent records (EULA/Terms/Privacy)", "deleted"],
-          ["Cloud backups (optional)", "deleted"],
-          ["Account-deletion audit log", "3 years (proof of execution, no profile reference)"],
-          ["Tax-relevant receipts", "statutory retention (8 years); link to the account removed/anonymised"]
+          [
+            "Profile, apiary/colony data, notes",
+            "deleted"
+          ],
+          [
+            "AI credits",
+            "deleted; remaining credit refunded on request"
+          ],
+          [
+            "Consent records (EULA/Terms/Privacy)",
+            "deleted"
+          ],
+          [
+            "Cloud backups (optional)",
+            "deleted"
+          ],
+          [
+            "Account-deletion audit log",
+            "3 years (proof of execution, no profile reference)"
+          ],
+          [
+            "Tax-relevant receipts",
+            "statutory retention (8 years); link to the account removed/anonymised"
+          ]
         ],
         "s4_h": "4. Data export before deletion",
         "s4_li": [
-          "Before deletion you can create a <strong>data export</strong> (Settings → Export data). Afterwards access is no longer possible."
-        ]
+          "Before deleting, you can create <strong>both exports</strong>: account data via Settings → <strong>Account</strong> → <strong>Export data</strong> (JSON bundle from the server) and local data via Settings → <strong>Export data</strong>. Afterwards access is no longer possible."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Request your data",
         "updated": "As of: 24 November 2026",
-        "intro": "<strong>Summary:</strong> You have the right of access and data portability at any time. You can export <strong>local data directly in the app</strong> as a file; all other data is provided on <strong>request by email</strong>. The answer is usually given <strong>within one month</strong>.",
-        "s1_h": "1. In-app data export (instant)",
+        "intro": "<strong>In short:</strong> You have the right to access and portability of your data at any time. In the app you can export <strong>all of your data</strong> yourself: account and cloud data as a JSON bundle straight from the server and local data as a file. An email request is only a fallback.",
+        "s1_h": "1. Export in the app (immediate)",
         "s1_li": [
-          "Open the app → <strong>Settings</strong> → <strong>Export data</strong>.",
-          "You receive a <strong>JSON file</strong> with your local data: profile and settings, apiary locations (GPS coordinates), hives, colony events (inspections, treatments), varroa treatments and reminders.",
-          "The file is generated locally on your device — it never leaves the app.",
-          "Import on another device is possible via <strong>Import data</strong> (with preview and conflict strategy)."
+          "Account and cloud data: open the app → <strong>Settings</strong> → <strong>Account</strong> → <strong>Export data</strong>. You get a <strong>JSON bundle</strong> (GDPR Art. 15/20) with account and consent data, AI credits and usage, payments and refunds, premium entitlements, cloud backup metadata, feedback, incidents and push devices.",
+          "Local data: <strong>Settings</strong> → <strong>Export data</strong>. You get a <strong>JSON file</strong> with profile and settings, locations (GPS coordinates), hives, colony events (inspections, treatments), varroa treatments, reminders, finances, photos and sales offers.",
+          "Both exports are created on your device; the share dialog lets you choose where they go (files, email, cloud).",
+          "If something is missing, you can request it by email without any formalities (section 2)."
         ],
-        "s2_h": "2. Request by email (cloud and account data)",
-        "s2_p": "Email <a href='mailto:support@dolphincrusher.com?subject=Data%20request'>support@dolphincrusher.com</a> with the subject <strong>„Data request“</strong> and your account's email address:",
+        "s2_h": "2. Request by email (fallback)",
+        "s2_p": "If you no longer have access to the app or your account: email <a href='mailto:support@dolphincrusher.com?subject=Data%20request'>support@dolphincrusher.com</a> with the subject <strong>„Data request“</strong> and your account email address:",
         "s2_li": [
-          "You receive: account data (email, account status, AI credits and usage logs), cloud sync and backup metadata, consent records (EULA/Terms/Privacy), feedback entries (if any).",
-          "<strong>Deadline:</strong> answer within one month (GDPR Art. 12(3)); complex requests may extend by up to two months — we will inform you with reasons.",
-          "We may ask follow-up questions to verify account ownership.",
-          "Access requests are free of charge."
+          "We compile the data that is not part of the in-app export or that you cannot retrieve yourself (for example because you can no longer open your account).",
+          "<strong>Deadline:</strong> reply within one month (GDPR Art. 12(3)); for complex requests the deadline may be extended by up to two more months — we will inform you with reasons.",
+          "We may ask questions to verify account ownership.",
+          "A data access request is free of charge."
         ],
         "s3_h": "3. What is included?",
-        "s3_head": ["Data area", "Route", "Content"],
+        "s3_head": [
+          "Data area",
+          "Route",
+          "Content"
+        ],
         "s3_rows": [
-          ["Local management data", "In-app export", "Profile, locations, hives, events, treatments, reminders, settings"],
-          ["Account &amp; cloud", "Email request", "Account status, AI credits, usage logs, sync/backup metadata"],
-          ["Consent records", "Email request", "Timestamp, version hashes of accepted legal texts"],
-          ["Feedback (optional)", "Email request", "Category, rating, comment, app version"],
-          ["Telemetry (opt-in)", "Email request", "Crash/usage statistics, as far as stored"]
-        ]
+          [
+            "Local management data",
+            "In-app export (immediate)",
+            "Profile, locations, hives, events, treatments, reminders, settings"
+          ],
+          [
+            "Account &amp; cloud",
+            "Account export in the app (immediate)",
+            "Account status, AI credits, usage logs, sync/backup metadata"
+          ],
+          [
+            "Consent records",
+            "Account export in the app (immediate)",
+            "Timestamp, version hashes of accepted legal texts"
+          ],
+          [
+            "Feedback (optional)",
+            "Account export in the app (immediate)",
+            "Category, rating, comment, app version"
+          ],
+          [
+            "Telemetry (opt-in)",
+            "Account export in the app (immediate)",
+            "Crash/usage statistics, as far as stored"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Privacy policy", "agb": "Terms", "eula": "EULA", "imprint": "Legal notice", "del": "Delete account", "req": "Request your data" }
+      "labels": {
+        "privacy": "Privacy policy",
+        "agb": "Terms",
+        "eula": "EULA",
+        "imprint": "Legal notice",
+        "del": "Delete account",
+        "req": "Request your data"
+      },
+      "provider": "Provider: <strong>Dolphincrusher Software</strong> (owner: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     },
     "fr": {
       "del": {
@@ -151,52 +259,105 @@
           "Des questions de vérification de la titularité du compte sont possibles."
         ],
         "s3_h": "3. Ce qui est supprimé — et ce qui ne l'est pas ?",
-        "s3_head": ["Domaine", "Traitement lors de la suppression du compte"],
+        "s3_head": [
+          "Domaine",
+          "Traitement lors de la suppression du compte"
+        ],
         "s3_rows": [
-          ["Profil, données de ruches/colonies, notes", "supprimé"],
-          ["Crédits IA", "supprimé ; solde restant remboursé sur demande"],
-          ["Preuves de consentement (CGU/EULA/confidentialité)", "supprimées"],
-          ["Sauvegardes cloud (facultatif)", "supprimées"],
-          ["Journal d'audit de suppression", "3 ans (preuve d'exécution, sans référence au profil)"],
-          ["Justificatifs fiscaux", "conservation légale (8 ans) ; lien avec le compte supprimé/anonymisé"]
+          [
+            "Profil, données de ruches/colonies, notes",
+            "supprimé"
+          ],
+          [
+            "Crédits IA",
+            "supprimé ; solde restant remboursé sur demande"
+          ],
+          [
+            "Preuves de consentement (CGU/EULA/confidentialité)",
+            "supprimées"
+          ],
+          [
+            "Sauvegardes cloud (facultatif)",
+            "supprimées"
+          ],
+          [
+            "Journal d'audit de suppression",
+            "3 ans (preuve d'exécution, sans référence au profil)"
+          ],
+          [
+            "Justificatifs fiscaux",
+            "conservation légale (8 ans) ; lien avec le compte supprimé/anonymisé"
+          ]
         ],
         "s4_h": "4. Export des données avant la suppression",
         "s4_li": [
-          "Avant la suppression, vous pouvez créer un <strong>export des données</strong> (Paramètres → Exporter les données). L'accès n'est ensuite plus possible."
+          "Avant la suppression, vous pouvez créer <strong>les deux exports</strong> : données de compte via Paramètres → <strong>Compte</strong> → <strong>Exporter les données</strong> (bundle JSON du serveur) et données locales via Paramètres → <strong>Exporter les données</strong>. Ensuite, l'accès n'est plus possible."
         ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Demander vos données",
         "updated": "État : 24 novembre 2026",
-        "intro": "<strong>Résumé :</strong> Vous avez à tout moment le droit d'accès et de portabilité. Vous pouvez exporter vos <strong>données locales directement dans l'application</strong> ; toutes les autres données sont fournies <strong>sur demande par e-mail</strong>, généralement <strong>sous un mois</strong>.",
-        "s1_h": "1. Export in-app (immédiat)",
+        "intro": "<strong>En bref :</strong> Vous avez à tout moment le droit d'accès et à la portabilité de vos données. Dans l'application, vous pouvez exporter <strong>toutes vos données</strong> vous-même : les données de compte et de cloud sous forme de bundle JSON directement depuis le serveur et les données locales sous forme de fichier. Une demande par e-mail n'est qu'un recours.",
+        "s1_h": "1. Export dans l'application (immédiat)",
         "s1_li": [
-          "Ouvrir l'application → <strong>Paramètres</strong> → <strong>Exporter les données</strong>.",
-          "Vous recevez un <strong>fichier JSON</strong> avec vos données locales : profil et paramètres, emplacements (coordonnées GPS), ruches, événements de colonies (visites, traitements), traitements du varroa et rappels.",
-          "Le fichier est généré localement sur votre appareil — il ne quitte pas l'application.",
-          "L'import sur un autre appareil se fait via <strong>Importer les données</strong> (aperçu et stratégie de conflit)."
+          "Données de compte et de cloud : ouvrez l'application → <strong>Paramètres</strong> → <strong>Compte</strong> → <strong>Exporter les données</strong>. Vous obtenez un <strong>bundle JSON</strong> (art. 15/20 RGPD) avec les données de compte et de consentement, les crédits IA et leur consommation, les paiements et remboursements, les droits premium, les métadonnées des sauvegardes cloud, les retours, les incidents et les appareils push.",
+          "Données locales : <strong>Paramètres</strong> → <strong>Exporter les données</strong>. Vous obtenez un <strong>fichier JSON</strong> avec le profil et les paramètres, les emplacements (coordonnées GPS), les ruches, les événements des colonies (contrôles, traitements), les traitements varroa, les rappels, les finances, les photos et les offres de vente.",
+          "Les deux exports sont générés sur votre appareil ; la fenêtre de partage vous permet de choisir leur destination (fichiers, e-mail, cloud).",
+          "S'il manque une information, vous pouvez la demander par e-mail sans formalité (section 2)."
         ],
-        "s2_h": "2. Demande par e-mail (données cloud et de compte)",
-        "s2_p": "E-mail à <a href='mailto:support@dolphincrusher.com?subject=Demande%20de%20donn%C3%A9es'>support@dolphincrusher.com</a> avec l'objet <strong>« Demande de données »</strong> et l'adresse e-mail de votre compte :",
+        "s2_h": "2. Demande par e-mail (recours)",
+        "s2_p": "Si vous n'avez plus accès à l'application ou à votre compte : e-mail à <a href='mailto:support@dolphincrusher.com?subject=Demande%20de%20donn%C3%A9es'>support@dolphincrusher.com</a> avec l'objet <strong>« Demande de données »</strong> et l'adresse e-mail de votre compte :",
         "s2_li": [
-          "Vous recevez : données du compte (e-mail, statut, crédits IA et journaux d'utilisation), métadonnées de synchronisation et de sauvegarde cloud, preuves de consentement (CGU/EULA/confidentialité), retours (si disponibles).",
-          "<strong>Délai :</strong> réponse sous un mois (art. 12 §3 RGPD) ; jusqu'à deux mois pour les demandes complexes — avec justification.",
-          "Des questions de vérification de la titularité du compte sont possibles.",
-          "La demande est gratuite."
+          "Nous rassemblons les données qui ne figurent pas dans l'export de l'application ou que vous ne pouvez pas récupérer vous-même (par exemple si vous ne pouvez plus ouvrir votre compte).",
+          "<strong>Délai :</strong> réponse dans un délai d'un mois (art. 12, par. 3, RGPD) ; pour les demandes complexes, le délai peut être prolongé de deux mois au maximum — nous vous en informons avec motivation.",
+          "Nous pouvons poser des questions pour vérifier la propriété du compte.",
+          "Une demande d'accès est gratuite."
         ],
         "s3_h": "3. Contenu inclus",
-        "s3_head": ["Domaine de données", "Voie", "Contenu"],
-        "s3_rows": [
-          ["Données locales de gestion", "Export in-app", "Profil, emplacements, ruches, événements, traitements, rappels, paramètres"],
-          ["Compte &amp; cloud", "Demande par e-mail", "Statut du compte, crédits IA, journaux d'utilisation, métadonnées de sync/sauvegarde"],
-          ["Preuves de consentement", "Demande par e-mail", "Horodatage, empreintes de version des textes acceptés"],
-          ["Retours (facultatif)", "Demande par e-mail", "Catégorie, note, commentaire, version de l'app"],
-          ["Télémétrie (opt-in)", "Demande par e-mail", "Statistiques de plantage/d'utilisation, si conservées"]
+        "s3_head": [
+          "Domaine de données",
+          "Voie",
+          "Contenu"
         ],
-        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+        "s3_rows": [
+          [
+            "Données locales de gestion",
+            "Export dans l'application (immédiat)",
+            "Profil, emplacements, ruches, événements, traitements, rappels, paramètres"
+          ],
+          [
+            "Compte &amp; cloud",
+            "Export du compte dans l'application (immédiat)",
+            "Statut du compte, crédits IA, journaux d'utilisation, métadonnées de sync/sauvegarde"
+          ],
+          [
+            "Preuves de consentement",
+            "Export du compte dans l'application (immédiat)",
+            "Horodatage, empreintes de version des textes acceptés"
+          ],
+          [
+            "Retours (facultatif)",
+            "Export du compte dans l'application (immédiat)",
+            "Catégorie, note, commentaire, version de l'app"
+          ],
+          [
+            "Télémétrie (opt-in)",
+            "Export du compte dans l'application (immédiat)",
+            "Statistiques de plantage/d'utilisation, si conservées"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Politique de confidentialité", "agb": "CGV", "eula": "EULA", "imprint": "Mentions légales", "del": "Supprimer le compte", "req": "Demander vos données" }
+      "labels": {
+        "privacy": "Politique de confidentialité",
+        "agb": "CGV",
+        "eula": "EULA",
+        "imprint": "Mentions légales",
+        "del": "Supprimer le compte",
+        "req": "Demander vos données"
+      },
+      "provider": "Fournisseur : <strong>Dolphincrusher Software</strong> (propriétaire : Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     },
     "nl": {
       "del": {
@@ -217,52 +378,105 @@
           "Ter verificatie kunnen we vragen stellen over het eigendom van het account."
         ],
         "s3_h": "3. Wat wordt verwijderd — en wat niet?",
-        "s3_head": ["Gebied", "Behandeling bij accountverwijdering"],
+        "s3_head": [
+          "Gebied",
+          "Behandeling bij accountverwijdering"
+        ],
         "s3_rows": [
-          ["Profiel, bijenkorf-/volksgegevens, notities", "verwijderd"],
-          ["AI-credits", "verwijderd; rest tegoed op verzoek terugbetaald"],
-          ["Toestemmingsbewijzen (EULA/voorwaarden/privacy)", "verwijderd"],
-          ["Cloudback-ups (optioneel)", "verwijderd"],
-          ["Auditlog van accountverwijdering", "3 jaar (bewijs van uitvoering, zonder profielverwijzing)"],
-          ["Fiscaal relevante betalingsbewijzen", "wettelijke bewaring (8 jaar); koppeling met account verwijderd/geanonimiseerd"]
+          [
+            "Profiel, bijenkorf-/volksgegevens, notities",
+            "verwijderd"
+          ],
+          [
+            "AI-credits",
+            "verwijderd; rest tegoed op verzoek terugbetaald"
+          ],
+          [
+            "Toestemmingsbewijzen (EULA/voorwaarden/privacy)",
+            "verwijderd"
+          ],
+          [
+            "Cloudback-ups (optioneel)",
+            "verwijderd"
+          ],
+          [
+            "Auditlog van accountverwijdering",
+            "3 jaar (bewijs van uitvoering, zonder profielverwijzing)"
+          ],
+          [
+            "Fiscaal relevante betalingsbewijzen",
+            "wettelijke bewaring (8 jaar); koppeling met account verwijderd/geanonimiseerd"
+          ]
         ],
         "s4_h": "4. Gegevensexport vóór verwijdering",
         "s4_li": [
-          "Vóór verwijdering kun je een <strong>gegevensexport</strong> maken (Instellingen → Gegevens exporteren). Daarna is toegang niet meer mogelijk."
+          "Voor het verwijderen kun je <strong>beide exports</strong> maken: accountgegevens via Instellingen → <strong>Account</strong> → <strong>Gegevens exporteren</strong> (JSON-bundel van de server) en lokale gegevens via Instellingen → <strong>Gegevens exporteren</strong>. Daarna is toegang niet meer mogelijk."
         ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Uw gegevens opvragen",
         "updated": "Status: 24 november 2026",
-        "intro": "<strong>Samenvatting:</strong> Je hebt op elk moment recht op inzage en gegevensoverdracht. Lokale gegevens exporteer je <strong>direct in de app</strong> als bestand; alle overige gegevens ontvang je <strong>op aanvraag per e-mail</strong>, doorgaans <strong>binnen één maand</strong>.",
-        "s1_h": "1. In-app export (direct)",
+        "intro": "<strong>Kort:</strong> Je hebt altijd recht op inzage en dataportabiliteit. In de app kun je <strong>al je gegevens</strong> zelf exporteren: account- en cloudgegevens als JSON-bundel rechtstreeks van de server en lokale gegevens als bestand. Een verzoek per e-mail is alleen een terugvaloptie.",
+        "s1_h": "1. Export in de app (direct)",
         "s1_li": [
-          "Open de app → <strong>Instellingen</strong> → <strong>Gegevens exporteren</strong>.",
-          "Je ontvangt een <strong>JSON-bestand</strong> met je lokale gegevens: profiel en instellingen, locaties (GPS-coördinaten), bijenkorven, volksgebeurtenissen (inspecties, behandelingen), varroabehandelingen en herinneringen.",
-          "Het bestand wordt lokaal op je apparaat gegenereerd — het verlaat de app niet.",
-          "Importeren op een ander apparaat kan via <strong>Gegevens importeren</strong> (met voorbeeldweergave en conflic strategie)."
+          "Account- en cloudgegevens: open de app → <strong>Instellingen</strong> → <strong>Account</strong> → <strong>Gegevens exporteren</strong>. Je krijgt een <strong>JSON-bundel</strong> (AVG art. 15/20) met account- en toestemmingsgegevens, AI-tegoed en verbruik, betalingen en terugbetalingen, premiumrechten, metadata van cloudback-ups, feedback, incidenten en pushapparaten.",
+          "Lokale gegevens: <strong>Instellingen</strong> → <strong>Gegevens exporteren</strong>. Je krijgt een <strong>JSON-bestand</strong> met profiel en instellingen, locaties (GPS-coördinaten), kasten, volkgebeurtenissen (controles, behandelingen), varroabehandelingen, herinneringen, financiën, foto's en verkoopaanbiedingen.",
+          "Beide exports worden op je toestel gemaakt; via het deelvenster bepaal je waar ze naartoe gaan (bestanden, e-mail, cloud).",
+          "Ontbreekt er iets, dan kun je het zonder formaliteiten per e-mail opvragen (punt 2)."
         ],
-        "s2_h": "2. Aanvraag per e-mail (cloud- en accountgegevens)",
-        "s2_p": "E-mail naar <a href='mailto:support@dolphincrusher.com?subject=Gegevensaanvraag'>support@dolphincrusher.com</a> met als onderwerp <strong>„Gegevensaanvraag“</strong> en het e-mailadres van je account:",
+        "s2_h": "2. Verzoek per e-mail (terugvaloptie)",
+        "s2_p": "Heb je geen toegang meer tot de app of je account: e-mail <a href='mailto:support@dolphincrusher.com?subject=Gegevensverzoek'>support@dolphincrusher.com</a> met het onderwerp <strong>„Gegevensverzoek“</strong> en het e-mailadres van je account:",
         "s2_li": [
-          "Je ontvangt: accountgegevens (e-mail, status, AI-credits en verbruikslogboeken), metagegevens van cloudsync en back-ups, toestemmingsbewijzen (EULA/voorwaarden/privacy), feedback (indien aanwezig).",
-          "<strong>Termijn:</strong> antwoord binnen één maand (art. 12 lid 3 AVG); bij complexe aanvragen tot twee maanden — met motivering.",
-          "Ter verificatie kunnen we vragen stellen over het eigendom van het account.",
-          "De aanvraag is kosteloos."
+          "Wij stellen de gegevens samen die niet in de app-export zitten of die je niet zelf kunt opvragen (bijvoorbeeld omdat je je account niet meer kunt openen).",
+          "<strong>Termijn:</strong> antwoord binnen een maand (AVG art. 12 lid 3); bij complexe verzoeken kan de termijn met maximaal twee maanden worden verlengd — wij informeren je dan met opgave van redenen.",
+          "Wij kunnen vragen stellen om het eigenaarschap van het account te verifiëren.",
+          "Een inzageverzoek is gratis."
         ],
         "s3_h": "3. Wat zit erin?",
-        "s3_head": ["Gegevensgebied", "Route", "Inhoud"],
-        "s3_rows": [
-          ["Lokale beheergegevens", "In-app export", "Profiel, locaties, bijenkorven, gebeurtenissen, behandelingen, herinneringen, instellingen"],
-          ["Account &amp; cloud", "E-mailaanvraag", "Accountstatus, AI-credits, verbruikslogboeken, sync-/back-upmetadata"],
-          ["Toestemmingsbewijzen", "E-mailaanvraag", "Tijdstip, versie-hashes van geaccepteerde teksten"],
-          ["Feedback (optioneel)", "E-mailaanvraag", "Categorie, beoordeling, opmerking, app-versie"],
-          ["Telemetrie (opt-in)", "E-mailaanvraag", "Crash-/gebruiksstatistieken, voor zover opgeslagen"]
+        "s3_head": [
+          "Gegevensgebied",
+          "Route",
+          "Inhoud"
         ],
-        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+        "s3_rows": [
+          [
+            "Lokale beheergegevens",
+            "Export in de app (direct)",
+            "Profiel, locaties, bijenkorven, gebeurtenissen, behandelingen, herinneringen, instellingen"
+          ],
+          [
+            "Account &amp; cloud",
+            "Accountexport in de app (direct)",
+            "Accountstatus, AI-credits, verbruikslogboeken, sync-/back-upmetadata"
+          ],
+          [
+            "Toestemmingsbewijzen",
+            "Accountexport in de app (direct)",
+            "Tijdstip, versie-hashes van geaccepteerde teksten"
+          ],
+          [
+            "Feedback (optioneel)",
+            "Accountexport in de app (direct)",
+            "Categorie, beoordeling, opmerking, app-versie"
+          ],
+          [
+            "Telemetrie (opt-in)",
+            "Accountexport in de app (direct)",
+            "Crash-/gebruiksstatistieken, voor zover opgeslagen"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Privacybeleid", "agb": "Algemene voorwaarden", "eula": "EULA", "imprint": "Colofon", "del": "Account verwijderen", "req": "Uw gegevens opvragen" }
+      "labels": {
+        "privacy": "Privacybeleid",
+        "agb": "Algemene voorwaarden",
+        "eula": "EULA",
+        "imprint": "Colofon",
+        "del": "Account verwijderen",
+        "req": "Uw gegevens opvragen"
+      },
+      "provider": "Aanbieder: <strong>Dolphincrusher Software</strong> (eigenaar: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     },
     "bg": {
       "del": {
@@ -283,52 +497,105 @@
           "За проверка можем да зададем въпроси за собствеността на профила."
         ],
         "s3_h": "3. Какво се изтрива — и какво не?",
-        "s3_head": ["Област", "Обработка при изтриване на профила"],
+        "s3_head": [
+          "Област",
+          "Обработка при изтриване на профила"
+        ],
         "s3_rows": [
-          ["Профил, данни за кошерите, бележки", "изтрито"],
-          ["AI кредити", "изтрити; остатъкът се възстановява по желание"],
-          ["Доказателства за съгласие (EULA/Условия/Поверителност)", "изтрити"],
-          ["Облачни резервни копия (по желание)", "изтрити"],
-          ["Одитен запис за изтриване", "3 години (доказателство за изпълнение, без връзка с профила)"],
-          ["Данъчни документи", "законно съхранение (8 години); връзката с профила се премахва/анонимизира"]
+          [
+            "Профил, данни за кошерите, бележки",
+            "изтрито"
+          ],
+          [
+            "AI кредити",
+            "изтрити; остатъкът се възстановява по желание"
+          ],
+          [
+            "Доказателства за съгласие (EULA/Условия/Поверителност)",
+            "изтрити"
+          ],
+          [
+            "Облачни резервни копия (по желание)",
+            "изтрити"
+          ],
+          [
+            "Одитен запис за изтриване",
+            "3 години (доказателство за изпълнение, без връзка с профила)"
+          ],
+          [
+            "Данъчни документи",
+            "законно съхранение (8 години); връзката с профила се премахва/анонимизира"
+          ]
         ],
         "s4_h": "4. Експорт на данни преди изтриването",
         "s4_li": [
-          "Преди изтриването можеш да създадеш <strong>експорт на данни</strong> (Настройки → Експорт). След това достъп вече не е възможен."
+          "Преди изтриването можете да създадете <strong>и двата експорта</strong>: данни на профила чрез Настройки → <strong>Профил</strong> → <strong>Експорт на данни</strong> (JSON пакет от сървъра) и локални данни чрез Настройки → <strong>Експорт на данни</strong>. След това достъпът е невъзможен."
         ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Заявяване на данните ви",
         "updated": "Към: 24 ноември 2026 г.",
-        "intro": "<strong>Накратко:</strong> Имаш право на достъп и преносимост на данните по всяко време. Локалните данни можеш да експортираш <strong>директно в приложението</strong> като файл; всички останали данни получаваш <strong>при заявка по имейл</strong>, обикновено <strong>в рамките на един месец</strong>.",
-        "s1_h": "1. Експорт в приложението (веднага)",
+        "intro": "<strong>Накратко:</strong> Имате право по всяко време на достъп и преносимост на данните. В приложението можете сами да експортирате <strong>всичките си данни</strong>: данните на профила и облака като JSON пакет директно от сървъра и локалните данни като файл. Заявка по имейл е само резервен вариант.",
+        "s1_h": "1. Експорт в приложението (незабавно)",
         "s1_li": [
-          "Отвори приложението → <strong>Настройки</strong> → <strong>Експорт на данни</strong>.",
-          "Получаваш <strong>JSON файл</strong> с локалните си данни: профил и настройки, местоположения (GPS координати), кошери, събития (прегледи, лечения), treatment срещу вароа и напомняния.",
-          "Файлът се създава локално на устройството — не напуска приложението.",
-          "Импортиране на друго устройство е възможно чрез <strong>Импорт на данни</strong> (с преглед и стратегия при конфликти)."
+          "Данни на профила и облака: отворете приложението → <strong>Настройки</strong> → <strong>Профил</strong> → <strong>Експорт на данни</strong>. Получавате <strong>JSON пакет</strong> (чл. 15/20 GDPR) с данни за профила и съгласията, AI кредити и потребление, плащания и възстановявания, премиум права, метаданни на облачните резервни копия, обратна връзка, инциденти и push устройства.",
+          "Локални данни: <strong>Настройки</strong> → <strong>Експорт на данни</strong>. Получавате <strong>JSON файл</strong> с профил и настройки, местоположения (GPS координати), кошери, събития на колониите (проверки, лечения), лечения срещу вароа, напомняния, финанси, снимки и оферти за продажба.",
+          "И двата експорта се създават на вашето устройство; чрез диалога за споделяне избирате къде да отидат (файлове, имейл, облак).",
+          "Ако липсва нещо, можете да го поискате по имейл без формалности (раздел 2)."
         ],
-        "s2_h": "2. Заявка по имейл (облачни и акаунт данни)",
-        "s2_p": "Имейл до <a href='mailto:support@dolphincrusher.com?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D0%B7%D0%B0%20%D0%B4%D0%B0%D0%BD%D0%BD%D0%B8'>support@dolphincrusher.com</a> с тема <strong>„Заявка за данни“</strong> и имейл адреса на профила си:",
+        "s2_h": "2. Заявка по имейл (резервен вариант)",
+        "s2_p": "Ако вече нямате достъп до приложението или профила си: имейл до <a href='mailto:support@dolphincrusher.com?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D0%B7%D0%B0%20%D0%B4%D0%B0%D0%BD%D0%BD%D0%B8'>support@dolphincrusher.com</a> с тема <strong>„Заявка за данни“</strong> и имейл адреса на профила ви:",
         "s2_li": [
-          "Получаваш: данни за профила (имейл, статус, AI кредити и протоколи за потребление), метаданни за синхронизация и резервни копия, доказателства за съгласие (EULA/Условия/Поверителност), отзиви (ако има).",
-          "<strong>Срок:</strong> отговор в рамките на един месец (чл. 12 ал. 3 GDPR); при сложни заявки до два месеца — с мотиви.",
-          "За проверка можем да зададем въпроси за собствеността на профила.",
-          "Заявката е безплатна."
+          "Събираме данните, които не са част от експорта в приложението или които не можете да извлечете сами (например защото не можете да отворите профила си).",
+          "<strong>Срок:</strong> отговор в рамките на един месец (чл. 12, пар. 3 GDPR); при сложни заявки срокът може да бъде удължен с до два месеца — информираме ви с обосновка.",
+          "Може да зададем въпроси за проверка на собствеността на профила.",
+          "Заявката за достъп е безплатна."
         ],
         "s3_h": "3. Какво включва?",
-        "s3_head": ["Област на данните", "Път", "Съдържание"],
-        "s3_rows": [
-          ["Локални управленски данни", "Експорт в приложението", "Профил, местоположения, кошери, събития, лечения, напомняния, настройки"],
-          ["Акаунт &amp; облак", "Заявка по имейл", "Статус на профила, AI кредити, протоколи за потребление, метаданни за синхро/резервни копия"],
-          ["Доказателства за съгласие", "Заявка по имейл", "Дата, хешове на версиите на приетите текстове"],
-          ["Отзиви (по желание)", "Заявка по имейл", "Категория, оценка, коментар, версия на приложението"],
-          ["Телеметрия (opt-in)", "Заявка по имейл", "Статистика за сриви/използване, доколкото е съхранена"]
+        "s3_head": [
+          "Област на данните",
+          "Път",
+          "Съдържание"
         ],
-        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+        "s3_rows": [
+          [
+            "Локални управленски данни",
+            "Експорт в приложението (незабавно)",
+            "Профил, местоположения, кошери, събития, лечения, напомняния, настройки"
+          ],
+          [
+            "Акаунт &amp; облак",
+            "Експорт на профила в приложението (незабавно)",
+            "Статус на профила, AI кредити, протоколи за потребление, метаданни за синхро/резервни копия"
+          ],
+          [
+            "Доказателства за съгласие",
+            "Експорт на профила в приложението (незабавно)",
+            "Дата, хешове на версиите на приетите текстове"
+          ],
+          [
+            "Отзиви (по желание)",
+            "Експорт на профила в приложението (незабавно)",
+            "Категория, оценка, коментар, версия на приложението"
+          ],
+          [
+            "Телеметрия (opt-in)",
+            "Експорт на профила в приложението (незабавно)",
+            "Статистика за сриви/използване, доколкото е съхранена"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Политика за поверителност", "agb": "Общи условия", "eula": "EULA", "imprint": "Импресум", "del": "Изтриване на профила", "req": "Заявяване на данните ви" }
+      "labels": {
+        "privacy": "Политика за поверителност",
+        "agb": "Общи условия",
+        "eula": "EULA",
+        "imprint": "Импресум",
+        "del": "Изтриване на профила",
+        "req": "Заявяване на данните ви"
+      },
+      "provider": "Доставчик: <strong>Dolphincrusher Software</strong> (собственик: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     },
     "cs": {
       "del": {
@@ -349,52 +616,105 @@
           "Pro ověření můžeme položit dotazy k vlastnictví účtu."
         ],
         "s3_h": "3. Co se maže — a co ne?",
-        "s3_head": ["Oblast", "Zacházení při smazání účtu"],
+        "s3_head": [
+          "Oblast",
+          "Zacházení při smazání účtu"
+        ],
         "s3_rows": [
-          ["Profil, data úlů/včelstev, poznámky", "smazáno"],
-          ["AI kredity", "smazány; zbytek na žádost vrácen"],
-          ["Důkazy o souhlasu (EULA/VOP/Zásady)", "smazány"],
-          ["Cloudové zálohy (volitelné)", "smazány"],
-          ["Auditní záznam o smazání", "3 roky (důkaz provedení, bez vazby na profil)"],
-          ["Daňové doklady", "zákonná archivace (8 let); vazba na účet odstraněna/anonymizována"]
+          [
+            "Profil, data úlů/včelstev, poznámky",
+            "smazáno"
+          ],
+          [
+            "AI kredity",
+            "smazány; zbytek na žádost vrácen"
+          ],
+          [
+            "Důkazy o souhlasu (EULA/VOP/Zásady)",
+            "smazány"
+          ],
+          [
+            "Cloudové zálohy (volitelné)",
+            "smazány"
+          ],
+          [
+            "Auditní záznam o smazání",
+            "3 roky (důkaz provedení, bez vazby na profil)"
+          ],
+          [
+            "Daňové doklady",
+            "zákonná archivace (8 let); vazba na účet odstraněna/anonymizována"
+          ]
         ],
         "s4_h": "4. Export dat před smazáním",
         "s4_li": [
-          "Před smazáním můžeš vytvořit <strong>export dat</strong> (Nastavení → Exportovat data). Poté už přístup není možný."
+          "Před smazáním můžete vytvořit <strong>oba exporty</strong>: údaje účtu přes Nastavení → <strong>Účet</strong> → <strong>Exportovat data</strong> (JSON balíček ze serveru) a lokální data přes Nastavení → <strong>Exportovat data</strong>. Poté už přístup není možný."
         ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Vyžádání dat",
         "updated": "Stav: 24. listopadu 2026",
-        "intro": "<strong>Shrnutí:</strong> Máš kdykoli právo na přístup a přenositelnost dat. Lokální data můžeš exportovat <strong>přímo v aplikaci</strong> jako soubor; všechna ostatní data obdržíš <strong>na žádost e-mailem</strong>, obvykle <strong>do jednoho měsíce</strong>.",
+        "intro": "<strong>Stručně:</strong> Máte kdykoli právo na přístup k údajům a jejich přenositelnost. V aplikaci můžete <strong>všechna svá data</strong> exportovat sami: údaje účtu a cloudu jako JSON balíček přímo ze serveru a lokální data jako soubor. Žádost e-mailem je jen záložní možnost.",
         "s1_h": "1. Export v aplikaci (okamžitě)",
         "s1_li": [
-          "Otevři aplikaci → <strong>Nastavení</strong> → <strong>Exportovat data</strong>.",
-          "Obdržíš <strong>JSON soubor</strong> s lokálními daty: profil a nastavení, stanoviště (GPS souřadnice), úly, události (prohlídky, ošetření), ošetření varroy a připomínky.",
-          "Soubor se vytváří lokálně na zařízení — aplikaci neopouští.",
-          "Import na jiném zařízení přes <strong>Importovat data</strong> (s náhledem a strategií konfliktů)."
+          "Údaje účtu a cloudu: otevřete aplikaci → <strong>Nastavení</strong> → <strong>Účet</strong> → <strong>Exportovat data</strong>. Získáte <strong>JSON balíček</strong> (čl. 15/20 GDPR) s údaji o účtu a souhlasech, AI kredity a spotřebou, platbami a vratkami, prémiovými nároky, metadaty cloudových záloh, zpětnou vazbou, incidenty a push zařízeními.",
+          "Lokální data: <strong>Nastavení</strong> → <strong>Exportovat data</strong>. Získáte <strong>JSON soubor</strong> s profilem a nastavením, lokalitami (GPS souřadnice), úly, událostmi včelstev (kontroly, ošetření), ošetřeními varroázy, připomínkami, financemi, fotografiemi a nabídkami prodeje.",
+          "Oba exporty vznikají ve vašem zařízení; v dialogu sdílení určíte, kam mají jít (soubory, e-mail, cloud).",
+          "Pokud něco chybí, můžete si to vyžádat e-mailem bez formalit (část 2)."
         ],
-        "s2_h": "2. Žádost e-mailem (cloudová a účtovní data)",
-        "s2_p": "E-mail na <a href='mailto:support@dolphincrusher.com?subject=%C5%BD%C3%A1dost%20o%20data'>support@dolphincrusher.com</a> s předmětem <strong>„Žádost o data“</strong> a e-mailovou adresou svého účtu:",
+        "s2_h": "2. Žádost e-mailem (záložní možnost)",
+        "s2_p": "Pokud už nemáte přístup k aplikaci nebo ke svému účtu: e-mail na <a href='mailto:support@dolphincrusher.com?subject=%C5%BD%C3%A1dost%20o%20data'>support@dolphincrusher.com</a> s předmětem <strong>„Žádost o data“</strong> a e-mailovou adresou vašeho účtu:",
         "s2_li": [
-          "Obdržíš: údaje o účtu (e-mail, stav, AI kredity a protokoly využití), metadata cloudové synchronizace a záloh, důkazy o souhlasu (EULA/VOP/Zásady), zpětné vazby (pokud existují).",
-          "<strong>Lhůta:</strong> odpověď do jednoho měsíce (čl. 12 odst. 3 GDPR); u složitých žádostí až dva měsíce — s odůvodněním.",
-          "Pro ověření můžeme položit dotazy k vlastnictví účtu.",
-          "Žádost je bezplatná."
+          "Shromáždíme údaje, které nejsou součástí exportu v aplikaci nebo které si nemůžete vyžádat sami (například protože už nemůžete otevřít svůj účet).",
+          "<strong>Lhůta:</strong> odpověď do jednoho měsíce (čl. 12 odst. 3 GDPR); u složitých žádostí lze lhůtu prodloužit až o dva měsíce — informujeme vás s odůvodněním.",
+          "Můžeme položit otázky k ověření vlastnictví účtu.",
+          "Žádost o přístup je bezplatná."
         ],
         "s3_h": "3. Co je zahrnuto?",
-        "s3_head": ["Oblast dat", "Cesta", "Obsah"],
-        "s3_rows": [
-          ["Lokální správcovská data", "Export v aplikaci", "Profil, stanoviště, úly, události, ošetření, připomínky, nastavení"],
-          ["Účet &amp; cloud", "Žádost e-mailem", "Stav účtu, AI kredity, protokoly využití, metadata sync/záloh"],
-          ["Důkazy o souhlasu", "Žádost e-mailem", "Čas, hashy verzí přijatých textů"],
-          ["Zpětná vazba (volitelné)", "Žádost e-mailem", "Kategorie, hodnocení, komentář, verze aplikace"],
-          ["Telemetrie (opt-in)", "Žádost e-mailem", "Statistiky pádu/využití, pokud uloženy"]
+        "s3_head": [
+          "Oblast dat",
+          "Cesta",
+          "Obsah"
         ],
-        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+        "s3_rows": [
+          [
+            "Lokální správcovská data",
+            "Export v aplikaci (okamžitě)",
+            "Profil, stanoviště, úly, události, ošetření, připomínky, nastavení"
+          ],
+          [
+            "Účet &amp; cloud",
+            "Export účtu v aplikaci (okamžitě)",
+            "Stav účtu, AI kredity, protokoly využití, metadata sync/záloh"
+          ],
+          [
+            "Důkazy o souhlasu",
+            "Export účtu v aplikaci (okamžitě)",
+            "Čas, hashy verzí přijatých textů"
+          ],
+          [
+            "Zpětná vazba (volitelné)",
+            "Export účtu v aplikaci (okamžitě)",
+            "Kategorie, hodnocení, komentář, verze aplikace"
+          ],
+          [
+            "Telemetrie (opt-in)",
+            "Export účtu v aplikaci (okamžitě)",
+            "Statistiky pádu/využití, pokud uloženy"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Zásady ochrany osobních údajů", "agb": "VOP", "eula": "EULA", "imprint": "Poskytovatel", "del": "Smazání účtu", "req": "Vyžádání dat" }
+      "labels": {
+        "privacy": "Zásady ochrany osobních údajů",
+        "agb": "VOP",
+        "eula": "EULA",
+        "imprint": "Poskytovatel",
+        "del": "Smazání účtu",
+        "req": "Vyžádání dat"
+      },
+      "provider": "Poskytovatel: <strong>Dolphincrusher Software</strong> (majitel: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     },
     "da": {
       "del": {
@@ -415,52 +735,105 @@
           "Til bekræftelse kan vi stille spørgsmål om kontoejerskabet."
         ],
         "s3_h": "3. Hvad slettes — og hvad ikke?",
-        "s3_head": ["Område", "Behandling ved konto-sletning"],
+        "s3_head": [
+          "Område",
+          "Behandling ved konto-sletning"
+        ],
         "s3_rows": [
-          ["Profil, bifolds-/folke-data, noter", "slettet"],
-          ["AI-credits", "slettet; resterende beløb refunderes på anmodning"],
-          ["Samtykkebeviser (EULA/vilkår/privatliv)", "slettet"],
-          ["Cloud-backups (valgfrit)", "slettet"],
-          ["Auditlog for konto-sletning", "3 år (bevis for udførelse, uden profilkobling)"],
-          ["Skattemæssige bilag", "lovmæssig opbevaring (8 år); kobling til kontoen fjernet/anonymiseret"]
+          [
+            "Profil, bifolds-/folke-data, noter",
+            "slettet"
+          ],
+          [
+            "AI-credits",
+            "slettet; resterende beløb refunderes på anmodning"
+          ],
+          [
+            "Samtykkebeviser (EULA/vilkår/privatliv)",
+            "slettet"
+          ],
+          [
+            "Cloud-backups (valgfrit)",
+            "slettet"
+          ],
+          [
+            "Auditlog for konto-sletning",
+            "3 år (bevis for udførelse, uden profilkobling)"
+          ],
+          [
+            "Skattemæssige bilag",
+            "lovmæssig opbevaring (8 år); kobling til kontoen fjernet/anonymiseret"
+          ]
         ],
         "s4_h": "4. Dataeksport før sletning",
         "s4_li": [
-          "Før sletningen kan du oprette en <strong>dataeksport</strong> (Indstillinger → Eksportér data). Bagefter er adgang ikke længere mulig."
+          "Før sletningen kan du oprette <strong>begge eksporter</strong>: kontodata via Indstillinger → <strong>Konto</strong> → <strong>Eksporter data</strong> (JSON-pakke fra serveren) og lokale data via Indstillinger → <strong>Eksporter data</strong>. Derefter er adgang ikke længere mulig."
         ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Anmodning om dine data",
         "updated": "Status: 24. november 2026",
-        "intro": "<strong>Kort:</strong> Du har til enhver tid ret til indsigt og dataportabilitet. Lokale data kan du eksportere <strong>direkte i appen</strong> som fil; alle andre data modtager du <strong>på anmodning pr. e-mail</strong>, normalt <strong>inden for en måned</strong>.",
-        "s1_h": "1. Dataeksport i appen (øjeblikkelig)",
+        "intro": "<strong>Kort:</strong> Du har til enhver tid ret til indsigt og dataportabilitet. I appen kan du selv eksportere <strong>alle dine data</strong>: konto- og clouddata som en JSON-pakke direkte fra serveren og lokale data som fil. En anmodning via e-mail er kun en fallback.",
+        "s1_h": "1. Eksport i appen (straks)",
         "s1_li": [
-          "Åbn appen → <strong>Indstillinger</strong> → <strong>Eksportér data</strong>.",
-          "Du modtager en <strong>JSON-fil</strong> med dine lokale data: profil og indstillinger, lokaliteter (GPS-koordinater), bifolde, folke-hændelser (eftersyn, behandlinger), varroabehandlinger og påmindelser.",
-          "Filen genereres lokalt på din enhed — den forlader ikke appen.",
-          "Import på en anden enhed via <strong>Importér data</strong> (med forhåndsvisning og konfliktstrategi)."
+          "Konto- og clouddata: åbn appen → <strong>Indstillinger</strong> → <strong>Konto</strong> → <strong>Eksporter data</strong>. Du får en <strong>JSON-pakke</strong> (GDPR art. 15/20) med konto- og samtykkedata, AI-kreditter og forbrug, betalinger og refusioner, premiumrettigheder, metadata om cloudbackups, feedback, hændelser og push-enheder.",
+          "Lokale data: <strong>Indstillinger</strong> → <strong>Eksporter data</strong>. Du får en <strong>JSON-fil</strong> med profil og indstillinger, placeringer (GPS-koordinater), bistader, bifamiliehændelser (kontroller, behandlinger), varroabehandlinger, påmindelser, økonomi, fotos og salgstilbud.",
+          "Begge eksporter oprettes på din enhed; via dele-dialogen vælger du, hvor de skal hen (filer, e-mail, cloud).",
+          "Mangler der noget, kan du anmode om det på e-mail uden formaliteter (afsnit 2)."
         ],
-        "s2_h": "2. Anmodning pr. e-mail (cloud- og konto-data)",
-        "s2_p": "Send en e-mail til <a href='mailto:support@dolphincrusher.com?subject=Dataanmodning'>support@dolphincrusher.com</a> med emnet <strong>„Dataanmodning“</strong> og din kontos e-mailadresse:",
+        "s2_h": "2. Anmodning via e-mail (fallback)",
+        "s2_p": "Hvis du ikke længere har adgang til appen eller din konto: e-mail til <a href='mailto:support@dolphincrusher.com?subject=Dataanmodning'>support@dolphincrusher.com</a> med emnet <strong>„Dataanmodning“</strong> og din kontos e-mailadresse:",
         "s2_li": [
-          "Du modtager: kontooplysninger (e-mail, status, AI-credits og forbrugslog), metadata for cloud-synk og backups, samtykkebeviser (EULA/vilkår/privatliv), feedback (hvis noget).",
-          "<strong>Frist:</strong> svar inden for en måned (GDPR art. 12, stk. 3); komplekse anmodninger op til to måneder — med begrundelse.",
-          "Til bekræftelse kan vi stille spørgsmål om kontoejerskabet.",
-          "Anmodningen er gratis."
+          "Vi samler de data, der ikke er en del af eksporten i appen, eller som du ikke selv kan hente (fx fordi du ikke længere kan åbne din konto).",
+          "<strong>Frist:</strong> svar inden for en måned (GDPR art. 12, stk. 3); ved komplekse anmodninger kan fristen forlænges med op til to måneder — vi informerer dig med begrundelse.",
+          "Vi kan stille spørgsmål for at bekræfte kontoens ejerskab.",
+          "En anmodning om indsigt er gratis."
         ],
         "s3_h": "3. Hvad er indeholdt?",
-        "s3_head": ["Dataområde", "Rute", "Indhold"],
-        "s3_rows": [
-          ["Lokale administrasjonsdata", "Eksport i appen", "Profil, lokaliteter, bifolde, hændelser, behandlinger, påmindelser, indstillinger"],
-          ["Konto &amp; cloud", "Anmodning pr. e-mail", "Kontostatus, AI-credits, forbrugslog, sync-/backup-metadata"],
-          ["Samtykkebeviser", "Anmodning pr. e-mail", "Tidspunkt, versions-hashes af accepterede tekster"],
-          ["Feedback (valgfrit)", "Anmodning pr. e-mail", "Kategori, vurdering, kommentar, app-version"],
-          ["Telemetri (opt-in)", "Anmodning pr. e-mail", "Crash-/brugsstatistik, i det omfang gemt"]
+        "s3_head": [
+          "Dataområde",
+          "Rute",
+          "Indhold"
         ],
-        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+        "s3_rows": [
+          [
+            "Lokale administrasjonsdata",
+            "Eksport i appen (straks)",
+            "Profil, lokaliteter, bifolde, hændelser, behandlinger, påmindelser, indstillinger"
+          ],
+          [
+            "Konto &amp; cloud",
+            "Kontoeksport i appen (straks)",
+            "Kontostatus, AI-credits, forbrugslog, sync-/backup-metadata"
+          ],
+          [
+            "Samtykkebeviser",
+            "Kontoeksport i appen (straks)",
+            "Tidspunkt, versions-hashes af accepterede tekster"
+          ],
+          [
+            "Feedback (valgfrit)",
+            "Kontoeksport i appen (straks)",
+            "Kategori, vurdering, kommentar, app-version"
+          ],
+          [
+            "Telemetri (opt-in)",
+            "Kontoeksport i appen (straks)",
+            "Crash-/brugsstatistik, i det omfang gemt"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Privatlivspolitik", "agb": "Salgs- og anvendelsesbetingelser", "eula": "EULA", "imprint": "Kolofon", "del": "Sletning af konto", "req": "Anmodning om dine data" }
+      "labels": {
+        "privacy": "Privatlivspolitik",
+        "agb": "Salgs- og anvendelsesbetingelser",
+        "eula": "EULA",
+        "imprint": "Kolofon",
+        "del": "Sletning af konto",
+        "req": "Anmodning om dine data"
+      },
+      "provider": "Udbyder: <strong>Dolphincrusher Software</strong> (ejer: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     },
     "hu": {
       "del": {
@@ -481,52 +854,105 @@
           "Ellenőrzésképpen a fióktulajdonosságára vonatkozó kérdéseket tehetünk fel."
         ],
         "s3_h": "3. Mi törlődik — és mi nem?",
-        "s3_head": ["Terület", "Kezelés a fióktörléskor"],
+        "s3_head": [
+          "Terület",
+          "Kezelés a fióktörléskor"
+        ],
         "s3_rows": [
-          ["Profil, kaptár-/család-adatok, jegyzetek", "törölve"],
-          ["AI-kredit", "törölve; a maradék kérésre visszatérítve"],
-          ["Hozzájárulási bizonylatok (EULA/ÁSZF/adatvédelem)", "törölve"],
-          ["Felhőmentések (opcionális)", "törölve"],
-          ["Fióktörlési auditnapló", "3 év (végrehajtás igazolása, profilkapcsolat nélkül)"],
-          ["Adóügyi bizonylatok", "törvényi megőrzés (8 év); a fiókhoz kötés eltávolítva/anonimizálva"]
+          [
+            "Profil, kaptár-/család-adatok, jegyzetek",
+            "törölve"
+          ],
+          [
+            "AI-kredit",
+            "törölve; a maradék kérésre visszatérítve"
+          ],
+          [
+            "Hozzájárulási bizonylatok (EULA/ÁSZF/adatvédelem)",
+            "törölve"
+          ],
+          [
+            "Felhőmentések (opcionális)",
+            "törölve"
+          ],
+          [
+            "Fióktörlési auditnapló",
+            "3 év (végrehajtás igazolása, profilkapcsolat nélkül)"
+          ],
+          [
+            "Adóügyi bizonylatok",
+            "törvényi megőrzés (8 év); a fiókhoz kötés eltávolítva/anonimizálva"
+          ]
         ],
         "s4_h": "4. Adatexport a törlés előtt",
         "s4_li": [
-          "A törlés előtt <strong>adatexportot</strong> készíthetsz (Beállítások → Adatok exportálása). Ezt követően nincs többé hozzáférés."
+          "Törlés előtt <strong>mindkét exportot</strong> elkészítheti: fiókadatok a Beállítások → <strong>Fiók</strong> → <strong>Adatok exportálása</strong> menüben (JSON-csomag a szerverről), helyi adatok a Beállítások → <strong>Adatok exportálása</strong> menüben. Utána a hozzáférés már nem lehetséges."
         ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Adatok igénylése",
         "updated": "Állapot: 2026. november 24.",
-        "intro": "<strong>Röviden:</strong> Bármikor jogod van az adatokhoz való hozzáféréshez és hordozhatósághoz. A <strong>helyi adatokat közvetlenül az alkalmazásban</strong> exportálhatod fájlként; minden egyéb adatot <strong>e-mailben igényelhetsz</strong>, jellemzően <strong>egy hónapon belül</strong>.",
-        "s1_h": "1. Export az alkalmazásban (azonnali)",
+        "intro": "<strong>Röviden:</strong> Önnek bármikor joga van a hozzáféréshez és az adathordozhatósághoz. Az alkalmazásban <strong>minden adatát</strong> maga is exportálhatja: a fiók- és felhőadatokat JSON-csomagként közvetlenül a szerverről, a helyi adatokat pedig fájlként. Az e-mailes kérés csak tartalék lehetőség.",
+        "s1_h": "1. Exportálás az alkalmazásban (azonnal)",
         "s1_li": [
-          "Nyisd meg az alkalmazást → <strong>Beállítások</strong> → <strong>Adatok exportálása</strong>.",
-          "Egy <strong>JSON-fájlt</strong> kapsz a helyi adataiddal: profil és beállítások, telephelyek (GPS-koordináták), kaptárak, család-események (vizsgálatok, kezelések), varroa-kezelések és emlékeztetők.",
-          "A fájl helyben, az eszközön készül — nem hagyja el az alkalmazást.",
-          "Másik eszközre <strong>Adatok importálása</strong> úton vihető át (előnézettel és ütközéskezeléssel)."
+          "Fiók- és felhőadatok: nyissa meg az alkalmazást → <strong>Beállítások</strong> → <strong>Fiók</strong> → <strong>Adatok exportálása</strong>. <strong>JSON-csomagot</strong> kap (GDPR 15/20. cikk), amely tartalmazza a fiók- és hozzájárulási adatokat, az AI-krediteket és -fogyasztást, a fizetéseket és visszatérítéseket, a prémium jogosultságokat, a felhőmentések metaadatait, a visszajelzéseket, az incidenseket és a push-eszközöket.",
+          "Helyi adatok: <strong>Beállítások</strong> → <strong>Adatok exportálása</strong>. <strong>JSON-fájlt</strong> kap a profillal és beállításokkal, helyszínekkel (GPS-koordináták), kaptárakkal, családeseményekkel (ellenőrzések, kezelések), varroa-kezelésekkel, emlékeztetőkkel, pénzügyekkel, fotókkal és értékesítési ajánlatokkal.",
+          "Mindkét export az Ön eszközén jön létre; a megosztási párbeszédablakban eldönti, hová kerüljenek (fájlok, e-mail, felhő).",
+          "Ha valami hiányzik, e-mailben, formaságok nélkül kérheti (2. pont)."
         ],
-        "s2_h": "2. Igénylés e-mailben (felhő- és fiókadatok)",
-        "s2_p": "Küldj e-mailt a <a href='mailto:support@dolphincrusher.com?subject=Adatk%C3%A9r%C3%A9s'>support@dolphincrusher.com</a> címre <strong>„Adatkérés“</strong> tárggyal és a fiókod e-mail címével:",
+        "s2_h": "2. Kérés e-mailben (tartalék lehetőség)",
+        "s2_p": "Ha már nem fér hozzá az alkalmazáshoz vagy fiókjához: küldjön e-mailt a <a href='mailto:support@dolphincrusher.com?subject=Adatk%C3%A9r%C3%A9s'>support@dolphincrusher.com</a> címre <strong>„Adatkérés”</strong> tárggyal és fiókja e-mail-címével:",
         "s2_li": [
-          "Kapsz: fiókadatokat (e-mail, állapot, AI-kredit és felhasználási naplók), felhőszinkron- és mentési metaadatokat, hozzájárulási bizonylatokat (EULA/ÁSZF/adatvédelem), visszajelzéseket (ha vannak).",
-          "<strong>Határidő:</strong> válasz egy hónapon belül (GDPR 12. cikk (3)); összetettebb kérések esetén legfeljebb két hónappal — indoklással.",
-          "Ellenőrzésképpen a fióktulajdonosságára vonatkozó kérdéseket tehetünk fel.",
-          "Az igénylés ingyenes."
+          "Összeállítjuk azokat az adatokat, amelyek nem részei az alkalmazásbeli exportnak, vagy amelyeket Ön nem tud maga lekérend (például mert már nem tudja megnyitni a fiókját).",
+          "<strong>Határidő:</strong> válasz egy hónapon belül (GDPR 12. cikk (3) bekezdés); összetett kérések esetén a határidő legfeljebb két hónappal meghosszabbítható — erről indokolással tájékoztatjuk.",
+          "A fiók tulajdonjogának ellenőrzéséhez kérdéseket tehetünk fel.",
+          "A hozzáférési kérés díjmentes."
         ],
         "s3_h": "3. Mit tartalmaz?",
-        "s3_head": ["Adatterület", "Út", "Tartalom"],
-        "s3_rows": [
-          ["Helyi kezelési adatok", "Export az alkalmazásban", "Profil, telephelyek, kaptárak, események, kezelések, emlékeztetők, beállítások"],
-          ["Fiók &amp; felhő", "Igénylés e-mailben", "Fiókállapot, AI-kredit, felhasználási naplók, szinkron/mentési metaadatok"],
-          ["Hozzájárulási bizonylatok", "Igénylés e-mailben", "Időpont, az elfogadott szövegek verzióhash-ei"],
-          ["Visszajelzés (opcionális)", "Igénylés e-mailben", "Kategória, értékelés, megjegyzés, alkalmazásverzió"],
-          ["Telemetria (opt-in)", "Igénylés e-mailben", "Összeomlási/használati statisztikák, amennyiben tárolva"]
+        "s3_head": [
+          "Adatterület",
+          "Út",
+          "Tartalom"
         ],
-        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+        "s3_rows": [
+          [
+            "Helyi kezelési adatok",
+            "Exportálás az alkalmazásban (azonnal)",
+            "Profil, telephelyek, kaptárak, események, kezelések, emlékeztetők, beállítások"
+          ],
+          [
+            "Fiók &amp; felhő",
+            "Fiókexport az alkalmazásban (azonnal)",
+            "Fiókállapot, AI-kredit, felhasználási naplók, szinkron/mentési metaadatok"
+          ],
+          [
+            "Hozzájárulási bizonylatok",
+            "Fiókexport az alkalmazásban (azonnal)",
+            "Időpont, az elfogadott szövegek verzióhash-ei"
+          ],
+          [
+            "Visszajelzés (opcionális)",
+            "Fiókexport az alkalmazásban (azonnal)",
+            "Kategória, értékelés, megjegyzés, alkalmazásverzió"
+          ],
+          [
+            "Telemetria (opt-in)",
+            "Fiókexport az alkalmazásban (azonnal)",
+            "Összeomlási/használati statisztikák, amennyiben tárolva"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Adatvédelmi tájékoztató", "agb": "ÁSZF", "eula": "EULA", "imprint": "Impresszum", "del": "Fiók törlése", "req": "Adatok igénylése" }
+      "labels": {
+        "privacy": "Adatvédelmi tájékoztató",
+        "agb": "ÁSZF",
+        "eula": "EULA",
+        "imprint": "Impresszum",
+        "del": "Fiók törlése",
+        "req": "Adatok igénylése"
+      },
+      "provider": "Szolgáltató: <strong>Dolphincrusher Software</strong> (tulajdonos: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     },
     "it": {
       "del": {
@@ -547,52 +973,105 @@
           "Per la verifica possiamo porre domande sulla titolarità dell'account."
         ],
         "s3_h": "3. Cosa viene eliminato — e cosa no?",
-        "s3_head": ["Area", "Trattamento all'eliminazione dell'account"],
+        "s3_head": [
+          "Area",
+          "Trattamento all'eliminazione dell'account"
+        ],
         "s3_rows": [
-          ["Profilo, dati alveari/colonie, note", "eliminati"],
-          ["Crediti IA", "eliminati; saldo residuo rimborsato su richiesta"],
-          ["Prove di consenso (EULA/Condizioni/Privacy)", "eliminate"],
-          ["Backup cloud (opzionale)", "eliminati"],
-          ["Log di audit dell'eliminazione", "3 anni (prova dell'esecuzione, senza riferimento al profilo)"],
-          ["Documenti fiscali", "conservazione legale (8 anni); collegamento all'account rimosso/anonimizzato"]
+          [
+            "Profilo, dati alveari/colonie, note",
+            "eliminati"
+          ],
+          [
+            "Crediti IA",
+            "eliminati; saldo residuo rimborsato su richiesta"
+          ],
+          [
+            "Prove di consenso (EULA/Condizioni/Privacy)",
+            "eliminate"
+          ],
+          [
+            "Backup cloud (opzionale)",
+            "eliminati"
+          ],
+          [
+            "Log di audit dell'eliminazione",
+            "3 anni (prova dell'esecuzione, senza riferimento al profilo)"
+          ],
+          [
+            "Documenti fiscali",
+            "conservazione legale (8 anni); collegamento all'account rimosso/anonimizzato"
+          ]
         ],
         "s4_h": "4. Esportazione dei dati prima dell'eliminazione",
         "s4_li": [
-          "Prima dell'eliminazione puoi creare un <strong>esportazione dei dati</strong> (Impostazioni → Esporta dati). successivamente l'accesso non è più possibile."
+          "Prima della cancellazione puoi creare <strong>entrambe le esportazioni</strong>: dati dell'account tramite Impostazioni → <strong>Account</strong> → <strong>Esporta dati</strong> (bundle JSON dal server) e dati locali tramite Impostazioni → <strong>Esporta dati</strong>. Successivamente l'accesso non è più possibile."
         ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Richiesta dei dati",
         "updated": "Stato: 24 novembre 2026",
-        "intro": "<strong>Sintesi:</strong> Hai in ogni momento il diritto di accesso e di portabilità dei dati. I dati locali puoi esportarli <strong>direttamente nell'app</strong> come file; tutti gli altri dati li ricevi <strong>su richiesta via e-mail</strong>, di norma <strong>entro un mese</strong>.",
-        "s1_h": "1. Esportazione in-app (immediata)",
+        "intro": "<strong>In breve:</strong> Hai sempre diritto all'accesso e alla portabilità dei dati. Nell'app puoi esportare <strong>tutti i tuoi dati</strong> da solo: i dati di account e cloud come bundle JSON direttamente dal server e i dati locali come file. La richiesta via e-mail è solo un fallback.",
+        "s1_h": "1. Esportazione nell'app (immediata)",
         "s1_li": [
-          "Apri l'app → <strong>Impostazioni</strong> → <strong>Esporta dati</strong>.",
-          "Ricevi un <strong>file JSON</strong> con i tuoi dati locali: profilo e impostazioni, ubicazioni (coordinate GPS), alveari, eventi (ispezioni, trattamenti), trattamenti varroa e promemoria.",
-          "Il file viene generato localmente sul dispositivo — non lascia l'app.",
-          "L'import su un altro dispositivo avviene tramite <strong>Importa dati</strong> (con anteprima e strategia di conflitto)."
+          "Dati di account e cloud: apri l'app → <strong>Impostazioni</strong> → <strong>Account</strong> → <strong>Esporta dati</strong>. Ottieni un <strong>bundle JSON</strong> (art. 15/20 GDPR) con dati di account e consensi, crediti AI e consumo, pagamenti e rimborsi, diritti premium, metadati dei backup cloud, feedback, incidenti e dispositivi push.",
+          "Dati locali: <strong>Impostazioni</strong> → <strong>Esporta dati</strong>. Ottieni un <strong>file JSON</strong> con profilo e impostazioni, posizioni (coordinate GPS), arnie, eventi delle colonie (controlli, trattamenti), trattamenti varroa, promemoria, finanze, foto e offerte di vendita.",
+          "Entrambe le esportazioni vengono create sul tuo dispositivo; la finestra di condivisione ti permette di scegliere dove salvarle (file, e-mail, cloud).",
+          "Se manca qualcosa, puoi richiederlo via e-mail senza formalità (sezione 2)."
         ],
-        "s2_h": "2. Richiesta via e-mail (dati cloud e account)",
-        "s2_p": "E-mail a <a href='mailto:support@dolphincrusher.com?subject=Richiesta%20dati'>support@dolphincrusher.com</a> con oggetto <strong>„Richiesta dati“</strong> e l'indirizzo e-mail del tuo account:",
+        "s2_h": "2. Richiesta via e-mail (fallback)",
+        "s2_p": "Se non hai più accesso all'app o al tuo account: e-mail a <a href='mailto:support@dolphincrusher.com?subject=Richiesta%20dati'>support@dolphincrusher.com</a> con oggetto <strong>«Richiesta dati»</strong> e l'indirizzo e-mail del tuo account:",
         "s2_li": [
-          "Ricevi: dati dell'account (e-mail, stato, crediti IA e registri d'uso), metadati di sincronizzazione e backup, prove di consenso (EULA/Condizioni/Privacy), feedback (se presenti).",
-          "<strong>Termine:</strong> risposta entro un mese (art. 12 par. 3 GDPR); per richieste complesse fino a due mesi — con motivazione.",
-          "Per la verifica possiamo porre domande sulla titolarità dell'account.",
-          "La richiesta è gratuita."
+          "Raccogliamo i dati che non fanno parte dell'esportazione nell'app o che non puoi recuperare da solo (ad esempio perché non puoi più aprire il tuo account).",
+          "<strong>Termine:</strong> risposta entro un mese (art. 12, par. 3, GDPR); per richieste complesse il termine può essere prorogato fino a due mesi — ti informiamo con motivazione.",
+          "Possiamo porre domande per verificare la titolarità dell'account.",
+          "La richiesta di accesso è gratuita."
         ],
         "s3_h": "3. Cosa è incluso?",
-        "s3_head": ["Area dati", "Via", "Contenuto"],
-        "s3_rows": [
-          ["Dati di gestione locali", "Esportazione in-app", "Profilo, ubicazioni, alveari, eventi, trattamenti, promemoria, impostazioni"],
-          ["Account &amp; cloud", "Richiesta via e-mail", "Stato account, crediti IA, registri d'uso, metadati sync/backup"],
-          ["Prove di consenso", "Richiesta via e-mail", "Data e ora, hash di versione dei testi accettati"],
-          ["Feedback (opzionale)", "Richiesta via e-mail", "Categoria, valutazione, commento, versione app"],
-          ["Telemetria (opt-in)", "Richiesta via e-mail", "Statistiche su arresti/utilizzo, se conservate"]
+        "s3_head": [
+          "Area dati",
+          "Via",
+          "Contenuto"
         ],
-        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+        "s3_rows": [
+          [
+            "Dati di gestione locali",
+            "Esportazione nell'app (immediata)",
+            "Profilo, ubicazioni, alveari, eventi, trattamenti, promemoria, impostazioni"
+          ],
+          [
+            "Account &amp; cloud",
+            "Esportazione dell'account nell'app (immediata)",
+            "Stato account, crediti IA, registri d'uso, metadati sync/backup"
+          ],
+          [
+            "Prove di consenso",
+            "Esportazione dell'account nell'app (immediata)",
+            "Data e ora, hash di versione dei testi accettati"
+          ],
+          [
+            "Feedback (opzionale)",
+            "Esportazione dell'account nell'app (immediata)",
+            "Categoria, valutazione, commento, versione app"
+          ],
+          [
+            "Telemetria (opt-in)",
+            "Esportazione dell'account nell'app (immediata)",
+            "Statistiche su arresti/utilizzo, se conservate"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Informativa privacy", "agb": "Condizioni contrattuali", "eula": "EULA", "imprint": "Note legali", "del": "Eliminazione dell'account", "req": "Richiesta dei dati" }
+      "labels": {
+        "privacy": "Informativa privacy",
+        "agb": "Condizioni contrattuali",
+        "eula": "EULA",
+        "imprint": "Note legali",
+        "del": "Eliminazione dell'account",
+        "req": "Richiesta dei dati"
+      },
+      "provider": "Fornitore: <strong>Dolphincrusher Software</strong> (titolare: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     },
     "pl": {
       "del": {
@@ -613,52 +1092,105 @@
           "W celu weryfikacji możemy zadać pytania o własność konta."
         ],
         "s3_h": "3. Co jest usuwane — a co nie?",
-        "s3_head": ["Obszar", "Postępowanie przy usunięciu konta"],
+        "s3_head": [
+          "Obszar",
+          "Postępowanie przy usunięciu konta"
+        ],
         "s3_rows": [
-          ["Profil, dane uli/rodzin, notatki", "usunięte"],
-          ["Kredyty AI", "usunięte; pozostałość zwracana na życzenie"],
-          ["Dowody zgody (EULA/Regulamin/Prywatność)", "usunięte"],
-          ["Kopie zapasowe w chmurze (opcjonalnie)", "usunięte"],
-          ["Dziennik audytu usunięcia konta", "3 lata (dowód wykonania, bez powiązania z profilem)"],
-          ["Dokumenty podatkowe", "ustawowe przechowywanie (8 lat); powiązanie z kontem usunięte/zanonimizowane"]
+          [
+            "Profil, dane uli/rodzin, notatki",
+            "usunięte"
+          ],
+          [
+            "Kredyty AI",
+            "usunięte; pozostałość zwracana na życzenie"
+          ],
+          [
+            "Dowody zgody (EULA/Regulamin/Prywatność)",
+            "usunięte"
+          ],
+          [
+            "Kopie zapasowe w chmurze (opcjonalnie)",
+            "usunięte"
+          ],
+          [
+            "Dziennik audytu usunięcia konta",
+            "3 lata (dowód wykonania, bez powiązania z profilem)"
+          ],
+          [
+            "Dokumenty podatkowe",
+            "ustawowe przechowywanie (8 lat); powiązanie z kontem usunięte/zanonimizowane"
+          ]
         ],
         "s4_h": "4. Eksport danych przed usunięciem",
         "s4_li": [
-          "Przed usunięciem możesz utworzyć <strong>eksport danych</strong> (Ustawienia → Eksportuj dane). Później dostęp nie jest już możliwy."
+          "Przed usunięciem możesz utworzyć <strong>oba eksporty</strong>: dane konta przez Ustawienia → <strong>Konto</strong> → <strong>Eksportuj dane</strong> (pakiet JSON z serwera) oraz dane lokalne przez Ustawienia → <strong>Eksportuj dane</strong>. Potem dostęp nie jest już możliwy."
         ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Wniosek o dane",
         "updated": "Stan na: 24 listopada 2026",
-        "intro": "<strong>W skrócie:</strong> Masz w każdej chwili prawo dostępu i przenoszenia danych. Dane lokalne możesz wyeksportować <strong>bezpośrednio w aplikacji</strong> jako plik; wszystkie pozostałe otrzymasz <strong>na wniosek e-mailem</strong>, zwykle <strong>w ciągu miesiąca</strong>.",
+        "intro": "<strong>W skrócie:</strong> Masz zawsze prawo dostępu do danych i ich przenoszenia. W aplikacji możesz samodzielnie wyeksportować <strong>wszystkie swoje dane</strong>: dane konta i chmury jako pakiet JSON bezpośrednio z serwera, a dane lokalne jako plik. Wniosek e-mailem jest tylko rozwiązaniem zapasowym.",
         "s1_h": "1. Eksport w aplikacji (natychmiast)",
         "s1_li": [
-          "Otwórz aplikację → <strong>Ustawienia</strong> → <strong>Eksportuj dane</strong>.",
-          "Otrzymujesz <strong>plik JSON</strong> z danymi lokalnymi: profil i ustawienia, miejsca (współrzędne GPS), ule, zdarzenia (podglądy, zabiegi), leczenie warrozji i przypomnienia.",
-          "Plik powstaje lokalnie na urządzeniu — nie opuszcza aplikacji.",
-          "Import na innym urządzeniu przez <strong>Importuj dane</strong> (z podglądem i strategią konfliktów)."
+          "Dane konta i chmury: otwórz aplikację → <strong>Ustawienia</strong> → <strong>Konto</strong> → <strong>Eksportuj dane</strong>. Otrzymasz <strong>pakiet JSON</strong> (art. 15/20 RODO) z danymi konta i zgodami, kredytami AI i zużyciem, płatnościami i zwrotami, uprawnieniami premium, metadanymi kopii zapasowych w chmurze, opiniami, incydentami i urządzeniami push.",
+          "Dane lokalne: <strong>Ustawienia</strong> → <strong>Eksportuj dane</strong>. Otrzymasz <strong>plik JSON</strong> z profilem i ustawieniami, lokalizacjami (współrzędne GPS), ulami, zdarzeniami rodzin pszczelich (kontrole, zabiegi), zabiegami na warrozę, przypomnieniami, finansami, zdjęciami i ofertami sprzedaży.",
+          "Oba eksporty powstają na Twoim urządzeniu; w oknie udostępniania decydujesz, dokąd trafią (pliki, e-mail, chmura).",
+          "Jeśli czegoś brakuje, możesz o to poprosić e-mailem bez formalności (sekcja 2)."
         ],
-        "s2_h": "2. Wniosek e-mailem (dane w chmurze i konta)",
-        "s2_p": "E-mail na <a href='mailto:support@dolphincrusher.com?subject=Wniosek%20o%20dane'>support@dolphincrusher.com</a> z tematem <strong>„Wniosek o dane“</strong> i adresem e-mail konta:",
+        "s2_h": "2. Wniosek e-mailem (rozwiązanie zapasowe)",
+        "s2_p": "Jeśli nie masz już dostępu do aplikacji lub konta: e-mail na adres <a href='mailto:support@dolphincrusher.com?subject=Wniosek%20o%20dane'>support@dolphincrusher.com</a> z tematem <strong>„Wniosek o dane”</strong> i adresem e-mail konta:",
         "s2_li": [
-          "Otrzymujesz: dane konta (e-mail, status, kredyty AI i dzienniki zużycia), metadane synchronizacji i kopii w chmurze, dowody zgody (EULA/Regulamin/Prywatność), opinie (jeśli są).",
-          "<strong>Termin:</strong> odpowiedź w ciągu miesiąca (art. 12 ust. 3 RODO); przy złożonych wnioskach do dwóch miesięcy — z uzasadnieniem.",
-          "W celu weryfikacji możemy zadać pytania o własność konta.",
-          "Wniosek jest bezpłatny."
+          "Zbierzemy dane, które nie są objęte eksportem w aplikacji lub których nie możesz samodzielnie pobrać (np. ponieważ nie możesz już otworzyć konta).",
+          "<strong>Termin:</strong> odpowiedź w ciągu miesiąca (art. 12 ust. 3 RODO); w przypadku złożonych wniosków termin można przedłużyć o maksymalnie dwa miesiące — poinformujemy Cię z uzasadnieniem.",
+          "Możemy zadać pytania w celu weryfikacji właściciela konta.",
+          "Wniosek o dostęp jest bezpłatny."
         ],
         "s3_h": "3. Co jest objęte?",
-        "s3_head": ["Obszar danych", "Ścieżka", "Treść"],
-        "s3_rows": [
-          ["Lokalne dane zarządcze", "Eksport w aplikacji", "Profil, miejsca, ule, zdarzenia, zabiegi, przypomnienia, ustawienia"],
-          ["Konto &amp; chmura", "Wniosek e-mailem", "Status konta, kredyty AI, dzienniki zużycia, metadane sync/kopii"],
-          ["Dowody zgody", "Wniosek e-mailem", "Czas, hashe wersji zaakceptowanych tekstów"],
-          ["Opinie (opcjonalnie)", "Wniosek e-mailem", "Kategoria, ocena, komentarz, wersja aplikacji"],
-          ["Telemetria (opt-in)", "Wniosek e-mailem", "Statystyki awarii/użycia, o ile przechowywane"]
+        "s3_head": [
+          "Obszar danych",
+          "Ścieżka",
+          "Treść"
         ],
-        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+        "s3_rows": [
+          [
+            "Lokalne dane zarządcze",
+            "Eksport w aplikacji (natychmiast)",
+            "Profil, miejsca, ule, zdarzenia, zabiegi, przypomnienia, ustawienia"
+          ],
+          [
+            "Konto &amp; chmura",
+            "Eksport konta w aplikacji (natychmiast)",
+            "Status konta, kredyty AI, dzienniki zużycia, metadane sync/kopii"
+          ],
+          [
+            "Dowody zgody",
+            "Eksport konta w aplikacji (natychmiast)",
+            "Czas, hashe wersji zaakceptowanych tekstów"
+          ],
+          [
+            "Opinie (opcjonalnie)",
+            "Eksport konta w aplikacji (natychmiast)",
+            "Kategoria, ocena, komentarz, wersja aplikacji"
+          ],
+          [
+            "Telemetria (opt-in)",
+            "Eksport konta w aplikacji (natychmiast)",
+            "Statystyki awarii/użycia, o ile przechowywane"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Polityka prywatności", "agb": "Regulamin", "eula": "EULA", "imprint": "Dane firmy", "del": "Usunięcie konta", "req": "Wniosek o dane" }
+      "labels": {
+        "privacy": "Polityka prywatności",
+        "agb": "Regulamin",
+        "eula": "EULA",
+        "imprint": "Dane firmy",
+        "del": "Usunięcie konta",
+        "req": "Wniosek o dane"
+      },
+      "provider": "Dostawca: <strong>Dolphincrusher Software</strong> (właściciel: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     },
     "sk": {
       "del": {
@@ -679,52 +1211,105 @@
           "Na overenie môžeme položiť otázky k vlastníctvu účtu."
         ],
         "s3_h": "3. Čo sa maže — a čo nie?",
-        "s3_head": ["Oblasť", "Zaobchádzanie pri zmazaní účtu"],
+        "s3_head": [
+          "Oblasť",
+          "Zaobchádzanie pri zmazaní účtu"
+        ],
         "s3_rows": [
-          ["Profil, údaje úľov/včelstiev, poznámky", "zmazané"],
-          ["AI kredity", "zmazané; zostatok vrátený na žiadosť"],
-          ["Dôkazy o súhlase (EULA/VOP/Ochrana údajov)", "zmazané"],
-          ["Cloudové zálohy (voliteľné)", "zmazané"],
-          ["Auditný záznam o zmazaní účtu", "3 roky (dôkaz vykonania, bez väzby na profil)"],
-          ["Daňové doklady", "zákonná archivácia (8 rokov); väzba na účet odstránená/anonymizovaná"]
+          [
+            "Profil, údaje úľov/včelstiev, poznámky",
+            "zmazané"
+          ],
+          [
+            "AI kredity",
+            "zmazané; zostatok vrátený na žiadosť"
+          ],
+          [
+            "Dôkazy o súhlase (EULA/VOP/Ochrana údajov)",
+            "zmazané"
+          ],
+          [
+            "Cloudové zálohy (voliteľné)",
+            "zmazané"
+          ],
+          [
+            "Auditný záznam o zmazaní účtu",
+            "3 roky (dôkaz vykonania, bez väzby na profil)"
+          ],
+          [
+            "Daňové doklady",
+            "zákonná archivácia (8 rokov); väzba na účet odstránená/anonymizovaná"
+          ]
         ],
         "s4_h": "4. Export údajov pred zmazaním",
         "s4_li": [
-          "Pred zmazaním môžeš vytvoriť <strong>export údajov</strong> (Nastavenia → Exportovať údaje). Potom už prístup nie je možný."
+          "Pred zmazaním môžete vytvoriť <strong>oba exporty</strong>: údaje účtu cez Nastavenia → <strong>Účet</strong> → <strong>Exportovať údaje</strong> (JSON balík zo servera) a lokálne údaje cez Nastavenia → <strong>Exportovať údaje</strong>. Potom už prístup nie je možný."
         ],
-        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings &#8594; Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days. Before deleting, export your data: account data in Settings &#8594; Account &#8594; Export data, local data in Settings &#8594; Export data.</p>"
       },
       "req": {
         "title": "Žiadosť o údaje",
         "updated": "Stav: 24. novembra 2026",
-        "intro": "<strong>Skrátka:</strong> Máš kedykoľvek právo na prístup a prenositeľnosť údajov. Lokálne údaje môžeš exportovať <strong>priamo v aplikácii</strong> ako súbor; všetky ostatné údaje obdržíš <strong>na žiadosť e-mailom</strong>, zvyčajne <strong>do jedného mesiaca</strong>.",
+        "intro": "<strong>Stručne:</strong> Máte kedykoľvek právo na prístup k údajom a ich prenosnosť. V aplikácii môžete <strong>všetky svoje údaje</strong> exportovať sami: údaje účtu a cloudu ako JSON balík priamo zo servera a lokálne údaje ako súbor. Žiadosť e-mailom je len záložná možnosť.",
         "s1_h": "1. Export v aplikácii (okamžite)",
         "s1_li": [
-          "Otvor aplikáciu → <strong>Nastavenia</strong> → <strong>Exportovať údaje</strong>.",
-          "Dostaneš <strong>JSON súbor</strong> s lokálnymi údajmi: profil a nastavenia, stanovištia (GPS súradnice), úle, udalosti (prehliadky, ošetrenia), ošetrenie varroázy a pripomienky.",
-          "Súbor sa vytvára lokálne na zariadení — neopúšťa aplikáciu.",
-          "Import na inom zariadení cez <strong>Importovať údaje</strong> (s náhľadom a stratégiou konfliktov)."
+          "Údaje účtu a cloudu: otvorte aplikáciu → <strong>Nastavenia</strong> → <strong>Účet</strong> → <strong>Exportovať údaje</strong>. Získate <strong>JSON balík</strong> (čl. 15/20 GDPR) s údajmi o účte a súhlasoch, AI kreditmi a spotrebou, platbami a vráteniami, prémiovými nárokmi, metadátami cloudových záloh, spätnou väzbou, incidentmi a push zariadeniami.",
+          "Lokálne údaje: <strong>Nastavenia</strong> → <strong>Exportovať údaje</strong>. Získate <strong>JSON súbor</strong> s profilom a nastaveniami, lokalitami (GPS súradnice), úľmi, udalosťami včelstiev (kontroly, ošetrenia), ošetreniami varroázy, pripomienkami, financiami, fotografiami a ponukami predaja.",
+          "Oba exporty vznikajú na vašom zariadení; v dialógu zdieľania určíte, kam majú ísť (súbory, e-mail, cloud).",
+          "Ak niečo chýba, môžete si to vyžiadať e-mailom bez formalít (časť 2)."
         ],
-        "s2_h": "2. Žiadosť e-mailom (cloudové a účtovné údaje)",
-        "s2_p": "E-mail na <a href='mailto:support@dolphincrusher.com?subject=%C5%BDiados%C5%A5%20o%20%C3%BAdaje'>support@dolphincrusher.com</a> s predmetom <strong>„Žiadosť o údaje“</strong> a e-mailovou adresou svojho účtu:",
+        "s2_h": "2. Žiadosť e-mailom (záložná možnosť)",
+        "s2_p": "Ak už nemáte prístup k aplikácii alebo k svojmu účtu: e-mail na <a href='mailto:support@dolphincrusher.com?subject=%C5%BDiados%C5%A5%20o%20%C3%BAdaje'>support@dolphincrusher.com</a> s predmetom <strong>„Žiadosť o údaje“</strong> a e-mailovou adresou vášho účtu:",
         "s2_li": [
-          "Dostaneš: údaje o účte (e-mail, stav, AI kredity a protokoly využitia), metadáta synchronizácie a záloh, dôkazy o súhlase (EULA/VOP/Ochrana údajov), spätné väzby (ak existujú).",
-          "<strong>Lhůta:</strong> odpoveď do jedného mesiaca (čl. 12 ods. 3 GDPR); pri zložitých žiadostiach až dva mesiace — s odôvodnením.",
-          "Na overenie môžeme položiť otázky k vlastníctvu účtu.",
-          "Žiadosť je bezplatná."
+          "Zhromaždíme údaje, ktoré nie sú súčasťou exportu v aplikácii alebo ktoré si nemôžete vyžiadať sami (napríklad preto, že už nemôžete otvoriť svoj účet).",
+          "<strong>Lehota:</strong> odpoveď do jedného mesiaca (čl. 12 ods. 3 GDPR); pri zložitých žiadostiach možno lehotu predĺžiť až o dva mesiace — informujeme vás s odôvodnením.",
+          "Môžeme položiť otázky na overenie vlastníctva účtu.",
+          "Žiadosť o prístup je bezplatná."
         ],
         "s3_h": "3. Čo je zahrnuté?",
-        "s3_head": ["Oblasť údajov", "Cesta", "Obsah"],
-        "s3_rows": [
-          ["Lokálne správcovské údaje", "Export v aplikácii", "Profil, stanovištia, úle, udalosti, ošetrenia, pripomienky, nastavenia"],
-          ["Účet &amp; cloud", "Žiadosť e-mailom", "Stav účtu, AI kredity, protokoly využitia, metadáta sync/záloh"],
-          ["Dôkazy o súhlase", "Žiadosť e-mailom", "Čas, hashe verzií prijatých textov"],
-          ["Spätná väzba (voliteľné)", "Žiadosť e-mailom", "Kategória, hodnotenie, komentár, verzia aplikácie"],
-          ["Telemetria (opt-in)", "Žiadosť e-mailom", "Štatistiky pádov/využitia, pokiaľ uložené"]
+        "s3_head": [
+          "Oblasť údajov",
+          "Cesta",
+          "Obsah"
         ],
-        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+        "s3_rows": [
+          [
+            "Lokálne správcovské údaje",
+            "Export v aplikácii (okamžite)",
+            "Profil, stanovištia, úle, udalosti, ošetrenia, pripomienky, nastavenia"
+          ],
+          [
+            "Účet &amp; cloud",
+            "Export účtu v aplikácii (okamžite)",
+            "Stav účtu, AI kredity, protokoly využitia, metadáta sync/záloh"
+          ],
+          [
+            "Dôkazy o súhlase",
+            "Export účtu v aplikácii (okamžite)",
+            "Čas, hashe verzií prijatých textov"
+          ],
+          [
+            "Spätná väzba (voliteľné)",
+            "Export účtu v aplikácii (okamžite)",
+            "Kategória, hodnotenie, komentár, verzia aplikácie"
+          ],
+          [
+            "Telemetria (opt-in)",
+            "Export účtu v aplikácii (okamžite)",
+            "Štatistiky pádov/využitia, pokiaľ uložené"
+          ]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>"
       },
-      "labels": { "privacy": "Ochrana osobných údajov", "agb": "VOP", "eula": "EULA", "imprint": "Poskytovatel", "del": "Zmazanie účtu", "req": "Žiadosť o údaje" }
+      "labels": {
+        "privacy": "Ochrana osobných údajov",
+        "agb": "VOP",
+        "eula": "EULA",
+        "imprint": "Poskytovatel",
+        "del": "Zmazanie účtu",
+        "req": "Žiadosť o údaje"
+      },
+      "provider": "Poskytovateľ: <strong>Dolphincrusher Software</strong> (vlastník: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a>"
     }
   }
 }

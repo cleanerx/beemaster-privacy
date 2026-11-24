@@ -137,22 +137,32 @@ footer p { margin: .25rem 0; }
 <a href="daten-anfordern_da.html">🇩🇰 Dansk</a>
 </div>
 
+        <nav>
+            <a href="privacy_at.html">Datenschutzerklärung</a>
+            <a href="agb_at.html">AGB</a>
+            <a href="eula_at.html">EULA</a>
+            <a href="impressum_at.html">Impressum</a>
+            <a href="konto-loeschen_at.html">Konto löschen</a>
+            <a href="daten-anfordern_at.html" class="active">Daten anfordern</a>
+        </nav>
+
         
 <main>
 <h1>Daten anfordern</h1>
 <p class="subtitle">Auskunft und Datenexport für die Beemaster-App (Art. 15 DSGVO)</p>
-<p><strong>Kurzfassung:</strong> Du hast jederzeit das Recht auf Auskunft und Datenübertragbarkeit. Lokale Daten kannst du dir <strong>direkt in der App</strong> als Datei exportieren; alle anderen Daten erhältst du auf <strong>Anfrage per E-Mail</strong>. Die Antwort erfolgt in der Regel <strong>innerhalb eines Monats</strong>.</p>
-<h2>1. In-App-Datenexport (sofort)</h2>
+<p class="provider">Anbieter: <strong>Dolphincrusher Software</strong> (Inhaber: Jens Kübler) · <a href='mailto:support@dolphincrusher.com'>support@dolphincrusher.com</a></p>
+<p><strong>Kurzfassung:</strong> Du hast jederzeit das Recht auf Auskunft und Datenübertragbarkeit. In der App kannst du <strong>alle deine Daten</strong> selbst exportieren: die Konto- und Cloud-Daten als JSON-Bundle direkt vom Server und die lokalen Daten als Datei. Eine Anfrage per E-Mail ist nur der Fallback.</p>
+<h2>1. Export in der App (sofort)</h2>
 <ul>
-<li>App öffnen → <strong>Einstellungen</strong> → <strong>Daten exportieren</strong>.</li>
-<li>Du erhältst eine <strong>JSON-Datei</strong> mit deinem lokalen Datenbestand: Profil und Einstellungen, Standorte (GPS-Koordinaten), Beuten, Völker-Events (Kontrollen, Behandlungen), Varroa-Behandlungen und Erinnerungen.</li>
-<li>Die Datei wird lokal auf deinem Gerät erzeugt — sie verlässt die App nicht.</li>
-<li>Der Import auf einem anderen Gerät ist über <strong>Daten importieren</strong> möglich (mit Import-Vorschau und Konfliktstrategie).</li>
+<li>Konto- und Cloud-Daten: App öffnen → <strong>Einstellungen</strong> → <strong>Konto</strong> → <strong>Daten exportieren</strong>. Du erhältst ein <strong>JSON-Bundle</strong> (Art. 15/20 DSGVO) mit Konto- und Consent-Daten, KI-Guthaben und Verbrauch, Zahlungen und Erstattungen, Premium-Ansprüchen, Metadaten der Cloud-Backups, Feedback, Incidents und Push-Geräten.</li>
+<li>Lokale Daten: <strong>Einstellungen</strong> → <strong>Daten exportieren</strong>. Du erhältst eine <strong>JSON-Datei</strong> mit Profil und Einstellungen, Standorten (GPS-Koordinaten), Beuten, Völker-Events (Kontrollen, Behandlungen), Varroa-Behandlungen, Erinnerungen, Finanzen, Fotos und Verkaufsangeboten.</li>
+<li>Beide Exporte entstehen auf deinem Gerät; über den Teilen-Dialog entscheidest du, wohin sie gehen (Dateien, E-Mail, Cloud).</li>
+<li>Fehlt eine Angabe, kannst du sie formlos per E-Mail nachfordern (Abschnitt 2).</li>
 </ul>
-<h2>2. Anfrage per E-Mail (Cloud- und Kontodaten)</h2>
-<p>E-Mail an <a href='mailto:support@dolphincrusher.com?subject=Datenauskunft'>support@dolphincrusher.com</a> mit dem Betreff <strong>„Datenauskunft“</strong> und deiner Konto-E-Mail-Adresse:</p>
+<h2>2. Anfrage per E-Mail (Fallback)</h2>
+<p>Wenn du keinen Zugriff mehr auf die App oder dein Konto hast: E-Mail an <a href='mailto:support@dolphincrusher.com?subject=Datenauskunft'>support@dolphincrusher.com</a> mit dem Betreff <strong>„Datenauskunft“</strong> und deiner Konto-E-Mail-Adresse:</p>
 <ul>
-<li>Erhältst du: Kontodaten (E-Mail, Account-Status, KI-Guthaben und Verbrauchsprotokolle), Cloud-Sync- und Backup-Metadaten, Consent-Nachweise (EULA/AGB/Datenschutz), Feedback-Einträge (soweit vorhanden).</li>
+<li>Wir stellen dir die Daten zusammen, die nicht im App-Export enthalten sind oder die du nicht selbst abrufen kannst (z. B. weil du dein Konto nicht mehr öffnen kannst).</li>
 <li><strong>Frist:</strong> Antwort innerhalb eines Monats (Art. 12 Abs. 3 DSGVO); bei komplexen Anfragen verlängert sich die Frist um bis zu zwei Monate — wir informieren dich dann mit Begründung.</li>
 <li>Zur Verifizierung können wir Rückfragen zur Kontoinhaberschaft stellen.</li>
 <li>Ein Auskunftsersuchen kostet dich nichts.</li>
@@ -161,12 +171,12 @@ footer p { margin: .25rem 0; }
 <table class="data-table">
 <tr><th>Datenbereich</th><th>Weg</th><th>Inhalt</th></tr>
 <tr><td>Lokale Verwaltungsdaten</td><td>In-App-Export (sofort)</td><td>Profil, Standorte, Beuten, Events, Behandlungen, Erinnerungen, Einstellungen</td></tr>
-<tr><td>Konto &amp; Cloud</td><td>E-Mail-Anfrage</td><td>Kontostatus, KI-Guthaben, Verbrauchsprotokolle, Sync-/Backup-Metadaten</td></tr>
-<tr><td>Consent-Nachweise</td><td>E-Mail-Anfrage</td><td>Zeitpunkt, Versions-Hashes der akzeptierten Rechtstexte</td></tr>
-<tr><td>Feedback (optional)</td><td>E-Mail-Anfrage</td><td>Kategorie, Bewertung, Kommentar, App-Version</td></tr>
-<tr><td>Telemetrie (opt-in)</td><td>E-Mail-Anfrage</td><td>Absturz-/Nutzungsstatistiken, soweit gespeichert</td></tr>
+<tr><td>Konto &amp; Cloud</td><td>Konto-Export in der App (sofort)</td><td>Kontostatus, KI-Guthaben, Verbrauchsprotokolle, Sync-/Backup-Metadaten</td></tr>
+<tr><td>Consent-Nachweise</td><td>Konto-Export in der App (sofort)</td><td>Zeitpunkt, Versions-Hashes der akzeptierten Rechtstexte</td></tr>
+<tr><td>Feedback (optional)</td><td>Konto-Export in der App (sofort)</td><td>Kategorie, Bewertung, Kommentar, App-Version</td></tr>
+<tr><td>Telemetrie (opt-in)</td><td>Konto-Export in der App (sofort)</td><td>Absturz-/Nutzungsstatistiken, soweit gespeichert</td></tr>
 </table>
-<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15). Export your local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>
+<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15/20). The app exports everything itself: account and cloud data via Settings &#8594; Account &#8594; Export data (JSON bundle from the server), local data via Settings &#8594; Export data. Email to support@dolphincrusher.com (subject „Data request“) is only a fallback and is answered within one month.</p>
 <p><a href="konto-loeschen_at.html">Konto löschen</a> · <a href="privacy_at.html">Datenschutzerklärung</a> · <a href="agb_at.html">AGB</a> · <a href="eula_at.html">EULA</a> · <a href="impressum_at.html">Impressum</a></p>
 </main>
 </main>

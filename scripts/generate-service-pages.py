@@ -28,6 +28,9 @@ ROOT = Path(__file__).resolve().parent.parent
 TRANSLATIONS = ROOT / "scripts" / "service-pages-translations.json"
 RELEASED_SUFFIXES = {"", "_at", "_hu"}  # docs/legal/source/web_locales.json
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from legal_nav import load_labels, normalize_html  # noqa: E402
+
 # locale → (suffix, content-language, label)
 LOCALES = [
     ("de", "", "de", "🇩🇪 Deutsch"),
@@ -99,8 +102,10 @@ def lang_switch(page_stem: str, suffix: str) -> str:
 def build_main(t: dict, lang: str, page: str, suffix: str) -> str:
     p = t[page]
     out = [f"<main>\n<h1>{p['title']}</h1>",
-           f'<p class="subtitle">{SUBTITLES[page][lang]}</p>',
-           f"<p>{p['intro']}</p>"]
+           f'<p class="subtitle">{SUBTITLES[page][lang]}</p>']
+    if t.get("provider"):
+        out.append(f'<p class="provider">{t["provider"]}</p>')
+    out.append(f"<p>{p['intro']}</p>")
     out.append(f"<h2>{p['s1_h']}</h2>")
     out.append("<ul>\n" + "\n".join(f"<li>{li}</li>" for li in p["s1_li"]) + "\n</ul>")
     out.append(f"<h2>{p['s2_h']}</h2>")
@@ -157,7 +162,8 @@ def build_page(locale: str, suffix: str, content_lang: str, languages: dict,
 
     html = shell_pre + "\n" + build_main(languages[content_lang], content_lang, page, suffix) + "\n" + shell_post
     target = f"{stem}{suffix}.html"
-    return target, html
+    normalized = normalize_html(html, target, load_labels())
+    return target, (normalized or html)
 
 
 def main() -> int:
