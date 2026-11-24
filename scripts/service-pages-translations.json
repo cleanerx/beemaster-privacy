@@ -1,0 +1,730 @@
+{
+  "version": "2026-11-24",
+  "note": "Uebersetzungen fuer die Service-Seiten konto-loeschen / daten-anfordern. Sprache je Web-Locale: de/de-at=de, en=en, fr/lu/be=fr, nl/be-nl=nl, bg=bg, cs=cs, da=da, hu=hu, it=it, pl=pl, sk=sk. contentLanguage-Schluessel pro Locale im Generator.",
+  "languages": {
+    "de": {
+      "del": {
+        "title": "Konto löschen",
+        "updated": "Stand: 24. November 2026",
+        "intro": "<strong>Kurzfassung:</strong> Du kannst dein Konto jederzeit vollständig löschen — direkt in der App oder außerhalb der App per E-Mail. Die Löschung erfolgt nach Art. 17 DSGVO und umfasst dein Profil, Beutendaten, KI-Guthaben, Consent-Nachweise und Cloud-Backups.",
+        "s1_h": "1. Löschung in der App (empfohlen)",
+        "s1_li": [
+          "App öffnen → <strong>Einstellungen</strong> → <strong>Konto</strong> → <strong>Alle Daten löschen / Konto löschen</strong>.",
+          "Zur Sicherheit ist eine <strong>erneute Authentifizierung</strong> erforderlich.",
+          "Die Löschung ist endgültig: Profil, Beuten- und Schwarmdaten, KI-Guthaben (Restguthaben auf Wunsch erstattet), Consent-Nachweise und Cloud-Backups werden gelöscht (Art. 17 DSGVO)."
+        ],
+        "s2_h": "2. Löschung außerhalb der App",
+        "s2_p": "Wenn du die App nicht mehr installiert hast oder die Löschung ohne App beantragen möchtest:",
+        "s2_li": [
+          "Schicke eine E-Mail an <a href='mailto:support@dolphincrusher.com?subject=Konto%20l%C3%B6schen'>support@dolphincrusher.com</a> mit dem Betreff <strong>„Konto löschen“</strong> und nenne die <strong>E-Mail-Adresse deines Kontos</strong>.",
+          "Wir bestätigen den Eingang und löschen dein Konto inklusive aller verknüpften Daten. Die Bearbeitung erfolgt in der Regel <strong>innerhalb von 30 Tagen</strong>.",
+          "Zur Verifizierung können wir Rückfragen zur Kontoinhaberschaft stellen."
+        ],
+        "s3_h": "3. Was wird gelöscht — und was nicht?",
+        "s3_head": ["Bereich", "Behandlung bei Kontolöschung"],
+        "s3_rows": [
+          ["Profil, Beuten-/Schwarmdaten, Notizen", "gelöscht"],
+          ["KI-Guthaben (Credits)", "gelöscht; Restguthaben auf Wunsch erstattet"],
+          ["Consent-Nachweise (EULA/AGB/Datenschutz)", "gelöscht"],
+          ["Cloud-Backups (optional)", "gelöscht"],
+          ["Kontolöschungs-Audit-Log", "3 Jahre (Nachweis der Ausführung, ohne Profilbezug)"],
+          ["Steuerrelevante Buchungsbelege", "gesetzliche Aufbewahrung (8 Jahre); Verknüpfung zum Konto entfernt/anonymisiert"]
+        ],
+        "s4_h": "4. Datenexport vor der Löschung",
+        "s4_li": [
+          "Du kannst vor der Löschung einen <strong>Datenexport</strong> erstellen (Einstellungen → Daten exportieren). Danach ist kein Zugriff mehr möglich."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“), providing your account's email address. Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+      },
+      "req": {
+        "title": "Daten anfordern",
+        "updated": "Stand: 24. November 2026",
+        "intro": "<strong>Kurzfassung:</strong> Du hast jederzeit das Recht auf Auskunft und Datenübertragbarkeit. Lokale Daten kannst du dir <strong>direkt in der App</strong> als Datei exportieren; alle anderen Daten erhältst du auf <strong>Anfrage per E-Mail</strong>. Die Antwort erfolgt in der Regel <strong>innerhalb eines Monats</strong>.",
+        "s1_h": "1. In-App-Datenexport (sofort)",
+        "s1_li": [
+          "App öffnen → <strong>Einstellungen</strong> → <strong>Daten exportieren</strong>.",
+          "Du erhältst eine <strong>JSON-Datei</strong> mit deinem lokalen Datenbestand: Profil und Einstellungen, Standorte (GPS-Koordinaten), Beuten, Völker-Events (Kontrollen, Behandlungen), Varroa-Behandlungen und Erinnerungen.",
+          "Die Datei wird lokal auf deinem Gerät erzeugt — sie verlässt die App nicht.",
+          "Der Import auf einem anderen Gerät ist über <strong>Daten importieren</strong> möglich (mit Import-Vorschau und Konfliktstrategie)."
+        ],
+        "s2_h": "2. Anfrage per E-Mail (Cloud- und Kontodaten)",
+        "s2_p": "E-Mail an <a href='mailto:support@dolphincrusher.com?subject=Datenauskunft'>support@dolphincrusher.com</a> mit dem Betreff <strong>„Datenauskunft“</strong> und deiner Konto-E-Mail-Adresse:",
+        "s2_li": [
+          "Erhältst du: Kontodaten (E-Mail, Account-Status, KI-Guthaben und Verbrauchsprotokolle), Cloud-Sync- und Backup-Metadaten, Consent-Nachweise (EULA/AGB/Datenschutz), Feedback-Einträge (soweit vorhanden).",
+          "<strong>Frist:</strong> Antwort innerhalb eines Monats (Art. 12 Abs. 3 DSGVO); bei komplexen Anfragen verlängert sich die Frist um bis zu zwei Monate — wir informieren dich dann mit Begründung.",
+          "Zur Verifizierung können wir Rückfragen zur Kontoinhaberschaft stellen.",
+          "Ein Auskunftsersuchen kostet dich nichts."
+        ],
+        "s3_h": "3. Was ist enthalten?",
+        "s3_head": ["Datenbereich", "Weg", "Inhalt"],
+        "s3_rows": [
+          ["Lokale Verwaltungsdaten", "In-App-Export (sofort)", "Profil, Standorte, Beuten, Events, Behandlungen, Erinnerungen, Einstellungen"],
+          ["Konto &amp; Cloud", "E-Mail-Anfrage", "Kontostatus, KI-Guthaben, Verbrauchsprotokolle, Sync-/Backup-Metadaten"],
+          ["Consent-Nachweise", "E-Mail-Anfrage", "Zeitpunkt, Versions-Hashes der akzeptierten Rechtstexte"],
+          ["Feedback (optional)", "E-Mail-Anfrage", "Kategorie, Bewertung, Kommentar, App-Version"],
+          ["Telemetrie (opt-in)", "E-Mail-Anfrage", "Absturz-/Nutzungsstatistiken, soweit gespeichert"]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right to access and portability of your data (GDPR Art. 15). Export your local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+      },
+      "labels": { "privacy": "Datenschutzerklärung", "agb": "AGB", "eula": "EULA", "imprint": "Impressum", "del": "Konto löschen", "req": "Daten anfordern" }
+    },
+    "en": {
+      "del": {
+        "title": "Delete account",
+        "updated": "As of: 24 November 2026",
+        "intro": "<strong>Summary:</strong> You can delete your account at any time — directly in the app or outside the app by email. Deletion follows GDPR Art. 17 and covers your profile, apiary data, AI credits, consent records and cloud backups.",
+        "s1_h": "1. Deletion in the app (recommended)",
+        "s1_li": [
+          "Open the app → <strong>Settings</strong> → <strong>Account</strong> → <strong>Delete all data / Delete account</strong>.",
+          "For security, <strong>re-authentication</strong> is required.",
+          "Deletion is final: profile, apiary and colony data, AI credits (remaining credit refunded on request), consent records and cloud backups are deleted (GDPR Art. 17)."
+        ],
+        "s2_h": "2. Deletion outside the app",
+        "s2_p": "If the app is no longer installed or you prefer to request deletion without the app:",
+        "s2_li": [
+          "Send an email to <a href='mailto:support@dolphincrusher.com?subject=Delete%20account'>support@dolphincrusher.com</a> with the subject <strong>„Delete account“</strong> and state the <strong>email address of your account</strong>.",
+          "We confirm receipt and delete your account including all linked data, usually <strong>within 30 days</strong>.",
+          "We may ask follow-up questions to verify account ownership."
+        ],
+        "s3_h": "3. What is deleted — and what is not?",
+        "s3_head": ["Area", "Treatment on account deletion"],
+        "s3_rows": [
+          ["Profile, apiary/colony data, notes", "deleted"],
+          ["AI credits", "deleted; remaining credit refunded on request"],
+          ["Consent records (EULA/Terms/Privacy)", "deleted"],
+          ["Cloud backups (optional)", "deleted"],
+          ["Account-deletion audit log", "3 years (proof of execution, no profile reference)"],
+          ["Tax-relevant receipts", "statutory retention (8 years); link to the account removed/anonymised"]
+        ],
+        "s4_h": "4. Data export before deletion",
+        "s4_li": [
+          "Before deletion you can create a <strong>data export</strong> (Settings → Export data). Afterwards access is no longer possible."
+        ]
+      },
+      "req": {
+        "title": "Request your data",
+        "updated": "As of: 24 November 2026",
+        "intro": "<strong>Summary:</strong> You have the right of access and data portability at any time. You can export <strong>local data directly in the app</strong> as a file; all other data is provided on <strong>request by email</strong>. The answer is usually given <strong>within one month</strong>.",
+        "s1_h": "1. In-app data export (instant)",
+        "s1_li": [
+          "Open the app → <strong>Settings</strong> → <strong>Export data</strong>.",
+          "You receive a <strong>JSON file</strong> with your local data: profile and settings, apiary locations (GPS coordinates), hives, colony events (inspections, treatments), varroa treatments and reminders.",
+          "The file is generated locally on your device — it never leaves the app.",
+          "Import on another device is possible via <strong>Import data</strong> (with preview and conflict strategy)."
+        ],
+        "s2_h": "2. Request by email (cloud and account data)",
+        "s2_p": "Email <a href='mailto:support@dolphincrusher.com?subject=Data%20request'>support@dolphincrusher.com</a> with the subject <strong>„Data request“</strong> and your account's email address:",
+        "s2_li": [
+          "You receive: account data (email, account status, AI credits and usage logs), cloud sync and backup metadata, consent records (EULA/Terms/Privacy), feedback entries (if any).",
+          "<strong>Deadline:</strong> answer within one month (GDPR Art. 12(3)); complex requests may extend by up to two months — we will inform you with reasons.",
+          "We may ask follow-up questions to verify account ownership.",
+          "Access requests are free of charge."
+        ],
+        "s3_h": "3. What is included?",
+        "s3_head": ["Data area", "Route", "Content"],
+        "s3_rows": [
+          ["Local management data", "In-app export", "Profile, locations, hives, events, treatments, reminders, settings"],
+          ["Account &amp; cloud", "Email request", "Account status, AI credits, usage logs, sync/backup metadata"],
+          ["Consent records", "Email request", "Timestamp, version hashes of accepted legal texts"],
+          ["Feedback (optional)", "Email request", "Category, rating, comment, app version"],
+          ["Telemetry (opt-in)", "Email request", "Crash/usage statistics, as far as stored"]
+        ]
+      },
+      "labels": { "privacy": "Privacy policy", "agb": "Terms", "eula": "EULA", "imprint": "Legal notice", "del": "Delete account", "req": "Request your data" }
+    },
+    "fr": {
+      "del": {
+        "title": "Supprimer le compte",
+        "updated": "État : 24 novembre 2026",
+        "intro": "<strong>Résumé :</strong> Vous pouvez supprimer votre compte à tout moment — directement dans l'application ou en dehors de l'application par e-mail. La suppression suit l'art. 17 du RGPD et couvre votre profil, les données de ruches, les crédits IA, les preuves de consentement et les sauvegardes cloud.",
+        "s1_h": "1. Suppression dans l'application (recommandé)",
+        "s1_li": [
+          "Ouvrir l'application → <strong>Paramètres</strong> → <strong>Compte</strong> → <strong>Supprimer toutes les données / Supprimer le compte</strong>.",
+          "Par sécurité, une <strong>ré-authentification</strong> est demandée.",
+          "La suppression est définitive : profil, données de ruches et de colonies, crédits IA (solde restant remboursé sur demande), preuves de consentement et sauvegardes cloud (art. 17 RGPD)."
+        ],
+        "s2_h": "2. Suppression en dehors de l'application",
+        "s2_p": "Si l'application n'est plus installée ou si vous préférez demander la suppression sans l'application :",
+        "s2_li": [
+          "Envoyez un e-mail à <a href='mailto:support@dolphincrusher.com?subject=Supprimer%20le%20compte'>support@dolphincrusher.com</a> avec l'objet <strong>« Supprimer le compte »</strong> en indiquant <strong>l'adresse e-mail de votre compte</strong>.",
+          "Nous confirmons la réception et supprimons votre compte avec toutes les données associées, généralement <strong>sous 30 jours</strong>.",
+          "Des questions de vérification de la titularité du compte sont possibles."
+        ],
+        "s3_h": "3. Ce qui est supprimé — et ce qui ne l'est pas ?",
+        "s3_head": ["Domaine", "Traitement lors de la suppression du compte"],
+        "s3_rows": [
+          ["Profil, données de ruches/colonies, notes", "supprimé"],
+          ["Crédits IA", "supprimé ; solde restant remboursé sur demande"],
+          ["Preuves de consentement (CGU/EULA/confidentialité)", "supprimées"],
+          ["Sauvegardes cloud (facultatif)", "supprimées"],
+          ["Journal d'audit de suppression", "3 ans (preuve d'exécution, sans référence au profil)"],
+          ["Justificatifs fiscaux", "conservation légale (8 ans) ; lien avec le compte supprimé/anonymisé"]
+        ],
+        "s4_h": "4. Export des données avant la suppression",
+        "s4_li": [
+          "Avant la suppression, vous pouvez créer un <strong>export des données</strong> (Paramètres → Exporter les données). L'accès n'est ensuite plus possible."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+      },
+      "req": {
+        "title": "Demander vos données",
+        "updated": "État : 24 novembre 2026",
+        "intro": "<strong>Résumé :</strong> Vous avez à tout moment le droit d'accès et de portabilité. Vous pouvez exporter vos <strong>données locales directement dans l'application</strong> ; toutes les autres données sont fournies <strong>sur demande par e-mail</strong>, généralement <strong>sous un mois</strong>.",
+        "s1_h": "1. Export in-app (immédiat)",
+        "s1_li": [
+          "Ouvrir l'application → <strong>Paramètres</strong> → <strong>Exporter les données</strong>.",
+          "Vous recevez un <strong>fichier JSON</strong> avec vos données locales : profil et paramètres, emplacements (coordonnées GPS), ruches, événements de colonies (visites, traitements), traitements du varroa et rappels.",
+          "Le fichier est généré localement sur votre appareil — il ne quitte pas l'application.",
+          "L'import sur un autre appareil se fait via <strong>Importer les données</strong> (aperçu et stratégie de conflit)."
+        ],
+        "s2_h": "2. Demande par e-mail (données cloud et de compte)",
+        "s2_p": "E-mail à <a href='mailto:support@dolphincrusher.com?subject=Demande%20de%20donn%C3%A9es'>support@dolphincrusher.com</a> avec l'objet <strong>« Demande de données »</strong> et l'adresse e-mail de votre compte :",
+        "s2_li": [
+          "Vous recevez : données du compte (e-mail, statut, crédits IA et journaux d'utilisation), métadonnées de synchronisation et de sauvegarde cloud, preuves de consentement (CGU/EULA/confidentialité), retours (si disponibles).",
+          "<strong>Délai :</strong> réponse sous un mois (art. 12 §3 RGPD) ; jusqu'à deux mois pour les demandes complexes — avec justification.",
+          "Des questions de vérification de la titularité du compte sont possibles.",
+          "La demande est gratuite."
+        ],
+        "s3_h": "3. Contenu inclus",
+        "s3_head": ["Domaine de données", "Voie", "Contenu"],
+        "s3_rows": [
+          ["Données locales de gestion", "Export in-app", "Profil, emplacements, ruches, événements, traitements, rappels, paramètres"],
+          ["Compte &amp; cloud", "Demande par e-mail", "Statut du compte, crédits IA, journaux d'utilisation, métadonnées de sync/sauvegarde"],
+          ["Preuves de consentement", "Demande par e-mail", "Horodatage, empreintes de version des textes acceptés"],
+          ["Retours (facultatif)", "Demande par e-mail", "Catégorie, note, commentaire, version de l'app"],
+          ["Télémétrie (opt-in)", "Demande par e-mail", "Statistiques de plantage/d'utilisation, si conservées"]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+      },
+      "labels": { "privacy": "Politique de confidentialité", "agb": "CGV", "eula": "EULA", "imprint": "Mentions légales", "del": "Supprimer le compte", "req": "Demander vos données" }
+    },
+    "nl": {
+      "del": {
+        "title": "Account verwijderen",
+        "updated": "Status: 24 november 2026",
+        "intro": "<strong>Samenvatting:</strong> Je kunt je account op elk moment volledig verwijderen — direct in de app of buiten de app per e-mail. De verwijdering volgt art. 17 AVG en omvat je profiel, bijenkorfgegevens, AI-credits, toestemmingsbewijzen en cloudback-ups.",
+        "s1_h": "1. Verwijdering in de app (aanbevolen)",
+        "s1_li": [
+          "Open de app → <strong>Instellingen</strong> → <strong>Account</strong> → <strong>Alle gegevens verwijderen / Account verwijderen</strong>.",
+          "Ter beveiliging is <strong>opnieuw inloggen</strong> vereist.",
+          "De verwijdering is definitief: profiel, bijenkorf- en volksgegevens, AI-credits (rest tegoed wordt op verzoek terugbetaald), toestemmingsbewijzen en cloudback-ups worden verwijderd (art. 17 AVG)."
+        ],
+        "s2_h": "2. Verwijdering buiten de app",
+        "s2_p": "Als de app niet meer is geïnstalleerd of je de verwijdering liever zonder app aanvraagt:",
+        "s2_li": [
+          "Stuur een e-mail naar <a href='mailto:support@dolphincrusher.com?subject=Account%20verwijderen'>support@dolphincrusher.com</a> met als onderwerp <strong>„Account verwijderen“</strong> en vermeld het <strong>e-mailadres van je account</strong>.",
+          "We bevestigen de ontvangst en verwijderen je account inclusief alle gekoppelde gegevens, doorgaans <strong>binnen 30 dagen</strong>.",
+          "Ter verificatie kunnen we vragen stellen over het eigendom van het account."
+        ],
+        "s3_h": "3. Wat wordt verwijderd — en wat niet?",
+        "s3_head": ["Gebied", "Behandeling bij accountverwijdering"],
+        "s3_rows": [
+          ["Profiel, bijenkorf-/volksgegevens, notities", "verwijderd"],
+          ["AI-credits", "verwijderd; rest tegoed op verzoek terugbetaald"],
+          ["Toestemmingsbewijzen (EULA/voorwaarden/privacy)", "verwijderd"],
+          ["Cloudback-ups (optioneel)", "verwijderd"],
+          ["Auditlog van accountverwijdering", "3 jaar (bewijs van uitvoering, zonder profielverwijzing)"],
+          ["Fiscaal relevante betalingsbewijzen", "wettelijke bewaring (8 jaar); koppeling met account verwijderd/geanonimiseerd"]
+        ],
+        "s4_h": "4. Gegevensexport vóór verwijdering",
+        "s4_li": [
+          "Vóór verwijdering kun je een <strong>gegevensexport</strong> maken (Instellingen → Gegevens exporteren). Daarna is toegang niet meer mogelijk."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+      },
+      "req": {
+        "title": "Uw gegevens opvragen",
+        "updated": "Status: 24 november 2026",
+        "intro": "<strong>Samenvatting:</strong> Je hebt op elk moment recht op inzage en gegevensoverdracht. Lokale gegevens exporteer je <strong>direct in de app</strong> als bestand; alle overige gegevens ontvang je <strong>op aanvraag per e-mail</strong>, doorgaans <strong>binnen één maand</strong>.",
+        "s1_h": "1. In-app export (direct)",
+        "s1_li": [
+          "Open de app → <strong>Instellingen</strong> → <strong>Gegevens exporteren</strong>.",
+          "Je ontvangt een <strong>JSON-bestand</strong> met je lokale gegevens: profiel en instellingen, locaties (GPS-coördinaten), bijenkorven, volksgebeurtenissen (inspecties, behandelingen), varroabehandelingen en herinneringen.",
+          "Het bestand wordt lokaal op je apparaat gegenereerd — het verlaat de app niet.",
+          "Importeren op een ander apparaat kan via <strong>Gegevens importeren</strong> (met voorbeeldweergave en conflic strategie)."
+        ],
+        "s2_h": "2. Aanvraag per e-mail (cloud- en accountgegevens)",
+        "s2_p": "E-mail naar <a href='mailto:support@dolphincrusher.com?subject=Gegevensaanvraag'>support@dolphincrusher.com</a> met als onderwerp <strong>„Gegevensaanvraag“</strong> en het e-mailadres van je account:",
+        "s2_li": [
+          "Je ontvangt: accountgegevens (e-mail, status, AI-credits en verbruikslogboeken), metagegevens van cloudsync en back-ups, toestemmingsbewijzen (EULA/voorwaarden/privacy), feedback (indien aanwezig).",
+          "<strong>Termijn:</strong> antwoord binnen één maand (art. 12 lid 3 AVG); bij complexe aanvragen tot twee maanden — met motivering.",
+          "Ter verificatie kunnen we vragen stellen over het eigendom van het account.",
+          "De aanvraag is kosteloos."
+        ],
+        "s3_h": "3. Wat zit erin?",
+        "s3_head": ["Gegevensgebied", "Route", "Inhoud"],
+        "s3_rows": [
+          ["Lokale beheergegevens", "In-app export", "Profiel, locaties, bijenkorven, gebeurtenissen, behandelingen, herinneringen, instellingen"],
+          ["Account &amp; cloud", "E-mailaanvraag", "Accountstatus, AI-credits, verbruikslogboeken, sync-/back-upmetadata"],
+          ["Toestemmingsbewijzen", "E-mailaanvraag", "Tijdstip, versie-hashes van geaccepteerde teksten"],
+          ["Feedback (optioneel)", "E-mailaanvraag", "Categorie, beoordeling, opmerking, app-versie"],
+          ["Telemetrie (opt-in)", "E-mailaanvraag", "Crash-/gebruiksstatistieken, voor zover opgeslagen"]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+      },
+      "labels": { "privacy": "Privacybeleid", "agb": "Algemene voorwaarden", "eula": "EULA", "imprint": "Colofon", "del": "Account verwijderen", "req": "Uw gegevens opvragen" }
+    },
+    "bg": {
+      "del": {
+        "title": "Изтриване на профила",
+        "updated": "Към: 24 ноември 2026 г.",
+        "intro": "<strong>Накратко:</strong> Можеш да изтриеш профила си по всяко време — директно в приложението или извън него по имейл. Изтриването е по чл. 17 от GDPR и обхваща профила, данните за кошерите, AI кредитите, доказателствата за съгласие и облачните резервни копия.",
+        "s1_h": "1. Изтриване в приложението (препоръчително)",
+        "s1_li": [
+          "Отвори приложението → <strong>Настройки</strong> → <strong>Профил</strong> → <strong>Изтриване на всички данни / Изтриване на профила</strong>.",
+          "За сигурност се изисква <strong>повторна автентификация</strong>.",
+          "Изтриването е окончателно: профил, данни за кошерите и пчелните семейства, AI кредити (останалите се възстановяват по желание), доказателства за съгласие и облачни копия (чл. 17 GDPR)."
+        ],
+        "s2_h": "2. Изтриване извън приложението",
+        "s2_p": "Ако приложението вече не е инсталирано или предпочиташ заявка без него:",
+        "s2_li": [
+          "Изпрати имейл на <a href='mailto:support@dolphincrusher.com?subject=%D0%98%D0%B7%D1%82%D1%80%D0%B8%D0%B2%D0%B0%D0%BD%D0%B5%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB'>support@dolphincrusher.com</a> с тема <strong>„Изтриване на профила“</strong> и посочи <strong>имейл адреса на профила си</strong>.",
+          "Потвърждаваме получаването и изтриваме профила с всички свързани данни, обикновено <strong>в рамките на 30 дни</strong>.",
+          "За проверка можем да зададем въпроси за собствеността на профила."
+        ],
+        "s3_h": "3. Какво се изтрива — и какво не?",
+        "s3_head": ["Област", "Обработка при изтриване на профила"],
+        "s3_rows": [
+          ["Профил, данни за кошерите, бележки", "изтрито"],
+          ["AI кредити", "изтрити; остатъкът се възстановява по желание"],
+          ["Доказателства за съгласие (EULA/Условия/Поверителност)", "изтрити"],
+          ["Облачни резервни копия (по желание)", "изтрити"],
+          ["Одитен запис за изтриване", "3 години (доказателство за изпълнение, без връзка с профила)"],
+          ["Данъчни документи", "законно съхранение (8 години); връзката с профила се премахва/анонимизира"]
+        ],
+        "s4_h": "4. Експорт на данни преди изтриването",
+        "s4_li": [
+          "Преди изтриването можеш да създадеш <strong>експорт на данни</strong> (Настройки → Експорт). След това достъп вече не е възможен."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+      },
+      "req": {
+        "title": "Заявяване на данните ви",
+        "updated": "Към: 24 ноември 2026 г.",
+        "intro": "<strong>Накратко:</strong> Имаш право на достъп и преносимост на данните по всяко време. Локалните данни можеш да експортираш <strong>директно в приложението</strong> като файл; всички останали данни получаваш <strong>при заявка по имейл</strong>, обикновено <strong>в рамките на един месец</strong>.",
+        "s1_h": "1. Експорт в приложението (веднага)",
+        "s1_li": [
+          "Отвори приложението → <strong>Настройки</strong> → <strong>Експорт на данни</strong>.",
+          "Получаваш <strong>JSON файл</strong> с локалните си данни: профил и настройки, местоположения (GPS координати), кошери, събития (прегледи, лечения), treatment срещу вароа и напомняния.",
+          "Файлът се създава локално на устройството — не напуска приложението.",
+          "Импортиране на друго устройство е възможно чрез <strong>Импорт на данни</strong> (с преглед и стратегия при конфликти)."
+        ],
+        "s2_h": "2. Заявка по имейл (облачни и акаунт данни)",
+        "s2_p": "Имейл до <a href='mailto:support@dolphincrusher.com?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D0%B7%D0%B0%20%D0%B4%D0%B0%D0%BD%D0%BD%D0%B8'>support@dolphincrusher.com</a> с тема <strong>„Заявка за данни“</strong> и имейл адреса на профила си:",
+        "s2_li": [
+          "Получаваш: данни за профила (имейл, статус, AI кредити и протоколи за потребление), метаданни за синхронизация и резервни копия, доказателства за съгласие (EULA/Условия/Поверителност), отзиви (ако има).",
+          "<strong>Срок:</strong> отговор в рамките на един месец (чл. 12 ал. 3 GDPR); при сложни заявки до два месеца — с мотиви.",
+          "За проверка можем да зададем въпроси за собствеността на профила.",
+          "Заявката е безплатна."
+        ],
+        "s3_h": "3. Какво включва?",
+        "s3_head": ["Област на данните", "Път", "Съдържание"],
+        "s3_rows": [
+          ["Локални управленски данни", "Експорт в приложението", "Профил, местоположения, кошери, събития, лечения, напомняния, настройки"],
+          ["Акаунт &amp; облак", "Заявка по имейл", "Статус на профила, AI кредити, протоколи за потребление, метаданни за синхро/резервни копия"],
+          ["Доказателства за съгласие", "Заявка по имейл", "Дата, хешове на версиите на приетите текстове"],
+          ["Отзиви (по желание)", "Заявка по имейл", "Категория, оценка, коментар, версия на приложението"],
+          ["Телеметрия (opt-in)", "Заявка по имейл", "Статистика за сриви/използване, доколкото е съхранена"]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+      },
+      "labels": { "privacy": "Политика за поверителност", "agb": "Общи условия", "eula": "EULA", "imprint": "Импресум", "del": "Изтриване на профила", "req": "Заявяване на данните ви" }
+    },
+    "cs": {
+      "del": {
+        "title": "Smazání účtu",
+        "updated": "Stav: 24. listopadu 2026",
+        "intro": "<strong>Shrnutí:</strong> Účet můžeš kdykoli zcela smazat — přímo v aplikaci nebo mimo ni e-mailem. Smazání se řídí čl. 17 GDPR a zahrnuje tvůj profil, data včelstev, AI kredity, důkazy o souhlasu a cloudová zálohy.",
+        "s1_h": "1. Smazání v aplikaci (doporučeno)",
+        "s1_li": [
+          "Otevři aplikaci → <strong>Nastavení</strong> → <strong>Účet</strong> → <strong>Smazat všechna data / Smazat účet</strong>.",
+          "Pro jistotu je vyžadováno <strong>opětovné ověření</strong>.",
+          "Smazání je nevratné: profil, data úlů a včelstev, AI kredity (zbytek na žádost vrácen), důkazy o souhlasu a cloudové zálohy (čl. 17 GDPR)."
+        ],
+        "s2_h": "2. Smazání mimo aplikaci",
+        "s2_p": "Pokud aplikaci již nemáš nainstalovanou nebo chceš požádat o smazání bez ní:",
+        "s2_li": [
+          "Pošli e-mail na <a href='mailto:support@dolphincrusher.com?subject=Smaz%C3%A1n%C3%AD%20%C3%BA%C4%8Dtu'>support@dolphincrusher.com</a> s předmětem <strong>„Smazání účtu“</strong> a uveď <strong>e-mailovou adresu svého účtu</strong>.",
+          "Potvrdíme přijetí a smažeme tvůj účet včetně všech souvisejících dat, obvykle <strong>do 30 dnů</strong>.",
+          "Pro ověření můžeme položit dotazy k vlastnictví účtu."
+        ],
+        "s3_h": "3. Co se maže — a co ne?",
+        "s3_head": ["Oblast", "Zacházení při smazání účtu"],
+        "s3_rows": [
+          ["Profil, data úlů/včelstev, poznámky", "smazáno"],
+          ["AI kredity", "smazány; zbytek na žádost vrácen"],
+          ["Důkazy o souhlasu (EULA/VOP/Zásady)", "smazány"],
+          ["Cloudové zálohy (volitelné)", "smazány"],
+          ["Auditní záznam o smazání", "3 roky (důkaz provedení, bez vazby na profil)"],
+          ["Daňové doklady", "zákonná archivace (8 let); vazba na účet odstraněna/anonymizována"]
+        ],
+        "s4_h": "4. Export dat před smazáním",
+        "s4_li": [
+          "Před smazáním můžeš vytvořit <strong>export dat</strong> (Nastavení → Exportovat data). Poté už přístup není možný."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+      },
+      "req": {
+        "title": "Vyžádání dat",
+        "updated": "Stav: 24. listopadu 2026",
+        "intro": "<strong>Shrnutí:</strong> Máš kdykoli právo na přístup a přenositelnost dat. Lokální data můžeš exportovat <strong>přímo v aplikaci</strong> jako soubor; všechna ostatní data obdržíš <strong>na žádost e-mailem</strong>, obvykle <strong>do jednoho měsíce</strong>.",
+        "s1_h": "1. Export v aplikaci (okamžitě)",
+        "s1_li": [
+          "Otevři aplikaci → <strong>Nastavení</strong> → <strong>Exportovat data</strong>.",
+          "Obdržíš <strong>JSON soubor</strong> s lokálními daty: profil a nastavení, stanoviště (GPS souřadnice), úly, události (prohlídky, ošetření), ošetření varroy a připomínky.",
+          "Soubor se vytváří lokálně na zařízení — aplikaci neopouští.",
+          "Import na jiném zařízení přes <strong>Importovat data</strong> (s náhledem a strategií konfliktů)."
+        ],
+        "s2_h": "2. Žádost e-mailem (cloudová a účtovní data)",
+        "s2_p": "E-mail na <a href='mailto:support@dolphincrusher.com?subject=%C5%BD%C3%A1dost%20o%20data'>support@dolphincrusher.com</a> s předmětem <strong>„Žádost o data“</strong> a e-mailovou adresou svého účtu:",
+        "s2_li": [
+          "Obdržíš: údaje o účtu (e-mail, stav, AI kredity a protokoly využití), metadata cloudové synchronizace a záloh, důkazy o souhlasu (EULA/VOP/Zásady), zpětné vazby (pokud existují).",
+          "<strong>Lhůta:</strong> odpověď do jednoho měsíce (čl. 12 odst. 3 GDPR); u složitých žádostí až dva měsíce — s odůvodněním.",
+          "Pro ověření můžeme položit dotazy k vlastnictví účtu.",
+          "Žádost je bezplatná."
+        ],
+        "s3_h": "3. Co je zahrnuto?",
+        "s3_head": ["Oblast dat", "Cesta", "Obsah"],
+        "s3_rows": [
+          ["Lokální správcovská data", "Export v aplikaci", "Profil, stanoviště, úly, události, ošetření, připomínky, nastavení"],
+          ["Účet &amp; cloud", "Žádost e-mailem", "Stav účtu, AI kredity, protokoly využití, metadata sync/záloh"],
+          ["Důkazy o souhlasu", "Žádost e-mailem", "Čas, hashy verzí přijatých textů"],
+          ["Zpětná vazba (volitelné)", "Žádost e-mailem", "Kategorie, hodnocení, komentář, verze aplikace"],
+          ["Telemetrie (opt-in)", "Žádost e-mailem", "Statistiky pádu/využití, pokud uloženy"]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+      },
+      "labels": { "privacy": "Zásady ochrany osobních údajů", "agb": "VOP", "eula": "EULA", "imprint": "Poskytovatel", "del": "Smazání účtu", "req": "Vyžádání dat" }
+    },
+    "da": {
+      "del": {
+        "title": "Sletning af konto",
+        "updated": "Status: 24. november 2026",
+        "intro": "<strong>Kort:</strong> Du kan til enhver tid slette din konto fuldstændigt — direkte i appen eller uden for appen pr. e-mail. Sletningen følger GDPR art. 17 og omfatter din profil, bifoldsdata, AI-credits, samtykkebeviser og cloud-backups.",
+        "s1_h": "1. Sletning i appen (anbefalet)",
+        "s1_li": [
+          "Åbn appen → <strong>Indstillinger</strong> → <strong>Konto</strong> → <strong>Slet alle data / Slet konto</strong>.",
+          "Af sikkerhedshensyn kræves <strong>gentagen autentificering</strong>.",
+          "Sletningen er endelig: profil, bifolds- og folke-data, AI-credits (resterende beløb refunderes på anmodning), samtykkebeviser og cloud-backups slettes (GDPR art. 17)."
+        ],
+        "s2_h": "2. Sletning uden for appen",
+        "s2_p": "Hvis appen ikke længere er installeret, eller du foretrækker at anmode om sletning uden appen:",
+        "s2_li": [
+          "Send en e-mail til <a href='mailto:support@dolphincrusher.com?subject=Slet%20konto'>support@dolphincrusher.com</a> med emnet <strong>„Slet konto“</strong> og opgiv <strong>e-mailadressen på din konto</strong>.",
+          "Vi bekræfter modtagelsen og sletter din konto inklusive alle tilknyttede data, normalt <strong>inden for 30 dage</strong>.",
+          "Til bekræftelse kan vi stille spørgsmål om kontoejerskabet."
+        ],
+        "s3_h": "3. Hvad slettes — og hvad ikke?",
+        "s3_head": ["Område", "Behandling ved konto-sletning"],
+        "s3_rows": [
+          ["Profil, bifolds-/folke-data, noter", "slettet"],
+          ["AI-credits", "slettet; resterende beløb refunderes på anmodning"],
+          ["Samtykkebeviser (EULA/vilkår/privatliv)", "slettet"],
+          ["Cloud-backups (valgfrit)", "slettet"],
+          ["Auditlog for konto-sletning", "3 år (bevis for udførelse, uden profilkobling)"],
+          ["Skattemæssige bilag", "lovmæssig opbevaring (8 år); kobling til kontoen fjernet/anonymiseret"]
+        ],
+        "s4_h": "4. Dataeksport før sletning",
+        "s4_li": [
+          "Før sletningen kan du oprette en <strong>dataeksport</strong> (Indstillinger → Eksportér data). Bagefter er adgang ikke længere mulig."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+      },
+      "req": {
+        "title": "Anmodning om dine data",
+        "updated": "Status: 24. november 2026",
+        "intro": "<strong>Kort:</strong> Du har til enhver tid ret til indsigt og dataportabilitet. Lokale data kan du eksportere <strong>direkte i appen</strong> som fil; alle andre data modtager du <strong>på anmodning pr. e-mail</strong>, normalt <strong>inden for en måned</strong>.",
+        "s1_h": "1. Dataeksport i appen (øjeblikkelig)",
+        "s1_li": [
+          "Åbn appen → <strong>Indstillinger</strong> → <strong>Eksportér data</strong>.",
+          "Du modtager en <strong>JSON-fil</strong> med dine lokale data: profil og indstillinger, lokaliteter (GPS-koordinater), bifolde, folke-hændelser (eftersyn, behandlinger), varroabehandlinger og påmindelser.",
+          "Filen genereres lokalt på din enhed — den forlader ikke appen.",
+          "Import på en anden enhed via <strong>Importér data</strong> (med forhåndsvisning og konfliktstrategi)."
+        ],
+        "s2_h": "2. Anmodning pr. e-mail (cloud- og konto-data)",
+        "s2_p": "Send en e-mail til <a href='mailto:support@dolphincrusher.com?subject=Dataanmodning'>support@dolphincrusher.com</a> med emnet <strong>„Dataanmodning“</strong> og din kontos e-mailadresse:",
+        "s2_li": [
+          "Du modtager: kontooplysninger (e-mail, status, AI-credits og forbrugslog), metadata for cloud-synk og backups, samtykkebeviser (EULA/vilkår/privatliv), feedback (hvis noget).",
+          "<strong>Frist:</strong> svar inden for en måned (GDPR art. 12, stk. 3); komplekse anmodninger op til to måneder — med begrundelse.",
+          "Til bekræftelse kan vi stille spørgsmål om kontoejerskabet.",
+          "Anmodningen er gratis."
+        ],
+        "s3_h": "3. Hvad er indeholdt?",
+        "s3_head": ["Dataområde", "Rute", "Indhold"],
+        "s3_rows": [
+          ["Lokale administrasjonsdata", "Eksport i appen", "Profil, lokaliteter, bifolde, hændelser, behandlinger, påmindelser, indstillinger"],
+          ["Konto &amp; cloud", "Anmodning pr. e-mail", "Kontostatus, AI-credits, forbrugslog, sync-/backup-metadata"],
+          ["Samtykkebeviser", "Anmodning pr. e-mail", "Tidspunkt, versions-hashes af accepterede tekster"],
+          ["Feedback (valgfrit)", "Anmodning pr. e-mail", "Kategori, vurdering, kommentar, app-version"],
+          ["Telemetri (opt-in)", "Anmodning pr. e-mail", "Crash-/brugsstatistik, i det omfang gemt"]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+      },
+      "labels": { "privacy": "Privatlivspolitik", "agb": "Salgs- og anvendelsesbetingelser", "eula": "EULA", "imprint": "Kolofon", "del": "Sletning af konto", "req": "Anmodning om dine data" }
+    },
+    "hu": {
+      "del": {
+        "title": "Fiók törlése",
+        "updated": "Állapot: 2026. november 24.",
+        "intro": "<strong>Röviden:</strong> Fiókodat bármikor teljesen törölheted — közvetlenül az alkalmazásban vagy az alkalmazáson kívül e-mailben. A törlés a GDPR 17. cikke szerint történik, és magában foglalja a profilodat, a kaptár-adatokat, az AI-kreditet, a hozzájárulási bizonylatokat és a felhőmentéseket.",
+        "s1_h": "1. Törlés az alkalmazásban (ajánlott)",
+        "s1_li": [
+          "Nyisd meg az alkalmazást → <strong>Beállítások</strong> → <strong>Fiók</strong> → <strong>Összes adat törlése / Fiók törlése</strong>.",
+          "Biztonsági okból <strong>újrahitelesítés</strong> szükséges.",
+          "A törlés végleges: profil, kaptár- és család-adatok, AI-kredit (a maradékot kérésre visszatérítjük), hozzájárulási bizonylatok és felhőmentések törlése (GDPR 17. cikk)."
+        ],
+        "s2_h": "2. Törlés az alkalmazáson kívül",
+        "s2_p": "Ha az alkalmazás már nincs telepítve, vagy inkább nélküle kérnéd a törlést:",
+        "s2_li": [
+          "Küldj e-mailt a <a href='mailto:support@dolphincrusher.com?subject=Fi%C3%B3k%20t%C3%B6rl%C3%A9se'>support@dolphincrusher.com</a> címre <strong>„Fiók törlése“</strong> tárggyal, és add meg <strong>a fiókod e-mail címét</strong>.",
+          "Visszaigazoljuk a beérkezést, és töröljük a fiókodat az összes kapcsolódó adattal együtt, jellemzően <strong>30 napon belül</strong>.",
+          "Ellenőrzésképpen a fióktulajdonosságára vonatkozó kérdéseket tehetünk fel."
+        ],
+        "s3_h": "3. Mi törlődik — és mi nem?",
+        "s3_head": ["Terület", "Kezelés a fióktörléskor"],
+        "s3_rows": [
+          ["Profil, kaptár-/család-adatok, jegyzetek", "törölve"],
+          ["AI-kredit", "törölve; a maradék kérésre visszatérítve"],
+          ["Hozzájárulási bizonylatok (EULA/ÁSZF/adatvédelem)", "törölve"],
+          ["Felhőmentések (opcionális)", "törölve"],
+          ["Fióktörlési auditnapló", "3 év (végrehajtás igazolása, profilkapcsolat nélkül)"],
+          ["Adóügyi bizonylatok", "törvényi megőrzés (8 év); a fiókhoz kötés eltávolítva/anonimizálva"]
+        ],
+        "s4_h": "4. Adatexport a törlés előtt",
+        "s4_li": [
+          "A törlés előtt <strong>adatexportot</strong> készíthetsz (Beállítások → Adatok exportálása). Ezt követően nincs többé hozzáférés."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+      },
+      "req": {
+        "title": "Adatok igénylése",
+        "updated": "Állapot: 2026. november 24.",
+        "intro": "<strong>Röviden:</strong> Bármikor jogod van az adatokhoz való hozzáféréshez és hordozhatósághoz. A <strong>helyi adatokat közvetlenül az alkalmazásban</strong> exportálhatod fájlként; minden egyéb adatot <strong>e-mailben igényelhetsz</strong>, jellemzően <strong>egy hónapon belül</strong>.",
+        "s1_h": "1. Export az alkalmazásban (azonnali)",
+        "s1_li": [
+          "Nyisd meg az alkalmazást → <strong>Beállítások</strong> → <strong>Adatok exportálása</strong>.",
+          "Egy <strong>JSON-fájlt</strong> kapsz a helyi adataiddal: profil és beállítások, telephelyek (GPS-koordináták), kaptárak, család-események (vizsgálatok, kezelések), varroa-kezelések és emlékeztetők.",
+          "A fájl helyben, az eszközön készül — nem hagyja el az alkalmazást.",
+          "Másik eszközre <strong>Adatok importálása</strong> úton vihető át (előnézettel és ütközéskezeléssel)."
+        ],
+        "s2_h": "2. Igénylés e-mailben (felhő- és fiókadatok)",
+        "s2_p": "Küldj e-mailt a <a href='mailto:support@dolphincrusher.com?subject=Adatk%C3%A9r%C3%A9s'>support@dolphincrusher.com</a> címre <strong>„Adatkérés“</strong> tárggyal és a fiókod e-mail címével:",
+        "s2_li": [
+          "Kapsz: fiókadatokat (e-mail, állapot, AI-kredit és felhasználási naplók), felhőszinkron- és mentési metaadatokat, hozzájárulási bizonylatokat (EULA/ÁSZF/adatvédelem), visszajelzéseket (ha vannak).",
+          "<strong>Határidő:</strong> válasz egy hónapon belül (GDPR 12. cikk (3)); összetettebb kérések esetén legfeljebb két hónappal — indoklással.",
+          "Ellenőrzésképpen a fióktulajdonosságára vonatkozó kérdéseket tehetünk fel.",
+          "Az igénylés ingyenes."
+        ],
+        "s3_h": "3. Mit tartalmaz?",
+        "s3_head": ["Adatterület", "Út", "Tartalom"],
+        "s3_rows": [
+          ["Helyi kezelési adatok", "Export az alkalmazásban", "Profil, telephelyek, kaptárak, események, kezelések, emlékeztetők, beállítások"],
+          ["Fiók &amp; felhő", "Igénylés e-mailben", "Fiókállapot, AI-kredit, felhasználási naplók, szinkron/mentési metaadatok"],
+          ["Hozzájárulási bizonylatok", "Igénylés e-mailben", "Időpont, az elfogadott szövegek verzióhash-ei"],
+          ["Visszajelzés (opcionális)", "Igénylés e-mailben", "Kategória, értékelés, megjegyzés, alkalmazásverzió"],
+          ["Telemetria (opt-in)", "Igénylés e-mailben", "Összeomlási/használati statisztikák, amennyiben tárolva"]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+      },
+      "labels": { "privacy": "Adatvédelmi tájékoztató", "agb": "ÁSZF", "eula": "EULA", "imprint": "Impresszum", "del": "Fiók törlése", "req": "Adatok igénylése" }
+    },
+    "it": {
+      "del": {
+        "title": "Eliminazione dell'account",
+        "updated": "Stato: 24 novembre 2026",
+        "intro": "<strong>Sintesi:</strong> Puoi eliminare il tuo account in qualsiasi momento — direttamente nell'app o fuori dall'app via e-mail. L'eliminazione segue l'art. 17 del GDPR e comprende profilo, dati degli alveari, crediti IA, prove di consenso e backup cloud.",
+        "s1_h": "1. Eliminazione nell'app (consigliata)",
+        "s1_li": [
+          "Apri l'app → <strong>Impostazioni</strong> → <strong>Account</strong> → <strong>Elimina tutti i dati / Elimina account</strong>.",
+          "Per sicurezza è richiesta una <strong>riautenticazione</strong>.",
+          "L'eliminazione è definitiva: profilo, dati di alveari e colonie, crediti IA (saldo residuo rimborsato su richiesta), prove di consenso e backup cloud (art. 17 GDPR)."
+        ],
+        "s2_h": "2. Eliminazione fuori dall'app",
+        "s2_p": "Se l'app non è più installata o preferisci richiedere l'eliminazione senza l'app:",
+        "s2_li": [
+          "Invia un'e-mail a <a href='mailto:support@dolphincrusher.com?subject=Eliminazione%20account'>support@dolphincrusher.com</a> con oggetto <strong>„Eliminazione account“</strong> indicando <strong>l'indirizzo e-mail del tuo account</strong>.",
+          "Confermiamo la ricezione ed eliminiamo il tuo account con tutti i dati collegati, di norma <strong>entro 30 giorni</strong>.",
+          "Per la verifica possiamo porre domande sulla titolarità dell'account."
+        ],
+        "s3_h": "3. Cosa viene eliminato — e cosa no?",
+        "s3_head": ["Area", "Trattamento all'eliminazione dell'account"],
+        "s3_rows": [
+          ["Profilo, dati alveari/colonie, note", "eliminati"],
+          ["Crediti IA", "eliminati; saldo residuo rimborsato su richiesta"],
+          ["Prove di consenso (EULA/Condizioni/Privacy)", "eliminate"],
+          ["Backup cloud (opzionale)", "eliminati"],
+          ["Log di audit dell'eliminazione", "3 anni (prova dell'esecuzione, senza riferimento al profilo)"],
+          ["Documenti fiscali", "conservazione legale (8 anni); collegamento all'account rimosso/anonimizzato"]
+        ],
+        "s4_h": "4. Esportazione dei dati prima dell'eliminazione",
+        "s4_li": [
+          "Prima dell'eliminazione puoi creare un <strong>esportazione dei dati</strong> (Impostazioni → Esporta dati). successivamente l'accesso non è più possibile."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+      },
+      "req": {
+        "title": "Richiesta dei dati",
+        "updated": "Stato: 24 novembre 2026",
+        "intro": "<strong>Sintesi:</strong> Hai in ogni momento il diritto di accesso e di portabilità dei dati. I dati locali puoi esportarli <strong>direttamente nell'app</strong> come file; tutti gli altri dati li ricevi <strong>su richiesta via e-mail</strong>, di norma <strong>entro un mese</strong>.",
+        "s1_h": "1. Esportazione in-app (immediata)",
+        "s1_li": [
+          "Apri l'app → <strong>Impostazioni</strong> → <strong>Esporta dati</strong>.",
+          "Ricevi un <strong>file JSON</strong> con i tuoi dati locali: profilo e impostazioni, ubicazioni (coordinate GPS), alveari, eventi (ispezioni, trattamenti), trattamenti varroa e promemoria.",
+          "Il file viene generato localmente sul dispositivo — non lascia l'app.",
+          "L'import su un altro dispositivo avviene tramite <strong>Importa dati</strong> (con anteprima e strategia di conflitto)."
+        ],
+        "s2_h": "2. Richiesta via e-mail (dati cloud e account)",
+        "s2_p": "E-mail a <a href='mailto:support@dolphincrusher.com?subject=Richiesta%20dati'>support@dolphincrusher.com</a> con oggetto <strong>„Richiesta dati“</strong> e l'indirizzo e-mail del tuo account:",
+        "s2_li": [
+          "Ricevi: dati dell'account (e-mail, stato, crediti IA e registri d'uso), metadati di sincronizzazione e backup, prove di consenso (EULA/Condizioni/Privacy), feedback (se presenti).",
+          "<strong>Termine:</strong> risposta entro un mese (art. 12 par. 3 GDPR); per richieste complesse fino a due mesi — con motivazione.",
+          "Per la verifica possiamo porre domande sulla titolarità dell'account.",
+          "La richiesta è gratuita."
+        ],
+        "s3_h": "3. Cosa è incluso?",
+        "s3_head": ["Area dati", "Via", "Contenuto"],
+        "s3_rows": [
+          ["Dati di gestione locali", "Esportazione in-app", "Profilo, ubicazioni, alveari, eventi, trattamenti, promemoria, impostazioni"],
+          ["Account &amp; cloud", "Richiesta via e-mail", "Stato account, crediti IA, registri d'uso, metadati sync/backup"],
+          ["Prove di consenso", "Richiesta via e-mail", "Data e ora, hash di versione dei testi accettati"],
+          ["Feedback (opzionale)", "Richiesta via e-mail", "Categoria, valutazione, commento, versione app"],
+          ["Telemetria (opt-in)", "Richiesta via e-mail", "Statistiche su arresti/utilizzo, se conservate"]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+      },
+      "labels": { "privacy": "Informativa privacy", "agb": "Condizioni contrattuali", "eula": "EULA", "imprint": "Note legali", "del": "Eliminazione dell'account", "req": "Richiesta dei dati" }
+    },
+    "pl": {
+      "del": {
+        "title": "Usunięcie konta",
+        "updated": "Stan na: 24 listopada 2026",
+        "intro": "<strong>W skrócie:</strong> Konto możesz w każdej chwili całkowicie usunąć — bezpośrednio w aplikacji lub poza nią e-mailem. Usunięcie następuje na podstawie art. 17 RODO i obejmuje profil, dane pasiek, kredyty AI, dowody zgody oraz kopie zapasowe w chmurze.",
+        "s1_h": "1. Usunięcie w aplikacji (zalecane)",
+        "s1_li": [
+          "Otwórz aplikację → <strong>Ustawienia</strong> → <strong>Konto</strong> → <strong>Usuń wszystkie dane / Usuń konto</strong>.",
+          "Dla bezpieczeństwa wymagane jest <strong>ponowne uwierzytelnienie</strong>.",
+          "Usunięcie jest ostateczne: profil, dane uli i rodzin, kredyty AI (pozostałość zwracana na życzenie), dowody zgody i kopie zapasowe w chmurze (art. 17 RODO)."
+        ],
+        "s2_h": "2. Usunięcie poza aplikacją",
+        "s2_p": "Jeśli aplikacja nie jest już zainstalowana lub wolisz wnioskować bez niej:",
+        "s2_li": [
+          "Wyślij e-mail na <a href='mailto:support@dolphincrusher.com?subject=Usuni%C4%99cie%20konta'>support@dolphincrusher.com</a> z tematem <strong>„Usunięcie konta“</strong> i podaj <strong>adres e-mail konta</strong>.",
+          "Potwierdzamy otrzymanie i usuwamy konto wraz ze wszystkimi powiązanymi danymi, zwykle <strong>w ciągu 30 dni</strong>.",
+          "W celu weryfikacji możemy zadać pytania o własność konta."
+        ],
+        "s3_h": "3. Co jest usuwane — a co nie?",
+        "s3_head": ["Obszar", "Postępowanie przy usunięciu konta"],
+        "s3_rows": [
+          ["Profil, dane uli/rodzin, notatki", "usunięte"],
+          ["Kredyty AI", "usunięte; pozostałość zwracana na życzenie"],
+          ["Dowody zgody (EULA/Regulamin/Prywatność)", "usunięte"],
+          ["Kopie zapasowe w chmurze (opcjonalnie)", "usunięte"],
+          ["Dziennik audytu usunięcia konta", "3 lata (dowód wykonania, bez powiązania z profilem)"],
+          ["Dokumenty podatkowe", "ustawowe przechowywanie (8 lat); powiązanie z kontem usunięte/zanonimizowane"]
+        ],
+        "s4_h": "4. Eksport danych przed usunięciem",
+        "s4_li": [
+          "Przed usunięciem możesz utworzyć <strong>eksport danych</strong> (Ustawienia → Eksportuj dane). Później dostęp nie jest już możliwy."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+      },
+      "req": {
+        "title": "Wniosek o dane",
+        "updated": "Stan na: 24 listopada 2026",
+        "intro": "<strong>W skrócie:</strong> Masz w każdej chwili prawo dostępu i przenoszenia danych. Dane lokalne możesz wyeksportować <strong>bezpośrednio w aplikacji</strong> jako plik; wszystkie pozostałe otrzymasz <strong>na wniosek e-mailem</strong>, zwykle <strong>w ciągu miesiąca</strong>.",
+        "s1_h": "1. Eksport w aplikacji (natychmiast)",
+        "s1_li": [
+          "Otwórz aplikację → <strong>Ustawienia</strong> → <strong>Eksportuj dane</strong>.",
+          "Otrzymujesz <strong>plik JSON</strong> z danymi lokalnymi: profil i ustawienia, miejsca (współrzędne GPS), ule, zdarzenia (podglądy, zabiegi), leczenie warrozji i przypomnienia.",
+          "Plik powstaje lokalnie na urządzeniu — nie opuszcza aplikacji.",
+          "Import na innym urządzeniu przez <strong>Importuj dane</strong> (z podglądem i strategią konfliktów)."
+        ],
+        "s2_h": "2. Wniosek e-mailem (dane w chmurze i konta)",
+        "s2_p": "E-mail na <a href='mailto:support@dolphincrusher.com?subject=Wniosek%20o%20dane'>support@dolphincrusher.com</a> z tematem <strong>„Wniosek o dane“</strong> i adresem e-mail konta:",
+        "s2_li": [
+          "Otrzymujesz: dane konta (e-mail, status, kredyty AI i dzienniki zużycia), metadane synchronizacji i kopii w chmurze, dowody zgody (EULA/Regulamin/Prywatność), opinie (jeśli są).",
+          "<strong>Termin:</strong> odpowiedź w ciągu miesiąca (art. 12 ust. 3 RODO); przy złożonych wnioskach do dwóch miesięcy — z uzasadnieniem.",
+          "W celu weryfikacji możemy zadać pytania o własność konta.",
+          "Wniosek jest bezpłatny."
+        ],
+        "s3_h": "3. Co jest objęte?",
+        "s3_head": ["Obszar danych", "Ścieżka", "Treść"],
+        "s3_rows": [
+          ["Lokalne dane zarządcze", "Eksport w aplikacji", "Profil, miejsca, ule, zdarzenia, zabiegi, przypomnienia, ustawienia"],
+          ["Konto &amp; chmura", "Wniosek e-mailem", "Status konta, kredyty AI, dzienniki zużycia, metadane sync/kopii"],
+          ["Dowody zgody", "Wniosek e-mailem", "Czas, hashe wersji zaakceptowanych tekstów"],
+          ["Opinie (opcjonalnie)", "Wniosek e-mailem", "Kategoria, ocena, komentarz, wersja aplikacji"],
+          ["Telemetria (opt-in)", "Wniosek e-mailem", "Statystyki awarii/użycia, o ile przechowywane"]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+      },
+      "labels": { "privacy": "Polityka prywatności", "agb": "Regulamin", "eula": "EULA", "imprint": "Dane firmy", "del": "Usunięcie konta", "req": "Wniosek o dane" }
+    },
+    "sk": {
+      "del": {
+        "title": "Zmazanie účtu",
+        "updated": "Stav: 24. novembra 2026",
+        "intro": "<strong>Skrátka:</strong> Účet môžeš kedykoľvek úplne zmazať — priamo v aplikácii alebo mimo nej e-mailom. Zmazanie sa riadi čl. 17 GDPR a zahŕňa tvoj profil, údaje o úľoch, AI kredity, dôkazy o súhlase a cloudové zálohy.",
+        "s1_h": "1. Zmazanie v aplikácii (odporúčané)",
+        "s1_li": [
+          "Otvor aplikáciu → <strong>Nastavenia</strong> → <strong>Účet</strong> → <strong>Zmazať všetky údaje / Zmazať účet</strong>.",
+          "Kvôli istote je potrebné <strong>opätovné overenie</strong>.",
+          "Zmazanie je nevratné: profil, údaje úľov a včelstiev, AI kredity (zostatok vrátený na žiadosť), dôkazy o súhlase a cloudové zálohy (čl. 17 GDPR)."
+        ],
+        "s2_h": "2. Zmazanie mimo aplikácie",
+        "s2_p": "Ak aplikáciu už nemáš nainštalovanú alebo chceš žiadosť podať bez nej:",
+        "s2_li": [
+          "Pošli e-mail na <a href='mailto:support@dolphincrusher.com?subject=Zmazanie%20%C3%BA%C4%8Dtu'>support@dolphincrusher.com</a> s predmetom <strong>„Zmazanie účtu“</strong> a uveď <strong>e-mailovú adresu svojho účtu</strong>.",
+          "Potvrdíme prijatie a zmažeme tvoj účet vrátane všetkých súvisiacich údajov, zvyčajne <strong>do 30 dní</strong>.",
+          "Na overenie môžeme položiť otázky k vlastníctvu účtu."
+        ],
+        "s3_h": "3. Čo sa maže — a čo nie?",
+        "s3_head": ["Oblasť", "Zaobchádzanie pri zmazaní účtu"],
+        "s3_rows": [
+          ["Profil, údaje úľov/včelstiev, poznámky", "zmazané"],
+          ["AI kredity", "zmazané; zostatok vrátený na žiadosť"],
+          ["Dôkazy o súhlase (EULA/VOP/Ochrana údajov)", "zmazané"],
+          ["Cloudové zálohy (voliteľné)", "zmazané"],
+          ["Auditný záznam o zmazaní účtu", "3 roky (dôkaz vykonania, bez väzby na profil)"],
+          ["Daňové doklady", "zákonná archivácia (8 rokov); väzba na účet odstránená/anonymizovaná"]
+        ],
+        "s4_h": "4. Export údajov pred zmazaním",
+        "s4_li": [
+          "Pred zmazaním môžeš vytvoriť <strong>export údajov</strong> (Nastavenia → Exportovať údaje). Potom už prístup nie je možný."
+        ],
+        "ensummary": "<h2>English summary</h2><p>You can delete your account at any time — in the app (Settings → Account) or by email to support@dolphincrusher.com (subject „Delete account“). Deletion covers your profile, apiary data, AI credits, consent records and cloud backups (GDPR Art. 17), usually within 30 days.</p>"
+      },
+      "req": {
+        "title": "Žiadosť o údaje",
+        "updated": "Stav: 24. novembra 2026",
+        "intro": "<strong>Skrátka:</strong> Máš kedykoľvek právo na prístup a prenositeľnosť údajov. Lokálne údaje môžeš exportovať <strong>priamo v aplikácii</strong> ako súbor; všetky ostatné údaje obdržíš <strong>na žiadosť e-mailom</strong>, zvyčajne <strong>do jedného mesiaca</strong>.",
+        "s1_h": "1. Export v aplikácii (okamžite)",
+        "s1_li": [
+          "Otvor aplikáciu → <strong>Nastavenia</strong> → <strong>Exportovať údaje</strong>.",
+          "Dostaneš <strong>JSON súbor</strong> s lokálnymi údajmi: profil a nastavenia, stanovištia (GPS súradnice), úle, udalosti (prehliadky, ošetrenia), ošetrenie varroázy a pripomienky.",
+          "Súbor sa vytvára lokálne na zariadení — neopúšťa aplikáciu.",
+          "Import na inom zariadení cez <strong>Importovať údaje</strong> (s náhľadom a stratégiou konfliktov)."
+        ],
+        "s2_h": "2. Žiadosť e-mailom (cloudové a účtovné údaje)",
+        "s2_p": "E-mail na <a href='mailto:support@dolphincrusher.com?subject=%C5%BDiados%C5%A5%20o%20%C3%BAdaje'>support@dolphincrusher.com</a> s predmetom <strong>„Žiadosť o údaje“</strong> a e-mailovou adresou svojho účtu:",
+        "s2_li": [
+          "Dostaneš: údaje o účte (e-mail, stav, AI kredity a protokoly využitia), metadáta synchronizácie a záloh, dôkazy o súhlase (EULA/VOP/Ochrana údajov), spätné väzby (ak existujú).",
+          "<strong>Lhůta:</strong> odpoveď do jedného mesiaca (čl. 12 ods. 3 GDPR); pri zložitých žiadostiach až dva mesiace — s odôvodnením.",
+          "Na overenie môžeme položiť otázky k vlastníctvu účtu.",
+          "Žiadosť je bezplatná."
+        ],
+        "s3_h": "3. Čo je zahrnuté?",
+        "s3_head": ["Oblasť údajov", "Cesta", "Obsah"],
+        "s3_rows": [
+          ["Lokálne správcovské údaje", "Export v aplikácii", "Profil, stanovištia, úle, udalosti, ošetrenia, pripomienky, nastavenia"],
+          ["Účet &amp; cloud", "Žiadosť e-mailom", "Stav účtu, AI kredity, protokoly využitia, metadáta sync/záloh"],
+          ["Dôkazy o súhlase", "Žiadosť e-mailom", "Čas, hashe verzií prijatých textov"],
+          ["Spätná väzba (voliteľné)", "Žiadosť e-mailom", "Kategória, hodnotenie, komentár, verzia aplikácie"],
+          ["Telemetria (opt-in)", "Žiadosť e-mailom", "Štatistiky pádov/využitia, pokiaľ uložené"]
+        ],
+        "ensummary": "<h2>English summary</h2><p>You have the right of access and data portability (GDPR Art. 15). Export local data in the app (Settings → Export data) or request account/cloud data by email to support@dolphincrusher.com (subject „Data request“), answered within one month.</p>"
+      },
+      "labels": { "privacy": "Ochrana osobných údajov", "agb": "VOP", "eula": "EULA", "imprint": "Poskytovatel", "del": "Zmazanie účtu", "req": "Žiadosť o údaje" }
+    }
+  }
+}
