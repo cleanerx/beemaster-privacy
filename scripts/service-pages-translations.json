@@ -36,11 +36,11 @@
           ],
           [
             "Consent-Nachweise (EULA/AGB/Datenschutz)",
-            "gelöscht; bei steuerrelevanten Käufen gesetzliche Frist (5–10 Jahre je Land)"
+            "gelöscht; bei steuerrelevanten Käufen wie Buchungsbelege aufbewahrt"
           ],
           [
             "Cloud-Backups (optional)",
-            "gelöscht; im Betrieb max. 9 Monate bzw. 24 Sicherungen; nach Abo-Ende 30 Tage"
+            "gelöscht"
           ],
           [
             "Kontolöschungs-Audit-Log",
@@ -49,38 +49,6 @@
           [
             "Zahlungs-/Abo-Belege (Buchungsbelege)",
             "gesetzliche Aufbewahrung (5–10 Jahre je Land, Code: 10 Jahre); Verknüpfung zum Konto entfernt"
-          ],
-          [
-            "KI-Verbrauchshistorie",
-            "24 Monate"
-          ],
-          [
-            "Sprach-Feedback (Assistent)",
-            "180 Tage"
-          ],
-          [
-            "Hive-Telemetrie (anonymisiert, opt-in)",
-            "24 Monate (Statistik) bzw. 10 Jahre (Forschung)"
-          ],
-          [
-            "Incident-/Service-Aufzeichnungen",
-            "3 Jahre nach Abschluss"
-          ],
-          [
-            "Sprach-Sessions",
-            "24 Stunden nach Sitzungsende"
-          ],
-          [
-            "Unbestätigte Konten (E-Mail nie bestätigt)",
-            "30 Tage"
-          ],
-          [
-            "Willkommens-Hashes (Missbrauchsschutz)",
-            "24 Monate"
-          ],
-          [
-            "Erstattungs-Kontaktdaten",
-            "30 Tage nach Abschluss"
           ]
         ],
         "s4_h": "4. Datenexport vor der Löschung",
@@ -185,11 +153,11 @@
           ],
           [
             "Consent records (EULA/Terms/Privacy)",
-            "deleted; for tax-relevant purchases statutory period (5–10 years per country)"
+            "deleted; for tax-relevant purchases retained like receipts"
           ],
           [
             "Cloud backups (optional)",
-            "deleted; while active max. 9 months or 24 snapshots; 30 days after subscription ends"
+            "deleted"
           ],
           [
             "Account deletion audit log",
@@ -198,38 +166,6 @@
           [
             "Payment/subscription receipts",
             "statutory retention (5–10 years per country, code: 10 years); link to the account removed"
-          ],
-          [
-            "AI usage history",
-            "24 months"
-          ],
-          [
-            "Voice assistant feedback",
-            "180 days"
-          ],
-          [
-            "Hive telemetry (anonymised, opt-in)",
-            "24 months (statistics) or 10 years (research)"
-          ],
-          [
-            "Incident/service records",
-            "3 years after closure"
-          ],
-          [
-            "Voice sessions",
-            "24 hours after session end"
-          ],
-          [
-            "Unconfirmed accounts (email never confirmed)",
-            "30 days"
-          ],
-          [
-            "Welcome hashes (abuse prevention)",
-            "24 months"
-          ],
-          [
-            "Refund contact data",
-            "30 days after completion"
           ]
         ],
         "s4_h": "4. Data export before deletion",
@@ -334,11 +270,11 @@
           ],
           [
             "Preuves de consentement (EULA/CGV/Confidentialité)",
-            "supprimées ; pour les achats fiscalement pertinents, délai légal (5–10 ans selon le pays)"
+            "supprimées ; pour les achats fiscalement pertinents, conservées comme justificatifs"
           ],
           [
             "Sauvegardes cloud (facultatif)",
-            "supprimées ; en service max. 9 mois ou 24 sauvegardes ; 30 jours après la fin de l'abonnement"
+            "supprimées"
           ],
           [
             "Journal d'audit de suppression",
@@ -347,38 +283,6 @@
           [
             "Justificatifs de paiement/abonnement",
             "conservation légale (5–10 ans selon le pays, code : 10 ans) ; lien avec le compte supprimé"
-          ],
-          [
-            "Historique de consommation IA",
-            "24 mois"
-          ],
-          [
-            "Retours de l'assistant vocal",
-            "180 jours"
-          ],
-          [
-            "Télémétrie des ruches (anonymisée, opt-in)",
-            "24 mois (statistiques) ou 10 ans (recherche)"
-          ],
-          [
-            "Dossiers d'incident/service",
-            "3 ans après clôture"
-          ],
-          [
-            "Sessions vocales",
-            "24 heures après la fin de la session"
-          ],
-          [
-            "Comptes non confirmés (e-mail jamais confirmé)",
-            "30 jours"
-          ],
-          [
-            "Hachages de bienvenue (anti-abus)",
-            "24 mois"
-          ],
-          [
-            "Données de contact de remboursement",
-            "30 jours après clôture"
           ]
         ],
         "s4_h": "4. Export des données avant la suppression",
@@ -483,11 +387,11 @@
           ],
           [
             "Toestemmingsbewijzen (EULA/voorwaarden/privacy)",
-            "verwijderd; bij fiscaal relevante aankopen wettelijke termijn (5–10 jaar per land)"
+            "verwijderd; bij fiscaal relevante aankopen bewaard als betalingsbewijs"
           ],
           [
             "Cloudback-ups (optioneel)",
-            "verwijderd; tijdens gebruik max. 9 maanden of 24 back-ups; 30 dagen na einde abonnement"
+            "verwijderd"
           ],
           [
             "Auditlog van accountverwijdering",
@@ -496,38 +400,6 @@
           [
             "Betalings-/abonnementsbewijzen",
             "wettelijke bewaartermijn (5–10 jaar per land, code: 10 jaar); koppeling met account verwijderd"
-          ],
-          [
-            "AI-verbruikshistorie",
-            "24 maanden"
-          ],
-          [
-            "Feedback van de spraakassistent",
-            "180 dagen"
-          ],
-          [
-            "Kasttelemetrie (geanonimiseerd, opt-in)",
-            "24 maanden (statistiek) of 10 jaar (onderzoek)"
-          ],
-          [
-            "Incident-/serviceregistraties",
-            "3 jaar na afsluiting"
-          ],
-          [
-            "Spraaksessies",
-            "24 uur na einde sessie"
-          ],
-          [
-            "Onbevestigde accounts (e-mail nooit bevestigd)",
-            "30 dagen"
-          ],
-          [
-            "Welkomsthashes (misbruikpreventie)",
-            "24 maanden"
-          ],
-          [
-            "Contactgegevens voor terugbetaling",
-            "30 dagen na afronding"
           ]
         ],
         "s4_h": "4. Gegevensexport vóór verwijdering",
@@ -632,11 +504,11 @@
           ],
           [
             "Доказателства за съгласие (EULA/ОУ/Поверителност)",
-            "изтрити; при данъчно значими покупки — законов срок (5–10 години според държавата)"
+            "изтрити; при данъчно значими покупки се съхраняват като платежни документи"
           ],
           [
             "Облачни резервни копия (по избор)",
-            "изтрити; при активна употреба макс. 9 месеца или 24 копия; 30 дни след края на абонамента"
+            "изтрити"
           ],
           [
             "Одитен журнал на изтриването",
@@ -645,38 +517,6 @@
           [
             "Документи за плащания/абонаменти",
             "законно съхранение (5–10 години според държавата, код: 10 години); връзката с профила е премахната"
-          ],
-          [
-            "История на потреблението на AI",
-            "24 месеца"
-          ],
-          [
-            "Обратна връзка от гласовия асистент",
-            "180 дни"
-          ],
-          [
-            "Телеметрия на кошерите (анонимизирана, по избор)",
-            "24 месеца (статистика) или 10 години (изследвания)"
-          ],
-          [
-            "Записи за инциденти/услуги",
-            "3 години след приключване"
-          ],
-          [
-            "Гласови сесии",
-            "24 часа след края на сесията"
-          ],
-          [
-            "Непотвърдени профили (имейл без потвърждение)",
-            "30 дни"
-          ],
-          [
-            "Хешове за добре дошли (защита от злоупотреба)",
-            "24 месеца"
-          ],
-          [
-            "Данни за контакт при възстановяване",
-            "30 дни след приключване"
           ]
         ],
         "s4_h": "4. Експорт на данни преди изтриването",
@@ -781,11 +621,11 @@
           ],
           [
             "Doklady o souhlasu (EULA/VOP/Zásady)",
-            "smazány; u daňově relevantních nákupů zákonná lhůta (5–10 let podle země)"
+            "smazány; u daňově relevantních nákupů uchovávány jako platební doklady"
           ],
           [
             "Cloudové zálohy (volitelné)",
-            "smazány; při používání max. 9 měsíců nebo 24 záloh; 30 dní po skončení předplatného"
+            "smazány"
           ],
           [
             "Auditní log smazání účtu",
@@ -794,38 +634,6 @@
           [
             "Doklady o platbách/předplatném",
             "zákonná úschova (5–10 let podle země, kód: 10 let); vazba na účet odstraněna"
-          ],
-          [
-            "Historie spotřeby AI",
-            "24 měsíců"
-          ],
-          [
-            "Zpětná vazba hlasového asistenta",
-            "180 dní"
-          ],
-          [
-            "Telemetrie úlů (anonymizovaná, opt-in)",
-            "24 měsíců (statistika) nebo 10 let (výzkum)"
-          ],
-          [
-            "Záznamy o incidentech/službách",
-            "3 roky po uzavření"
-          ],
-          [
-            "Hlasové relace",
-            "24 hodin po skončení relace"
-          ],
-          [
-            "Nepotvrzené účty (e-mail nikdy nepotvrzen)",
-            "30 dní"
-          ],
-          [
-            "Uvítací hashe (prevence zneužití)",
-            "24 měsíců"
-          ],
-          [
-            "Kontaktní údaje pro vrácení",
-            "30 dní po dokončení"
           ]
         ],
         "s4_h": "4. Export dat před smazáním",
@@ -930,11 +738,11 @@
           ],
           [
             "Samtykkedokumentation (EULA/vilkår/privatliv)",
-            "slettet; ved skattemæssigt relevante køb lovpligtig frist (5–10 år pr. land)"
+            "slettet; ved skattemæssigt relevante køb opbevares de som betalingsbilag"
           ],
           [
             "Cloudbackups (valgfrit)",
-            "slettet; i brug maks. 9 måneder eller 24 backups; 30 dage efter abonnementets udløb"
+            "slettet"
           ],
           [
             "Auditlog for kontosletning",
@@ -943,38 +751,6 @@
           [
             "Betalings-/abonnementsbilag",
             "lovpligtig opbevaring (5–10 år pr. land, kode: 10 år); kobling til konto fjernet"
-          ],
-          [
-            "AI-forbrugshistorik",
-            "24 måneder"
-          ],
-          [
-            "Feedback fra stemmeassistenten",
-            "180 dage"
-          ],
-          [
-            "Bistadetelemetri (anonymiseret, opt-in)",
-            "24 måneder (statistik) eller 10 år (forskning)"
-          ],
-          [
-            "Hændelses-/serviceregistreringer",
-            "3 år efter afslutning"
-          ],
-          [
-            "Stemmesessioner",
-            "24 timer efter sessionens afslutning"
-          ],
-          [
-            "Ubekræftede konti (e-mail aldrig bekræftet)",
-            "30 dage"
-          ],
-          [
-            "Velkomsthashes (misbrugsforebyggelse)",
-            "24 måneder"
-          ],
-          [
-            "Kontaktoplysninger til refusion",
-            "30 dage efter afslutning"
           ]
         ],
         "s4_h": "4. Dataeksport før sletning",
@@ -1079,11 +855,11 @@
           ],
           [
             "Hozzájárulási igazolások (EULA/ÁSZF/Adatvédelem)",
-            "törölve; adózásilag releváns vásárlásoknál törvényi határidő (országonként 5–10 év)"
+            "törölve; adózásilag releváns vásárlásoknál bizonylatként megőrizve"
           ],
           [
             "Felhőmentések (opcionális)",
-            "törölve; használat közben max. 9 hónap vagy 24 mentés; az előfizetés lejárta után 30 nap"
+            "törölve"
           ],
           [
             "Fióktörlési auditnapló",
@@ -1092,38 +868,6 @@
           [
             "Fizetési/előfizetési bizonylatok",
             "törvényi megőrzés (országonként 5–10 év, kód: 10 év); a fiókhoz való kapcsolás megszüntetve"
-          ],
-          [
-            "AI-fogyasztási előzmények",
-            "24 hónap"
-          ],
-          [
-            "Hangasszisztens visszajelzései",
-            "180 nap"
-          ],
-          [
-            "Kaptár-telemetria (anonimizált, opt-in)",
-            "24 hónap (statisztika) vagy 10 év (kutatás)"
-          ],
-          [
-            "Incidens-/szolgáltatási nyilvántartások",
-            "3 év a lezárás után"
-          ],
-          [
-            "Hangmunkamenetek",
-            "24 óra a munkamenet vége után"
-          ],
-          [
-            "Nem megerősített fiókok (e-mail sosem erősítve meg)",
-            "30 nap"
-          ],
-          [
-            "Üdvözlő hash-ek (visszaélés-megelőzés)",
-            "24 hónap"
-          ],
-          [
-            "Visszatérítési kapcsolattartási adatok",
-            "30 nap a lezárás után"
           ]
         ],
         "s4_h": "4. Adatexport a törlés előtt",
@@ -1228,11 +972,11 @@
           ],
           [
             "Prove di consenso (EULA/Condizioni/Privacy)",
-            "cancellate; per acquisti fiscalmente rilevanti termine di legge (5–10 anni per paese)"
+            "cancellate; per acquisti fiscalmente rilevanti conservate come giustificativi"
           ],
           [
             "Backup cloud (opzionali)",
-            "cancellati; in uso max. 9 mesi o 24 backup; 30 giorni dopo la fine dell'abbonamento"
+            "cancellati"
           ],
           [
             "Registro di audit della cancellazione",
@@ -1241,38 +985,6 @@
           [
             "Documenti di pagamento/abbonamento",
             "conservazione di legge (5–10 anni per paese, codice: 10 anni); collegamento all'account rimosso"
-          ],
-          [
-            "Cronologia dei consumi IA",
-            "24 mesi"
-          ],
-          [
-            "Feedback dell'assistente vocale",
-            "180 giorni"
-          ],
-          [
-            "Telemetria delle arnie (anonimizzata, opt-in)",
-            "24 mesi (statistiche) o 10 anni (ricerca)"
-          ],
-          [
-            "Registrazioni di incidenti/servizio",
-            "3 anni dopo la chiusura"
-          ],
-          [
-            "Sessioni vocali",
-            "24 ore dopo la fine della sessione"
-          ],
-          [
-            "Account non confermati (e-mail mai confermata)",
-            "30 giorni"
-          ],
-          [
-            "Hash di benvenuto (prevenzione abusi)",
-            "24 mesi"
-          ],
-          [
-            "Dati di contatto per il rimborso",
-            "30 giorni dopo il completamento"
           ]
         ],
         "s4_h": "4. Esportazione dei dati prima dell'eliminazione",
@@ -1377,11 +1089,11 @@
           ],
           [
             "Dowody zgody (EULA/Regulamin/Polityka)",
-            "usunięte; przy zakupach istotnych podatkowo ustawowy termin (5–10 lat w zależności od kraju)"
+            "usunięte; przy zakupach istotnych podatkowo przechowywane jako dowody księgowe"
           ],
           [
             "Kopie zapasowe w chmurze (opcjonalne)",
-            "usunięte; w użyciu maks. 9 miesięcy lub 24 kopie; 30 dni po zakończeniu subskrypcji"
+            "usunięte"
           ],
           [
             "Dziennik audytu usunięcia konta",
@@ -1390,38 +1102,6 @@
           [
             "Dokumenty płatności/subskrypcji",
             "ustawowe przechowywanie (5–10 lat w zależności od kraju, kod: 10 lat); powiązanie z kontem usunięte"
-          ],
-          [
-            "Historia zużycia AI",
-            "24 miesiące"
-          ],
-          [
-            "Opinie asystenta głosowego",
-            "180 dni"
-          ],
-          [
-            "Telemetria uli (anonimizowana, opt-in)",
-            "24 miesiące (statystyka) lub 10 lat (badania)"
-          ],
-          [
-            "Rejestry incydentów/usług",
-            "3 lata po zamknięciu"
-          ],
-          [
-            "Sesje głosowe",
-            "24 godziny po zakończeniu sesji"
-          ],
-          [
-            "Niepotwierdzone konta (e-mail nigdy niepotwierdzony)",
-            "30 dni"
-          ],
-          [
-            "Hashe powitalne (zapobieganie nadużyciom)",
-            "24 miesiące"
-          ],
-          [
-            "Dane kontaktowe do zwrotu",
-            "30 dni po zakończeniu"
           ]
         ],
         "s4_h": "4. Eksport danych przed usunięciem",
@@ -1526,11 +1206,11 @@
           ],
           [
             "Doklady o súhlase (EULA/VOP/Zásady)",
-            "zmazané; pri daňovo relevantných nákupoch zákonná lehota (5–10 rokov podľa krajiny)"
+            "zmazané; pri daňovo relevantných nákupoch uchovávané ako doklady o platbe"
           ],
           [
             "Cloudové zálohy (voliteľné)",
-            "zmazané; pri používaní max. 9 mesiacov alebo 24 záloh; 30 dní po skončení predplatného"
+            "zmazané"
           ],
           [
             "Auditný log zmazania účtu",
@@ -1539,38 +1219,6 @@
           [
             "Doklady o platbách/predplatnom",
             "zákonné uchovávanie (5–10 rokov podľa krajiny, kód: 10 rokov); väzba na účet odstránená"
-          ],
-          [
-            "História spotreby AI",
-            "24 mesiacov"
-          ],
-          [
-            "Spätná väzba hlasového asistenta",
-            "180 dní"
-          ],
-          [
-            "Telemetria úľov (anonymizovaná, opt-in)",
-            "24 mesiacov (štatistika) alebo 10 rokov (výskum)"
-          ],
-          [
-            "Záznamy o incidentoch/službách",
-            "3 roky po uzavretí"
-          ],
-          [
-            "Hlasové relácie",
-            "24 hodín po skončení relácie"
-          ],
-          [
-            "Nepotvrdené účty (e-mail nikdy nepotvrdený)",
-            "30 dní"
-          ],
-          [
-            "Uvítacie hashe (prevencia zneužitia)",
-            "24 mesiacov"
-          ],
-          [
-            "Kontaktné údaje pre vrátenie",
-            "30 dní po dokončení"
           ]
         ],
         "s4_h": "4. Export údajov pred zmazaním",
