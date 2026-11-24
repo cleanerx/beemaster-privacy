@@ -1,6 +1,6 @@
 # Google Play Data Safety — Beemaster (v2, Stand 2026-11-23)
 
-**Gültige Quelle:** Datenschutzerklärung **3.8 (2026-11-13)** in der App und auf
+**Gültige Quelle:** Datenschutzerklärung **3.9 (2026-11-23)** in der App und auf
 `https://beemaster-app.de/` (dieselben Texte, Render-Gate geprüft).
 **Entwickler/Kontakt:** Jens Kübler · support@dolphincrusher.com (nicht „Mike Miller" — der alte
 Bogen war veraltet).
