@@ -163,6 +163,9 @@ def build_page(locale: str, suffix: str, content_lang: str, languages: dict,
     shell_post = shell[m_end:]
 
     html = shell_pre + "\n" + build_main(languages[content_lang], content_lang, page, suffix) + "\n" + shell_post
+    # Die Service-Seite ist kein Rechtsdokument: die geerbte Fusszeilen-Zeile mit
+    # dem Datenschutz-Versionsstempel wuerde ein zweites Datum einfuehren.
+    html = re.sub(r"\n\s*<p>[^<]*Version\s+\d+(?:\.\d+)?[^<]*</p>", "", html, count=1)
     target = f"{stem}{suffix}.html"
     normalized = normalize_html(html, target, load_labels())
     return target, (normalized or html)
