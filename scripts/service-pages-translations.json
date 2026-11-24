@@ -17,7 +17,7 @@
         "s2_p": "Wenn du die App nicht mehr installiert hast oder die Löschung ohne App beantragen möchtest:",
         "s2_li": [
           "Schicke eine E-Mail an <a href='mailto:support@dolphincrusher.com?subject=Konto%20l%C3%B6schen'>support@dolphincrusher.com</a> mit dem Betreff <strong>„Konto löschen“</strong> und nenne die <strong>E-Mail-Adresse deines Kontos</strong>.",
-          "Wir bestätigen den Eingang und löschen dein Konto inklusive aller verknüpften Daten. Die Bearbeitung erfolgt in der Regel <strong>innerhalb von 30 Tagen</strong>.",
+          "Wir bestätigen den Eingang und löschen dein Konto samt der in Abschnitt 3 genannten Daten; gesetzliche Aufbewahrungen bleiben bestehen. Die Bearbeitung erfolgt in der Regel <strong>innerhalb von 30 Tagen</strong>.",
           "Zur Verifizierung können wir Rückfragen zur Kontoinhaberschaft stellen."
         ],
         "s3_h": "3. Was wird gelöscht — und was nicht?",
@@ -27,28 +27,32 @@
         ],
         "s3_rows": [
           [
-            "Profil, Beuten-/Schwarmdaten, Notizen",
+            "Profil, Beuten-/Schwarmdaten, Notizen und alle übrigen kontobezogenen Daten (Push-Token, Sprach-Sessions, Feedback, Incidents, Zustell-/Beendigungsnachweise, Missbrauchsschutz)",
             "gelöscht"
           ],
           [
-            "KI-Guthaben (Credits)",
-            "gelöscht; Restguthaben auf Wunsch erstattet"
+            "KI-Guthaben, Verbrauchshistorie, Einlöse-Nachweise, Premium-Ansprüche und Abo-Verknüpfungen",
+            "gelöscht; Restguthaben wird automatisch zur Erstattung angemeldet"
           ],
           [
             "Consent-Nachweise (EULA/AGB/Datenschutz)",
-            "gelöscht; bei steuerrelevanten Käufen wie Buchungsbelege aufbewahrt"
+            "widerrufen und gelöscht (sofort bzw. zum Steuerdatum); bei steuerrelevanten Käufen wie Buchungsbelege aufbewahrt"
           ],
           [
             "Cloud-Backups (optional)",
-            "gelöscht"
+            "gelöscht (Löschauftrag wird ausgelöst; ein Fehler blockiert die Kontolöschung nicht); Abo-Backups nach Abo-Ende bis zu 30 Tage"
           ],
           [
             "Kontolöschungs-Audit-Log",
-            "3 Jahre (Nachweis der Ausführung, ohne Profilbezug)"
+            "3 Jahre (Nachweis der Ausführung mit Konto-Kennung, IP-Adresse und Zeitpunkt)"
           ],
           [
-            "Zahlungs-/Abo-Belege (Buchungsbelege)",
-            "gesetzliche Aufbewahrung (5–10 Jahre je Land, Code: 10 Jahre); Verknüpfung zum Konto entfernt"
+            "Buchungsbelege (Zahlungen, Abos, Guthaben-Korrekturen)",
+            "gesetzliche Aufbewahrung (je Land 5–10 Jahre); Verknüpfung zum Konto entfernt"
+          ],
+          [
+            "Erstattungsdaten (Kontakt-E-Mail)",
+            "30 Tage nach Abschluss der Erstattung (Auszahlungsnachweis)"
           ]
         ],
         "s4_h": "4. Datenexport vor der Löschung",
@@ -134,7 +138,7 @@
         "s2_p": "If the app is no longer installed or you prefer to request deletion without the app:",
         "s2_li": [
           "Send an email to <a href='mailto:support@dolphincrusher.com?subject=Delete%20account'>support@dolphincrusher.com</a> with the subject <strong>„Delete account“</strong> and state the <strong>email address of your account</strong>.",
-          "We confirm receipt and delete your account including all linked data, usually <strong>within 30 days</strong>.",
+          "We confirm receipt and delete your account together with the data listed in section 3; statutory retention obligations remain. Processing usually takes <strong>within 30 days</strong>.",
           "We may ask follow-up questions to verify account ownership."
         ],
         "s3_h": "3. What is deleted — and what is not?",
@@ -144,28 +148,32 @@
         ],
         "s3_rows": [
           [
-            "Profile, hive/colony data, notes",
+            "Profile, hive/colony data, notes and all other account-related data (push tokens, voice sessions, feedback, incidents, delivery/termination records, abuse prevention)",
             "deleted"
           ],
           [
-            "AI credits",
-            "deleted; remaining balance refunded on request"
+            "AI credits, usage history, redemption records, premium entitlements and subscription links",
+            "deleted; remaining balance is automatically submitted for refund"
           ],
           [
             "Consent records (EULA/Terms/Privacy)",
-            "deleted; for tax-relevant purchases retained like receipts"
+            "revoked and deleted (immediately or at the tax retention date); for tax-relevant purchases retained like receipts"
           ],
           [
             "Cloud backups (optional)",
-            "deleted"
+            "deleted (deletion is triggered; an error does not block account deletion); subscription backups up to 30 days after the subscription ends"
           ],
           [
             "Account deletion audit log",
-            "3 years (proof of execution, no profile link)"
+            "3 years (proof of execution with account ID, IP address and timestamp)"
           ],
           [
-            "Payment/subscription receipts",
-            "statutory retention (5–10 years per country, code: 10 years); link to the account removed"
+            "Receipts (payments, subscriptions, credit adjustments)",
+            "statutory retention (5–10 years per country); link to the account removed"
+          ],
+          [
+            "Refund contact data (email)",
+            "30 days after the refund is completed (payout proof)"
           ]
         ],
         "s4_h": "4. Data export before deletion",
@@ -251,7 +259,7 @@
         "s2_p": "Si l'application n'est plus installée ou si vous préférez demander la suppression sans l'application :",
         "s2_li": [
           "Envoyez un e-mail à <a href='mailto:support@dolphincrusher.com?subject=Supprimer%20le%20compte'>support@dolphincrusher.com</a> avec l'objet <strong>« Supprimer le compte »</strong> en indiquant <strong>l'adresse e-mail de votre compte</strong>.",
-          "Nous confirmons la réception et supprimons votre compte avec toutes les données associées, généralement <strong>sous 30 jours</strong>.",
+          "Nous confirmons la réception et supprimons votre compte ainsi que les données visées à la section 3 ; les obligations légales de conservation subsistent. Le traitement intervient en règle générale <strong>dans un délai de 30 jours</strong>.",
           "Des questions de vérification de la titularité du compte sont possibles."
         ],
         "s3_h": "3. Ce qui est supprimé — et ce qui ne l'est pas ?",
@@ -261,28 +269,32 @@
         ],
         "s3_rows": [
           [
-            "Profil, données des ruches/colonies, notes",
+            "Profil, données des ruches/colonies, notes et toutes les autres données liées au compte (jetons push, sessions vocales, retours, incidents, preuves de notification/résiliation, anti-abus)",
             "supprimées"
           ],
           [
-            "Crédits IA",
-            "supprimés ; solde restant remboursé sur demande"
+            "Crédits IA, historique de consommation, preuves d'échange de codes, droits premium et liens d'abonnement",
+            "supprimés ; le solde restant est automatiquement soumis au remboursement"
           ],
           [
             "Preuves de consentement (EULA/CGV/Confidentialité)",
-            "supprimées ; pour les achats fiscalement pertinents, conservées comme justificatifs"
+            "révoquées et supprimées (immédiatement ou à la date fiscale) ; pour les achats fiscalement pertinents, conservées comme justificatifs"
           ],
           [
             "Sauvegardes cloud (facultatif)",
-            "supprimées"
+            "supprimées (la suppression est déclenchée ; une erreur ne bloque pas la suppression du compte) ; sauvegardes d'abonnement jusqu'à 30 jours après la fin de l'abonnement"
           ],
           [
             "Journal d'audit de suppression",
-            "3 ans (preuve d'exécution, sans lien avec le profil)"
+            "3 ans (preuve d'exécution avec identifiant de compte, adresse IP et horodatage)"
           ],
           [
-            "Justificatifs de paiement/abonnement",
-            "conservation légale (5–10 ans selon le pays, code : 10 ans) ; lien avec le compte supprimé"
+            "Justificatifs (paiements, abonnements, corrections de crédits)",
+            "conservation légale (5–10 ans selon le pays) ; lien avec le compte supprimé"
+          ],
+          [
+            "Données de contact de remboursement (e-mail)",
+            "30 jours après la fin du remboursement (preuve de versement)"
           ]
         ],
         "s4_h": "4. Export des données avant la suppression",
@@ -368,7 +380,7 @@
         "s2_p": "Als de app niet meer is geïnstalleerd of je de verwijdering liever zonder app aanvraagt:",
         "s2_li": [
           "Stuur een e-mail naar <a href='mailto:support@dolphincrusher.com?subject=Account%20verwijderen'>support@dolphincrusher.com</a> met als onderwerp <strong>„Account verwijderen“</strong> en vermeld het <strong>e-mailadres van je account</strong>.",
-          "We bevestigen de ontvangst en verwijderen je account inclusief alle gekoppelde gegevens, doorgaans <strong>binnen 30 dagen</strong>.",
+          "Wij bevestigen de ontvangst en verwijderen je account samen met de in punt 3 genoemde gegevens; wettelijke bewaarplichten blijven bestaan. De verwerking gebeurt in de regel <strong>binnen 30 dagen</strong>.",
           "Ter verificatie kunnen we vragen stellen over het eigendom van het account."
         ],
         "s3_h": "3. Wat wordt verwijderd — en wat niet?",
@@ -378,28 +390,32 @@
         ],
         "s3_rows": [
           [
-            "Profiel, kast-/volkgegevens, notities",
+            "Profiel, kast-/volkgegevens, notities en alle overige accountgebonden gegevens (pushtokens, spraaksessies, feedback, incidenten, bezorg-/beëindigingsbewijzen, misbruikpreventie)",
             "verwijderd"
           ],
           [
-            "AI-tegoed",
-            "verwijderd; restsaldo op verzoek terugbetaald"
+            "AI-tegoed, verbruikshistorie, inwisselbewijzen, premiumrechten en abonnementskoppelingen",
+            "verwijderd; restsaldo wordt automatisch voor terugbetaling aangemeld"
           ],
           [
             "Toestemmingsbewijzen (EULA/voorwaarden/privacy)",
-            "verwijderd; bij fiscaal relevante aankopen bewaard als betalingsbewijs"
+            "ingetrokken en verwijderd (direct of op de fiscale datum); bij fiscaal relevante aankopen bewaard als betalingsbewijs"
           ],
           [
             "Cloudback-ups (optioneel)",
-            "verwijderd"
+            "verwijderd (verwijdering wordt gestart; een fout blokkeert de accountverwijdering niet); abonnementsback-ups tot 30 dagen na einde abonnement"
           ],
           [
             "Auditlog van accountverwijdering",
-            "3 jaar (bewijs van uitvoering, zonder profielkoppeling)"
+            "3 jaar (bewijs van uitvoering met account-ID, IP-adres en tijdstip)"
           ],
           [
-            "Betalings-/abonnementsbewijzen",
-            "wettelijke bewaartermijn (5–10 jaar per land, code: 10 jaar); koppeling met account verwijderd"
+            "Betalingsbewijzen (betalingen, abonnementen, tegoedcorrecties)",
+            "wettelijke bewaartermijn (5–10 jaar per land); koppeling met account verwijderd"
+          ],
+          [
+            "Contactgegevens voor terugbetaling (e-mail)",
+            "30 dagen na afronding van de terugbetaling (uitbetalingsbewijs)"
           ]
         ],
         "s4_h": "4. Gegevensexport vóór verwijdering",
@@ -485,7 +501,7 @@
         "s2_p": "Ако приложението вече не е инсталирано или предпочиташ заявка без него:",
         "s2_li": [
           "Изпрати имейл на <a href='mailto:support@dolphincrusher.com?subject=%D0%98%D0%B7%D1%82%D1%80%D0%B8%D0%B2%D0%B0%D0%BD%D0%B5%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB'>support@dolphincrusher.com</a> с тема <strong>„Изтриване на профила“</strong> и посочи <strong>имейл адреса на профила си</strong>.",
-          "Потвърждаваме получаването и изтриваме профила с всички свързани данни, обикновено <strong>в рамките на 30 дни</strong>.",
+          "Потвърждаваме получаването и изтриваме профила ви заедно с данните по раздел 3; законовите задължения за съхранение остават. Обработката обикновено отнема <strong>до 30 дни</strong>.",
           "За проверка можем да зададем въпроси за собствеността на профила."
         ],
         "s3_h": "3. Какво се изтрива — и какво не?",
@@ -495,28 +511,32 @@
         ],
         "s3_rows": [
           [
-            "Профил, данни за кошери/колонии, бележки",
+            "Профил, данни за кошери/колонии, бележки и всички останали данни, свързани с профила (push токени, гласови сесии, обратна връзка, инциденти, документи за доставяне/прекратяване, защита от злоупотреба)",
             "изтрити"
           ],
           [
-            "AI кредити",
-            "изтрити; остатъкът се възстановява при заявка"
+            "AI кредити, история на потреблението, документи за осребряване, премиум права и връзки към абонаменти",
+            "изтрити; остатъкът се заявява автоматично за възстановяване"
           ],
           [
             "Доказателства за съгласие (EULA/ОУ/Поверителност)",
-            "изтрити; при данъчно значими покупки се съхраняват като платежни документи"
+            "оттеглени и изтрити (незабавно или към данъчната дата); при данъчно значими покупки се съхраняват като платежни документи"
           ],
           [
             "Облачни резервни копия (по избор)",
-            "изтрити"
+            "изтрити (изтриването се задейства; грешка не блокира изтриването на профила); абонаментни копия до 30 дни след края на абонамента"
           ],
           [
             "Одитен журнал на изтриването",
-            "3 години (доказателство за изпълнение, без връзка с профила)"
+            "3 години (доказателство за изпълнение с идентификатор на профила, IP адрес и време)"
           ],
           [
-            "Документи за плащания/абонаменти",
-            "законно съхранение (5–10 години според държавата, код: 10 години); връзката с профила е премахната"
+            "Платежни документи (плащания, абонаменти, корекции на кредити)",
+            "законно съхранение (5–10 години според държавата); връзката с профила е премахната"
+          ],
+          [
+            "Данни за контакт при възстановяване (имейл)",
+            "30 дни след приключване на възстановяването (доказателство за плащане)"
           ]
         ],
         "s4_h": "4. Експорт на данни преди изтриването",
@@ -602,7 +622,7 @@
         "s2_p": "Pokud aplikaci již nemáš nainstalovanou nebo chceš požádat o smazání bez ní:",
         "s2_li": [
           "Pošli e-mail na <a href='mailto:support@dolphincrusher.com?subject=Smaz%C3%A1n%C3%AD%20%C3%BA%C4%8Dtu'>support@dolphincrusher.com</a> s předmětem <strong>„Smazání účtu“</strong> a uveď <strong>e-mailovou adresu svého účtu</strong>.",
-          "Potvrdíme přijetí a smažeme tvůj účet včetně všech souvisejících dat, obvykle <strong>do 30 dnů</strong>.",
+          "Potvrdíme přijetí a smažeme váš účet spolu s údaji uvedenými v části 3; zákonné povinnosti uchovávání zůstávají. Vyřízení obvykle proběhne <strong>do 30 dnů</strong>.",
           "Pro ověření můžeme položit dotazy k vlastnictví účtu."
         ],
         "s3_h": "3. Co se maže — a co ne?",
@@ -612,28 +632,32 @@
         ],
         "s3_rows": [
           [
-            "Profil, údaje o úlech/včelstvech, poznámky",
+            "Profil, údaje o úlech/včelstvech, poznámky a všechny ostatní údaje vázané na účet (push tokeny, hlasové relace, zpětná vazba, incidenty, doklady o doručení/ukončení, ochrana proti zneužití)",
             "smazány"
           ],
           [
-            "AI kredity",
-            "smazány; zbývající zůstatek vrácen na vyžádání"
+            "AI kredity, historie spotřeby, doklady o uplatnění, prémiové nároky a vazby na předplatné",
+            "smazány; zbývající zůstatek je automaticky předložen k vrácení"
           ],
           [
             "Doklady o souhlasu (EULA/VOP/Zásady)",
-            "smazány; u daňově relevantních nákupů uchovávány jako platební doklady"
+            "odvolány a smazány (okamžitě nebo k daňovému datu); u daňově relevantních nákupů uchovávány jako platební doklady"
           ],
           [
             "Cloudové zálohy (volitelné)",
-            "smazány"
+            "smazány (smazání je spuštěno; chyba neblokuje smazání účtu); záložní kopie předplatného až 30 dní po skončení předplatného"
           ],
           [
             "Auditní log smazání účtu",
-            "3 roky (doklad o provedení, bez vazby na profil)"
+            "3 roky (doklad o provedení s identifikátorem účtu, IP adresou a časem)"
           ],
           [
-            "Doklady o platbách/předplatném",
-            "zákonná úschova (5–10 let podle země, kód: 10 let); vazba na účet odstraněna"
+            "Platební doklady (platby, předplatná, opravy kreditů)",
+            "zákonná úschova (5–10 let podle země); vazba na účet odstraněna"
+          ],
+          [
+            "Kontaktní údaje pro vrácení (e-mail)",
+            "30 dní po dokončení vrácení (doklad o výplatě)"
           ]
         ],
         "s4_h": "4. Export dat před smazáním",
@@ -719,7 +743,7 @@
         "s2_p": "Hvis appen ikke længere er installeret, eller du foretrækker at anmode om sletning uden appen:",
         "s2_li": [
           "Send en e-mail til <a href='mailto:support@dolphincrusher.com?subject=Slet%20konto'>support@dolphincrusher.com</a> med emnet <strong>„Slet konto“</strong> og opgiv <strong>e-mailadressen på din konto</strong>.",
-          "Vi bekræfter modtagelsen og sletter din konto inklusive alle tilknyttede data, normalt <strong>inden for 30 dage</strong>.",
+          "Vi bekræfter modtagelsen og sletter din konto sammen med de data, der er nævnt i afsnit 3; lovpligtig opbevaring fortsætter. Behandlingen tager normalt <strong>inden for 30 dage</strong>.",
           "Til bekræftelse kan vi stille spørgsmål om kontoejerskabet."
         ],
         "s3_h": "3. Hvad slettes — og hvad ikke?",
@@ -729,28 +753,32 @@
         ],
         "s3_rows": [
           [
-            "Profil, bistade-/bifamiliedata, noter",
+            "Profil, bistade-/bifamiliedata, noter og alle øvrige kontorelaterede data (pushtokens, stemmesessioner, feedback, hændelser, leverings-/opsigelsesdokumentation, misbrugsforebyggelse)",
             "slettet"
           ],
           [
-            "AI-kreditter",
-            "slettet; restsaldo refunderes efter anmodning"
+            "AI-kreditter, forbrugshistorik, indløsningsdokumentation, premiumrettigheder og abonnementskoblinger",
+            "slettet; restsaldo indsendes automatisk til refusion"
           ],
           [
             "Samtykkedokumentation (EULA/vilkår/privatliv)",
-            "slettet; ved skattemæssigt relevante køb opbevares de som betalingsbilag"
+            "tilbagekaldt og slettet (straks eller på skattedatoen); ved skattemæssigt relevante køb opbevares de som betalingsbilag"
           ],
           [
             "Cloudbackups (valgfrit)",
-            "slettet"
+            "slettet (sletning igangsættes; en fejl blokerer ikke kontosletningen); abonnementsbackups op til 30 dage efter abonnementets udløb"
           ],
           [
             "Auditlog for kontosletning",
-            "3 år (dokumentation for udførelse, uden profilbinding)"
+            "3 år (dokumentation for udførelse med konto-id, IP-adresse og tidspunkt)"
           ],
           [
-            "Betalings-/abonnementsbilag",
-            "lovpligtig opbevaring (5–10 år pr. land, kode: 10 år); kobling til konto fjernet"
+            "Betalingsbilag (betalinger, abonnementer, kreditkorrektioner)",
+            "lovpligtig opbevaring (5–10 år pr. land); kobling til konto fjernet"
+          ],
+          [
+            "Kontaktoplysninger til refusion (e-mail)",
+            "30 dage efter refusionen er afsluttet (betalingsdokumentation)"
           ]
         ],
         "s4_h": "4. Dataeksport før sletning",
@@ -836,7 +864,7 @@
         "s2_p": "Ha az alkalmazás már nincs telepítve, vagy inkább nélküle kérnéd a törlést:",
         "s2_li": [
           "Küldj e-mailt a <a href='mailto:support@dolphincrusher.com?subject=Fi%C3%B3k%20t%C3%B6rl%C3%A9se'>support@dolphincrusher.com</a> címre <strong>„Fiók törlése“</strong> tárggyal, és add meg <strong>a fiókod e-mail címét</strong>.",
-          "Visszaigazoljuk a beérkezést, és töröljük a fiókodat az összes kapcsolódó adattal együtt, jellemzően <strong>30 napon belül</strong>.",
+          "Visszaigazoljuk a beérkezést, és töröljük a fiókját a 3. pontban felsorolt adatokkal együtt; a törvényi megőrzési kötelezettségek fennmaradnak. Az ügyintézés általában <strong>30 napon belül</strong> megtörténik.",
           "Ellenőrzésképpen a fióktulajdonosságára vonatkozó kérdéseket tehetünk fel."
         ],
         "s3_h": "3. Mi törlődik — és mi nem?",
@@ -846,28 +874,32 @@
         ],
         "s3_rows": [
           [
-            "Profil, kaptár-/családadatok, jegyzetek",
+            "Profil, kaptár-/családadatok, jegyzetek és minden egyéb fiókhoz kapcsolódó adat (push tokenek, hangmunkamenetek, visszajelzések, incidensek, kézbesítési/felmondási igazolások, visszaélés-védelem)",
             "törölve"
           ],
           [
-            "AI-kreditek",
-            "törölve; a fennmaradó egyenleg kérésre visszatérítve"
+            "AI-kreditek, fogyasztási előzmények, beváltási igazolások, prémium jogosultságok és előfizetés-kapcsolatok",
+            "törölve; a fennmaradó egyenleg automatikusan visszatérítésre kerül"
           ],
           [
             "Hozzájárulási igazolások (EULA/ÁSZF/Adatvédelem)",
-            "törölve; adózásilag releváns vásárlásoknál bizonylatként megőrizve"
+            "visszavonva és törölve (azonnal vagy az adózási dátumkor); adózásilag releváns vásárlásoknál bizonylatként megőrizve"
           ],
           [
             "Felhőmentések (opcionális)",
-            "törölve"
+            "törölve (a törlés elindul; hiba nem akadályozza a fiók törlését); előfizetés-mentések az előfizetés lejárta után legfeljebb 30 napig"
           ],
           [
             "Fióktörlési auditnapló",
-            "3 év (a végrehajtás igazolása, profilhoz nem kötve)"
+            "3 év (a végrehajtás igazolása fiókazonosítóval, IP-címmel és időponttal)"
           ],
           [
-            "Fizetési/előfizetési bizonylatok",
-            "törvényi megőrzés (országonként 5–10 év, kód: 10 év); a fiókhoz való kapcsolás megszüntetve"
+            "Bizonylatok (fizetések, előfizetések, kredithöz igazítások)",
+            "törvényi megőrzés (országonként 5–10 év); a fiókhoz való kapcsolás megszüntetve"
+          ],
+          [
+            "Visszatérítési kapcsolattartási adatok (e-mail)",
+            "30 nappal a visszatérítés lezárása után (kifizetési igazolás)"
           ]
         ],
         "s4_h": "4. Adatexport a törlés előtt",
@@ -953,7 +985,7 @@
         "s2_p": "Se l'app non è più installata o preferisci richiedere l'eliminazione senza l'app:",
         "s2_li": [
           "Invia un'e-mail a <a href='mailto:support@dolphincrusher.com?subject=Eliminazione%20account'>support@dolphincrusher.com</a> con oggetto <strong>„Eliminazione account“</strong> indicando <strong>l'indirizzo e-mail del tuo account</strong>.",
-          "Confermiamo la ricezione ed eliminiamo il tuo account con tutti i dati collegati, di norma <strong>entro 30 giorni</strong>.",
+          "Confermiamo la ricezione ed eliminiamo il tuo account insieme ai dati indicati nella sezione 3; restano gli obblighi legali di conservazione. L'elaborazione avviene di regola <strong>entro 30 giorni</strong>.",
           "Per la verifica possiamo porre domande sulla titolarità dell'account."
         ],
         "s3_h": "3. Cosa viene eliminato — e cosa no?",
@@ -963,28 +995,32 @@
         ],
         "s3_rows": [
           [
-            "Profilo, dati arnie/colonie, note",
+            "Profilo, dati arnie/colonie, note e tutti gli altri dati legati all'account (token push, sessioni vocali, feedback, incidenti, prove di consegna/risoluzione, prevenzione abusi)",
             "cancellati"
           ],
           [
-            "Crediti IA",
-            "cancellati; saldo residuo rimborsato su richiesta"
+            "Crediti IA, cronologia dei consumi, prove di riscatto, diritti premium e collegamenti agli abbonamenti",
+            "cancellati; il saldo residuo viene inviato automaticamente al rimborso"
           ],
           [
             "Prove di consenso (EULA/Condizioni/Privacy)",
-            "cancellate; per acquisti fiscalmente rilevanti conservate come giustificativi"
+            "revocate e cancellate (subito o alla data fiscale); per acquisti fiscalmente rilevanti conservate come giustificativi"
           ],
           [
             "Backup cloud (opzionali)",
-            "cancellati"
+            "cancellati (la cancellazione viene avviata; un errore non blocca la cancellazione dell'account); backup di abbonamento fino a 30 giorni dopo la fine dell'abbonamento"
           ],
           [
             "Registro di audit della cancellazione",
-            "3 anni (prova dell'esecuzione, senza collegamento al profilo)"
+            "3 anni (prova dell'esecuzione con ID account, indirizzo IP e data/ora)"
           ],
           [
-            "Documenti di pagamento/abbonamento",
-            "conservazione di legge (5–10 anni per paese, codice: 10 anni); collegamento all'account rimosso"
+            "Giustificativi (pagamenti, abbonamenti, rettifiche crediti)",
+            "conservazione di legge (5–10 anni per paese); collegamento all'account rimosso"
+          ],
+          [
+            "Dati di contatto per il rimborso (e-mail)",
+            "30 giorni dopo il completamento del rimborso (prova di pagamento)"
           ]
         ],
         "s4_h": "4. Esportazione dei dati prima dell'eliminazione",
@@ -1070,7 +1106,7 @@
         "s2_p": "Jeśli aplikacja nie jest już zainstalowana lub wolisz wnioskować bez niej:",
         "s2_li": [
           "Wyślij e-mail na <a href='mailto:support@dolphincrusher.com?subject=Usuni%C4%99cie%20konta'>support@dolphincrusher.com</a> z tematem <strong>„Usunięcie konta“</strong> i podaj <strong>adres e-mail konta</strong>.",
-          "Potwierdzamy otrzymanie i usuwamy konto wraz ze wszystkimi powiązanymi danymi, zwykle <strong>w ciągu 30 dni</strong>.",
+          "Potwierdzamy otrzymanie i usuwamy konto wraz z danymi wymienionymi w sekcji 3; ustawowe obowiązki przechowywania pozostają. Realizacja następuje z reguły <strong>w ciągu 30 dni</strong>.",
           "W celu weryfikacji możemy zadać pytania o własność konta."
         ],
         "s3_h": "3. Co jest usuwane — a co nie?",
@@ -1080,28 +1116,32 @@
         ],
         "s3_rows": [
           [
-            "Profil, dane uli/rodzin, notatki",
+            "Profil, dane uli/rodzin, notatki oraz wszystkie pozostałe dane powiązane z kontem (tokeny push, sesje głosowe, opinie, incydenty, dowody doręczenia/rozwiązania, zapobieganie nadużyciom)",
             "usunięte"
           ],
           [
-            "Kredyty AI",
-            "usunięte; pozostałe saldo zwracane na wniosek"
+            "Kredyty AI, historia zużycia, dowody realizacji, uprawnienia premium i powiązania subskrypcji",
+            "usunięte; pozostałe saldo jest automatycznie zgłaszane do zwrotu"
           ],
           [
             "Dowody zgody (EULA/Regulamin/Polityka)",
-            "usunięte; przy zakupach istotnych podatkowo przechowywane jako dowody księgowe"
+            "wycofane i usunięte (natychmiast lub w dacie podatkowej); przy zakupach istotnych podatkowo przechowywane jako dowody księgowe"
           ],
           [
             "Kopie zapasowe w chmurze (opcjonalne)",
-            "usunięte"
+            "usunięte (usuwanie jest uruchamiane; błąd nie blokuje usunięcia konta); kopie subskrypcji do 30 dni po zakończeniu subskrypcji"
           ],
           [
             "Dziennik audytu usunięcia konta",
-            "3 lata (dowód wykonania, bez powiązania z profilem)"
+            "3 lata (dowód wykonania z identyfikatorem konta, adresem IP i czasem)"
           ],
           [
-            "Dokumenty płatności/subskrypcji",
-            "ustawowe przechowywanie (5–10 lat w zależności od kraju, kod: 10 lat); powiązanie z kontem usunięte"
+            "Dowody księgowe (płatności, subskrypcje, korekty kredytów)",
+            "ustawowe przechowywanie (5–10 lat w zależności od kraju); powiązanie z kontem usunięte"
+          ],
+          [
+            "Dane kontaktowe do zwrotu (e-mail)",
+            "30 dni po zakończeniu zwrotu (dowód wypłaty)"
           ]
         ],
         "s4_h": "4. Eksport danych przed usunięciem",
@@ -1187,7 +1227,7 @@
         "s2_p": "Ak aplikáciu už nemáš nainštalovanú alebo chceš žiadosť podať bez nej:",
         "s2_li": [
           "Pošli e-mail na <a href='mailto:support@dolphincrusher.com?subject=Zmazanie%20%C3%BA%C4%8Dtu'>support@dolphincrusher.com</a> s predmetom <strong>„Zmazanie účtu“</strong> a uveď <strong>e-mailovú adresu svojho účtu</strong>.",
-          "Potvrdíme prijatie a zmažeme tvoj účet vrátane všetkých súvisiacich údajov, zvyčajne <strong>do 30 dní</strong>.",
+          "Potvrdíme prijatie a zmažeme váš účet spolu s údajmi uvedenými v časti 3; zákonné povinnosti uchovávania zostávajú. Vybavenie zvyčajne prebehne <strong>do 30 dní</strong>.",
           "Na overenie môžeme položiť otázky k vlastníctvu účtu."
         ],
         "s3_h": "3. Čo sa maže — a čo nie?",
@@ -1197,28 +1237,32 @@
         ],
         "s3_rows": [
           [
-            "Profil, údaje o úľoch/včelstvách, poznámky",
+            "Profil, údaje o úľoch/včelstvách, poznámky a všetky ostatné údaje viazané na účet (push tokeny, hlasové relácie, spätná väzba, incidenty, doklady o doručení/ukončení, ochrana pred zneužitím)",
             "zmazané"
           ],
           [
-            "AI kredity",
-            "zmazané; zvyšný zostatok vrátený na požiadanie"
+            "AI kredity, história spotreby, doklady o uplatnení, prémiové nároky a väzby na predplatné",
+            "zmazané; zvyšný zostatok sa automaticky predkladá na vrátenie"
           ],
           [
             "Doklady o súhlase (EULA/VOP/Zásady)",
-            "zmazané; pri daňovo relevantných nákupoch uchovávané ako doklady o platbe"
+            "odvolané a zmazané (okamžite alebo k daňovému dátumu); pri daňovo relevantných nákupoch uchovávané ako doklady o platbe"
           ],
           [
             "Cloudové zálohy (voliteľné)",
-            "zmazané"
+            "zmazané (zmazanie sa spustí; chyba neblokuje zmazanie účtu); zálohy predplatného až 30 dní po skončení predplatného"
           ],
           [
             "Auditný log zmazania účtu",
-            "3 roky (doklad o vykonaní, bez väzby na profil)"
+            "3 roky (doklad o vykonaní s identifikátorom účtu, IP adresou a časom)"
           ],
           [
-            "Doklady o platbách/predplatnom",
-            "zákonné uchovávanie (5–10 rokov podľa krajiny, kód: 10 rokov); väzba na účet odstránená"
+            "Doklady o platbách (platby, predplatné, opravy kreditov)",
+            "zákonné uchovávanie (5–10 rokov podľa krajiny); väzba na účet odstránená"
+          ],
+          [
+            "Kontaktné údaje pre vrátenie (e-mail)",
+            "30 dní po dokončení vrátenia (doklad o výplate)"
           ]
         ],
         "s4_h": "4. Export údajov pred zmazaním",
