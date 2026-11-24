@@ -56,7 +56,7 @@ Cloud-Backups, EU/Frankreich), **Netcup** (Hosting, DE).
 
 Pfad (neue Console): **„Mit Google Play geschützt" / App-Inhalt → Datenicherheit → Verwalten**.
 
-1. **Datenschutzrichtlinie-URL:** `https://beemaster-app.de/` (aktuelle Fassung 3.8).
+1. **Datenschutzrichtlinie-URL:** `https://beemaster-app.de/` (aktuelle Fassung 3.9).
 2. **Sammeln/Weitergeben:** „Ja, es werden Nutzerdaten erhoben und weitergegeben."
 3. **Kategorien** gemäß Tabelle oben; pro Kategorie: Typ ankreuzen, optional/erforderlich,
    temporär (nur Audio-Verarbeitung), Zweck-Tags:
@@ -83,6 +83,6 @@ Pfad (neue Console): **„Mit Google Play geschützt" / App-Inhalt → Dateniche
 
 ## 6. Nachweis
 
-- Datenschutzerklärung 3.8 (18 Sprachen): App-Assets + `https://beemaster-app.de/` (Render-Gate).
+- Datenschutzerklärung 3.9 (18 Sprachen): App-Assets + `https://beemaster-app.de/` (Render-Gate).
 - Disclosure-Gate: `beemaster-process/scripts/check-processor-disclosure.py` (Code ↔ DSE).
 - Consent-Nachweis: EULA/AGB/DSE-Akzeptanz mit Versions-Hash (Art. 7 Abs. 1).
