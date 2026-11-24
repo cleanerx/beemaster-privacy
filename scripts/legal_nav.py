@@ -48,6 +48,42 @@ STEM_KIND = {"privacy": "privacy", "agb": "agb", "eula": "eula",
 NAV_RE = re.compile(r"(?P<indent>[ \t]*)<nav>(?P<body>.*?)</nav>", re.S)
 ANCHOR_RE = re.compile(r'<a\s+href="([^"]+)"[^>]*>(.*?)</a>', re.S)
 
+# Freigegebene Web-Sprachen (Quelle: beemaster-android/docs/legal/source/
+# web_locales.json, "released"). Nur diese erscheinen im Sprachumschalter der
+# Rechts-/Service-Seiten; weitere Fassungen werden bewusst nicht angeboten.
+RELEASED_SWITCH = (
+    ("", "🇩🇪 Deutsch"),
+    ("_at", "🇦🇹 Deutsch (AT)"),
+    ("_hu", "🇭🇺 Magyar"),
+)
+
+SWITCH_RE = re.compile(r'<div class="lang-switch">.*?</div>', re.S)
+
+STEM_BY_KIND = {
+    "privacy": "privacy", "agb": "agb", "eula": "eula",
+    "imprint": "impressum", "del": "konto-loeschen", "req": "daten-anfordern",
+}
+
+
+def switch_target(kind: str, suffix: str) -> str:
+    if kind == "privacy":
+        return "index.html" if suffix == "" else f"privacy{suffix}.html"
+    return f"{STEM_BY_KIND[kind]}{suffix}.html"
+
+
+def normalize_lang_switch(html: str, kind: str, suffix: str, indent: str) -> str | None:
+    """Beschraenkt den Sprachumschalter auf DE / DE-AT / HU."""
+    if not SWITCH_RE.search(html):
+        return None
+    links = []
+    for sfx, label in RELEASED_SWITCH:
+        if not (ROOT / switch_target(kind, sfx)).exists():
+            continue
+        cls = ' class="active"' if sfx == suffix else ""
+        links.append(f'<a href="{switch_target(kind, sfx)}"{cls}>{label}</a>')
+    block = '<div class="lang-switch">' + (" | ".join(links)) + "</div>"
+    return SWITCH_RE.sub(lambda _m: block, html, count=1)
+
 
 def load_labels() -> dict:
     data = json.loads(TRANSLATIONS.read_text(encoding="utf-8"))
@@ -129,15 +165,19 @@ def normalize_html(html: str, name: str, labels_by_lang: dict) -> str | None:
         labels.update(existing_labels(match.group("body")))
         indent = match.group("indent")
         block = nav_block(kind, suffix, labels, indent)
-        return html[:match.start()] + indent + block + html[match.end():]
+        result = html[:match.start()] + indent + block + html[match.end():]
+    else:
+        # Seiten ohne Navigation (z.B. die Oesterreich-Fassung) bekommen sie vor <main>.
+        main_match = re.search(r"(?P<indent>[ \t]*)<main>", html)
+        if not main_match:
+            return None
+        indent = main_match.group("indent")
+        block = nav_block(kind, suffix, labels, indent)
+        result = (html[:main_match.start()] + indent + block + "\n\n"
+                  + html[main_match.start():])
 
-    # Seiten ohne Navigation (z.B. die Oesterreich-Fassung) bekommen sie vor <main>.
-    main_match = re.search(r"(?P<indent>[ \t]*)<main>", html)
-    if not main_match:
-        return None
-    indent = main_match.group("indent")
-    block = nav_block(kind, suffix, labels, indent)
-    return html[:main_match.start()] + indent + block + "\n\n" + html[main_match.start():]
+    switched = normalize_lang_switch(result, kind, suffix, indent)
+    return switched or result
 
 
 def build_nav(name: str, labels_by_lang: dict) -> tuple[str, str] | None:

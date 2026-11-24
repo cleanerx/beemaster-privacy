@@ -91,12 +91,16 @@ def legal_shell(locale: str, suffix: str) -> str:
     return path.read_text(encoding="utf-8")
 
 
+# Freigegebene Web-Sprachen (web_locales.json "released"): nur DE/AT/HU.
+RELEASED_SWITCH = (("", "🇩🇪 Deutsch"), ("_at", "🇦🇹 Deutsch (AT)"), ("_hu", "🇭🇺 Magyar"))
+
+
 def lang_switch(page_stem: str, suffix: str) -> str:
     parts = []
-    for loc, sfx, _lang, label in LOCALES:
+    for sfx, label in RELEASED_SWITCH:
         cls = ' class="active"' if sfx == suffix else ""
         parts.append(f'<a href="{page_stem}{sfx}.html"{cls}>{label}</a>')
-    return '<div class="lang-switch">\n' + " |\n".join(parts) + "\n</div>"
+    return '<div class="lang-switch">' + " | ".join(parts) + "</div>"
 
 
 def build_main(t: dict, lang: str, page: str, suffix: str) -> str:
