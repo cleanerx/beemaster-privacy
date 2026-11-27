@@ -158,8 +158,9 @@ footer p { margin: .25rem 0; }
 <tr><td>Cloud-Backups (optional)</td><td>gelöscht (Löschauftrag wird ausgelöst; ein Fehler blockiert die Kontolöschung nicht); Abo-Backups nach Abo-Ende bis zu 30 Tage</td></tr>
 <tr><td>Kontolöschungs-Audit-Log</td><td>3 Jahre (Nachweis der Ausführung mit Konto-Kennung, zugehöriger Konto-E-Mail, IP-Adresse und Zeitpunkt)</td></tr>
 <tr><td>Buchungsbelege (Zahlungen, Abos, Guthaben-Korrekturen)</td><td>gesetzliche Aufbewahrung (je Land 5–10 Jahre); Verknüpfung zum Konto entfernt; im Lösch-Audit wird für steuerrelevante Belege pauschal eine 8-Jahres-Marke vermerkt</td></tr>
-<tr><td>Rückerstattungsanträge (Mollie)</td><td>Antragszeilen bleiben erhalten (Kontoverknüpfung gelöst); die Kontakt-E-Mail darin wird nach 30 Tagen gelöscht (Auszahlungsnachweis)</td></tr>
+<tr><td>Rückerstattungsanträge (Mollie)</td><td>gelöscht (kaskadiert mit dem Konto)</td></tr>
 <tr><td>Verknüpfungen zu Admin-/Support-Accounts</td><td>gelöscht (kaskadiert mit dem Konto)</td></tr>
+<tr><td>Guthaben-Erstattungsanträge (Credit-Refund)</td><td>Antragszeilen bleiben erhalten (Kontoverknüpfung gelöst); die Kontakt-E-Mail darin wird nach 30 Tagen gelöscht (Auszahlungsnachweis)</td></tr>
 <tr><td>Erstattungsdaten (Kontakt-E-Mail)</td><td>30 Tage nach Abschluss der Erstattung (Auszahlungsnachweis)</td></tr>
 </table>
 <h2>4. Datenexport vor der Löschung</h2>
