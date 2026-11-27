@@ -153,7 +153,7 @@ footer p { margin: .25rem 0; }
 <table class="data-table">
 <tr><th>Terület</th><th>Kezelés a fióktörléskor</th></tr>
 <tr><td>Profil, kaptár-/családadatok, jegyzetek és minden egyéb fiókhoz kapcsolódó adat (push tokenek, hangmunkamenetek, visszajelzések, incidensek, kézbesítési/felmondási igazolások, visszaélés-védelem)</td><td>törölve</td></tr>
-<tr><td>AI-kreditek, fogyasztási előzmények, beváltási igazolások, prémium jogosultságok és előfizetés-kapcsolatok</td><td>törölve; a fennmaradó egyenleg automatikusan visszatérítésre kerül</td></tr>
+<tr><td>AI-kreditek, fogyasztási előzmények, beváltási igazolások, prémium jogosultságok és előfizetés-kapcsolatok</td><td>törölve; a maradék egyenleg visszatérítése automatikusan elindul (ha ez hibát ad, nem blokkolja a törlést — a kérelmet az auditnapló alapján utólag kezelik)</td></tr>
 <tr><td>Hozzájárulási igazolások (EULA/ÁSZF/Adatvédelem)</td><td>visszavonva és törölve (azonnal vagy az adózási dátumkor); adózásilag releváns vásárlásoknál bizonylatként megőrizve; hatósági/ügyvédi letét (legal hold) alatt álló igazolások a letét lejáratáig megmaradnak (a felhasználói visszavonás dokumentálása is ekkor történik)</td></tr>
 <tr><td>Felhőmentések (opcionális)</td><td>törölve (a törlés elindul; hiba nem akadályozza a fiók törlését); előfizetés-mentések az előfizetés lejárta után legfeljebb 30 napig</td></tr>
 <tr><td>Fióktörlési auditnapló</td><td>3 év (a végrehajtás igazolása fiókazonosítóval, a fiókhoz tartozó e-mail-címmel, IP-címmel és időponttal)</td></tr>

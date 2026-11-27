@@ -153,11 +153,11 @@ footer p { margin: .25rem 0; }
 <table class="data-table">
 <tr><th>Bereich</th><th>Behandlung bei Kontolöschung</th></tr>
 <tr><td>Profil, Beuten-/Schwarmdaten, Notizen und alle übrigen kontobezogenen Daten (Push-Token, Sprach-Sessions, Feedback, Incidents, Zustell-/Beendigungsnachweise, Missbrauchsschutz)</td><td>gelöscht</td></tr>
-<tr><td>KI-Guthaben, Verbrauchshistorie, Einlöse-Nachweise, Premium-Ansprüche und Abo-Verknüpfungen</td><td>gelöscht; Restguthaben wird automatisch zur Erstattung angemeldet</td></tr>
+<tr><td>KI-Guthaben, Verbrauchshistorie, Einlöse-Nachweise, Premium-Ansprüche und Abo-Verknüpfungen</td><td>gelöscht; Restguthaben-Erstattung wird automatisch angestoßen (schlägt sie fehl, blockiert das die Löschung nicht — der Antrag wird anhand des Audit-Logs manuell nachgezogen)</td></tr>
 <tr><td>Consent-Nachweise (EULA/AGB/Datenschutz)</td><td>widerrufen und gelöscht (sofort bzw. zum Steuerdatum); bei steuerrelevanten Käufen wie Buchungsbelege aufbewahrt; Nachweise unter behördlichem/anwaltlichem Legal Hold bleiben bis zum Ablauf bestehen (dokumentiert wird auch der Nutzer-Widerruf)</td></tr>
 <tr><td>Cloud-Backups (optional)</td><td>gelöscht (Löschauftrag wird ausgelöst; ein Fehler blockiert die Kontolöschung nicht); Abo-Backups nach Abo-Ende bis zu 30 Tage</td></tr>
 <tr><td>Kontolöschungs-Audit-Log</td><td>3 Jahre (Nachweis der Ausführung mit Konto-Kennung, zugehöriger Konto-E-Mail, IP-Adresse und Zeitpunkt)</td></tr>
-<tr><td>Buchungsbelege (Zahlungen, Abos, Guthaben-Korrekturen)</td><td>gesetzliche Aufbewahrung (je Land 5–10 Jahre); Verknüpfung zum Konto entfernt</td></tr>
+<tr><td>Buchungsbelege (Zahlungen, Abos, Guthaben-Korrekturen)</td><td>gesetzliche Aufbewahrung (je Land 5–10 Jahre); Verknüpfung zum Konto entfernt; im Lösch-Audit wird für steuerrelevante Belege pauschal eine 8-Jahres-Marke vermerkt</td></tr>
 <tr><td>Erstattungsdaten (Kontakt-E-Mail)</td><td>30 Tage nach Abschluss der Erstattung (Auszahlungsnachweis)</td></tr>
 </table>
 <h2>4. Datenexport vor der Löschung</h2>

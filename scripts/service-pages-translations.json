@@ -32,7 +32,7 @@
      ],
      [
       "KI-Guthaben, Verbrauchshistorie, Einlöse-Nachweise, Premium-Ansprüche und Abo-Verknüpfungen",
-      "gelöscht; Restguthaben wird automatisch zur Erstattung angemeldet"
+      "gelöscht; Restguthaben-Erstattung wird automatisch angestoßen (schlägt sie fehl, blockiert das die Löschung nicht — der Antrag wird anhand des Audit-Logs manuell nachgezogen)"
      ],
      [
       "Consent-Nachweise (EULA/AGB/Datenschutz)",
@@ -48,7 +48,7 @@
      ],
      [
       "Buchungsbelege (Zahlungen, Abos, Guthaben-Korrekturen)",
-      "gesetzliche Aufbewahrung (je Land 5–10 Jahre); Verknüpfung zum Konto entfernt"
+      "gesetzliche Aufbewahrung (je Land 5–10 Jahre); Verknüpfung zum Konto entfernt; im Lösch-Audit wird für steuerrelevante Belege pauschal eine 8-Jahres-Marke vermerkt"
      ],
      [
       "Erstattungsdaten (Kontakt-E-Mail)",
@@ -879,7 +879,7 @@
      ],
      [
       "AI-kreditek, fogyasztási előzmények, beváltási igazolások, prémium jogosultságok és előfizetés-kapcsolatok",
-      "törölve; a fennmaradó egyenleg automatikusan visszatérítésre kerül"
+      "törölve; a maradék egyenleg visszatérítése automatikusan elindul (ha ez hibát ad, nem blokkolja a törlést — a kérelmet az auditnapló alapján utólag kezelik)"
      ],
      [
       "Hozzájárulási igazolások (EULA/ÁSZF/Adatvédelem)",
