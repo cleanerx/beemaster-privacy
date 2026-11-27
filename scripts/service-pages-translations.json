@@ -186,6 +186,18 @@
      [
       "Refund contact data (email)",
       "30 days after the refund is completed (payout proof)"
+     ],
+     [
+      "Mollie refund requests",
+      "deleted (cascades with the account)"
+     ],
+     [
+      "Links to admin/support accounts",
+      "deleted (cascades with the account)"
+     ],
+     [
+      "Credit refund requests (Credit-Refund)",
+      "request rows are retained (account link unset); the contact email within is deleted after 30 days (payout evidence)"
      ]
     ],
     "s4_h": "4. Data export before deletion",
@@ -303,6 +315,18 @@
      [
       "Justificatifs (paiements, abonnements, corrections de crédits)",
       "conservation légale (5–10 ans selon le pays) ; lien avec le compte supprimé"
+     ],
+     [
+      "Demandes de remboursement Mollie",
+      "supprimées (en cascade avec le compte)"
+     ],
+     [
+      "Liens vers des comptes admin/support",
+      "supprimés (en cascade avec le compte)"
+     ],
+     [
+      "Demandes de remboursement de crédit (Credit-Refund)",
+      "les lignes de demande sont conservées (lien au compte supprimé) ; l'e-mail de contact qu'elles contiennent est supprimé après 30 jours (preuve de versement)"
      ],
      [
       "Données de contact de remboursement (e-mail)",
@@ -428,6 +452,18 @@
      [
       "Contactgegevens voor terugbetaling (e-mail)",
       "30 dagen na afronding van de terugbetaling (uitbetalingsbewijs)"
+     ],
+     [
+      "Mollie-terugbetalingsverzoeken",
+      "verwijderd (cascaderend met het account)"
+     ],
+     [
+      "Koppelingen naar admin-/supportaccounts",
+      "verwijderd (cascaderend met het account)"
+     ],
+     [
+      "Kredietterugbetalingsverzoeken (Credit-Refund)",
+      "aanvraagregels blijven bewaard (accountkoppeling losgekoppeld); de contact-e-mail daarin wordt na 30 dagen verwijderd (uitbetalingsbewijs)"
      ]
     ],
     "s4_h": "4. Gegevensexport vóór verwijdering",
@@ -549,6 +585,18 @@
      [
       "Данни за контакт при възстановяване (имейл)",
       "30 дни след приключване на възстановяването (доказателство за плащане)"
+     ],
+     [
+      "Заявки за възстановяване чрез Mollie",
+      "изтрити (каскадно с акаунта)"
+     ],
+     [
+      "Връзки към администраторски/поддръжки акаунти",
+      "изтрити (каскадно с акаунта)"
+     ],
+     [
+      "Заявки за връщане на кредит (Credit-Refund)",
+      "редовете на заявките остават (връзката с акаунта е прекъсната); контактният имейл в тях се изтрива след 30 дни (доказателство за изплащане)"
      ]
     ],
     "s4_h": "4. Експорт на данни преди изтриването",
@@ -670,6 +718,18 @@
      [
       "Kontaktní údaje pro vrácení (e-mail)",
       "30 dní po dokončení vrácení (doklad o výplatě)"
+     ],
+     [
+      "Žádosti o vrácení peněz přes Mollie",
+      "smazány (kaskádovitě s účtem)"
+     ],
+     [
+      "Propojení na účty admin/podpory",
+      "smazána (kaskádovitě s účtem)"
+     ],
+     [
+      "Žádosti o vrácení kreditu (Credit-Refund)",
+      "řádky žádostí zůstávají (propojení s účtem zrušeno); kontaktní e-mail v nich se po 30 dnech smaže (doklad o výplatě)"
      ]
     ],
     "s4_h": "4. Export dat před smazáním",
@@ -791,6 +851,18 @@
      [
       "Kontaktoplysninger til refusion (e-mail)",
       "30 dage efter refusionen er afsluttet (betalingsdokumentation)"
+     ],
+     [
+      "Mollie-refunderingsanmodninger",
+      "slettes (kaskaderes med kontoen)"
+     ],
+     [
+      "Links til admin/support-konti",
+      "slettes (kaskaderes med kontoen)"
+     ],
+     [
+      "Kredit-refunderingsanmodninger (Credit-Refund)",
+      "anmodningsrækker gemmes (kontolink fjernes); kontakt-e-mailen i dem slettes efter 30 dage (betalingsbevis)"
      ]
     ],
     "s4_h": "4. Dataeksport før sletning",
@@ -1043,6 +1115,18 @@
       "conservazione di legge (5–10 anni per paese); collegamento all'account rimosso"
      ],
      [
+      "Richieste di rimborso Mollie",
+      "eliminate (a cascata con l'account)"
+     ],
+     [
+      "Collegamenti ad account admin/supporto",
+      "eliminati (a cascata con l'account)"
+     ],
+     [
+      "Richieste di rimborso del credito (Credit-Refund)",
+      "le righe di richiesta restano (collegamento all'account rimosso); l'e-mail di contato al loro interno è eliminata dopo 30 giorni (prova del versamento)"
+     ],
+     [
       "Dati di contatto per il rimborso (e-mail)",
       "30 giorni dopo il completamento del rimborso (prova di pagamento)"
      ]
@@ -1166,6 +1250,18 @@
      [
       "Dane kontaktowe do zwrotu (e-mail)",
       "30 dni po zakończeniu zwrotu (dowód wypłaty)"
+     ],
+     [
+      "Wnioski o zwrot Mollie",
+      "usunięte (kaskadowo z kontem)"
+     ],
+     [
+      "Powiązania z kontami admin/wsparcia",
+      "usunięte (kaskadowo z kontem)"
+     ],
+     [
+      "Wnioski o zwrot środków (Credit-Refund)",
+      "wiersze wniosków pozostają (powiązanie z kontem usunięte); adres e-mail kontaktu w nich jest usuwany po 30 dniach (dowód wypłaty)"
      ]
     ],
     "s4_h": "4. Eksport danych przed usunięciem",
@@ -1287,6 +1383,18 @@
      [
       "Kontaktné údaje pre vrátenie (e-mail)",
       "30 dní po dokončení vrátenia (doklad o výplate)"
+     ],
+     [
+      "Žiadosti o vrátenie Mollie",
+      "vymazané (kaskádovo s účtom)"
+     ],
+     [
+      "Prepojenia na admin/podporné účty",
+      "vymazané (kaskádovo s účtom)"
+     ],
+     [
+      "Žiadosti o vrátenie kreditu (Credit-Refund)",
+      "riadky žiadostí zostávajú (prepojenie s účtom zrušené); kontaktný e-mail v nich sa po 30 dňoch vymaže (doklad o výplate)"
      ]
     ],
     "s4_h": "4. Export údajov pred zmazaním",
