@@ -51,6 +51,14 @@
       "gesetzliche Aufbewahrung (je Land 5–10 Jahre); Verknüpfung zum Konto entfernt; im Lösch-Audit wird für steuerrelevante Belege pauschal eine 8-Jahres-Marke vermerkt"
      ],
      [
+      "Rückerstattungsanträge (Mollie)",
+      "gelöscht (kaskadiert mit dem Konto); die Erstattungsdaten (Kontakt-E-Mail) bleiben 30 Tage für die Auszahlung"
+     ],
+     [
+      "Verknüpfungen zu Admin-/Support-Accounts",
+      "gelöscht (kaskadiert mit dem Konto)"
+     ],
+     [
       "Erstattungsdaten (Kontakt-E-Mail)",
       "30 Tage nach Abschluss der Erstattung (Auszahlungsnachweis)"
      ]
@@ -900,6 +908,14 @@
      [
       "Visszatérítési kapcsolattartási adatok (e-mail)",
       "30 nappal a visszatérítés lezárása után (kifizetési igazolás)"
+     ],
+     [
+      "Visszatérítési kérelmek (Mollie)",
+      "törölve (a fiókkal együtt kaszkádolva); a visszatérítési adatok (kapcsolati e-mail) 30 napig megmaradnak a kifizetéshez"
+     ],
+     [
+      "Admin-/támogatási fiókokhoz való hozzárendelések",
+      "törölve (a fiókkal együtt kaszkádolva)"
      ]
     ],
     "s4_h": "4. Adatexport a törlés előtt",
