@@ -52,7 +52,7 @@
      ],
      [
       "Rückerstattungsanträge (Mollie)",
-      "gelöscht (kaskadiert mit dem Konto); die Erstattungsdaten (Kontakt-E-Mail) bleiben 30 Tage für die Auszahlung"
+      "Antragszeilen bleiben erhalten (Kontoverknüpfung gelöst); die Kontakt-E-Mail darin wird nach 30 Tagen gelöscht (Auszahlungsnachweis)"
      ],
      [
       "Verknüpfungen zu Admin-/Support-Accounts",
@@ -911,7 +911,7 @@
      ],
      [
       "Visszatérítési kérelmek (Mollie)",
-      "törölve (a fiókkal együtt kaszkádolva); a visszatérítési adatok (kapcsolati e-mail) 30 napig megmaradnak a kifizetéshez"
+      "a kérelmek sorai megmaradnak (fiók-kapcsolat oldva); bennük a kapcsolati e-mail 30 nap után törlődik (kifizetési bizonylat)"
      ],
      [
       "Admin-/támogatási fiókokhoz való hozzárendelések",
